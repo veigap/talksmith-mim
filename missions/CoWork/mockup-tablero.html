@@ -1,0 +1,152 @@
+<!--
+  MOCKUP (BOCETO A MANO / WIREFRAME) — Tablero "Pulso semanal de mercado"
+  Idea de diseño para la Skill publicar-tablero. NO es el producto final: es un sketch
+  para mostrar QUÉ queremos. Simplificado a 3 empresas (AAPL, MSFT, NVDA).
+-->
+<meta charset="utf-8">
+<style>
+  :root{ --ink:#2b2b2b; --ink2:#555; --paper:#fdfcf5; --up:#1f8a4c; --down:#c0392b; --note:#2f6fb0; }
+  *{box-sizing:border-box}
+  body{
+    margin:0; color:var(--ink);
+    font-family:"Comic Sans MS","Segoe Print","Bradley Hand","Chalkboard SE",ui-rounded,cursive;
+    background:
+      repeating-linear-gradient(0deg, transparent 0 27px, rgba(120,150,200,.13) 27px 28px),
+      repeating-linear-gradient(90deg, transparent 0 27px, rgba(120,150,200,.13) 27px 28px),
+      var(--paper);
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:26px 22px 50px}
+  .sketchnote{color:var(--note);font-size:13px;transform:rotate(-1.2deg);margin-bottom:6px}
+  .hbar{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    border-bottom:3px dashed var(--ink);padding-bottom:10px;transform:rotate(-.3deg)}
+  h1{font-size:26px;margin:0}
+  h1 .u{ text-decoration: underline wavy var(--down);}
+  .pill{border:2px solid var(--ink);border-radius:40px 18px 40px 18px/18px 40px 18px 40px;
+    padding:4px 12px;font-size:13px;display:inline-block;transform:rotate(1.5deg)}
+  .stamp{border:2px solid var(--down);color:var(--down);border-radius:20px 6px 20px 6px/6px 20px 6px 20px;
+    padding:3px 10px;font-size:12px;transform:rotate(4deg);display:inline-block}
+  /* hand-drawn box */
+  .box{border:2.5px solid var(--ink);background:rgba(255,255,255,.55);
+    border-radius:255px 14px 235px 14px/14px 225px 14px 255px;}
+  .summary{padding:14px 18px;margin:20px 0 8px;transform:rotate(.25deg)}
+  .summary h3{margin:0 0 6px;font-size:14px;color:var(--note)}
+  .summary p{margin:0;line-height:1.5;font-size:15px;color:var(--ink2)}
+  .scribble{display:block;height:8px;margin-top:6px;border-bottom:2px dotted #bbb;width:92%}
+  .scribble.s2{width:78%} .scribble.s3{width:85%}
+  .row{display:flex;align-items:center;gap:10px;margin:14px 2px 4px}
+  .row .lab{color:var(--note);font-size:13px}
+  .arrow{color:var(--note);font-size:18px}
+  /* cards */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{padding:14px 14px 12px;position:relative}
+  .card.c1{transform:rotate(-1deg)} .card.c2{transform:rotate(.6deg)} .card.c3{transform:rotate(-.5deg)}
+  .tk{display:flex;align-items:center;justify-content:space-between}
+  .tkbadge{border:2px solid var(--ink);border-radius:30px 8px 30px 8px/8px 30px 8px 30px;
+    padding:3px 9px;font-weight:bold;font-size:13px}
+  .arw{font-size:22px;font-weight:bold}
+  .arw.up{color:var(--up)} .arw.down{color:var(--down)}
+  .nm{font-size:15px;margin:8px 0 2px}
+  .px{font-size:22px;font-weight:bold}
+  .chg{font-size:15px;font-weight:bold}
+  .chg.up{color:var(--up)} .chg.down{color:var(--down)}
+  .mood{display:inline-block;border:2px dashed var(--ink);border-radius:18px 6px 18px 6px/6px 18px 6px 18px;
+    padding:1px 9px;font-size:12px;margin-top:6px}
+  .news{margin:8px 0 0;padding-left:0;list-style:none;font-size:12.5px;color:var(--ink2)}
+  .news li{margin:3px 0;padding-left:14px;position:relative;line-height:1.35}
+  .news li:before{content:"–";position:absolute;left:0}
+  .link{color:var(--note);text-decoration:underline}
+  .watch{font-size:11.5px;color:var(--ink2);margin-top:8px;border-top:2px dotted #ccc;padding-top:6px}
+  /* table */
+  .tbl{margin-top:22px;padding:8px 10px 12px;transform:rotate(.2deg)}
+  .tbl .cap{color:var(--note);font-size:13px;margin:2px 4px 8px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{padding:8px 10px;text-align:left;border-bottom:2px dotted #c9c9c9}
+  th{font-size:12px;color:var(--ink2)}
+  td.r{text-align:right} .u{color:var(--up)} .d{color:var(--down)}
+  .margin{transform:rotate(-2deg);color:var(--note);font-size:13px;margin:10px 0 0}
+  .foot{margin-top:18px;color:#8a8a7a;font-size:11.5px;transform:rotate(-.4deg)}
+  .hand{font-size:13px;color:var(--note)}
+</style>
+
+<div class="wrap">
+
+  <div class="sketchnote">✎ boceto / wireframe — "así nos imaginamos el tablero" (no es el diseño final)</div>
+
+  <div class="hbar">
+    <h1>📊 Pulso semanal de <span class="u">mercado</span></h1>
+    <div>
+      <span class="pill">◍ LIVE</span>
+      <span class="stamp">BOCETO</span>
+    </div>
+  </div>
+  <div class="hand" style="margin-top:6px">↑ título + fecha (“actualizado: lun 1 jun”) &nbsp;·&nbsp; chip “LIVE”</div>
+
+  <div class="box summary">
+    <h3>Resumen ejecutivo  <span class="hand">(2–3 líneas, lenguaje simple)</span></h3>
+    <p>Semana de rotación: <b>Apple</b> la estrella rumbo al WWDC; <b>Nvidia</b> corrige tras sus resultados récord; <b>Microsoft</b> firme por su IA.</p>
+    <span class="scribble"></span><span class="scribble s2"></span><span class="scribble s3"></span>
+  </div>
+
+  <div class="row"><span class="arrow">└▶</span><span class="lab">una TARJETA por empresa (solo 3) — ticker, precio, ▲/▼ %, ánimo y 2 noticias</span></div>
+
+  <div class="grid">
+
+    <div class="box card c1">
+      <div class="tk"><span class="tkbadge">AAPL</span><span class="arw up">▲</span></div>
+      <div class="nm">Apple</div>
+      <div class="px">US$ 315</div>
+      <div class="chg up">+5,0% esta semana</div>
+      <div class="mood">☺ ánimo: Positivo</div>
+      <ul class="news">
+        <li>Expectativa por el WWDC (Siri IA) <span class="link">[link]</span></li>
+        <li>MS: posible "ganadora de IA" <span class="link">[link]</span></li>
+      </ul>
+      <div class="watch">⌖ a vigilar: que el WWDC cumpla</div>
+    </div>
+
+    <div class="box card c2">
+      <div class="tk"><span class="tkbadge">MSFT</span><span class="arw up">▲</span></div>
+      <div class="nm">Microsoft</div>
+      <div class="px">US$ 452</div>
+      <div class="chg up">+0,4% esta semana</div>
+      <div class="mood">☺ ánimo: Positivo</div>
+      <ul class="news">
+        <li>IA factura ~US$ 37.000 M/año <span class="link">[link]</span></li>
+        <li>Azure +31% <span class="link">[link]</span></li>
+      </ul>
+      <div class="watch">⌖ a vigilar: rentabilidad del gasto IA</div>
+    </div>
+
+    <div class="box card c3">
+      <div class="tk"><span class="tkbadge">NVDA</span><span class="arw down">▼</span></div>
+      <div class="nm">Nvidia</div>
+      <div class="px">US$ 214</div>
+      <div class="chg down">−7,8% esta semana</div>
+      <div class="mood">≈ ánimo: Neutral</div>
+      <ul class="news">
+        <li>Toma de ganancias tras récord <span class="link">[link]</span></li>
+        <li>Debate de capacidad de chips <span class="link">[link]</span></li>
+      </ul>
+      <div class="watch">⌖ a vigilar: que siga la demanda</div>
+    </div>
+
+  </div>
+
+  <div class="margin">✎ verde = subió · rojo = bajó · mismo diseño todas las semanas, solo cambian los datos</div>
+
+  <div class="box tbl">
+    <div class="cap">▦ tabla resumen (abajo de todo)</div>
+    <table>
+      <thead><tr><th>Ticker</th><th>Empresa</th><th class="r">Precio</th><th class="r">Semana</th><th>Ánimo</th></tr></thead>
+      <tbody>
+        <tr><td>AAPL</td><td>Apple</td><td class="r">315</td><td class="r u">+5,0%</td><td>Positivo</td></tr>
+        <tr><td>MSFT</td><td>Microsoft</td><td class="r">452</td><td class="r u">+0,4%</td><td>Positivo</td></tr>
+        <tr><td>NVDA</td><td>Nvidia</td><td class="r">214</td><td class="r d">−7,8%</td><td>Neutral</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="foot">✎ pie: "Reporte interno e informativo; no es asesoramiento financiero" · fuentes: Yahoo Finance + MT Newswires · (datos del ejemplo, precios ilustrativos)</div>
+
+</div>
