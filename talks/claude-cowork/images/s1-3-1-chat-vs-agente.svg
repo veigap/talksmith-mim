@@ -1,0 +1,29 @@
+<svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>De chat a agente: el cambio de paradigma</title>
+  <desc>En chat hacés cada paso vos; con un agente delegás un resultado y el agente planifica y ejecuta.</desc>
+  <rect x="0" y="0" width="680" height="360" fill="#ffffff"/>
+
+  <!-- headers -->
+  <text x="170" y="36" text-anchor="middle" font-weight="bold" font-size="16" fill="#1F1E1E">ANTES (chat)</text>
+  <text x="510" y="36" text-anchor="middle" font-weight="bold" font-size="16" fill="#DA1B2E">AHORA (agente / Cowork)</text>
+
+  <!-- Chat panel (neutral) -->
+  <rect x="40" y="55" width="260" height="230" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
+  <g font-size="12.5" fill="#3B3535">
+    <text x="70" y="95">vos: mensaje  &#8594;  respuesta</text>
+    <text x="70" y="130">vos: mensaje  &#8594;  respuesta</text>
+    <text x="70" y="165">vos: mensaje  &#8594;  respuesta</text>
+    <text x="70" y="200">vos: mensaje  &#8594;  respuesta</text>
+  </g>
+  <text x="170" y="262" text-anchor="middle" font-size="12.5" fill="#6A737D">paso a paso, lo hacés vos</text>
+
+  <!-- Agent panel (focal red border) -->
+  <rect x="380" y="55" width="260" height="230" rx="6" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="510" y="92" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">vos: "entregá X"</text>
+  <line x1="510" y1="100" x2="510" y2="124" stroke="#3B3535" stroke-width="1.5"/>
+  <polygon points="504,124 510,134 516,124" fill="#3B3535"/>
+  <text x="510" y="156" text-anchor="middle" font-size="12.5" fill="#3B3535">agente: planifica</text>
+  <text x="510" y="180" text-anchor="middle" font-size="12.5" fill="#3B3535">agente: toca archivos</text>
+  <text x="510" y="204" text-anchor="middle" font-size="12.5" fill="#3B3535">vos: leés y guiás</text>
+  <text x="510" y="262" text-anchor="middle" font-weight="bold" font-size="12.5" fill="#DA1B2E">entregás un resultado</text>
+</svg>

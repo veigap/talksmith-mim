@@ -1,0 +1,44 @@
+# ── macOS ──────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Windows ────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Editor / IDE ───────────────────────────────────────
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ── Talksmith render residue (build artifacts) ─────────
+# Rasterized critique previews produced during rendering
+**/.critique/
+# Font-config scratch dir left by the render pipeline
+.fc-tmp/
+# LibreOffice / render locks and temp files
+**/.~lock.*#
+*.tmp
+
+# ── PPTX render intermediates (keep only final.pptx) ───
+**/output/*.bak
+**/output/*.bak.*
+**/output/final.prefix.bak
+**/output/final.intermediate.md
+**/output/final.work.pptx
+**/output/final.fixed.pptx
+**/output/final.spcfix.pptx
+**/output/final.pdf
+
+# ── Python ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>De Excel a herramientas agenticas</title>
+  <desc>Excel fue la habilidad base del trabajo de oficina; las herramientas agenticas son la nueva habilidad base.</desc>
+  <rect x="0" y="0" width="680" height="330" fill="#ffffff"/>
+
+  <text x="340" y="38" text-anchor="middle" font-weight="bold" font-size="16" fill="#1F1E1E">Trabajo de oficina: la herramienta de proposito general</text>
+
+  <!-- timeline labels -->
+  <text x="160" y="78" text-anchor="middle" font-size="13" fill="#6A737D">~40 anos</text>
+  <text x="520" y="78" text-anchor="middle" font-size="13" fill="#6A737D">ahora</text>
+
+  <!-- Excel panel (past, neutral) -->
+  <rect x="50" y="95" width="220" height="120" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="160" y="128" text-anchor="middle" font-weight="bold" font-size="18" fill="#1F1E1E">EXCEL</text>
+  <text x="160" y="156" text-anchor="middle" font-size="12.5" fill="#3B3535">lingua franca del</text>
+  <text x="160" y="174" text-anchor="middle" font-size="12.5" fill="#3B3535">trabajo de oficina</text>
+  <text x="160" y="196" text-anchor="middle" font-size="12.5" fill="#3B3535">(sin programar)</text>
+
+  <!-- arrow -->
+  <line x1="280" y1="155" x2="400" y2="155" stroke="#3B3535" stroke-width="2"/>
+  <polygon points="400,148 414,155 400,162" fill="#3B3535"/>
+
+  <!-- Agentic tools panel (now, focal red) -->
+  <rect x="420" y="95" width="220" height="120" rx="6" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="530" y="124" text-anchor="middle" font-weight="bold" font-size="15" fill="#DA1B2E">HERRAMIENTAS</text>
+  <text x="530" y="143" text-anchor="middle" font-weight="bold" font-size="15" fill="#DA1B2E">AGENTICAS</text>
+  <text x="530" y="170" text-anchor="middle" font-size="12.5" fill="#3B3535">Claude Code (developers)</text>
+  <text x="530" y="192" text-anchor="middle" font-size="12.5" fill="#3B3535">Cowork (knowledge worker)</text>
+
+  <!-- captions -->
+  <text x="160" y="245" text-anchor="middle" font-size="13" fill="#6A737D">la habilidad base de ayer</text>
+  <text x="530" y="245" text-anchor="middle" font-weight="bold" font-size="13" fill="#DA1B2E">la nueva habilidad base</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>Las tres superficies de Claude</title>
+  <desc>Web/Chat, Claude Code y Cowork corren sobre los mismos modelos Claude; Code y Cowork comparten el Agent SDK.</desc>
+  <rect x="0" y="0" width="680" height="430" fill="#ffffff"/>
+
+  <!-- Three surface panels -->
+  <g>
+    <rect x="40" y="30" width="170" height="90" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="125" y="62" text-anchor="middle" font-weight="bold" font-size="16" fill="#1F1E1E">Web / Chat</text>
+    <text x="125" y="86" text-anchor="middle" font-size="12.5" fill="#3B3535">superficie de chat</text>
+    <text x="125" y="104" text-anchor="middle" font-size="12.5" fill="#3B3535">del modelo</text>
+  </g>
+  <g>
+    <rect x="255" y="30" width="170" height="90" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="340" y="62" text-anchor="middle" font-weight="bold" font-size="16" fill="#1F1E1E">Claude Code</text>
+    <text x="340" y="86" text-anchor="middle" font-size="12.5" fill="#3B3535">terminal, escribir</text>
+    <text x="340" y="104" text-anchor="middle" font-size="12.5" fill="#3B3535">codigo</text>
+  </g>
+  <g>
+    <rect x="470" y="30" width="170" height="90" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="555" y="62" text-anchor="middle" font-weight="bold" font-size="16" fill="#1F1E1E">Cowork</text>
+    <text x="555" y="86" text-anchor="middle" font-size="12.5" fill="#3B3535">GUI de escritorio,</text>
+    <text x="555" y="104" text-anchor="middle" font-size="12.5" fill="#3B3535">trabajo multipaso</text>
+  </g>
+
+  <!-- Agent SDK band: shared by Code + Cowork -->
+  <rect x="255" y="165" width="385" height="66" rx="6" fill="#F2F2F2" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="447" y="192" text-anchor="middle" font-weight="bold" font-size="14" fill="#1F1E1E">Agent SDK (engine de agente)</text>
+  <text x="447" y="214" text-anchor="middle" font-size="12" fill="#3B3535">archivos · Skills · MCP · loop</text>
+
+  <!-- connectors from Code and Cowork down to Agent SDK -->
+  <line x1="340" y1="120" x2="340" y2="165" stroke="#3B3535" stroke-width="1.5"/>
+  <line x1="555" y1="120" x2="555" y2="165" stroke="#3B3535" stroke-width="1.5"/>
+
+  <!-- Same models panel (focal, red) -->
+  <rect x="210" y="300" width="260" height="80" rx="6" fill="#DA1B2E" stroke="#DA1B2E" stroke-width="1.5"/>
+  <text x="340" y="334" text-anchor="middle" font-weight="bold" font-size="17" fill="#ffffff">MISMOS MODELOS</text>
+  <text x="340" y="358" text-anchor="middle" font-weight="bold" font-size="17" fill="#ffffff">CLAUDE</text>
+
+  <!-- Web/Chat directly to models -->
+  <line x1="125" y1="120" x2="125" y2="340" stroke="#3B3535" stroke-width="1.5"/>
+  <line x1="125" y1="340" x2="210" y2="340" stroke="#3B3535" stroke-width="1.5"/>
+  <!-- Agent SDK to models -->
+  <line x1="340" y1="231" x2="340" y2="300" stroke="#3B3535" stroke-width="1.5"/>
+</svg>
