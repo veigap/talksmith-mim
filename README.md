@@ -1,11 +1,5 @@
 # MIM — Augmented | IAE Business School
 
-*Confidential draft*
-
-**MIM — AUGMENTED**
-El Arte de Conversar con la Máquina
-IAE Business School 2026
-
 # Objective
 
 Industry 4.0 — driven by data, connectivity, and artificial intelligence — is changing how value is created and how decisions are made. For managers, AI is quickly becoming the most powerful lever available to improve judgment, speed, and execution, both at the company level and in their own day-to-day work.
@@ -39,20 +33,20 @@ Industry 4.0 is not a one-time project — it is a continuous journey of digital
 
 | \# | Date | Time | Format | Duration | Title |
 | :-: | :-: | :-: | :-: | :-: | :-- |
-| 1 | Sat Aug 1 | 8:30 – 12:00 | Presencial | 3.5 h | Framing the Augmented Manager |
-| 2 | Sat Aug 1 | 13:00 – 16:30 | Presencial | 3.5 h | From Data to a Self-Running Deliverable |
+| 1 | Sat Aug 1 | 8:30 – 12:00 | Presencial | 3.5 h | Getting Started with Claude Cowork |
+| 2 | Sat Aug 1 | 13:00 – 16:30 | Presencial | 3.5 h | Automating a Weekly Report in Cowork |
 | 3 | Thu Aug 6 | 19:00 – 21:00 | Virtual | 2 h | Research & Present with NotebookLM |
 | 4 | Tue Aug 11 | 19:00 – 21:00 | Virtual | 2 h | Automation & Smart Operations |
 | 5 | Fri Aug 28 | 9:00 – 12:30 | Presencial | 3.5 h | Integration & Interoperability |
 | 6 | Sat Aug 29 | 8:30 – 12:00 | Presencial | 3.5 h | Cowork for the Enterprise |
-| 7 | Thu Sep 3 | 19:00 – 21:00 | Virtual | 2 h | Orchestrating Agents with a Human in the Loop |
+| 7 | Thu Sep 3 | 19:00 – 21:00 | Virtual | 2 h | Orchestrating Agents with Paperclip |
 
 > **Track narrative**
 > Days 1–2 (the Saturday double session) build the full Atlas mission in Cowork — from framing and project setup to a self-running report, email, and live dashboard. Day 3 uses NotebookLM to research and present an unfamiliar topic under time pressure. Days 4–5 run their own missions (to be defined). Day 6 packages your work into plugins others can install across an organization. Day 7 orchestrates a team of agents in Paperclip, with a human in the loop.
 
 ## Day-by-Day
 
-### DAY 1 — Assessment & Strategy: Framing the Augmented Manager ● COWORK FOUNDATIONS
+### DAY 1 — Assessment & Strategy: Getting Started with Claude Cowork ● COWORK FOUNDATIONS
 *Sat Aug 1 · 8:30 – 12:00 · Presencial · 3.5 h · Tool introduced: Cowork*
 
 | | |
@@ -65,7 +59,7 @@ Industry 4.0 is not a one-time project — it is a continuous journey of digital
 | **SESSION FLOW** | → Industry 4.0 framing — where companies actually are vs. where they think they are (25 min) → The three surfaces of Claude (Web/Chat · Claude Code · Cowork) + the chat→agent paradigm shift: "stop typing one message at a time, start delegating a result" (25 min) → Live Cowork demo — interface tour on the real app (mode selector, folder picker, Scheduled and Live artifacts tabs); delegate a multi-step task and watch it plan, touch files, and deliver (40 min) → The Cowork building blocks map — the stack you'll assemble across the track (Instructions · Projects · Skills · Connectors/MCP · Schedule · Live Artifacts), with Plugins as the cross-cutting distribution layer (15 min) → Instructions & Projects — set the agent's "work contract" and give it a fixed home; scaffold the Atlas Project pointed at your folder (35 min) → MD & metadata — the LLM lingua franca: nearly everything you configure (Instructions, Skills, agents) is plain Markdown, and a metadata header tells the system what a file is and when to use it (20 min) → Connectors & MCP — the agent's "hands": connect external services (Drive, Gmail, market data) in one click, with MCP as the open standard behind them (30 min) → Team formation + preview of the 4 milestones (15 min) |
 | **TAKEAWAYS** | ✓ The chat→agent paradigm: you deliver a result and guide it instead of typing every step. ✓ A map of the Cowork building blocks you'll assemble across the track. ✓ The Atlas Project scaffolded, with Instructions — including the golden rule: never gives investment advice. ✓ How Markdown/metadata configures everything, and how Connectors/MCP let Cowork reach your external tools. |
 
-### DAY 2 — Connectivity → Scaling: From Data to a Self-Running Deliverable ● THE FULL ATLAS LOOP (Milestones 1–4)
+### DAY 2 — Connectivity → Scaling: Automating a Weekly Report in Cowork ● THE FULL ATLAS LOOP (Milestones 1–4)
 *Sat Aug 1 · 13:00 – 16:30 · Presencial · 3.5 h*
 
 | | |
@@ -113,7 +107,7 @@ Industry 4.0 is not a one-time project — it is a continuous journey of digital
 | **MISSION** | Turn what you built into something others can use. Package one of your workflows (e.g., the Atlas Skills from Days 1–2) into a **Plugin**, publish it to a marketplace, and have a teammate **install and run it** in their own Cowork — proving it works on a machine that isn't yours. As a stretch, set an install preference as if rolling it out to a whole team. **Success:** someone else installs your plugin and reproduces your result without you touching their setup. |
 | **TAKEAWAYS** | ✓ The shift from personal automation to shared, org-wide AI. ✓ How Plugins package workflows for others, how Claude Tag makes Claude a shared teammate in Slack, and what a Team account unlocks. ✓ How a Team/Enterprise Owner distributes and governs capabilities across the organization, in both Chat and Cowork. |
 
-### DAY 7 — Continuous Improvement & Scaling: Orchestrating Agents with a Human in the Loop ● PAPERCLIP
+### DAY 7 — Continuous Improvement & Scaling: Orchestrating Agents with Paperclip ● PAPERCLIP
 *Thu Sep 3 · 19:00 – 21:00 · Virtual · 2 h*
 
 | | |
