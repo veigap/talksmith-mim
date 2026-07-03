@@ -1,0 +1,7 @@
+FUENTE: IEA (Agencia Internacional de Energia)  |  SEMANA DEL 18 AL 22 DE MAYO 2026
+
+-- Macro / IA y energia --
+"Energy demand from AI"
+https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+=> la IEA proyecta ~330.000 millones de dolares en desarrollo de gas natural en 2026, empujado por la demanda electrica de la tecnologia y el GNL.
+=> refuerza el resumen: por que seguimos este sector.

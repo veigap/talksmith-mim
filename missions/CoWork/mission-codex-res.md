@@ -1,10 +1,10 @@
-# 🛰️ Solución paso a paso (versión Codex) — "Atlas, el analista de mercado de tu equipo"
+# 🛰️ Solución paso a paso (versión Codex) — "Faro, la mesa de inteligencia de mercado de Atlas"
 
 > Equivalente en **OpenAI Codex** de la solución descrita en `mission-claud- res.md` (hecha en Claude Cowork). Misma misión, mismos cuatro Milestones, mismo resultado final: un **pulso semanal de mercado** que se arma, se distribuye y se publica **solo**. Lo que cambia es la herramienta: en lugar de la app Cowork, usamos Codex.
 >
-> 💡 Convención (igual que en el original): donde veas `[EMPRESAS]`, va la lista de las 3 acciones que el jefe pidió seguir: `AAPL, MSFT, NVDA`. Donde veas `[TICKER]`, va una sola (ej. `AAPL`).
+> 💡 Convención (igual que en el original): donde veas `[EMPRESAS]`, va la lista de las 3 acciones que el jefe pidió seguir: `YPF, VIST, TS`. Donde veas `[TICKER]`, va una sola (ej. `YPF`).
 >
-> 🎭 El encuadre es idéntico: tu jefe te pidió un pulso semanal sobre Apple, Microsoft y Nvidia. Un pasante juntaba las noticias a mano, un archivo por portal. El objetivo es que Atlas lo haga solo.
+> 🎭 El encuadre es idéntico: trabajás en **Atlas**, una empresa de insumos de perforación para Vaca Muerta, y tu jefe te pidió un pulso semanal sobre YPF, Vista y Tenaris — la ola de inversión en IA empuja la demanda de energía y, con ella, la perforación. Un pasante juntaba las noticias a mano, un archivo por portal. El objetivo es que Faro lo haga solo.
 
 ---
 
@@ -42,8 +42,8 @@ No son la misma clase de producto, y conviene tenerlo claro antes de empezar:
 
 1. Instalá Codex. Para esta misión usá la **app de escritorio de Codex** (también existen la extensión de IDE y la CLI con `npm i -g @openai/codex`).
 2. Iniciá sesión con tu cuenta de ChatGPT/OpenAI (plan que incluya Codex) o con una API key.
-3. Creá (si no existe) una carpeta vacía de trabajo, por ejemplo `Documentos/Atlas-Mercado`. **Tip:** inicializala como repo de Git (`git init`) — habilita worktrees y deja las Automations más prolijas.
-4. Activá la **búsqueda web en vivo** (Atlas la necesita en el Milestone 2). En `~/.codex/config.toml`:
+3. Creá (si no existe) una carpeta vacía de trabajo, por ejemplo `Documentos/Faro-Mercado`. **Tip:** inicializala como repo de Git (`git init`) — habilita worktrees y deja las Automations más prolijas.
+4. Activá la **búsqueda web en vivo** (Faro la necesita en el Milestone 2). En `~/.codex/config.toml`:
 
 ```toml
 web_search = "live"
@@ -56,7 +56,7 @@ web_search = "live"
 > ```
 > reportes/
 > ├── semana-2026-05-18/
-> │   ├── fuentes/   → yahoo-finance.txt, bloomberg.txt (Nvidia), the-next-platform.txt (Microsoft), coincentral.txt (Apple)
+> │   ├── fuentes/   → yahoo-finance.txt, bloomberg.txt (Vista), reuters.txt (YPF), stocktitan.txt (Tenaris)
 > │   └── reporte-semana-2026-05-18.md
 > ├── semana-2026-05-25/   (varios archivos en fuentes/  +  reporte)
 > └── semana-2026-06-01/   (varios archivos en fuentes/  +  reporte)
@@ -66,24 +66,24 @@ web_search = "live"
 
 ---
 
-# 🥚 Milestone 1 — Atlas nace
+# 🛠️ Milestone 1 — Faro toma forma
 ### *(Project · AGENTS.md · Skills)*
 
-## Paso 1.1 — Levantar el cuartel: el Project + las instrucciones
+## Paso 1.1 — Levantar la base: el Project + las instrucciones
 
 **En Cowork** creabas un "Project" con un campo de "Instructions". **En Codex**, el Project apunta a una carpeta y las instrucciones viven en un archivo **`AGENTS.md`** en la raíz de esa carpeta.
 
-1. En la app de Codex, creá un **nuevo Project** y apuntalo a tu carpeta `Documentos/Atlas-Mercado`.
+1. En la app de Codex, creá un **nuevo Project** y apuntalo a tu carpeta `Documentos/Faro-Mercado`.
 2. Creá el archivo `AGENTS.md` en la raíz de esa carpeta (podés pedírselo a Codex: *"creá un AGENTS.md con este contenido"*) y pegá:
 
 ```markdown
-# Atlas — analista de mercado del equipo
+# Faro — analista de mercado del equipo de Atlas
 
-Sos **Atlas**, el analista de mercado de un equipo de trabajo. Preparás un pulso
+Sos **Faro**, el analista de mercado del equipo de Atlas, una empresa de insumos de perforación para Vaca Muerta. Preparás un pulso
 semanal para colegas no técnicos (incluido el jefe del área), que se lee en 2
 minutos antes de la reunión de los lunes.
 
-- Seguís estas empresas que el equipo vigila: AAPL, MSFT, NVDA.
+- Seguís estas empresas que el equipo vigila: YPF, VIST, TS.
 - Escribís en español, claro y breve, sin jerga financiera complicada. Si usás
   un término técnico, lo explicás en una línea.
 - Tus reportes son informativos y para uso interno: NO son recomendaciones de
@@ -95,7 +95,7 @@ minutos antes de la reunión de los lunes.
   junto a la carpeta `fuentes/` de esa semana.
 ```
 
-> 📌 **Por qué importa:** `AGENTS.md` es el "contrato de trabajo" de Atlas. Codex lo lee en cada sesión que abrís dentro de esa carpeta, sin que tengas que repetir el contexto. Es el equivalente exacto a las "Instructions" del Project de Cowork. Podés commitearlo al repo para que el equipo lo comparta.
+> 📌 **Por qué importa:** `AGENTS.md` es el "contrato de trabajo" de Faro. Codex lo lee en cada sesión que abrís dentro de esa carpeta, sin que tengas que repetir el contexto. Es el equivalente exacto a las "Instructions" del Project de Cowork. Podés commitearlo al repo para que el equipo lo comparta.
 
 ---
 
@@ -124,7 +124,7 @@ $skill-creator
 
 > 📍 **Dónde queda la Skill:** Codex la guarda en `.agents/skills/reporte-semanal/SKILL.md`. Si la querés disponible desde cualquier carpeta (no solo este proyecto), guardala en `~/.agents/skills/`. Codex detecta los cambios solo; si no aparece, reiniciá Codex.
 
-> 🧩 **Estructura de una Skill (igual que Cowork):** una carpeta con un `SKILL.md` (frontmatter `name` + `description`, y cuerpo en Markdown con los pasos). Opcionalmente puede tener `scripts/`, `references/` y `assets/`. La escribís una vez y Atlas "ya sabe" armar el reporte.
+> 🧩 **Estructura de una Skill (igual que Cowork):** una carpeta con un `SKILL.md` (frontmatter `name` + `description`, y cuerpo en Markdown con los pasos). Opcionalmente puede tener `scripts/`, `references/` y `assets/`. La escribís una vez y Faro "ya sabe" armar el reporte.
 
 > 🔌 **Cómo se invoca:** explícita (`$reporte-semanal` en el prompt, o `/skills` para elegirla del menú) o **implícita** (Codex la elige solo cuando tu pedido encaja con la `description` — por eso conviene una descripción clara).
 
@@ -134,9 +134,9 @@ $skill-creator
 
 En un thread del Project, escribí:
 
-> *"Atlas, en `reportes/semana-2026-05-25/fuentes/` están las notas en crudo que dejó el pasante (varios archivos, uno por portal). Leélas TODAS, consolidá la info por empresa y generá el reporte con `$reporte-semanal`. Guardalo como `reporte-semana-2026-05-25.md` en esa misma carpeta de la semana. No inventes datos que no estén en las fuentes."*
+> *"Faro, en `reportes/semana-2026-05-25/fuentes/` están las notas en crudo que dejó el pasante (varios archivos, uno por portal). Leélas TODAS, consolidá la info por empresa y generá el reporte con `$reporte-semanal`. Guardalo como `reporte-semana-2026-05-25.md` en esa misma carpeta de la semana. No inventes datos que no estén en las fuentes."*
 
-> ✅ **🏁 Criterio de éxito (Milestone 1):** se generó el reporte, con todas las empresas, la tabla, las fuentes y la aclaración legal, **partiendo de varios archivos desordenados**. Si está, **Atlas ya nació.** *(Compará con el reporte de ejemplo de esa semana.)*
+> ✅ **🏁 Criterio de éxito (Milestone 1):** se generó el reporte, con todas las empresas, la tabla, las fuentes y la aclaración legal, **partiendo de varios archivos desordenados**. Si está, **Faro ya tomó forma.** *(Compará con el reporte de ejemplo de esa semana.)*
 
 > 🛠️ **Si algo sale mal:**
 >
@@ -146,10 +146,10 @@ En un thread del Project, escribí:
 
 ---
 
-# 🔎 Milestone 2 — Atlas aprende a investigar
+# 🔎 Milestone 2 — Faro aprende a investigar
 ### *(Web search · MCP / Connectors · Navegador)*
 
-**La idea (idéntica):** que Atlas consiga la info solo. Dado un ticker y un día, busca en la web y en un servicio de datos al que te conectás, y deja las fuentes en disco — reemplazando el copy-paste del pasante.
+**La idea (idéntica):** que Faro consiga la info solo. Dado un ticker y un día, busca en la web y en un servicio de datos al que te conectás, y deja las fuentes en disco — reemplazando el copy-paste del pasante.
 
 ## Paso 2.1 — Conectarte a un proveedor de datos (MCP server)
 
@@ -189,30 +189,30 @@ Después, dentro de una sesión, verificá con:
 
 **Probalo:** en un thread, escribí:
 
-> *"Usando el MCP de noticias de mercado, traeme las últimas noticias de `AAPL`. Mostrame qué devuelve."*
+> *"Usando el MCP de noticias de mercado, traeme las últimas noticias de `YPF`. Mostrame qué devuelve."*
 
-> 🌐 **La otra fuente — la web:** el **precio** lo saca Atlas de la página del ticker en Yahoo Finance con la **búsqueda web** (`web_search = "live"`); las **noticias**, de `https://finance.yahoo.com/news/`. Para páginas que no cargan bien, abrí el **navegador integrado** de Codex (ver 2.2 bis).
+> 🌐 **La otra fuente — la web:** el **precio** lo saca Faro de la página del ticker en Yahoo Finance con la **búsqueda web** (`web_search = "live"`); las **noticias**, de `https://finance.yahoo.com/news/`. Para páginas que no cargan bien, abrí el **navegador integrado** de Codex (ver 2.2 bis).
 
 ## Paso 2.1 bis — El navegador (equivalente a Claude in Chrome)
 
-Para páginas que dependen de JavaScript o no cargan bien con la búsqueda, Codex tiene un **navegador integrado** en la app (panel derecho), una **extensión de Chrome** y **Computer Use**. Pedile: *"abrí la página en el navegador integrado e inspeccioná el precio de `AAPL`"*.
+Para páginas que dependen de JavaScript o no cargan bien con la búsqueda, Codex tiene un **navegador integrado** en la app (panel derecho), una **extensión de Chrome** y **Computer Use**. Pedile: *"abrí la página en el navegador integrado e inspeccioná el precio de `YPF`"*.
 
 ## Paso 2.2 — Crear la Skill `buscar-accion` (ticker + día → guarda fuentes)
 
 1. En un thread del Project, escribí `$skill-creator`.
 2. Pegá la descripción:
 
-> *"Quiero crear una Skill llamada `buscar-accion`. Recibe un **ticker** (ej. AAPL) y un **día**. Busca info de esa acción en DOS fuentes: (1) la web **Yahoo Finance** —precio y variación en `finance.yahoo.com/quote/<TICKER>/`, y noticias en `https://finance.yahoo.com/news/`— usando la búsqueda web; y (2) el **MCP de noticias que conectaste** (MT Newswires u otro). Después **guarda en disco** lo que encontró, dentro de `reportes/semana-AAAA-MM-DD/fuentes/` (usando el lunes de esa semana), agregando un bloque por ticker en un archivo por fuente: `yahoo-finance.md` y `mt-newswires.md`. No inventa datos: si una fuente no devuelve algo, escribe 'dato no disponible'. Conserva los links reales y marca los precios como aproximados. Si el MCP no está disponible, avisa y sigue solo con Yahoo Finance."*
+> *"Quiero crear una Skill llamada `buscar-accion`. Recibe un **ticker** (ej. YPF) y un **día**. Busca info de esa acción en DOS fuentes: (1) la web **Yahoo Finance** —precio y variación en `finance.yahoo.com/quote/<TICKER>/`, y noticias en `https://finance.yahoo.com/news/`— usando la búsqueda web; y (2) el **MCP de noticias que conectaste** (MT Newswires u otro). Después **guarda en disco** lo que encontró, dentro de `reportes/semana-AAAA-MM-DD/fuentes/` (usando el lunes de esa semana), agregando un bloque por ticker en un archivo por fuente: `yahoo-finance.md` y `mt-newswires.md`. No inventa datos: si una fuente no devuelve algo, escribe 'dato no disponible'. Conserva los links reales y marca los precios como aproximados. Si el MCP no está disponible, avisa y sigue solo con Yahoo Finance."*
 
 3. Revisá el borrador y confirmá.
 
 > 📎 **Modelo a seguir:** la carpeta `reportes/semana-2026-06-01/fuentes/` muestra el tipo de material (archivos por fuente, con precios, titulares y links) que esta Skill debe dejar en disco.
 
-## Paso 2.3 — Que Atlas arme las fuentes solo
+## Paso 2.3 — Que Faro arme las fuentes solo
 
-> *"Atlas, usando `$buscar-accion`, buscá la info de la semana actual para `AAPL, MSFT, NVDA` (una por una) y guardá las fuentes en una carpeta `fuentes/` nueva. Cuando termines, armá el reporte con `$reporte-semanal` a partir de esas fuentes."*
+> *"Faro, usando `$buscar-accion`, buscá la info de la semana actual para `YPF, VIST, TS` (una por una) y guardá las fuentes en una carpeta `fuentes/` nueva. Cuando termines, armá el reporte con `$reporte-semanal` a partir de esas fuentes."*
 
-> ✅ **🏁 Criterio de éxito (Milestone 2):** Atlas llenó una carpeta `fuentes/` **partiendo de cero** (con datos que él mismo buscó) y con eso `reporte-semanal` armó el reporte — **sin que pegaras una sola noticia.**
+> ✅ **🏁 Criterio de éxito (Milestone 2):** Faro llenó una carpeta `fuentes/` **partiendo de cero** (con datos que él mismo buscó) y con eso `reporte-semanal` armó el reporte — **sin que pegaras una sola noticia.**
 
 > 🛠️ **Si algo sale mal:**
 >
@@ -222,7 +222,7 @@ Para páginas que dependen de JavaScript o no cargan bien con la búsqueda, Code
 
 ---
 
-# 🐣 Milestone 3 — Atlas trabaja solo
+# ⚙️ Milestone 3 — Faro trabaja solo
 ### *(MCP — Gmail · Automations)*
 
 ## Paso 3.1 — Conectar Gmail (MCP server)
@@ -240,25 +240,25 @@ args = ["-y", "<paquete-del-mcp-de-gmail>"]
 
 Seguí el inicio de sesión/autorización de Google que pida el server. Verificá con `/mcp`.
 
-> 📌 **Por qué importa:** con Gmail conectado, Atlas **distribuye** el reporte solo. Los MCP son la diferencia entre un agente que *escribe* y uno que *actúa* en tus apps.
+> 📌 **Por qué importa:** con Gmail conectado, Faro **distribuye** el reporte solo. Los MCP son la diferencia entre un agente que *escribe* y uno que *actúa* en tus apps.
 
 > ⚠️ **Diferencia honesta:** en Cowork Gmail es un connector "oficial" de un clic. En Codex usás un **MCP server de Gmail** (oficial del proveedor o de la comunidad). Más flexible, pero requiere elegir/instalar el server y autorizarlo una vez.
 
-## Paso 3.2 — Prueba de fuego: que Atlas distribuya el reporte por email
+## Paso 3.2 — Prueba de fuego: que Faro distribuya el reporte por email
 
-> *"Atlas, tomá el último reporte semanal de la carpeta y enviámelo por email a `pveiga@gmail.com` con el asunto «Pulso semanal de mercado — [fecha]» usando el MCP de Gmail. Poné el resumen ejecutivo y la tabla en el cuerpo del correo, en un formato prolijo, listo para que lo lea el equipo."*
+> *"Faro, tomá el último reporte semanal de la carpeta y enviámelo por email a `pveiga@gmail.com` con el asunto «Pulso semanal de mercado — [fecha]» usando el MCP de Gmail. Poné el resumen ejecutivo y la tabla en el cuerpo del correo, en un formato prolijo, listo para que lo lea el equipo."*
 
 La primera vez, Codex puede pedirte aprobación para usar la tool del MCP: aprobá.
 
 > ✅ **Mini-verificación:** revisá tu bandeja de entrada. Tiene que haber llegado el correo.
 
-## Paso 3.3 — Poner a Atlas en piloto automático (Automations)
+## Paso 3.3 — Poner a Faro en piloto automático (Automations)
 
 **En Cowork** usabas "Schedule". **En Codex** se llama **Automations**: tareas recurrentes que corren en segundo plano y reportan en **Triage** (la bandeja de Codex). Pueden disparar Skills con `$nombre-skill`.
 
 **Cómo crearla (la forma más simple): pedírselo a Codex en un thread.**
 
-> *"Creá una **automation** que corra **cada lunes a las 8:00**. En cada corrida: con `$buscar-accion` buscá la info de la semana de `AAPL, MSFT, NVDA` y guardá las fuentes; después con `$reporte-semanal` armá el reporte, guardalo en la carpeta del proyecto y enviámelo por email a `pveiga@gmail.com` con el asunto «Pulso semanal de mercado — [fecha]» usando el MCP de Gmail. Hacela una automation **standalone** (corrida independiente cada semana). Si no hay nada para reportar, archivá la corrida."*
+> *"Creá una **automation** que corra **cada lunes a las 8:00**. En cada corrida: con `$buscar-accion` buscá la info de la semana de `YPF, VIST, TS` y guardá las fuentes; después con `$reporte-semanal` armá el reporte, guardalo en la carpeta del proyecto y enviámelo por email a `pveiga@gmail.com` con el asunto «Pulso semanal de mercado — [fecha]» usando el MCP de Gmail. Hacela una automation **standalone** (corrida independiente cada semana). Si no hay nada para reportar, archivá la corrida."*
 
 Codex redacta el prompt durable, elige el tipo de automation y la programa. Confirmá: **semanal, lunes, 8:00** (o elegí "custom" e ingresá cron, ej. `0 8 * * 1`).
 
@@ -266,13 +266,13 @@ Codex redacta el prompt durable, elige el tipo de automation y la programa. Conf
 
 > ⚠️ **Recordá (igual que en Cowork):** las automations **con scope de proyecto** necesitan **la app de Codex corriendo y la carpeta disponible en disco**. OpenAI está extendiendo esto a ejecución en la nube, pero hoy, para este caso (que toca archivos locales y manda mail), conviene tener la app abierta. Sandbox: para que pueda escribir archivos y usar red, dejá el modo en **workspace-write** (no read-only).
 
-> ✅ **🏁 Criterio de éxito (Milestone 3):** (a) recibiste el email de prueba, y (b) en **Automations** aparece tu tarea «Pulso semanal», programada para los lunes. **Atlas ya trabaja solo.**
+> ✅ **🏁 Criterio de éxito (Milestone 3):** (a) recibiste el email de prueba, y (b) en **Automations** aparece tu tarea «Pulso semanal», programada para los lunes. **Faro ya trabaja solo.**
 
 > 🧪 **Tip:** no esperes al lunes. Probá el **prompt en un thread normal primero** (OpenAI lo recomienda antes de programar), y corré la automation a demanda para demostrarla en vivo. Revisá las primeras corridas en Triage y ajustá.
 
 ---
 
-# 🦅 Milestone 4 — Atlas vuela
+# 🦅 Milestone 4 — Faro vuela
 ### *(Tablero — HTML + navegador integrado / Codex Sites · Skills)*
 
 **La idea (igual):** el tablero no se arma a mano una sola vez. Una **Skill** lo publica y lo actualiza, y la enganchamos a la automation del lunes.
@@ -290,11 +290,11 @@ Codex redacta el prompt durable, elige el tipo de automation y la programa. Conf
 
 > 🎨 **Diseño de referencia:** si tenés `mockup-tablero.png` (el boceto del jefe), pasáselo: *"que el `tablero.html` se vea como este boceto"*.
 
-> 📌 **Por qué una Skill y no a mano:** un HTML aislado no se actualiza solo. El tablero se mantiene al día porque **Atlas regenera el archivo** cada vez que corre esta Skill — por eso conviene que la dispare la automation del lunes. (Mismo razonamiento que en Cowork.)
+> 📌 **Por qué una Skill y no a mano:** un HTML aislado no se actualiza solo. El tablero se mantiene al día porque **Faro regenera el archivo** cada vez que corre esta Skill — por eso conviene que la dispare la automation del lunes. (Mismo razonamiento que en Cowork.)
 
 ## Paso 4.2 — Publicar el tablero por primera vez
 
-> *"Atlas, usá `$publicar-tablero` para generar el tablero del equipo con el último reporte. Después abrilo en el navegador integrado para que lo vea."*
+> *"Faro, usá `$publicar-tablero` para generar el tablero del equipo con el último reporte. Después abrilo en el navegador integrado para que lo vea."*
 
 Para una **URL compartible** (lo más cercano a "Live"), publicá el HTML con **Codex Sites** o subilo a cualquier hosting estático (Pages, Vercel, etc.): *"publicá `tablero.html` como un sitio y pasame el link"*.
 
@@ -304,9 +304,9 @@ Editá la automation del Milestone 3 para que **termine** generando el tablero. 
 
 > *"…y por último, actualizá el tablero del equipo con `$publicar-tablero` (regenerá `tablero.html` con el reporte recién creado) y, si está publicado como sitio, volvé a publicarlo."*
 
-Ahora cada lunes, después de buscar la info, armar el reporte y mandar el email, Atlas **regenera el tablero** solo.
+Ahora cada lunes, después de buscar la info, armar el reporte y mandar el email, Faro **regenera el tablero** solo.
 
-> ✅ **🏁 Criterio de éxito (Milestone 4):** tenés un `tablero.html` con las empresas y la tabla (visible en el navegador integrado, y opcionalmente publicado), y la automation lo **regenera cada lunes** (probalo corriéndola a demanda). **Atlas ya vuela — y tu lunes quedó libre.**
+> ✅ **🏁 Criterio de éxito (Milestone 4):** tenés un `tablero.html` con las empresas y la tabla (visible en el navegador integrado, y opcionalmente publicado), y la automation lo **regenera cada lunes** (probalo corriéndola a demanda). **Faro ya vuela — y tu lunes quedó libre.**
 
 > 🛠️ **Si algo sale mal:**
 >
@@ -333,7 +333,7 @@ Seis piezas de Codex — **Projects, AGENTS.md, Skills, MCP servers, Automations
 | M1 · Project + `AGENTS.md` | Crear el Project y abrir el `AGENTS.md` | "Codex recuerda el contexto sin que yo lo repita" |
 | M1 · Skill `reporte-semanal` | `$skill-creator` y abrir el `SKILL.md`; juntar varias fuentes | "Una Skill convierte el caos (muchos archivos) en un entregable" |
 | M2 · MCP de datos | Conectar un MCP de noticias y pedir noticias de un ticker (`/mcp`) | "Conecto servicios externos sin programar (vía MCP)" |
-| M2 · Skill `buscar-accion` | Ver aparecer la carpeta `fuentes/` sola | "Atlas reemplaza el copy-paste del pasante" |
+| M2 · Skill `buscar-accion` | Ver aparecer la carpeta `fuentes/` sola | "Faro reemplaza el copy-paste del pasante" |
 | M3 · Gmail (MCP) | El email llegando a la bandeja | "MCP = Codex que actúa en mis apps" |
 | M3 · Automations | Correr la automation a demanda para no esperar al lunes | "Puedo delegar trabajo recurrente" |
 | M4 · Skill `publicar-tablero` | Correr la Skill y abrir `tablero.html` en el navegador integrado | "Hasta publicar el dashboard se automatiza con una Skill" |
@@ -341,7 +341,7 @@ Seis piezas de Codex — **Projects, AGENTS.md, Skills, MCP servers, Automations
 
 **Errores comunes a anticipar (versión Codex):**
 
-- Olvidarse de poner `web_search = "live"` (o `--search`) → Atlas no consigue precios/noticias frescas en el M2.
+- Olvidarse de poner `web_search = "live"` (o `--search`) → Faro no consigue precios/noticias frescas en el M2.
 - MCP de noticias o de Gmail mal configurado (token/`command`) → `buscar-accion` se queda solo con Yahoo, o no manda el mail. Diagnosticá con `/mcp`.
 - Dejar el sandbox en **read-only** → las automations fallan al escribir archivos o usar red. Pasá a **workspace-write**.
 - Cerrar la app y esperar que la automation de proyecto corra igual → necesita la app abierta y la carpeta en disco.

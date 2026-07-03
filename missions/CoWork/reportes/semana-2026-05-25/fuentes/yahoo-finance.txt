@@ -2,7 +2,10 @@ FUENTE: Yahoo Finance  |  SEMANA DEL 18 AL 22 DE MAYO 2026
 (cotizaciones copiadas de finance.yahoo.com)
 *** precios aprox, confirmar ***
 
--- Cotizaciones al viernes (cierre aprox) --  LA SEMANA DE NVIDIA
-NVDA  ~ 232   (+13% en la semana!!)  https://finance.yahoo.com/quote/NVDA/
-AAPL  ~ 300   (+2,7%)                https://finance.yahoo.com/quote/AAPL/
-MSFT  ~ 450   (+1,1%)                https://finance.yahoo.com/quote/MSFT/
+-- Cotizaciones al viernes (cierre aprox) --  LA SEMANA DE YPF Y VISTA
+YPF   ~ 48    (+9,0% en la semana!!)  https://finance.yahoo.com/quote/YPF/
+VIST  ~ 81    (+4,0%, maximo el 20/5)  https://finance.yahoo.com/quote/VIST/
+TS    ~ 49    (+6,0%)                 https://finance.yahoo.com/quote/TS/
+
+-- Nota / VIST --
+=> el 20 de mayo toco un maximo historico cerca de 81,4. semanon.

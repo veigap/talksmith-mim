@@ -1,13 +1,11 @@
 FUENTE: Yahoo Finance  |  SEMANA DEL 11 AL 15 DE MAYO 2026
-(lo que copie de finance.yahoo.com - cotizaciones y la nota de Apple)
+(cotizaciones copiadas de finance.yahoo.com)
 *** precios aprox, anotados de memoria. confirmar ***
 
 -- Cotizaciones al viernes (cierre aprox) --
-AAPL  ~ 290   (+1,5% en la semana)   https://finance.yahoo.com/quote/AAPL/
-MSFT  ~ 445   (+1,8%)                https://finance.yahoo.com/quote/MSFT/
-NVDA  ~ 205   (-2,5%)                https://finance.yahoo.com/quote/NVDA/
+YPF   ~ 44    (+2,0% en la semana)   https://finance.yahoo.com/quote/YPF/
+VIST  ~ 78    (+3,5%)                https://finance.yahoo.com/quote/VIST/
+TS    ~ 46    (+1,5%)                https://finance.yahoo.com/quote/TS/
 
--- Nota / Apple (AAPL) --
-"Apple's WWDC 2026 'Key Catalyst' for AAPL stock, will decide AI positioning: Morgan Stanley"
-https://finance.yahoo.com/news/
-=> todo gira alrededor del WWDC del 8 de junio (Siri con IA). preguntar a Juan el numero de iPhone.
+-- Nota / YPF --
+=> se viene un anuncio grande de Vaca Muerta (proyecto de exportacion al RIGI). preguntar a Juan la cifra.

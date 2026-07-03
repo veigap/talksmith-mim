@@ -1,7 +1,0 @@
-FUENTE: The Next Platform  |  SEMANA DEL 11 AL 15 DE MAYO 2026
-
--- Microsoft (MSFT) --
-"Microsoft committed to doubling AI infrastructure in two years"
-https://www.nextplatform.com/cloud/2026/05/04/microsoft-committed-to-doubling-ai-infrastructure-in-two-years/5219208
-=> el tema fuerte: van a gastar como 190.000 millones en 2026 en data centers / IA.
-=> antesala de la conferencia Build 2026 (anuncios de "agentes" de IA).

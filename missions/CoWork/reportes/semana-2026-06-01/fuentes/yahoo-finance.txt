@@ -3,11 +3,9 @@ FUENTE: Yahoo Finance  |  SEMANA DEL 25 AL 29 DE MAYO 2026
 *** precios aprox, confirmar ***
 
 -- Cotizaciones al viernes (cierre aprox) --  cierre de mayo
-AAPL  ~ 315   (+5,0% en la semana)   https://finance.yahoo.com/quote/AAPL/
-MSFT  ~ 452   (+0,4%)                https://finance.yahoo.com/quote/MSFT/
-NVDA  ~ 214   (-7,8%)                https://finance.yahoo.com/quote/NVDA/
+VIST  ~ 73    (-10,0% en la semana)   https://finance.yahoo.com/quote/VIST/
+YPF   ~ 47    (-2,0%)                 https://finance.yahoo.com/quote/YPF/
+TS    ~ 49    (+0,5%)                 https://finance.yahoo.com/quote/TS/
 
--- Nota / Apple (AAPL) --  *** la mejor de la semana ***
-"Apple's WWDC 2026 'Key Catalyst' for AAPL stock" (Morgan Stanley)
-https://finance.yahoo.com/news/
-=> a pocos dias del WWDC (8 de junio) no para de subir. cerca de records.
+-- Nota / VIST --  *** la mas movida de la semana ***
+=> despues del maximo (~81) toco ~71 el 27/5. correccion normal, no me asustaria.

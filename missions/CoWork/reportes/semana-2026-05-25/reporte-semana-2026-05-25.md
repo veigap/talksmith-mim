@@ -4,33 +4,33 @@
 
 ## Resumen ejecutivo
 
-Semana marcada por **Nvidia**. El martes presentó resultados **récord** —ingresos por US$ 81.600 millones, +85% interanual— y la acción saltó con fuerza, llevando el ánimo del grupo hacia arriba. **Apple** siguió subiendo de la mano de subas de precio objetivo rumbo al WWDC, y **Microsoft** acompañó con una suba moderada. La mejor semana del mes para la canasta.
+La gran semana del mes. **YPF** presentó al régimen RIGI el mayor proyecto de inversión de su historia —US$ 25.000 millones en Vaca Muerta— y la acción saltó. **Vista** tocó un máximo histórico (~US$ 81) y subió su guía de producción para 2026. **Tenaris** acompañó con mejoras de precio objetivo de los analistas, con los caños de perforación en máximos. La mejor semana para la canasta.
 
 ---
 
-## 🎮 Nvidia — NVDA
-- **Cierre aprox.:** US$ 232 · **Semana:** +13% 🟢 ⭐
+## 🛢️ YPF — YPF
+- **Cierre aprox.:** US$ 48 · **Semana:** +9,0% 🟢 ⭐
 - **Noticias:**
-  - **Resultados trimestrales récord:** ingresos de US$ 81.600 millones (+85% interanual); el negocio de centros de datos llegó a US$ 75.200 millones (+92%).
-  - Anunció además una recompra de acciones por US$ 80.000 millones y subió su dividendo.
+  - **La noticia de la semana:** presentó al RIGI el proyecto "LLL Oil", US$ 25.000 millones a 15 años en Vaca Muerta — la mayor solicitud del régimen hasta ahora.
+  - Se estiman exportaciones por ~US$ 6.000 millones al año desde 2032 y unos 6.000 empleos directos.
 - **Ánimo:** Positivo — la gran ganadora de la semana.
-- **A vigilar:** si la demanda de chips se mantiene a este ritmo.
+- **A vigilar:** la aprobación del proyecto y los plazos de ejecución.
 
-## 🍎 Apple — AAPL
-- **Cierre aprox.:** US$ 300 · **Semana:** +2,7% 🟢
+## ⛽ Vista Energy — VIST
+- **Cierre aprox.:** US$ 81 · **Semana:** +4,0% 🟢 ⭐
 - **Noticias:**
-  - Varios analistas subieron su precio objetivo de cara al WWDC (Evercore lo llevó a US$ 365).
-  - Morgan Stanley califica al evento del 8 de junio como "catalizador clave".
-- **Ánimo:** Positivo — momentum sostenido.
-- **A vigilar:** que el WWDC confirme la historia de IA.
+  - Tocó un **máximo histórico (~US$ 81,4 el 20 de mayo)**, empujada por el envión de Vaca Muerta.
+  - Subió su guía de producción 2026 a ~143.000 boe/d y su EBITDA ajustado estimado a ~US$ 2.600 millones.
+- **Ánimo:** Positivo — máximos históricos.
+- **A vigilar:** el precio del petróleo Brent, del que depende su guía.
 
-## 🪟 Microsoft — MSFT
-- **Cierre aprox.:** US$ 450 · **Semana:** +1,1% 🟢
+## 🏭 Tenaris — TS
+- **Cierre aprox.:** US$ 49 · **Semana:** +6,0% 🟢
 - **Noticias:**
-  - Semana tranquila, digiriendo lo de Build.
-  - Morgan Stanley mantiene una visión muy positiva sobre el potencial de Azure.
-- **Ánimo:** Positivo — tendencia firme.
-- **A vigilar:** el ritmo de gasto en IA.
+  - Varios analistas subieron su precio objetivo (Piper Sandler y Morgan Stanley), con calificación de compra.
+  - Los precios de los caños de perforación (OCTG) siguen en máximos de varios años.
+- **Ánimo:** Positivo — viento a favor de los analistas.
+- **A vigilar:** que la actividad de perforación sostenga la demanda.
 
 ---
 
@@ -38,15 +38,15 @@ Semana marcada por **Nvidia**. El martes presentó resultados **récord** —ing
 
 | Empresa | Ticker | Variación semana | Ánimo |
 |---------|--------|------------------|-------|
-| Nvidia | NVDA | +13% | Positivo |
-| Apple | AAPL | +2,7% | Positivo |
-| Microsoft | MSFT | +1,1% | Positivo |
+| YPF | YPF | +9,0% | Positivo |
+| Vista Energy | VIST | +4,0% | Positivo |
+| Tenaris | TS | +6,0% | Positivo |
 
 ---
 
 ## 🔗 Fuentes principales
-- Nvidia, resultados récord (comunicado oficial) — [SEC Form 8-K](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm)
-- Nvidia, cobertura de resultados — [Bloomberg](https://www.bloomberg.com/news/live-blog/2026-05-20/nvidia-first-quarter-earnings)
-- Apple, WWDC "catalizador clave" — [MacDailyNews](https://macdailynews.com/2026/06/02/morgan-stanley-apples-wwdc-2026-a-key-catalyst-for-aapl-stock/)
+- YPF, proyecto de US$ 25.000 M al RIGI — [Industrial Info](https://www.industrialinfo.com/iirenergy/industry-news/article/argentinas-ypf-to-invest-us25-billion-in-vaca-muerta--358173)
+- Vista, mayor exportador de Vaca Muerta y guía al alza — [Seeking Alpha](https://seekingalpha.com/article/4887699-vista-energy-stock-strong-operational-performance-top-vaca-muerta-exporter)
+- Tenaris, resultados y perspectiva — [Investing.com](https://www.investing.com/news/transcripts/earnings-call-transcript-tenaris-q1-2026-shows-resilience-amid-geopolitical-tensions-93CH-4685798)
 
 *Reporte interno e informativo; no constituye asesoramiento financiero.*
