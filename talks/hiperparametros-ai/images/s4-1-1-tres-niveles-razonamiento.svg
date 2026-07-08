@@ -1,0 +1,75 @@
+<svg viewBox="0 0 1120 620" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<title>Razonamiento: Thinking / Deep Thinking</title>
+<desc>Progresión de tres escalones de izquierda a derecha: Respuesta directa, Thinking y Deep Thinking. A más razonamiento, la calidad, la latencia y el costo suben juntos. Regla: emparejar el modo con la dificultad de la tarea.</desc>
+<rect x="0" y="0" width="1120" height="620" fill="#ffffff"/>
+
+<!-- Section label -->
+<text x="60" y="52" font-size="17" font-weight="bold" fill="#3B3535">Razonamiento: Thinking / Deep Thinking</text>
+<text x="60" y="76" font-size="14" fill="#6E6767">Una progresión de tres escalones, no un interruptor de sí/no</text>
+
+<!-- ===== Three step boxes (top row) ===== -->
+<!-- Box 1: Respuesta directa -->
+<rect x="60" y="104" width="300" height="70" rx="6" fill="#F2F1F1" stroke="#3B3535" stroke-width="1.5"/>
+<text x="210" y="134" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">RESPUESTA DIRECTA</text>
+<text x="210" y="156" font-size="13" fill="#6E6767" text-anchor="middle">(sin pensar)</text>
+
+<!-- Arrow 1 -->
+<line x1="366" y1="139" x2="404" y2="139" stroke="#3B3535" stroke-width="2"/>
+<polygon points="404,133 416,139 404,145" fill="#3B3535"/>
+
+<!-- Box 2: Thinking -->
+<rect x="422" y="104" width="276" height="70" rx="6" fill="#F2F1F1" stroke="#3B3535" stroke-width="1.5"/>
+<text x="560" y="134" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">THINKING</text>
+<text x="560" y="156" font-size="13" fill="#6E6767" text-anchor="middle">(pensar)</text>
+
+<!-- Arrow 2 -->
+<line x1="704" y1="139" x2="742" y2="139" stroke="#3B3535" stroke-width="2"/>
+<polygon points="742,133 754,139 742,145" fill="#3B3535"/>
+
+<!-- Box 3: Deep Thinking -->
+<rect x="760" y="104" width="300" height="70" rx="6" fill="#F2F1F1" stroke="#3B3535" stroke-width="1.5"/>
+<text x="910" y="134" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">DEEP THINKING</text>
+<text x="910" y="156" font-size="13" fill="#6E6767" text-anchor="middle">(pensar profundo)</text>
+
+<!-- ===== Bullets under each step ===== -->
+<!-- Col 1 -->
+<text x="210" y="206" font-size="13.5" fill="#3B3535" text-anchor="middle">+ rápido</text>
+<text x="210" y="228" font-size="13.5" fill="#3B3535" text-anchor="middle">+ barato</text>
+<text x="210" y="250" font-size="13.5" fill="#3B3535" text-anchor="middle">tareas simples</text>
+<!-- Col 2 -->
+<text x="560" y="206" font-size="13.5" fill="#3B3535" text-anchor="middle">razona un poco</text>
+<text x="560" y="228" font-size="13.5" fill="#3B3535" text-anchor="middle">buen balance</text>
+<text x="560" y="250" font-size="13.5" fill="#3B3535" text-anchor="middle">tareas no triviales</text>
+<!-- Col 3 -->
+<text x="910" y="206" font-size="13.5" fill="#3B3535" text-anchor="middle">razona mucho más</text>
+<text x="910" y="228" font-size="13.5" fill="#3B3535" text-anchor="middle">mejor en tareas difíciles</text>
+<text x="910" y="250" font-size="13.5" fill="#3B3535" text-anchor="middle">análisis / multi-paso</text>
+
+<!-- ===== Three rising axes ===== -->
+<!-- Panel band -->
+<rect x="60" y="290" width="1000" height="200" rx="6" fill="#FAFAFA" stroke="#D8D6D6" stroke-width="1"/>
+<text x="80" y="316" font-size="13" font-weight="bold" fill="#6E6767">A más razonamiento, suben juntos:</text>
+
+<!-- axis geometry: labels at left x=80..170, arrows rise from y_low to y_high, "sube" at right -->
+<!-- calidad -->
+<text x="80" y="360" font-size="14" fill="#3B3535">calidad</text>
+<line x1="185" y1="368" x2="920" y2="340" stroke="#3B3535" stroke-width="2"/>
+<polygon points="920,333 933,339 921,347" fill="#3B3535"/>
+<text x="945" y="345" font-size="14" font-weight="bold" fill="#3B3535">sube</text>
+
+<!-- latencia -->
+<text x="80" y="410" font-size="14" fill="#3B3535">latencia</text>
+<line x1="185" y1="418" x2="920" y2="390" stroke="#3B3535" stroke-width="2"/>
+<polygon points="920,383 933,389 921,397" fill="#3B3535"/>
+<text x="945" y="395" font-size="14" font-weight="bold" fill="#3B3535">sube</text>
+
+<!-- costo -->
+<text x="80" y="460" font-size="14" fill="#3B3535">costo</text>
+<line x1="185" y1="468" x2="920" y2="440" stroke="#3B3535" stroke-width="2"/>
+<polygon points="920,433 933,439 921,447" fill="#3B3535"/>
+<text x="945" y="445" font-size="14" font-weight="bold" fill="#3B3535">sube</text>
+
+<!-- ===== Rule banner (focal, red) ===== -->
+<rect x="60" y="524" width="1000" height="60" rx="6" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+<text x="560" y="561" font-size="16.5" font-weight="bold" fill="#DA1B2E" text-anchor="middle">Regla: emparejá el modo con la dificultad de la tarea</text>
+</svg>

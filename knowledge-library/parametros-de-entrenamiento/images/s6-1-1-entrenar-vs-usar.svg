@@ -1,0 +1,30 @@
+<svg viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>Dos momentos: entrenar vs. usar</title>
+  <desc>Dos cajas unidas por una flecha. La caja izquierda, ENTRENAMIENTO (una vez, caro), contiene tamaño del modelo y learning rate: lo decide quien lo construye. La flecha apunta a la derecha, a la caja USO / INFERENCIA (cada consulta), resaltada en rojo, que contiene temperatura, top-p, tokens máximos y contexto: lo tocás vos al usarlo.</desc>
+
+  <rect x="0" y="0" width="820" height="340" fill="#ffffff"/>
+
+  <!-- LEFT box: ENTRENAMIENTO (provider, neutral) -->
+  <text x="205" y="52" text-anchor="middle" font-size="18" font-weight="bold" fill="#3B3535">ENTRENAMIENTO</text>
+  <text x="205" y="74" text-anchor="middle" font-size="14" fill="#6E6767">(una vez, caro)</text>
+
+  <rect x="45" y="92" width="320" height="120" rx="6" fill="#F4F2F2" stroke="#3B3535" stroke-width="2"/>
+  <text x="205" y="138" text-anchor="middle" font-size="17" fill="#3B3535">tamaño del modelo</text>
+  <text x="205" y="172" text-anchor="middle" font-size="17" fill="#3B3535">learning rate</text>
+
+  <text x="205" y="248" text-anchor="middle" font-size="14" fill="#6E6767">lo decide quien lo construye</text>
+
+  <!-- ARROW training -> use -->
+  <line x1="375" y1="152" x2="450" y2="152" stroke="#3B3535" stroke-width="3"/>
+  <polygon points="450,142 472,152 450,162" fill="#3B3535"/>
+
+  <!-- RIGHT box: USO / INFERENCIA (business, RED FOCAL) -->
+  <text x="617" y="52" text-anchor="middle" font-size="18" font-weight="bold" fill="#DA1B2E">USO / INFERENCIA</text>
+  <text x="617" y="74" text-anchor="middle" font-size="14" fill="#DA1B2E">(cada consulta)</text>
+
+  <rect x="472" y="92" width="320" height="120" rx="6" fill="#FCEBED" stroke="#DA1B2E" stroke-width="3"/>
+  <text x="632" y="138" text-anchor="middle" font-size="17" fill="#3B3535">temperatura, top-p,</text>
+  <text x="632" y="172" text-anchor="middle" font-size="17" fill="#3B3535">tokens máx., contexto</text>
+
+  <text x="632" y="248" text-anchor="middle" font-size="14" font-weight="bold" fill="#DA1B2E">lo tocás vos al usarlo</text>
+</svg>

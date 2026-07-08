@@ -1,0 +1,36 @@
+<svg viewBox="0 0 680 295" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Las dos caras de la seguridad</title>
+  <desc id="d">La seguridad tiene dos caras: protegerte de los que atacan, y cumplir lo que prometiste.</desc>
+
+  <!-- canvas -->
+  <rect x="0" y="0" width="680" height="295" fill="#ffffff"/>
+
+  <!-- overline labels -->
+  <text x="180" y="36" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#7A7373">LO QUE IMAGINAMOS</text>
+  <text x="500" y="36" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#3B3535" font-weight="bold">LO QUE PASA DE VERDAD</text>
+
+  <!-- left panel: Cara 1 (neutral) -->
+  <rect x="40" y="50" width="280" height="132" rx="6" fill="#F2F0F0" stroke="#C9C4C4" stroke-width="1.5"/>
+  <text x="180" y="82" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">CARA 1: EL ATAQUE</text>
+  <line x1="70" y1="96" x2="290" y2="96" stroke="#C9C4C4" stroke-width="1"/>
+  <text x="180" y="122" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">hackers, malware</text>
+  <text x="180" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#7A7373">el candado roto</text>
+
+  <!-- right panel: Cara 2 (focal, red accent) -->
+  <rect x="360" y="50" width="280" height="132" rx="6" fill="#ffffff" stroke="#DA1B2E" stroke-width="3"/>
+  <text x="500" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#DA1B2E">CARA 2: LAS PROMESAS</text>
+  <text x="500" y="96" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#DA1B2E">INCUMPLIDAS</text>
+  <line x1="390" y1="108" x2="610" y2="108" stroke="#DA1B2E" stroke-width="1"/>
+  <text x="500" y="132" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">datos fuera de control</text>
+  <text x="500" y="158" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">la puerta abierta</text>
+
+  <!-- left arrow (subdued) -->
+  <line x1="180" y1="238" x2="180" y2="192" stroke="#9B9494" stroke-width="2"/>
+  <polygon points="180,183 174,194 186,194" fill="#9B9494"/>
+  <text x="180" y="262" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#7A7373">casi todos miran acá</text>
+
+  <!-- right arrow (dominant, red) -->
+  <line x1="500" y1="236" x2="500" y2="196" stroke="#DA1B2E" stroke-width="5"/>
+  <polygon points="500,183 490,198 510,198" fill="#DA1B2E"/>
+  <text x="500" y="264" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#DA1B2E">la IA golpea acá</text>
+</svg>

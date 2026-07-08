@@ -1,0 +1,18 @@
+  RESPUESTA DIRECTA  -->   THINKING          -->   DEEP THINKING
+  (sin pensar)             (pensar)                (pensar profundo)
+
+  + rápido                 razona un poco          razona mucho más
+  + barato                 buen balance            mejor en tareas difíciles
+  tareas simples           tareas no triviales     análisis / multi-paso
+
+  calidad  ------------------------------------------->  sube
+  latencia ------------------------------------------->  sube
+  costo    ------------------------------------------->  sube
+
+  Regla: emparejá el modo con la dificultad de la tarea
+
+<!-- ascii-note:
+intent: mostrar la progresión de tres niveles de razonamiento como los exponen las herramientas — respuesta directa (rápido/barato, tareas simples) → Thinking (razonamiento moderado, balance) → Deep Thinking (razonamiento profundo, mejor en tareas difíciles pero más lento/caro)
+emphasize: la progresión de izquierda a derecha (directa → Thinking → Deep Thinking) y cómo calidad, latencia y costo suben juntos; la regla de ajustar el modo a la dificultad
+labels: "RESPUESTA DIRECTA (sin pensar)", "THINKING (pensar)", "DEEP THINKING (pensar profundo)", ejes calidad ↑ / latencia ↑ / costo ↑, la regla de cierre
+-->

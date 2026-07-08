@@ -1,0 +1,17 @@
+  ON-PREM            SAAS / NUBE                  IA
++-----------+      +----------------------+     +----------------+
+| tu red    | ---> | proveedor            | --> | la persona     |
+| firewall  |      | contrato, identidad, |     | y su criterio  |
+| VPN       |      | registros            |     |                |
++-----------+      +----------------------+     +----------------+
+ perimetro:         perimetro:                   perimetro:
+ muro fisico        contrato +                   decision
+ y de red           identidad                    individual
+ gobernado: SI      gobernado: SI                gobernado:
+ (vos)              (delegado)                   A MENUDO, NO
+
+<!-- ascii-note:
+intent: evolucion del perimetro de seguridad en tres etapas (on-prem, SaaS, IA) — el salto peligroso es perder la gobernanza, no ceder el control
+emphasize: la tercera columna (IA) y su "gobernado: A MENUDO, NO" — es la anomalia de la serie
+labels: fila superior = donde viven los datos; filas inferiores = que es el perimetro y si esta gobernado
+-->

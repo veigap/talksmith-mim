@@ -1,0 +1,51 @@
+<svg viewBox="0 0 680 330" xmlns="http://www.w3.org/2000/svg">
+  <title>Dos momentos: entrenar vs. usar</title>
+  <desc>Dos paneles separan el ciclo de vida del modelo: entrenar (una vez, caro, lo decide quien lo construye) y usar o inferencia (cada consulta, barato, lo ajusta el usuario de negocio).</desc>
+
+  <rect x="0" y="0" width="680" height="330" fill="#ffffff"/>
+
+  <!-- ===== LEFT PANEL: ENTRENAR ===== -->
+  <!-- panel header -->
+  <text x="180" y="42" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#3B3535">Entrenar</text>
+  <text x="180" y="63" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#6A737D">se construye el modelo</text>
+
+  <!-- panel box -->
+  <rect x="42" y="82" width="276" height="132" rx="8" fill="#F4F5F6" stroke="#6A737D" stroke-width="1.6"/>
+
+  <!-- knobs list -->
+  <text x="62" y="118" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">Se fijan una vez:</text>
+  <circle cx="70" cy="145" r="3" fill="#6A737D"/>
+  <text x="82" y="150" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#3B3535">tamaño del modelo</text>
+  <circle cx="70" cy="176" r="3" fill="#6A737D"/>
+  <text x="82" y="181" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#3B3535">learning rate</text>
+
+  <!-- footer labels: who, cost, frequency -->
+  <text x="180" y="244" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#6A737D">Lo decide</text>
+  <text x="180" y="262" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#3B3535">quien construye el modelo</text>
+  <text x="180" y="284" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6A737D">Costo: alto · una sola vez</text>
+
+  <!-- ===== DIVIDER + ARROW ===== -->
+  <line x1="340" y1="30" x2="340" y2="300" stroke="#D5D8DC" stroke-width="1.4" stroke-dasharray="5 5"/>
+  <!-- arrow from training to use -->
+  <g>
+    <line x1="322" y1="148" x2="356" y2="148" stroke="#6A737D" stroke-width="2.4"/>
+    <polygon points="356,148 348,143 348,153" fill="#6A737D"/>
+  </g>
+
+  <!-- ===== RIGHT PANEL: USAR (focal, red) ===== -->
+  <text x="500" y="42" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#DA1B2E">Usar (inferencia)</text>
+  <text x="500" y="63" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#6A737D">cada vez que consultás</text>
+
+  <!-- panel box (accent) -->
+  <rect x="362" y="82" width="276" height="132" rx="8" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="1.8"/>
+
+  <text x="382" y="118" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">Las perillas que <tspan font-weight="bold" fill="#DA1B2E">vos</tspan> ajustás:</text>
+  <circle cx="390" cy="145" r="3" fill="#DA1B2E"/>
+  <text x="402" y="150" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#3B3535">temperatura, top-p</text>
+  <circle cx="390" cy="176" r="3" fill="#DA1B2E"/>
+  <text x="402" y="181" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#3B3535">tokens máx., contexto</text>
+
+  <text x="500" y="244" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#6A737D">Lo tocás</text>
+  <text x="500" y="262" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#DA1B2E">vos, al usarlo</text>
+  <text x="500" y="284" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6A737D">Costo: bajo · en cada consulta</text>
+</svg>

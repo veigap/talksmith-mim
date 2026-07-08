@@ -1,0 +1,14 @@
+  Bajar por la montaña hacia la mejor versión del modelo:
+
+  PASO GRANDE (LR alto)        PASO CHICO (LR bajo)
+     o                            o
+      \  rebota, se pasa           \
+       \_/  \_/                     `._
+      inestable                    `._  lento pero seguro
+                                       *  (llega)
+
+<!-- ascii-note:
+intent: ilustrar learning rate como tamaño de paso al descender hacia el óptimo; pasos grandes rebotan, pasos chicos son lentos pero estables
+emphasize: el contraste de trayectoria — rebote inestable vs descenso lento y seguro
+labels: "PASO GRANDE (LR alto) inestable", "PASO CHICO (LR bajo) lento pero seguro (llega)", metáfora de la montaña
+-->

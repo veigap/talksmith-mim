@@ -1,0 +1,67 @@
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>El camino del dato</title>
+  <desc>La API ya quedó presentada en el glosario de Fundamentos (el mesero) — este diagrama es la versión ampliada del panel 3 de "la arquitectura en tres saltos".</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3B3535"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="680" height="400" fill="#ffffff"/>
+
+  <!-- ===== main flow row ===== -->
+  <!-- box A: tu teclado / navegador -->
+  <rect x="36" y="56" width="156" height="64" rx="6" fill="#F4F2F1" stroke="#8A8484" stroke-width="1.5"/>
+  <text x="114" y="84" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535" text-anchor="middle">tu teclado</text>
+  <text x="114" y="103" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535" text-anchor="middle">navegador</text>
+
+  <!-- arrow A -> B with [1] -->
+  <line x1="192" y1="88" x2="258" y2="88" stroke="#3B3535" stroke-width="1.75" marker-end="url(#arrow)"/>
+  <circle cx="228" cy="64" r="11" fill="#DA1B2E"/>
+  <text x="228" y="68.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="228" y="110" font-family="Helvetica, Arial, sans-serif" font-size="12" font-style="italic" fill="#7A7373" text-anchor="middle">tránsito</text>
+
+  <!-- box B: proveedor (un tercero) — [2] attached to the box -->
+  <rect x="264" y="56" width="176" height="64" rx="6" fill="#F4F2F1" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="352" y="84" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535" text-anchor="middle">proveedor</text>
+  <text x="352" y="103" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535" text-anchor="middle">(un tercero)</text>
+  <circle cx="352" cy="56" r="11" fill="#DA1B2E"/>
+  <text x="352" y="60.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+
+  <!-- proveedor retention caption -->
+  <line x1="352" y1="120" x2="352" y2="150" stroke="#8A8484" stroke-width="1.25" stroke-dasharray="3,3"/>
+  <text x="352" y="168" font-family="Helvetica, Arial, sans-serif" font-size="12" font-style="italic" fill="#7A7373" text-anchor="middle">retención · logs</text>
+
+  <!-- arrow B -> C -->
+  <line x1="440" y1="88" x2="506" y2="88" stroke="#3B3535" stroke-width="1.75" marker-end="url(#arrow)"/>
+
+  <!-- box C: modelo (LLM) -->
+  <rect x="512" y="56" width="132" height="64" rx="6" fill="#F4F2F1" stroke="#8A8484" stroke-width="1.5"/>
+  <text x="578" y="84" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535" text-anchor="middle">modelo</text>
+  <text x="578" y="103" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535" text-anchor="middle">(LLM)</text>
+
+  <!-- ===== return path: modelo -> respuesta -> usuario ===== -->
+  <polyline points="578,120 578,232 114,232 114,128" fill="none" stroke="#3B3535" stroke-width="1.75" stroke-linejoin="round" marker-end="url(#arrow)"/>
+  <text x="346" y="224" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535" text-anchor="middle">respuesta</text>
+
+  <!-- [3] entrenamiento, on the descending segment from modelo -->
+  <circle cx="578" cy="162" r="11" fill="#DA1B2E"/>
+  <text x="578" y="166.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="560" y="166" font-family="Helvetica, Arial, sans-serif" font-size="12" font-style="italic" fill="#7A7373" text-anchor="end">entrenamiento</text>
+
+  <!-- ===== legend ===== -->
+  <line x1="36" y1="262" x2="644" y2="262" stroke="#E3E0DE" stroke-width="1"/>
+
+  <circle cx="56" cy="286" r="10" fill="#DA1B2E"/>
+  <text x="56" y="290.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="76" y="290" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">viaja por internet — sale de tu máquina</text>
+
+  <circle cx="56" cy="318" r="10" fill="#DA1B2E"/>
+  <text x="56" y="322.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="76" y="322" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">queda en servidores del proveedor — retención y logs</text>
+
+  <circle cx="56" cy="350" r="10" fill="#DA1B2E"/>
+  <text x="56" y="354.5" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <text x="76" y="354" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535">según el plan, puede usarse para entrenar el modelo</text>
+</svg>

@@ -1,0 +1,12 @@
+  TEMPERATURA BAJA (~0)          TEMPERATURA ALTA (~1)
+  azul  [============]           azul  [======]
+  gris  [=]                      gris  [=====]
+  claro [ ]                      claro [====]
+  -> casi siempre "azul"         -> puede salir cualquiera
+  PREDECIBLE / CONSISTENTE       VARIADO / CREATIVO
+
+<!-- ascii-note:
+intent: contrastar cómo la temperatura baja concentra la elección en el top y la alta aplana la distribución
+emphasize: el antes/después; baja = una barra domina, alta = barras parejas; las etiquetas PREDECIBLE vs CREATIVO
+labels: dos paneles "TEMPERATURA BAJA (~0)" y "TEMPERATURA ALTA (~1)", barras por candidato, etiquetas de resultado
+-->

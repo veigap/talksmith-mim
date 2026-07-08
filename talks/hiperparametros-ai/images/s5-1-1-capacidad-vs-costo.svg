@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="Helvetica, Arial, sans-serif">
+  <title>Elegir el modelo: capacidad vs. costo/latencia</title>
+  <desc>Grafico de dispersion. Eje Y CAPACIDAD (calidad) ascendente; eje X COSTO / LATENCIA por consulta ascendente. Tres niveles sobre una diagonal ascendente: MINI / rapido abajo a la izquierda (opcion recomendada, resaltada), intermedio al centro, GRANDE / flagship arriba a la derecha. Regla: el mas chico/rapido que resuelva bien la tarea.</desc>
+
+  <rect x="0" y="0" width="960" height="720" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="60" y="52" font-size="27" font-weight="bold" fill="#3B3535">Elegir el modelo: la perilla que todos tocan</text>
+
+  <!-- ===== Plot area: x from 150 to 830 ; y from 110 (top) to 560 (baseline) ===== -->
+
+  <!-- Axes -->
+  <line x1="150" y1="110" x2="150" y2="560" stroke="#3B3535" stroke-width="2.5"/>
+  <line x1="150" y1="560" x2="850" y2="560" stroke="#3B3535" stroke-width="2.5"/>
+  <!-- arrowheads -->
+  <polygon points="150,100 145,114 155,114" fill="#3B3535"/>
+  <polygon points="860,560 846,555 846,565" fill="#3B3535"/>
+
+  <!-- Y axis label -->
+  <text x="60" y="300" font-size="17" font-weight="bold" fill="#3B3535">CAPACIDAD</text>
+  <text x="70" y="322" font-size="15" fill="#3B3535">(calidad)</text>
+  <text x="115" y="130" font-size="16" fill="#3B3535">&#8593;</text>
+
+  <!-- X axis label -->
+  <text x="500" y="600" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="middle">COSTO / LATENCIA por consulta</text>
+  <text x="500" y="623" font-size="15" fill="#3B3535" text-anchor="middle">&#8594; mas caro y lento</text>
+
+  <!-- Ascending diagonal (más capacidad cuesta más) -->
+  <line x1="215" y1="500" x2="770" y2="180" stroke="#3B3535" stroke-width="2" stroke-dasharray="7 6" opacity="0.55"/>
+  <text x="775" y="250" font-size="14" fill="#3B3535" opacity="0.85" transform="rotate(-30 775 250)">mas capacidad = mas costo</text>
+
+  <!-- ===== Points ===== -->
+
+  <!-- MINI (focal, red) low-left -->
+  <circle cx="230" cy="490" r="13" fill="#DA1B2E"/>
+  <circle cx="230" cy="490" r="21" fill="none" stroke="#DA1B2E" stroke-width="2" opacity="0.55"/>
+  <text x="258" y="480" font-size="17" font-weight="bold" fill="#DA1B2E">MINI / rapido</text>
+  <text x="258" y="502" font-size="14" fill="#3B3535">mas barato y agil,</text>
+  <text x="258" y="521" font-size="14" fill="#3B3535">suele alcanzar</text>
+  <text x="258" y="546" font-size="13" font-weight="bold" fill="#DA1B2E">&#9733; empeza aca</text>
+
+  <!-- intermedio middle -->
+  <circle cx="490" cy="340" r="11" fill="#8A8080"/>
+  <text x="516" y="345" font-size="16" fill="#3B3535">intermedio</text>
+
+  <!-- GRANDE top-right -->
+  <circle cx="755" cy="190" r="12" fill="#3B3535"/>
+  <text x="600" y="165" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="end">GRANDE / flagship</text>
+  <text x="600" y="187" font-size="14" fill="#3B3535" text-anchor="end">mejor calidad,</text>
+  <text x="600" y="206" font-size="14" fill="#3B3535" text-anchor="end">mas lento y caro</text>
+
+  <!-- ===== Rule banner ===== -->
+  <rect x="150" y="655" width="700" height="46" rx="6" fill="#F2F2F2" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="238" y="684" font-size="17" fill="#3B3535"><tspan font-weight="bold">Regla:</tspan> el mas chico / rapido que resuelva BIEN la tarea</text>
+</svg>

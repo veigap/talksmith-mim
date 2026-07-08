@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1120 400" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>Top-p: la otra forma de dar variedad</title>
+  <desc>Fila de candidatos ordenados por confianza. Con top_p = 0.9 el modelo se queda con los candidatos que juntos suman el 90% de la confianza (el núcleo) y descarta la cola larga de opciones improbables, marcada con equis.</desc>
+
+  <rect x="0" y="0" width="1120" height="400" fill="#ffffff"/>
+
+  <!-- Section label -->
+  <text x="60" y="58" font-size="21" font-weight="bold" fill="#3B3535">Lista completa de candidatos (ordenados por confianza)</text>
+
+  <!-- Baseline for bars -->
+  <!-- Kept candidates: decreasing-height bars, neutral grey -->
+  <!-- x positions and heights -->
+  <!-- bar1 -->
+  <g fill="#8A8585">
+    <rect x="60"  y="120" width="78" height="150" rx="4"/>
+    <rect x="152" y="150" width="78" height="120" rx="4"/>
+    <rect x="244" y="180" width="78" height="90"  rx="4"/>
+    <rect x="336" y="205" width="78" height="65"  rx="4"/>
+    <rect x="428" y="222" width="78" height="48"  rx="4"/>
+  </g>
+
+  <!-- Candidate labels under kept bars -->
+  <g font-size="16" fill="#3B3535" text-anchor="middle">
+    <text x="99"  y="292">azul</text>
+    <text x="191" y="292">gris</text>
+    <text x="283" y="292">claro</text>
+    <text x="375" y="292">celeste</text>
+    <text x="467" y="292">turquesa</text>
+  </g>
+
+  <!-- Discarded long tail: small bars, light grey, crossed out -->
+  <g fill="#D9D6D6">
+    <rect x="560" y="238" width="60" height="32" rx="3"/>
+    <rect x="634" y="245" width="60" height="25" rx="3"/>
+    <rect x="708" y="250" width="60" height="20" rx="3"/>
+    <rect x="782" y="254" width="60" height="16" rx="3"/>
+    <rect x="856" y="257" width="48" height="13" rx="3"/>
+    <rect x="918" y="259" width="36" height="11" rx="3"/>
+  </g>
+  <!-- x marks over the tail -->
+  <g stroke="#DA1B2E" stroke-width="3" stroke-linecap="round">
+    <line x1="576" y1="240" x2="604" y2="268"/><line x1="604" y1="240" x2="576" y2="268"/>
+    <line x1="650" y1="244" x2="678" y2="266"/><line x1="678" y1="244" x2="650" y2="266"/>
+    <line x1="724" y1="248" x2="752" y2="266"/><line x1="752" y1="248" x2="724" y2="266"/>
+    <line x1="798" y1="252" x2="826" y2="266"/><line x1="826" y1="252" x2="798" y2="266"/>
+    <line x1="866" y1="256" x2="894" y2="268"/><line x1="894" y1="256" x2="866" y2="268"/>
+    <line x1="924" y1="258" x2="948" y2="268"/><line x1="948" y1="258" x2="924" y2="268"/>
+  </g>
+
+  <!-- Cola larga label -->
+  <text x="1000" y="266" font-size="16" fill="#8A8585" text-anchor="middle">...cola larga...</text>
+
+  <!-- Baseline line -->
+  <line x1="60" y1="270" x2="1060" y2="270" stroke="#3B3535" stroke-width="1.5"/>
+
+  <!-- Cut boundary (FOCAL, red) between kept nucleus (x<=506) and tail (x>=560) -->
+  <line x1="533" y1="90" x2="533" y2="300" stroke="#DA1B2E" stroke-width="3.5" stroke-dasharray="9 6"/>
+
+  <!-- top_p = 0.9 pill on the boundary -->
+  <g>
+    <rect x="468" y="94" width="130" height="34" rx="17" fill="#DA1B2E"/>
+    <text x="533" y="116" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">top_p = 0.9</text>
+  </g>
+
+  <!-- Bottom annotations -->
+  <!-- Kept region annotation -->
+  <text x="283" y="342" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="middle">Se queda con esto</text>
+  <text x="283" y="366" font-size="15" fill="#8A8585" text-anchor="middle">(los que juntos suman el 90%)</text>
+
+  <!-- Discarded region annotation (focal accent text) -->
+  <text x="790" y="342" font-size="17" font-weight="bold" fill="#DA1B2E" text-anchor="middle">Descarta la cola</text>
+  <text x="790" y="366" font-size="15" fill="#8A8585" text-anchor="middle">(opciones improbables)</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+  <title>Tamaño del modelo: cantidad de parámetros</title>
+  <desc>Contraste entre un modelo chico (pocos parámetros, menos cómputo por consulta) y un modelo grande (muchos parámetros, más cómputo por consulta). El tamaño es la cantidad de parámetros, una propiedad fijada al construir el modelo.</desc>
+
+  <rect x="0" y="0" width="900" height="480" fill="#ffffff"/>
+
+  <!-- ==================== LEFT PANEL: MODELO CHICO ==================== -->
+  <rect x="50" y="60" width="340" height="270" rx="10" fill="#F4F2F2" stroke="#B9B3B3" stroke-width="1.5"/>
+  <text x="220" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#3B3535">MODELO CHICO</text>
+
+  <!-- few nodes: 2x2 = 4 dots -->
+  <circle cx="185" cy="155" r="13" fill="#ffffff" stroke="#8A8484" stroke-width="2"/>
+  <circle cx="255" cy="155" r="13" fill="#ffffff" stroke="#8A8484" stroke-width="2"/>
+  <circle cx="185" cy="205" r="13" fill="#ffffff" stroke="#8A8484" stroke-width="2"/>
+  <circle cx="255" cy="205" r="13" fill="#ffffff" stroke="#8A8484" stroke-width="2"/>
+
+  <text x="220" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#3B3535">pocos parámetros</text>
+  <text x="220" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6B6565">menos cómputo por consulta</text>
+
+  <!-- ==================== RIGHT PANEL: MODELO GRANDE (FOCAL RED) ==================== -->
+  <rect x="510" y="60" width="340" height="270" rx="10" fill="#FDECEE" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="680" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#DA1B2E">MODELO GRANDE</text>
+
+  <!-- many nodes: 5x3 = 15 dots -->
+  <g fill="#DA1B2E">
+    <circle cx="565" cy="145" r="10"/><circle cx="622" cy="145" r="10"/><circle cx="679" cy="145" r="10"/><circle cx="736" cy="145" r="10"/><circle cx="793" cy="145" r="10"/>
+    <circle cx="565" cy="188" r="10"/><circle cx="622" cy="188" r="10"/><circle cx="679" cy="188" r="10"/><circle cx="736" cy="188" r="10"/><circle cx="793" cy="188" r="10"/>
+    <circle cx="565" cy="231" r="10"/><circle cx="622" cy="231" r="10"/><circle cx="679" cy="231" r="10"/><circle cx="736" cy="231" r="10"/><circle cx="793" cy="231" r="10"/>
+  </g>
+
+  <text x="680" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#3B3535">muchos parámetros</text>
+  <text x="680" y="308" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6B6565">más cómputo por consulta</text>
+
+  <!-- ==================== BOTTOM DEFINITION NOTE ==================== -->
+  <rect x="50" y="375" width="800" height="72" rx="8" fill="#ffffff" stroke="#B9B3B3" stroke-width="1.5"/>
+  <text x="450" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#3B3535">&#8220;Tamaño&#8221; = cantidad de parámetros (capacidad),</text>
+  <text x="450" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="bold" fill="#3B3535">fijada al construir el modelo — no una perilla de uso</text>
+</svg>

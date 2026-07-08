@@ -1,0 +1,76 @@
+<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+  <title>Learning rate: cómo aprende el modelo</title>
+  <desc>El learning rate es el tamaño de cada paso al descender hacia el fondo de un valle (el óptimo): pasos grandes rebotan y se pasan, pasos chicos avanzan lento, el paso justo converge suave hasta el fondo.</desc>
+
+  <rect x="0" y="0" width="680" height="340" fill="#ffffff"/>
+
+  <!-- Bowl model: rim y=100, vertex y=210 at panel center. Curve: Q cx 320 -->
+
+  <!-- ============ PANEL 1: PASO GRANDE ============ -->
+  <g>
+    <text x="120" y="40" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">Paso grande</text>
+    <text x="120" y="59" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6A737D">rebota, se pasa</text>
+
+    <path d="M 30 100 Q 120 320 210 100" fill="none" stroke="#6A737D" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- optimum marker at vertex -->
+    <circle cx="120" cy="210" r="4" fill="none" stroke="#B4B4B4" stroke-width="2"/>
+
+    <!-- bouncing trajectory: points sit on the bowl, overshooting side to side, never settling -->
+    <path d="M 52 147 L 180 161 L 78 186 L 158 190 L 102 206"
+          fill="none" stroke="#3B3535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="52" cy="147" r="5" fill="#3B3535"/>
+    <circle cx="180" cy="161" r="4.5" fill="#3B3535"/>
+    <circle cx="78" cy="186" r="4.5" fill="#3B3535"/>
+    <circle cx="158" cy="190" r="4.5" fill="#3B3535"/>
+    <circle cx="102" cy="206" r="4.5" fill="#3B3535"/>
+
+    <text x="120" y="290" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#3B3535">inestable: no llega</text>
+  </g>
+
+  <!-- ============ PANEL 2: PASO CHICO ============ -->
+  <g>
+    <text x="340" y="40" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">Paso chico</text>
+    <text x="340" y="59" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6A737D">avanza, pero lento</text>
+
+    <path d="M 250 100 Q 340 320 430 100" fill="none" stroke="#6A737D" stroke-width="2.5" stroke-linecap="round"/>
+
+    <circle cx="340" cy="210" r="4" fill="none" stroke="#B4B4B4" stroke-width="2"/>
+
+    <!-- tiny steps crawling down one side of the bowl, not yet at bottom -->
+    <path d="M 270 143 L 282 164 L 294 181 L 306 194 L 318 203 L 328 208"
+          fill="none" stroke="#3B3535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="270" cy="143" r="5" fill="#3B3535"/>
+    <circle cx="282" cy="164" r="3" fill="#3B3535"/>
+    <circle cx="294" cy="181" r="3" fill="#3B3535"/>
+    <circle cx="306" cy="194" r="3" fill="#3B3535"/>
+    <circle cx="318" cy="203" r="3" fill="#3B3535"/>
+    <circle cx="328" cy="208" r="3.5" fill="#3B3535"/>
+
+    <text x="340" y="290" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#3B3535">lento y caro</text>
+  </g>
+
+  <!-- ============ PANEL 3: PASO JUSTO (focal, red) ============ -->
+  <g>
+    <text x="560" y="40" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">Paso justo</text>
+    <text x="560" y="59" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6A737D">baja suave hasta el fondo</text>
+
+    <path d="M 470 100 Q 560 320 650 100" fill="none" stroke="#6A737D" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- well-sized steps converging smoothly, landing at the optimum vertex -->
+    <path d="M 490 143 L 516 184 L 536 202 L 550 209 L 560 210"
+          fill="none" stroke="#DA1B2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="490" cy="143" r="5" fill="#DA1B2E"/>
+    <circle cx="516" cy="184" r="4.5" fill="#DA1B2E"/>
+    <circle cx="536" cy="202" r="4.5" fill="#DA1B2E"/>
+    <circle cx="550" cy="209" r="4" fill="#DA1B2E"/>
+
+    <!-- optimum reached (red, filled) -->
+    <circle cx="560" cy="210" r="6" fill="#DA1B2E"/>
+    <text x="588" y="214" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#DA1B2E">óptimo</text>
+
+    <text x="560" y="290" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#DA1B2E">converge</text>
+  </g>
+
+  <text x="340" y="326" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#6A737D">El learning rate es el tamaño del paso al bajar hacia la mejor versión del modelo</text>
+</svg>

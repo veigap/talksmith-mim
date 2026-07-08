@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Helvetica, Arial, sans-serif">
+  <title>Learning rate: el tamano del paso al descender hacia la mejor version del modelo</title>
+  <desc>Metafora de bajar una montaña hacia el punto mas bajo (la mejor version del modelo). Dos trayectorias sobre un valle en forma de U. A la izquierda, PASO GRANDE (LR alto): pasos grandes que rebotan de una ladera a la otra, se pasan de largo, inestable, no se asienta. A la derecha, PASO CHICO (LR bajo): pasos pequeños que bajan por la ladera y llegan al minimo, lento pero seguro.</desc>
+
+  <rect x="0" y="0" width="900" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#3B3535">Learning rate: el tamano del paso</text>
+  <text x="450" y="68" text-anchor="middle" font-size="15" fill="#3B3535">Bajar por la montana hacia la mejor version del modelo</text>
+
+  <!-- ===================== LEFT PANEL: PASO GRANDE ===================== -->
+  <!-- Valley curve (U shape): vertex approx (245, 400) -->
+  <path d="M 75 150 Q 245 470 415 150" fill="none" stroke="#c9c4c4" stroke-width="3"/>
+  <!-- Minimum tick (grey) -->
+  <line x1="245" y1="398" x2="245" y2="418" stroke="#c9c4c4" stroke-width="2" stroke-dasharray="3 3"/>
+
+  <!-- Bouncing overshoot trajectory (RED = focal, cautionary): each point lands ON the opposite wall, always overshooting the vertex, never settling -->
+  <path d="M 105 210 L 372 268 L 128 322 L 350 340 L 152 372 L 330 383 L 175 393"
+        fill="none" stroke="#DA1B2E" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- start dot on left wall -->
+  <circle cx="105" cy="210" r="7" fill="#DA1B2E"/>
+  <!-- arrowheads at overshoot landings -->
+  <path d="M 372 268 l -13 -3 l 6 -12 z" fill="#DA1B2E"/>
+  <path d="M 128 322 l 13 -3 l -5 -12 z" fill="#DA1B2E"/>
+  <path d="M 350 340 l -13 -2 l 6 -12 z" fill="#DA1B2E"/>
+
+  <!-- Left panel labels -->
+  <text x="245" y="112" text-anchor="middle" font-size="16" font-weight="bold" fill="#DA1B2E">PASO GRANDE</text>
+  <text x="245" y="132" text-anchor="middle" font-size="13" fill="#3B3535">(LR alto)</text>
+  <text x="245" y="452" text-anchor="middle" font-size="14" font-weight="bold" fill="#DA1B2E">Rebota, se pasa de largo</text>
+  <text x="245" y="474" text-anchor="middle" font-size="13" fill="#3B3535">Inestable: nunca se asienta</text>
+
+  <!-- Divider -->
+  <line x1="450" y1="100" x2="450" y2="484" stroke="#e4e0e0" stroke-width="1.5"/>
+
+  <!-- ===================== RIGHT PANEL: PASO CHICO ===================== -->
+  <!-- Valley curve (U shape): vertex approx (675, 400) -->
+  <path d="M 505 150 Q 675 470 845 150" fill="none" stroke="#c9c4c4" stroke-width="3"/>
+
+  <!-- Slow-but-sure small-step descent: hugs the LEFT wall of the U and settles at the vertex -->
+  <path d="M 543 218 L 560 258 L 580 296 L 604 330 L 632 360 L 660 383 L 675 400"
+        fill="none" stroke="#3B3535" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- start dot on wall -->
+  <circle cx="543" cy="218" r="7" fill="#3B3535"/>
+  <!-- small step ticks -->
+  <circle cx="560" cy="258" r="3.5" fill="#3B3535"/>
+  <circle cx="580" cy="296" r="3.5" fill="#3B3535"/>
+  <circle cx="604" cy="330" r="3.5" fill="#3B3535"/>
+  <circle cx="632" cy="360" r="3.5" fill="#3B3535"/>
+  <circle cx="660" cy="383" r="3.5" fill="#3B3535"/>
+
+  <!-- Reached minimum star at the vertex -->
+  <g transform="translate(675,400)">
+    <path d="M 0 -13 L 3.6 -4.1 L 13 -3.9 L 5.5 2 L 8 11.5 L 0 5.7 L -8 11.5 L -5.5 2 L -13 -3.9 L -3.6 -4.1 Z" fill="#3B3535"/>
+  </g>
+
+  <!-- Right panel labels -->
+  <text x="710" y="405" text-anchor="start" font-size="13" font-weight="bold" fill="#3B3535">Llega</text>
+  <text x="675" y="112" text-anchor="middle" font-size="16" font-weight="bold" fill="#3B3535">PASO CHICO</text>
+  <text x="675" y="132" text-anchor="middle" font-size="13" fill="#3B3535">(LR bajo)</text>
+  <text x="675" y="452" text-anchor="middle" font-size="14" font-weight="bold" fill="#3B3535">Lento pero seguro</text>
+  <text x="675" y="474" text-anchor="middle" font-size="13" fill="#3B3535">Baja de a poco: converge</text>
+
+  <!-- Footer caption -->
+  <text x="450" y="508" text-anchor="middle" font-size="12" fill="#3B3535">El paso justo es parte del arte (y el costo) de entrenar un modelo</text>
+</svg>

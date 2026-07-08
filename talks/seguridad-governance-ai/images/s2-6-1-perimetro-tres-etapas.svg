@@ -1,0 +1,68 @@
+<svg viewBox="0 0 920 309" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">El perímetro: de on-prem a la IA</title>
+  <desc id="d">La idea estructural de la charla: la misma progresión de la arquitectura en tres saltos, ahora mirada desde la gobernanza — no dónde está el dato, sino quién gobierna la puerta.</desc>
+
+  <!-- canvas -->
+  <rect x="0" y="0" width="920" height="356" fill="#ffffff"/>
+
+  <style>
+    text { font-family: Helvetica, Arial, sans-serif; fill: #3B3535; }
+    .hdr { font-size: 19px; font-weight: bold; letter-spacing: 1.5px; }
+    .boxmain { font-size: 17px; font-weight: bold; }
+    .boxsub { font-size: 15px; }
+    .lbl { font-size: 13px; fill: #8A8484; letter-spacing: 0.5px; }
+    .val { font-size: 15px; font-weight: 600; }
+    .pill { font-size: 15px; font-weight: 600; }
+    .cap { font-size: 15px; font-style: italic; fill: #6B6464; }
+  </style>
+
+  <!-- column headers -->
+  <text class="hdr" x="145" y="40" text-anchor="middle">ON-PREM</text>
+  <text class="hdr" x="460" y="40" text-anchor="middle">SAAS / NUBE</text>
+  <text class="hdr" x="775" y="40" text-anchor="middle" fill="#DA1B2E">IA</text>
+
+  <!-- top row: where the data lives -->
+  <rect x="30" y="58" width="230" height="92" rx="6" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.5"/>
+  <text class="boxmain" x="145" y="98" text-anchor="middle">tu red</text>
+  <text class="boxsub" x="145" y="124" text-anchor="middle">firewall · VPN</text>
+
+  <rect x="345" y="58" width="230" height="92" rx="6" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.5"/>
+  <text class="boxmain" x="460" y="88" text-anchor="middle">proveedor</text>
+  <text class="boxsub" x="460" y="112" text-anchor="middle">contrato, identidad,</text>
+  <text class="boxsub" x="460" y="132" text-anchor="middle">registros</text>
+
+  <rect x="660" y="58" width="230" height="92" rx="6" fill="#FBEAEC" stroke="#DA1B2E" stroke-width="2"/>
+  <text class="boxmain" x="775" y="98" text-anchor="middle">la persona</text>
+  <text class="boxsub" x="775" y="124" text-anchor="middle">y su criterio</text>
+
+  <!-- arrows between boxes -->
+  <line x1="264" y1="104" x2="334" y2="104" stroke="#6B6464" stroke-width="2"/>
+  <polygon points="334,98 334,110 345,104" fill="#6B6464"/>
+  <line x1="579" y1="104" x2="649" y2="104" stroke="#6B6464" stroke-width="2"/>
+  <polygon points="649,98 649,110 660,104" fill="#6B6464"/>
+
+  <!-- middle row: what the perimeter is -->
+  <text class="lbl" x="145" y="182" text-anchor="middle">PERÍMETRO</text>
+  <text class="val" x="145" y="204" text-anchor="middle">muro físico</text>
+  <text class="val" x="145" y="224" text-anchor="middle">y de red</text>
+
+  <text class="lbl" x="460" y="182" text-anchor="middle">PERÍMETRO</text>
+  <text class="val" x="460" y="204" text-anchor="middle">contrato +</text>
+  <text class="val" x="460" y="224" text-anchor="middle">identidad</text>
+
+  <text class="lbl" x="775" y="182" text-anchor="middle">PERÍMETRO</text>
+  <text class="val" x="775" y="204" text-anchor="middle">decisión</text>
+  <text class="val" x="775" y="224" text-anchor="middle">individual</text>
+
+  <!-- bottom row: governed? -->
+  <rect x="52" y="248" width="186" height="34" rx="17" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.5"/>
+  <text class="pill" x="145" y="270" text-anchor="middle">gobernado: SÍ (vos)</text>
+
+  <rect x="350" y="248" width="220" height="34" rx="17" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.5"/>
+  <text class="pill" x="460" y="270" text-anchor="middle">gobernado: SÍ (delegado)</text>
+
+  <rect x="660" y="248" width="230" height="34" rx="17" fill="#ffffff" stroke="#DA1B2E" stroke-width="2"/>
+  <text class="pill" x="775" y="270" text-anchor="middle" fill="#DA1B2E">gobernado: A MENUDO, NO</text>
+
+  <!-- caption -->
+</svg>

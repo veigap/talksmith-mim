@@ -1,0 +1,13 @@
+  MODELO CHICO            MODELO GRANDE
+  [ o o ]                 [ o o o o o o o o ]
+  pocos parámetros        muchos parámetros
+  menos cómputo/consulta  más cómputo/consulta
+
+  "Tamaño" = cantidad de parámetros (capacidad),
+  fijada al construir el modelo
+
+<!-- ascii-note:
+intent: explicar qué significa el "tamaño" de un modelo por dentro — la cantidad de parámetros (capacidad) fijada al construirlo, no una perilla que el usuario toca
+emphasize: el contraste visual pocos vs muchos parámetros; que es una propiedad de construcción, no de uso
+labels: "MODELO CHICO / MODELO GRANDE", "pocos vs muchos parámetros", "menos vs más cómputo/consulta", nota de cierre
+-->
