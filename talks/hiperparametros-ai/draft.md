@@ -55,7 +55,7 @@ date: 2026-07-07
 
 - Hook: le hago la misma pregunta a la misma AI dos veces y obtengo dos respuestas distintas. ¿Se equivocó? ¿Está "pensando" distinto?
 - No: hay perillas de configuración que deciden cuánta variedad, cuánto detalle y cuánto costo tiene cada respuesta.
-- Ejemplo de negocio: un asistente que redacta emails a clientes. ¿Querés que suene siempre igual (marca consistente) o que proponga variantes creativas? Esa decisión es una perilla.
+- Hay perillas de configuración que deciden cuánta variedad, cuánto detalle y cuánto costo tiene cada respuesta. No es un error: es una decisión de diseño.
 
 ```ascii
    Misma pregunta  ---> [  AI  ] ---> "Respuesta A"
@@ -117,7 +117,7 @@ Aclaro el contrato de la clase: no vamos a hacer matemática ni van a programar.
 
 - Un modelo de lenguaje hace una sola cosa, muchas veces: predecir la siguiente palabra (token).
 - Para cada paso arma una lista de candidatos con un "puntaje de confianza" para cada uno.
-- Genera una palabra, la agrega al texto, y vuelve a empezar mirando todo lo que lleva escrito.
+- Para cada paso arma una lista de candidatos con un puntaje de confianza para cada uno.
 
 ```ascii
   "El cielo es ___"
@@ -200,7 +200,7 @@ Acá cierro el círculo con el hook de la Sección 1. La razón por la que la mi
 - La temperatura regula *cuánto azar* hay en la ruleta de la palabra anterior.
 - Baja (≈0): casi siempre el candidato más probable → respuestas predecibles, repetibles, "aburridas pero seguras".
 - Alta (≈0.8–1.2): más variedad → respuestas creativas, pero más riesgo de incoherencia o error.
-- Negocio: baja para extracción de datos, clasificación, respuestas de compliance; alta para brainstorming, copy, ideas.
+- Respuestas predecibles, repetibles — "aburridas pero seguras".
 
 ```ascii
   TEMPERATURA BAJA (~0)          TEMPERATURA ALTA (~1)
@@ -287,12 +287,12 @@ Segunda perilla, y la presento como "la prima de la temperatura". Persigue el mi
 
 - Perilla nueva y muy actual, hoy expuesta de frente al usuario: cuánto *razona* el modelo internamente antes de contestar. Las herramientas la exponen, cada vez más, como **modos con nombre**.
 - Pensala como una progresión de tres escalones, no un interruptor de sí/no:
-  - **Respuesta directa** (sin pensar): el modelo contesta al toque. Rápido y barato; es el default para tareas simples (una búsqueda, un formateo, una pregunta trivial).
+  - "Deep Thinking" (pensar profundo / extended thinking)
   - **"Thinking"** (pensar): el modelo razona un poco antes de responder. Buen equilibrio para la mayoría de las tareas no triviales; agrega algo de latencia y costo.
-  - **"Deep Thinking"** (pensar profundo / *extended thinking*): el modelo razona mucho más. Es lo mejor para tareas difíciles, de varios pasos o analíticas; notablemente más lento y más caro (pagás también el razonamiento interno que no ves).
-- Cómo aparece según la herramienta (en términos generales, sin defaults por versión): varias ya ofrecen un botón o modo de "Thinking" y uno de "Deep Thinking" / *extended thinking*; otras te dejan graduar el esfuerzo por niveles o asignar un **presupuesto de pensamiento** (tokens de razonamiento). Los nombres exactos y los defaults cambian seguido entre proveedores.
-- Trade-off de negocio: subir de escalón mejora la calidad en tareas difíciles, pero **calidad, latencia y costo suben juntos**. No hay modo "bueno": hay uno *apropiado a la dificultad de la tarea*.
-- Guía práctica: **emparejá el modo con la dificultad**. Tarea simple → respuesta directa. Tarea no trivial del día a día → Thinking. Análisis, planificación o problema multi-paso → Deep Thinking. Pensar de más en una tarea fácil es tirar plata (y a veces empeora la respuesta).
+  - Respuesta directa (sin pensar)
+- El modelo razona un poco antes de responder. Buen equilibrio para la mayoría de las tareas no triviales; agrega algo de latencia y costo.
+- El modelo razona mucho más. Es lo mejor para tareas difíciles, de varios pasos o analíticas; notablemente más lento y más caro (pagás también el razonamiento interno que no ves).
+- El modelo contesta al toque. Rápido y barato; es el default para tareas simples (una búsqueda, un formateo, una pregunta trivial).
 
 ```ascii
   RESPUESTA DIRECTA  -->   THINKING          -->   DEEP THINKING
