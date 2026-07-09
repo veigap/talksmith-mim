@@ -75,7 +75,7 @@ Bienvenida corta. Fijar el tono desde el subtítulo: esto no es un curso de inge
 ### Content
 
 - La escena, sin alarma: **abril de 2023**, Samsung habilita ChatGPT a los ingenieros de su división de semiconductores.
-- Una decisión razonable: una herramienta nueva y potente, equipos con presión de plazos.
+- La escena, sin alarma
 
 ### Sources
 
@@ -95,8 +95,8 @@ Ritmo liviano. Contar la escena en neutro, sin anticipar el problema. Interacci�
 ### Content
 
 1. Pegaron **código fuente** para encontrar un error.
-2. Pegaron código de un **equipo de medición** para optimizar su rendimiento.
-3. Subieron la **grabación de una reunión interna** para generar la minuta.
+Grabación de reunión interna
+Código de equipo de medición
 
 *"Nadie quería hacer nada malo. Nadie fue negligente. Todos hicimos algo parecido."*
 
@@ -212,8 +212,8 @@ El "clic" de toda la charla — el punto más lento de la sección; silencio del
 El daño real, sin exagerar:
 
 - Pérdida **irreversible** de control sobre IP confidencial.
-- Frenar en seco una herramienta útil (prohibición + construir una IA interna).
-- Quedar como el caso de estudio que todos citamos.
+- Freno total de la herramienta
+- El caso de estudio universal
 
 > *"El daño no fue que alguien lo usara. El daño fue que ya no podían controlarlo."*
 
@@ -236,11 +236,13 @@ Honestidad y precisión: no hay evidencia pública de robo por un competidor ni 
 
 Lo que esto cuesta, en tres números:
 
-- 📊 Costo promedio global de una filtración de datos: **USD 4,44 millones** — *IBM Cost of a Data Breach 2025*.
-- 📊 Una brecha con **shadow AI** cuesta **+USD 670.000** extra en promedio — *IBM 2025*.
+- $4.44M
+- $670K
 - 📊 ~**18%** de los empleados pega datos en herramientas GenAI; **más de la mitad** de esos pegados incluye información corporativa — *LayerX 2025*.
 
-*"Ahora vamos a explicar el porqué."*
+![No es solo Samsung: los números](images/s1-9-x-new.png)
+
+
 
 ### Sources
 
@@ -349,8 +351,7 @@ Divisor — segundos, no minutos. "Antes de ver cómo funciona la IA por dentro,
 ### Content
 
 - **PII — Personally Identifiable Information**: lo que identifica a una persona **directamente**. Ejemplos: nombre, DNI / pasaporte, email, teléfono, foto del rostro, legajo.
-- **Personal Data** (la categoría legal amplia): **todo lo vinculable** a una persona — IP, ubicación, comportamiento, inferencias…
-- **No son lo mismo: PII es un subconjunto de Personal Data.**
+- Error típico: "le saqué el nombre, ya no es personal" — falso si se puede reidentificar.
 
 ```ascii
 +---------------------------------------------+
@@ -374,7 +375,7 @@ emphasize: el rectangulo exterior (Personal Data) es mucho mas grande que el int
 labels: exterior = Personal Data (la categoria legal amplia), interior = PII (Personally Identifiable Information)
 -->
 
-⚠️ Error típico: *"le saqué el nombre, ya no es personal"* → **falso** si se puede reidentificar.
+
 
 ### Sources
 
@@ -439,7 +440,7 @@ labels: "API" sobre cada una de las tres conexiones; "Tu pais" / "Otro pais" com
 -->
 
 - **Dónde viven los datos determina qué leyes los rigen.**
-- 🎯 Pregunta de manager: *"¿en qué país quedan mis datos cuando uso esta herramienta?"*
+- 
 
 ### Sources
 
@@ -484,11 +485,13 @@ Es una convención con respaldo en ISO 27001 / NIST, no un estándar único — 
 
 ---
 
-## 6. 〔divisor〕 ¿Qué pasa cuando uso una IA?
+## 6. ¿Qué pasa cuando uso una IA?
 
 ### Content
 
 **¿Qué pasa realmente cuando uso una IA?**
+
+![¿Qué pasa cuando uso una IA?](images/s2-6-x-new.png)
 
 ### Sources
 
@@ -519,8 +522,8 @@ Divisor de cierre de Fundamentos, ahora puente directo a MCP (ex divisor de la S
 ### Content
 
 - MCP conecta la IA con **tus cosas**: archivos, mail, calendario.
-- La IA pasa de **"contestar"** a **"hacer"**: leer tu disco, mandar un mail, agendar una reunión.
-- Es el mesero que ya no solo trae el plato — **tiene la llave de tu oficina.**
+- Conecta la IA con tus cosas
+- De "contestar" a "hacer"
 
 ### Sources
 
@@ -562,10 +565,10 @@ Un poco más de precisión sin volverse técnico: MCP es un protocolo — una co
 ### Content
 
 - Un chatbot que **responde**: riesgo bajo — lo peor es una mala respuesta.
-- Un agente que **puede leer tu disco y enviar mails**: otra clase de riesgo — puede *ejecutar* el error.
-- ⚠️ **El punto ciego**: aunque el proveedor de LLM esté **aprobado** (enterprise, con contrato), la violación puede entrar **por los conectores / servidores MCP** que le enchufás.
-- Cada conector es **su propia decisión de confianza**: qué puede leer, a dónde puede enviar.
-- 🎯 Principio (se paga más adelante): **mínimo privilegio** — cada conector con el acceso mínimo necesario.
+- 
+- 
+- 
+- 
 
 ### Sources
 
@@ -889,12 +892,14 @@ Slide agregado desde el benchmark (gap 2): el cierre dice "reportá incidentes r
 
 ---
 
-## 1. 〔divisor〕 Rompemitos: ¿verdadero o falso?
+## 1. Rompemitos: ¿verdadero o falso?
 
 ### Content
 
 **Rompemitos.**
-La dinámica: yo leo la afirmación → **ustedes votan** (✋ verdadero / falso) → revelo.
+Así funciona la dinámica: Todos vamos a  votar la pregunta en https://app.sli.do/event/1V8sQvBtfrUEFWeVxLdjUH y luego muestro el resutado.
+
+![Rompemitos: ¿verdadero o falso?](images/s6-1-x-new.png)
 
 ### Sources
 
@@ -1058,7 +1063,7 @@ Mito agregado por pedido del presenter (Step 5, ronda 2) como el más desafiante
 
 ---
 
-## 1. 〔divisor〕 El mapa de estándares
+## 1. El mapa de estándares
 
 ### Content
 
@@ -1118,12 +1123,12 @@ Desplegar la sigla en voz alta al abrir: GDPR — General Data Protection Regula
 ### Content
 
 - El criterio **no es dónde está tu empresa** — es **dónde está la persona cuyos datos tratás.**
-- Aplica si tratás datos personales de alguien que **reside en la Unión Europea** — sin importar si tu empresa tiene o no oficina, servidores o empleados en Europa.
-- Ejemplos concretos para la sala:
-  - Una empresa argentina con **un solo cliente en Francia**: GDPR aplica a ese tratamiento.
-  - Una empresa argentina que **solo opera en Argentina, sin clientes ni usuarios europeos**: GDPR no aplica (pero sí la Ley 25.326 local — vuelve más adelante).
-  - Una IA de consumo con la que un empleado pega datos de un cliente europeo: **la extraterritorialidad no distingue quién apretó "enviar".**
-- 🎯 Pregunta de manager: *"¿alguno de los datos que trato pertenece a una persona en la UE?"* — si la respuesta es sí, GDPR ya te alcanza.
+- "¿Alguno de los datos que trato pertenece a una persona en la UE?" — si la respuesta es sí, GDPR ya te alcanza.
+- 
+  - 
+  - 
+  - 
+- 
 
 ### Sources
 
@@ -1168,9 +1173,9 @@ El clímax del callback: "¿se acuerdan de las tres palabras tachadas? Ahora tie
 ### Content
 
 - Ley **sectorial** de salud de EE. UU. (1996): protege la **PHI** (información de salud identificable).
-- El **BAA**: el contrato obligatorio — el "primo del DPA".
-- ⚠️ Pegar PHI en una IA **sin BAA** = incumplimiento inmediato, **aunque nada se filtre**. La mayoría de las IA de consumo **no firman BAAs**.
-- Relevante solo si tocás datos de salud.
+- 
+- 
+- 
 
 ### Sources
 
@@ -1249,8 +1254,8 @@ Lo esencial para un manager: no regula "la IA", regula **usos** por nivel de rie
 ### Content
 
 - **Ley 25.326** (2000): pionera regional — **"país adecuado" para la UE desde 2003** — pero anterior a smartphones, nube e IA.
-- Sus principios **ya aplican** cuando usás IA: consentimiento, finalidad, confidencialidad, derechos del titular.
-- 🎯 **No hay vacío legal**: quien trata datos de argentinos con IA ya está obligado, hoy.
+- 
+- 
 
 ### Sources
 
@@ -1270,8 +1275,8 @@ Argentina tiene la estructura, pero de una generación anterior. El punto para m
 ### Content
 
 - **Reforma en debate (2025–2026)**: accountability, privacy by design, portabilidad, oposición a decisiones automatizadas.
-- La dirección es una sola: **alineación con GDPR**.
-- 🎯 Atajo: **"entender GDPR es entender hacia dónde va Argentina."**
+- 
+- 
 
 ### Sources
 
@@ -1291,10 +1296,10 @@ La reforma sumaría accountability, privacy by design, portabilidad y — direct
 ### Content
 
 - La 25.326 es de **2000** — antes de smartphones, redes sociales, nube e IA. Ninguno de esos escenarios está contemplado explícitamente.
-- Lo que **no tiene** hoy, comparado con GDPR: **accountability** (responsabilidad proactiva y demostrada), **privacy by design/by default**, **portabilidad** de datos, y **oposición a decisiones automatizadas** con efectos jurídicos o negativos.
-- Sanciones **modestas** frente a las de GDPR (hasta €20M o 4% global) — la reforma buscaría endurecerlas.
-- **Reforma en curso, sin aprobar**: coexisten varios proyectos (Carro/Doñate, inspirados en un anteproyecto de la AAIP; y uno más reciente de Yeza, de 72 artículos, que derogaría la ley actual) — todos con la misma dirección: alinear con GDPR y la LGPD brasileña.
-- 🎯 Mientras tanto: los principios de la 25.326 **ya aplican** (slide anterior) — el gap es de sofisticación, no de vacío legal.
+- 
+- 
+- 
+- 
 
 ### Sources
 
@@ -1527,7 +1532,7 @@ Cerrar el arco donde empezó: "si dentro de un año se acuerdan de una sola cosa
 
 ---
 
-## 3. 〔Backup〕 Samsung ↔ GDPR
+## 3. Samsung GDPR
 
 ### Content
 
@@ -1554,7 +1559,7 @@ Backup — solo si preguntan por el detalle legal. El punto estructural: el incu
 
 ---
 
-## 4. 〔Backup〕 Controller vs. processor
+## 4. Controller vs. processor
 
 ### Content
 
@@ -1573,8 +1578,8 @@ labels: flecha superior = flujo de datos + instrucciones; llave inferior = DPA (
 -->
 
 - **Responsable**: decide *qué* datos y *para qué* → responsabilidad principal.
-- **Encargado**: solo ejecuta instrucciones.
-- Sin DPA, la relación existe de hecho — **pero sin el marco legal que la vuelve lícita.**
+- Responsable
+- Encargado
 
 ### Sources
 
@@ -1589,7 +1594,7 @@ Backup. La prueba para distinguir roles: ¿quién decide para qué se usan los d
 
 ---
 
-## 5. 〔Backup〕 Derechos del titular (GDPR)
+## 5. Derechos del titular (GDPR)
 
 ### Content
 
@@ -1617,7 +1622,7 @@ Backup. El "clic" para el manager: todo lo que te gustaría exigir como usuario 
 
 ---
 
-## 6. 〔Backup〕 GDPR vs. HIPAA
+## 6. GDPR vs. HIPAA
 
 ### Content
 
@@ -1644,17 +1649,17 @@ Backup. La misma lógica en ambos: rendición de cuentas, contrato obligatorio c
 
 ---
 
-## 7. 〔Backup〕 Mapa completo de concerns
+## 7. Mapa completo de concerns
 
 ### Content
 
 El mapa extendido (para profundizar después de la charla):
 
-- **Datos**: retención / historial / borrado · opt-out de entrenamiento · minimización y seudonimización · transferencia internacional.
-- **Legal**: titularidad de la salida (PI / copyright) · NDAs y secreto profesional · consentimiento hacia clientes · decisiones automatizadas y sesgo.
-- **Operación**: logging y auditabilidad · procedencia del modelo · lock-in / continuidad · riesgo insider · higiene de dispositivo.
-- **Cultura**: Política de Uso Aceptable de IA (una página) · capacitación — *"las herramientas no causan filtraciones; los hábitos sí."*
-- **Marcos**: ISO/IEC 42001 · NIST AI RMF.
+- "Las herramientas no causan filtraciones; los hábitos sí."
+- 
+- 
+- 
+- 
 
 ### Sources
 
