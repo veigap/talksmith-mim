@@ -1,6 +1,7 @@
 # memory.md — claude-cowork-funcional
 
-**Current step:** 8 — Render PPTX complete
+**Current step:** 8 — Render PPTX complete (free-form, 2026-07-09)
+**Mode:** C (Presenter Outline)
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork-funcional/
 **Started:** 2026-06-05
@@ -169,3 +170,22 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - Fix determinístico: en las 27 slides, todo <a:spcPct val="N"/> con N<1000 → N*1000 (247 valores). Reempaquetado con [Content_Types].xml primero; integridad OK (27 slides, testzip clean). Deck sobrescrito.
 - Audits post-fix: aspect ok, palette/fonts ok, block-coverage 0 drops. (autofit normAutofit y márgenes del paso anterior se conservan.)
 - NOTA para futuros renders: revisar que el renderer emita lnSpc/spcBef/spcAft spcPct en milésimas de % (100% = 100000). El bug de unidad no se ve en LibreOffice/Cowork, solo en Keynote/PowerPoint/Drive — candidato a regla durable / chequeo en el pipeline pptx.
+
+## 2026-07-09 — Reapertura Draft → preview → Render free-form
+- Status: complete
+- Contexto: presentador reabrió la charla, volvió a Step 4 (draft.md sin cambios respecto al commit; final.md ya era su Polish). Generó el preview Step-5.5 (build_preview.py → output/draft-preview/slide-01..27.png, 27 wireframes). Luego pidió "ir a final" y eligió render **free-form**.
+- Render free-form: como el skill md-to-pptx/pptx oficial autorea libremente, se construyó con un generador python-pptx propio partiendo de la base-template free-form (portada fija, slides 2+ diseñadas). Salida output/final.free-form.pptx (29 slides) copiada a output/final.pptx (canónico).
+- Estructura: portada + agenda + 7 divisores (6 secciones + Conclusiones) + 20 slides de contenido. Paleta cálida (coral #C95B3C / ink #1F1E1E / card #F5F1EC), Arial, marcador coral en títulos, divisores en fondo oscuro con número grande. Tablas estilizadas (header coral). Las 10 imágenes de diagramas ASCII (ya renderizadas en el Polish previo) + 7 screenshots reutilizadas de images/.
+- Bug clave corregido: el generador leyó final.md directo, que usa H3 `### Content` / `### Sources` / `### Speaker notes` (no `### Notes`). Primer intento volcó Sources+Notes al cuerpo (overflow + "### Content" visible). Fix: parser por modo (Content→cuerpo, Sources→descartar, Speaker notes→panel de notas). Restos de comentarios `<!-- ascii-source/-note -->` con `-->` internos limpiados por stripper línea-a-línea.
+- QA visual (LibreOffice→JPG, 29/29): sin overflow en las densas (Skills 14, Schedule 20, tabla 6), imágenes sin distorsión (aspect preservado), 20/20 con notas del orador, 0 placeholders. python-pptx escribe el interlineado en unidades correctas (evita el bug de Keynote del render strict previo).
+- Files: output/final.pptx + output/final.free-form.pptx (29 slides, ~2.1 MB); output/draft-preview/*.png (27); memory.md. Generador en scratchpad (gen_freeform.py).
+- Pendiente menor: temporales de QA host-owned en output/ (qa2/, slide-*.jpg, *.pdf) — borrar a mano. Fecha de portada = Junio 2026 (heredada); confirmar si la clase es otra fecha.
+
+## 2026-07-10 — Re-render free-form (Step 8)
+- Status: complete
+- Pedido del presentador: reabrir la charla y re-renderizar. Estilo elegido = free-form; fecha de portada sin cambios (date: 2026-06-10 → "Junio 2026").
+- Sin cambios de contenido (final.md intacto). Re-generado con python-pptx desde base-template free-form → output/final.free-form.pptx (29 slides, ~2.1 MB) copiado a output/final.pptx (canónico).
+- Bug corregido en esta pasada: el generador convertía `**negrita**` pero dejaba `*itálica*` como asteriscos literales (~28 spans, visibles en varias slides, p.ej. 5 y 6). Parcheado add_runs() para tokenizar también `*italic*` → run itálica. Verificado: 0 runs con `*` literal en el deck.
+- Audits (contra final.pptx): block_coverage ok (0 drops), aspect_ratios ok (18 pics, 0 fail), notes_coverage ok (20/20). QA visual (portada, dividers, tabla, slides con imagen, Schedule densa) sin overflow ni solapes; imágenes con aspecto preservado.
+- Generador persistido en output/gen_freeform.py; layout log en output/.layout-log.md.
+- Pendiente menor: temporales QA host-owned en output/ (qa/, qa3/, slide-*.jpg, *.pdf) — borrar a mano. Slide 20 (Schedule) es la más densa; confirmar legibilidad en proyector.
