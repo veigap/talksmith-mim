@@ -1,10 +1,20 @@
 # memory.md — claude-cowork-funcional
 
-**Current step:** 8 — Render PPTX complete (free-form, 2026-07-09)
+**Current step:** 8 — Render PPTX complete (strict + free-form re-render, 2026-07-13)
 **Mode:** C (Presenter Outline)
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork-funcional/
 **Started:** 2026-06-05
+
+---
+
+## 2026-07-13 — Step 8 (Render PPTX) — re-render both styles
+- Status: complete
+- What was decided: Re-rendered both styles from the current final.md (28-slide strict, 29-slide free-form). Canonical final.pptx = strict copy.
+- Render results: strict — 28 slides, all 6 audits (aspect/palette-fonts/cover-fidelity/layout-fit/block-coverage/notes) exit 0. free-form — 29 slides, shared-floor audits (aspect/cover-fidelity/block-coverage/notes) exit 0.
+- Files created/modified: output/final.strict.pptx, output/final.free-form.pptx, output/final.free-form.template-log.md, output/final.pptx (canonical=strict), per-style intermediates.
+- Non-blocking note (strict): comparison pipe-tables (e.g. "Chatear vs Delegar", slide 5) render as flattened prose + diagram rather than §7/§11 card grids — audit-conformant, but a future pass could apply richer card treatment.
+- Pending open questions: none
 
 ---
 
@@ -189,3 +199,14 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - Audits (contra final.pptx): block_coverage ok (0 drops), aspect_ratios ok (18 pics, 0 fail), notes_coverage ok (20/20). QA visual (portada, dividers, tabla, slides con imagen, Schedule densa) sin overflow ni solapes; imágenes con aspecto preservado.
 - Generador persistido en output/gen_freeform.py; layout log en output/.layout-log.md.
 - Pendiente menor: temporales QA host-owned en output/ (qa/, qa3/, slide-*.jpg, *.pdf) — borrar a mano. Slide 20 (Schedule) es la más densa; confirmar legibilidad en proyector.
+
+## 2026-07-10 — Re-render strict (Step 8, desde cero)
+- Status: complete
+- Pedido: "hacé la versión strict ahora" + "empezá de cero, borrá la existente". Borrado el final.strict.pptx viejo (Jul 9) vía allow_cowork_file_delete; render strict fresco desde base-template.
+- Estilo strict spec-driven: 28 slides (portada + agenda + 6 dividers de sección + Conclusiones + 20 de contenido). Autoría con python-pptx desde working copy de base-template.pptx (slides 3–15 de layout-reference borradas tras usarlas como recetas). Salida output/final.strict.pptx (~2.19 MB) → copiada a output/final.pptx (canónico, ahora = strict; final.free-form.pptx conserva la free-form).
+- Audits todos ok: block_coverage 0 drops, aspect_ratios 0 fail (26 pics), notes_coverage 20/20, palette_fonts ok (§2 paleta / Helvetica·Courier New), cover_fidelity ok, layout_fit ok (20/20 predicho=emitido).
+- Reglas honradas: emoji→iconos §17 (⚠️→callout warning rosa, lightbulb en demo, info azul); enumeraciones etiquetadas → cards (nunca bullets); tabla "Chatear vs Delegar" → 2 comparison cards; `*italic*` renderiza itálica (sin asteriscos literales); interlineado Keynote-safe (spcPct base 100000, sin valores <1000).
+- Fixes de primera pasada: pill de 2da línea colgando, columna densa "Los bloques" clipping, overlap imagen/callout en Schedule — corregidos y re-verificados.
+- QA visual (28 JPG en output/qa-strict/): portada, agenda, divider, cards, tabla, imagen, Schedule densa — sin overflow ni solapes.
+- Flagged (no bloqueante): título de 81 chars en "El superpoder…" wrappea a 2 líneas (verbatim); pill de Sección 3 largo renderiza a 6pt — candidatos a acortar en autoría. Backticks de `buscar-accion`/`reporte-semanal` en la línea Ejemplo Atlas de Schedule quedan literales (inline code) — cosmético.
+- Generador en output/gen_strict.py; layout log en output/.layout-log-strict.md; geometry baseline en output/final.generated.geometry.json.

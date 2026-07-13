@@ -1,0 +1,6793 @@
+{
+  "pptx": "output/final.strict.pptx",
+  "slides": [
+    {
+      "order": 1,
+      "title": "AI Generativa para Biomedicina",
+      "class": "cover",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            496119,
+            536823
+          ],
+          "ext": [
+            8151763,
+            1948458
+          ],
+          "font_pt": 40.5,
+          "fill": null,
+          "text": "AI Generativa para Biomedicina"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            496119,
+            2677269
+          ],
+          "ext": [
+            6216923,
+            235297
+          ],
+          "font_pt": 14.5,
+          "fill": null,
+          "text": "Claude Cowork para el día a día"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            496119,
+            3219748
+          ],
+          "ext": [
+            3295799,
+            560933
+          ],
+          "font_pt": 11.5,
+          "fill": null,
+          "text": "Autor: Paulo Veiga, Docente de Universid"
+        },
+        {
+          "id": 5,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            7183562,
+            3248546
+          ],
+          "ext": [
+            1469008,
+            1214065
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "F33447",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "DA1B2E",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Las tres superficies de Claude",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1364284,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1364284,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "DE CHAT A AGENTE"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 31.0,
+          "fill": null,
+          "text": "Las tres superficies de Claude"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1978761
+          ],
+          "ext": [
+            4526280,
+            2867558
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Mismos modelos, distinta superficie: las"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2337045
+          ],
+          "ext": [
+            3401568,
+            2150992
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "title": "El superpoder de Cowork: la herramienta ",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1364284,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1364284,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "DE CHAT A AGENTE"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 17.0,
+          "fill": null,
+          "text": "El superpoder de Cowork: la herramienta "
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1543507
+          ],
+          "ext": [
+            4526280,
+            3302812
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "La idea grande. Cowork es la herramienta"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2369533
+          ],
+          "ext": [
+            3401568,
+            1650761
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "title": "De chat a agente: el cambio de paradigma",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1364284,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1364284,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "DE CHAT A AGENTE"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 22.5,
+          "fill": null,
+          "text": "De chat a agente: el cambio de paradigma"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1371600
+          ],
+          "ext": [
+            4526280,
+            3474720
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "La frase que resume toda la sesión: \"Dej"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2208544
+          ],
+          "ext": [
+            3401568,
+            1800830
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "DA1B2E",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "title": "(Demo time) Conozcamos la interfaz de Co",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "LO BÁSICO"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 21.0,
+          "fill": null,
+          "text": "(Demo time) Conozcamos la interfaz de Co"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1667865
+          ],
+          "ext": [
+            4526280,
+            3178454
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "SLIDE DE DEMO EN VIVO — Tour rápido de l"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2133553
+          ],
+          "ext": [
+            3401568,
+            2247078
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Los bloques de Cowork: cada problema, un",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "LO BÁSICO"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 20.0,
+          "fill": null,
+          "text": "Los bloques de Cowork: cada problema, un"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1636775
+          ],
+          "ext": [
+            4526280,
+            3209544
+          ],
+          "font_pt": 9.0,
+          "fill": null,
+          "text": "La idea. Cowork no se aprende como una l"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            1690833
+          ],
+          "ext": [
+            3401568,
+            3101430
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Instrucciones: ajustar el comportamiento",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "LO BÁSICO"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 17.0,
+          "fill": null,
+          "text": "Instrucciones: ajustar el comportamiento"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1543507
+          ],
+          "ext": [
+            4526280,
+            3302812
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Concepto. Las Instrucciones son el \"cont"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2144429
+          ],
+          "ext": [
+            3401568,
+            2100968
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Projects: guardar todo en un lugar fijo",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "LO BÁSICO"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 24.0,
+          "fill": null,
+          "text": "Projects: guardar todo en un lugar fijo"
+        },
+        {
+          "id": 5,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            1828800
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            1783080
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Concepto"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2084831
+          ],
+          "ext": [
+            7086600,
+            731519
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Un Project es un espacio de trabajo auto"
+        },
+        {
+          "id": 8,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            2871216
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2825496
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Ventajas"
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3127248
+          ],
+          "ext": [
+            7086600,
+            731519
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Todo queda organizado y reutilizable: la"
+        },
+        {
+          "id": 11,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            3913631
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3867911
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Cosas importantes a tener en cuenta"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            4169663
+          ],
+          "ext": [
+            7086600,
+            731519
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Los chats de un mismo Project no compart"
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "title": "El selector de carpetas y el panel de co",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            903427,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "LO BÁSICO"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 20.0,
+          "fill": null,
+          "text": "El selector de carpetas y el panel de co"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1636775
+          ],
+          "ext": [
+            4526280,
+            3209544
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Conceder una carpeta de trabajo. Cowork "
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            1659937
+          ],
+          "ext": [
+            3401568,
+            1476152
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 7,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            3347005
+          ],
+          "ext": [
+            3401568,
+            1476152
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "F33447",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "DA1B2E",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "title": "Skills: enseñarle a Claude algo una sola",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1298448,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1298448,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "EXTENDER COWORK"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 21.0,
+          "fill": null,
+          "text": "Skills: enseñarle a Claude algo una sola"
+        },
+        {
+          "id": 5,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            1773936
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            1728216
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 12.5,
+          "fill": null,
+          "text": "Concepto"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2029967
+          ],
+          "ext": [
+            7086600,
+            475488
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "Una Skill es una instrucción reutilizabl"
+        },
+        {
+          "id": 8,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            2560320
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2514600
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 12.5,
+          "fill": null,
+          "text": "Cómo se crea (GUI, sin slash commands)"
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2816351
+          ],
+          "ext": [
+            7086600,
+            475488
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "(1) Pedísela en lenguaje natural: Claude"
+        },
+        {
+          "id": 11,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            3346704
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3300984
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 12.5,
+          "fill": null,
+          "text": "Ejemplo (Atlas): reporte-semanal"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3602736
+          ],
+          "ext": [
+            7086600,
+            475488
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "Lee todos los archivos crudos de una car"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "callout",
+          "off": [
+            493776,
+            4206240
+          ],
+          "ext": [
+            8138160,
+            676656
+          ],
+          "font_pt": 0.0,
+          "fill": "F7BBC1",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            649224,
+            4434840
+          ],
+          "ext": [
+            219456,
+            219456
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            996696,
+            4297679
+          ],
+          "ext": [
+            7452360,
+            493776
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "OJO — la trampa del Save: pedís la Skill"
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "title": "(Sideway) Archivos MD y metadata: el len",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1298448,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1298448,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "EXTENDER COWORK"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 17.0,
+          "fill": null,
+          "text": "(Sideway) Archivos MD y metadata: el len"
+        },
+        {
+          "id": 5,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            1755648
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            1709928
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Concepto"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2011679
+          ],
+          "ext": [
+            7086600,
+            740663
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Casi todo lo que configurás alrededor de"
+        },
+        {
+          "id": 8,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            2807208
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2761488
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Metadata / headers"
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3063239
+          ],
+          "ext": [
+            7086600,
+            740663
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Muchos archivos arrancan con un bloque d"
+        },
+        {
+          "id": 11,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            3858768
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3813048
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Por qué importa en el mundo LLM"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            4114800
+          ],
+          "ext": [
+            7086600,
+            740663
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "El modelo lee texto: entiende la config "
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "title": "Anatomía de un SKILL.md",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1298448,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1298448,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "EXTENDER COWORK"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 31.0,
+          "fill": null,
+          "text": "Anatomía de un SKILL.md"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1496872
+          ],
+          "ext": [
+            4526280,
+            3349447
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Así se ve un SKILL.md por dentro: un blo"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            1996054
+          ],
+          "ext": [
+            3401568,
+            2351084
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "F33447",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "DA1B2E",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "title": "Connectors y MCP: las \"manos\" del agente",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1759305,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1759305,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "CONECTAR Y AUTOMATIZAR"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 22.5,
+          "fill": null,
+          "text": "Connectors y MCP: las \"manos\" del agente"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1371600
+          ],
+          "ext": [
+            4526280,
+            3474720
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Qué son los Connectors. Son lo que le pe"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2458660
+          ],
+          "ext": [
+            3401568,
+            1300600
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "title": "Cómo se registra un Connector",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1759305,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1759305,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "CONECTAR Y AUTOMATIZAR"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 31.0,
+          "fill": null,
+          "text": "Cómo se registra un Connector"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1496872
+          ],
+          "ext": [
+            4526280,
+            3349447
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "No estás programando: te conectás. Regis"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5925221,
+            1496872
+          ],
+          "ext": [
+            2066724,
+            1592427
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 7,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            3299512
+          ],
+          "ext": [
+            3401568,
+            1501188
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "title": "Schedule: que Cowork trabaje solo",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1759305,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1759305,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "CONECTAR Y AUTOMATIZAR"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 28.0,
+          "fill": null,
+          "text": "Schedule: que Cowork trabaje solo"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1885492
+          ],
+          "ext": [
+            4526280,
+            2960827
+          ],
+          "font_pt": 9.0,
+          "fill": null,
+          "text": "Para qué sirve. Todo lo anterior es reac"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            1975842
+          ],
+          "ext": [
+            3401568,
+            2780128
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "F33447",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "DA1B2E",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "title": "Artifacts y Live Artifacts: del resultad",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1627632,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1627632,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "COMPARTIR RESULTADOS"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 17.0,
+          "fill": null,
+          "text": "Artifacts y Live Artifacts: del resultad"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1543507
+          ],
+          "ext": [
+            4526280,
+            3302812
+          ],
+          "font_pt": 9.0,
+          "fill": null,
+          "text": "Qué es un Artifact. Una salida viva y ej"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2090762
+          ],
+          "ext": [
+            3401568,
+            2208302
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 22,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "F33447",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "DA1B2E",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 23,
+      "title": "Subagentes: delegar sub-tareas en parale",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            837590,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            837590,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "ADVANCED"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 22.5,
+          "fill": null,
+          "text": "Subagentes: delegar sub-tareas en parale"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1714499
+          ],
+          "ext": [
+            4526280,
+            3131820
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Concepto. Un Subagente es un asistente a"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2104868
+          ],
+          "ext": [
+            3401568,
+            2351084
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "title": "Plugins: empaquetar y distribuir un work",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            837590,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            837590,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "ADVANCED"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 17.0,
+          "fill": null,
+          "text": "Plugins: empaquetar y distribuir un work"
+        },
+        {
+          "id": 5,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            1828800
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            1783080
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Concepto"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2084831
+          ],
+          "ext": [
+            7086600,
+            749807
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Un Plugin es la unidad de distribución d"
+        },
+        {
+          "id": 8,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            2898648
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            2852928
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "En Cowork"
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3154679
+          ],
+          "ext": [
+            7086600,
+            749807
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Se instalan desde un marketplace de plug"
+        },
+        {
+          "id": 11,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            3968496
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            3922776
+          ],
+          "ext": [
+            7086600,
+            274320
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "Dónde encontrarlos"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1042415,
+            4224528
+          ],
+          "ext": [
+            7086600,
+            749807
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Marketplaces oficiales (anthropics/claud"
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "title": "Plugins en una cuenta Team: ciclo de vid",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            837590,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            837590,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "ADVANCED"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 22.5,
+          "fill": null,
+          "text": "Plugins en una cuenta Team: ciclo de vid"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1714499
+          ],
+          "ext": [
+            4526280,
+            3131820
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Quién lo maneja. En cuentas Team / Enter"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            2279948
+          ],
+          "ext": [
+            3401568,
+            2000922
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "title": "Agenda",
+      "class": "agenda",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            480640,
+            504974
+          ],
+          "ext": [
+            3246834,
+            348704
+          ],
+          "font_pt": 21.5,
+          "fill": null,
+          "text": "Agenda"
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            606103,
+            994172
+          ],
+          "ext": [
+            14288,
+            3644354
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1112490
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            994172
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1015045
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "1"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1032495
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "De chat a agente: dónde encaja Cowork"
+        },
+        {
+          "id": 8,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1248891
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Del chat a delegar un resultado: dónde e"
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            1653183
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            1534864
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 11,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            1555738
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "2"
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1573188
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Lo básico: interfaz, Instrucciones y Pro"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            1789584
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "La interfaz, las Instrucciones y los Pro"
+        },
+        {
+          "id": 14,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2193875
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2075557
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2096430
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "3"
+        },
+        {
+          "id": 17,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2113880
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Extender Cowork: Skills y archivos MD / "
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2330276
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Skills y por qué los archivos MD / metad"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            2734568
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 20,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            2616250
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            2637123
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "4"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2654573
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conectar y automatizar: Connectors/MCP y"
+        },
+        {
+          "id": 23,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            2870969
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Connectors/MCP y tareas programadas con "
+        },
+        {
+          "id": 24,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3275261
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 25,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3156942
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 26,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3177815
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "5"
+        },
+        {
+          "id": 27,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3195265
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Compartir resultados: Live Artifacts"
+        },
+        {
+          "id": 28,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3411662
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Live Artifacts: compartir el resultado v"
+        },
+        {
+          "id": 29,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            3815953
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "F33447",
+          "text": ""
+        },
+        {
+          "id": 30,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            3697635
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 31,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            3718508
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "6"
+        },
+        {
+          "id": 32,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3735958
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Advanced: Subagentes y Plugins"
+        },
+        {
+          "id": 33,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            3952354
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "Subagentes en paralelo y Plugins para di"
+        },
+        {
+          "id": 34,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            717314,
+            4356646
+          ],
+          "ext": [
+            334714,
+            14288
+          ],
+          "font_pt": 0.0,
+          "fill": "D8D4D4",
+          "text": ""
+        },
+        {
+          "id": 35,
+          "kind": "textbox",
+          "role": "other",
+          "off": [
+            480603,
+            4238327
+          ],
+          "ext": [
+            250999,
+            250999
+          ],
+          "font_pt": 0.0,
+          "fill": "F2EEEE",
+          "text": ""
+        },
+        {
+          "id": 36,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            522387,
+            4259200
+          ],
+          "ext": [
+            167357,
+            209178
+          ],
+          "font_pt": 13.0,
+          "fill": null,
+          "text": "7"
+        },
+        {
+          "id": 37,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4276651
+          ],
+          "ext": [
+            6583680,
+            174278
+          ],
+          "font_pt": 10.5,
+          "fill": null,
+          "text": "Conclusiones"
+        },
+        {
+          "id": 38,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            1164059,
+            4493047
+          ],
+          "ext": [
+            7499300,
+            145479
+          ],
+          "font_pt": 8.5,
+          "fill": null,
+          "text": "El loop completo, gobernanza y advertenc"
+        }
+      ]
+    },
+    {
+      "order": 27,
+      "title": "El loop completo y la idea para llevarse",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1100937,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1100937,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "CONCLUSIONES"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 22.5,
+          "fill": null,
+          "text": "El loop completo y la idea para llevarse"
+        },
+        {
+          "id": 5,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            493776,
+            1371600
+          ],
+          "ext": [
+            4526280,
+            3474720
+          ],
+          "font_pt": 10.0,
+          "fill": null,
+          "text": "Lo que construimos, punta a punta — el l"
+        },
+        {
+          "id": 6,
+          "kind": "pic",
+          "role": "image",
+          "off": [
+            5257800,
+            1558245
+          ],
+          "ext": [
+            3401568,
+            3101430
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "title": "Gobernanza y advertencias (antes de Q&A)",
+      "class": "content-slide",
+      "shapes": [
+        {
+          "id": 2,
+          "kind": "textbox",
+          "role": "pill",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1100937,
+            237744
+          ],
+          "font_pt": 0.0,
+          "fill": "F9D2D6",
+          "text": ""
+        },
+        {
+          "id": 3,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            484632,
+            502920
+          ],
+          "ext": [
+            1100937,
+            237744
+          ],
+          "font_pt": 8.0,
+          "fill": null,
+          "text": "CONCLUSIONES"
+        },
+        {
+          "id": 4,
+          "kind": "textbox",
+          "role": "title",
+          "off": [
+            493776,
+            868680
+          ],
+          "ext": [
+            8092440,
+            822960
+          ],
+          "font_pt": 22.5,
+          "fill": null,
+          "text": "Gobernanza y advertencias (antes de Q&A)"
+        },
+        {
+          "id": 5,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            1828800
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 6,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            932688,
+            1783080
+          ],
+          "ext": [
+            3246120,
+            274320
+          ],
+          "font_pt": 12.0,
+          "fill": null,
+          "text": "Sin audit trail"
+        },
+        {
+          "id": 7,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            932688,
+            2084831
+          ],
+          "ext": [
+            3246120,
+            694944
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "No apto para datos regulados o sensibles"
+        },
+        {
+          "id": 8,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            2852928
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 9,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            932688,
+            2807208
+          ],
+          "ext": [
+            3246120,
+            274320
+          ],
+          "font_pt": 12.0,
+          "fill": null,
+          "text": "Todo es borrador"
+        },
+        {
+          "id": 10,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            932688,
+            3108960
+          ],
+          "ext": [
+            3246120,
+            694944
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "Verificá cifras, citas y afirmaciones co"
+        },
+        {
+          "id": 11,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            512064,
+            3877055
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 12,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            932688,
+            3831335
+          ],
+          "ext": [
+            3246120,
+            274320
+          ],
+          "font_pt": 12.0,
+          "fill": null,
+          "text": "Nada confidencial"
+        },
+        {
+          "id": 13,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            932688,
+            4133087
+          ],
+          "ext": [
+            3246120,
+            694944
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "No metas PII ni datos bajo NDA en la sup"
+        },
+        {
+          "id": 14,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            4736592,
+            1828800
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 15,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            5157216,
+            1783080
+          ],
+          "ext": [
+            3246120,
+            274320
+          ],
+          "font_pt": 12.0,
+          "fill": null,
+          "text": "Reproducibilidad"
+        },
+        {
+          "id": 16,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            5157216,
+            2084831
+          ],
+          "ext": [
+            3246120,
+            694944
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "Guardá juntos prompt + entradas + salida"
+        },
+        {
+          "id": 17,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            4736592,
+            2852928
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 18,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            5157216,
+            2807208
+          ],
+          "ext": [
+            3246120,
+            274320
+          ],
+          "font_pt": 12.0,
+          "fill": null,
+          "text": "Capas de guardarraíles"
+        },
+        {
+          "id": 19,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            5157216,
+            3108960
+          ],
+          "ext": [
+            3246120,
+            694944
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "Permisos de carpeta → Instrucciones → pl"
+        },
+        {
+          "id": 20,
+          "kind": "pic",
+          "role": "icon",
+          "off": [
+            4736592,
+            3877055
+          ],
+          "ext": [
+            329184,
+            329184
+          ],
+          "font_pt": 0.0,
+          "fill": null,
+          "text": ""
+        },
+        {
+          "id": 21,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            5157216,
+            3831335
+          ],
+          "ext": [
+            3246120,
+            274320
+          ],
+          "font_pt": 12.0,
+          "fill": null,
+          "text": "Contexto biomédico"
+        },
+        {
+          "id": 22,
+          "kind": "textbox",
+          "role": "body",
+          "off": [
+            5157216,
+            4133087
+          ],
+          "ext": [
+            3246120,
+            694944
+          ],
+          "font_pt": 9.5,
+          "fill": null,
+          "text": "Cowork no es la herramienta para datos c"
+        }
+      ]
+    }
+  ]
+}
