@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>Elegir no es siempre el más probable</title>
+  <desc>Tres candidatos ordenados por confianza (azul el más probable, gris, claro) se muestran como barras. La selección final se resuelve en una ruleta ponderada donde cada candidato ocupa una tajada proporcional a su confianza; el azar cae en una porción.</desc>
+
+  <rect x="0" y="0" width="760" height="460" fill="#ffffff"/>
+
+  <!-- ================= LEFT: ranked bars ================= -->
+  <text x="48" y="52" font-size="17" font-weight="bold" fill="#3B3535">Candidatos ordenados por confianza</text>
+
+  <!-- azul -->
+  <text x="48" y="106" font-size="15" fill="#3B3535">azul</text>
+  <rect x="118" y="90" width="250" height="24" rx="3" fill="#D6D6D6" stroke="#3B3535" stroke-width="1"/>
+  <text x="378" y="106" font-size="13" fill="#3B3535">más probable</text>
+
+  <!-- gris -->
+  <text x="48" y="152" font-size="15" fill="#3B3535">gris</text>
+  <rect x="118" y="136" width="90" height="24" rx="3" fill="#D6D6D6" stroke="#3B3535" stroke-width="1"/>
+
+  <!-- claro -->
+  <text x="48" y="198" font-size="15" fill="#3B3535">claro</text>
+  <rect x="118" y="182" width="54" height="24" rx="3" fill="#D6D6D6" stroke="#3B3535" stroke-width="1"/>
+
+  <text x="48" y="246" font-size="13" fill="#3B3535" font-style="italic">Barra más larga = mayor confianza</text>
+
+  <!-- connector arrow to roulette -->
+  <path d="M 250 268 L 250 300 L 380 300" fill="none" stroke="#3B3535" stroke-width="1.5"/>
+  <path d="M 380 300 l -9 -5 v 10 z" fill="#3B3535"/>
+
+  <!-- ================= RIGHT: weighted roulette (FOCAL) ================= -->
+  <text x="430" y="52" font-size="17" font-weight="bold" fill="#DA1B2E">Ruleta ponderada</text>
+
+  <!-- wheel center 560,190 r 110 ; slices proportional 63.6 / 22.8 / 13.6 (azul largest) -->
+  <!-- azul slice 0.000 -> 0.636 (large arc) -->
+  <path d="M 560 190 L 560 80 A 110 110 0 1 1 477.03 262.22 Z" fill="#BFBFBF" stroke="#3B3535" stroke-width="1.2"/>
+  <!-- gris slice 0.636 -> 0.864 -->
+  <path d="M 560 190 L 477.03 262.22 A 110 110 0 0 1 477.03 117.78 Z" fill="#8C8C8C" stroke="#3B3535" stroke-width="1.2"/>
+  <!-- claro slice 0.864 -> 1.000 -->
+  <path d="M 560 190 L 477.03 117.78 A 110 110 0 0 1 560 80 Z" fill="#E8E8E8" stroke="#3B3535" stroke-width="1.2"/>
+
+  <!-- slice labels at slice centroids -->
+  <text x="624" y="224" font-size="14" fill="#3B3535" text-anchor="middle">azul</text>
+  <text x="490" y="195" font-size="13" fill="#ffffff" text-anchor="middle">gris</text>
+  <text x="531" y="131" font-size="12" fill="#3B3535" text-anchor="middle">claro</text>
+
+  <!-- pointer / where chance lands (red focal marker) into azul slice -->
+  <g>
+    <path d="M 560 190 L 640 156" fill="none" stroke="#DA1B2E" stroke-width="3"/>
+    <circle cx="560" cy="190" r="6" fill="#DA1B2E"/>
+    <path d="M 640 156 l 2 -12 l 10 10 z" fill="#DA1B2E"/>
+  </g>
+
+  <text x="430" y="352" font-size="14" fill="#DA1B2E" font-weight="bold">El azar cae en una porción</text>
+  <text x="430" y="374" font-size="13" fill="#3B3535">(proporcional a la confianza)</text>
+  <text x="430" y="404" font-size="13" fill="#3B3535">El más probable gana más seguido,</text>
+  <text x="430" y="424" font-size="13" fill="#3B3535">pero no siempre.</text>
+</svg>

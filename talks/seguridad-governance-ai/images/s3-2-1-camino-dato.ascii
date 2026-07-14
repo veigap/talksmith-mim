@@ -1,0 +1,20 @@
++------------+       +--------------+       +---------+
+| tu teclado | ----> | proveedor    | ----> | modelo  |
+| navegador  |  [1]  | (un tercero) |       | (LLM)   |
++------------+       |     [2]      |       +---------+
+      ^              +--------------+            |
+      |                     |                    |
+      |                puede quedar         [3] puede
+      |                (logs, retencion)    entrenar
+      |                                          |
+      +--------------- respuesta <---------------+
+
+[1] viaja por internet (sale de tu maquina)
+[2] queda en servidores del proveedor (retencion/logs)
+[3] segun el plan, puede usarse para entrenar
+
+<!-- ascii-note:
+intent: trazar el recorrido de un dato pegado en una IA — de tu teclado a los servidores de un tercero — marcando los tres puntos donde queda expuesto o guardado
+emphasize: los puntos [1] [2] [3] como marcas de exposicion; el proveedor es "un tercero" (no tu compu); [2] marca la CAJA del proveedor (retencion), no la flecha proveedor->modelo
+labels: flechas = flujo del dato; [1] transito (flecha teclado->proveedor), [2] retencion (caja proveedor), [3] entrenamiento
+-->

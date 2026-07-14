@@ -37,6 +37,11 @@ Desktop.ini
 **/output/final.spcfix.pptx
 **/output/final.pdf
 
+# ── Reverse-pipeline artifacts (regenerated from final.pptx) ─────
+# talksmith:pptx-extract / pptx-diff / pptx-merge write here — always
+# derivable from the deck, never a source of truth.
+**/reconcile/
+
 # ── Python ─────────────────────────────────────────────
 __pycache__/
 *.py[cod]

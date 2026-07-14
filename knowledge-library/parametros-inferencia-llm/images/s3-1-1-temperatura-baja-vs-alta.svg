@@ -1,0 +1,34 @@
+<svg viewBox="0 0 880 480" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<title>Temperatura: creatividad vs. consistencia</title>
+<desc>Dos paneles comparan el efecto de la temperatura. Con temperatura baja una barra domina (respuesta predecible, consistente); con temperatura alta las barras quedan parejas (respuesta variada, creativa).</desc>
+<rect x="0" y="0" width="880" height="480" fill="#ffffff"/>
+<text x="440" y="44" font-size="24" font-weight="bold" fill="#3B3535" text-anchor="middle">Temperatura: creatividad vs. consistencia</text>
+<rect x="50" y="92" width="380" height="340" rx="8" fill="#F4F2F2" stroke="#CFCACA" stroke-width="1"/>
+<text x="240" y="126" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="middle">TEMPERATURA BAJA (~0)</text>
+<text x="74" y="175" font-size="16" fill="#3B3535" text-anchor="start" dominant-baseline="middle">azul</text>
+<rect x="132" y="158" width="220" height="34" fill="#8A8585" stroke="#CFCACA" stroke-width="1"/>
+
+<text x="74" y="231" font-size="16" fill="#3B3535" text-anchor="start" dominant-baseline="middle">gris</text>
+<rect x="132" y="214" width="19" height="34" fill="#B3AEAE" stroke="#CFCACA" stroke-width="1"/>
+
+<text x="74" y="287" font-size="16" fill="#3B3535" text-anchor="start" dominant-baseline="middle">claro</text>
+<rect x="132" y="270" width="8" height="34" fill="#D8D4D4" stroke="#CFCACA" stroke-width="1"/>
+
+<line x1="74" y1="340" x2="406" y2="340" stroke="#CFCACA" stroke-width="1"/>
+<text x="240" y="362" font-size="15" fill="#3B3535" text-anchor="middle" font-style="italic">casi siempre "azul"</text>
+<text x="240" y="394" font-size="18" font-weight="bold" fill="#3B3535" text-anchor="middle">PREDECIBLE / CONSISTENTE</text>
+<rect x="470" y="92" width="380" height="340" rx="8" fill="#F4F2F2" stroke="#DA1B2E" stroke-width="2"/>
+<text x="660" y="126" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="middle">TEMPERATURA ALTA (~1)</text>
+<text x="494" y="175" font-size="16" fill="#3B3535" text-anchor="start" dominant-baseline="middle">azul</text>
+<rect x="552" y="158" width="121" height="34" fill="#DA1B2E" stroke="#CFCACA" stroke-width="1"/>
+
+<text x="494" y="231" font-size="16" fill="#3B3535" text-anchor="start" dominant-baseline="middle">gris</text>
+<rect x="552" y="214" width="101" height="34" fill="#DA1B2E" stroke="#CFCACA" stroke-width="1"/>
+
+<text x="494" y="287" font-size="16" fill="#3B3535" text-anchor="start" dominant-baseline="middle">claro</text>
+<rect x="552" y="270" width="88" height="34" fill="#DA1B2E" stroke="#CFCACA" stroke-width="1"/>
+
+<line x1="494" y1="340" x2="826" y2="340" stroke="#DA1B2E" stroke-width="1"/>
+<text x="660" y="362" font-size="15" fill="#3B3535" text-anchor="middle" font-style="italic">puede salir cualquiera</text>
+<text x="660" y="394" font-size="18" font-weight="bold" fill="#DA1B2E" text-anchor="middle">VARIADO / CREATIVO</text>
+</svg>

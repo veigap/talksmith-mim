@@ -1,0 +1,50 @@
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg">
+  <title>Tamaño del modelo: capacidad vs. costo</title>
+  <desc>Al crecer el tamaño del modelo suben tanto la capacidad como el costo y la latencia; el óptimo de negocio no es el modelo más grande sino el más chico que resuelve bien la tarea.</desc>
+
+  <rect x="0" y="0" width="680" height="400" fill="#ffffff"/>
+
+  <!-- ===== EJES ===== -->
+  <!-- eje horizontal: tamaño del modelo -->
+  <line x1="90" y1="320" x2="620" y2="320" stroke="#6A737D" stroke-width="1.5"/>
+  <!-- eje vertical: capacidad -->
+  <line x1="90" y1="320" x2="90" y2="60" stroke="#6A737D" stroke-width="1.5"/>
+
+  <!-- flechas de eje -->
+  <path d="M620 320 l-9 -5 v10 z" fill="#6A737D"/>
+  <path d="M90 60 l-5 9 h10 z" fill="#6A737D"/>
+
+  <!-- etiqueta eje X -->
+  <text x="355" y="352" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#3B3535">tamaño del modelo  &#8594;</text>
+  <text x="355" y="372" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#6A737D">(y con él, costo / latencia por consulta)</text>
+
+  <!-- etiqueta eje Y -->
+  <text x="58" y="190" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#3B3535" transform="rotate(-90 58 190)">capacidad</text>
+
+  <!-- ===== CURVA DE CAPACIDAD (rendimientos decrecientes) ===== -->
+  <path d="M120 300 C 240 300, 300 130, 470 105 S 560 92, 590 88"
+        fill="none" stroke="#C9CDD2" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- ===== MODELO CHICO ===== -->
+  <circle cx="150" cy="288" r="9" fill="#6A737D"/>
+  <text x="150" y="268" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1F1E1E">modelo chico</text>
+  <text x="150" y="222" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6A737D">rápido · barato</text>
+  <text x="150" y="238" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6A737D">tareas simples</text>
+
+  <!-- ===== MODELO GRANDE ===== -->
+  <circle cx="565" cy="92" r="9" fill="#6A737D"/>
+  <text x="565" y="72" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1F1E1E">modelo grande</text>
+  <text x="565" y="128" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6A737D">capaz · lento · caro</text>
+  <text x="565" y="144" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6A737D">tareas difíciles</text>
+
+  <!-- ===== PUNTO ÓPTIMO (FOCAL, ROJO) ===== -->
+  <!-- guía vertical tenue -->
+  <line x1="335" y1="150" x2="335" y2="320" stroke="#F7BBC1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="335" cy="150" r="13" fill="#DA1B2E"/>
+  <circle cx="335" cy="150" r="20" fill="none" stroke="#DA1B2E" stroke-width="1.5"/>
+  <text x="335" y="116" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#DA1B2E">óptimo</text>
+  <text x="335" y="132" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#DA1B2E">depende de la tarea</text>
+
+  <!-- ===== TAKEAWAY ===== -->
+  <text x="355" y="392" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#3B3535">No siempre el más grande: el más chico que resuelva bien la tarea</text>
+</svg>

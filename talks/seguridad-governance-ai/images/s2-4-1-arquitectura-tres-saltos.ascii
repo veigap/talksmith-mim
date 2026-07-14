@@ -1,0 +1,14 @@
+TU PC ---(API)---> [ INTERNET ] ---(API)---> SERVIDOR SAAS ---(API)---> PROVEEDOR IA (retiene y entrena)
+
+[ TU PC ]                                          [ SERVIDOR SAAS ]      [ PROVEEDOR IA ]
+   |-- Tu país -------|      [ INTERNET ]      |-------------- Otro país --------------|
+                                                       (retiene y entrena, nodo de riesgo)
+
+Diagrama de red (no boxes-and-arrows esquemático): laptop -> nube "Internet" -> torre de servidor "Servidor SaaS" -> torre de servidor en rojo "Proveedor IA". Tres saltos = tres conexiones API en cadena. El servidor propio/on-prem se sacó del dibujo (no es necesario para el punto). La frontera de residencia se muestra con dos llaves ("Tu país" bajo el PC, "Otro país" bajo Servidor SaaS + Proveedor IA), no con un pin numerado.
+
+<!-- ascii-note:
+intent: diagrama de red (iconos: laptop, nube de internet, dos torres de servidor) mostrando la cadena PC -> Internet -> Servidor SaaS -> Proveedor IA en tres saltos, cada conexion una llamada API; la residencia del dato se muestra como el cruce de "tu pais" a "otro pais" entre el segundo y tercer nodo
+emphasize: el nodo "Proveedor IA" en rojo/coral -- es el punto de riesgo porque ademas retiene y entrena con el texto; las llaves "Tu pais" / "Otro pais" bajo los nodos marcan la frontera de residencia, la nube de Internet queda neutral entre ambas
+labels: "API" sobre cada una de las tres conexiones; "Tu pais" / "Otro pais" como llaves debajo de los nodos, no como pin numerado; sin pin de cifrado (se elimino del visual, sigue solo verbal en speaker notes)
+note: esta imagen fue co-disenada en vivo con el presenter (iteracion visual fuera del pipeline estandar illustrator/ascii-to-svg) y guardada directamente como asset final; este .ascii es el registro de esa version para referencia futura, no un input para un re-render automatico
+-->

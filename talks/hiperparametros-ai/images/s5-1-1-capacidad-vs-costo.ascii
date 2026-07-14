@@ -1,0 +1,19 @@
+  CAPACIDAD  ^
+  (calidad)  |                      * GRANDE / flagship
+             |                        (mejor calidad,
+             |                         más lento y caro)
+             |            * intermedio
+             |
+             |   * MINI / rápido
+             |     (más barato y ágil,
+             |      suele alcanzar)
+             +-------------------------------->
+                        COSTO / LATENCIA por consulta
+
+  Regla: el más chico/rápido que resuelva BIEN la tarea
+
+<!-- ascii-note:
+intent: mostrar el eje capacidad vs costo/latencia entre niveles de modelo (mini rápido → intermedio → grande/flagship), y que la elección óptima no es "el más grande" sino el más chico que resuelva bien la tarea
+emphasize: la diagonal ascendente (más capacidad cuesta más costo/latencia); el contraste MINI vs GRANDE; la regla de cierre
+labels: eje Y "CAPACIDAD (calidad)", eje X "COSTO / LATENCIA por consulta", puntos "MINI / rápido", "intermedio", "GRANDE / flagship", regla de cierre
+-->

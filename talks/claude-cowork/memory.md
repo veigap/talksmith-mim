@@ -1,10 +1,22 @@
 # memory.md — claude-cowork-funcional
 
 **Current step:** 5 — Review, round 6 complete (2026-07-09), status: awaiting_presenter
-**Awaiting:** El presentador revisa la compactación + Schedule expandido (27 slides) y responde: commit de round 6 al branch de Paulo / más feedback / "listo" para Polish (Step 6). Nota orquestador: 20 [closed] históricos (rounds 1–3) sin espejo en el backlog de este repo — no back-fillar (9 ya promovidos a L002 en el repo original). Branch de revisión: claude-cowork-reestructura-chat-primero (commit 230d9c9, rounds 4-5); round 6 pendiente de commit.
+**Mode:** C (Presenter Outline)
+**Awaiting:** El presentador revisa la compactación + Schedule expandido (27 slides) y responde: más feedback o "listo" para Polish (Step 6). Nota orquestador: 20 [closed] históricos (rounds 1–3) sin espejo en el backlog de este repo — no back-fillar (9 ya promovidos a L002 en el repo original). Branch de revisión: claude-cowork-reestructura-chat-primero (rounds 4-6).
+**Nota de merge (2026-07-14):** en paralelo a las rondas 4-6, en main se re-renderizó el PPTX en ambos estilos (2026-07-09 → 2026-07-13, secciones abajo) SIN cambios de contenido — esos renders parten del final.md PRE-reestructura (20 slides). Tras el Polish de esta rama, output/final*.pptx quedan obsoletos y hay que re-renderizar.
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork-funcional/
 **Started:** 2026-06-05
+
+---
+
+## 2026-07-13 — Step 8 (Render PPTX) — re-render both styles
+- Status: complete
+- What was decided: Re-rendered both styles from the current final.md (28-slide strict, 29-slide free-form). Canonical final.pptx = strict copy.
+- Render results: strict — 28 slides, all 6 audits (aspect/palette-fonts/cover-fidelity/layout-fit/block-coverage/notes) exit 0. free-form — 29 slides, shared-floor audits (aspect/cover-fidelity/block-coverage/notes) exit 0.
+- Files created/modified: output/final.strict.pptx, output/final.free-form.pptx, output/final.free-form.template-log.md, output/final.pptx (canonical=strict), per-style intermediates.
+- Non-blocking note (strict): comparison pipe-tables (e.g. "Chatear vs Delegar", slide 5) render as flattened prose + diagram rather than §7/§11 card grids — audit-conformant, but a future pass could apply richer card treatment.
+- Pending open questions: none
 
 ---
 
@@ -224,3 +236,36 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - Key inputs: pedido verbatim del presentador (2 items, chat); re-fetch de 13854387 (2026-07-09: remoto + excepción local, sin skip-and-catch-up, sin approval caveat); 12138966; TechCrunch 2026-07-07; precedente "compact" de round 3.
 - Files created/modified: draft.md (compactación de 21 Content + notes crecidas + slide nueva 3.2 + sync 4.11 + goal S3), config/feedback-backlog.md (+2 filas, +2 tags), memory.md
 - Pending open questions: (heredadas, sin cambios) fecha placeholder; stubs Phase 2; carpeta skills/; banner DEMO TIME (4.5); URLs round 3 a snapshotear; fuente Google para Gemini en 2.2; tickets/mensajes sin verificación por conector (2.5); vigilancia locality Live Artifacts. NUEVA round 6: si el presentador quiere enseñar un caveat de aprobación/revisión de acciones en tareas programadas remotas, falta doc oficial que lo respalde (hoy no existe en 13854387/12138966). Sigue pendiente re-correr Step 6 (Polish) y, si se quiere, Step 8 (PPTX).
+---
+
+<!-- Merge 2026-07-14: las tres secciones siguientes vienen de main — trabajo paralelo de render (2026-07-09 → 2026-07-13) hecho SIN los cambios de contenido de rounds 4-6. Sus outputs parten del final.md pre-reestructura (20 slides) y quedan obsoletos tras el próximo Polish. -->
+
+## 2026-07-09 — Reapertura Draft → preview → Render free-form
+- Status: complete
+- Contexto: presentador reabrió la charla, volvió a Step 4 (draft.md sin cambios respecto al commit; final.md ya era su Polish). Generó el preview Step-5.5 (build_preview.py → output/draft-preview/slide-01..27.png, 27 wireframes). Luego pidió "ir a final" y eligió render **free-form**.
+- Render free-form: como el skill md-to-pptx/pptx oficial autorea libremente, se construyó con un generador python-pptx propio partiendo de la base-template free-form (portada fija, slides 2+ diseñadas). Salida output/final.free-form.pptx (29 slides) copiada a output/final.pptx (canónico).
+- Estructura: portada + agenda + 7 divisores (6 secciones + Conclusiones) + 20 slides de contenido. Paleta cálida (coral #C95B3C / ink #1F1E1E / card #F5F1EC), Arial, marcador coral en títulos, divisores en fondo oscuro con número grande. Tablas estilizadas (header coral). Las 10 imágenes de diagramas ASCII (ya renderizadas en el Polish previo) + 7 screenshots reutilizadas de images/.
+- Bug clave corregido: el generador leyó final.md directo, que usa H3 `### Content` / `### Sources` / `### Speaker notes` (no `### Notes`). Primer intento volcó Sources+Notes al cuerpo (overflow + "### Content" visible). Fix: parser por modo (Content→cuerpo, Sources→descartar, Speaker notes→panel de notas). Restos de comentarios `<!-- ascii-source/-note -->` con `-->` internos limpiados por stripper línea-a-línea.
+- QA visual (LibreOffice→JPG, 29/29): sin overflow en las densas (Skills 14, Schedule 20, tabla 6), imágenes sin distorsión (aspect preservado), 20/20 con notas del orador, 0 placeholders. python-pptx escribe el interlineado en unidades correctas (evita el bug de Keynote del render strict previo).
+- Files: output/final.pptx + output/final.free-form.pptx (29 slides, ~2.1 MB); output/draft-preview/*.png (27); memory.md. Generador en scratchpad (gen_freeform.py).
+- Pendiente menor: temporales de QA host-owned en output/ (qa2/, slide-*.jpg, *.pdf) — borrar a mano. Fecha de portada = Junio 2026 (heredada); confirmar si la clase es otra fecha.
+
+## 2026-07-10 — Re-render free-form (Step 8)
+- Status: complete
+- Pedido del presentador: reabrir la charla y re-renderizar. Estilo elegido = free-form; fecha de portada sin cambios (date: 2026-06-10 → "Junio 2026").
+- Sin cambios de contenido (final.md intacto). Re-generado con python-pptx desde base-template free-form → output/final.free-form.pptx (29 slides, ~2.1 MB) copiado a output/final.pptx (canónico).
+- Bug corregido en esta pasada: el generador convertía `**negrita**` pero dejaba `*itálica*` como asteriscos literales (~28 spans, visibles en varias slides, p.ej. 5 y 6). Parcheado add_runs() para tokenizar también `*italic*` → run itálica. Verificado: 0 runs con `*` literal en el deck.
+- Audits (contra final.pptx): block_coverage ok (0 drops), aspect_ratios ok (18 pics, 0 fail), notes_coverage ok (20/20). QA visual (portada, dividers, tabla, slides con imagen, Schedule densa) sin overflow ni solapes; imágenes con aspecto preservado.
+- Generador persistido en output/gen_freeform.py; layout log en output/.layout-log.md.
+- Pendiente menor: temporales QA host-owned en output/ (qa/, qa3/, slide-*.jpg, *.pdf) — borrar a mano. Slide 20 (Schedule) es la más densa; confirmar legibilidad en proyector.
+
+## 2026-07-10 — Re-render strict (Step 8, desde cero)
+- Status: complete
+- Pedido: "hacé la versión strict ahora" + "empezá de cero, borrá la existente". Borrado el final.strict.pptx viejo (Jul 9) vía allow_cowork_file_delete; render strict fresco desde base-template.
+- Estilo strict spec-driven: 28 slides (portada + agenda + 6 dividers de sección + Conclusiones + 20 de contenido). Autoría con python-pptx desde working copy de base-template.pptx (slides 3–15 de layout-reference borradas tras usarlas como recetas). Salida output/final.strict.pptx (~2.19 MB) → copiada a output/final.pptx (canónico, ahora = strict; final.free-form.pptx conserva la free-form).
+- Audits todos ok: block_coverage 0 drops, aspect_ratios 0 fail (26 pics), notes_coverage 20/20, palette_fonts ok (§2 paleta / Helvetica·Courier New), cover_fidelity ok, layout_fit ok (20/20 predicho=emitido).
+- Reglas honradas: emoji→iconos §17 (⚠️→callout warning rosa, lightbulb en demo, info azul); enumeraciones etiquetadas → cards (nunca bullets); tabla "Chatear vs Delegar" → 2 comparison cards; `*italic*` renderiza itálica (sin asteriscos literales); interlineado Keynote-safe (spcPct base 100000, sin valores <1000).
+- Fixes de primera pasada: pill de 2da línea colgando, columna densa "Los bloques" clipping, overlap imagen/callout en Schedule — corregidos y re-verificados.
+- QA visual (28 JPG en output/qa-strict/): portada, agenda, divider, cards, tabla, imagen, Schedule densa — sin overflow ni solapes.
+- Flagged (no bloqueante): título de 81 chars en "El superpoder…" wrappea a 2 líneas (verbatim); pill de Sección 3 largo renderiza a 6pt — candidatos a acortar en autoría. Backticks de `buscar-accion`/`reporte-semanal` en la línea Ejemplo Atlas de Schedule quedan literales (inline code) — cosmético.
+- Generador en output/gen_strict.py; layout log en output/.layout-log-strict.md; geometry baseline en output/final.generated.geometry.json.

@@ -1,0 +1,12 @@
+  MODELO CHICO            MODELO GRANDE
+  [ o o ]                 [ o o o o o o o o ]
+  rápido, barato          capaz, lento, caro
+  tareas simples          tareas difíciles
+
+  Elección de negocio: el más chico que resuelva bien la tarea
+
+<!-- ascii-note:
+intent: contrastar modelo chico vs grande en el eje capacidad-vs-costo, y que la elección óptima no es "el más grande"
+emphasize: el contraste de tamaño visual (pocas vs muchas unidades) y la regla "el más chico que alcance"
+labels: "MODELO CHICO / MODELO GRANDE", atributos rápido-barato vs capaz-caro, la regla de elección de negocio
+-->

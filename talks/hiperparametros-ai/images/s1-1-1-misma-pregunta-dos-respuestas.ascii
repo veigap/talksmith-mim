@@ -1,0 +1,12 @@
+   Misma pregunta  ---> [  AI  ] ---> "Respuesta A"
+   Misma pregunta  ---> [  AI  ] ---> "Respuesta B (distinta)"
+                          ^
+                          |
+                   perillas ocultas
+                   (config del modelo)
+
+<!-- ascii-note:
+intent: mostrar que la misma entrada produce salidas distintas por culpa de parámetros ocultos, no por error del modelo
+emphasize: la caja "perillas ocultas" apuntando al modelo; el contraste Respuesta A vs B
+labels: "Misma pregunta", "AI", "Respuesta A", "Respuesta B (distinta)", "perillas ocultas (config del modelo)"
+-->

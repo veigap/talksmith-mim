@@ -1,0 +1,17 @@
+  PROBLEMA DE NEGOCIO
+        |
+        v
+  +-------------------+     +-------------------------+
+  | ¿consistente o    | --> | temperatura / top-p     |
+  |  creativo?        |     +-------------------------+
+  +-------------------+
+  +-------------------+     +-------------------------+
+  | ¿dificultad vs    | --> | tamaño del modelo       |
+  |  presupuesto?     |     +-------------------------+
+  +-------------------+
+
+<!-- ascii-note:
+intent: árbol de decisión que mapea cada pregunta de negocio a la(s) perilla(s) correspondiente(s)
+emphasize: el flujo "problema de negocio" bajando a dos preguntas, cada una apuntando a su grupo de perillas
+labels: "PROBLEMA DE NEGOCIO", las dos preguntas, y las perillas destino a la derecha
+-->

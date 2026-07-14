@@ -1,0 +1,16 @@
+  "El cielo es ___"
+
+   candidato   confianza
+   ---------   ---------
+   azul        ####### alta
+   gris        ###
+   infinito    ##
+   verde       #
+
+   -> elige uno -> lo agrega -> repite
+
+<!-- ascii-note:
+intent: mostrar que en cada paso el modelo produce una lista de candidatos con niveles de confianza y elige uno
+emphasize: que "azul" tiene la barra más alta pero no es el único candidato; el ciclo "elige -> agrega -> repite"
+labels: frase incompleta "El cielo es ___", columnas "candidato" y "confianza", barras de confianza
+-->

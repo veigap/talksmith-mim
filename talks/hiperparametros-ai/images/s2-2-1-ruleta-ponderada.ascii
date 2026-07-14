@@ -1,0 +1,14 @@
+  Candidatos ordenados por confianza:
+
+   azul   [==============]  <- más probable
+   gris   [=====]
+   claro  [===]
+          \______ ruleta ponderada ______/
+             el azar cae en una porción
+             (proporcional a la confianza)
+
+<!-- ascii-note:
+intent: mostrar que la selección final es un sorteo ponderado por confianza, no siempre el candidato top
+emphasize: la idea de "ruleta ponderada" donde cada candidato ocupa una tajada proporcional a su confianza
+labels: candidatos "azul/gris/claro" con barras, etiqueta "ruleta ponderada", "el azar cae en una porción"
+-->

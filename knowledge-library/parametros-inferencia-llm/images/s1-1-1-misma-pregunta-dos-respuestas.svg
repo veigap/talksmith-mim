@@ -1,0 +1,44 @@
+<svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<title>La misma pregunta, dos respuestas</title>
+<desc>Arranco haciendo, en vivo si se puede, la misma pregunta dos veces en un chat y mostrando que cambia.</desc>
+<rect x="0" y="0" width="680" height="340" fill="#ffffff"/>
+
+<!-- Left: Misma pregunta -->
+<rect x="24" y="130" width="150" height="80" rx="6" fill="#f2f0f0" stroke="#3B3535" stroke-width="1.5"/>
+<text x="99" y="165" text-anchor="middle" font-size="16" font-weight="bold" fill="#3B3535">Misma</text>
+<text x="99" y="187" text-anchor="middle" font-size="16" font-weight="bold" fill="#3B3535">pregunta</text>
+
+<!-- Arrow from pregunta to AI -->
+<line x1="174" y1="170" x2="270" y2="170" stroke="#3B3535" stroke-width="1.8"/>
+<polygon points="270,170 260,165 260,175" fill="#3B3535"/>
+
+<!-- Center: AI box -->
+<rect x="272" y="135" width="110" height="70" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="2"/>
+<text x="327" y="177" text-anchor="middle" font-size="22" font-weight="bold" fill="#3B3535">AI</text>
+
+<!-- Two diverging arrows from AI: top to Respuesta A, bottom to Respuesta B -->
+<path d="M382 158 L470 88" stroke="#3B3535" stroke-width="1.8" fill="none"/>
+<polygon points="470,88 459,90 464,99" fill="#3B3535"/>
+<path d="M382 182 L470 252" stroke="#3B3535" stroke-width="1.8" fill="none"/>
+<polygon points="470,252 464,241 459,250" fill="#3B3535"/>
+
+<!-- Respuesta A (top) -->
+<rect x="472" y="52" width="184" height="66" rx="6" fill="#f2f0f0" stroke="#3B3535" stroke-width="1.5"/>
+<text x="564" y="82" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">Respuesta A</text>
+<text x="564" y="103" text-anchor="middle" font-size="12" fill="#3B3535">(una versi&#243;n)</text>
+
+<!-- Respuesta B (bottom) -->
+<rect x="472" y="222" width="184" height="66" rx="6" fill="#f2f0f0" stroke="#3B3535" stroke-width="1.5"/>
+<text x="564" y="252" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">Respuesta B</text>
+<text x="564" y="273" text-anchor="middle" font-size="12" fill="#3B3535">(distinta)</text>
+
+<!-- Focal: perillas ocultas box pointing UP at AI (red accent) -->
+<rect x="242" y="262" width="170" height="60" rx="6" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+<text x="327" y="286" text-anchor="middle" font-size="14" font-weight="bold" fill="#DA1B2E">Perillas ocultas</text>
+<text x="327" y="306" text-anchor="middle" font-size="12" fill="#DA1B2E">(config del modelo)</text>
+
+<!-- Arrow from perillas UP to AI -->
+<line x1="327" y1="262" x2="327" y2="209" stroke="#DA1B2E" stroke-width="2.5"/>
+<polygon points="327,205 321,216 333,216" fill="#DA1B2E"/>
+
+</svg>

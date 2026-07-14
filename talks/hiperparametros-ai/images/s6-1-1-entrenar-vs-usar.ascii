@@ -1,0 +1,12 @@
+   ENTRENAMIENTO (una vez, caro)     USO / INFERENCIA (cada consulta)
+   +--------------------------+      +---------------------------+
+   | tamaño del modelo        |      | temperatura, top-p,       |
+   | learning rate            | ==>  | tokens máx., contexto     |
+   +--------------------------+      +---------------------------+
+   lo decide quien lo construye      lo tocás vos al usarlo
+
+<!-- ascii-note:
+intent: separar los dos momentos del ciclo de vida — parámetros de entrenamiento (fijos, del constructor) vs de inferencia (tocables por el usuario)
+emphasize: la flecha del entrenamiento hacia el uso; qué caja controla el negocio y cuál el proveedor
+labels: dos cajas "ENTRENAMIENTO (una vez, caro)" y "USO / INFERENCIA (cada consulta)", contenido de cada una
+-->
