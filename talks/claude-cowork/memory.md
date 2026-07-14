@@ -1,6 +1,6 @@
 # memory.md — claude-cowork-funcional
 
-**Current step:** 8 — Render PPTX complete (strict + free-form re-render, 2026-07-13)
+**Current step:** 5 — Review (reopened 2026-07-14; awaiting presenter feedback)
 **Mode:** C (Presenter Outline)
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork-funcional/
@@ -15,6 +15,17 @@
 - Files created/modified: output/final.strict.pptx, output/final.free-form.pptx, output/final.free-form.template-log.md, output/final.pptx (canonical=strict), per-style intermediates.
 - Non-blocking note (strict): comparison pipe-tables (e.g. "Chatear vs Delegar", slide 5) render as flattened prose + diagram rather than §7/§11 card grids — audit-conformant, but a future pass could apply richer card treatment.
 - Pending open questions: none
+
+---
+
+## 2026-07-14 — Reapertura Step 5 (Review) + limpieza intencional de carpeta
+- Status: in_progress
+- Asks log:
+  - 2026-07-14 — "La carpeta del Talk quedó solo con draft.md y memory.md (final.md, images/, output/, research/ borrados, sin commitear). ¿Intencional? (1 restaurar todo / 2 intencional / 3 restaurar selectivo)" → 2 (intencional)
+- What was decided: El presentador confirmó que la limpieza de la carpeta fue intencional — se conservan solo draft.md y memory.md. Las eliminaciones siguen sin commitear, por lo que git conserva todos los archivos hasta que se commitee.
+- Implicaciones registradas: (a) un futuro Polish debe re-renderizar los 10 diagramas ASCII desde draft.md (los .svg/.png ya no están); (b) las 7 refs de screenshots en draft.md (project.png, context.png, connectors_directory.png, connector_browser.png, schedule.png, screenshot-cowork-tab.png, mockup-tablero.png) quedarán rotas tras el commit salvo restauración puntual desde git; (c) research/corpus/ ya no está disponible para futuras revisiones del Composer.
+- Estado del draft: sin cambios vs último commit; 0 bullets de feedback nuevos (find-open limpio).
+- Pending open questions: qué hacer con las refs de screenshots al momento del próximo Polish/render (restaurar desde git vs recapturar vs quitar).
 
 ---
 
