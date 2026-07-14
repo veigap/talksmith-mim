@@ -95,8 +95,8 @@ Ritmo liviano. Contar la escena en neutro, sin anticipar el problema. Interacci�
 ### Content
 
 1. Pegaron **código fuente** para encontrar un error.
-Grabación de reunión interna
-Código de equipo de medición
+2. Grabación de reunión interna
+3. Código de equipo de medición
 
 *"Nadie quería hacer nada malo. Nadie fue negligente. Todos hicimos algo parecido."*
 
