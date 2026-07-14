@@ -1,10 +1,57 @@
-# memory.md — claude-cowork-funcional
+# memory.md — claude-cowork
 
-**Current step:** 5 — Review (reopened 2026-07-14; awaiting presenter feedback)
+**Current step:** 7 — Render (html-strict, complete 2026-07-14) → siguiente: Step 8 (Learnings)
 **Mode:** C (Presenter Outline)
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
-**Folder:** talks/claude-cowork-funcional/
+**Folder:** talks/claude-cowork/
 **Started:** 2026-06-05
+
+---
+
+## 2026-07-14 — Step 6 (Polish) — re-corrido completo
+- Status: complete
+- Contexto: se retomó un Polish a medio camino. final.md ya existía como copia byte-idéntica de draft.md (action 0 hecha); 5 de 10 diagramas ya renderizados; los 7 screenshots restaurados en images/ (contradice la nota del 2026-07-14 sobre limpieza intencional — ver Bugs).
+- Illustrator: renderizados los 5 bloques faltantes (s3-3-1 anatomía SKILL.md, s4-1-1 flujo Connector/MCP, s6-1-1 fan-out de subagentes, s6-3-1 ciclo Plugins Team, sc-1-1 loop Atlas). Veredictos: s6-1-1 y s6-3-1 clean on first pass; s3-3-1, s4-1-1 y sc-1-1 clean tras 1 revisión. 0 unresolved, 0 failed. Total: 10/10 render-driving con par .svg + .png en images/.
+- Editor (4 transformaciones sobre final.md únicamente; draft.md verificado byte-idéntico vs git HEAD):
+  - (a) 10 fences ```ascii → image refs + eco <!-- ascii-source: -->. 1 fence ```ascii sobrevive (banner DEMO TIME 2.1, doc-only, decisión previa).
+  - (b) 12 refs reescritos (10 .svg→.png sibling + 2 corpus-path→images/). 0 extensiones prohibidas; 17/17 refs resuelven en disco.
+  - (c) rescue-open → 0 bullets abiertos (Review cerró limpio).
+  - (d) 28 bloques de Presenter feedback eliminados; 0 strings "Presenter feedback" en final.md. draft.md conserva el log completo.
+- Verificación independiente: fences balanceados (2 líneas ``` / 1 bloque ascii); comentarios HTML balanceados (21 opens / 21 closes); 17/17 refs resuelven; draft.md sin cambios vs HEAD.
+- date frontmatter: sigue placeholder (2026-06-XX) — sin fabricar; el presentador confirma antes de renderizar.
+- Files created/modified: final.md (4 transformaciones); images/ (5 .svg + 5 .png nuevos); images/.critique/ (5 logs de crítica, plan.json, plan.annotated.json, ts-args/ regenerados); memory.md
+- Pending open questions: (heredadas) fecha de clase placeholder; carpeta skills/ ausente; vigencia point-in-time; decisión banner DEMO TIME 2.1. NUEVAS: ver Bugs 2026-07-14 abajo (research/ ausente bloquea un re-run de Polish desde draft.md; bug de escape `-->` en polish-ascii cleanup; bloque legacy ```text en 2.3).
+
+## 2026-07-14 — Step 7 (Render) — html-strict
+- Status: complete
+- Asks log:
+  - 2026-07-14 — "Estilo del deck (pptx-strict / pptx-free-form / html-strict)" → html-strict
+  - 2026-07-14 — "La portada tiene date: 2026-06-XX placeholder. ¿Qué debe decir? (1 dejar placeholder / 2 Julio 2026 / 3 fecha específica)" → 2 (Julio 2026)
+- What was decided: Render html-strict (Reveal.js, code-rendered, Cowork-independiente). `date:` fijada a "Julio 2026" en el frontmatter de final.md; la nota correspondiente en Open questions marcada resuelta. draft.md NO tocado (sigue con el placeholder — divergencia intencional final.md vs draft.md).
+- FILL (paso semántico): output/slide-model.json — 27 slides (6 section-agenda + 1 divider + 20 de contenido; la portada la sintetiza el renderer desde `deck`). Templates: content+cards+image ×10, concept-breakdown ×5, section-agenda ×6, content-image ×2, figures ×2, process ×1, divider ×1. 0 fallback / 0 content-text (ningún candidato a reestructurar). 20/20 slides con notes verbatim. 17 refs de imagen únicas, todas resuelven. 69/69 frases load-bearing del source aterrizaron.
+- Decisión del banner DEMO TIME (2.1) — RESUELTA como opción (c): se descartó el fence (habría disparado code-example y impreso el banner como bloque de código literal) y su mensaje se re-expresó como `highlight` kind=important ("SLIDE DE DEMO EN VIVO"); la slide quedó content-image alrededor de screenshot-cowork-tab.png. Nada se perdió. Confirmar con el presentador si aun así quiere un banner renderizado.
+- RENDER (mecánico): build_html.py --talk talks/claude-cowork → `[html] 27 slides` → output/html/index.html (3.2 MB, self-contained).
+- Verificación: 0 refs externos (todo inline: 20 data:image/png + 5 data:font/woff2 IBM Plex + 1 gif); 28 <section> (27 slides + portada); 21 paneles de notas; 0 fallback real (la única aparición de "fallback" es un comentario CSS); portada muestra "Julio 2026"; 0 fuga de ASCII crudo.
+- Files created/modified: final.md (date + nota de Open questions), output/slide-model.json (nuevo), output/html/index.html (nuevo), output/html/.icons/, memory.md
+- Publicado como Live Artifact de Cowork: id `claude-cowork-deck` (2026-07-14), apuntando al index.html self-contained. Nota meta: los Live Artifacts son locales y todavía NO compartibles (es exactamente lo que dice la slide 5.1 de esta misma charla) — sirve como pestaña persistente para el presentador, no como canal de distribución a los alumnos. Para que los alumnos lo abran: commit + push con Pages, o mandar el index.html.
+- Pending open questions: (heredadas) carpeta skills/ ausente; vigencia point-in-time; bloque legacy ```text en 2.3. NUEVAS: bugs de renderer html-strict (ver abajo #9–#13); draft.md conserva `date: 2026-06-XX` — si se re-corre Polish desde draft.md, la fecha vuelve al placeholder.
+
+## 2026-07-14 — Bugs / inconsistencias detectadas durante Polish y Render
+1. **`polish_ascii.py cleanup` no escapa `-->` dentro del eco `ascii-source`.** 4 diagramas (s1-3-1, s4-1-1, s6-3-1, sc-1-1) tienen flechas ASCII `-->`; el comentario HTML cierra en la primera ocurrencia y el resto del ASCII se filtra al cuerpo renderizado + queda un `-->` suelto. El editor lo parcheó a mano (`--&gt;`, 10 ocurrencias) — lossless, pero **el skill reintroducirá el bug en el próximo Polish**. Candidato a fix en el plugin.
+2. **`research/` ya no existe en el Talk.** Los 2 refs de corpus en draft.md son paths muertos; se resolvieron a images/ (que sí existen). Consecuencias: las citas de corpus en los `### Sources` no se pueden re-verificar; la Phase 2 del librarian es imposible; **un re-run de Step 6 desde draft.md fallaría** en esos 2 refs.
+3. **Paths de sesión horneados en plan.annotated.json / ts-args/.** Apuntaban a `/sessions/brave-zen-bell/...` (sesión anterior) — `prepare-render-args` los propaga desde el plan, así que un plan viejo produce args inválidos silenciosamente. Se regeneró scan→annotate→extract→prepare-render-args. Los sidecars `.ascii` también faltaban.
+4. **`validate_svg.py` no es alcanzable desde el sandbox Linux** (vive en el path host `/var/folders/.../skills/ascii-to-svg/`). Los 5 subagentes lo reportaron; validaron el contrato de aspect-ratio a mano. `qlmanage` tampoco está; `cairosvg` requiere `pip install --break-system-packages` en cada render.
+5. **CLI inconsistente en `polish_ascii.py`:** `annotate-renders` acepta `-o`, `scan` no (hay que redirigir stdout con `--format json`).
+6. **Deriva de memory.md:** el header decía `talks/claude-cowork-funcional/` pero la carpeta real es `talks/claude-cowork/`; y la entrada del 2026-07-14 afirmaba que images/ estaba borrado cuando en disco están los 7 screenshots. Corregido en esta pasada.
+7. **Bloque legacy ```text en slide 2.3.** El plan lo marcó `detection_mode: legacy-heuristic`: la heurística de glifos capturó el *texto de ejemplo* de las Instructions de Atlas y se renderizó como diagrama (s2-3-1-tarjeta-instrucciones). Es prosa de ejemplo, no un diagrama — decisión del presentador si revertirlo a code block literal.
+8. **`markerUnits="strokeWidth"` (hallazgo del render de sc-1-1):** una flecha acentuada con stroke más grueso escala su punta proporcionalmente y puede pisar el borde de la caja destino. Invisible en el XML, solo se ve en píxeles. Candidato a regla en diagram-style.md.
+
+### Bugs del render html-strict (2026-07-14)
+9. **`lead` se descarta silenciosamente en `content+cards+image` y `figures` — bug real del renderer.** `schemas/slide-model.md` lista `lead` como opcional en ambos, pero `html_style.py:render_model_slide` nunca lo mapea al contexto y ni `content-cards-image.j2` ni `figures.j2` lo renderizan. Cualquier `lead` en esas 12 slides desaparecería — viola la propia regla "never drop content" del schema. **Workaround aplicado:** todo el contenido tipo lead de esas slides se ruteó a `highlights` (que `_macros.j2:stage` sí renderiza). Fix = una línea en `html_style.py` + los dos templates.
+10. **Inconsistencia de ids de template: el catálogo dice `content+image`, el schema y `_TMPL` dicen `content-image`.** Emitir la grafía del catálogo cae a `fallback.j2` en silencio. Se usó `content-image`. Nota: `content+cards+image` SÍ conserva la forma con `+` — el naming es inconsistente dentro de la misma dispatch table.
+11. **`content-image` acepta UNA imagen (`image:{src,alt}` singular) pero su Match del catálogo dice "1–3 images".** Las slides 2.5 y 4.2 tienen 2 imágenes etiquetadas c/u, así que `content-image` habría dropeado una. Se usó `figures` (única forma multi-imagen con label por ítem) aunque su Match dice "≥3". O el catálogo debería decir "1" en content+image, o `figures` debería decir "≥2".
+12. **Slide 1.3 — empate real del catálogo.** Tiene pipe-table `factor | A | B` (→ `comparison`) Y una imagen de diagrama. Pero `comparison` no tiene campo de imagen, así que clasificarla ahí dropearía s1-3-1-chat-vs-agente.png. Se aplicó el disambiguador "cards **and** an image → hybrid" → `content+cards+image`. Un gate tipo `layout_fit` la puntuaría como `comparison`.
+13. **`deck.sections` sub-especificado.** El spec dice strippear el número del *title* de un `section-agenda` pero calla sobre `deck.sections`. `build_html.py` calcula el índice activo del roadmap por match normalizado exacto contra `deck.sections` — mantener "1. " en `sections` mientras se strippea del title da `active = -1` y mata el highlight. Se strippeó en ambos. Debería explicitarse en el schema.
 
 ---
 

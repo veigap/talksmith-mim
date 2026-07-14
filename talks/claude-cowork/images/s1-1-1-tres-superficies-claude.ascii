@@ -1,0 +1,20 @@
++----------------+   +----------------+   +----------------+
+|   Web / Chat   |   |  Claude Code   |   |     Cowork     |
+| superficie de  |   | terminal+Code  |   |  GUI, escritorio|
+|   chat         |   | escribir codigo|   | trabajo multipaso|
++----------------+   +----------------+   +----------------+
+        |              \________  ________/
+        |                  Agent SDK (engine de agente)
+        |                  archivos / Skills / MCP / loop
+        \________________   |   ________________/
+                         \  |  /
+                  +--------------------+
+                  | MISMOS MODELOS     |
+                  |     CLAUDE         |
+                  +--------------------+
+
+<!-- ascii-note:
+intent: mostrar que las tres superficies corren sobre los mismos modelos Claude, y que Code+Cowork además comparten el mismo engine de agente (Claude Agent SDK), mientras Web/Chat es la superficie de chat de ese modelo.
+emphasize: la caja base "MISMOS MODELOS CLAUDE" como cimiento de las tres; el lazo "Agent SDK" que une Claude Code y Cowork (no Web/Chat); resaltar Cowork como el foco de la charla.
+labels: tres columnas (Web/Chat = chat, Claude Code y Cowork = Agent SDK) sobre una base de modelos Claude compartida.
+-->

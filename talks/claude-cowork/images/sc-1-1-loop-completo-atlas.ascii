@@ -1,0 +1,21 @@
+Lunes 8:00
+   |
+   v
+[Schedule] dispara
+   |
+   v
+[Skill buscar-accion] --(Connector MT Newswires + web_fetch Yahoo)--> guarda fuentes/
+   |
+   v
+[Skill reporte-semanal] consolida --> reporte .md en el Project
+   |
+   +--> [Connector Gmail] deja borrador para el equipo
+   |
+   v
+[Skill publicar-tablero] --> Live Artifact pulso-semanal-FECHA (pestaña Live artifacts)
+
+<!-- ascii-note:
+intent: mostrar el loop completo de la mision Atlas, encadenando todas las piezas de Cowork vistas en la charla, disparado por Schedule cada lunes.
+emphasize: la secuencia de izquierda a/arriba-abajo Schedule -> Skills -> Connectors -> Live Artifact; que todo arranca de un solo disparador.
+labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publicar-tablero) y las piezas usadas en cada uno.
+-->

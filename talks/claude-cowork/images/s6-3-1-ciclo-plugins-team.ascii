@@ -1,0 +1,20 @@
++-----------------+     +------------------------+     +----------------------+
+| OWNER crea un   | --> | agrega plugins:        | --> | fija preferencia de  |
+| marketplace     |     | · subir ZIP            |     | instalacion por      |
+| privado (org)   |     | · sync repo GitHub     |     | plugin (opcional /   |
+|                 |     |   (auto-actualiza)     |     | auto-install / prov.)|
++-----------------+     +------------------------+     +----------------------+
+                                                                  |
+                                                                  v
++---------------------------+     +-----------------------------------------+
+| MIEMBROS instalan/        | <-- | se DISTRIBUYE a los miembros            |
+| habilitan desde el        |     | (aparece en chat Y en Cowork)          |
+| directorio de la org      |     |                                         |
+| (updates se sincronizan)  |     |                                         |
++---------------------------+     +-----------------------------------------+
+
+<!-- ascii-note:
+intent: mostrar el ciclo de vida de un plugin en una cuenta Team/Enterprise — del Owner que crea un marketplace privado a los miembros que lo instalan, con updates que se sincronizan.
+emphasize: el rol del OWNER (marketplace privado: subir ZIP o sync GitHub) y la preferencia de instalación por plugin; que se distribuye a chat Y a Cowork; que los miembros instalan desde el directorio y las actualizaciones se sincronizan solas.
+labels: flujo de 5 pasos — Owner crea marketplace privado -> agrega plugins (ZIP / sync GitHub) -> fija preferencia de instalación (opcional/auto-install/provisionar) -> distribución (chat + Cowork) -> miembros instalan/habilitan (updates sincronizan).
+-->
