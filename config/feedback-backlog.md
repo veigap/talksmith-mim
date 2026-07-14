@@ -2,7 +2,7 @@
 
 ## Tagging vocabulary
 
-Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy.
+Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand.
 
 ## Entries
 
@@ -42,3 +42,17 @@ Reuse existing tags before inventing new ones. In use: restructure, add-slide, a
   feedback: "Re-verificar las 6 URLs pendientes de round 4 ahora que volvio el acceso web; si alguna 404ea o contradice la slide, corregir y reemplazar la fuente."
   resolution: Las 6 verificadas el 2026-07-09: 4 OK sin cambios (web search 10684626; custom connectors 11175166; modelcontextprotocol.io; ChatGPT search 9237897 — corroborado via busqueda por 403 anti-bot del fetch directo); 2 corregidas/reemplazadas (claude.com/directory -> claude.com/blog/connectors-directory + support 11176164, por login-gate; slug de ChatGPT tasks -> 10291617-tasks-in-chatgpt). Citas de slides 2.1/2.2/2.4 actualizadas con quotes y fecha de verificacion; entradas de Open questions marcadas resueltas en draft y memory.
   tags: [sources, accuracy]
+- talk: claude-cowork
+  date: 2026-07-09
+  location: Whole draft (Content fields, todas las secciones)
+  origin: presenter-chat
+  feedback: "Mucho texto, raro que quedo tan verborragico."
+  resolution: Pasada de compactacion deck-wide sobre los campos Content: bullets cortos (una linea, una idea), sin sub-parrafos ni meta-comentario; 21 slides compactadas (las 6 nuevas de round 4 + 3.1 + 4.1-4.12 + 5.1-5.5 + Conclusions.1). El detalle bajo a Speaker notes (crecieron en 1.1, 2.1, 2.2, 2.3, 2.4, 3.1, 4.1, 4.3, 4.7, 4.9, 4.10, 4.12, 5.1, 5.4, Conclusions.1); nada borrado en silencio. Sin cambios en Sources, ascii, ascii-notes ni audit trail [closed]. Mismo estandar que el precedente 'compact' de round 3 en El superpoder.
+  tags: [compact, too-dense, slide-content]
+- talk: claude-cowork
+  date: 2026-07-09
+  location: Slide "1. Tareas programadas desde el chat" + nueva "2. ¿Donde corre tu tarea?" (seccion 3) y "11. Schedule en Cowork" (seccion 4)
+  origin: presenter-chat
+  feedback: "La parte de schedule hay que expandir. Sobre todo con temas como tengan en cuenta que la computadora este prendida etc."
+  resolution: Expandido en slide NUEVA 3.2 '¿Donde corre tu tarea? Local vs nube' (para mantener 3.1 compacta): ambas realidades — nube beta desde jul-2026 (rollout gradual, Max primero) Y modo local mientras no llegue (compu prendida + app abierta; apagada/suspendida => se saltea y corre al volver; ojo notebooks que se suspenden); excepcion documentada: tareas con archivos/apps locales corren local SIEMPRE. ASCII nuevo de bifurcacion '¿donde corre?' con ascii-note. Moraleja: 'antes de confiarle algo, sabe DONDE corre'. 4.11 sincronizada con el mismo marco (cross-ref 3.2 + matiz Cowork: usa archivos locales => corre local => planifica con la compu prendida) y con la quote de la excepcion sumada a Sources. Comportamiento 'se saltea y corre al volver' atribuido a la version anterior del articulo 13854387 (la actual ya no lo detalla) segun L002. Caveat de aprobacion/review de acciones NO agregada: los docs verificados no la documentan.
+  tags: [slide-content, accuracy, sources, expand, add-slide, add-visual]
