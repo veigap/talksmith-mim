@@ -1,0 +1,62 @@
+<svg viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Subagentes: delegar sub-tareas en paralelo</title>
+  <desc>El agente principal reparte una tarea entre varios subagentes que corren en paralelo con contexto propio y devuelven un resumen combinado.</desc>
+
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3B3535"/>
+    </marker>
+  </defs>
+
+  <!-- canvas -->
+  <rect x="0" y="0" width="680" height="400" fill="#ffffff"/>
+
+  <g font-family="Helvetica, Arial, sans-serif">
+
+    <!-- fan-out arrows (drawn under panels) -->
+    <line x1="285" y1="76" x2="112" y2="149" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line x1="340" y1="76" x2="340" y2="149" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line x1="395" y1="76" x2="568" y2="149" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+
+    <!-- fan-in arrows -->
+    <line x1="112" y1="252" x2="285" y2="317" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line x1="340" y1="252" x2="340" y2="317" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line x1="568" y1="252" x2="395" y2="317" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+
+    <!-- pattern labels, clear of the arrow paths -->
+    <text x="656" y="102" font-size="11" fill="#3B3535" text-anchor="end">fan-out — reparte</text>
+    <text x="656" y="300" font-size="11" fill="#3B3535" text-anchor="end">fan-in — junta</text>
+
+    <!-- top panel: main agent -->
+    <rect x="240" y="20" width="200" height="56" rx="8" fill="#F2F0EF" stroke="#3B3535" stroke-width="1.2"/>
+    <text x="340" y="45" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">agente principal</text>
+    <text x="340" y="64" font-size="11" fill="#3B3535" text-anchor="middle">parte la tarea y delega</text>
+
+    <!-- sub-agent A -->
+    <rect x="24" y="152" width="176" height="100" rx="8" fill="#F2F0EF" stroke="#3B3535" stroke-width="1.2"/>
+    <text x="112" y="184" font-size="15" font-weight="bold" fill="#3B3535" text-anchor="middle">subagente A</text>
+    <text x="112" y="210" font-size="11.5" fill="#3B3535" text-anchor="middle">contexto propio</text>
+    <text x="112" y="231" font-size="11.5" fill="#3B3535" text-anchor="middle">devuelve un resumen</text>
+
+    <!-- sub-agent B -->
+    <rect x="252" y="152" width="176" height="100" rx="8" fill="#F2F0EF" stroke="#3B3535" stroke-width="1.2"/>
+    <text x="340" y="184" font-size="15" font-weight="bold" fill="#3B3535" text-anchor="middle">subagente B</text>
+    <text x="340" y="210" font-size="11.5" fill="#3B3535" text-anchor="middle">contexto propio</text>
+    <text x="340" y="231" font-size="11.5" fill="#3B3535" text-anchor="middle">devuelve un resumen</text>
+
+    <!-- sub-agent C -->
+    <rect x="480" y="152" width="176" height="100" rx="8" fill="#F2F0EF" stroke="#3B3535" stroke-width="1.2"/>
+    <text x="568" y="184" font-size="15" font-weight="bold" fill="#3B3535" text-anchor="middle">subagente C</text>
+    <text x="568" y="210" font-size="11.5" fill="#3B3535" text-anchor="middle">contexto propio</text>
+    <text x="568" y="231" font-size="11.5" fill="#3B3535" text-anchor="middle">devuelve un resumen</text>
+
+    <!-- bottom panel: combined summary (focal element, single red accent) -->
+    <rect x="200" y="320" width="280" height="56" rx="8" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+    <text x="340" y="345" font-size="16" font-weight="bold" fill="#DA1B2E" text-anchor="middle">resumen combinado</text>
+    <text x="340" y="364" font-size="11" fill="#3B3535" text-anchor="middle">una sola respuesta, no tres transcripciones</text>
+
+    <!-- caption: the parallelism point -->
+    <text x="340" y="394" font-size="11.5" fill="#3B3535" text-anchor="middle">los tres corren a la vez, cada uno aislado en su propio contexto</text>
+
+  </g>
+</svg>

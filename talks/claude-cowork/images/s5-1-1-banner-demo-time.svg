@@ -1,0 +1,23 @@
+<svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+  <title>Demo time</title>
+  <desc>Momento de demo en vivo. Cerrás los conceptos y abrís Cowork.</desc>
+
+  <!-- canvas: always solid white -->
+  <rect x="0" y="0" width="900" height="320" fill="#ffffff"/>
+
+  <!-- flat placard / sign: no isometric slab, no extrusion, no shadow -->
+  <rect x="40" y="40" width="820" height="240" rx="10" ry="10"
+        fill="#F4F2F2" stroke="#3B3535" stroke-width="3"/>
+  <rect x="54" y="54" width="792" height="212" rx="5" ry="5"
+        fill="none" stroke="#D6D0D0" stroke-width="1.5"/>
+
+  <!-- focal element: the single #DA1B2E accent of this diagram -->
+  <text x="450" y="136" text-anchor="middle" dominant-baseline="central"
+        font-family="Helvetica, Arial, sans-serif" font-size="76" font-weight="bold"
+        letter-spacing="8" fill="#DA1B2E">&gt; DEMO TIME</text>
+
+  <!-- quieter subtitle -->
+  <text x="450" y="211" text-anchor="middle" dominant-baseline="central"
+        font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="normal"
+        fill="#6E6666">[ Pasamos a la app real de Cowork ]</text>
+</svg>

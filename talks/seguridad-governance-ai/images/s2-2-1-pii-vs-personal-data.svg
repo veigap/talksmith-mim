@@ -5,7 +5,7 @@
   <!-- canvas -->
   <rect x="0" y="0" width="680" height="405" fill="#ffffff"/>
 
-  <!-- outer set: Personal Data (focal element, accent) -->
+  <!-- outer set: Personal Data (focal element per ascii-note `emphasize`, accent) -->
   <rect x="28" y="25" width="624" height="330" rx="10" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
   <text x="52" y="68" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="700" fill="#DA1B2E">Personal Data</text>
   <text x="52" y="92" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" fill="#6D6666">la categoría legal amplia</text>
@@ -13,12 +13,12 @@
   <text x="52" y="143" font-family="Helvetica Neue, Arial, sans-serif" font-size="14.5" fill="#3B3535">IP · ubicación · comportamiento · inferencias…</text>
 
   <!-- inner set: PII (subset, neutral) -->
-  <rect x="175" y="170" width="330" height="160" rx="8" fill="#F2F0EF" stroke="#8A8484" stroke-width="1.5"/>
-  <text x="340" y="203" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#3B3535">PII</text>
-  <text x="340" y="226" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-style="italic" fill="#6D6666">Personally Identifiable Information</text>
-  <text x="340" y="258" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#3B3535">identifica directamente:</text>
-  <text x="340" y="281" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#3B3535">nombre · DNI · email</text>
-  <text x="340" y="303" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#3B3535">teléfono · foto · legajo</text>
+  <rect x="175" y="176" width="330" height="152" rx="8" fill="#F2F0EF" stroke="#8A8484" stroke-width="1.5"/>
+  <text x="340" y="208" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#3B3535">PII</text>
+  <text x="340" y="230" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13" font-style="italic" fill="#6D6666">Personally Identifiable Information</text>
+  <text x="340" y="260" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#6D6666">identifica directamente:</text>
+  <text x="340" y="284" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#3B3535">nombre · DNI · email</text>
+  <text x="340" y="306" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#3B3535">teléfono · foto · legajo</text>
 
   <!-- caption -->
   <text x="340" y="387" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#3B3535">No son lo mismo: PII es un subconjunto de Personal Data</text>
