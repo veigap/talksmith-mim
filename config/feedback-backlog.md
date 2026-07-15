@@ -4,7 +4,7 @@
 
 ## Tagging vocabulary
 
-Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology.
+Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology, style.
 
 ## Entries
 
@@ -202,3 +202,10 @@ Reuse existing tags before inventing new ones. In use: restructure, add-slide, a
   feedback: "La parte de schedule hay que expandir. Sobre todo con temas como tengan en cuenta que la computadora este prendida etc."
   resolution: Expandido en slide NUEVA 3.2 '¿Donde corre tu tarea? Local vs nube' (para mantener 3.1 compacta): ambas realidades — nube beta desde jul-2026 (rollout gradual, Max primero) Y modo local mientras no llegue (compu prendida + app abierta; apagada/suspendida => se saltea y corre al volver; ojo notebooks que se suspenden); excepcion documentada: tareas con archivos/apps locales corren local SIEMPRE. ASCII nuevo de bifurcacion '¿donde corre?' con ascii-note. Moraleja: 'antes de confiarle algo, sabe DONDE corre'. 4.11 sincronizada con el mismo marco (cross-ref 3.2 + matiz Cowork: usa archivos locales => corre local => planifica con la compu prendida) y con la quote de la excepcion sumada a Sources. Comportamiento 'se saltea y corre al volver' atribuido a la version anterior del articulo 13854387 (la actual ya no lo detalla) segun L002. Caveat de aprobacion/review de acciones NO agregada: los docs verificados no la documentan.
   tags: [slide-content, accuracy, sources, expand, add-slide, add-visual]
+- talk: claude-cowork
+  date: 2026-07-09
+  location: Whole draft (prosa presenter-facing: Thesis, Agenda, goals, Content, Speaker notes)
+  origin: presenter-chat
+  feedback: "STYLE PASS deck-wide aplicando el skill desrobotizar del presentador (quitar marcas de escritura de IA en la prosa en espanol)."
+  resolution: Aplicadas las reglas nucleo + quick checks + reglas-propias del skill sobre Thesis, Agenda, 5 goals de seccion y los Content/Speaker notes de las 27 slides. ~140 em-dashes reemplazados en prosa (comas, puntos, parentesis); eliminados adverbios en -mente, contrastes binarios "no es X sino Y", meta-comentario ("mencion, sin profundizar", "proxima slide: ..."), formulas de revelacion ("ahi esta la magia"), capsulas ("un toggle y listo"), arcos "de X a Y" ("de preguntar cada vez a suscribirte"), muletillas ("Ojo:", "Y ojo:"), pasiva refleja ("las carpetas se conceden" -> "vos concedes"), hendidas y colones compulsivos. Titulo de seccion 1 restylado ("El chat que ya usas y sus limites"). Sin cambios de sustancia: claims verificados, atribuciones L002, numeros, nombres de producto y mensajes verbatim del presentador intactos; compactacion round 6 preservada (ningun Content crecio). NO tocados: ascii + ascii-notes, ejemplo ```text, image refs (2 em-dashes quedan en alt text), Sources, audit trail [closed], Open questions, Cut material, frontmatter. Self-score prosa del deck: 28/50 antes -> 43/50 despues; ninguna slide <35.
+  tags: [style, rewrite, slide-content]

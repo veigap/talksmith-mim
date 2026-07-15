@@ -1,8 +1,8 @@
 # memory.md — claude-cowork-funcional
 
-**Current step:** 5 — Review, round 6 complete (2026-07-09), status: awaiting_presenter
-**Mode:** C (Presenter Outline)
-**Awaiting:** El presentador revisa la compactación + Schedule expandido (27 slides) y responde: más feedback o "listo" para Polish (Step 6). Nota orquestador: 20 [closed] históricos (rounds 1–3) sin espejo en el backlog de este repo — no back-fillar (9 ya promovidos a L002 en el repo original). Branch de revisión: claude-cowork-reestructura-chat-primero (rounds 4-6).
+**Current step:** 5 — Review, round 7 complete (2026-07-14, pasada de estilo "desrobotizar"), status: awaiting_presenter
+**Awaiting:** El presentador revisa la pasada de estilo y responde: commit al branch de Paulo / más feedback / "listo" para Polish (Step 6).
+**Mode:** C (Presenter Outline) Nota orquestador: 20 [closed] históricos (rounds 1–3) sin espejo en el backlog de este repo — no back-fillar (9 ya promovidos a L002 en el repo original). Branch de revisión: claude-cowork-reestructura-chat-primero (rounds 4-6; round 7 pendiente de commit). Aclaración: el cambio "paralelo" al vocabulario de tags del backlog que flaggeó el editor en round 7 fue el merge de origin/main del 2026-07-14 (tags too-vague/bad-order/terminology vienen de la charla seguridad-governance-ai) — no hay rondas concurrentes.
 **Nota de merge (2026-07-14):** en paralelo a las rondas 4-6, en main se re-renderizó el PPTX en ambos estilos (2026-07-09 → 2026-07-13, secciones abajo) SIN cambios de contenido — esos renders parten del final.md PRE-reestructura (20 slides). Tras el Polish de esta rama, output/final*.pptx quedan obsoletos y hay que re-renderizar.
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork-funcional/
@@ -236,6 +236,22 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - Key inputs: pedido verbatim del presentador (2 items, chat); re-fetch de 13854387 (2026-07-09: remoto + excepción local, sin skip-and-catch-up, sin approval caveat); 12138966; TechCrunch 2026-07-07; precedente "compact" de round 3.
 - Files created/modified: draft.md (compactación de 21 Content + notes crecidas + slide nueva 3.2 + sync 4.11 + goal S3), config/feedback-backlog.md (+2 filas, +2 tags), memory.md
 - Pending open questions: (heredadas, sin cambios) fecha placeholder; stubs Phase 2; carpeta skills/; banner DEMO TIME (4.5); URLs round 3 a snapshotear; fuente Google para Gemini en 2.2; tickets/mensajes sin verificación por conector (2.5); vigilancia locality Live Artifacts. NUEVA round 6: si el presentador quiere enseñar un caveat de aprobación/revisión de acciones en tareas programadas remotas, falta doc oficial que lo respalde (hoy no existe en 13854387/12138966). Sigue pendiente re-correr Step 6 (Polish) y, si se quiere, Step 8 (PPTX).
+
+## 2026-07-09 — Step 5 (Review) — round 7
+- Status: complete
+- Origen: presenter-chat. Item único: STYLE PASS deck-wide con el skill del presentador `desrobotizar` (~/.claude/skills/desrobotizar/ — SKILL.md + frases.md + estructuras.md + ejemplos.md + reglas-propias.md; no existe estilo-personal.md).
+- What was decided: Reescrito el ESTILO (no la sustancia) de toda la prosa presenter-facing: Thesis (Claim + Why it matters), Agenda narrative arc, los 5 goals de sección, y Content + Speaker notes de las 27 slides.
+  - **Em-dashes:** ~140 reemplazados en prosa por comas, puntos, paréntesis o incisos con guion medio en par (regla 11). Quedan 2 en alt text de image refs (exentos por "no tocar image refs") y los de las zonas exentas (Sources, audit trail [closed], Open questions, Cut material, ascii/ascii-notes, memoria).
+  - **Patrones eliminados:** adverbios en -mente (exactamente, explícitamente, necesariamente…); contrastes binarios ("no es X, sino Y" — el verbatim del presentador "Cowork NO es Claude instalado en tu compu" se conservó porque la negación ES el mensaje); meta-comentario en Content ("mención, sin profundizar", "Próxima slide: …", "Nota de alcance"); fórmulas de revelación ("ahí está la magia"); cápsulas de infomercial ("Un toggle y listo"); arcos "de X a Y" (reglas-propias); muletillas ("Ojo:", "Y ojo:", "martillar", "imbatible"); pasiva refleja escondiendo actor ("las carpetas se conceden" → "vos concedés"); dos-puntos compulsivos y titulares de párrafo en notes.
+  - **Título restylado:** sección 1 "El chat que ya usás — y sus límites" → "El chat que ya usás y sus límites" (heading + bullet de Agenda).
+  - **Intactos:** claims verificados, atribuciones L002 ("verificado 2026-07-09", oficial vs terceros), números, nombres de producto, quotes atribuidas (Anthropic, corpus), frases ancla del presentador, tabla 4.3, ejemplo ```text de Instrucciones, ascii + ascii-notes, image refs, Sources, audit trail, Open questions, Cut material, frontmatter. La compactación de round 6 se preservó (ningún Content creció).
+  - **Considerado y NO cambiado (flag):** "Regla de bolsillo: editá en .md, entregá en lo que pida tu jefe" (4.10) es un epigrama balanceado según reglas-propias, pero es la regla didáctica que el presentador promovió y carga contenido concreto en ambas cláusulas — se dejó; los 2 em-dashes de alt text de imágenes; el banner ASCII "DEMO TIME" (fuera de alcance).
+- Self-score (escala del skill, prosa del deck): antes 28/50 (Franqueza 6 · Ritmo 5 · Confianza 5 · Autenticidad 5 · Densidad 7) → después 43/50 (9 · 8 · 9 · 8 · 9). Ninguna slide <35 tras la pasada.
+- Verificaciones: fences balanceados (36 líneas = 18 bloques: 17 ascii + 1 text); 7 image refs resuelven; numeración contigua (S1=1, S2=1..5, S3=1..2, S4=1..12, S5=1..5, Conclusions=1..2); 0 em-dashes en campos de prosa (grep con exclusión de ascii/Sources/audit/openq/cut); find-open limpio; sweep de tells (-mente, "no es X sino", conectores de apertura, "es clave", "Cabe") limpio en prosa.
+- Backlog: 1 fila nueva (origin: presenter-chat) tags [style, rewrite, slide-content]; tag nuevo registrado: style. NOTA: el vocabulario de tags del backlog fue modificado por otra sesión en paralelo (aparecieron too-vague, bad-order, terminology) — solo se agregó "style" sin pisar lo ajeno.
+- Key inputs: skill desrobotizar completo (15 reglas núcleo + quick checks + 6 reglas propias); draft.md round 6.
+- Files created/modified: draft.md (pasada de estilo sobre ~35 campos de prosa), config/feedback-backlog.md (+1 fila, +tag style), memory.md
+- Pending open questions: (heredadas de round 6, sin cambios). Sigue pendiente re-correr Step 6 (Polish) y, si se quiere, Step 8 (PPTX) — el style pass también quedará reflejado recién al re-correr Polish.
 ---
 
 <!-- Merge 2026-07-14: las tres secciones siguientes vienen de main — trabajo paralelo de render (2026-07-09 → 2026-07-13) hecho SIN los cambios de contenido de rounds 4-6. Sus outputs parten del final.md pre-reestructura (20 slides) y quedan obsoletos tras el próximo Polish. -->
