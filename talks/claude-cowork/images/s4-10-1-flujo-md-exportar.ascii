@@ -1,0 +1,17 @@
+   FLUJO DE TRABAJO CON LA IA
+
+  fuentes            TRABAJO (muchas idas       entrega (1 vez,
+  (lo que llega)     y vueltas con la IA)       al final)
++--------------+     +-----------------+      +---------------+
+| .docx  pdf   | --> |    ARCHIVOS     | -->  | .docx  .xlsx  |
+| mails  webs  |     |      .MD        |      | PDF    slides |
++--------------+     | la IA lee/edita |      +---------------+
+                     | /crea MEJOR aca |
+  "convertime        +-----------------+        "generame el
+   esto a .md"        iterás acá, barato          entregable"
+
+<!-- ascii-note:
+intent: mostrar el flujo de trabajo recomendado con la IA: las fuentes (docx, pdf, mails, webs) se convierten a archivos .md, TODO el trabajo iterativo con la IA pasa sobre los .md (donde interpreta/edita/crea mejor), y el formato final (.docx/.xlsx/PDF/slides) se genera una sola vez al final.
+emphasize: la caja central "ARCHIVOS .MD" como el lugar donde vive el trabajo (la IA trabaja MEJOR acá); que la entrega es un paso único al final, no el medio de trabajo.
+labels: izquierda = fuentes (lo que llega); centro = archivos .md (trabajo iterativo); derecha = entrega final (.docx/.xlsx/PDF/slides); leyendas "convertime esto a .md" y "generame el entregable".
+-->

@@ -1,0 +1,57 @@
+<svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>Chat solo vs chat con conectores</title>
+  <desc>Un conector es una extensión que saca al chat de su aislamiento: en vez de responder solo de su memoria de entrenamiento, consulta fuentes reales como la web, el mail, el calendario y tus documentos.</desc>
+
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="230" fill="#ffffff"/>
+
+  <!-- divisor de régimen -->
+  <line x1="255" y1="22" x2="255" y2="212" stroke="#D8D4D4" stroke-width="1" stroke-dasharray="4 5"/>
+
+  <!-- ===== IZQUIERDA — CHAT SOLO ===== -->
+  <text x="125" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#3B3535" letter-spacing="0.6">CHAT SOLO</text>
+
+  <rect x="45" y="52" width="160" height="110" rx="6" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="1.5"/>
+  <text x="125" y="84" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">CHAT</text>
+  <text x="125" y="108" text-anchor="middle" font-size="11" fill="#3B3535">responde de</text>
+  <text x="125" y="124" text-anchor="middle" font-size="11" fill="#3B3535">su memoria de</text>
+  <text x="125" y="140" text-anchor="middle" font-size="11" fill="#3B3535">entrenamiento</text>
+
+  <text x="125" y="205" text-anchor="middle" font-size="11" font-style="italic" fill="#6A737D">(aislado)</text>
+
+  <!-- ===== DERECHA — CHAT CON CONECTORES (foco) ===== -->
+  <text x="478" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#DA1B2E" letter-spacing="0.6">CHAT CON CONECTORES</text>
+
+  <rect x="305" y="52" width="160" height="110" rx="6" fill="#FFFFFF" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="385" y="84" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">CHAT</text>
+  <text x="385" y="108" text-anchor="middle" font-size="11" fill="#3B3535">consulta fuentes</text>
+  <text x="385" y="124" text-anchor="middle" font-size="11" font-weight="bold" fill="#DA1B2E">REALES antes</text>
+  <text x="385" y="140" text-anchor="middle" font-size="11" fill="#3B3535">de responder</text>
+
+  <!-- flechas hacia las fuentes externas -->
+  <path d="M 467 107 C 490 107, 495 47, 517 47"   fill="none" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#flecha)"/>
+  <path d="M 467 107 C 490 107, 495 87, 517 87"   fill="none" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#flecha)"/>
+  <path d="M 467 107 C 490 107, 495 127, 517 127" fill="none" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#flecha)"/>
+  <path d="M 467 107 C 490 107, 495 167, 517 167" fill="none" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#flecha)"/>
+
+  <!-- fuentes externas -->
+  <rect x="520" y="33" width="130" height="28" rx="14" fill="#F9D2D6"/>
+  <text x="585" y="51" text-anchor="middle" font-size="11" fill="#3B3535">web</text>
+
+  <rect x="520" y="73" width="130" height="28" rx="14" fill="#F9D2D6"/>
+  <text x="585" y="91" text-anchor="middle" font-size="11" fill="#3B3535">mail</text>
+
+  <rect x="520" y="113" width="130" height="28" rx="14" fill="#F9D2D6"/>
+  <text x="585" y="131" text-anchor="middle" font-size="11" fill="#3B3535">calendario</text>
+
+  <rect x="520" y="153" width="130" height="28" rx="14" fill="#F9D2D6"/>
+  <text x="585" y="171" text-anchor="middle" font-size="11" fill="#3B3535">documentos</text>
+
+  <text x="478" y="205" text-anchor="middle" font-size="11" font-style="italic" font-weight="bold" fill="#DA1B2E">(conectado a tu mundo)</text>
+</svg>

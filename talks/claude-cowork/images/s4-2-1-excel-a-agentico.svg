@@ -1,0 +1,59 @@
+<svg viewBox="0 0 680 300" xmlns="http://www.w3.org/2000/svg">
+  <title>El superpoder de Cowork: la herramienta de propósito general del knowledge worker</title>
+  <desc>La analogía del Excel: durante unas cuatro décadas saber Excel fue la habilidad base del trabajo de oficina, y las herramientas agénticas apuntan a ser la nueva habilidad base.</desc>
+
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="300" fill="#ffffff"/>
+
+  <!-- Título -->
+  <text x="340" y="30" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="16" font-weight="bold" fill="#3B3535">Trabajo de conocimiento: la herramienta de propósito general</text>
+
+  <!-- Etiquetas temporales -->
+  <text x="165" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="11.5" font-weight="bold" letter-spacing="0.8" fill="#8A8080">~40 AÑOS</text>
+  <text x="510" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="11.5" font-weight="bold" letter-spacing="0.8" fill="#DA1B2E">AHORA</text>
+
+  <!-- Panel izquierdo: Excel -->
+  <rect x="40" y="90" width="250" height="120" rx="4" fill="#F4F2F2" stroke="#B9B0B0" stroke-width="1.5"/>
+  <text x="165" y="122" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="17" font-weight="bold" letter-spacing="0.6" fill="#3B3535">EXCEL</text>
+  <text x="165" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="12.5" fill="#3B3535">lingua franca del</text>
+  <text x="165" y="168" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="12.5" fill="#3B3535">trabajo de oficina</text>
+  <text x="165" y="191" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="11.5" font-style="italic" fill="#8A8080">(sin programar)</text>
+
+  <!-- Flecha temporal -->
+  <line x1="292" y1="150" x2="379" y2="150" stroke="#DA1B2E" stroke-width="2.5"
+        marker-end="url(#flecha)"/>
+
+  <!-- Panel derecho: herramientas agénticas (foco) -->
+  <rect x="380" y="90" width="260" height="120" rx="4" fill="#FCF1F2" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="510" y="122" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="15" font-weight="bold" letter-spacing="0.4" fill="#DA1B2E">HERRAMIENTAS AGÉNTICAS</text>
+  <text x="510" y="150" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="12.5" fill="#3B3535">Claude Code — developers</text>
+  <text x="510" y="168" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="12.5" font-weight="bold" fill="#3B3535">Cowork — knowledge workers</text>
+  <text x="510" y="191" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="11.5" font-style="italic" fill="#8A8080">(el «lenguaje» es el español)</text>
+
+  <!-- Pies -->
+  <text x="165" y="234" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="12.5" fill="#8A8080">la habilidad base de ayer</text>
+  <text x="510" y="234" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="12.5" font-weight="bold" fill="#DA1B2E">la nueva habilidad base</text>
+
+  <!-- Nota al pie -->
+  <text x="340" y="272" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="10.5" font-style="italic" fill="#8A8080">Analogía de encuadre de analistas / industria — no es un claim oficial de Anthropic.</text>
+</svg>

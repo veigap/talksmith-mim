@@ -1,0 +1,55 @@
+<svg viewBox="0 0 960 308" xmlns="http://www.w3.org/2000/svg">
+  <title>Plugins en una cuenta Team: ciclo de vida</title>
+  <desc>Ciclo de vida de un plugin en una cuenta Team o Enterprise: el Owner crea un marketplace privado de la organización, agrega plugins, fija la preferencia de instalación, y desde ahí se distribuye a los miembros, que lo habilitan con actualizaciones sincronizadas.</desc>
+
+  <defs>
+    <marker id="ah" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#8A8080"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="308" fill="#ffffff"/>
+
+  <!-- Paso 1 — OWNER (elemento focal) -->
+  <rect x="24" y="28" width="264" height="104" rx="6" fill="#FDECEE" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="42" y="62" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">1 · OWNER</text>
+  <text x="42" y="86" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Crea el marketplace</text>
+  <text x="42" y="105" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">privado de la organización</text>
+
+  <!-- Paso 1 -> Paso 2 -->
+  <line x1="288" y1="80" x2="348" y2="80" stroke="#8A8080" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Paso 2 — Agrega plugins -->
+  <rect x="348" y="28" width="264" height="104" rx="6" fill="#F4F2F2" stroke="#C9C3C3" stroke-width="1.5"/>
+  <text x="366" y="53" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">2 · Agrega plugins</text>
+  <text x="366" y="77" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">· Subir un ZIP</text>
+  <text x="366" y="96" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">· Sincronizar un repo de</text>
+  <text x="376" y="115" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">GitHub (auto-actualiza)</text>
+
+  <!-- Paso 2 -> Paso 3 -->
+  <line x1="612" y1="80" x2="672" y2="80" stroke="#8A8080" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Paso 3 — Preferencia de instalación -->
+  <rect x="672" y="28" width="264" height="104" rx="6" fill="#F4F2F2" stroke="#C9C3C3" stroke-width="1.5"/>
+  <text x="690" y="53" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">3 · Preferencia</text>
+  <text x="690" y="77" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">De instalación por plugin:</text>
+  <text x="690" y="96" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">opcional / auto-install /</text>
+  <text x="690" y="115" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">provisionado por usuario</text>
+
+  <!-- Paso 3 -> Paso 4 -->
+  <line x1="804" y1="132" x2="804" y2="176" stroke="#8A8080" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Paso 4 — Distribución -->
+  <rect x="510" y="176" width="426" height="104" rx="6" fill="#F4F2F2" stroke="#C9C3C3" stroke-width="1.5"/>
+  <text x="528" y="219" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">4 · Se distribuye a los miembros</text>
+  <text x="528" y="245" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Aparece en chat y en Cowork</text>
+
+  <!-- Paso 4 -> Paso 5 -->
+  <line x1="510" y1="228" x2="450" y2="228" stroke="#8A8080" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Paso 5 — Miembros -->
+  <rect x="24" y="176" width="426" height="104" rx="6" fill="#F4F2F2" stroke="#C9C3C3" stroke-width="1.5"/>
+  <text x="42" y="210" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">5 · Miembros</text>
+  <text x="42" y="234" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Instalan / habilitan desde el directorio de la org.</text>
+  <text x="42" y="253" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Las actualizaciones se sincronizan solas.</text>
+</svg>

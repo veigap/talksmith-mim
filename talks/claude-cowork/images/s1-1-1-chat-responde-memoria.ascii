@@ -1,0 +1,17 @@
+        EL CHAT "COMO VIENE DE FABRICA"
+                                             lo que NO ve:
+   +---------------------------------+       x  noticias de hoy
+   |            CHAT DE IA           |       x  tus mails
+   |  +---------------------------+  |       x  tu calendario
+   |  |  MEMORIA DE ENTRENAMIENTO |  |       x  tus archivos
+   |  |  (foto congelada hasta la |  |       x  las apps de tu trabajo
+   |  |   fecha de corte)         |  |
+   |  +---------------------------+  |
+   |     responde "de memoria"       |
+   +---------------------------------+
+
+<!-- ascii-note:
+intent: mostrar que el chat de IA sin extensiones responde solo desde su memoria de entrenamiento (foto congelada hasta la fecha de corte) y no tiene acceso al mundo del usuario.
+emphasize: la caja interna "MEMORIA DE ENTRENAMIENTO (foto congelada)"; la lista de lo que NO ve (noticias de hoy, mails, calendario, archivos, apps) fuera de la caja.
+labels: caja exterior = CHAT DE IA; caja interior = memoria de entrenamiento / fecha de corte; columna derecha = lo que no ve.
+-->
