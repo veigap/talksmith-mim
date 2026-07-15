@@ -1,0 +1,57 @@
+<svg viewBox="0 0 680 364" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>El primer conector: búsqueda web</title>
+  <desc>La misma pregunta respondida de memoria de entrenamiento contra respondida con búsqueda web: memoria vs información viva.</desc>
+
+  <defs>
+    <marker id="ah-grey" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#6A737D"/>
+    </marker>
+    <marker id="ah-red" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="364" fill="#ffffff"/>
+
+  <!-- shared question -->
+  <rect x="140" y="16" width="400" height="54" rx="5" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.4"/>
+  <text x="340" y="37" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#6A737D">LA MISMA PREGUNTA</text>
+  <text x="340" y="58" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">«¿Cuál es la última versión de X?»</text>
+
+  <!-- fork -->
+  <line x1="340" y1="70" x2="340" y2="92" stroke="#6A737D" stroke-width="1.6"/>
+  <line x1="340" y1="92" x2="175" y2="92" stroke="#6A737D" stroke-width="1.6"/>
+  <line x1="340" y1="92" x2="505" y2="92" stroke="#DA1B2E" stroke-width="1.6"/>
+  <line x1="175" y1="92" x2="175" y2="116" stroke="#6A737D" stroke-width="1.6" marker-end="url(#ah-grey)"/>
+  <line x1="505" y1="92" x2="505" y2="116" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#ah-red)"/>
+
+  <!-- column headers -->
+  <text x="175" y="136" text-anchor="middle" font-size="13" font-weight="bold" letter-spacing="0.8" fill="#6A737D">DE MEMORIA</text>
+  <text x="505" y="136" text-anchor="middle" font-size="13" font-weight="bold" letter-spacing="0.8" fill="#DA1B2E">CON BÚSQUEDA WEB</text>
+
+  <!-- left path: mechanism -->
+  <rect x="50" y="148" width="250" height="72" rx="5" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="1.4"/>
+  <text x="175" y="178" text-anchor="middle" font-size="14" fill="#3B3535">Entrenamiento hasta</text>
+  <text x="175" y="198" text-anchor="middle" font-size="14" fill="#3B3535">la fecha de corte</text>
+
+  <!-- right path: mechanism -->
+  <rect x="380" y="148" width="250" height="72" rx="5" fill="#ffffff" stroke="#DA1B2E" stroke-width="1.6"/>
+  <text x="505" y="178" text-anchor="middle" font-size="14" fill="#3B3535">Va a buscar AHORA</text>
+  <text x="505" y="198" text-anchor="middle" font-size="14" fill="#3B3535">en la web, en vivo</text>
+
+  <!-- connectors to outcome -->
+  <line x1="175" y1="220" x2="175" y2="250" stroke="#6A737D" stroke-width="1.6" marker-end="url(#ah-grey)"/>
+  <line x1="505" y1="220" x2="505" y2="250" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#ah-red)"/>
+
+  <!-- left outcome -->
+  <rect x="50" y="254" width="250" height="88" rx="5" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="1.4"/>
+  <text x="175" y="280" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#6A737D">RESPUESTA</text>
+  <text x="175" y="304" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">Quizás vieja</text>
+  <text x="175" y="324" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">o inventada</text>
+
+  <!-- right outcome (focal) -->
+  <rect x="380" y="254" width="250" height="88" rx="5" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="1.8"/>
+  <text x="505" y="280" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#DA1B2E">RESPUESTA</text>
+  <text x="505" y="304" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">Info REAL y actual</text>
+  <text x="505" y="324" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">+ fuentes citadas</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 680 252" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <title>El chat responde de memoria</title>
+  <desc>Ese chat, tal como viene de fábrica, responde desde su memoria de entrenamiento: una foto congelada hasta la fecha de corte, sin acceso al mundo del usuario.</desc>
+
+  <rect x="0" y="0" width="680" height="252" fill="#ffffff"/>
+
+  <text x="32" y="30" font-size="16" font-weight="bold" fill="#1F1E1E">El chat «como viene de fábrica»</text>
+
+  <!-- Caja exterior: CHAT DE IA -->
+  <rect x="32" y="54" width="340" height="170" rx="6" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.5"/>
+  <text x="202" y="80" font-size="13" font-weight="bold" fill="#3B3535" text-anchor="middle">CHAT DE IA</text>
+
+  <!-- Caja interior (focal): memoria de entrenamiento -->
+  <rect x="56" y="96" width="292" height="76" rx="5" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="202" y="120" font-size="12.5" font-weight="bold" fill="#1F1E1E" text-anchor="middle">MEMORIA DE ENTRENAMIENTO</text>
+  <text x="202" y="138" font-size="10.5" fill="#3B3535" text-anchor="middle">foto congelada hasta la</text>
+  <text x="202" y="156" font-size="10.5" fill="#3B3535" text-anchor="middle">fecha de corte</text>
+
+  <text x="202" y="201" font-size="11.5" fill="#3B3535" text-anchor="middle">responde «de memoria»</text>
+
+  <!-- Panel derecho: lo que NO ve (fuera de la caja) -->
+  <rect x="404" y="54" width="244" height="170" rx="6" fill="#F2F2F2"/>
+  <text x="424" y="80" font-size="12.5" font-weight="bold" fill="#1F1E1E">Lo que NO ve</text>
+
+  <g stroke="#6A737D" stroke-width="1.6" stroke-linecap="round">
+    <line x1="426" y1="100" x2="434" y2="108"/><line x1="434" y1="100" x2="426" y2="108"/>
+    <line x1="426" y1="124" x2="434" y2="132"/><line x1="434" y1="124" x2="426" y2="132"/>
+    <line x1="426" y1="148" x2="434" y2="156"/><line x1="434" y1="148" x2="426" y2="156"/>
+    <line x1="426" y1="172" x2="434" y2="180"/><line x1="434" y1="172" x2="426" y2="180"/>
+    <line x1="426" y1="196" x2="434" y2="204"/><line x1="434" y1="196" x2="426" y2="204"/>
+  </g>
+
+  <g font-size="11" fill="#3B3535">
+    <text x="446" y="108">noticias de hoy</text>
+    <text x="446" y="132">tus mails</text>
+    <text x="446" y="156">tu calendario</text>
+    <text x="446" y="180">tus archivos</text>
+    <text x="446" y="204">las apps de tu trabajo</text>
+  </g>
+</svg>

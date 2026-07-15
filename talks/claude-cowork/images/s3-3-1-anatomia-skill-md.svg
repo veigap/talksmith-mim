@@ -1,37 +1,58 @@
-<svg viewBox="0 0 680 470" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
-  <title>Anatomia de un SKILL.md</title>
-  <desc>Un SKILL.md tiene un bloque de metadata YAML arriba y el cuerpo de instrucciones en Markdown abajo.</desc>
-  <rect x="0" y="0" width="680" height="470" fill="#ffffff"/>
+<svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Anatomía de un SKILL.md</title>
+  <desc id="d">Un SKILL.md partido en dos zonas: arriba el header YAML con name y description, abajo las instrucciones en Markdown.</desc>
 
-  <!-- METADATA panel (focal, red strip) -->
-  <rect x="40" y="40" width="430" height="170" rx="6" fill="#F2F2F2" stroke="#3B3535" stroke-width="1.5"/>
-  <rect x="40" y="40" width="8" height="170" rx="4" fill="#DA1B2E"/>
-  <g font-family="Courier New, monospace" font-size="13" fill="#000000">
-    <text x="62" y="68">---</text>
-    <text x="62" y="92">name: reporte-semanal</text>
-    <text x="62" y="116">description: Genera el pulso semanal</text>
-    <text x="62" y="138">  a partir de la carpeta fuentes/.</text>
-    <text x="62" y="160">  Usar cuando pidan "reporte semanal".</text>
-    <text x="62" y="184">---</text>
-  </g>
-  <!-- metadata side label -->
-  <text x="500" y="110" font-weight="bold" font-size="13" fill="#DA1B2E">METADATA (YAML)</text>
-  <text x="500" y="132" font-size="12" fill="#3B3535">"que es" +</text>
-  <text x="500" y="150" font-size="12" fill="#3B3535">"cuando se activa"</text>
+  <!-- Canvas -->
+  <rect x="0" y="0" width="680" height="360" fill="#ffffff"/>
 
-  <!-- BODY panel -->
-  <rect x="40" y="240" width="430" height="190" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
-  <g font-family="Courier New, monospace" font-size="13" fill="#000000">
-    <text x="62" y="270"># Reporte semanal</text>
-    <text x="62" y="300">1. Lee TODOS los archivos de</text>
-    <text x="62" y="320">   fuentes/ y consolida por empresa.</text>
-    <text x="62" y="350">2. Genera el reporte con esta</text>
-    <text x="62" y="370">   estructura exacta...</text>
-    <text x="62" y="400">3. Guarda con sufijo -new (no pises</text>
-    <text x="62" y="420">   el original).</text>
+  <!-- File card -->
+  <rect x="32" y="30" width="430" height="294" rx="8" fill="#ffffff" stroke="#DCD7D3" stroke-width="1.5"/>
+
+  <!-- Card header strip -->
+  <path d="M 32,38 a 8,8 0 0 1 8,-8 L 454,30 a 8,8 0 0 1 8,8 L 462,56 L 32,56 Z" fill="#F2EFEC"/>
+  <line x1="32" y1="56" x2="462" y2="56" stroke="#DCD7D3" stroke-width="1.5"/>
+  <text x="52" y="48" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="bold" fill="#6B6462">SKILL.md</text>
+
+  <!-- Metadata zone tint -->
+  <rect x="33" y="56" width="428" height="134" fill="#F7F4F1"/>
+
+  <!-- Focal highlight: the description block -->
+  <rect x="42" y="104" width="412" height="56" fill="#FCF0F1"/>
+  <rect x="42" y="104" width="4" height="56" fill="#DA1B2E"/>
+
+  <!-- Zone divider -->
+  <line x1="32" y1="190" x2="462" y2="190" stroke="#DCD7D3" stroke-width="1.5"/>
+
+  <!-- Metadata zone content -->
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#3B3535">
+    <text x="52" y="77" fill="#A9A29F">---</text>
+    <text x="52" y="96"><tspan font-weight="bold">name:</tspan> reporte-semanal</text>
+    <text x="52" y="115"><tspan font-weight="bold" fill="#DA1B2E">description:</tspan> Genera el pulso semanal de mercado a partir</text>
+    <text x="68" y="134">de la carpeta fuentes/ de la semana. Usar cuando pidan</text>
+    <text x="68" y="153">"reporte semanal" o "pulso de la semana".</text>
+    <text x="52" y="172" fill="#A9A29F">---</text>
   </g>
-  <!-- body side label -->
-  <text x="500" y="320" font-weight="bold" font-size="13" fill="#1F1E1E">CUERPO (Markdown)</text>
-  <text x="500" y="342" font-size="12" fill="#3B3535">"que hace":</text>
-  <text x="500" y="360" font-size="12" fill="#3B3535">las instrucciones</text>
+
+  <!-- Body zone content -->
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#3B3535">
+    <text x="52" y="213" font-weight="bold"># Reporte semanal</text>
+    <text x="52" y="251">1. Leé TODOS los archivos de fuentes/ y consolidá</text>
+    <text x="72" y="270">por empresa.</text>
+    <text x="52" y="289">2. Generá el reporte con esta estructura exacta...</text>
+    <text x="52" y="308">3. Guardá con sufijo -new (no pises el original).</text>
+  </g>
+
+  <!-- Right column: metadata label group -->
+  <rect x="478" y="84" width="3" height="76" fill="#DCD7D3"/>
+  <text x="492" y="95" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" letter-spacing="1" fill="#8A8482">METADATA / HEADER</text>
+  <text x="492" y="110" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#8A8482">(YAML)</text>
+  <text x="492" y="136" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">qué es la Skill</text>
+  <text x="492" y="155" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#DA1B2E">+ cuándo se activa</text>
+
+  <!-- Right column: body label group -->
+  <rect x="478" y="219" width="3" height="76" fill="#DCD7D3"/>
+  <text x="492" y="230" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" letter-spacing="1" fill="#8A8482">CUERPO</text>
+  <text x="492" y="245" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#8A8482">(Markdown)</text>
+  <text x="492" y="271" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">qué hace: los pasos</text>
+  <text x="492" y="290" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">que sigue el agente</text>
 </svg>

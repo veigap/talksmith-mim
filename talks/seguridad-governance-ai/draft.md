@@ -240,8 +240,6 @@ Lo que esto cuesta, en tres números:
 - $670K
 - 📊 ~**18%** de los empleados pega datos en herramientas GenAI; **más de la mitad** de esos pegados incluye información corporativa — *LayerX 2025*.
 
-![No es solo Samsung: los números](images/s1-9-x-new.png)
-
 
 
 ### Sources
@@ -490,8 +488,6 @@ Es una convención con respaldo en ISO 27001 / NIST, no un estándar único — 
 ### Content
 
 **¿Qué pasa realmente cuando uso una IA?**
-
-![¿Qué pasa cuando uso una IA?](images/s2-6-x-new.png)
 
 ### Sources
 
@@ -898,8 +894,6 @@ Slide agregado desde el benchmark (gap 2): el cierre dice "reportá incidentes r
 
 **Rompemitos.**
 Así funciona la dinámica: Todos vamos a  votar la pregunta en https://app.sli.do/event/1V8sQvBtfrUEFWeVxLdjUH y luego muestro el resutado.
-
-![Rompemitos: ¿verdadero o falso?](images/s6-1-x-new.png)
 
 ### Sources
 

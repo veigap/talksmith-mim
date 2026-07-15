@@ -1,0 +1,421 @@
+{
+  "deck": {
+    "title": "Inteligencia Artificial: de lo conceptual a lo práctico",
+    "lang": "es",
+    "institution": "Master in Management (MiM), IAE Business School, Universidad Austral",
+    "class": "Parámetros críticos en AI: las perillas que cambian la respuesta",
+    "presenter": "Paulo Veiga, Profesor, IAE Business School",
+    "date": "2026-07-07",
+    "logo": null,
+    "sections": [
+      "Por qué la misma pregunta da respuestas distintas",
+      "Cómo genera un modelo (sin matemática)",
+      "Cómo elige las palabras (temperatura y top-p)",
+      "Cuánto piensa (razonamiento y recapitulación)",
+      "Selección del modelo",
+      "Lo que se decide al construir el modelo",
+      "Conclusions"
+    ]
+  },
+  "slides": [
+    {
+      "template": "section-agenda",
+      "title": "Por qué la misma pregunta da respuestas distintas"
+    },
+    {
+      "template": "content-image",
+      "section": "Por qué la misma pregunta da respuestas distintas",
+      "title": "La misma pregunta, dos respuestas",
+      "facts": [
+        {
+          "label": "Hook",
+          "body": "le hago la misma pregunta a la misma AI dos veces y obtengo dos respuestas distintas. ¿Se equivocó? ¿Está \"pensando\" distinto?"
+        },
+        {
+          "body": "No: hay perillas de configuración que deciden cuánta variedad, cuánto detalle y cuánto costo tiene cada respuesta."
+        },
+        {
+          "label": "Ejemplo de negocio",
+          "body": "un asistente que redacta emails a clientes. ¿Querés que suene siempre igual (marca consistente) o que proponga variantes creativas? Esa decisión es una perilla."
+        }
+      ],
+      "image": {
+        "src": "images/s1-1-1-misma-pregunta-dos-respuestas.png",
+        "alt": "La misma pregunta produce dos respuestas distintas por perillas ocultas de configuración"
+      },
+      "notes": "Arranco haciendo, en vivo si se puede, la misma pregunta dos veces en un chat y mostrando que cambia. Pregunto a la sala: \"¿la AI se equivocó?\". La respuesta intuitiva es sí; la respuesta correcta es que hay una perilla de aleatoriedad activada por defecto. Ese es el gancho de toda la clase: lo que parece magia o error muchas veces es configuración. No entro en ningún detalle técnico todavía — solo instalo la pregunta. Cierro con el ejemplo del asistente de emails para que vean que esto no es curiosidad de laboratorio: es una decisión de producto y de marca."
+    },
+    {
+      "template": "icon-list",
+      "section": "Por qué la misma pregunta da respuestas distintas",
+      "title": "Esto es gestión, no ingeniería",
+      "rows": [
+        {
+          "label": "No van a tunear modelos",
+          "body": "Van a elegir, comprar y supervisar herramientas que otros configuran."
+        },
+        {
+          "label": "Saber qué perilla cambia qué",
+          "body": "poder pedir lo correcto, entender una factura, y diagnosticar cuando algo falla."
+        },
+        {
+          "label": "Tres preguntas de negocio que estas perillas responden",
+          "body": "¿es consistente? ¿cuánto cuesta? ¿es suficientemente bueno para esta tarea?"
+        }
+      ],
+      "notes": "Aclaro el contrato de la clase: no vamos a hacer matemática ni van a programar. Lo que quiero es que salgan pudiendo tener una conversación inteligente con un proveedor de AI, leer una propuesta técnica sin asustarse, y entender por qué dos herramientas que \"hacen lo mismo\" cuestan y rinden distinto. Enmarco las tres preguntas de negocio (consistencia, costo, calidad) porque van a ser el hilo con el que evaluemos cada perilla en las Secciones 3, 4 y 5. Menciono que la mayoría de estas perillas están escondidas en el chat web y solo aparecen cuando una empresa integra la AI vía API — que es exactamente el contexto en que ellos las van a encontrar."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Cómo genera un modelo (sin matemática)"
+    },
+    {
+      "template": "content-image",
+      "section": "Cómo genera un modelo (sin matemática)",
+      "title": "Predecir la próxima palabra",
+      "facts": [
+        {
+          "body": "Un modelo de lenguaje hace una sola cosa, muchas veces: predecir la siguiente palabra (token)."
+        },
+        {
+          "body": "Para cada paso arma una lista de candidatos con un \"puntaje de confianza\" para cada uno."
+        },
+        {
+          "body": "Genera una palabra, la agrega al texto, y vuelve a empezar mirando todo lo que lleva escrito."
+        }
+      ],
+      "image": {
+        "src": "images/s2-1-1-candidatos-con-confianza.png",
+        "alt": "El modelo arma una lista de palabras candidatas con un puntaje de confianza y elige una"
+      },
+      "notes": "Este es el único concepto técnico que necesitan retener de toda la clase, y lo doy sin una sola fórmula. Un LLM predice la próxima palabra. Punto. Para hacerlo, en cada paso arma una lista corta de palabras posibles y les pone un puntaje de confianza — uso deliberadamente \"confianza\" en lugar de \"logits\" o \"probabilidad\" para no cargar la cabeza. La clave que quiero que se lleven: el modelo no tiene *una* respuesta, tiene una *lista rankeada* de opciones. Todo lo que hacen las perillas de las Secciones 3 y 4 es intervenir en esa lista: cuánto respetarla, cuánto cortarla, cuánto pensar antes de elegir. Si entienden \"lista de candidatos con confianza\", entienden todo lo que sigue."
+    },
+    {
+      "template": "content-image",
+      "section": "Cómo genera un modelo (sin matemática)",
+      "title": "Elegir no es siempre el más probable",
+      "facts": [
+        {
+          "body": "El modelo no siempre agarra el candidato #1. A veces \"tira los dados\" entre los mejores."
+        },
+        {
+          "body": "Esa elección con algo de azar es lo que hace que la misma pregunta dé respuestas distintas (Sección 1)."
+        },
+        {
+          "label": "Analogía",
+          "body": "no siempre pedís el plato más popular del menú; a veces variás entre los tres primeros."
+        }
+      ],
+      "image": {
+        "src": "images/s2-2-1-ruleta-ponderada.png",
+        "alt": "La palabra final sale de una ruleta ponderada por confianza, no siempre la más probable"
+      },
+      "notes": "Acá cierro el círculo con el hook de la Sección 1. La razón por la que la misma pregunta da respuestas distintas es que el paso de \"elegir\" tiene un componente de azar: es una ruleta donde cada candidato ocupa una tajada proporcional a su confianza. El más probable gana más seguido, pero no siempre. Uso la analogía del menú: no siempre pedís lo más popular, a veces variás entre los tres primeros platos. Esto prepara el terreno para la temperatura, que es literalmente la perilla que decide *cuánto* azar hay en esa ruleta. No menciono \"sampler\" ni \"softmax\"; me quedo con \"ruleta ponderada por confianza\"."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Cómo elige las palabras (temperatura y top-p)"
+    },
+    {
+      "template": "content-image",
+      "section": "Cómo elige las palabras (temperatura y top-p)",
+      "title": "Temperatura: creatividad vs. consistencia",
+      "facts": [
+        {
+          "body": "La temperatura regula cuánto azar hay en la ruleta de la palabra anterior."
+        },
+        {
+          "label": "Baja (≈0)",
+          "body": "casi siempre el candidato más probable → respuestas predecibles, repetibles, \"aburridas pero seguras\"."
+        },
+        {
+          "label": "Alta (≈0.8–1.2)",
+          "body": "más variedad → respuestas creativas, pero más riesgo de incoherencia o error."
+        },
+        {
+          "label": "Negocio",
+          "body": "baja para extracción de datos, clasificación, respuestas de compliance; alta para brainstorming, copy, ideas."
+        }
+      ],
+      "image": {
+        "src": "images/s3-1-1-temperatura-baja-vs-alta.png",
+        "alt": "Temperatura baja concentra la elección; temperatura alta aplana la distribución"
+      },
+      "notes": "Primera perilla y la más importante. Explico temperatura como \"el volumen del azar\". Bajo el volumen (temperatura baja): el modelo casi siempre elige el candidato más confiable; ideal cuando quiero consistencia y control — extraer datos de una factura, clasificar tickets, responder algo de compliance donde no quiero sorpresas. Subo el volumen: el modelo se anima a candidatos menos obvios; ideal para brainstorming, generar variantes de copy, nombres de producto. El mensaje de negocio: no hay una temperatura \"buena\"; hay una temperatura *apropiada a la tarea*. Uso las dos barras del diagrama para mostrar visualmente cómo la distribución se aplana. Aviso: los valores exactos (0, 1, 1.2) son referencias típicas, no números mágicos, y cambian según la herramienta."
+    },
+    {
+      "template": "content-image",
+      "section": "Cómo elige las palabras (temperatura y top-p)",
+      "title": "Top-p: la otra forma de dar variedad",
+      "facts": [
+        {
+          "body": "Top-p (o \"nucleus\") es una perilla alternativa a la temperatura: en vez de subir el azar, recorta la lista de candidatos."
+        },
+        {
+          "label": "Top-p = 0.9",
+          "body": "el modelo solo considera los candidatos que juntos suman el 90% de la confianza, y descarta la \"cola\" improbable."
+        },
+        {
+          "label": "Regla práctica clave",
+          "body": "se toca una u otra, no las dos a la vez — combinarlas suele ser contraproducente."
+        },
+        {
+          "label": "Negocio",
+          "body": "mismo eje que la temperatura (variedad vs. control); en la práctica muchos equipos ajustan solo una."
+        },
+        {
+          "label": "Ojo",
+          "body": "en los modelos de razonamiento (los que \"piensan\" antes de responder) varios proveedores deshabilitan estas perillas — el modelo fija temperatura y top-p internamente y no las podés tocar."
+        },
+        {
+          "label": "OpenAI (GPT)",
+          "body": "top-p en la API: sí · en modelos de razonamiento: deshabilitado (queda fijo)."
+        },
+        {
+          "label": "Anthropic (Claude)",
+          "body": "top-p en la API: sí — se ajusta temperatura o top-p, no ambos · deshabilitado con extended thinking."
+        },
+        {
+          "label": "Google (Gemini)",
+          "body": "top-p en la API: sí (topP) · disponible en modelos de razonamiento."
+        }
+      ],
+      "image": {
+        "src": "images/s3-2-1-top-p-recorta-cola.png",
+        "alt": "Top-p recorta la cola larga de candidatos improbables y conserva el núcleo que suma p"
+      },
+      "highlights": [
+        {
+          "label": "Disponibilidad de top-p por proveedor",
+          "body": "verificar contra la doc vigente de cada proveedor.",
+          "kind": "note"
+        }
+      ],
+      "notes": "Segunda perilla, y la presento como \"la prima de la temperatura\". Persigue el mismo objetivo — controlar variedad — pero con otro mecanismo: en vez de subir el azar, recorta la lista de candidatos y descarta la cola de opciones raras. Top-p 0.9 significa \"quedate con las opciones que entre todas suman el 90% de la confianza\". El punto de negocio más accionable de este slide: se ajusta *una u otra*, temperatura o top-p, nunca las dos juntas — es un error común que degrada resultados. Para la audiencia de negocios, el takeaway es: si un proveedor te habla de \"top-p\", es la misma decisión de variedad-vs-control que ya entendiste con temperatura. No necesito que sepan la mecánica fina; necesito que no se asusten cuando la vean. Cierro con una aclaración importante: en los modelos de razonamiento varios proveedores bloquean estas perillas (las fijan internamente); dejo la tabla de disponibilidad por proveedor como referencia, aclarando que hay que verificarla contra la doc vigente porque cambia seguido."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Cuánto piensa (razonamiento y recapitulación)"
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cuánto piensa (razonamiento y recapitulación)",
+      "title": "Razonamiento: Thinking / Deep Thinking",
+      "lead": "Perilla nueva y muy actual, hoy expuesta de frente al usuario: cuánto razona el modelo internamente antes de contestar. Las herramientas la exponen, cada vez más, como modos con nombre — una progresión de tres escalones, no un interruptor de sí/no.",
+      "cards": [
+        {
+          "label": "Respuesta directa (sin pensar)",
+          "body": "El modelo contesta al toque. Rápido y barato; es el default para tareas simples (una búsqueda, un formateo, una pregunta trivial)."
+        },
+        {
+          "label": "\"Thinking\" (pensar)",
+          "body": "El modelo razona un poco antes de responder. Buen equilibrio para la mayoría de las tareas no triviales; agrega algo de latencia y costo."
+        },
+        {
+          "label": "\"Deep Thinking\" (pensar profundo / extended thinking)",
+          "body": "El modelo razona mucho más. Es lo mejor para tareas difíciles, de varios pasos o analíticas; notablemente más lento y más caro (pagás también el razonamiento interno que no ves)."
+        }
+      ],
+      "image": {
+        "src": "images/s4-1-1-tres-niveles-razonamiento.png",
+        "alt": "Progresión respuesta directa a Thinking a Deep Thinking: calidad, latencia y costo suben juntos"
+      },
+      "highlights": [
+        {
+          "label": "Cómo aparece según la herramienta",
+          "body": "varias ya ofrecen un botón o modo de \"Thinking\" y uno de \"Deep Thinking\" / extended thinking; otras te dejan graduar el esfuerzo por niveles o asignar un presupuesto de pensamiento (tokens de razonamiento). Los nombres exactos y los defaults cambian seguido entre proveedores.",
+          "kind": "note"
+        },
+        {
+          "label": "Trade-off de negocio",
+          "body": "subir de escalón mejora la calidad en tareas difíciles, pero calidad, latencia y costo suben juntos. No hay modo \"bueno\": hay uno apropiado a la dificultad de la tarea.",
+          "kind": "important"
+        },
+        {
+          "label": "Guía práctica",
+          "body": "emparejá el modo con la dificultad. Tarea simple → respuesta directa. Tarea no trivial del día a día → Thinking. Análisis, planificación o problema multi-paso → Deep Thinking. Pensar de más en una tarea fácil es tirar plata (y a veces empeora la respuesta).",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "Tercera perilla tocable, y la más \"de hoy\". Hasta hace poco esto vivía escondido en la API; ahora aparece de frente en las herramientas que usan todos los días, con nombres propios: \"Thinking\" (pensar) y \"Deep Thinking\" (pensar profundo / extended thinking). La lámina la presento como una progresión de tres escalones, no un interruptor: respuesta directa → Thinking → Deep Thinking. (1) Respuesta directa: el modelo contesta al toque, rápido y barato, es el default para lo simple. (2) Thinking: razona un poco antes de contestar, buen equilibrio para la mayoría de las tareas no triviales del día a día. (3) Deep Thinking: razona mucho más, es lo mejor para análisis, planificación y problemas de varios pasos. La idea de negocio es simple: podés graduar cuánto \"piensa\" el modelo. Uso la analogía del corpus: \"¿que piense 5 segundos o 5 minutos?\". El trade-off hay que decirlo claro y es el corazón del slide: al subir de escalón, calidad, latencia y costo suben JUNTOS —y sí, pagás también los tokens de pensamiento internos aunque no los veas—. Para una búsqueda rápida o formatear un texto, ir a Deep Thinking es tirar plata; incluso puede empeorar la respuesta por \"sobre-pensar\". El mensaje, igual que con temperatura: no hay un modo \"bueno\", hay uno *apropiado a la dificultad de la tarea* — emparejá el modo con la tarea. Importante para no quedar mal: NO atribuyo un modo o default concreto a un modelo/versión puntual (el corpus los marca como no verificados); hablo de los modos \"Thinking\" / \"Deep Thinking\" como los rotulan las herramientas y de la progresión en general, diciendo que los nombres exactos cambian entre proveedores."
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Cuánto piensa (razonamiento y recapitulación)",
+      "title": "Resumen: qué perilla para qué",
+      "cards": [
+        {
+          "label": "Temperatura",
+          "body": "Controla la variedad / azar. Subir: más creativo, menos consistente. Bajar: más predecible, ideal control."
+        },
+        {
+          "label": "Top-p",
+          "body": "Controla la variedad (alternativa a la temperatura). Subir: más opciones consideradas. Bajar: solo lo más seguro."
+        },
+        {
+          "label": "Razonamiento (Thinking / Deep Thinking)",
+          "body": "Controla cuánto \"piensa\" antes de responder. Subir (Deep Thinking): mejor en tareas difíciles, más lento y caro. Bajar (respuesta directa / Thinking): más rápido y barato, ok para tareas simples."
+        }
+      ],
+      "highlights": [
+        {
+          "body": "Tabla de bolsillo de las tres perillas tocables y su impacto de negocio.",
+          "kind": "note"
+        },
+        {
+          "label": "Regla de oro",
+          "body": "elegí la perilla por la tarea, no por defecto. Y recordá: temperatura y top-p se ajustan una u otra, no las dos a la vez.",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "Slide de consolidación de las dos secciones de perillas tocables (3 \"Cómo elige las palabras\" y 4 \"Cuánto piensa\"). No lo leo entero — lo dejo como tabla de referencia y camino sobre las columnas de \"subir/bajar\" recordando el ejemplo de negocio de cada perilla. El cierre conceptual: estas perillas se ajustan por *tarea*, no hay un preset universal. Un mismo equipo puede tener temperatura baja para su bot de soporte y alta para su generador de campañas, y esfuerzo de razonamiento alto para el análisis jurídico y bajo para el FAQ. Esta tabla es la que les digo que fotografíen; es el entregable práctico de la primera mitad de la clase (las tres perillas tocables). Buen punto para la pausa intermedia de la clase de 2 horas."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Selección del modelo"
+    },
+    {
+      "template": "content-image",
+      "section": "Selección del modelo",
+      "title": "Elegir el modelo: la perilla que todos tocan",
+      "facts": [
+        {
+          "body": "Elegir el modelo es la primera y más consecuente \"perilla\" que casi todos tocan de verdad: es lo único que se elige explícitamente hasta en el chat web (donde temperatura, top-p y el resto vienen con defaults ocultos)."
+        },
+        {
+          "label": "El trade-off central",
+          "body": "modelos más capaces (el \"grande\"/flagship) dan mejor calidad pero suelen ser más lentos y más caros por consulta; modelos más chicos/rápidos (el \"mini\") son más baratos y ágiles, y muchas veces alcanzan de sobra."
+        },
+        {
+          "body": "Las herramientas suelen ofrecer, en términos generales, un modelo grande / flagship (máxima capacidad) y uno mini / rápido (económico y veloz), a veces con escalones intermedios. Hablamos de familias/niveles, no de nombres o defaults de versión puntuales (esos cambian seguido entre proveedores)."
+        }
+      ],
+      "image": {
+        "src": "images/s5-1-1-capacidad-vs-costo.png",
+        "alt": "Eje capacidad vs costo y latencia entre modelo mini, intermedio y grande o flagship"
+      },
+      "highlights": [
+        {
+          "label": "Guía práctica",
+          "body": "el más chico/rápido que resuelva bien la tarea. Empezá por el mini; subí al grande sólo si la calidad no alcanza.",
+          "kind": "takeaway"
+        },
+        {
+          "label": "Ojo",
+          "body": "al elegir el modelo estás fijando implícitamente muchas cosas que no controlás directamente — su tamaño, con qué y cómo fue entrenado. Elegir el modelo es elegir todo ese paquete de una (lo vemos por dentro en la Sección 6).",
+          "kind": "important"
+        }
+      ],
+      "notes": "Esta es, en la práctica, la perilla número uno: la única que todos tocan, hasta en el chat web, donde el resto está escondido con defaults. Por eso le doy sección propia. El mensaje de negocio es idéntico en espíritu al de la temperatura: no hay un modelo \"bueno\", hay uno apropiado a la tarea. Desactivo la intuición \"más grande = mejor siempre\": el grande (flagship) es más capaz pero más lento y más caro por consulta; el mini es más barato y ágil y muchas veces alcanza de sobra —sobre todo en tareas simples y de alto volumen (un bot que responde 100.000 veces por día algo trivial no necesita el flagship)—. La guía es una sola frase que quiero que se lleven: \"el más chico/rápido que resuelva bien la tarea\"; empezá por el mini y subí sólo si la calidad no da. Hablo de niveles (grande/flagship vs mini/rápido) a propósito, sin atribuir un nombre o default a un modelo puntual, porque esos cambian seguido y el corpus los marca como no verificados. Y dejo sembrada la idea de que elegir el modelo fija de una muchas cosas que no controlás —su tamaño, su entrenamiento—: eso es lo que abrimos en la Sección 6."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Lo que se decide al construir el modelo"
+    },
+    {
+      "template": "content-image",
+      "section": "Lo que se decide al construir el modelo",
+      "title": "Dos momentos: entrenar vs. usar",
+      "facts": [
+        {
+          "body": "Las perillas de las Secciones 3 y 4 se tocan al usar el modelo (inferencia). Estas dos se deciden al construirlo (entrenamiento)."
+        },
+        {
+          "body": "Por eso las vemos a nivel conceptual: para entender qué comprás, no para tunearlas."
+        }
+      ],
+      "image": {
+        "src": "images/s6-1-1-entrenar-vs-usar.png",
+        "alt": "Parámetros de entrenamiento fijados por el constructor vs parámetros de inferencia tocables al usar"
+      },
+      "notes": "Bisagra de la clase. Hasta acá vimos perillas que se tocan cada vez que usás la AI. Ahora subo un escalón: hay decisiones que se toman *una sola vez*, cuando se construye el modelo, y que ya vienen \"horneadas\" en lo que comprás. El negocio no entrena modelos de cero — es carísimo — pero sí elige entre modelos que difieren en estas decisiones, y las paga. Por eso trato tamaño y learning rate a nivel conceptual: no para que los ajusten, sino para que entiendan qué significa \"un modelo más grande\" o \"más caro\" cuando un proveedor se los ofrece. El diagrama de dos cajas ancla la distinción entrenamiento-vs-uso que van a necesitar para el resto de la sección."
+    },
+    {
+      "template": "content-image",
+      "section": "Lo que se decide al construir el modelo",
+      "title": "Tamaño del modelo: qué es \"grande\" por dentro",
+      "facts": [
+        {
+          "body": "Cuando en la Sección 5 hablamos de un modelo \"grande\" o \"chico\", ¿qué es lo que efectivamente cambia por dentro? El \"tamaño\" es la cantidad de parámetros: cuánta capacidad de aprender y capturar patrones tiene el modelo — la analogía imperfecta pero útil es \"la cantidad de neuronas\"."
+        },
+        {
+          "body": "Más parámetros → más capacidad de representar patrones complejos, pero también más cómputo por consulta (de ahí que el grande sea más lento y caro, como vimos al elegir)."
+        },
+        {
+          "body": "Es una decisión de construcción: la fija quien entrena el modelo, no la tocás. Vos elegís entre modelos ya construidos (Sección 5); acá sólo entendemos qué hay detrás de la etiqueta \"grande\"."
+        }
+      ],
+      "image": {
+        "src": "images/s6-2-1-tamano-parametros.png",
+        "alt": "El tamaño del modelo es la cantidad de parámetros: chico pocos, grande muchos"
+      },
+      "notes": "Primer parámetro de construcción, y lo trato como el \"detrás de escena\" de la decisión de la Sección 5. Allá ya vimos *cómo elegir* entre un modelo grande y uno chico (el eje capacidad-vs-costo y la regla \"el más chico que alcance\"). Acá no repito esa decisión: contesto la pregunta \"¿y qué es, por dentro, un modelo grande?\". Respuesta: cantidad de parámetros. Uso la analogía de \"neuronas\": más parámetros, más capacidad de capturar patrones complejos —y más cómputo por consulta, que es exactamente por qué el grande sale más caro y lento—. El punto de gestión: esto lo fija quien construye el modelo; el negocio no lo tunea, sólo elige entre modelos ya horneados. Es puro andamiaje conceptual para que \"grande/chico\" deje de ser una etiqueta opaca. Lo mantengo corto: una lámina, sin fórmulas."
+    },
+    {
+      "template": "content-image",
+      "section": "Lo que se decide al construir el modelo",
+      "title": "Learning rate: cómo aprende el modelo",
+      "facts": [
+        {
+          "body": "El learning rate es el \"tamaño del paso\" con que el modelo ajusta lo que aprende en cada corrección durante el entrenamiento."
+        },
+        {
+          "label": "Muy grande",
+          "body": "aprende rápido pero inestable, \"se pasa de largo\" y no converge."
+        },
+        {
+          "label": "Muy chico",
+          "body": "estable pero lentísimo y caro de entrenar."
+        },
+        {
+          "label": "Negocio",
+          "body": "no lo tocás nunca, pero explica por qué entrenar/afinar un modelo es un arte caro, y por qué \"afinar tu propio modelo\" no es gratis ni trivial."
+        }
+      ],
+      "image": {
+        "src": "images/s6-3-1-learning-rate-paso.png",
+        "alt": "Learning rate como tamaño de paso al descender: pasos grandes rebotan, pasos chicos son lentos pero estables"
+      },
+      "notes": "Segundo parámetro de construcción, y el más abstracto — lo trato con la máxima economía. Uso la metáfora de bajar una montaña con niebla hacia el punto más bajo (la \"mejor versión\" del modelo). El learning rate es el tamaño de cada paso. Pasos gigantes: avanzás rápido pero te pasás de largo y rebotás, nunca te asentás. Pasos minúsculos: llegás seguro pero tardás una eternidad (y en cómputo, eternidad = mucha plata). Encontrar el paso justo es parte del arte —y el costo— de entrenar. Por qué le importa a un gerente: cuando un proveedor ofrece \"afinamos un modelo con tus datos\" (fine-tuning), estas decisiones están detrás del precio y del riesgo de que salga mal. Learning rate es la razón conceptual de por qué \"hacé tu propio modelo\" nunca es tan simple ni tan barato como suena. No doy ninguna fórmula; me quedo en la montaña."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Conclusions"
+    },
+    {
+      "template": "icon-list",
+      "section": "Conclusions",
+      "title": "Lo que se llevan",
+      "rows": [
+        {
+          "label": "Detrás de toda AI hay perillas",
+          "body": "que cambian calidad, costo, velocidad y consistencia."
+        },
+        {
+          "label": "Antes que nada elegís el modelo",
+          "body": "la única perilla siempre expuesta, y la que fija el eje capacidad vs. costo/velocidad. Regla: el más chico/rápido que resuelva bien la tarea."
+        },
+        {
+          "label": "Después, tres perillas de inferencia las tocás al usar",
+          "body": "temperatura, top-p y el esfuerzo de razonamiento. Y dos parámetros los comprás horneados al elegir el modelo: su tamaño (parámetros) y su learning rate."
+        },
+        {
+          "label": "No hay configuración \"buena\"",
+          "body": "hay una apropiada a la tarea."
+        },
+        {
+          "label": "Entender las perillas",
+          "body": "decidir con criterio de negocio, no comprar humo."
+        }
+      ],
+      "notes": "Recapitulo en pocos golpes, sin reabrir contenido. El mensaje que quiero que persista una semana después: no necesitás ser ingeniero para gestionar AI con criterio, pero sí necesitás saber que estas perillas existen y qué mueve cada una. Ordeno la recapitulación por lo que efectivamente decide un usuario: primero la elección del **modelo** (la única perilla siempre expuesta, con su regla \"el más chico/rápido que alcance\"); después las tres perillas de inferencia que se tocan al usar (temperatura, top-p, razonamiento); y por debajo, los dos parámetros que se compran horneados al elegir el modelo (tamaño y learning rate). Y remato con la frase-tesis: no hay configuración universalmente buena, hay una apropiada a cada tarea — quien entiende eso deja de tratar la AI como una caja mágica y empieza a tratarla como una herramienta que se calibra."
+    },
+    {
+      "template": "closing-hero",
+      "section": "Conclusions",
+      "title": "Cierre y preguntas",
+      "body": "Pregunta para llevarse: pensá una tarea de AI de tu trabajo — ¿qué perilla cambiarías y por qué? Espacio de preguntas.",
+      "notes": "Cierro con una pregunta accionable en vez de un \"gracias\": que cada uno piense una tarea concreta de su trabajo y qué perilla ajustaría. Esto ancla la clase en su realidad y suele disparar las mejores preguntas. Abro el espacio de Q&A. Si sobra tiempo o la sala es técnica, tengo material de reserva en Cut material (la mecánica profunda del razonamiento —RL, test-time compute, think tool—, penalizaciones de repetición, seed y reproducibilidad) para profundizar a demanda."
+    }
+  ]
+}

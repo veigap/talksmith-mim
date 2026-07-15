@@ -1,0 +1,979 @@
+{
+  "deck": {
+    "title": "AI Generativa para Biomedicina",
+    "lang": "es",
+    "institution": "Universidad Austral",
+    "class": "Claude Cowork para el día a día",
+    "presenter": "Paulo Veiga, Docente de Universidad Austral",
+    "date": "Julio 2026",
+    "logo": null,
+    "sections": [
+      "El chat que ya usás — y sus límites",
+      "Conectores: extender el chat",
+      "Tareas programadas: el chat trabaja solo",
+      "Cowork: cambiar la forma de trabajar",
+      "Advanced: Skills, Subagentes y Plugins"
+    ]
+  },
+  "slides": [
+    {
+      "template": "section-agenda",
+      "title": "El chat que ya usás — y sus límites"
+    },
+    {
+      "template": "content+cards+image",
+      "section": "El chat que ya usás — y sus límites",
+      "title": "El chat responde de memoria",
+      "cards": [
+        {
+          "label": "Información vieja",
+          "body": "Todo lo posterior a la fecha de corte no existe para el modelo: precios, noticias, versiones de software, papers recientes."
+        },
+        {
+          "label": "Riesgo de alucinación",
+          "body": "Cuando no sabe, puede inventar con confianza — cifras, citas, referencias que suenan perfectas y son falsas. Por eso toda salida se verifica."
+        },
+        {
+          "label": "No ve TU mundo",
+          "body": "Tus mails, tu calendario, tus archivos, las apps de tu trabajo: nada de eso está en la memoria de entrenamiento. El chat solo, no puede tocarlos."
+        }
+      ],
+      "image": {
+        "src": "images/s1-1-1-chat-responde-memoria.png",
+        "alt": "El chat sin extensiones responde solo desde su memoria de entrenamiento"
+      },
+      "highlights": [
+        {
+          "label": "Todos ya usan esto",
+          "body": "ChatGPT, Gemini, Claude — el chat de IA ya es parte de tu día. Esta charla arranca exactamente ahí: en la herramienta que ya tenés abierta.",
+          "kind": "note"
+        },
+        {
+          "label": "Cómo responde el chat \"como viene de fábrica\"",
+          "body": "desde su memoria de entrenamiento — una foto de lo que el modelo leyó hasta una fecha de corte (knowledge cutoff). No está \"buscando\" nada cuando le preguntás: está recordando.",
+          "kind": "definition"
+        },
+        {
+          "body": "Lo que eso implica: los tres límites.",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta semana — van a ser todos. La idea a instalar: ese chat, tal como viene, responde *de memoria*. Es como un colega brillante que leyó muchísimo hasta una fecha... y desde entonces está incomunicado. Tres consecuencias que ya sufrieron sin saberlo: datos viejos, inventos con cara de verdad (alucinaciones — insistir en verificar), y la más limitante para el trabajo real: no ve nada tuyo. Ese tercer límite es el que abre toda la charla: ¿y si pudiéramos conectarlo? Tiempo objetivo: ~6 min."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Conectores: extender el chat"
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Conectores: extender el chat",
+      "title": "Chat solo vs chat con conectores",
+      "cards": [
+        {
+          "label": "Chat solo",
+          "body": "Responde de su memoria de entrenamiento — lo de la sección 1."
+        },
+        {
+          "label": "Chat con conectores",
+          "body": "Antes de responder, puede ir a buscar información real a la fuente: la web, tu inbox, tu agenda."
+        }
+      ],
+      "image": {
+        "src": "images/s2-1-1-chat-solo-vs-conectores.png",
+        "alt": "Chat aislado frente a chat con conectores"
+      },
+      "highlights": [
+        {
+          "label": "La idea (transversal, no es solo de Claude)",
+          "body": "Un conector es una extensión que le da al chat acceso a un sistema externo: buscar en la web, leer tu mail, ver tu calendario, consultar tus documentos. Todas las IAs grandes van por este mismo camino — el concepto te sirve para cualquiera que uses.",
+          "kind": "definition"
+        },
+        {
+          "label": "No es programar",
+          "body": "Los conectores se activan con un clic o un toggle en la configuración del chat — están pensados para el usuario final.",
+          "kind": "important"
+        }
+      ],
+      "notes": "Esta slide instala el concepto que ordena toda la sección: conector = extensión que saca al chat de su aislamiento. Subrayar dos veces que es transversal: lo que aprendan acá vale para ChatGPT, para Gemini, para Claude — los nombres cambian (\"connectors\", \"apps\", \"extensiones\"), la idea es la misma. Usar el diagrama para el contraste de régimen: mismo chat, pero ahora con líneas hacia afuera. Y bajar la barrera de entrada de entrada: esto se activa con un clic, no se programa. Tiempo objetivo: ~5 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Conectores: extender el chat",
+      "title": "El primer conector: búsqueda web",
+      "cards": [
+        {
+          "label": "El conector más universal",
+          "body": "La búsqueda web viene integrada en casi todos los chats de IA — Claude, ChatGPT, Gemini — y es el más fácil de activar: un toggle en la configuración (en varios ya viene activo por defecto)."
+        },
+        {
+          "label": "Responder de memoria",
+          "body": "El modelo recuerda lo que leyó hasta su fecha de corte. Puede estar viejo o mal."
+        },
+        {
+          "label": "Responder con búsqueda / conector",
+          "body": "El modelo va a buscar información real, ahora, y te responde citando lo que encontró."
+        },
+        {
+          "label": "Cómo lo notás",
+          "body": "Cuando el chat busca, lo muestra (\"buscando...\") y suele citar las fuentes. Esa cita es tu punto de verificación."
+        }
+      ],
+      "image": {
+        "src": "images/s2-2-1-conector-busqueda-web.png",
+        "alt": "Misma pregunta: respuesta de memoria frente a respuesta con búsqueda web"
+      },
+      "highlights": [
+        {
+          "label": "LA distinción clave de esta charla (grabársela)",
+          "body": "responder de memoria vs. responder con búsqueda / conector.",
+          "kind": "important"
+        },
+        {
+          "label": "Regla práctica",
+          "body": "para cualquier pregunta donde la respuesta pueda haber cambiado (precios, noticias, versiones, papers, normativa), activá/exigí búsqueda — no te conformes con la memoria.",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "Esta es la slide para martillar LA distinción de la charla: memoria vs información viva. Hacerlo con una demo de 2 minutos si hay conexión: la misma pregunta (\"¿cuál es la última versión de X?\" o \"¿qué pasó ayer con Y?\") con búsqueda apagada y prendida, y comparar. Señalar el indicador de \"buscando...\" y las fuentes citadas — enseñarles a mirar eso siempre. La regla práctica que se llevan: si la respuesta pudo haber cambiado desde el entrenamiento, exigí búsqueda. Es el primer conector porque es el más fácil: ya lo tienen, solo hay que saber cuándo está actuando. Tiempo objetivo: ~7 min (con demo)."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Conectores: extender el chat",
+      "title": "Conectores y MCP: las \"manos\" del chat",
+      "cards": [
+        {
+          "label": "Qué son los conectores (más allá de la web)",
+          "body": "Son lo que le permite al chat tocar sistemas que de otro modo no podría: Drive, Gmail, Calendar, Slack, bases de datos, APIs. \"Las manos: lo que la IA puede tocar que de otro modo no podría.\""
+        },
+        {
+          "label": "Qué es MCP (Model Context Protocol)",
+          "body": "El estándar detrás de los conectores de Claude: una forma estandarizada de conectar la IA con sistemas externos. Cualquier app que exponga un servidor MCP se vuelve algo con lo que podés \"hablar\" (Figma, Vercel, Cal.com, Home Assistant…). El patrón: la plataforma abre sus internals como herramientas; la IA no gana una capacidad nueva, la plataforma se vuelve conversacional."
+        },
+        {
+          "label": "Se pueden desarrollar conectores propios",
+          "body": "Custom connectors, vía MCP — existe y es accesible para un equipo técnico, pero no lo desarrollamos acá: a nivel usuario alcanza con el directorio (próxima slide)."
+        }
+      ],
+      "image": {
+        "src": "images/s2-3-1-flujo-connector-mcp.png",
+        "alt": "Flujo de una llamada a un Connector vía MCP"
+      },
+      "highlights": [
+        {
+          "body": "En la próxima slide vemos de dónde salen y cómo se conectan en la práctica (directorio + un clic).",
+          "kind": "note"
+        }
+      ],
+      "notes": "Desarmar el miedo: conectar un servicio externo no es programar — es darle \"manos\" al chat. Usar el diagrama para explicar qué pasa por debajo: la IA pide datos, el conector los trae vía el protocolo MCP. MCP es el estándar que hace que cualquier plataforma con API pueda volverse conversacional — mencionar dos o tres ejemplos del ecosistema y seguir. Dejar caído al pasar que un equipo técnico puede desarrollar conectores propios (custom, vía MCP) — existe, no lo vemos hoy. Los ejemplos guía de la sección son **mail y calendario**, porque son los que todos tienen. Tiempo objetivo: ~8 min."
+    },
+    {
+      "template": "figures",
+      "section": "Conectores: extender el chat",
+      "title": "El directorio de conectores: mail, calendario y compañía",
+      "figures": [
+        {
+          "image": {
+            "src": "images/connectors_directory.png",
+            "alt": "Directorio de Connectors"
+          },
+          "label": "El directorio oficial de Claude",
+          "body": "Un catálogo curado de conectores listos para conectar de un clic. También hay conectores no oficiales / de la comunidad — servicios de terceros que exponen MCP; mismos pasos, criterio extra: conectá solo lo que sea de confianza."
+        },
+        {
+          "image": {
+            "src": "images/connector_browser.png",
+            "alt": "Conexión de un Connector — buscar y conectar"
+          },
+          "label": "Conexión de un clic",
+          "body": "Buscás el servicio, le das Connect y autorizás — y queda disponible para el chat."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "No estás programando: te conectás",
+          "body": "Registrar un conector es como conectar Gmail a una app nueva — buscás el servicio en un directorio y le das Connect. Configurado por la UI; no hay archivo local que editar.",
+          "kind": "definition"
+        },
+        {
+          "label": "Los ejemplos guía: mail y calendario",
+          "body": "Con Gmail conectado, el chat puede leer y resumir tu inbox; con Calendar, ver tu agenda. (\"¿Qué tengo esta semana? ¿Qué mails importantes me perdí ayer?\") — preguntas que el chat solo jamás podría responder.",
+          "kind": "takeaway"
+        },
+        {
+          "label": "Ejemplo (Atlas)",
+          "body": "MT Newswires (noticias de mercado) ya tiene un connector listo: lo buscás y le das Connect, como cualquier app. Con eso, Atlas pasa a leer noticias reales del día — sin que vos programes nada.",
+          "kind": "example"
+        },
+        {
+          "body": "Mención: también se pueden desarrollar conectores propios — lo dijimos en la slide anterior, no profundizamos.",
+          "kind": "note"
+        }
+      ],
+      "notes": "Slide práctica: mostrar las dos capturas — el directorio de conectores y la pantalla de conexión — para desarmar el miedo de \"esto es técnico\". El mensaje es: conectar un servicio es buscar + Connect + autorizar, igual que cuando conectás Gmail a cualquier app. Insistir en los dos ejemplos guía de la sección, mail y calendario, porque son los que toda la audiencia tiene y va a usar mañana mismo. Sobre los no oficiales: mismos pasos, pero criterio — autorizar un conector es darle acceso a tus datos, conectá solo lo confiable. Ejemplo de la misión: MT Newswires (noticias). Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo concepto en el chat. Tiempo objetivo: ~6 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Conectores: extender el chat",
+      "title": "Los conectores también actúan: del leer al hacer",
+      "cards": [
+        {
+          "label": "Mandar (o dejar redactado) un mail",
+          "body": "El chat escribe el borrador en tu Gmail, listo para revisar y enviar."
+        },
+        {
+          "label": "Agendar una reunión",
+          "body": "Crear el evento en tu calendario con invitados y horario."
+        },
+        {
+          "label": "Abrir un ticket",
+          "body": "En tu sistema de gestión (Jira, ServiceNow, etc.)."
+        },
+        {
+          "label": "Mandar un mensaje",
+          "body": "A un canal de Slack o similar."
+        }
+      ],
+      "image": {
+        "src": "images/s2-5-1-conectores-leer-y-hacer.png",
+        "alt": "Los conectores funcionan en dos direcciones: leer y actuar"
+      },
+      "highlights": [
+        {
+          "body": "Hasta acá, los conectores traían información. Pero la mitad del valor está del otro lado: un conector también puede exponer acciones — y entonces la IA no solo consulta: hace. Capacidad ejecutiva.",
+          "kind": "definition"
+        },
+        {
+          "label": "Con control",
+          "body": "Las acciones pasan por tu autorización: conectaste el servicio vos, y las acciones sensibles se revisan/aprueban. La buena práctica: preferí \"dejar borrador\" a \"enviar directo\" mientras aprendés.",
+          "kind": "important"
+        },
+        {
+          "label": "Por qué importa",
+          "body": "Este es el pre-anuncio del resto de la charla — si el chat puede informarse y actuar, el paso siguiente es que trabaje solo (tareas programadas, sección 3) y sobre tus archivos (Cowork, sección 4).",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "El giro de la sección: hasta acá el conector era una antena (traer info); ahora es una mano (actuar). Recorrer los cuatro ejemplos ejecutivos — mail, reunión, ticket, mensaje — que son universales en cualquier trabajo. Dos de los cuatro están verificados de primera mano: el borrador de Gmail (misión Atlas) y agendar por Calendar (chequeado por el docente — se puede demostrar en vivo). Para tickets y mensajes, presentarlos como capacidad del ecosistema (el estándar MCP y los conectores lo permiten) sin prometer un conector puntual que no probamos. Balancear con el control: nada de esto pasa sin que hayas conectado y autorizado el servicio, y la práctica sana mientras aprenden es \"borrador, no envío directo\" (el ejemplo de Atlas hace exactamente eso: deja el borrador en Gmail, no lo manda). Cerrar sembrando lo que viene: una IA que se informa y actúa, más una agenda... es una IA que puede trabajar sola — puente directo a la sección 3. Tiempo objetivo: ~6 min."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Tareas programadas: el chat trabaja solo"
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Tareas programadas: el chat trabaja solo",
+      "title": "Tareas programadas desde el chat",
+      "cards": [
+        {
+          "label": "Qué es",
+          "body": "Una tarea programada es un pedido que describís una sola vez + una cadencia (diaria, semanal, a demanda). El chat la corre solo cuando toca y te avisa con el resultado. Pasás de \"preguntar cada vez\" a \"suscribirte a una respuesta\"."
+        },
+        {
+          "label": "La combinación poderosa: tarea programada + conectores",
+          "body": "La tarea corre con los mismos conectores que ya configuraste — puede buscar en la web, leer tu mail, mirar tu agenda."
+        },
+        {
+          "label": "El ejemplo canónico: el resumidor de mails",
+          "body": "\"Todos los días a las 8:00, leé mi inbox de las últimas 24 h y dejame un resumen con lo urgente arriba.\" Una vez escrito, tu resumen aparece solo, cada mañana. Variante semanal: \"los lunes a las 8:00, resumime la semana del calendario + los mails sin responder.\""
+        },
+        {
+          "label": "Transversal, otra vez — y Claude ya las tiene en el chat",
+          "body": "ChatGPT las ofrece como \"tasks\" (recordatorios, briefings diarios, monitoreo). Claude: tareas programadas disponibles en claude.ai, desde el navegador — y corren en la nube: no hace falta tener la computadora prendida ni ninguna app abierta. En beta, rollout gradual desde julio 2026 empezando por el plan Max."
+        }
+      ],
+      "image": {
+        "src": "images/s3-1-1-ciclo-tarea-programada.png",
+        "alt": "Ciclo de una tarea programada: disparador, ejecución y entrega"
+      },
+      "highlights": [
+        {
+          "body": "En Cowork (sección 4) las volvemos a ver, ahora sobre tus carpetas y archivos — el concepto es el mismo.",
+          "kind": "note"
+        }
+      ],
+      "notes": "Slide-concepto único de la sección, y el último peldaño antes de Cowork. La idea con sus dos mitades: (1) describís el trabajo una vez + cadencia → corre solo; (2) la tarea hereda tus conectores, y ahí está la magia — el ejemplo del resumidor de mails es imbatible porque todos tienen un inbox desbordado. Contarlo en primera persona si es posible (\"mi resumen de las 8:00\"). Marcar la transversalidad: ChatGPT lo llama \"tasks\", y Claude ya las ofrece en claude.ai desde el navegador — si el rollout lo permite, mostrarlas EN VIVO desde la cuenta del docente (el presentador ya las usa). El detalle que vale la pena decir: en Claude corren EN LA NUBE — no hace falta la computadora prendida (desde el update del 7 de julio de 2026; beta, empezando por Max — aclarar que puede no estar disponible aún en todos los planes de la audiencia). En la próxima sección las vemos de nuevo, sobre carpetas y archivos de verdad. Tiempo objetivo: ~7 min."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Cowork: cambiar la forma de trabajar"
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Las tres superficies de Claude",
+      "cards": [
+        {
+          "label": "Web/Chat",
+          "body": "Navegador o app, sin instalar; chat, preguntas y tareas puntuales; público: todos. Es donde estuvimos hasta ahora."
+        },
+        {
+          "label": "Claude Code",
+          "body": "App de escritorio (pestaña Code + terminal); escribir, editar y publicar código; público: perfiles técnicos / developers."
+        },
+        {
+          "label": "Cowork",
+          "body": "App de escritorio (pestaña Cowork), GUI sin terminal; trabajo de varios pasos sobre archivos reales; público: knowledge workers sin terminal. El resto de la charla vive acá."
+        }
+      ],
+      "image": {
+        "src": "images/s4-1-1-tres-superficies-claude.png",
+        "alt": "Las tres superficies de Claude sobre los mismos modelos"
+      },
+      "highlights": [
+        {
+          "body": "Ya extendiste el chat — conectores, tareas programadas. Ahora, el salto: ¿qué pasa cuando esa misma IA baja a tu computadora y trabaja sobre tus carpetas y archivos? Para eso hay que ubicar el mapa de superficies.",
+          "kind": "note"
+        },
+        {
+          "label": "Mismos modelos, distinta superficie",
+          "body": "Las tres caras — Web/Chat, Claude Code y Cowork — corren sobre los mismos modelos Claude. El matiz importa: Cowork está construido sobre las mismas bases que Claude Code (el Claude Agent SDK), así que Code y Cowork comparten el mismo engine de agente — los mismos archivos, las mismas Skills, el mismo MCP y el mismo loop de plan → aprobar → redirigir. Web/Chat es ese mismo modelo en una superficie de chat, no el loop agéntico completo.",
+          "kind": "definition"
+        }
+      ],
+      "notes": "Abrir la sección conectando con el recorrido: \"hasta acá, todo pasó en la superficie de chat — ahora cambiamos de superficie\". No son tres productos distintos, es el mismo agente con tres caras; lo único que cambia es la superficie y para quién está pensada. Dejar claro que el resto de la charla vive en Cowork — la cara pensada para quien no vive en una terminal. Claude Code aparece solo como contraste; no vamos a entrar en sus internals. Tiempo objetivo: ~5 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "El superpoder de Cowork: la herramienta de propósito general del knowledge worker",
+      "cards": [
+        {
+          "label": "Cowork no es \"Claude instalado en tu computadora\"",
+          "body": "Es mucho más: cambia por completo la forma de trabajar — dejás de operar una herramienta y pasás a dirigir a un colega que trabaja sobre tus carpetas y archivos reales."
+        },
+        {
+          "label": "La idea grande",
+          "body": "Cowork es la herramienta de propósito general del knowledge worker — de quien no programa. No un asistente de una tarea puntual: una herramienta horizontal para casi cualquier trabajo de conocimiento. Sin base técnica: el \"lenguaje de programación\" es el español."
+        },
+        {
+          "label": "La analogía que \"pega\" — \"el nuevo Excel\"",
+          "body": "(Encuadre de analistas / industria, no un claim de Anthropic.) Así como Excel fue ~40 años la habilidad base del trabajo de oficina, las herramientas agénticas apuntan a ser la nueva habilidad base."
+        },
+        {
+          "label": "El encuadre oficial de Anthropic",
+          "body": "Cowork como \"Claude Code para el resto de tu trabajo\"."
+        },
+        {
+          "label": "Por qué te importa (bioingeniería)",
+          "body": "La habilidad base del trabajo del conocimiento se redefine ahora; llegar temprano es ventaja concreta y portable."
+        }
+      ],
+      "image": {
+        "src": "images/s4-2-1-excel-a-agentico.png",
+        "alt": "De la herramienta específica a la herramienta agéntica de propósito general"
+      },
+      "notes": "Este es el beat de \"¿y a mí por qué me importa?\". Abrir con el mensaje que pidió el presentador, en esas palabras: Cowork NO es \"Claude instalado en tu computadora\" — es un cambio completo en la forma de trabajar. Hasta acá la audiencia extendió un chat; esta slide les dice que lo que viene es otra categoría de herramienta. Tono motivacional y de alto nivel — la mecánica viene después.\n\nEl gancho que mejor funciona es la analogía del Excel, pero hay que decirla con cuidado: durante unas cuatro décadas, saber Excel fue *la* habilidad base del trabajo de oficina — no programabas, pero con Excel resolvías el 80% del trabajo de conocimiento. La tesis de varios analistas de la industria es que las herramientas agénticas (Claude Code para los que programan, Cowork para los que no) están en camino de ser esa nueva habilidad base. Atribuirlo explícitamente como encuadre de analistas/industria — \"hay quien lo llama el nuevo Excel\" — y NO como un claim oficial de Anthropic.\n\nLo que sí es de Anthropic, y conviene citarlo como su framing propio, es \"Claude Code para el resto de tu trabajo\": la idea de que cualquier knowledge worker sienta con Cowork lo que los ingenieros ya sienten con Claude Code. Subrayar que Cowork no salió de la nada — es la generalización de algo que ya funcionó muy bien primero con developers.\n\nCerrar aterrizándolo en la audiencia: ellos son ingenieros biomédicos, no necesariamente developers, y exactamente por eso esto les sirve — la habilidad base del trabajo del conocimiento se está redefiniendo ahora mismo, y llegar temprano es ventaja. Después de este beat motivacional pasamos a la mecánica: cómo se delega de verdad (próxima slide). Tiempo objetivo: ~4-5 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "De chat a agente: el cambio de paradigma",
+      "cards": [
+        {
+          "label": "Cómo trabajás",
+          "body": "Chatear: un mensaje a la vez. Delegar a un agente: describís un resultado."
+        },
+        {
+          "label": "Los pasos",
+          "body": "Chatear: los hacés vos. Delegar a un agente: el agente planifica y ejecuta."
+        },
+        {
+          "label": "La salida",
+          "body": "Chatear: texto en la ventana. Delegar a un agente: archivos en tu disco."
+        },
+        {
+          "label": "Tu rol",
+          "body": "Chatear: tipear el próximo prompt. Delegar a un agente: leer el plan, guiar a mitad de camino."
+        }
+      ],
+      "image": {
+        "src": "images/s4-3-1-chat-vs-agente.png",
+        "alt": "Chat versus agente: quién ejecuta cada paso"
+      },
+      "highlights": [
+        {
+          "label": "El puente",
+          "body": "Ya extendiste el chat: conectores para que vea tu mundo, tareas programadas para que corra solo. El salto que falta es de rol: dejar de chatear y empezar a delegar. Chatear vs delegar no son dos productos, son dos formas de trabajar.",
+          "kind": "note"
+        },
+        {
+          "body": "Dejás de tipear un mensaje a la vez y empezás a entregar un resultado. El agente lo planifica, trabaja sobre tus archivos reales, y vos lo guiás — en lugar de hacer cada paso vos mismo.",
+          "kind": "takeaway"
+        },
+        {
+          "body": "Cómo lo describe la propia Anthropic: trabajar con Cowork \"se parece menos a una sesión de chat y más a asignarle tareas a un colega\" (\"less like a chat session and more like assigning tasks to a colleague\"). Esa es exactamente la mudanza de paradigma de esta slide.",
+          "kind": "quote"
+        }
+      ],
+      "notes": "Este es el concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y las tareas programadas ya eran pasos hacia acá — extendieron *qué* puede hacer el chat; el agente cambia *tu rol*. Si se llevan una sola idea, que sea esta: el valor no está en escribir mejores mensajes, está en aprender a delegar un resultado y guiar el proceso. Usar la tabla para hacerlo concreto: la salida deja de ser texto en una ventana y pasa a ser archivos reales en tu disco. Anticipar la misión: vamos a \"contratar\" a Atlas, un analista de mercado virtual, y entrenarlo una vez para que después trabaje solo. Como cierre del concepto, citar el framing de la propia Anthropic — \"menos una sesión de chat, más asignarle tareas a un colega\" — para reforzar que esto no es marketing nuestro sino la forma en que el producto está pensado. Tiempo objetivo: ~5 min."
+    },
+    {
+      "template": "content-image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "El mapa de la charla: bloques que se apilan",
+      "layout": "text-left",
+      "lead": "Todo lo de hoy se aprende como bloques que se apilan: cada bloque resuelve un problema concreto y recurrente, y al sumarse vuelven a la IA cada vez más rica y autónoma. Cada bloque = un problema que ya tuviste.",
+      "image": {
+        "src": "images/s4-4-1-bloques-cowork.png",
+        "alt": "El mapa de la charla: los bloques de Cowork se apilan"
+      },
+      "facts": [
+        {
+          "label": "El chat (visto, sección 1)",
+          "body": "respondía solo de memoria."
+        },
+        {
+          "label": "Conectores (visto, sección 2)",
+          "body": "quiero información real de mis herramientas — y que actúe."
+        },
+        {
+          "label": "Tareas programadas (visto, sección 3)",
+          "body": "quiero que corra solo."
+        },
+        {
+          "label": "Cowork: carpetas y archivos (estamos acá)",
+          "body": "quiero que trabaje sobre mis archivos reales."
+        },
+        {
+          "label": "Instrucciones",
+          "body": "no quiero repetir el contexto en cada prompt."
+        },
+        {
+          "label": "Projects",
+          "body": "quiero guardar y organizar todo en un lugar fijo."
+        },
+        {
+          "label": "Archivos .md",
+          "body": "quiero que la IA entienda y edite mi material de trabajo."
+        },
+        {
+          "label": "Live Artifacts",
+          "body": "quiero compartir el resultado vivo."
+        },
+        {
+          "label": "Skills / Subagentes (avanzado, sección 5)",
+          "body": "no quiero repetir la misma tarea / quiero delegar en paralelo."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "Importante",
+          "body": "no son una escalera estricta — usás solo los que tu tarea necesita; se combinan, no se exigen unos a otros.",
+          "kind": "important"
+        },
+        {
+          "body": "Este es el mapa de toda la charla — y ya recorrimos los primeros tres. Volvé a esta slide como \"estamos acá\" cuando quieras ubicarte.",
+          "kind": "note"
+        },
+        {
+          "label": "Plugins, transversal",
+          "body": "Hay una pieza que no es un bloque más en la pila: los Plugins son la capa transversal de distribución — empaquetan y reparten Skills, agentes y connectors a todos a la vez. La vemos al final (sección 5).",
+          "kind": "definition"
+        }
+      ],
+      "notes": "Esta slide es el mapa de toda la sesión, actualizado al nuevo arco: ya no arranca en Cowork — arranca en el chat que todos usan. Aprovechar el efecto acumulado: \"los tres bloques de abajo ya los recorrimos\" (chat → conectores → tareas programadas), y señalar el marcador de \"estamos acá\": Cowork, donde la IA empieza a trabajar sobre carpetas y archivos reales. El gancho sigue siendo el problema, no la feature: cada bloque nace de una frustración concreta.\n\nCuidado con la metáfora: NO es una pirámide donde cada capa depende de todas las de abajo. Son bloques que se apilan y se combinan — usás solo los que tu tarea necesita.\n\nDecir explícitamente la promesa de roadmap: \"lo que queda de la charla recorre los bloques de acá para arriba, en este orden\" — y que pueden volver a esta slide como \"estamos acá\" entre secciones. Al final, la pila entera es Atlas.\n\nPlugins como transversal: marcar que Plugins NO es un bloque más en la pila, sino la banda que la envuelve — la forma de empaquetar y distribuir varias de estas piezas a la vez (a un equipo, p. ej.). No desarrollarlo acá: lo vemos en la sección 5. Tiempo objetivo: ~3-4 min."
+    },
+    {
+      "template": "content-image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "(Demo time) Conozcamos la interfaz de Cowork",
+      "layout": "text-left",
+      "lead": "Anatomía de la pestaña Cowork (referencia anotada).",
+      "image": {
+        "src": "images/screenshot-cowork-tab.png",
+        "alt": "Anatomía de la pestaña Cowork — interfaz anotada"
+      },
+      "facts": [
+        {
+          "label": "Elementos a señalar en vivo",
+          "body": "el selector de modo \"Ask\" (Ask before acting / Act without asking), el selector de carpeta de trabajo, la pestaña Scheduled, la pestaña Live artifacts, el panel de un Project."
+        },
+        {
+          "label": "Control en Cowork",
+          "body": "el dropdown de modo + los prompts de aprobar/redirigir por acción + el selector de carpeta. No hay slash commands: Cowork es GUI."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "DEMO TIME",
+          "body": "Slide de demo en vivo — pasamos a la app real de Cowork. Tour rápido de la pestaña Cowork sobre la app real, no sobre la slide.",
+          "kind": "important"
+        }
+      ],
+      "notes": "Momento de demo en vivo — bajar de los conceptos a la app real. Abrir Cowork y hacer un recorrido de 2-3 minutos señalando: dónde está el selector de modo (Ask before acting por defecto), cómo se concede una carpeta de trabajo, y dónde viven Scheduled y Live artifacts (que vamos a usar más adelante). Demo sugerida de arranque (la del deck): \"Organizá esta carpeta de 8 PDFs por tema y dame un resumen de un párrafo de cada uno.\" Dejarlos ver a Claude planificar, tocar archivos y entregar — sin explicar la mecánica todavía. La imagen anotada queda como respaldo por si la demo en vivo falla. Tiempo objetivo: ~8 min (incluida la demo)."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Instrucciones: ajustar el comportamiento sin repetirte",
+      "cards": [
+        {
+          "label": "Cortas y claras",
+          "body": "Mantenelas cortas y claras; son lenguaje natural, no código."
+        },
+        {
+          "label": "Sin repetirte",
+          "body": "Sirven para evitar repetir lo mismo en cada prompt: lo que decís una vez vale para todo el Project."
+        },
+        {
+          "label": "Reglas no negociables",
+          "body": "Es el lugar para fijar reglas no negociables (como el disclaimer legal)."
+        }
+      ],
+      "image": {
+        "src": "images/s4-6-1-tarjeta-instrucciones.png",
+        "alt": "Tarjeta de instrucciones: ajustar el comportamiento sin repetirse"
+      },
+      "highlights": [
+        {
+          "label": "Concepto",
+          "body": "Las Instrucciones son el \"contrato de trabajo\" del agente: reglas en lenguaje natural que valen para todo lo que hagas, sin tener que repetirlas en cada prompt.",
+          "kind": "definition"
+        },
+        {
+          "label": "Ejemplo (Atlas) — qué podría decir un Instructions",
+          "body": "Quién es Atlas, qué empresas sigue, su audiencia, su tono y su regla de oro.",
+          "kind": "example"
+        },
+        {
+          "body": "Una sola vez escribís esto; vale para todos los prompts del Project.",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada vez, lo escribís una vez en las Instrucciones y queda fijo. Mostrar el texto real de las Instrucciones de Atlas como ejemplo concreto — destacar la regla de oro del disclaimer financiero, que es exactamente el tipo de regla no negociable que conviene pinear acá. Dónde viven: en el panel de contexto del Project (en la GUI) — no es un archivo que edités a mano; lo escribís en el panel y queda asociado al Project. Tiempo objetivo: ~7 min."
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Projects: guardar todo en un lugar fijo",
+      "cards": [
+        {
+          "label": "Concepto",
+          "body": "Un Project es un espacio de trabajo autocontenido: le da al agente una carpeta propia, memoria dentro del proyecto y un lugar fijo para sus tareas. Tiene tres capas persistentes: Instrucciones, base de conocimiento (Knowledge base) y Chats."
+        },
+        {
+          "label": "Ventajas",
+          "body": "Todo queda organizado y reutilizable: las Instrucciones valen para todo el Project, la memoria recuerda tus correcciones y preferencias, y los archivos viven en una carpeta concreta de tu disco."
+        },
+        {
+          "label": "Los chats no comparten contexto",
+          "body": "Los chats dentro de un mismo Project no comparten contexto entre sí — solo se comparte la base de conocimiento."
+        },
+        {
+          "label": "El selector de carpetas manda",
+          "body": "En Cowork, qué carpetas se conceden lo controla el selector de carpetas del sistema operativo, no un archivo de configuración."
+        },
+        {
+          "label": "Buena práctica",
+          "body": "Una carpeta de trabajo dedicada, para saber siempre qué está en alcance (y nunca conceder una carpeta con datos confidenciales o credenciales)."
+        }
+      ],
+      "notes": "El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. En la misión, el Project \"Inteligencia de Mercado Semanal\" apunta a la carpeta `Documentos/Atlas-Mercado`. Subrayar dos puntos prácticos: (1) los chats no se hablan entre sí dentro del Project — si querés que recuerde algo, va a las Instrucciones o a la base de conocimiento; (2) el control de qué carpetas toca Claude es el folder picker del sistema operativo, que es a la vez la garantía de seguridad (Cowork solo ve lo que le concedés) y el límite. La slide siguiente muestra ese selector y el panel de contexto en pantalla. Tiempo objetivo: ~7 min."
+    },
+    {
+      "template": "figures",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "El selector de carpetas y el panel de contexto",
+      "figures": [
+        {
+          "image": {
+            "src": "images/project.png",
+            "alt": "Selector de carpeta de trabajo del Project"
+          },
+          "label": "Conceder una carpeta de trabajo",
+          "body": "Cowork no toca tu disco por sí solo: vos le concedés una carpeta con el selector de carpetas del sistema operativo (el mismo folder picker que usás para abrir cualquier archivo). Lo que quede fuera de esa carpeta, Cowork no lo ve."
+        },
+        {
+          "image": {
+            "src": "images/context.png",
+            "alt": "Panel de contexto del Project"
+          },
+          "label": "El panel de contexto del Project",
+          "body": "Es donde viven las Instrucciones, la base de conocimiento y la carpeta concedida — la \"foto\" de todo lo que el agente tiene a mano para ese Project."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "Nota de seguridad",
+          "body": "El selector es a la vez tu garantía y tu límite: Cowork solo trabaja sobre lo que le concedés. Nunca concedas una carpeta con datos sensibles, credenciales o información bajo NDA. Buena práctica: una carpeta dedicada por Project, para saber siempre qué está en alcance.",
+          "kind": "important"
+        }
+      ],
+      "notes": "Slide de apoyo visual, corta y concreta — bajar a pantalla lo que en la slide anterior fue conceptual. Mostrar las dos capturas: (1) el folder picker del sistema cuando concedés una carpeta; (2) el panel de contexto del Project con sus capas. El mensaje de seguridad es el que no hay que saltear: Cowork solo ve lo que le concedés, así que la elección de carpeta ES el control de privacidad — nunca una carpeta con datos sensibles. Aterrizarlo en la misión: Atlas trabaja sobre `Documentos/Atlas-Mercado`, nada más. Tiempo objetivo: ~3 min."
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Archivos .md: el lenguaje en el que la IA piensa mejor",
+      "cards": [
+        {
+          "label": "Qué es un archivo .md (Markdown)",
+          "body": "Texto plano — se abre con cualquier editor, en cualquier máquina — más una estructura liviana que se lee a ojo: # para títulos, - para listas, **negrita**, tablas con barras. Nada de formato propietario: lo que ves es lo que hay."
+        },
+        {
+          "label": "Cómo se lee",
+          "body": "Literalmente como texto: un .md es legible por un humano sin ninguna app especial, y a la vez tiene la estructura justa (títulos, listas, tablas) para que una máquina entienda qué es cada cosa."
+        },
+        {
+          "label": "La metadata / los headers",
+          "body": "Muchos archivos del mundo LLM arrancan con un bloque de metadata (un \"header\" en YAML entre ---): declara qué es el archivo y cuándo usarlo. Lo vamos a ver en acción con las Skills (sección 5): la description del header es lo que dispara la Skill — de forma semántica, no por palabra clave."
+        },
+        {
+          "label": "Lingua franca: el modelo lee texto",
+          "body": "Si tu material es texto plano legible, el agente lo entiende directamente, sin capas de formato en el medio."
+        },
+        {
+          "label": "Lingua franca: portable y versionable",
+          "body": "El mismo estándar funciona entre herramientas."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "Nota de alcance",
+          "body": "qué es y por qué importa — no entramos en el detalle fino del formato.",
+          "kind": "note"
+        }
+      ],
+      "notes": "Este es un beat de enseñanza propio, no un paréntesis: en el mundo de agentes, el formato de tus archivos importa muchísimo, y el formato ganador es el más simple. Abrir un `.md` real en pantalla si se puede: mostrar que es texto plano con marcas mínimas — un `#`, unas listas — y que igual se ve estructurado. La idea a transmitir: el modelo lee texto; cuanto menos formato \"opaco\" haya entre tu contenido y el modelo, mejor trabaja. Presentar la metadata (header YAML) como \"la etiqueta del frasco\": dice qué es el archivo y cuándo usarlo — y anticipar que la vamos a ver en acción con las Skills en la sección avanzada. La próxima slide baja esto a la práctica del día a día: en qué formato conviene trabajar. Tiempo objetivo: ~5 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Trabajá en .md, exportá al final",
+      "cards": [
+        {
+          "label": "La práctica que cambia tu flujo de trabajo",
+          "body": "Llevá tu información de trabajo a .md — y dejá el formato final para el último paso."
+        },
+        {
+          "label": "Por qué",
+          "body": "La IA interpreta, edita y crea mejor sobre .md que sobre un .docx o un .xlsx: en texto plano ve la estructura directamente; en formatos ricos tiene que atravesar capas de formato que agregan ruido y errores."
+        },
+        {
+          "label": "Su memoria",
+          "body": "Una de las dos cosas que el agente toca. Las instrucciones y la memoria del agente son, por debajo, texto plano/Markdown — el mismo formato que ya viste. Lo que quieras que el agente \"sepa\" de forma estable, escribilo ahí."
+        },
+        {
+          "label": "Tus archivos de trabajo",
+          "body": "La otra. Notas, borradores, datos de referencia, el material que el agente va a leer y editar una y otra vez: mantenelos en .md dentro de la carpeta del Project."
+        },
+        {
+          "label": "El formato final, al último",
+          "body": "Cuando el contenido está listo, recién ahí le pedís al agente que genere el entregable: .docx, .xlsx, PDF, slides. El documento \"lindo\" es la salida, no el medio de trabajo."
+        }
+      ],
+      "image": {
+        "src": "images/s4-10-1-flujo-md-exportar.png",
+        "alt": "Trabajar en Markdown y exportar al formato final recién al cierre"
+      },
+      "highlights": [
+        {
+          "label": "Regla de bolsillo",
+          "body": "editá en .md, entregá en el formato que pida tu jefe.",
+          "kind": "takeaway"
+        }
+      ],
+      "notes": "Esta es LA slide de práctica de la sección — el hábito concreto que se llevan. La analogía útil: el `.md` es tu mesa de trabajo; el `.docx`/PDF es la vitrina. Nadie construye dentro de la vitrina. Recorrer el flujo con el diagrama: llega material en cualquier formato → primer pedido al agente: \"convertime esto a `.md`\" → todas las idas y vueltas (resumir, corregir, reescribir, fusionar) pasan sobre los `.md`, donde la IA es más precisa y barata de iterar → cuando está listo, un único pedido final: \"generame el `.docx`/Excel/PDF\". Aplicarlo a la memoria también: lo que el agente debe recordar de forma estable vive como texto plano (Instrucciones, memoria del Project) — mismo principio. Aterrizar con Atlas: su reporte se consolida como `.md` en el Project, y las salidas \"lindas\" (mail, tablero) se generan al final. Tiempo objetivo: ~6 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Schedule en Cowork: lo mismo que viste en el chat, ahora con carpetas y archivos",
+      "cards": [
+        {
+          "label": "Ya conocés el concepto (sección 3)",
+          "body": "Describís una tarea una vez, elegís una cadencia, corre sola. En Cowork, la tarea programada además trabaja sobre tus carpetas y archivos y usa todo lo que armaste: Instrucciones, Project, connectors, skills."
+        },
+        {
+          "label": "En la práctica",
+          "body": "Cadencia por hora / diaria / semanal / o a demanda (\"Run now\"); cada corrida abre su propia sesión fresca y te avisa al terminar; vive en la pestaña Scheduled."
+        },
+        {
+          "label": "Corren en la nube (desde julio 2026)",
+          "body": "Las tareas programadas corren remoto: se ejecutan en su cadencia aunque tu computadora esté dormida o la app cerrada — tu laptop apagada SÍ genera el reporte del lunes. Requiere plan pago (Pro/Max/Team/Enterprise); la ejecución remota está en beta, con rollout gradual que empieza por Max."
+        }
+      ],
+      "image": {
+        "src": "images/schedule.png",
+        "alt": "Pestaña Scheduled en Cowork"
+      },
+      "highlights": [
+        {
+          "label": "Ojo si repasás material viejo",
+          "body": "hasta este update, corrían local y se salteaban con la máquina dormida — eso ya no es así.",
+          "kind": "important"
+        },
+        {
+          "label": "Ejemplo (Atlas)",
+          "body": "Cada lunes 8:00: buscar-accion → reporte-semanal → dejar el reporte como borrador en Gmail, listo antes de la reunión de las 9:00. Tip de demo: no esperar al lunes, usar \"Run on demand\".",
+          "kind": "example"
+        }
+      ],
+      "notes": "Slide corta a propósito: el concepto ya lo enseñamos en la sección 3 — acá solo mostramos su forma Cowork. Abrir con el puente explícito: \"esto es exactamente la tarea programada que viste en el chat, pero ahora el que corre es el agente, sobre tus carpetas, con tus Instrucciones y skills\". Punto de actualidad importante: desde el update del 7 de julio de 2026, las tareas programadas corren REMOTO/en la nube — se ejecutan aunque la computadora esté dormida o la app cerrada. Si algún alumno vio material anterior (o si la beta no le llegó aún a su plan — el rollout empieza por Max), aclarar que la vieja limitación \"computadora despierta + app abierta\" ya no aplica donde la ejecución remota está activa. Para la demo, usar \"Run on demand\" en lugar de esperar la cadencia real. Tiempo objetivo: ~5 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Cowork: cambiar la forma de trabajar",
+      "title": "Artifacts y Live Artifacts: del resultado a algo compartible",
+      "cards": [
+        {
+          "label": "Qué es un Artifact",
+          "body": "Una salida viva y ejecutable que se renderiza en un panel lateral: componentes React, páginas HTML, gráficos SVG, diagramas, tablas, documentos descargables."
+        },
+        {
+          "label": "Artifact estándar",
+          "body": "(Todos los planes) Salida de un solo archivo, estática — lo que generás es lo que queda."
+        },
+        {
+          "label": "Live Artifact",
+          "body": "(Cowork, planes pagos) Una página HTML interactiva y persistente que vive en la pestaña \"Live artifacts\" de Cowork. Se actualiza con datos actuales de tus apps conectadas cada vez que la abrís, y guarda historial de versiones."
+        },
+        {
+          "label": "Cómo se crea",
+          "body": "Dos formas: (1) desde una tarea de Cowork (le pedís que el resultado sea un Live Artifact), o (2) desde la pestaña Live artifacts → New artifact → Chat with Claude."
+        }
+      ],
+      "image": {
+        "src": "images/mockup-tablero.png",
+        "alt": "Boceto del tablero \"Pulso semanal de mercado\" (wireframe del jefe)"
+      },
+      "highlights": [
+        {
+          "label": "Estado actual del compartir — leer con cuidado",
+          "body": "Los Live Artifacts todavía NO son compartibles: en el lanzamiento son para tu propio uso; compartir está en el roadmap. Además son locales, no en la nube: viven en tu computadora y no te siguen entre dispositivos. Y usan tus connectors sin volver a pedirte permiso — solo los que aprobaste al crear/actualizar el artifact.",
+          "kind": "important"
+        },
+        {
+          "label": "Ejemplo (Atlas)",
+          "body": "El tablero pulso-semanal-FECHA: un Live Artifact nuevo por semana (queda un historial de versiones), con tarjetas por empresa, tabla resumen y un chip \"LIVE\", refrescado con los datos de la semana. Diseño basado en el boceto del jefe.",
+          "kind": "example"
+        }
+      ],
+      "notes": "Cierre de la sección Cowork: el jefe quería el reporte de dos formas — el email (que ya resolvimos con Gmail + Schedule) y una página siempre actualizada. El Live Artifact es esa página. Explicar la distinción clave: un Artifact estándar es estático; un Live Artifact persiste en la pestaña Live artifacts, se refresca con datos actuales al abrirlo y guarda versiones. Ser honesto con el estado actual del compartir, porque acá había una confusión que corregimos: hoy los Live Artifacts NO son compartibles (es del roadmap, no de hoy), son locales —no en la nube, no te siguen entre dispositivos— y usan los connectors que aprobaste sin volver a preguntar. (Nota: versiones previas de este material mencionaban un \"ShareDuo\" con URL pública — eso NO es una capacidad de Cowork; quitado.) Mostrar el boceto del tablero — el \"napkin sketch\" del jefe — como el spec de diseño que el artifact reproduce. Tiempo objetivo: ~10 min."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Advanced: Skills, Subagentes y Plugins"
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Advanced: Skills, Subagentes y Plugins",
+      "title": "Skills: enseñarle a Claude algo una sola vez",
+      "cards": [
+        {
+          "label": "Concepto",
+          "body": "Una Skill es una instrucción reutilizable (+ scripts opcionales) que el agente carga cuando tu pedido coincide con su descripción. Un trabajo por Skill: \"si escribís 'y además', dividila en dos\"."
+        },
+        {
+          "label": "Camino 1 — pedísela en lenguaje natural",
+          "body": "\"Armame una Skill que haga X\". Claude escribe el archivo SKILL.md, pero Cowork NO la registra/habilita solo. Tenés que habilitarla en Customize → Skills (el botón Save skill / Save to enable). Recién ahí queda activa."
+        },
+        {
+          "label": "Camino 2 — subís un ZIP",
+          "body": "Empaquetás la carpeta de la Skill como .zip y la cargás en Customize → Skills → \"+\" → Create skill → Upload a skill, y la activás con el toggle."
+        },
+        {
+          "label": "Requisito",
+          "body": "Las Skills necesitan Code execution habilitado (Settings → Capabilities)."
+        },
+        {
+          "label": "Ejemplo (Atlas)",
+          "body": "La Skill reporte-semanal: lee TODOS los archivos crudos de una carpeta fuentes/ (uno por portal), consolida por empresa y genera un reporte con formato fijo. La empresa más relevante va primera. Guarda con sufijo -new para no pisar el ejemplo."
+        }
+      ],
+      "highlights": [
+        {
+          "body": "Cowork es GUI: no hay slash commands — los dos caminos reales para crear una Skill son estos.",
+          "kind": "note"
+        },
+        {
+          "label": "OJO — la trampa del Save (camino 1)",
+          "body": "Es el error más común: pedís la Skill, Claude escribe el archivo… pero si no le das Save / enable en Customize, no queda habilitada y parece que \"no funciona\".",
+          "kind": "important"
+        },
+        {
+          "body": "Todo lo que le explicás a Claude dos veces es una Skill que deberías escribir una vez.",
+          "kind": "quote"
+        }
+      ],
+      "notes": "Arranca el bloque avanzado. La Skill es la materialización directa del paradigma \"enseñá una vez, reutilizá siempre\". Mostrar los dos caminos reales en Cowork: (1) pedírsela en lenguaje natural — Claude escribe el `SKILL.md`, y vos la habilitás en Customize → Skills; (2) subir un ZIP de la carpeta de la Skill por Customize → Skills. Aclarar de entrada que Cowork es GUI: no hay slash commands. El punto que NO hay que saltear es la trampa del Save: es un error real y muy común — pedís la Skill, Claude escribe el archivo, pero si no le das Save / enable no queda habilitada y parece que \"no funciona\". Mencionar que las Skills requieren Code execution (Settings → Capabilities). Usar `reporte-semanal` como ejemplo concreto: convierte varios archivos desordenados en un reporte prolijo. Conectar con la sección anterior: el SKILL.md es exactamente el tipo de archivo `.md` con metadata que ya vieron — la próxima slide lo abre. Tiempo objetivo: ~8 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Advanced: Skills, Subagentes y Plugins",
+      "title": "Anatomía de un SKILL.md",
+      "cards": [
+        {
+          "label": "La metadata (el header)",
+          "body": "name identifica la Skill; description es lo que decide cuándo se activa — de forma semántica, no por palabra clave exacta. Una buena description = la Skill se dispara cuando corresponde."
+        },
+        {
+          "label": "El cuerpo",
+          "body": "Markdown común: los pasos que el agente sigue cuando la Skill se activa."
+        }
+      ],
+      "image": {
+        "src": "images/s5-2-1-anatomia-skill-md.png",
+        "alt": "Anatomía de un SKILL.md: metadata más instrucciones"
+      },
+      "highlights": [
+        {
+          "body": "Así se ve un SKILL.md por dentro: un bloque de metadata arriba y el cuerpo de instrucciones abajo. Nada más — es texto plano. (Es el archivo .md con metadata que vimos en la sección 4, en acción.)",
+          "kind": "definition"
+        },
+        {
+          "label": "Nota de alcance",
+          "body": "reforzamos el beat de archivos .md (sección 4) con un ejemplo tangible — no entramos en el detalle fino del formato.",
+          "kind": "note"
+        }
+      ],
+      "notes": "Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el beat de archivos `.md` + metadata que enseñamos en la sección de Cowork — este es aquel concepto, en acción. Mostrar el `SKILL.md` partido en dos zonas: arriba el header YAML (`name`, `description`) entre `---`; abajo las instrucciones en Markdown. El punto a martillar: la `description` no es decoración — es exactamente lo que el sistema lee para decidir si esta Skill aplica a tu pedido (activación semántica). Usar `reporte-semanal` para que sea concreto. Mantenerlo alto nivel: es para que \"vean cómo se ve\", no un tutorial de formato. Tiempo objetivo: ~3-4 min."
+    },
+    {
+      "template": "content+cards+image",
+      "section": "Advanced: Skills, Subagentes y Plugins",
+      "title": "Subagentes: delegar sub-tareas en paralelo",
+      "cards": [
+        {
+          "label": "Concepto",
+          "body": "Un Subagente es un asistente aislado, con su propio contexto, instrucciones y acceso a herramientas, al que el agente principal le delega un trabajo y del que recibe un resumen (no la transcripción completa)."
+        },
+        {
+          "label": "Skill vs Subagente (la regla de una línea)",
+          "body": "Chico, y debe quedar frente a vos → Skill (corre dentro de tu conversación). Grande o ruidoso, y debe correr en un proceso aparte → Subagente (corre al lado, en su propio contexto)."
+        },
+        {
+          "label": "En Cowork",
+          "body": "Los Subagentes se coordinan \"por debajo\" (under the hood): el agente principal los lanza cuando le conviene, y pueden correr varios en paralelo."
+        },
+        {
+          "label": "Cómo se agrega un subagente",
+          "body": "Se define igual que una Skill — una descripción de cuándo usarlo + sus instrucciones. Dos caminos: pedile a Claude que lo arme (escribe el archivo del agente, como con las Skills, y lo gestionás en el directorio Customize), o viene empaquetado dentro de un Plugin. No hace falta tocar archivos a mano."
+        }
+      ],
+      "image": {
+        "src": "images/s5-3-1-subagentes-fanout.png",
+        "alt": "Subagentes en paralelo: fan-out y fan-in"
+      },
+      "notes": "Nivel avanzado — presentarlo como \"para cuando crezcas\". La distinción mental útil: si la sub-tarea es chica y querés verla, es una Skill; si es grande o ruidosa y querés que corra aparte sin ensuciar tu conversación, es un Subagente. El ejemplo del deck (8 propuestas de proveedores revisadas en paralelo por tres especialistas → tabla combinada) ilustra el fan-out. Cómo se agrega: explicarlo en paralelo a las Skills — un subagente se define con una descripción (cuándo usarlo) + instrucciones; le pedís a Claude que lo arme (igual que una Skill, se gestiona en Customize) o viene dentro de un Plugin. Mantenerlo alto nivel: no entrar en rutas de archivos ni internals de persistencia. Tiempo objetivo: ~7 min."
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Advanced: Skills, Subagentes y Plugins",
+      "title": "Plugins: empaquetar y distribuir un workflow completo",
+      "cards": [
+        {
+          "label": "Concepto",
+          "body": "Un Plugin es la unidad de distribución de un workflow completo: empaqueta Skills + agentes + hooks + MCP en una sola instalación. \"Ship the whole thing.\""
+        },
+        {
+          "label": "En Cowork",
+          "body": "Se instalan desde un marketplace de plugins en la GUI. Un Plugin es una de las vías para distribuir Skills (y agentes/connectors): para usar una Skill en Cowork, la habilitás como skill de usuario (Customize → Skills) o la enviás dentro de un plugin. Las skills provistas por plugin funcionan en Chat y en Cowork."
+        },
+        {
+          "label": "Dónde encontrarlos",
+          "body": "Marketplaces oficiales (anthropics/claude-plugins-official, anthropics/knowledge-work-plugins) y de la comunidad."
+        }
+      ],
+      "notes": "Cerrar el avanzado con la idea de empaquetado: cuando un workflow está maduro (varias skills + connectors + agentes), un Plugin lo vuelve instalable de una. El punto importante para Cowork: la forma robusta de distribuir una skill (o un agente) a otros es dentro de un plugin; los plugins distribuidos aparecen tanto en Chat como en Cowork. Mencionar los marketplaces oficiales como punto de partida. Recordar el mapa: Plugins es la banda transversal que envuelve todos los bloques de la charla. Tiempo objetivo: ~6 min."
+    },
+    {
+      "template": "process",
+      "section": "Advanced: Skills, Subagentes y Plugins",
+      "title": "Plugins en una cuenta Team: ciclo de vida",
+      "lead": "Quién lo maneja. En cuentas Team / Enterprise, los Owners gestionan los plugins de la organización desde Organization settings → Plugins. El resto de los miembros los reciben listos.",
+      "steps": [
+        {
+          "label": "El Owner crea un marketplace privado",
+          "body": "De la organización, y agrega plugins de dos formas: subir un ZIP, o sincronizar desde un repo de GitHub (privado) — esta segunda vía auto-actualiza cuando cambia el repo."
+        },
+        {
+          "label": "Preferencia de instalación por plugin",
+          "body": "Por cada plugin se fija una preferencia de instalación: opcional (el miembro decide), auto-install o provisionado por usuario."
+        },
+        {
+          "label": "Distribución y actualización",
+          "body": "Los plugins distribuidos aparecen en chat y en Cowork para los miembros; cada uno instala/habilita desde el directorio de la org, y las actualizaciones se sincronizan solas."
+        }
+      ],
+      "image": {
+        "src": "images/s5-5-1-ciclo-plugins-team.png",
+        "alt": "Ciclo de vida de un plugin en una cuenta Team"
+      },
+      "notes": "Slide de cierre del bloque avanzado, orientada a quien algún día administre una cuenta de equipo. La idea: los Plugins no son solo para instalar de a uno; en una cuenta Team, un Owner puede armar un marketplace privado de la organización y repartir workflows a todo el equipo. Recorrer el ciclo con el diagrama: el Owner crea el marketplace y sube plugins (ZIP o, mejor, sincronizando un repo de GitHub que auto-actualiza), fija cómo se instala cada uno (opcional / auto-install / provisionado), y desde ahí se distribuye —aparece tanto en chat como en Cowork— y los miembros lo habilitan desde su directorio, con las actualizaciones sincronizadas. Mantenerlo alto nivel: es el \"para cuando esto escala a un equipo\". Tiempo objetivo: ~4 min."
+    },
+    {
+      "template": "divider",
+      "section": "Conclusions",
+      "title": "Conclusions"
+    },
+    {
+      "template": "content-image",
+      "section": "Conclusions",
+      "title": "El loop completo y la idea para llevarse",
+      "layout": "text-left",
+      "lead": "Lo que construimos, punta a punta — el loop de Atlas combinando todas las piezas.",
+      "image": {
+        "src": "images/sc-1-1-loop-completo-atlas.png",
+        "alt": "El loop completo de la misión Atlas"
+      },
+      "facts": [
+        {
+          "label": "El arco completo de hoy, en una línea",
+          "body": "del chat que respondía de memoria → conectores (información real + acción) → tareas programadas (corre solo) → Cowork (tus carpetas, tus archivos .md) → Skills, Subagentes y Plugins."
+        },
+        {
+          "label": "Las piezas, una línea cada una",
+          "body": "Conectores/MCP (las manos) · Tareas programadas / Schedule (que corra solo) · Instrucciones (el contrato) · Projects (el lugar fijo) · Archivos .md (el lenguaje de trabajo) · Skills (enseñar una vez) · Live Artifacts (compartir el resultado)."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "La idea para llevarse",
+          "body": "Todo lo que le explicás a Claude dos veces es una Skill que deberías escribir una vez.",
+          "kind": "takeaway"
+        },
+        {
+          "body": "Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente podrían delegarle a su propio Atlas?",
+          "kind": "quote"
+        }
+      ],
+      "notes": "Cierre integrador: mostrar el diagrama del loop completo para que vean cómo cada pieza que aprendimos se engancha con la siguiente. Recordar el arco de la sesión: arrancamos en el chat que ya usaban (y sus límites), lo extendimos con conectores y tareas programadas, y dimos el salto a Cowork y sus piezas. Repasar las piezas en una línea cada una. Cerrar con las dos frases ancla: la de la Skill (\"enseñá una vez\") y el gancho que los invita a pensar qué tarea propia delegarían. Tiempo objetivo: ~5 min + Q&A."
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Conclusions",
+      "title": "Gobernanza y advertencias (antes de Q&A)",
+      "cards": [
+        {
+          "label": "Cowork no tiene audit trail",
+          "body": "No es apto para datos regulados o sensibles."
+        },
+        {
+          "label": "Toda salida es un borrador",
+          "body": "Verificá cifras, citas y afirmaciones contra la fuente."
+        },
+        {
+          "label": "No metas datos confidenciales / PII / bajo NDA",
+          "body": "En la superficie equivocada."
+        },
+        {
+          "label": "Reproducibilidad",
+          "body": "Mantené juntos prompt + entradas + salidas, para que el trabajo sea auditable."
+        },
+        {
+          "label": "Capas de guardarraíles",
+          "body": "Permisos de carpeta → reglas en Instrucciones → solo plugins verificados → revisión humana."
+        }
+      ],
+      "highlights": [
+        {
+          "label": "Contexto biomédico",
+          "body": "lo anterior es especialmente relevante si alguna vez aplican esto con datos de pacientes — Cowork no es la herramienta para datos clínicos sensibles.",
+          "kind": "important"
+        }
+      ],
+      "notes": "Slide de cierre responsable, breve pero no opcional. Para esta audiencia (bioingeniería), conectar explícitamente: Cowork es excelente para trabajo recurrente de oficina, pero NO para datos de pacientes ni nada regulado — no tiene audit trail. Recordar que toda salida es un borrador que hay que verificar — y que eso conecta con el límite estructural de la sección 1: el modelo puede alucinar; el conector cita fuentes; el humano verifica. Dejar esto antes de abrir Q&A. Tiempo objetivo: ~3 min."
+    }
+  ]
+}

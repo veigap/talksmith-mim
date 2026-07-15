@@ -1,10 +1,11 @@
 {
   "deck": {
     "title": "Inteligencia Artificial: de lo conceptual a lo práctico",
+    "lang": "es",
     "institution": "Master in Management (MiM), IAE Business School, Universidad Austral",
     "class": "Seguridad e IA para Managers",
     "presenter": "Paulo Veiga, Profesor, IAE Business School",
-    "date": "TBD",
+    "date": "2026-07-10",
     "logo": null,
     "sections": [
       "El caso Samsung (2023)",
@@ -552,71 +553,91 @@
       "title": "Rompemitos"
     },
     {
-      "template": "content-image",
+      "template": "statement",
       "section": "Rompemitos",
       "title": "Rompemitos: ¿verdadero o falso?",
-      "layout": "image-top",
-      "facts": [
-        "Votá cada pregunta en app.sli.do (event 1V8sQvBtfrUEFWeVxLdjUH) y después muestro el resultado."
-      ],
-      "image": {
-        "src": "images/s6-1-x-new.png",
-        "alt": "Rompemitos: ¿verdadero o falso?"
-      },
+      "sub": "Votás cada pregunta en Slido (app.sli.do) y después revelo el resultado.",
       "notes": "Votan primero, sin excepciones — la incomodidad de equivocarse en público fija el aprendizaje. Ritmo rápido: ~90 segundos por mito."
     },
     {
-      "template": "statement",
+      "template": "quiz",
       "section": "Rompemitos",
-      "title": "Mito 1: \"Todo lo que escribo entrena\"",
-      "sub": "Realidad: depende del plan. Consumo suele entrenar; enterprise, no.",
-      "notes": "En parte cierto — buen primer mito: ni paranoia total ni confianza ciega. La respuesta correcta es una pregunta: \"¿qué plan uso y qué dice sobre entrenamiento?\""
-    },
-    {
-      "template": "statement",
-      "section": "Rompemitos",
-      "title": "Mito 2: \"Grande = seguro y compliant\"",
-      "sub": "Realidad: falso. Su seguridad no es tu cumplimiento — vos seguís siendo responsable.",
-      "notes": "El proveedor puede tener la mejor seguridad del mundo (Cara 1 impecable) y vos igual incumplir tus promesas (Cara 2). Lo que te protege no es la marca, es el contrato (DPA)."
-    },
-    {
-      "template": "statement",
-      "section": "Rompemitos",
-      "title": "Mito 3: \"On-prem siempre es más seguro\"",
-      "sub": "Realidad: parcialmente cierto para un riesgo, engañoso en general. \"Seguro\" no es una propiedad del lugar — es una propiedad de la gobernanza.",
-      "notes": "Correrlo local evita que el dato salga a un tercero — real. Pero on-prem te devuelve toda la carga sin el equipo ni las certificaciones de un buen proveedor. Un SaaS gobernado puede ser más seguro que un on-prem descuidado."
-    },
-    {
-      "template": "statement",
-      "section": "Rompemitos",
-      "title": "Mito 4: \"Borrar los nombres alcanza\"",
-      "sub": "Realidad: mayormente falso. Si se puede reidentificar, sigue siendo Personal Data — y sigue protegido.",
-      "notes": "Callback directo a PII vs. Personal Data: PII es el subconjunto; lo protegido es todo lo vinculable. \"Borrar\" en la interfaz del chat tampoco garantiza el borrado en el proveedor."
-    },
-    {
-      "template": "statement",
-      "section": "Rompemitos",
-      "title": "Mito 5: \"Si cita fuentes, es correcto\"",
-      "sub": "Realidad: falso. Alucina — y fabrica citas con total confianza.",
-      "notes": "El tono seguro es estilo, no evidencia. Callback a \"verificá la salida\": la IA redacta, los humanos deciden. Queda un mito más, el más desafiante."
-    },
-    {
-      "template": "icon-list",
-      "section": "Rompemitos",
-      "title": "Mito 6: \"Tenemos Enterprise, estamos cubiertos\"",
-      "lead": "Realidad: falso. El tier enterprise resuelve retención y entrenamiento — no la gobernanza:",
-      "rows": [
-        {
-          "label": "El shadow AI en cuentas personales"
-        },
-        {
-          "label": "Los conectores mal permisionados"
-        },
-        {
-          "label": "La verificación de las salidas"
-        }
+      "title": "Mito 1",
+      "question": "“Todo lo que escribo entrena la IA y puede reaparecer.”",
+      "options": [
+        "Verdadero",
+        "Falso"
       ],
-      "notes": "El más desafiante del set — la sala probablemente vote \"verdadero\". Comprar el tier correcto es condición necesaria, no suficiente. \"Seguro\" no es una propiedad de la herramienta — es una propiedad de la gobernanza."
+      "answer": "Depende del plan — consumo suele entrenar; enterprise, no.",
+      "notes": "En parte cierto — buen primer mito: ni paranoia total ni confianza ciega. La respuesta correcta es una pregunta: \"¿qué plan uso y qué dice sobre entrenamiento?\"",
+      "correct": "Falso"
+    },
+    {
+      "template": "quiz",
+      "section": "Rompemitos",
+      "title": "Mito 2",
+      "question": "“Si el proveedor es grande, es automáticamente seguro y cumple por mí.”",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso. Su seguridad no es tu cumplimiento — vos seguís siendo responsable.",
+      "notes": "El proveedor puede tener la mejor seguridad del mundo (Cara 1 impecable) y vos igual incumplir tus promesas (Cara 2). Lo que te protege no es la marca, es el contrato (DPA).",
+      "correct": "Falso"
+    },
+    {
+      "template": "quiz",
+      "section": "Rompemitos",
+      "title": "Mito 3",
+      "question": "“Si corro el modelo en mis propios servidores, mis datos están seguros.”",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Parcialmente cierto para un riesgo, engañoso en general.",
+      "explanation": "“Seguro” no es una propiedad del lugar — es una propiedad de la gobernanza.",
+      "notes": "Correrlo local evita que el dato salga a un tercero — real. Pero on-prem te devuelve toda la carga sin el equipo ni las certificaciones de un buen proveedor. Un SaaS gobernado puede ser más seguro que un on-prem descuidado.",
+      "correct": "Falso"
+    },
+    {
+      "template": "quiz",
+      "section": "Rompemitos",
+      "title": "Mito 4",
+      "question": "“Si le saco los nombres, ya no son datos personales.”",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Mayormente falso. Si se puede reidentificar, sigue siendo Personal Data — y sigue protegido.",
+      "notes": "Callback directo a PII vs. Personal Data: PII es el subconjunto; lo protegido es todo lo vinculable. \"Borrar\" en la interfaz del chat tampoco garantiza el borrado en el proveedor.",
+      "correct": "Falso"
+    },
+    {
+      "template": "quiz",
+      "section": "Rompemitos",
+      "title": "Mito 5",
+      "question": "“Si responde con seguridad y cita fuentes, es correcto.”",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso. Alucina — y fabrica citas con total confianza.",
+      "notes": "El tono seguro es estilo, no evidencia. Callback a \"verificá la salida\": la IA redacta, los humanos deciden. Queda un mito más, el más desafiante.",
+      "correct": "Falso"
+    },
+    {
+      "template": "quiz",
+      "section": "Rompemitos",
+      "title": "Mito 6",
+      "question": "“Tenemos ChatGPT Enterprise, así que ya estamos cubiertos.”",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso. El enterprise resuelve retención y entrenamiento — no la gobernanza.",
+      "explanation": "No cubre: shadow AI en cuentas personales · conectores mal permisionados · verificación de salidas. La herramienta no reemplaza la gobernanza.",
+      "notes": "El más desafiante del set — la sala probablemente vote \"verdadero\". Comprar el tier correcto es condición necesaria, no suficiente. \"Seguro\" no es una propiedad de la herramienta — es una propiedad de la gobernanza.",
+      "correct": "Falso"
     },
     {
       "template": "section-agenda",

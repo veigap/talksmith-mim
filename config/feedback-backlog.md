@@ -6,6 +6,10 @@
 
 Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology, style.
 
+## Tagging vocabulary
+
+Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy.
+
 ## Entries
 
 <!-- Editor appends entries below this line. -->

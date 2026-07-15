@@ -6,7 +6,7 @@ description: Slides are grouped into Sections. Each Section contains one or more
 presenter: Paulo Veiga, Docente de Universidad Austral
 audience: Estudiantes de grado en ingeniería biomédica / bioingeniería. Base técnica sólida, poca exposición previa a deep learning / agentes.
 duration: 120 min (clase doble)
-date: 2026-06-XX
+date: Julio 2026
 ---
 
 # Thesis
@@ -661,7 +661,7 @@ labels: banner DEMO TIME; subtítulo "Pasamos a la app real de Cowork".
 
 - **DEMO EN VIVO**: tour de la pestaña Cowork sobre la app real.
 
-![Anatomía de la pestaña Cowork — interfaz anotada](research/corpus/agentic-ai-deck.zip/images/screenshot-cowork-tab.png)
+![Anatomía de la pestaña Cowork — interfaz anotada](images/screenshot-cowork-tab.png)
 
 - Señalar en vivo: modo **"Ask"**, selector de carpeta, pestañas **Scheduled** y **Live artifacts**, panel de **Project**.
 - Control = modo + aprobar/redirigir + carpeta. **Sin slash commands**: Cowork es GUI.
@@ -887,7 +887,7 @@ Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se ense�
 - Estado hoy: **NO compartibles aún** (roadmap) · **locales** (no te siguen entre dispositivos) · usan tus connectors **sin re-preguntar**.
 - Atlas: el tablero `pulso-semanal-FECHA`, del boceto del jefe:
 
-![Boceto del tablero "Pulso semanal de mercado" (wireframe del jefe)](research/corpus/mision%20-%20auto.zip/images/mockup-tablero.png)
+![Boceto del tablero "Pulso semanal de mercado" (wireframe del jefe)](images/mockup-tablero.png)
 
 ### Sources
 
@@ -1182,7 +1182,7 @@ Slide de cierre responsable, breve y obligatoria. Para esta audiencia de bioinge
 
 # Open questions
 
-- Fecha de la clase sin confirmar — frontmatter `date: 2026-06-XX` es un placeholder; el presentador debe confirmar antes de finalizar.
+- ~~Fecha de la clase sin confirmar~~ — resuelto 2026-07-14: `date: Julio 2026`.
 - Imágenes diferidas (Phase 2 del librarian no corrida): las imágenes citadas desde el corpus (`screenshot-cowork-tab.png` en slide 4.5, `mockup-tablero.png` en slide 4.12) provienen de registros con `<!-- pending: process_images -->`. Las imágenes existen en disco y se referencian; re-verificar depiction/relevance tras correr librarian Phase 2.
 - Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md — re-verify after librarian Phase 2.
 - Slide 4.12 (Live Artifacts) cita pending stub "corpus/mision - auto.zip.md" (mockup-tablero) — re-verify after librarian Phase 2.

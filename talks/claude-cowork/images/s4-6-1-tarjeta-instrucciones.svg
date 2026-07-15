@@ -1,0 +1,39 @@
+<svg viewBox="0 0 680 386" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Instrucciones: ajustar el comportamiento sin repetirte</title>
+  <desc>Ejemplo del texto de Instructions del Project Atlas: quién es, qué empresas sigue, su audiencia, su tono y su regla de oro sobre el disclaimer financiero.</desc>
+
+  <rect x="0" y="0" width="680" height="386" fill="#ffffff"/>
+
+  <!-- card -->
+  <rect x="20" y="20" width="640" height="346" rx="10" fill="#ffffff" stroke="#D8D2D2" stroke-width="1"/>
+
+  <!-- header bar (rounded top corners) -->
+  <path d="M 20 64 L 20 30 Q 20 20 30 20 L 650 20 Q 660 20 660 30 L 660 64 Z" fill="#F4F1F1"/>
+  <line x1="20" y1="64" x2="660" y2="64" stroke="#D8D2D2" stroke-width="1"/>
+  <text x="44" y="48" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#3B3535">Instructions — Project Atlas</text>
+  <text x="636" y="48" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#7A7070">Se escribe una vez · vale para todo el Project</text>
+
+  <!-- intro -->
+  <text x="44" y="92" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">Sos Atlas, el analista de mercado de un equipo de trabajo.</text>
+  <text x="44" y="112" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">Preparás un pulso semanal para colegas NO técnicos (incluido el jefe),</text>
+  <text x="44" y="132" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">que se lee en 2 minutos antes de la reunión de los lunes.</text>
+
+  <line x1="44" y1="152" x2="636" y2="152" stroke="#E5E0E0" stroke-width="1"/>
+
+  <!-- rule 1 -->
+  <rect x="46" y="170" width="4" height="4" fill="#A89E9E"/>
+  <text x="62" y="176" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">Empresas que seguís: Apple, Microsoft, Nvidia.</text>
+
+  <!-- rule 2 -->
+  <rect x="46" y="200" width="4" height="4" fill="#A89E9E"/>
+  <text x="62" y="206" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">Escribís en español, claro y breve, sin jerga financiera.</text>
+  <text x="62" y="225" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">Si usás un término técnico, lo explicás en una línea.</text>
+
+  <!-- rule 3 — focal -->
+  <rect x="40" y="248" width="600" height="104" rx="6" fill="#FCF0F1" stroke="#DA1B2E" stroke-width="1.5"/>
+  <rect x="58" y="262" width="104" height="18" rx="9" fill="#DA1B2E"/>
+  <text x="110" y="274.5" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff">REGLA DE ORO</text>
+  <text x="58" y="300" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">tus reportes son informativos y de uso interno.</text>
+  <text x="58" y="319" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">NUNCA son recomendaciones de inversión ni asesoramiento financiero.</text>
+  <text x="58" y="338" font-family="Menlo, 'DejaVu Sans Mono', monospace" font-size="13" fill="#3B3535">Siempre incluís esa aclaración al final.</text>
+</svg>

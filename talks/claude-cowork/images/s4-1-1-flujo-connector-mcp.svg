@@ -1,38 +1,50 @@
-<svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
-  <title>Flujo de una llamada a un Connector via MCP</title>
-  <desc>El agente Cowork pide datos, el Connector traduce via el protocolo MCP y el servicio externo responde.</desc>
-  <rect x="0" y="0" width="680" height="260" fill="#ffffff"/>
+<svg viewBox="0 0 680 216" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Connectors y MCP: las &#171;manos&#187; del agente</title>
+  <desc>El agente pide datos, el Connector los trae v&#237;a el protocolo MCP, y el servicio externo responde.</desc>
+  <defs>
+    <marker id="arrow-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6E6666"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
 
-  <!-- Cowork panel -->
-  <rect x="30" y="80" width="160" height="90" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-  <text x="110" y="118" text-anchor="middle" font-weight="bold" font-size="16" fill="#1F1E1E">Cowork</text>
-  <text x="110" y="142" text-anchor="middle" font-size="12.5" fill="#3B3535">(agente)</text>
+  <!-- canvas -->
+  <rect x="0" y="0" width="680" height="216" fill="#ffffff"/>
 
-  <!-- Connector panel (focal, red) -->
-  <rect x="260" y="80" width="160" height="90" rx="6" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="2"/>
-  <text x="340" y="118" text-anchor="middle" font-weight="bold" font-size="16" fill="#DA1B2E">Connector</text>
-  <text x="340" y="142" text-anchor="middle" font-size="12.5" fill="#3B3535">(1 clic)</text>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
 
-  <!-- External service panel -->
-  <rect x="490" y="80" width="160" height="90" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-  <text x="570" y="113" text-anchor="middle" font-weight="bold" font-size="15" fill="#1F1E1E">Servicio ext.</text>
-  <text x="570" y="138" text-anchor="middle" font-size="12.5" fill="#3B3535">Gmail / MT News</text>
+    <!-- ===== box A: Cowork (agente) ===== -->
+    <rect x="16" y="40" width="120" height="104" rx="8" fill="#F4F2F2" stroke="#B8B2B2" stroke-width="1.5"/>
+    <text x="76" y="86" text-anchor="middle" font-size="16" font-weight="bold">Cowork</text>
+    <text x="76" y="108" text-anchor="middle" font-size="12" fill="#6E6666">el agente</text>
 
-  <!-- forward arrows -->
-  <line x1="190" y1="108" x2="252" y2="108" stroke="#3B3535" stroke-width="2"/>
-  <polygon points="252,101 266,108 252,115" fill="#3B3535"/>
-  <text x="221" y="96" text-anchor="middle" font-size="11" fill="#6A737D">pide datos</text>
+    <!-- ===== gap 1: Cowork &#8596; Connector ===== -->
+    <text x="191" y="59" text-anchor="middle" font-size="11.5">pide datos</text>
+    <line x1="142" y1="74" x2="240" y2="74" stroke="#6E6666" stroke-width="1.8" marker-end="url(#arrow-grey)"/>
+    <line x1="240" y1="110" x2="142" y2="110" stroke="#6E6666" stroke-width="1.8" marker-end="url(#arrow-grey)"/>
+    <text x="191" y="133" text-anchor="middle" font-size="11.5">devuelve datos</text>
 
-  <line x1="420" y1="108" x2="482" y2="108" stroke="#DA1B2E" stroke-width="2"/>
-  <polygon points="482,101 496,108 482,115" fill="#DA1B2E"/>
-  <text x="451" y="96" text-anchor="middle" font-size="11" fill="#DA1B2E">MCP</text>
+    <!-- ===== box B: Connector (focal) ===== -->
+    <rect x="246" y="40" width="142" height="104" rx="8" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+    <text x="317" y="82" text-anchor="middle" font-size="16" font-weight="bold">Connector</text>
+    <rect x="287" y="92" width="60" height="22" rx="11" fill="#DA1B2E"/>
+    <text x="317" y="107" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#ffffff">1 clic</text>
 
-  <!-- return arrows -->
-  <line x1="496" y1="150" x2="424" y2="150" stroke="#3B3535" stroke-width="1.5"/>
-  <polygon points="424,143 410,150 424,157" fill="#3B3535"/>
-  <line x1="266" y1="150" x2="194" y2="150" stroke="#3B3535" stroke-width="1.5"/>
-  <polygon points="194,143 180,150 194,157" fill="#3B3535"/>
-  <text x="340" y="195" text-anchor="middle" font-size="11.5" fill="#6A737D">devuelve datos</text>
+    <!-- ===== gap 2: Connector &#8596; Servicio externo (protocolo MCP) ===== -->
+    <rect x="401" y="44" width="104" height="22" rx="11" fill="#DA1B2E"/>
+    <text x="453" y="59" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">protocolo MCP</text>
+    <line x1="394" y1="74" x2="512" y2="74" stroke="#DA1B2E" stroke-width="2.2" marker-end="url(#arrow-red)"/>
+    <line x1="512" y1="110" x2="394" y2="110" stroke="#6E6666" stroke-width="1.8" marker-end="url(#arrow-grey)"/>
 
-  <text x="451" y="62" text-anchor="middle" font-size="11" fill="#6A737D">protocolo</text>
+    <!-- ===== box C: servicio externo ===== -->
+    <rect x="518" y="40" width="146" height="104" rx="8" fill="#F4F2F2" stroke="#B8B2B2" stroke-width="1.5"/>
+    <text x="591" y="86" text-anchor="middle" font-size="16" font-weight="bold">Servicio externo</text>
+    <text x="591" y="108" text-anchor="middle" font-size="11" fill="#6E6666">Gmail &#183; MT Newswires</text>
+
+    <!-- ===== takeaway ===== -->
+    <text x="340" y="186" text-anchor="middle" font-size="12.5" font-style="italic">El agente no gana una capacidad nueva: la plataforma se vuelve conversacional.</text>
+
+  </g>
 </svg>

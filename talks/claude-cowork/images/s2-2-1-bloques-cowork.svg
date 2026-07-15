@@ -1,56 +1,62 @@
-<svg viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
-  <title>Los bloques de Cowork</title>
-  <desc>Cada pieza de Cowork resuelve un problema recurrente; los bloques se apilan y Plugins los distribuye a todos.</desc>
-  <rect x="0" y="0" width="680" height="620" fill="#ffffff"/>
+<svg viewBox="0 0 680 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Los bloques de Cowork: cada problema, una pieza</title>
+  <desc id="d">Esta slide es el mapa de toda la sesión: antes de entrar en cada pieza, dar la foto completa.</desc>
 
-  <!-- Plugins transversal band wrapping everything (focal, red outline) -->
-  <rect x="20" y="20" width="640" height="540" rx="8" fill="none" stroke="#DA1B2E" stroke-width="2.5"/>
-  <rect x="20" y="20" width="640" height="40" rx="8" fill="#DA1B2E"/>
-  <text x="340" y="47" text-anchor="middle" font-weight="bold" font-size="15" fill="#ffffff">PLUGINS — capa transversal: empaquetan y distribuyen</text>
+  <!-- canvas -->
+  <rect x="0" y="0" width="680" height="660" fill="#ffffff"/>
 
-  <!-- 7 stacked blocks, each paired with its recurring problem -->
-  <!-- block template: rect 50,Y,200,46 ; problem text at x=270 -->
-  <g font-family="Helvetica, Arial, sans-serif">
-    <!-- Live Artifacts -->
-    <rect x="50" y="80" width="220" height="44" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="107" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">LIVE ARTIFACTS</text>
-    <text x="290" y="107" font-size="12.5" fill="#3B3535">"quiero compartir el resultado vivo"</text>
+  <!-- PLUGINS transversal band (focal element, red accent) -->
+  <rect x="70" y="66" width="595" height="538" rx="12" fill="none" stroke="#DA1B2E" stroke-width="2.5"/>
+  <rect x="150" y="51" width="435" height="30" rx="15" fill="#ffffff" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="367.5" y="71" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E" text-anchor="middle">PLUGINS · capa transversal: empaqueta y distribuye</text>
 
-    <!-- Schedule -->
-    <rect x="50" y="146" width="220" height="44" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="173" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">SCHEDULE</text>
-    <text x="290" y="173" font-size="12.5" fill="#3B3535">"quiero que corra solo"</text>
+  <!-- autonomy direction cue (left, outside the band) -->
+  <line x1="44" y1="570" x2="44" y2="122" stroke="#3B3535" stroke-width="2"/>
+  <polygon points="44,108 37,124 51,124" fill="#3B3535"/>
+  <text x="27" y="346" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#3B3535" text-anchor="middle" transform="rotate(-90 27 346)">más autonomía</text>
 
-    <!-- Connectors / MCP -->
-    <rect x="50" y="212" width="220" height="44" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="239" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">CONNECTORS / MCP</text>
-    <text x="290" y="239" font-size="12.5" fill="#3B3535">"quiero traer datos de mis herramientas"</text>
+  <!-- row 1 (top): Live Artifacts -->
+  <rect x="95" y="104" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="136" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Live Artifacts</text>
+  <line x1="295" y1="131" x2="310" y2="131" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="136" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“quiero compartir el resultado vivo”</text>
 
-    <!-- Skills -->
-    <rect x="50" y="278" width="220" height="44" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="305" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">SKILLS</text>
-    <text x="290" y="305" font-size="12.5" fill="#3B3535">"no quiero repetir la misma tarea"</text>
+  <!-- row 2: Schedule -->
+  <rect x="95" y="174" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="206" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Schedule</text>
+  <line x1="295" y1="201" x2="310" y2="201" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="206" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“quiero que corra solo”</text>
 
-    <!-- Projects -->
-    <rect x="50" y="344" width="220" height="44" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="371" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">PROJECTS</text>
-    <text x="290" y="371" font-size="12.5" fill="#3B3535">"quiero guardar y organizar en un lugar fijo"</text>
+  <!-- row 3: Connectors / MCP -->
+  <rect x="95" y="244" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="276" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Connectors / MCP</text>
+  <line x1="295" y1="271" x2="310" y2="271" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="276" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“quiero traer datos de mis herramientas”</text>
 
-    <!-- Instrucciones -->
-    <rect x="50" y="410" width="220" height="44" rx="6" fill="#F2EEEE" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="437" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#1F1E1E">INSTRUCCIONES</text>
-    <text x="290" y="437" font-size="12.5" fill="#3B3535">"no quiero repetir el contexto en cada prompt"</text>
+  <!-- row 4: Skills -->
+  <rect x="95" y="314" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="346" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Skills</text>
+  <line x1="295" y1="341" x2="310" y2="341" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="346" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“no quiero repetir la misma tarea”</text>
 
-    <!-- Un prompt / chatear -->
-    <rect x="50" y="476" width="220" height="44" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
-    <text x="160" y="503" text-anchor="middle" font-weight="bold" font-size="13.5" fill="#3B3535">UN PROMPT / CHATEAR</text>
-    <text x="290" y="503" font-size="12.5" fill="#3B3535">"hago todo a mano, un mensaje a la vez"</text>
-  </g>
+  <!-- row 5: Projects -->
+  <rect x="95" y="384" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="416" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Projects</text>
+  <line x1="295" y1="411" x2="310" y2="411" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="416" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“quiero guardar y organizar todo en un lugar fijo”</text>
 
-  <!-- upward autonomy arrow alongside the stack -->
-  <line x1="35" y1="510" x2="35" y2="90" stroke="#DA1B2E" stroke-width="2"/>
-  <polygon points="29,98 35,84 41,98" fill="#DA1B2E"/>
+  <!-- row 6: Instrucciones -->
+  <rect x="95" y="454" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="486" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Instrucciones</text>
+  <line x1="295" y1="481" x2="310" y2="481" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="486" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“no quiero repetir el contexto en cada prompt”</text>
 
-  <!-- footer caption -->
-  <text x="340" y="588" text-anchor="middle" font-size="12.5" fill="#6A737D">Los bloques se apilan (cada uno suma autonomia); Plugins los distribuye a todos.</text>
+  <!-- row 7 (base): Un prompt / chatear -->
+  <rect x="95" y="524" width="200" height="54" rx="6" fill="#F5F4F4" stroke="#8C8686" stroke-width="1.5"/>
+  <text x="195" y="556" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">Un prompt / chatear</text>
+  <line x1="295" y1="551" x2="310" y2="551" stroke="#B9B4B4" stroke-width="1.5"/>
+  <text x="316" y="556" font-family="Helvetica, Arial, sans-serif" font-size="14" font-style="italic" fill="#3B3535">“hago todo a mano, un mensaje a la vez”</text>
+
+  <!-- bottom caption -->
+  <text x="367.5" y="638" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535" text-anchor="middle">Los bloques se combinan — usás solo los que tu tarea necesita</text>
 </svg>
