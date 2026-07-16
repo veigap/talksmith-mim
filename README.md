@@ -11,7 +11,7 @@ We don't believe in replacement — we believe in amplification: as agents take 
 
 ## What kind of work do leaders actually delegate?
 
-Across enterprise adoption surveys, the same pattern shows up: leaders hand off high-volume, well-defined, language-heavy work first — not judgment calls [3].
+Across enterprise adoption surveys, the same pattern shows up: leaders hand off high-volume, well-defined, language-heavy work first — not judgment calls [2].
 
 | Task | Share of companies delegating it |
 | :-- | :-: |
@@ -35,7 +35,7 @@ Because the future will not belong to companies that simply use AI. It will belo
 
 # Class Agenda
 
-7 sessions · mix of in-person (3.5 h) and virtual (2 h). **Each day has its own mission and tool focus. Days 1–2 build the Atlas mission in Cowork; Day 3 covers building presentations with AI; Day 4 is still to be defined.**
+7 sessions · mix of in-person (3.5 h) and virtual (2 h). **Each day has its own mission and tool focus. Days 1–2 build the Atlas mission in Cowork; Day 3 steps back to agent fundamentals — adoption, history and metrics; Day 4 is still to be defined.**
 
 ## Schedule
 
@@ -43,14 +43,14 @@ Because the future will not belong to companies that simply use AI. It will belo
 | :-: | :-: | :-: | :-: | :-: | :-- |
 | 1 | Sat Aug 1 | 8:30 – 12:00 | In-person | 3.5 h | Getting Started with Claude Cowork |
 | 2 | Sat Aug 1 | 13:00 – 16:30 | In-person | 3.5 h | Automating a Weekly Report in Cowork |
-| 3 | Thu Aug 6 | 19:00 – 21:00 | Virtual | 2 h | Building Presentations with AI |
+| 3 | Thu Aug 6 | 19:00 – 21:00 | Virtual | 2 h | Agent Fundamentals: Adopción, historia y métricas |
 | 4 | Tue Aug 11 | 19:00 – 21:00 | Virtual | 2 h | _To be defined_ |
 | 5 | Fri Aug 28 | 9:00 – 12:30 | In-person | 3.5 h | Cowork for the Enterprise |
 | 6 | Sat Aug 29 | 8:30 – 12:00 | In-person | 3.5 h | Orchestrating Agents with Paperclip |
 | 7 | Thu Sep 3 | 19:00 – 21:00 | Virtual | 2 h | Evaluation |
 
 > **Track narrative**
-> Days 1–2 (the Saturday double session) build the full Atlas mission in Cowork — from framing and project setup to a self-running report, email, and live dashboard. Day 3 shifts to building presentations with AI — separating knowledge from its visualization. Day 4 runs its own mission (to be defined). Day 5 packages your work into plugins others can install across an organization. Day 6 orchestrates a team of agents in Paperclip, with a human in the loop. Day 7 is the course evaluation.
+> Days 1–2 (the Saturday double session) build the full Atlas mission in Cowork — from framing and project setup to a self-running report, email, and live dashboard. Day 3 steps back from the tools to the field itself — where agents came from, how far adoption has really gone, and how to measure whether they deliver. Day 4 runs its own mission (to be defined). Day 5 packages your work into plugins others can install across an organization. Day 6 orchestrates a team of agents in Paperclip, with a human in the loop. Day 7 is the course evaluation.
 
 ## Day-by-Day
 
@@ -79,15 +79,15 @@ Because the future will not belong to companies that simply use AI. It will belo
 | **MILESTONE** | Wire the whole Atlas loop on top of Day 1's Project + Instructions: the **`reporte-semanal` Skill** (consolidates a week's `fuentes/` into a fixed-template report), the **`buscar-accion` Skill + MT Newswires/Gmail connectors** (Atlas finds its own prices and news and drafts the email), a **Monday-8:00 Schedule** (it runs itself), and the **`publicar-tablero` Skill** that updates the `pulso-semanal` **Live Artifact**. **Success:** Atlas produces the report from data it found itself, leaves a Gmail draft, and refreshes a Live Artifact dashboard — the two deliverables the boss asked for, on autopilot. |
 | **TAKEAWAYS** | ✓ Hands-on with the building blocks that make Atlas run: Skills, Schedule, Live Artifacts. ✓ The full delegation loop — from raw notes to a self-running report + dashboard. ✓ The governance limits: Cowork has no audit trail and every output is a draft. |
 
-### DAY 3 — Building Presentations with AI ● KNOWLEDGE-FIRST, VISUALIZATION-SECOND
+### DAY 3 — Agent Fundamentals: Adopción, historia y métricas ● WHERE AGENTS ACTUALLY STAND
 *Thu Aug 6 · 19:00 – 21:00 · Virtual · 2 h*
 
 | | |
 | :-- | :-- |
-| **GOAL** | Separate knowledge from its visualization: structure content in plain markdown that an agent can navigate, and only then choose how to render it — the same base can become a deck, a dashboard, or a queryable wiki. |
-| **TOOLS** | NotebookLM · Gamma · Claude (Cowork / Claude Design) |
-| **SESSION FLOW** | → From manual slides to the first wave of generative AI (NotebookLM, Gamma, Claude Design): raw content goes in, a finished presentation comes out — fast, but content and visual stay glued together (30 min) → The limit: how knowledge gets lost when the focus is only the presentation — it flattens into bullets, there's no stable source of truth, and it stays trapped in the deck (20 min) → The leap: Andrej Karpathy's "LLM wiki" pattern [2] — separating knowledge (structured markdown, navigable by an agent) from its visualization (15 min) → Demo: the same knowledge base, first queried by an agent and then rendered as a presentation (35 min) → Discussion: what's gained by keeping knowledge as a source of truth separate from the render (20 min) |
-| **TAKEAWAYS** | ✓ The pattern of organizing knowledge in markdown so an agent can query it, not just you. ✓ Concrete tools (NotebookLM, Gamma, Claude) for going from knowledge to presentation without manual work. ✓ Why separating content and visualization gives flexibility and avoids losing knowledge along the way. |
+| **GOAL** | Step back from the tools and look at the field itself: where agents came from, how far adoption has actually gone, and — the part most people skip — how you measure whether an agent is delivering value. Separate what the data supports from what the hype claims. |
+| **TOOLS** | — (discussion + data; no build) |
+| **SESSION FLOW** | → **Historia** — how we got from chatbots to agents: the short arc from prompt-in/text-out, to tools and function calling, to agents that plan and act. Why "agent" means something specific, not just "AI that does stuff" (30 min) → **Adopción — dónde está el campo realmente**: 62% of organizations at least experimenting with agents, ~75% of knowledge workers already using AI whether or not their company deployed it, agent counts up 15x year over year (18x in large enterprises) — and yet only 7% run fully autonomous agents in production [1][3][4] (30 min) → **Métricas — el punto ciego**: 37% of companies targeted 11–20% cost reductions; nearly 40% of those who measured landed at 0–10%, and 90% raised their budgets anyway. What gets measured, what doesn't, and why "the technology worked, the value didn't arrive" [3] (35 min) → **Separar dato de hype** — a live look at how a real figure degrades into a fabricated one as it travels through blogs and decks; how to check a number before you repeat it (25 min) |
+| **TAKEAWAYS** | ✓ A clear definition of what an agent is and the short history that produced it. ✓ Where adoption actually stands, with sourced numbers — not vendor claims. ✓ How to measure agent value, and why most companies aren't. ✓ A working habit for checking a statistic against its primary source before repeating it. |
 
 ### DAY 4 — _To be defined_
 *Tue Aug 11 · 19:00 – 21:00 · Virtual · 2 h*
@@ -127,7 +127,7 @@ Because the future will not belong to companies that simply use AI. It will belo
 | :-: | :-- | :-- | :-- |
 | 1 | In-person | **Atlas** — framing, Cowork intro, Instructions/Projects, MD/metadata & Connectors/MCP | Cowork (Instructions · Projects · MD · Connectors/MCP) |
 | 2 | In-person | **Atlas** — full loop: report, research, automation, dashboard | Cowork (Skills · Schedule · Live Artifacts) |
-| 3 | Virtual | **Presentations with AI** — separating knowledge from visualization, Karpathy's LLM wiki pattern | NotebookLM · Gamma · Claude |
+| 3 | Virtual | **Agent Fundamentals** — adoption, history and metrics: where the field actually stands, and how to separate data from hype | — (discussion + data) |
 | 4 | Virtual | _Mission to be defined_ | — |
 | 5 | In-person | **Enterprise** — Plugins, Claude Tag & Team: make your work reusable and bring Claude to the whole org | Cowork (Subagents · Plugins) · Claude Tag · Team plan |
 | 6 | In-person | **Paperclip** — add a new agent (Director of Institutional Relations) to an existing org: analyze risks, create awareness content, human-in-the-loop | Paperclip |
@@ -153,5 +153,6 @@ Across Days 1–2 you grow Atlas through **four milestones**, each a working inc
 # References
 
 1. Microsoft, [*2026 Work Trend Index Annual Report — Agents, human agency, and the opportunity for every organization*](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization), May 2026.
-2. MindStudio, [*What Is Andrej Karpathy's LLM Wiki? How to Build a Personal Knowledge Base With Claude Code*](https://www.mindstudio.ai/blog/andrej-karpathy-llm-wiki-knowledge-base-claude-code), April 2026.
-3. Zapier, [*State of agentic AI adoption survey [2026]*](https://zapier.com/blog/ai-agents-survey/), 2026.
+2. Zapier, [*State of agentic AI adoption survey [2026]*](https://zapier.com/blog/ai-agents-survey/), 2026.
+3. Bain & Company, [*Your AI Budget Is Growing. Your Returns Aren't. Here's Why.*](https://www.bain.com/insights/your-ai-budget-is-growing-your-returns-arent-heres-why/), 2026 — underlying study: **Bain Automation and AI Pathfinder Survey 2026 (n=951)**.
+4. McKinsey & Company, [*The State of AI: Global Survey*](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) — agent adoption and knowledge-worker AI usage.

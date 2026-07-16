@@ -359,7 +359,7 @@ Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene 
 
 - **1 · Sáb 1 Ago · 8:30–12:00 · Presencial (3,5 h)** — Primeros pasos con Claude Cowork · misión **Atlas**
 - **2 · Sáb 1 Ago · 13:00–16:30 · Presencial (3,5 h)** — Automatizando un reporte semanal en Cowork · misión **Atlas**
-- **3 · Jue 6 Ago · 19:00–21:00 · Virtual (2 h)** — Construyendo presentaciones con IA
+- **3 · Jue 6 Ago · 19:00–21:00 · Virtual (2 h)** — Agent Fundamentals: adopción, historia y métricas
 - **4 · Mar 11 Ago · 19:00–21:00 · Virtual (2 h)** — *A definir*
 - **5 · Vie 28 Ago · 9:00–12:30 · Presencial (3,5 h)** — Cowork para la empresa · misión **Enterprise**
 - **6 · Sáb 29 Ago · 8:30–12:00 · Presencial (3,5 h)** — Orquestando agentes con Paperclip · misión **Paperclip**
