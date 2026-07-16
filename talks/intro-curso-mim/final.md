@@ -1,6 +1,6 @@
 ---
 presentation: Agentes Inteligentes — Master in Management (MiM), IAE Business School, Universidad Austral
-class: Agentes Inteligentes - Bienvenidos
+class: Bienvenidos
 research: research/corpus/
 description: Slides are grouped into Sections. Each Section contains one or more Slides.
 presenter: Paulo Veiga, Profesor, IAE Business School
@@ -199,9 +199,7 @@ Salvedad metodológica por si preguntan: la encuesta de Zapier es de C-suite de 
 
 ### Content
 
-El objetivo no es hacer una tarea una vez con ayuda de un agente; es describirla **declarativamente** — una Skill, una Instruction — para que se repita sola, sin volver a explicarla cada vez.
-
-"Automatizar" y "delegar" son muchas veces **el mismo movimiento disfrazado**.
+**"Automatizar" y "delegar" son muchas veces el mismo movimiento disfrazado.** El objetivo no es hacer una tarea una vez con ayuda de un agente; es describirla **declarativamente** — una Skill, una Instruction — para que se repita sola, sin volver a explicarla cada vez.
 
 ### Sources
 
@@ -317,7 +315,7 @@ El punto 4 no nombra ninguna misión a propósito (pedido del presentador): son 
 
 ## 1. Siete sesiones
 
-<!-- template: process -->
+<!-- template: timeline -->
 
 ### Content
 
@@ -325,7 +323,7 @@ Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene 
 
 - **1 · Sáb 1 Ago · 8:30–12:00 · Presencial (3,5 h)** — Primeros pasos con Claude Cowork · misión **Atlas**
 - **2 · Sáb 1 Ago · 13:00–16:30 · Presencial (3,5 h)** — Automatizando un reporte semanal en Cowork · misión **Atlas**
-- **3 · Jue 6 Ago · 19:00–21:00 · Virtual (2 h)** — Construyendo presentaciones con IA
+- **3 · Jue 6 Ago · 19:00–21:00 · Virtual (2 h)** — Agent Fundamentals: adopción, historia y métricas
 - **4 · Mar 11 Ago · 19:00–21:00 · Virtual (2 h)** — *A definir*
 - **5 · Vie 28 Ago · 9:00–12:30 · Presencial (3,5 h)** — Cowork para la empresa · misión **Enterprise**
 - **6 · Sáb 29 Ago · 8:30–12:00 · Presencial (3,5 h)** — Orquestando agentes con Paperclip · misión **Paperclip**
@@ -565,7 +563,7 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **Slide 1.4 "El valor no llegó solo" — se conservó el 67% vs. 32% de Microsoft.** El presentador pidió borrar la vieja slide 1.3 ("El manager es la palanca") y reemplazarla por números de impacto; la nueva lámina es de Bain, pero **retiene el 67/32** porque es la bisagra que conecta el "el arreglo es organizacional" de Bain con la tesis del deck (el manager es lo organizacional). Los +17 / +22 / +30 de Microsoft People Science 2025 sí se cortaron (ver *Cut material*). **¿Se queda el 67/32 en esa lámina, o la slide es 100% Bain?**
 - **Slide 1.4 — si hace falta un número de eficiencia en lámina.** El presentador pidió *"impacto en el usuario y eficiencia"*; los números de Bain son de **brecha de valor**, no de eficiencia. El único número de eficiencia **verificado** disponible es el caso **Amazon** (World Wide Watch: 26 min → 2 min por actualización de IVA, −92%, 80% de resúmenes aceptados sin modificar) — hoy está en los speaker notes de 1.4. Es un **anécdota de una sola empresa, no del panel de 951**, y el corpus advierte explícitamente que no se presente como benchmark. **¿Se sube a lámina etiquetado como caso Amazon, o se queda en notas?**
 - **Slide 1.4 — imagen candidata no usada.** El registro de Bain trae la Figura 1 (`bain-ai-budget-returns-2026.web/images/figure-1-flourish-28786844.jpg`), que es exactamente el gráfico objetivo-vs-resultado de esta lámina. **No se usó**: está en inglés, con marca Bain, y su registro sigue en `<!-- pending: process_images -->` (Fase 2 del librarian sin correr) — mismo criterio con el que la slide 1.5 dibujó su propia tabla en vez de usar los gráficos de Zapier. **¿Se evalúa tras correr la Fase 2 del librarian, o se deja la lámina sin imagen?**
-- **Slide 3.1 "Siete sesiones" — el pin cambió de `timeline` a `process`.** El presentador pidió que el texto introductorio *"vaya arriba"*; `timeline` **no tiene campo de lead** (su formato es un rail vertical de fecha + detalle, sin párrafo introductorio), así que el texto caía debajo de los 7 hitos. `process` **sí** admite un lead sobre los pasos, y las 7 sesiones son una secuencia numerada legítima. **Costo del cambio:** se pierde el rail temporal con puntos; se gana una tira de tarjetas numeradas con el texto arriba, que es lo que se pidió. **Confirmar que el idioma visual nuevo está bien**; si no, la alternativa es volver a `timeline` y aceptar el texto abajo (o cortarlo).
+- **Slide 3.1 "Siete sesiones" — vuelve a `timeline` (resuelto).** El rodeo por `process` existía sólo porque `timeline` no tenía campo de lead, y el presentador quería el texto introductorio arriba. **Se corrigió el template**: `timeline` ahora admite un `lead` opcional sobre el rail (plugin ≥ 0.61.0). Con eso la lámina recupera su idioma visual correcto — rail vertical con fecha + detalle y punto por sesión — con el párrafo introductorio arriba, que es lo que se pidió. Pin de vuelta en `<!-- template: timeline -->`; no hay costo pendiente.
 - **Slide 2.2 — "Atlas" se sacó solo de esta lámina.** El pedido (*"No mencionemos atlas sino que vamos a tener varias misiones"*) llegó sobre la slide de Objetivos y se aplicó **solo a la Sección 2**. La slide 3.1 (Cronograma) **sigue nombrando Atlas / Enterprise / Paperclip** por día, porque esa vinculación es una decisión previa deliberada (permite mapear el deck al syllabus) y el presentador no dijo "en todos lados" en este bullet — sí lo dijo, en cambio, en el de "Automatización y Análisis de Datos", que sí se aplicó globalmente. **¿Atlas también sale del cronograma?**
 - **"Lo que se llevan" (4.3) vive dentro de "Cómo trabajamos".** Ubicación mid-deck confirmada por el presentador. Pero el título de la sección (*cómo trabajamos*) no cubre del todo el contenido de la lámina (*qué se llevan*). **¿Se renombra la sección (p. ej. "Cómo trabajamos y qué se llevan"), se deja así, o la lámina se muda a otra sección?**
 - **El slide Q&A (6.2) quedó dentro de "Cierre y Portafolios".** Al eliminarse la sección Conclusions, Q&A necesitaba casa y se colgó de la última sección — cuyo título habla del cierre **del curso**, no del cierre **de la presentación**. Funciona, pero es una colisión de sentido. **¿Se deja, o Q&A merece su propia sección?**

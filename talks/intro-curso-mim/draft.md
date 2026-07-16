@@ -1,6 +1,6 @@
 ---
 presentation: Agentes Inteligentes — Master in Management (MiM), IAE Business School, Universidad Austral
-class: Agentes Inteligentes - Bienvenidos
+class: Bienvenidos
 research: research/corpus/
 description: Slides are grouped into Sections. Each Section contains one or more Slides.
 presenter: Paulo Veiga, Profesor, IAE Business School
@@ -219,9 +219,7 @@ Salvedad metodológica por si preguntan: la encuesta de Zapier es de C-suite de 
 
 ### Content
 
-El objetivo no es hacer una tarea una vez con ayuda de un agente; es describirla **declarativamente** — una Skill, una Instruction — para que se repita sola, sin volver a explicarla cada vez.
-
-"Automatizar" y "delegar" son muchas veces **el mismo movimiento disfrazado**.
+**"Automatizar" y "delegar" son muchas veces el mismo movimiento disfrazado.** El objetivo no es hacer una tarea una vez con ayuda de un agente; es describirla **declarativamente** — una Skill, una Instruction — para que se repita sola, sin volver a explicarla cada vez.
 
 ### Sources
 
@@ -351,7 +349,7 @@ El punto 4 no nombra ninguna misión a propósito (pedido del presentador): son 
 
 ## 1. Siete sesiones
 
-<!-- template: process -->
+<!-- template: timeline -->
 
 ### Content
 

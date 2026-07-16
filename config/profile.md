@@ -27,3 +27,7 @@ Profesionales del dominio de negocios, no ingenieros — estudiantes del Master 
 ## Presentation language
 
 Español
+
+## Institution logo
+
+`config/logo.png` — logo institucional IAE Business School / Universidad Austral. Se usa en la portada de todo deck renderizado de este repo.
