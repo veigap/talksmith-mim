@@ -1,81 +1,74 @@
-<svg viewBox="0 0 660 764" xmlns="http://www.w3.org/2000/svg">
+<!-- talksmith-ascii-sha256: cb835027011912dc0986ed52352319907dc9ef1826fa34be8396ff8b6fb9eeac -->
+<svg viewBox="0 0 804 605" xmlns="http://www.w3.org/2000/svg">
   <title>Bloques que se apilan</title>
   <desc>El mapa de toda la sesión: arranca en el chat que ya usan, no en Cowork.</desc>
 
-  <style>
-    .lbl   { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold; }
-    .sub   { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 9.5px; }
-    .frase { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 12px; fill: #3B3535; }
-    .mark  { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 11px; fill: #9A9090; }
-    .band  { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 13.5px; font-weight: bold; fill: #3B3535; }
-    .bands { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 10.5px; fill: #7A7070; }
-    .side  { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 9.5px; font-weight: bold; fill: #9A9090; letter-spacing: 2.5px; }
-    .cap   { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 11.5px; fill: #7A7070; }
-    .aca   { font-family: "DejaVu Sans", Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #DA1B2E; }
-  </style>
+  <rect x="0" y="0" width="804" height="605" fill="#ffffff"/>
 
-  <!-- canvas -->
-  <rect x="0" y="0" width="660" height="764" fill="#ffffff"/>
+  <!-- ===== Banda transversal PLUGINS ===== -->
+  <rect x="24" y="24" width="756" height="529" rx="10" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="2" stroke-dasharray="8 5"/>
+  <rect x="44" y="32" width="96" height="26" rx="13" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="92" y="49" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#1F1E1E" text-anchor="middle">PLUGINS</text>
+  <text x="152" y="49" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">capa transversal: empaquetan y distribuyen la pila entera (sección 7)</text>
 
-  <!-- PLUGINS: banda transversal (marco que envuelve la pila entera) -->
-  <rect x="20" y="16" width="620" height="702" rx="10" fill="#E8E3E3" stroke="#A79E9E" stroke-width="1.6"/>
-  <rect x="46" y="60" width="568" height="632" rx="4" fill="#ffffff" stroke="#CFC8C8" stroke-width="1"/>
+  <!-- ===== Bloque 8 (cima) — Live Artifacts ===== -->
+  <rect x="44" y="84" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="84" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="113" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">Live Artifacts</text>
+  <text x="316" y="113" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“quiero compartir el resultado vivo”</text>
 
-  <text class="band" x="330" y="43" text-anchor="middle">PLUGINS — capa transversal: empaquetan y distribuyen</text>
-  <text class="bands" x="330" y="709" text-anchor="middle">no es un bloque más: envuelve la pila y distribuye varias piezas a la vez (sección 7)</text>
+  <!-- ===== Bloque 7 — Skills / Subagentes ===== -->
+  <rect x="44" y="141" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="141" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="170" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">Skills / Subagentes</text>
+  <text x="316" y="163" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“no quiero repetir la tarea / delegar en paralelo”</text>
+  <text x="316" y="179" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6A737D">(avanzado, sección 7)</text>
 
-  <text class="side" transform="translate(33,367) rotate(-90)" text-anchor="middle">PLUGINS</text>
-  <text class="side" transform="translate(631,367) rotate(90)" text-anchor="middle">PLUGINS</text>
+  <!-- ===== Bloque 6 — Archivos .md ===== -->
+  <rect x="44" y="198" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="198" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="227" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">Archivos .md</text>
+  <text x="316" y="227" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“quiero que la IA entienda mi material”</text>
 
-  <!-- ============ bloque 8 (cima) — LIVE ARTIFACTS ============ -->
-  <rect x="60" y="74" width="210" height="58" rx="4" fill="#F2EFEF" stroke="#BFB7B7" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="107" text-anchor="middle" fill="#3B3535">LIVE ARTIFACTS</text>
-  <text class="frase" x="286" y="107">“quiero compartir el resultado vivo”</text>
+  <!-- ===== Bloque 5 — Instrucciones + Projects ===== -->
+  <rect x="44" y="255" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="255" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="284" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">Instrucciones + Projects</text>
+  <text x="316" y="284" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“contexto fijo + todo en un lugar”</text>
 
-  <!-- ============ bloque 7 — SKILLS / SUBAGENTES ============ -->
-  <rect x="60" y="152" width="210" height="58" rx="4" fill="#F2EFEF" stroke="#BFB7B7" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="177" text-anchor="middle" fill="#3B3535">SKILLS / SUBAGENTES</text>
-  <text class="sub" x="165" y="193" text-anchor="middle" fill="#7A7070">(avanzado, sección 7)</text>
-  <text class="frase" x="286" y="178">“no quiero repetir la tarea /</text>
-  <text class="frase" x="286" y="194">delegar en paralelo”</text>
+  <!-- ===== Bloque 4 — Cowork: carpetas (foco: estamos acá) ===== -->
+  <rect x="44" y="312" width="252" height="48" rx="4" fill="#DA1B2E"/>
+  <rect x="50" y="312" width="246" height="48" rx="4" fill="#ffffff" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="66" y="341" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#DA1B2E">Cowork: carpetas</text>
+  <text x="316" y="341" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“quiero que trabaje sobre mis archivos”</text>
+  <path d="M 672 336 H 654" stroke="#DA1B2E" stroke-width="2" fill="none"/>
+  <path d="M 645 336 L 655 331 L 655 341 Z" fill="#DA1B2E"/>
+  <text x="760" y="340" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#DA1B2E" text-anchor="end">ESTAMOS ACÁ</text>
 
-  <!-- ============ bloque 6 — ARCHIVOS .MD ============ -->
-  <rect x="60" y="230" width="210" height="58" rx="4" fill="#F2EFEF" stroke="#BFB7B7" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="263" text-anchor="middle" fill="#3B3535">ARCHIVOS .MD</text>
-  <text class="frase" x="286" y="263">“quiero que la IA entienda mi material”</text>
+  <!-- ===== Bloque 3 — Tareas programadas ===== -->
+  <rect x="44" y="369" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="369" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="398" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">Tareas programadas</text>
+  <text x="316" y="398" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“quiero que corra solo”</text>
+  <rect x="706" y="383" width="54" height="20" rx="10" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="733" y="397" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6A737D" text-anchor="middle">(visto)</text>
 
-  <!-- ============ bloque 5 — INSTRUCCIONES + PROJECTS ============ -->
-  <rect x="60" y="308" width="210" height="58" rx="4" fill="#F2EFEF" stroke="#BFB7B7" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="333" text-anchor="middle" fill="#3B3535">INSTRUCCIONES +</text>
-  <text class="lbl" x="165" y="350" text-anchor="middle" fill="#3B3535">PROJECTS</text>
-  <text class="frase" x="286" y="341">“contexto fijo + todo en un lugar”</text>
+  <!-- ===== Bloque 2 — Conectores ===== -->
+  <rect x="44" y="426" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="426" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="455" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">Conectores</text>
+  <text x="316" y="455" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“quiero info real + que actúe”</text>
+  <rect x="706" y="440" width="54" height="20" rx="10" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="733" y="454" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6A737D" text-anchor="middle">(visto)</text>
 
-  <!-- ============ bloque 4 — COWORK: carpetas  (FOCO: estamos acá) ============ -->
-  <rect x="60" y="386" width="210" height="58" rx="4" fill="#FCEEF0" stroke="#DA1B2E" stroke-width="2"/>
-  <text class="lbl" x="165" y="419" text-anchor="middle" fill="#DA1B2E">COWORK: carpetas</text>
-  <text class="frase" x="286" y="419">“quiero que trabaje sobre mis archivos”</text>
-  <rect x="546" y="404" width="54" height="22" rx="11" fill="#ffffff" stroke="#DA1B2E" stroke-width="1.6"/>
-  <path d="M 553 415 L 562 410 L 562 420 Z" fill="#DA1B2E"/>
-  <text class="aca" x="582" y="419" text-anchor="middle">ACÁ</text>
+  <!-- ===== Bloque 1 (base) — El chat ===== -->
+  <rect x="44" y="483" width="252" height="48" rx="4" fill="#D8D4D4"/>
+  <rect x="50" y="483" width="246" height="48" rx="4" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="66" y="512" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" fill="#1F1E1E">El chat</text>
+  <text x="316" y="512" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">“respondía solo de memoria”</text>
+  <rect x="706" y="497" width="54" height="20" rx="10" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.2"/>
+  <text x="733" y="511" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#6A737D" text-anchor="middle">(visto)</text>
 
-  <!-- ============ bloque 3 — TAREAS PROGRAMADAS (visto) ============ -->
-  <rect x="60" y="464" width="210" height="58" rx="4" fill="#FAF8F8" stroke="#D8D2D2" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="497" text-anchor="middle" fill="#7A7070">TAREAS PROGRAMADAS</text>
-  <text class="frase" x="286" y="497" fill="#7A7070">“quiero que corra solo”</text>
-  <text class="mark" x="600" y="497" text-anchor="end">(visto)</text>
-
-  <!-- ============ bloque 2 — CONECTORES (visto) ============ -->
-  <rect x="60" y="542" width="210" height="58" rx="4" fill="#FAF8F8" stroke="#D8D2D2" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="575" text-anchor="middle" fill="#7A7070">CONECTORES</text>
-  <text class="frase" x="286" y="575" fill="#7A7070">“quiero info real + que actúe”</text>
-  <text class="mark" x="600" y="575" text-anchor="end">(visto)</text>
-
-  <!-- ============ bloque 1 (base) — EL CHAT (visto) ============ -->
-  <rect x="60" y="620" width="210" height="58" rx="4" fill="#FAF8F8" stroke="#D8D2D2" stroke-width="1.2"/>
-  <text class="lbl" x="165" y="653" text-anchor="middle" fill="#7A7070">EL CHAT</text>
-  <text class="frase" x="286" y="653" fill="#7A7070">“respondía solo de memoria”</text>
-  <text class="mark" x="600" y="653" text-anchor="end">(visto)</text>
-
-  <!-- caption -->
-  <text class="cap" x="330" y="742" text-anchor="middle">los bloques se apilan (cada uno suma autonomía) · PLUGINS los distribuye a todos</text>
+  <!-- ===== Pie ===== -->
+  <text x="24" y="578" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">Los bloques se apilan (cada uno suma autonomía); PLUGINS los distribuye a todos.</text>
 </svg>

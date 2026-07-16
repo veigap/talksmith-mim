@@ -49,7 +49,7 @@ date: Julio 2026
   - **Alucinación**: inventa con confianza.
   - **No ve TU mundo**.
 
-![El chat responde de memoria](images/s1-1-1-chat-responde-memoria.png)
+![El chat sin extensiones responde solo desde su memoria de entrenamiento: no ve tu mundo ni información posterior al cutoff](images/s1-1-1-chat-responde-memoria.png)
 <!-- ascii-source:
         EL CHAT "COMO VIENE DE FABRICA"
                                              lo que NO ve:
@@ -94,7 +94,7 @@ Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta s
 - Vale igual en ChatGPT, Gemini y Claude.
 - Se activa con un clic, sin programar.
 
-![Chat solo vs chat con conectores](images/s2-1-1-chat-solo-vs-conectores.png)
+![Chat aislado contra chat con conectores: el primero responde de memoria, el segundo alcanza tus fuentes reales](images/s2-1-1-chat-solo-vs-conectores.png)
 <!-- ascii-source:
    CHAT SOLO                        CHAT CON CONECTORES
 +----------------+              +----------------+
@@ -131,7 +131,7 @@ La slide instala el concepto que ordena la sección: un conector saca al chat de
 - Mirá el "buscando..." y las fuentes citadas; ahí verificás.
 - Regla: si la respuesta pudo cambiar → exigí búsqueda.
 
-![El primer conector: búsqueda web](images/s2-2-1-conector-busqueda-web.png)
+![La misma pregunta respondida de memoria de entrenamiento contra respondida con búsqueda web](images/s2-2-1-conector-busqueda-web.png)
 <!-- ascii-source:
    la MISMA pregunta: "¿ultima version de X?"
 
@@ -172,7 +172,7 @@ Acá se fija la distinción de la charla: de memoria recuerda hasta la fecha de 
 - **MCP**: el estándar detrás. Cualquier app con servidor MCP se vuelve conversacional.
 - Un equipo técnico puede armar **conectores propios** (custom, vía MCP).
 
-![Flujo de una llamada a un conector (MCP)](images/s2-3-1-flujo-connector-mcp.png)
+![Flujo de una llamada a un conector: el chat pide datos, el conector los trae del servicio y el chat responde con información real](images/s2-3-1-flujo-connector-mcp.png)
 <!-- ascii-source:
 +--------+   pide datos    +-----------+   protocolo   +--------------+
 | CHAT / | --------------&gt; | Connector |  -- MCP --&gt;   | Servicio ext |
@@ -255,7 +255,7 @@ Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail cone
   - **Agendar una reunión** (evento en tu calendario).
 - Vos conectás y autorizás cada servicio. Mientras aprendés, **borrador antes que envío directo**.
 
-![Los conectores leen y también actúan](images/s2-6-1-conectores-leer-y-hacer.png)
+![Un conector funciona en dos direcciones: leer información y también actuar sobre el servicio](images/s2-6-1-conectores-leer-y-hacer.png)
 <!-- ascii-source:
         CONECTOR: dos direcciones
 
@@ -303,7 +303,7 @@ El giro de la sección: el conector era una antena que traía info; ahora es una
 - El ejemplo: *"todos los días 8:00, resumí mi inbox, lo urgente arriba."*
 - Existe en **ChatGPT** ("tasks") y en **Claude** (claude.ai, desde el navegador).
 
-![Ciclo de una tarea programada](images/s3-1-1-ciclo-tarea-programada.png)
+![Ciclo de una tarea programada: disparador de calendario, el agente trabaja con sus conectores y entrega el resultado](images/s3-1-1-ciclo-tarea-programada.png)
 <!-- ascii-source:
         TAREA PROGRAMADA (se describe UNA vez)
 
@@ -348,7 +348,7 @@ Describís el trabajo una vez, elegís cadencia (diaria, semanal, a demanda) y c
 - Antes de confiarle algo a una tarea programada, **sabé dónde corre**.
 - Si la tarea necesita **archivos o apps locales**, corre **local siempre**.
 
-![¿Dónde corre tu tarea? Local vs nube](images/s3-2-1-tarea-local-vs-nube.png)
+![Bifurcación de una tarea programada según dónde corre: en la nube sin tu computadora, o local con la app abierta](images/s3-2-1-tarea-local-vs-nube.png)
 <!-- ascii-source:
    tu tarea programada: ¿DONDE corre?
               |
@@ -394,7 +394,7 @@ Hoy conviven dos realidades. Una: la nube existe desde el 7 de julio de 2026, la
 - **Claude Code**: terminal; developers.
 - **Cowork**: GUI de escritorio, trabajo multipaso sobre archivos reales. *El resto de la charla vive acá.*
 
-![Las tres superficies de Claude](images/s4-1-1-tres-superficies-claude.png)
+![Las tres superficies de Claude sobre los mismos modelos, con Code y Cowork compartiendo el Agent SDK](images/s4-1-1-tres-superficies-claude.png)
 <!-- ascii-source:
 +----------------+   +----------------+   +----------------+
 |   Web / Chat   |   |  Claude Code   |   |     Cowork     |
@@ -458,7 +458,7 @@ El beat de "¿y a mí por qué me importa?". Abrir con las palabras del presenta
 - **"El nuevo Excel"** *(encuadre de analistas e industria, no de Anthropic)*.
 - Gestión: la habilidad base se redefine **ahora**; llegar temprano es ventaja.
 
-![De Excel a las herramientas agénticas](images/s4-3-1-excel-a-agentico.png)
+![De Excel como lingua franca de la oficina a las herramientas agénticas como la nueva habilidad base del trabajo del conocimiento](images/s4-3-1-excel-a-agentico.png)
 <!-- ascii-source:
 TRABAJO DE OFICINA: la herramienta de proposito general
 
@@ -525,7 +525,7 @@ El concepto-ancla de la charla. Los conectores y las tareas programadas extendie
 - El mapa de la charla: ya recorrimos los tres primeros y **estamos acá**. Volvé para ubicarte.
 - **Plugins** = capa transversal de distribución (sección 7).
 
-![Bloques que se apilan](images/s4-5-1-bloques-cowork.png)
+![El arco de la charla como bloques que se apilan, con Plugins como pieza transversal](images/s4-5-1-bloques-cowork.png)
 <!-- ascii-source:
 +============== PLUGINS (capa transversal: empaquetan y distribuyen) ==============+
 ||                                                                                ||
@@ -584,7 +584,7 @@ El mapa de toda la sesión: arranca en el chat que ya usan, no en Cowork. Aprove
 
 ### Content
 
-![Demo time](images/s5-1-1-banner-demo-time.png)
+![Banner de Demo time](images/s5-1-1-banner-demo-time.png)
 <!-- ascii-source:
    __________________________________________
   /                                          /|
@@ -638,7 +638,7 @@ Recorrido de 2-3 minutos por la pantalla, sobre la app real, o sobre la captura 
 - Instrucciones = el **"contrato de trabajo"**: reglas en lenguaje natural que valen para todo, sin repetirlas.
 - Ejemplo (Atlas):
 
-![Instrucciones: el contrato de trabajo](images/s5-3-1-tarjeta-instrucciones.png)
+![Las Instrucciones de Atlas como tarjeta: el contrato de trabajo en lenguaje natural, con su regla de oro](images/s5-3-1-tarjeta-instrucciones.png)
 <!-- ascii-source:
 Sos Atlas, el analista de mercado de un equipo de trabajo.
 Preparás un pulso semanal para colegas NO técnicos (incluido el jefe),
@@ -752,7 +752,7 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 - Vale doble: la **memoria** del agente (texto plano) y tus **archivos de trabajo** (en el Project).
 - Regla de bolsillo: *editá en `.md`, entregá en lo que pida tu jefe.*
 
-![Trabajá en .md, exportá al final](images/s6-2-1-flujo-md-exportar.png)
+![Flujo de trabajo recomendado: las fuentes se llevan a .md, se trabaja en .md y recién al final se exporta al formato de entrega](images/s6-2-1-flujo-md-exportar.png)
 <!-- ascii-source:
    FLUJO DE TRABAJO CON LA IA
 
@@ -878,7 +878,7 @@ Arranca el bloque avanzado. La Skill materializa el "enseñá una vez, reutiliz�
 
 - Requisito: **Code execution** habilitado (Settings → Capabilities).
 
-![Cómo se crea una Skill](images/s7-2-1-crear-skill-caminos.png)
+![Los dos caminos para crear una Skill en Cowork, convergiendo en la compuerta de Save para habilitarla](images/s7-2-1-crear-skill-caminos.png)
 <!-- ascii-source:
      CREAR UNA SKILL EN COWORK (GUI, sin slash commands)
 
@@ -925,7 +925,7 @@ Los dos caminos reales en Cowork, que es GUI y no tiene slash commands. Uno: ped
 
 - Un `SKILL.md` por dentro: es el `.md` con metadata de la sección 6, abierto.
 
-![Anatomía de un SKILL.md](images/s7-3-1-anatomia-skill-md.png)
+![Anatomía de un SKILL.md: el bloque de metadata con name y description, y el cuerpo con las instrucciones](images/s7-3-1-anatomia-skill-md.png)
 <!-- ascii-source:
 +--------------------------------------------------------------+
 | ---                                                          |  <-- METADATA / HEADER (YAML)
@@ -971,7 +971,7 @@ Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el be
 - En Cowork corren "por debajo", **varios en paralelo**.
 - Se agrega como una Skill (descripción + instrucciones): pedíselo a Claude, o viene en un **Plugin**.
 
-![Subagentes: delegar en paralelo](images/s7-4-1-subagentes-fanout.png)
+![Patrón fan-out/fan-in: el agente principal reparte la tarea entre subagentes en paralelo y junta los resultados](images/s7-4-1-subagentes-fanout.png)
 <!-- ascii-source:
                 +------------------+
                 | agente principal |
@@ -1031,7 +1031,7 @@ Cerrar el avanzado con la idea de empaquetado: cuando un workflow madura (varias
 - En Team/Enterprise, los **Owners** gestionan los plugins de la org (Organization settings → Plugins).
 - El ciclo, punta a punta:
 
-![Plugins en una cuenta Team](images/s7-6-1-ciclo-plugins-team.png)
+![Ciclo de vida de un plugin en una cuenta Team: del Owner que lo publica al miembro que lo instala y recibe updates](images/s7-6-1-ciclo-plugins-team.png)
 <!-- ascii-source:
 +-----------------+     +------------------------+     +----------------------+
 | OWNER crea un   | --&gt; | agrega plugins:        | --&gt; | fija preferencia de  |
@@ -1074,7 +1074,7 @@ Slide de cierre del bloque avanzado, orientada a quien algún día administre un
 
 - Todas las piezas de hoy, enganchadas en un solo loop:
 
-![El loop completo de Atlas](images/sc-1-1-loop-completo-atlas.png)
+![El loop completo de la misión Atlas encadenando todas las piezas vistas en la charla](images/sc-1-1-loop-completo-atlas.png)
 <!-- ascii-source:
 Lunes 8:00
    |

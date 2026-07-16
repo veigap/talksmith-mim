@@ -6,7 +6,7 @@
 
 ## Subject
 
-Inteligencia Artificial: de lo conceptual a lo práctico — Master in Management (MiM), IAE Business School, Universidad Austral (https://www.iae.edu.ar/programas/mim/)
+Agentes Inteligentes — Master in Management (MiM), IAE Business School, Universidad Austral (https://www.iae.edu.ar/programas/mim/)
 
 ## Presenter
 

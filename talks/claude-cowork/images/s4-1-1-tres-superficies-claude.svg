@@ -1,49 +1,46 @@
-<svg viewBox="0 0 680 350" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+<!-- talksmith-ascii-sha256: 1c17b21fd794a9198c7fd1c6ea1223830479c42ea2a1e71578d7cd794939879a -->
+<svg viewBox="0 0 708 316" xmlns="http://www.w3.org/2000/svg">
   <title>Las tres superficies de Claude</title>
-  <desc>No son tres productos distintos, es el mismo agente con tres caras; lo único que cambia es la superficie y para quién está pensada.</desc>
+  <desc>Las tres superficies de Claude corren sobre los mismos modelos; Claude Code y Cowork comparten además el Claude Agent SDK, mientras Web/Chat es la superficie de chat de ese mismo modelo.</desc>
+  <rect x="0" y="0" width="708" height="316" fill="#ffffff"/>
+  <g transform="translate(24,24)">
 
-  <rect x="0" y="0" width="680" height="350" fill="#ffffff"/>
+    <!-- connectors -->
+    <path d="M 100 100 L 100 214" fill="none" stroke="#3B3535" stroke-width="1.6"/>
+    <path d="M 330 100 L 330 126 L 560 126 L 560 100" fill="none" stroke="#3B3535" stroke-width="1.6"/>
+    <path d="M 445 126 L 445 140" fill="none" stroke="#3B3535" stroke-width="1.6"/>
+    <path d="M 445 182 L 445 214" fill="none" stroke="#3B3535" stroke-width="1.6"/>
 
-  <!-- connectors (drawn first, tucked under panels) -->
-  <g stroke="#9A9292" stroke-width="1.5" fill="none">
-    <line x1="120" y1="128" x2="120" y2="268"/>
-    <line x1="340" y1="128" x2="340" y2="166"/>
-    <line x1="560" y1="128" x2="560" y2="166"/>
-    <line x1="450" y1="222" x2="450" y2="268"/>
+    <!-- panel 1 — Web / Chat -->
+    <rect x="0" y="0" width="200" height="100" rx="6" fill="#F2F2F2" stroke="#D8D4D4" stroke-width="1.4"/>
+    <text x="100" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1F1E1E">Web / Chat</text>
+    <text x="100" y="53" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">Navegador · tareas puntuales</text>
+    <text x="100" y="68" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">Sin el loop agéntico completo</text>
+    <text x="100" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-style="italic" fill="#6A737D">Donde estuvimos hasta ahora</text>
+
+    <!-- panel 2 — Claude Code -->
+    <rect x="230" y="0" width="200" height="100" rx="6" fill="#F2F2F2" stroke="#D8D4D4" stroke-width="1.4"/>
+    <text x="330" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#1F1E1E">Claude Code</text>
+    <text x="330" y="53" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">Terminal · desarrolladores</text>
+    <text x="330" y="68" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">Escribir y ejecutar código</text>
+    <text x="330" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-style="italic" fill="#6A737D">Acá solo como contraste</text>
+
+    <!-- panel 3 — Cowork (focal) -->
+    <rect x="460" y="0" width="200" height="100" rx="6" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="2"/>
+    <text x="560" y="28" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">Cowork</text>
+    <text x="560" y="53" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">GUI de escritorio · trabajo</text>
+    <text x="560" y="68" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">multipaso sobre archivos reales</text>
+    <text x="560" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#DA1B2E">El resto de la charla vive acá</text>
+
+    <!-- Agent SDK bond — joins Code + Cowork only -->
+    <rect x="285" y="140" width="320" height="42" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.4"/>
+    <text x="445" y="159" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#1F1E1E">Claude Agent SDK</text>
+    <text x="445" y="174" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#3B3535">archivos · Skills · MCP · loop: plan, aprobar, redirigir</text>
+
+    <!-- shared base -->
+    <rect x="0" y="214" width="660" height="54" rx="6" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="1.4"/>
+    <text x="330" y="239" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F1E1E">Los mismos modelos Claude</text>
+    <text x="330" y="257" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" fill="#3B3535">Las tres superficies corren sobre el mismo modelo</text>
+
   </g>
-
-  <!-- panel 1 — Web / Chat -->
-  <rect x="20" y="24" width="200" height="104" rx="4" fill="#F5F3F3" stroke="#C9C2C2" stroke-width="1.5"/>
-  <text x="120" y="50" text-anchor="middle" font-size="17" font-weight="bold" fill="#3B3535">Web / Chat</text>
-  <text x="120" y="72" text-anchor="middle" font-size="11" fill="#6E6666">navegador o app · sin instalar</text>
-  <text x="120" y="88" text-anchor="middle" font-size="11" fill="#6E6666">chat y tareas puntuales</text>
-  <text x="120" y="112" text-anchor="middle" font-size="9.5" fill="#8A8282">público: todos</text>
-
-  <!-- panel 2 — Claude Code -->
-  <rect x="240" y="24" width="200" height="104" rx="4" fill="#F5F3F3" stroke="#C9C2C2" stroke-width="1.5"/>
-  <text x="340" y="50" text-anchor="middle" font-size="17" font-weight="bold" fill="#3B3535">Claude Code</text>
-  <text x="340" y="72" text-anchor="middle" font-size="11" fill="#6E6666">escritorio + terminal</text>
-  <text x="340" y="88" text-anchor="middle" font-size="11" fill="#6E6666">escribir y publicar código</text>
-  <text x="340" y="112" text-anchor="middle" font-size="9.5" fill="#8A8282">público: perfiles técnicos</text>
-
-  <!-- panel 3 — Cowork (focal accent) -->
-  <rect x="460" y="24" width="200" height="104" rx="4" fill="#FDECEE" stroke="#DA1B2E" stroke-width="2"/>
-  <text x="560" y="50" text-anchor="middle" font-size="17" font-weight="bold" fill="#DA1B2E">Cowork</text>
-  <text x="560" y="72" text-anchor="middle" font-size="11" fill="#6E6666">escritorio, GUI sin terminal</text>
-  <text x="560" y="88" text-anchor="middle" font-size="11" fill="#6E6666">varios pasos sobre archivos</text>
-  <text x="560" y="112" text-anchor="middle" font-size="9.5" fill="#8A8282">público: knowledge workers</text>
-
-  <!-- pill on the Web/Chat leg -->
-  <rect x="58" y="172" width="124" height="26" rx="13" fill="#ffffff" stroke="#C9C2C2" stroke-width="1.5"/>
-  <text x="120" y="189" text-anchor="middle" font-size="11" fill="#6E6666">superficie de chat</text>
-
-  <!-- Agent SDK band (joins Code + Cowork only) -->
-  <rect x="240" y="166" width="420" height="56" rx="4" fill="#FAF8F8" stroke="#9A9292" stroke-width="1.5"/>
-  <text x="450" y="188" text-anchor="middle" font-size="14" font-weight="bold" fill="#3B3535">Claude Agent SDK · mismo engine de agente</text>
-  <text x="450" y="206" text-anchor="middle" font-size="10.5" fill="#6E6666">archivos · Skills · MCP · loop plan → aprobar → redirigir</text>
-
-  <!-- foundation -->
-  <rect x="20" y="268" width="640" height="58" rx="4" fill="#E7E3E3" stroke="#3B3535" stroke-width="1.5"/>
-  <text x="340" y="292" text-anchor="middle" font-size="16" font-weight="bold" fill="#3B3535">Mismos modelos Claude</text>
-  <text x="340" y="310" text-anchor="middle" font-size="10.5" fill="#6E6666">la misma inteligencia debajo de las tres superficies</text>
 </svg>

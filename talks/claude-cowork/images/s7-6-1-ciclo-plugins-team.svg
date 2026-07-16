@@ -1,84 +1,78 @@
-<svg viewBox="0 0 680 318" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-  <title>Plugins en una cuenta Team: ciclo de vida</title>
-  <desc>Ciclo de vida de un plugin en una cuenta Team o Enterprise: el Owner crea un marketplace privado, agrega plugins por ZIP o sincronizando un repo de GitHub, fija la preferencia de instalación, y desde ahí se distribuye a los miembros en chat y en Cowork, que lo instalan con las actualizaciones sincronizadas.</desc>
+<!-- talksmith-ascii-sha256: e25a869766dece2570d1cf8806c4802bb605260de6339e3511d1f4bcf60e05f7 -->
+<svg viewBox="0 0 910 383" xmlns="http://www.w3.org/2000/svg">
+  <title>Plugins en una cuenta Team</title>
+  <desc>Ciclo de vida de un plugin en una cuenta Team o Enterprise: el Owner crea un marketplace privado de la organización, agrega plugins, fija la preferencia de instalación, el plugin se distribuye a chat y Cowork, y los miembros lo instalan con las actualizaciones sincronizadas.</desc>
 
   <defs>
-    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 1 L 9 5 L 0 9 z" fill="#B0A8A5"/>
+    <marker id="ts-arrow" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10"
+            refX="11" refY="5" orient="auto">
+      <path d="M0,0 L11,5 L0,10 Z" fill="#3B3535"/>
     </marker>
   </defs>
 
-  <rect x="0" y="0" width="680" height="318" fill="#ffffff"/>
+  <rect x="0" y="0" width="910" height="383" fill="#ffffff"/>
 
-  <!-- ============ ROW 1 ============ -->
+  <g font-family="Helvetica, Arial, sans-serif">
 
-  <!-- Box 1 — focal -->
-  <rect x="24" y="40" width="188" height="106" rx="6" fill="#FCEEF0" stroke="#DA1B2E" stroke-width="1.6"/>
-  <text x="40" y="62" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#DA1B2E">OWNER</text>
-  <text x="40" y="83" font-size="12.5" font-weight="600" fill="#3B3535">Crea un marketplace</text>
-  <text x="40" y="99" font-size="12.5" font-weight="600" fill="#3B3535">privado de la org</text>
-  <text x="40" y="119" font-size="10.5" fill="#6E6663">Organization settings</text>
-  <text x="40" y="134" font-size="10.5" fill="#6E6663">→ Plugins</text>
+    <!-- ============ connectors ============ -->
+    <g stroke="#3B3535" stroke-width="1.6" fill="none" marker-end="url(#ts-arrow)">
+      <path d="M274,89 L330,89"/>
+      <path d="M580,89 L636,89"/>
+      <path d="M761,154 L761,229"/>
+      <path d="M636,294 L274,294"/>
+    </g>
 
-  <!-- Box 2 -->
-  <rect x="246" y="40" width="188" height="106" rx="6" fill="#F6F4F3" stroke="#DDD8D6" stroke-width="1.2"/>
-  <text x="262" y="62" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#8A817E">OWNER</text>
-  <text x="262" y="83" font-size="12.5" font-weight="600" fill="#3B3535">Agrega plugins</text>
-  <text x="262" y="103" font-size="10.5" fill="#6E6663">· Subir un ZIP</text>
-  <text x="262" y="118" font-size="10.5" fill="#6E6663">· Sync de un repo GitHub</text>
-  <text x="271" y="133" font-size="10.5" fill="#6E6663">(auto-actualiza)</text>
+    <!-- ============ 1 · Owner crea el marketplace (focal) ============ -->
+    <rect x="24" y="24" width="250" height="130" rx="8" fill="#FFFFFF" stroke="#DA1B2E" stroke-width="2"/>
+    <rect x="38" y="37" width="18" height="18" rx="4.5" fill="#DA1B2E"/>
+    <text x="47" y="50" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="38" y="75" font-size="12.5" font-weight="bold" fill="#1F1E1E">El Owner crea un</text>
+    <text x="38" y="90" font-size="12.5" font-weight="bold" fill="#1F1E1E">marketplace privado</text>
+    <text x="38" y="109" font-size="10.5" fill="#3B3535">Solo el Owner administra los</text>
+    <text x="38" y="123" font-size="10.5" fill="#3B3535">plugins de la organización</text>
+    <text x="38" y="137" font-size="10.5" fill="#6A737D">Organization settings &gt; Plugins</text>
 
-  <!-- Box 3 -->
-  <rect x="468" y="40" width="188" height="106" rx="6" fill="#F6F4F3" stroke="#DDD8D6" stroke-width="1.2"/>
-  <text x="484" y="62" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#8A817E">OWNER</text>
-  <text x="484" y="83" font-size="12.5" font-weight="600" fill="#3B3535">Fija la preferencia</text>
-  <text x="484" y="99" font-size="12.5" font-weight="600" fill="#3B3535">de instalación</text>
-  <text x="484" y="119" font-size="10.5" fill="#6E6663">· Opcional / auto-install</text>
-  <text x="484" y="134" font-size="10.5" fill="#6E6663">· Provisionado por usuario</text>
+    <!-- ============ 2 · Agrega plugins ============ -->
+    <rect x="330" y="24" width="250" height="130" rx="8" fill="#FFFFFF" stroke="#D8D4D4" stroke-width="1.4"/>
+    <rect x="344" y="37" width="18" height="18" rx="4.5" fill="#F2EEEE"/>
+    <text x="353" y="50" font-size="11" font-weight="bold" fill="#3B3535" text-anchor="middle">2</text>
+    <text x="344" y="75" font-size="12.5" font-weight="bold" fill="#1F1E1E">Agrega plugins al</text>
+    <text x="344" y="90" font-size="12.5" font-weight="bold" fill="#1F1E1E">marketplace</text>
+    <text x="344" y="109" font-size="10.5" fill="#3B3535">· Subir un ZIP</text>
+    <text x="344" y="123" font-size="10.5" fill="#3B3535">· Sincronizar un repo de GitHub</text>
+    <text x="352" y="137" font-size="10.5" fill="#6A737D">(se auto-actualiza)</text>
 
-  <!-- Row 1 connectors -->
-  <line x1="214" y1="93" x2="243" y2="93" stroke="#B0A8A5" stroke-width="1.6" marker-end="url(#ah)"/>
-  <line x1="436" y1="93" x2="465" y2="93" stroke="#B0A8A5" stroke-width="1.6" marker-end="url(#ah)"/>
+    <!-- ============ 3 · Preferencia de instalacion ============ -->
+    <rect x="636" y="24" width="250" height="130" rx="8" fill="#FFFFFF" stroke="#D8D4D4" stroke-width="1.4"/>
+    <rect x="650" y="37" width="18" height="18" rx="4.5" fill="#F2EEEE"/>
+    <text x="659" y="50" font-size="11" font-weight="bold" fill="#3B3535" text-anchor="middle">3</text>
+    <text x="650" y="75" font-size="12.5" font-weight="bold" fill="#1F1E1E">Fija la preferencia</text>
+    <text x="650" y="90" font-size="12.5" font-weight="bold" fill="#1F1E1E">de instalación</text>
+    <text x="650" y="109" font-size="10.5" fill="#3B3535">Por cada plugin:</text>
+    <text x="650" y="123" font-size="10.5" fill="#3B3535">opcional / auto-install /</text>
+    <text x="650" y="137" font-size="10.5" fill="#3B3535">provisionado</text>
 
-  <!-- Drop connector: box 3 -> box 4 -->
-  <line x1="562" y1="148" x2="562" y2="187" stroke="#B0A8A5" stroke-width="1.6" marker-end="url(#ah)"/>
+    <!-- ============ 4 · Distribucion ============ -->
+    <rect x="636" y="229" width="250" height="130" rx="8" fill="#FFFFFF" stroke="#D8D4D4" stroke-width="1.4"/>
+    <rect x="650" y="242" width="18" height="18" rx="4.5" fill="#F2EEEE"/>
+    <text x="659" y="255" font-size="11" font-weight="bold" fill="#3B3535" text-anchor="middle">4</text>
+    <text x="650" y="280" font-size="12.5" font-weight="bold" fill="#1F1E1E">Se distribuye a</text>
+    <text x="650" y="295" font-size="12.5" font-weight="bold" fill="#1F1E1E">los miembros</text>
+    <text x="650" y="314" font-size="10.5" fill="#3B3535">Aparece en los dos entornos:</text>
+    <rect x="650" y="320" width="92" height="20" rx="10" fill="#F2EEEE"/>
+    <text x="696" y="334" font-size="9" fill="#3B3535" text-anchor="middle">chat de Claude</text>
+    <rect x="750" y="320" width="54" height="20" rx="10" fill="#F2EEEE"/>
+    <text x="777" y="334" font-size="9" fill="#3B3535" text-anchor="middle">Cowork</text>
 
-  <!-- ============ ROW 2 ============ -->
+    <!-- ============ 5 · Miembros instalan ============ -->
+    <rect x="24" y="229" width="250" height="130" rx="8" fill="#FFFFFF" stroke="#D8D4D4" stroke-width="1.4"/>
+    <rect x="38" y="242" width="18" height="18" rx="4.5" fill="#F2EEEE"/>
+    <text x="47" y="255" font-size="11" font-weight="bold" fill="#3B3535" text-anchor="middle">5</text>
+    <text x="38" y="280" font-size="12.5" font-weight="bold" fill="#1F1E1E">Los miembros instalan</text>
+    <text x="38" y="295" font-size="12.5" font-weight="bold" fill="#1F1E1E">y habilitan</text>
+    <text x="38" y="314" font-size="10.5" fill="#3B3535">desde el directorio de la org</text>
+    <text x="38" y="328" font-size="10.5" fill="#3B3535">Las actualizaciones se</text>
+    <text x="38" y="342" font-size="10.5" fill="#3B3535">sincronizan automáticamente</text>
 
-  <!-- Box 4 -->
-  <rect x="340" y="190" width="316" height="106" rx="6" fill="#F6F4F3" stroke="#DDD8D6" stroke-width="1.2"/>
-  <text x="356" y="212" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#8A817E">DISTRIBUCIÓN</text>
-  <text x="356" y="234" font-size="12.5" font-weight="600" fill="#3B3535">Se distribuye a los miembros</text>
-  <text x="356" y="252" font-size="10.5" fill="#6E6663">Un mismo plugin, dos superficies:</text>
-  <rect x="356" y="262" width="78" height="24" rx="12" fill="#ECE8E6" stroke="#D8D3D1" stroke-width="1"/>
-  <text x="395" y="277.7" font-size="10.5" font-weight="600" fill="#3B3535" text-anchor="middle">en chat</text>
-  <rect x="444" y="262" width="94" height="24" rx="12" fill="#ECE8E6" stroke="#D8D3D1" stroke-width="1"/>
-  <text x="491" y="277.7" font-size="10.5" font-weight="600" fill="#3B3535" text-anchor="middle">en Cowork</text>
-
-  <!-- Box 5 -->
-  <rect x="24" y="190" width="270" height="106" rx="6" fill="#F6F4F3" stroke="#DDD8D6" stroke-width="1.2"/>
-  <text x="40" y="212" font-size="9.5" font-weight="700" letter-spacing="0.9" fill="#8A817E">MIEMBROS</text>
-  <text x="40" y="234" font-size="12.5" font-weight="600" fill="#3B3535">Instalan / habilitan desde</text>
-  <text x="40" y="250" font-size="12.5" font-weight="600" fill="#3B3535">el directorio de la org</text>
-  <text x="40" y="270" font-size="10.5" fill="#6E6663">Las actualizaciones se</text>
-  <text x="40" y="285" font-size="10.5" fill="#6E6663">sincronizan solas</text>
-
-  <!-- Row 2 connector (right to left) -->
-  <line x1="338" y1="243" x2="297" y2="243" stroke="#B0A8A5" stroke-width="1.6" marker-end="url(#ah)"/>
-
-  <!-- ============ STEP BADGES ============ -->
-  <circle cx="46" cy="40" r="11" fill="#DA1B2E"/>
-  <text x="46" y="43.9" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
-
-  <circle cx="268" cy="40" r="11" fill="#ffffff" stroke="#C9C3C0" stroke-width="1.2"/>
-  <text x="268" y="43.9" font-size="11" font-weight="700" fill="#6E6663" text-anchor="middle">2</text>
-
-  <circle cx="490" cy="40" r="11" fill="#ffffff" stroke="#C9C3C0" stroke-width="1.2"/>
-  <text x="490" y="43.9" font-size="11" font-weight="700" fill="#6E6663" text-anchor="middle">3</text>
-
-  <circle cx="362" cy="190" r="11" fill="#ffffff" stroke="#C9C3C0" stroke-width="1.2"/>
-  <text x="362" y="193.9" font-size="11" font-weight="700" fill="#6E6663" text-anchor="middle">4</text>
-
-  <circle cx="46" cy="190" r="11" fill="#ffffff" stroke="#C9C3C0" stroke-width="1.2"/>
-  <text x="46" y="193.9" font-size="11" font-weight="700" fill="#6E6663" text-anchor="middle">5</text>
+  </g>
 </svg>

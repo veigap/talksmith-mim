@@ -1,0 +1,17 @@
+      CHAT                 DELEGAR                    ORQUESTAR
+  +--------------+     +------------------+     +----------------------+
+  | un mensaje   | --> | un resultado     | --> | una organizacion     |
+  | por vez      |     | (Claude Cowork)  |     | de agentes           |
+  |              |     |                  |     | (Paperclip)          |
+  +--------------+     +------------------+     +----------------------+
+       donde              Dias 1-2-3-5              Dia 6
+     arrancamos                                       |
+                                                      v
+                                       humano siempre en el loop:
+                                    compuertas de aprobacion y budgets
+
+<!-- ascii-note:
+intent: mostrar el arco del curso como progresion de tres estadios, no como temario suelto
+emphasize: las dos flechas de progresion; el estadio ORQUESTAR como destino; el pie de human-in-the-loop
+labels: CHAT (donde arrancamos) · DELEGAR (Dias 1-2-3-5) · ORQUESTAR (Dia 6)
+-->

@@ -276,3 +276,63 @@ Reuse existing tags before inventing new ones. In use: restructure, add-slide, a
   feedback: "El ASCII del mapa manda al publico a la seccion equivocada: dice 'seccion 5' para Skills/Subagentes y hoy esa seccion es la 7. Arreglalo en el draft antes del freeze, no en el render."
   resolution: Ultima escritura de contenido a `draft.md` antes del freeze de Step 6. Corregida la etiqueta del bloque `SKILLS / SUBAGENTES` en el ASCII del mapa: `(avanzado, seccion 5)` -> `(avanzado, seccion 7)`. Es el ultimo cross-ref stale de la renumeracion de round 8 (la ex-seccion 5 "Advanced" es hoy la 7 "Piezas avanzadas") y el unico que vivia dentro de un diagrama, razon por la que los ocho dispatches del pase de densidad lo reportaron sin tocarlo: tenian instruccion de no editar ASCII. Se arreglo en `draft.md` y no en `final.md` ni en el SVG porque una etiqueta con el numero de seccion equivocado es un defecto de contenido de Step 4, no de renderizado (principles.md: el renderer nunca arregla contenido); un fix aguas abajo lo taparia y volveria en cada re-render. Sustitucion de un solo caracter, mismo ancho: verificado post-edit que las 28 lineas de la caja siguen midiendo 84 caracteres y que los bordes `||` y `+===+` no se movieron; cero cambio de geometria. El `ascii-note` se reviso y no requeria cambios: `intent`, `emphasize` y `labels` nombran Skills/Subagentes como bloque de la pila pero no citan ningun numero de seccion. Barrido independiente de los 17 bloques ASCII del deck y sus notes (extraidos por tag de fence, no por heuristica): no queda ninguna otra referencia stale a seccion o slide dentro de un diagrama; los unicos numeros en otros bloques son horas ("lunes 8:00"), pasos de un procedimiento, "CAMINO 1/2", "(1 clic)" y "~40 anios", ninguno un cross-ref. Confirma independientemente el reporte del dispatch final: era el unico stale vivo, y ya no queda ninguno en el deck, ni en prosa ni en diagrama. Podada la entrada de Open questions que lo flageaba, con la convencion de tachado del archivo. Sin tocar: el resto del ASCII, el ascii-note, image refs, claims verificados, atribuciones L002, audit trail [closed] previo.
   tags: [accuracy, visual, slide-content]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "1. Manos a la obra"
+  feedback: "Dejemos este slide como primer slide que abre la presentacion. No va a ser concluciones pero cierra perfecto toda la resentacion."
+  resolution: Movida del cierre a la apertura: es ahora la slide 1.1 y abre el deck (presentador confirmó "abre", no "cierra"). La sección Conclusions se eliminó. Speaker notes reescritas para apertura (decir la frase y hacer silencio, sin explicarla); la transición operativa al Día 1 (formación de equipos + licencia por grupo) que llevaba esta lámina se trasladó íntegra al nuevo slide Q&A (6.2), junto con su cita del README.
+  tags: [restructure, bad-order, positioning]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "4. El valor no llegó solo"
+  feedback: "Borrar este slide. Podriamos remplazar esto con un slide de mas el impacto en el usu.y eficiencia. Algo que sean numeros."
+  resolution: Slide "El manager es la palanca" reemplazada por la nueva 1.4 "El valor no llegó solo", con números verificados de Bain (37% apuntaba a recortar 11%–20% vs. casi 40% *de los que midieron resultados* en 0%–10%; 90% aumenta el presupuesto igual) y su tesis: "la tecnología funcionó, el valor no llegó — el arreglo es organizacional, no tecnológico". Atribución visible en lámina ("Bain 2026"); canónica en Sources: Bain Automation and AI Pathfinder Survey 2026 (n=951). Se conservó el 67/32 de Microsoft como bisagra hacia el manager (a confirmar); los +17/+22/+30 de People Science se cortaron a Cut material por densidad. Ninguna cifra fabricada llegó a lámina.
+  tags: [slide-content, accuracy, sources, rewrite]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "2. Objetivos de Aprendizaje"
+  feedback: "No mencionemos atlas sino que vamos a tener varias misiones."
+  resolution: Objetivo 4 genericizado: "Hands-on con la primera misión aplicada — Atlas" → "Hands-on con las misiones aplicadas — varias misiones a lo largo de la cursada". Ninguna misión se nombra ya en la Sección 2 (barrida completa: Content, Sources y speaker notes). El nombre Atlas se registró en Cut material y sobrevive solo en el cronograma (3.1), donde el pareo día↔misión es una decisión previa deliberada — confirmación pedida en Open questions.
+  tags: [slide-content, terminology, cut]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Section "3. Cronograma"
+  feedback: "Borremos este slide."
+  resolution: Slide "De un chat a una organización de agentes" eliminada; la Sección 3 queda con 1 slide. Contenido completo archivado en Cut material (lead, diagrama ASCII con su ascii-note, y las 3 misiones con su descripción). El render `images/s3-2-1-chat-delegar-orquestar.png` queda huérfano y NO se borró. Consecuencia gestionada: el arco Chat→Delegar→Orquestar ahora sobrevive solo como texto (objetivo 1 de 2.2) — verificado que se lee bien solo, y reforzado en los speaker notes de 2.2 y 3.1.
+  tags: [cut, restructure, visual]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "1. Siete sesiones"
+  feedback: "El texto de Siete sesiones deberia ir arriba."
+  resolution: Pin cambiado de `timeline` a `process`: `timeline` no tiene campo de lead (su formato es un rail vertical de fecha + detalle), por eso el texto introductorio caía debajo de los 7 hitos; `process` sí admite un lead sobre los pasos, y las 7 sesiones son una secuencia numerada legítima. El texto ahora renderiza arriba. Trade-off (se pierde el rail temporal, se gana una tira de tarjetas numeradas) registrado en Open questions para confirmación del presentador.
+  tags: [visual, bad-order, style]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "2. Herramientas del Curso"
+  feedback: "Borrar Herramientas del Curso como secccion y dejar herramientas del curso como parte de como trabajamos."
+  resolution: Sección "Herramientas del Curso" disuelta; la lámina sobrevive intacta como slide 4.2 dentro de "Cómo trabajamos". Deck: 7 → 6 secciones. El goal de la sección vieja se plegó al goal de la Sección 4, y la adyacencia con el Cronograma se preservó (Sección 3 → slide 4.2, misma posición relativa).
+  tags: [restructure, bad-order]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "2. Herramientas del Curso"
+  feedback: "Estaria bueno que automatizacion es realmente Autonatizacion y Analysis de datos. Burscar en todos lados."
+  resolution: "Automatización" → "Automatización y Análisis de Datos" en la slide 4.2, con el body ampliado para nombrar explícitamente el análisis de datos. Grep global aplicado ("buscar en todos lados"): las 2 únicas ocurrencias de la categoría (Content + Sources de la lámina) se actualizaron; "Automatizar" de la slide 1.6 y "Automatizando" del título del Día 2 en 3.1 se dejaron intactos — son otro concepto, no el nombre de la categoría.
+  tags: [terminology, slide-content]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "2. Herramientas del Curso"
+  feedback: "Creo que esta visualizacion no es clara. Tal vez una tabla simple pero manteniendo los iconos."
+  resolution: Visualización rehecha: de 3 tarjetas en fila (card-row) a una lista vertical de 3 filas con ícono por fila, pinneada `icon-list` — cada fila = ícono + categoría + para qué sirve. Es lo más cercano a la "tabla simple con iconos" pedida: el sistema de estilo prohíbe tablas nativas (las tablas pipe se renderizan como grillas de tarjetas). Nota de licencia por grupo preservada.
+  tags: [visual, too-vague, rewrite]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "3. Lo que se llevan"
+  feedback: "Mover este slide despues de Herramientas del Curso y borrar conclusiones."
+  resolution: "Lo que se llevan" movida a slide 4.3, inmediatamente después de Herramientas del Curso (4.2), dentro de "Cómo trabajamos"; la sección Conclusions se eliminó. Speaker notes reescritas: ya no cierra el deck — cierra el bloque de cómo trabajamos y cierra el círculo con la lámina de apertura (1.1).
+  tags: [restructure, bad-order, positioning]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Slide "3. Lo que se llevan"
+  feedback: "Agregar un slide Q&A. Buscar una imagen a la izquiera para utlizar."
+  resolution: Agregado slide 6.2 "Q&A" como cierre del deck, pinneado `closing-hero`. La imagen a la izquierda NO se pudo aplicar: no existe ningún asset candidato en `images/` ni en el corpus — no se inventó ninguna ruta. El slot quedó documentado en un TODO en la lámina (con la ruta exacta de cambio a `content+image`, ya que `closing-hero` es full-bleed y no admite `aside`) y el asset faltante registrado en Open questions.
+  tags: [add-slide, add-visual]

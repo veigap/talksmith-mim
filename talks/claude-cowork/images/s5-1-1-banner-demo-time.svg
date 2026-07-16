@@ -1,23 +1,21 @@
-<svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+<!-- talksmith-ascii-sha256: 353e0858d68a16a530e55f3e035e714e581805b2686a400d9fb83b5a9dbee15b -->
+<svg viewBox="0 0 748 328" xmlns="http://www.w3.org/2000/svg">
   <title>Demo time</title>
-  <desc>Momento de demo en vivo. Cerrás los conceptos y abrís Cowork.</desc>
+  <desc>Momento de demo en vivo: cerramos los conceptos y pasamos a la app real de Cowork.</desc>
 
-  <!-- canvas: always solid white -->
-  <rect x="0" y="0" width="900" height="320" fill="#ffffff"/>
+  <rect x="0" y="0" width="748" height="328" fill="#ffffff"/>
 
-  <!-- flat placard / sign: no isometric slab, no extrusion, no shadow -->
-  <rect x="40" y="40" width="820" height="240" rx="10" ry="10"
-        fill="#F4F2F2" stroke="#3B3535" stroke-width="3"/>
-  <rect x="54" y="54" width="792" height="212" rx="5" ry="5"
-        fill="none" stroke="#D6D0D0" stroke-width="1.5"/>
+  <rect x="24" y="24" width="700" height="280" rx="14" ry="14"
+        fill="#ffffff" stroke="#DA1B2E" stroke-width="3"/>
 
-  <!-- focal element: the single #DA1B2E accent of this diagram -->
-  <text x="450" y="136" text-anchor="middle" dominant-baseline="central"
-        font-family="Helvetica, Arial, sans-serif" font-size="76" font-weight="bold"
-        letter-spacing="8" fill="#DA1B2E">&gt; DEMO TIME</text>
+  <text x="378" y="138"
+        font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="bold"
+        letter-spacing="8" text-anchor="middle" fill="#DA1B2E">&gt; DEMO TIME</text>
 
-  <!-- quieter subtitle -->
-  <text x="450" y="211" text-anchor="middle" dominant-baseline="central"
-        font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="normal"
-        fill="#6E6666">[ Pasamos a la app real de Cowork ]</text>
+  <rect x="159" y="186" width="430" height="52" rx="26" ry="26"
+        fill="#F2EFEF" stroke="#D8D2D2" stroke-width="1.5"/>
+
+  <text x="374" y="221"
+        font-family="Helvetica, Arial, sans-serif" font-size="24"
+        text-anchor="middle" fill="#3B3535">Pasamos a la app real de Cowork</text>
 </svg>

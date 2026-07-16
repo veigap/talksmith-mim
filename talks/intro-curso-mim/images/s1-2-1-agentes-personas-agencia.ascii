@@ -1,0 +1,20 @@
+      AGENTES                              PERSONAS
+  +-------------------+              +----------------------+
+  | toman la          |              | ganan AGENCIA        |
+  | EJECUCION         |   ------->   |                      |
+  |                   |              |  - dirigir           |
+  |  - buscar datos   |              |  - decidir           |
+  |  - resumir        |              |  - responder por     |
+  |  - redactar       |              |    el resultado      |
+  |  - repetir        |              |                      |
+  +-------------------+              +----------------------+
+           \                                    /
+            \                                  /
+             v                                v
+      no es un juego de suma cero: crecen juntas
+
+<!-- ascii-note:
+intent: mostrar que ejecucion delegada y agencia humana crecen juntas, no en suma cero
+emphasize: la flecha central AGENTES -> PERSONAS; las dos cajas con igual peso visual
+labels: AGENTES (ejecucion) · PERSONAS (agencia) · pie: crecen juntas
+-->
