@@ -312,7 +312,6 @@ Puente hacia la siguiente slide: *"con eso en la cabeza, estos son los cinco obj
 
 - **Comprender el cambio de paradigma** — de chatear a delegar y orquestar.
 - **Desarrollar criterio profesional** — la filosofía por sobre la herramienta puntual.
-- **Conocer las principales herramientas de agentes** — Claude Cowork, Paperclip y otras.
 - **Hands-on con las misiones aplicadas** — varias misiones a lo largo de la cursada.
 - **Reflexionar sobre el impacto en la gestión y los negocios** — y cómo aplicarlo a mi propio trabajo.
 
@@ -661,6 +660,8 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - Ambas se habían parcheado en el modelo de render, no en el draft — por eso regresaban en cada re-corrida. Ahora están arregladas en el origen.
 
 # Cut material
+
+- **Objetivo de aprendizaje 3 — "Conocer las principales herramientas de agentes" (Claude Cowork, Paperclip y otras).** Cortado de la lámina 2.2 por pedido del presentador (revisión 2026-07-16). Era una de las cinco cajas de Objetivos; quedan cuatro. Coherente con la tesis y con el objetivo 2 ("la filosofía por sobre la herramienta puntual"): el curso usa las herramientas como vehículo, no como destino. Las herramientas siguen presentes en el deck (lámina 4.2, dentro de "Cómo trabajamos"), solo dejan de ser un objetivo declarado.
 
 - **Slide "De un chat a una organización de agentes"** (vieja 3.2) — **borrada a pedido explícito del presentador** (revisión 2026-07-16: *"Borremos este slide."*). Era la única lámina que enunciaba el arco CHAT → DELEGAR → ORQUESTAR y que listaba las tres misiones con su descripción. Se registra completa acá porque es recuperable y porque su desaparición tiene consecuencias vivas (ver *Open questions* → marco narrativo). Contenido:
   - Lead: *"El curso es una progresión. Cada día suma una pieza sobre la anterior."*
