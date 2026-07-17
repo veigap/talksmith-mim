@@ -359,3 +359,52 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "mas frases slop: 'X deja de Y y pasa a Z', 'X es lo que Y', 'el cambio/salto viene cuando...', 'X es lo que vuelve util a Y realmente' y similares"
   resolution: Dos familias nuevas agregadas a desrobotizar/reglas-propias (formulas de transformacion y hendidas de revelacion). Barrido del draft: 6 instancias reescritas (Why-it-matters de la tesis, goal de la seccion 2, gloss de fuente y nota de 4.3, nota de 4.12, ascii-note de 5.2); "Lo que ves es lo que hay" (nota 4.9) conservada por ser modismo fijo (WYSIWYG), no formula. Variantes hermanas (ahi es donde / lo que hace la diferencia / ya no X ahora Y) barridas sin hits.
   tags: [style, rewrite, slop-pattern]
+- talk: claude-cowork
+  date: 2026-07-16
+  location: Slides 1.1, 2.1, 2.2, 2.3, 2.5
+  origin: presenter-chat
+  feedback: "Correcciones s1-s2: 'la charla arranca ahi' slop; 'fecha de corte'->'fecha de entrenamiento'; 'se activa con un clic' es slop y mentira; 'la distincion de la charla' no se entiende; AHORA en minuscula; MCP redefinido; permisos en vez de 'borrador antes que envio'."
+  resolution: Aplicado inline: fecha de entrenamiento en bullet+diagrama+notas; "Se activa a través de la biblioteca de conectores. Muchos requieren autenticación."; "Dos modos de responder:"; "busca información real, actualizada"; MCP = "el nombre técnico que se le da a los conectores..."; cierre de 2.5 = cuidado con autorizaciones + mail automático sin revisión humana.
+  tags: [style, accuracy, terminology, rewrite]
+- talk: claude-cowork
+  date: 2026-07-16
+  location: Slides 3.1, 3.2
+  origin: presenter-chat
+  feedback: "Tarea programada = prompt que se ejecuta automaticamente en momento preestablecido y frecuencia definida; sacar 'suscribirse a una respuesta'; sacar 'mientras la nube no llega'; 'sin la computadora prendida'; que significa 'las notebooks se suspenden solas'?"
+  resolution: Definición reemplazada; bullet de suscripción eliminado; nube = "corre sin la computadora prendida"; Local sin la cláusula temporal; "notebooks" -> "laptops" en bullet, diagrama y notas (ambigüedad con notebooks de código).
+  tags: [terminology, accuracy, rewrite]
+- talk: claude-cowork
+  date: 2026-07-16
+  location: Frontmatter + slides 4.1, 4.2, 4.3 + C2
+  origin: presenter-chat
+  feedback: "Nadie va a entender 'engine de agente', son alumnos de management; 'vive aca' slop; Cowork es literalmente Claude instalado en una computadora (nunca mas 'compu'); '(encuadre de analistas)' slop; bullet de bioingenieria 100% slop y la charla no es de bioingenieria; 'la frase de la sesion' no es tal; el rol humano casi siempre es tipear el proximo prompt."
+  resolution: "misma base técnica" en vez de Agent SDK; Cowork = "Claude Code hecho para ofimática..."; opener 4.2 = "Claude instalado en la computadora... eso cambia la forma de trabajar"; atribución inline del nuevo Excel eliminada; bullet bioingeniería eliminado; AUDIENCIA MiM CONFIRMADA -> frontmatter (presentation+audience) y C2 reencuadrados a gestión; fila del rol humano = "Hacer cada paso intermedio" vs "Revisar el plan y corregir el rumbo"; "compu" purgada del documento y prohibida en reglas-propias.
+  tags: [audience, terminology, style, rewrite, slop-pattern]
+- talk: claude-cowork
+  date: 2026-07-16
+  location: Slides 4.4-4.8 (+5.1 por arrastre)
+  origin: presenter-chat
+  feedback: "Sacar 'ya recorrimos los tres primeros'; por que 'app real'?; modo Ask vs automatico; no aclarar 'sin slash commands'; 'que valen para todo, sin repetirlas' slop; sacar '(como el disclaimer legal)'; un project no es un 'lugar fijo'; 'explorador de archivos'; redaccion humana para la buena practica; 'Lo de afuera, Cowork no lo ve' comas compulsivas."
+  resolution: Todo aplicado inline; "lugar fijo" también corregido en el mapa 4.4 y C1; "slash commands" barrido de 5.1 (bullet, diagrama, notas); "folder picker" -> "explorador de archivos" también en notas; 4.8 = "Cowork no tiene acceso a nada fuera de ella salvo que le permitamos hacerlo".
+  tags: [style, terminology, rewrite, slop-pattern]
+- talk: claude-cowork
+  date: 2026-07-16
+  location: Slides 4.9, 4.10 + barrido (1.1, 2.4, 4.6, 4.13)
+  origin: presenter-chat
+  feedback: "'la maquina' es palabra rara, llamar a las cosas por su nombre; 'La estructura tambien la entiende la IA' mal escrito -> 'La IA esta especialmente entrenada para comprender su estructura'; 'el formato final, al ultimo', 'se genera una vez, al final'... sigo??"
+  resolution: Regla nueva en reglas-propias ("llamar a las cosas por su nombre"); bullet 4.9 con la redacción del presentador; barrido documento-completo de fragmentos con coma/punto y coma: 4.10 reescrita (5 bullets), 1.1 ("No busca información nueva."), 2.4 (MT Newswires), 4.6 ("Se escriben una sola vez." / "Conviene que sean cortas y claras."), 4.13 ("ya están funcionando").
+  tags: [style, rewrite, slop-pattern, terminology]
+- talk: claude-cowork
+  date: 2026-07-16
+  location: Slides 4.11, 4.13, 5.5, C1
+  origin: presenter-chat
+  feedback: "'lo mismo del chat, ahora con carpetas y archivos' (titulo 4.11); saca s4.13; cita -> 'mas de una vez'; 'El loop de Atlas, punta a punta'."
+  resolution: Título 4.11 = "Schedule en Cowork: tareas programadas sobre carpetas y archivos"; slide 4.13 (tablero de Atlas) eliminada con limpieza de referencias (nota 4.12, Open questions; mockup-tablero.png sin uso); cita de Skills = "más de una vez" en 5.1 y C1; "punta a punta" -> "El loop completo de Atlas:" / "El ciclo completo:" (5.5).
+  tags: [cut, style, rewrite, slide-content]
+- talk: claude-cowork
+  date: 2026-07-17
+  location: Nueva slide 3.3 + Agenda
+  origin: presenter-chat
+  feedback: "Ahora hagamos la division: introduce una slide entre cada parte para cortar (desde la seccion 4 en adelante es la segunda)."
+  resolution: Insertada slide 3.3 "Fin de la parte 1": placa ASCII de corte (FIN DE LA PARTE 1 / PARTE 2: Claude Cowork) + bullets con el contenido de cada parte; notas marcan la pausa de la clase y que Atlas parte 1 se resuelve con lo visto. Agenda actualizada con la estructura de dos partes. Deck en 28 slides.
+  tags: [add-slide, restructure, split]
