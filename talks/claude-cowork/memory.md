@@ -433,3 +433,9 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - **La única PNG en disco que NO entró al deck: `s5-1-1-banner-demo-time.png`.** Es exactamente la omisión conocida de la corrida anterior y por la misma causa estructural: el FILL clasificó "Demo time" como `divider`, que renderiza title-only. **La ironía sigue viva:** en la pasada de densidad se partió la 4.5 justamente para que el banner dejara de ser doc-only y pudiera renderizar; ahora el PNG existe, está dibujado y limpio, y este estilo igual no lo usa. Reversible con `content-image` + `layout: image-top`, pero ese template exige `facts` → habría que inventar contenido. Un render pptx SÍ lo usaría. Decisión pendiente de Paulo.
 - Files created/modified: output/html/index.html (re-renderizado), output/html/.icons/, memory.md. `output/slide-model.json` intacto.
 - Pendiente: el `output/final.pptx` en disco sigue siendo del talk VIEJO (strict, julio 9-10) — más desactualizado que nunca. Si Paulo quiere pptx hay que re-correr Step 7 con pptx-strict, que además usaría el banner.
+
+## 2026-07-15 — Step 5 (Review) — round 9b (barrido de slop, inline)
+- Status: complete
+- Origen: presenter-chat. El presentador reportó familias nuevas de slop: "X deja de Y y pasa a Z", "X es lo que Y", "el cambio/salto viene cuando", "es lo que vuelve útil a Y".
+- Aplicado por el orquestador en rol Editor (fix chico, sin dispatch): 2 reglas nuevas en desrobotizar/reglas-propias.md (fórmulas de transformación; hendidas de revelación) + 6 reescrituras en draft.md (tesis Why-it-matters, goal S2, fuente y nota de 4.3, nota de 4.12, ascii-note 5.2). "Lo que ves es lo que hay" (4.9) conservado: modismo fijo, no fórmula. Grep de variantes hermanas: sin hits.
+- Files: draft.md (6 líneas), config/feedback-backlog.md (+1 fila, +tag slop-pattern), reglas-propias.md del skill, memory.md

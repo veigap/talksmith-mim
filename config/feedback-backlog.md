@@ -4,7 +4,7 @@
 
 ## Tagging vocabulary
 
-Reuse existing tags before inventing new ones. In use: accuracy, add-slide, add-visual, audience, audience-address, bad-order, compact, cut, expand, merge-incorporation, positioning, redundancy, restructure, rewrite, roadmap, slide-content, sources, split, style, terminology, too-dense, too-vague, visual.
+Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, add-slide, add-visual, audience, audience-address, bad-order, compact, cut, expand, merge-incorporation, positioning, redundancy, restructure, rewrite, roadmap, slide-content, sources, split, style, terminology, too-dense, too-vague, visual.
 
 ## Entries
 
@@ -352,3 +352,10 @@ Reuse existing tags before inventing new ones. In use: accuracy, add-slide, add-
   feedback: "Agregar un slide Q&A. Buscar una imagen a la izquiera para utlizar."
   resolution: Agregado slide 6.2 "Q&A" como cierre del deck, pinneado `closing-hero`. La imagen a la izquierda NO se pudo aplicar: no existe ningún asset candidato en `images/` ni en el corpus — no se inventó ninguna ruta. El slot quedó documentado en un TODO en la lámina (con la ruta exacta de cambio a `content+image`, ya que `closing-hero` es full-bleed y no admite `aside`) y el asset faltante registrado en Open questions.
   tags: [add-slide, add-visual]
+- talk: claude-cowork
+  date: 2026-07-15
+  location: Thesis + goal S2 + notes/Sources de 4.3, 4.12 y ascii-note 5.2
+  origin: presenter-chat
+  feedback: "mas frases slop: 'X deja de Y y pasa a Z', 'X es lo que Y', 'el cambio/salto viene cuando...', 'X es lo que vuelve util a Y realmente' y similares"
+  resolution: Dos familias nuevas agregadas a desrobotizar/reglas-propias (formulas de transformacion y hendidas de revelacion). Barrido del draft: 6 instancias reescritas (Why-it-matters de la tesis, goal de la seccion 2, gloss de fuente y nota de 4.3, nota de 4.12, ascii-note de 5.2); "Lo que ves es lo que hay" (nota 4.9) conservada por ser modismo fijo (WYSIWYG), no formula. Variantes hermanas (ahi es donde / lo que hace la diferencia / ya no X ahora Y) barridas sin hits.
+  tags: [style, rewrite, slop-pattern]
