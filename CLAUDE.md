@@ -14,6 +14,20 @@ The `@`-import is a CLI convention and **some environments — notably Cowork �
 
 Everything below this line is reference. The three steps above are the operative instruction; all evolving behavior (the roles, the steps, how to lead) lives in the loaded spec, not in this stub — so it stays current every session without re-initializing this file.
 
+## Repo-level override — anti-slop authoring standard (this subject repo)
+
+This repo extends the plugin spec with a standing anti-slop rule for the **Editor** role. The skills live in this repo under `.claude/skills/` (project skills, shared with the whole teaching team over Git):
+
+| `Presentation language` (from `config/profile.md`) | Skill |
+|---|---|
+| Español | `desrobotizar` (`.claude/skills/desrobotizar/`) |
+| English | `stop-slop` (`.claude/skills/stop-slop/`) |
+
+Loading order: (1) a user-installed skill of the same name if listed in the session (it's the live, personally-maintained version); (2) this repo's project skill; (3) if the Skill tool can't load either, Read the project skill's `SKILL.md` **plus every file under its `references/`** — `references/reglas-propias.md` is part of the contract, not an optional extra. Never block authoring on a missing skill; warn in one line and continue.
+
+- **Drafting and reviewing (Steps 4–5, always on):** before writing **or rewriting** any presentation prose (thesis, agenda, section goals, slide titles, `### Content` — including rewrites that apply presenter feedback), the Editor loads the language-matched skill and authors under its criteria. A feedback fix that introduces a slop pattern is a defect. Speaker notes follow the skills' own scoping rules (e.g. the second-person rule exempts notes).
+- **Polish (Step 6, opt-in — one ask):** after the `draft.md → final.md` copy and **before** the diagram pass, offer the presenter one plain question (in the profile's language): whether to run an anti-slop pass over the deck. **If accepted**, walk `final.md` **one slide unit at a time** (each H2 + `### Content`, plus thesis, agenda, and section goals — never batched), apply the skill's full checklist to that unit, fix in place, then move on. Out of scope: speaker notes, `### Sources`, feedback logs, and the interior of fenced ASCII/code blocks. Report per slide (`<locator> | clean / N rewrites | patterns hit`) with grep evidence for greppable families — a "clean" claim without evidence is a defect. If declined, skip silently and never re-ask in the same Polish run.
+
 ---
 
 ## Context
