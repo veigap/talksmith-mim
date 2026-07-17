@@ -4,7 +4,7 @@
 
 ## Tagging vocabulary
 
-Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology, style, audience-address.
+Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology, style, audience-address, merge-incorporation.
 
 ## Entries
 
@@ -223,3 +223,10 @@ Reuse existing tags before inventing new ones. In use: restructure, add-slide, a
   feedback: "Em-dash purge for real: round 7 reporto 0 pero el grep del orquestador encontro ~27 en prosa."
   resolution: [Ampliado en round 8b a scope DOCUMENTO COMPLETO por pedido del presentador: las exenciones de Sources y audit trail eran incorrectas para la redaccion propia.] Purga total de draft.md: 164 em-dashes antes -> 27 despues (137 reemplazados, solo puntuacion, sin cambiar palabras: coma para separador editorial-titulo en Sources, punto y coma para glosas, ". Fuente:" en Cut material). Residuo final, cada uno justificado: 20 separadores del formato stampeado "- [closed] FECHA — " (formato MAQUINA del skill feedback-cycle: las regexes OPEN_BULLET/CLOSED_BULLET de feedback_cycle.py exigen ese em-dash literal; cambiarlo rompe find-closed-unmirrored/rescue-open) + 7 dentro de citas verbatim (2 en texto verbatim del presentador en bullets [closed]; 5 en citas textuales del corpus como "Claude Code vs Cowork — the close" y "Description drives triggering — semantic, not keyword"). 0 em-dashes fuera de esas dos clases, verificado con clasificador linea por linea. En round 8 previo: 2 alt-texts corregidos y 0 en prosa de presentacion.
   tags: [style, rewrite]
+- talk: claude-cowork
+  date: 2026-07-15
+  location: Slides 2.4, 4.12/4.13 (nueva), 5.1 + Open questions
+  origin: presenter-chat
+  feedback: "Paulo pusheo su reestructura a origin/main sin rounds 8/8b. Decision del presentador: KEEP OURS (estructura 5 secciones + Conclusions, registro rounds 8/8b); incorporar de la version de Paulo solo el contenido genuinamente nuevo, reescrito en nuestro registro."
+  resolution: Incorporados 3 beats de origin/main (b6227a3..1f60102), reescritos per desrobotizar (impersonal, sin tuteo, sin em-dashes, registro compacto): (1) "El tablero de Atlas" como slide NUEVA 4.13 cerrando la seccion 4 (Live Artifact semanal pulso-semanal-FECHA con historial; boceto del jefe como spec, image ref movida desde 4.12 sin duplicar; cierre de mision "mail y tablero, las dos entregas ya estan"); 4.12 adelgazada y sus notes pierden el ejemplo Atlas con puente a 4.13. (2) Seguridad de conectores en 2.4: bullet nuevo "Un conector no oficial, al autorizarse, accede a los datos del usuario. Conectar solo fuentes confiables." + quote oficial de 11175166 sumada a la fuente (ya verificada 2026-07-09); las notes ya cargaban el criterio. (3) Diagrama ASCII de creacion de Skill adaptado a 5.1 (labels impersonales "pedirla"/"subir"; compuerta SAVE/ENABLE como la trampa; render-driving, 5.1 no tiene image ref) + requisito Code execution ya presente, sin duplicar. HALLAZGO L002: support 12512198 (re-verificado 2026-07-15) ya NO documenta el camino lenguaje-natural (solo ZIP) -> fuente de 5.1 reescrita con atribucion honesta (version junio 2026 + verificacion firsthand del presentador) y nueva entrada de vigilancia en Open questions; 12512180 re-verificado OK (Code execution). NO adoptado de Paulo: estructura de 7 secciones, sus splits (2.4/2.5, interfaz/demo, superpoder/habilidad-base), sus titulos con tuteo ("Busca, conecta, autoriza", "Trabaja en .md"), su renumeracion y su redaccion (decision keep-ours del presentador).
+  tags: [slide-content, add-slide, add-visual, sources, merge-incorporation]

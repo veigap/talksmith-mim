@@ -230,6 +230,7 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin progr
 
 - Ejemplos guía: **mail y calendario**. "¿Qué mails me perdí ayer? ¿Qué tengo esta semana?"
 - Atlas: **MT Newswires** listo en el directorio, un clic.
+- Un conector no oficial, al autorizarse, **accede a los datos del usuario**. Conectar solo fuentes confiables.
 
 ### Sources
 
@@ -237,7 +238,7 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin progr
 - Anthropic Support, Use connectors to extend Claude's capabilities: https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities; cómo se conectan y usan los conectores desde la configuración.
 - corpus/agentic-ai-deck.zip.md, matriz 5.6 (Connectors configurados por la Settings UI; directorio + un clic).
 - "corpus/mision - auto.zip.md", MT Newswires "ya tiene un connector listo" (Step 2.1); Gmail connector de un clic (M3); "no estás programando: te conectás a un servicio que ya existe".
-- Anthropic Support, Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp; la vía de los conectores no oficiales / propios.
+- Anthropic Support, Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp; la vía de los conectores no oficiales / propios y la base del criterio de confianza: "allow you to connect Claude to services that have not been verified by Anthropic, and allow Claude to access and take action in these services" (verificado 2026-07-09).
 
 ### Speaker notes
 
@@ -885,24 +886,43 @@ Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se ense�
 - **Estándar** (todos los planes): estático. **Live** (Cowork, pago): página interactiva y persistente que **se refresca con datos actuales** y guarda **versiones** (pestaña "Live artifacts").
 - Se crea desde una tarea, o desde la pestaña (**New artifact**).
 - Estado hoy: **NO compartibles aún** (roadmap) · **locales** (no siguen al usuario entre dispositivos) · usan los connectors aprobados **sin re-preguntar**.
-- Atlas: el tablero `pulso-semanal-FECHA`, del boceto del jefe:
-
-![Boceto del tablero "Pulso semanal de mercado" (wireframe del jefe)](images/mockup-tablero.png)
 
 ### Sources
 
 - corpus/agentic-ai-deck.zip.md, definición de Artifact (dos tiers); slide 5.13 (Standard vs Advanced; Live Artifacts en Cowork); matriz 5.16 (Cowork ✓ full Artifacts + Live Artifacts).
-- "corpus/mision - auto.zip.md", Skill `publicar-tablero` (un artifact por semana, `pulso-semanal-FECHA`); estructura del mockup del tablero (boceto del jefe).
 - Anthropic Support, Use Live Artifacts in Claude Cowork: https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork; realidad oficial: persisten en la pestaña Live artifacts, se refrescan con datos actuales, guardan versiones; limitaciones: locales (no en la nube), NO compartibles aún (en roadmap), usan los connectors aprobados sin volver a preguntar; dos formas de crearlos (desde una tarea o desde la pestaña).
 
 ### Speaker notes
 
-Cierre de la sección Cowork. El jefe quería el reporte de dos formas: el email, que ya resolvimos con Gmail + Schedule, y una página siempre actualizada. El Live Artifact es esa página. Explicar la distinción: un Artifact estándar es una salida de un solo archivo, estática, lo que generás es lo que queda; un Live Artifact persiste en la pestaña Live artifacts, se refresca con datos actuales de tus apps conectadas al abrirlo y guarda historial de versiones. Ejemplo Atlas para desarrollar: un Live Artifact nuevo por semana (queda historial), con tarjetas por empresa, tabla resumen y un chip "LIVE", refrescado con los datos de la semana. Ser honesto con el estado del compartir, porque acá corregimos una confusión: hoy los Live Artifacts NO son compartibles (es del roadmap), son locales (no te siguen entre dispositivos) y usan los connectors que aprobaste sin volver a preguntar. Nota: versiones previas de este material mencionaban un "ShareDuo" con URL pública; eso NO es una capacidad de Cowork y se quitó. Mostrar el boceto del tablero, el "napkin sketch" del jefe, como el spec de diseño que el artifact reproduce. Tiempo objetivo: ~10 min.
+El jefe quería el reporte de dos formas: el email, que ya resolvimos con Gmail + Schedule, y una página siempre actualizada. El Live Artifact es esa página. Explicar la distinción: un Artifact estándar es una salida de un solo archivo, estática, lo que generás es lo que queda; un Live Artifact persiste en la pestaña Live artifacts, se refresca con datos actuales de tus apps conectadas al abrirlo y guarda historial de versiones. Ser honesto con el estado del compartir, porque acá corregimos una confusión: hoy los Live Artifacts NO son compartibles (es del roadmap), son locales (no te siguen entre dispositivos) y usan los connectors que aprobaste sin volver a preguntar. Nota: versiones previas de este material mencionaban un "ShareDuo" con URL pública; eso NO es una capacidad de Cowork y se quitó. El ejemplo de Atlas cierra la sección en la próxima lámina. Tiempo objetivo: ~7 min.
 
 ### Presenter feedback
 
 - [closed] 2026-06-09 — "Busca informacion sobre ShareDuo en oficial de CoWork, me parece que esto no esta en co-work. Me parece que esto es incorrecto."
   Resolution: MAJOR FIX: removidas TODAS las referencias a ShareDuo y el mecanismo inventado share='duo' (no es capacidad de Cowork). Reescrita la realidad oficial de Live Artifacts: pagina HTML interactiva persistente en la pestania Live artifacts, se refresca con datos actuales, guarda versiones; limitaciones: local (no nube, no sigue entre dispositivos), NO compartible aun (roadmap), usa connectors aprobados sin re-preguntar; dos formas de crear. Tambien limpiada la referencia a ShareDuo en el ASCII del loop de Conclusions. Reemplazada la fuente por la URL oficial de live-artifacts; notes actualizadas.
+
+---
+
+## 13. El tablero de Atlas
+
+### Content
+
+- Un Live Artifact nuevo por semana, `pulso-semanal-FECHA`. Queda el **historial**.
+- El **boceto del jefe es el spec**:
+
+![Boceto del tablero "Pulso semanal de mercado" (wireframe del jefe)](images/mockup-tablero.png)
+
+- Cierre de la misión: el jefe pidió mail y tablero. Las dos entregas ya están.
+
+### Sources
+
+- "corpus/mision - auto.zip.md", Skill `publicar-tablero` (un artifact por semana, `pulso-semanal-FECHA`); estructura del mockup del tablero (boceto del jefe).
+
+### Speaker notes
+
+Desarrollar el ejemplo que cierra la sección: un Live Artifact nuevo por semana con el ID `pulso-semanal-FECHA`, así queda historial de tableros. Adentro, tarjetas por empresa, tabla resumen y un chip "LIVE", refrescado con los datos de la semana. Mostrar el boceto del jefe, el "napkin sketch", como el spec de diseño que el artifact reproduce: lo dibujó a mano y el agente lo construye. Rematar con el cierre de misión: el jefe pidió el reporte por mail y el tablero siempre actualizado, y las dos entregas ya están funcionando. Tiempo objetivo: ~4 min.
+
+### Presenter feedback
 
 ---
 
@@ -925,14 +945,44 @@ Cierre de la sección Cowork. El jefe quería el reporte de dos formas: el email
   2. **Subir un ZIP** (Customize → Skills → "+").
 - Requisito: **Code execution** habilitado.
 - **La trampa del Save:** sin Save/enable, la Skill "no funciona".
+
+```ascii
+     CREAR UNA SKILL EN COWORK (GUI, sin slash commands)
+
+ CAMINO 1                       CAMINO 2
+ +---------------------+        +---------------------+
+ | pedirla en lenguaje |        | subir un ZIP        |
+ | natural: Claude     |        | Customize > Skills  |
+ | escribe el SKILL.md |        | > "+"               |
+ +---------------------+        +---------------------+
+            \                          /
+             v                        v
+        +==================================+
+        |   SAVE / ENABLE                  |  <== la trampa
+        |   (Customize > Skills)           |
+        +==================================+
+                        |
+                        v
+               +-----------------+
+               |  SKILL ACTIVA   |
+               +-----------------+
+
+   frenar en la compuerta = la Skill "no funciona"
+```
+<!-- ascii-note:
+intent: mostrar los dos caminos reales para crear una Skill en Cowork (pedirla en lenguaje natural, con Claude escribiendo el SKILL.md; o subir un ZIP) y que los dos convergen en la misma compuerta, Save / enable en Customize > Skills. Solo pasada esa compuerta la Skill queda activa.
+emphasize: la compuerta "SAVE / ENABLE" como cuello de botella del dibujo (caja de doble línea, marcada "la trampa") y la leyenda inferior "frenar en la compuerta = la Skill no funciona"; que los dos caminos convergen en ella y ninguno la esquiva; que Cowork es GUI y no existe un tercer camino por slash command.
+labels: camino 1 = pedirla en lenguaje natural (Claude escribe el SKILL.md); camino 2 = subir un ZIP (Customize > Skills > "+"); compuerta = Save / enable (Customize > Skills); salida = Skill activa.
+-->
+
 - Atlas: `reporte-semanal` consolida la carpeta `fuentes/` en un reporte con formato fijo.
 
 ### Sources
 
 - corpus/agentic-ai-deck.zip.md, definición de Skill (folder + SKILL.md, "one job per skill"); "Anything you explain to Claude twice is a skill you should write once."
 - "corpus/mision - auto.zip.md", el ejemplo `reporte-semanal` (lee la carpeta `fuentes/`, consolida por empresa, formato fijo, sufijo `-new`).
-- Anthropic Support, Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude; habilitar Skills en Customize → Skills; requiere Code execution.
-- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills; los dos caminos en Cowork (pedírsela en lenguaje natural y habilitarla; o subir un ZIP).
+- Anthropic Support, Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude; habilitar Skills en Customize → Skills; requiere Code execution ("This feature requires code execution to be enabled"; re-verificado 2026-07-15).
+- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills; la versión ACTUAL del artículo (re-verificada 2026-07-15) documenta solo el camino ZIP + habilitación en Customize → Skills. El camino en lenguaje natural estaba documentado en la versión de junio 2026 y está verificado de primera mano por el presentador (registros [closed] del 2026-06-09 abajo); atribuido a esa verificación, no al artículo actual.
 
 ### Speaker notes
 
@@ -1183,9 +1233,10 @@ Slide de cierre responsable, breve y obligatoria. Para esta audiencia de bioinge
 # Open questions
 
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
-- Imágenes diferidas (Phase 2 del librarian no corrida): las imágenes citadas desde el corpus (`screenshot-cowork-tab.png` en slide 4.5, `mockup-tablero.png` en slide 4.12) provienen de registros con `<!-- pending: process_images -->`. Las imágenes existen en disco y se referencian; re-verificar depiction/relevance tras correr librarian Phase 2.
+- Imágenes diferidas (Phase 2 del librarian no corrida): las imágenes citadas desde el corpus (`screenshot-cowork-tab.png` en slide 4.5, `mockup-tablero.png` en slide 4.13) provienen de registros con `<!-- pending: process_images -->`. Las imágenes existen en disco y se referencian; re-verificar depiction/relevance tras correr librarian Phase 2.
 - Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
-- Slide 4.12 (Live Artifacts) cita pending stub "corpus/mision - auto.zip.md" (mockup-tablero); re-verify after librarian Phase 2.
+- Slide 4.13 (El tablero de Atlas) cita pending stub "corpus/mision - auto.zip.md" (mockup-tablero); re-verify after librarian Phase 2.
+- **Camino "lenguaje natural" de creación de Skills (slide 5.1):** la versión actual de support 12512198 (re-verificada 2026-07-15) ya no lo documenta; solo el camino ZIP. El camino se mantiene en la slide atribuido a la versión de junio 2026 del artículo + verificación de primera mano del presentador (registros [closed] 2026-06-09). Re-chequear en el producto antes de la clase; si Cowork lo quitó, corregir slide y diagrama.
 - Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
 - **Slide 4.5; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
