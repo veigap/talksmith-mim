@@ -1,0 +1,27 @@
+     CREAR UNA SKILL EN COWORK (GUI, sin slash commands)
+
+ CAMINO 1                       CAMINO 2
+ +---------------------+        +---------------------+
+ | pedila en lenguaje  |        | subi un ZIP         |
+ | natural: Claude     |        | Customize > Skills  |
+ | escribe el SKILL.md |        | > "+"               |
+ +---------------------+        +---------------------+
+            \                          /
+             v                        v
+        +==================================+
+        |   SAVE / ENABLE                  |  <== la trampa
+        |   (Customize > Skills)           |
+        +==================================+
+                        |
+                        v
+               +-----------------+
+               |  SKILL ACTIVA   |
+               +-----------------+
+
+   frenar en la compuerta = la Skill "no funciona"
+
+<!-- ascii-note:
+intent: mostrar los dos caminos reales para crear una Skill en Cowork (pedirla en lenguaje natural, con Claude escribiendo el SKILL.md; o subir un ZIP) y que los dos convergen en la misma compuerta, Save / enable en Customize → Skills. Solo pasada esa compuerta la Skill queda activa.
+emphasize: la compuerta "SAVE / ENABLE" como cuello de botella del dibujo (caja de doble línea, marcada "la trampa") y la leyenda de abajo "frenar en la compuerta = la Skill no funciona"; que los dos caminos convergen en ella y ninguno la esquiva; que Cowork es GUI y no hay un tercer camino por slash command.
+labels: camino 1 = pedila en lenguaje natural (Claude escribe el SKILL.md); camino 2 = subí un ZIP (Customize → Skills → "+"); compuerta = Save / enable (Customize → Skills); salida = Skill activa.
+-->

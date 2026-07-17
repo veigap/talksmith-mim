@@ -6,7 +6,7 @@
 
 ## Subject
 
-Inteligencia Artificial: de lo conceptual a lo práctico — Master in Management (MiM), IAE Business School, Universidad Austral (https://www.iae.edu.ar/programas/mim/)
+Agentes Inteligentes — Master in Management (MiM), IAE Business School, Universidad Austral (https://www.iae.edu.ar/programas/mim/)
 
 ## Presenter
 
@@ -27,3 +27,7 @@ Profesionales del dominio de negocios, no ingenieros — estudiantes del Master 
 ## Presentation language
 
 Español
+
+## Institution logo
+
+`config/logo.png` — logo institucional IAE Business School / Universidad Austral. Se usa en la portada de todo deck renderizado de este repo.

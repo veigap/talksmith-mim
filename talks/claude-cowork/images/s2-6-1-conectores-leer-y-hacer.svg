@@ -1,0 +1,38 @@
+<!-- talksmith-ascii-sha256: 47d98d20f0dad0ef5c4b052b1f2011ce8599c0c2b6655c70a9e31780cbd88d8c -->
+<svg viewBox="0 0 850 386" xmlns="http://www.w3.org/2000/svg">
+  <title>Los conectores también actúan</title>
+  <desc>El conector era una antena que traía info; ahora es una mano que actúa.</desc>
+
+  <rect x="0" y="0" width="850" height="386" fill="#ffffff"/>
+
+  <!-- Título -->
+  <text x="425" y="44" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B3535" text-anchor="middle">El conector va en dos direcciones</text>
+
+  <!-- Banda LEER (traer info) -->
+  <text x="425" y="94" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">LEER · traer info</text>
+  <text x="425" y="116" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#7A7070" text-anchor="middle">inbox · agenda · noticias</text>
+  <line x1="812" y1="144" x2="52" y2="144" stroke="#9A9090" stroke-width="2.5"/>
+  <path d="M 40 144 L 54 137.5 L 54 150.5 Z" fill="#9A9090"/>
+
+  <!-- CHAT -->
+  <rect x="28" y="176" width="150" height="96" rx="6" fill="#F2F0F0" stroke="#B8B0B0" stroke-width="1.5"/>
+  <text x="103" y="218" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">CHAT</text>
+  <text x="103" y="240" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7A7070" text-anchor="middle">la IA que ya usás</text>
+
+  <!-- CONECTOR -->
+  <rect x="310" y="176" width="180" height="96" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="2.5"/>
+  <text x="400" y="218" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="middle">conector</text>
+  <text x="400" y="240" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7A7070" text-anchor="middle">conectás y autorizás</text>
+
+  <!-- TU MUNDO -->
+  <rect x="622" y="176" width="200" height="96" rx="6" fill="#F2F0F0" stroke="#B8B0B0" stroke-width="1.5"/>
+  <text x="722" y="206" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535" text-anchor="middle">tu mundo</text>
+  <text x="722" y="230" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7A7070" text-anchor="middle">mail · calendario</text>
+  <text x="722" y="250" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#7A7070" text-anchor="middle">tickets · mensajes</text>
+
+  <!-- Banda ACTUAR (hacer) -->
+  <line x1="40" y1="304" x2="798" y2="304" stroke="#DA1B2E" stroke-width="3"/>
+  <path d="M 812 304 L 798 296.5 L 798 311.5 Z" fill="#DA1B2E"/>
+  <text x="425" y="332" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#DA1B2E" text-anchor="middle">ACTUAR · hacer</text>
+  <text x="425" y="354" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#7A7070" text-anchor="middle">mandar mail · agendar reunión · abrir ticket · mensaje</text>
+</svg>

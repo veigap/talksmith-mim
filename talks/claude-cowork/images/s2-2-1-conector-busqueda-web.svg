@@ -1,57 +1,72 @@
-<svg viewBox="0 0 680 364" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<!-- talksmith-ascii-sha256: e6a7b0b470b39438297c002f4df7e7868cdce768aed876ce6666a78c7ec8f4f5 -->
+<svg viewBox="0 0 692 372" xmlns="http://www.w3.org/2000/svg">
   <title>El primer conector: búsqueda web</title>
-  <desc>La misma pregunta respondida de memoria de entrenamiento contra respondida con búsqueda web: memoria vs información viva.</desc>
+  <desc>La misma pregunta por dos caminos: de memoria el chat responde hasta su fecha de corte y puede estar viejo o inventado; con búsqueda web trae información real y actual con fuentes citadas.</desc>
 
   <defs>
-    <marker id="ah-grey" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L9,4 L0,8 Z" fill="#6A737D"/>
-    </marker>
-    <marker id="ah-red" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L9,4 L0,8 Z" fill="#DA1B2E"/>
-    </marker>
+    <clipPath id="panelIzq"><rect x="24" y="132" width="300" height="216" rx="6"/></clipPath>
+    <clipPath id="panelDer"><rect x="368" y="132" width="300" height="216" rx="6"/></clipPath>
   </defs>
 
-  <rect x="0" y="0" width="680" height="364" fill="#ffffff"/>
+  <rect x="0" y="0" width="692" height="372" fill="#ffffff"/>
 
-  <!-- shared question -->
-  <rect x="140" y="16" width="400" height="54" rx="5" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.4"/>
-  <text x="340" y="37" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#6A737D">LA MISMA PREGUNTA</text>
-  <text x="340" y="58" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">«¿Cuál es la última versión de X?»</text>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
 
-  <!-- fork -->
-  <line x1="340" y1="70" x2="340" y2="92" stroke="#6A737D" stroke-width="1.6"/>
-  <line x1="340" y1="92" x2="175" y2="92" stroke="#6A737D" stroke-width="1.6"/>
-  <line x1="340" y1="92" x2="505" y2="92" stroke="#DA1B2E" stroke-width="1.6"/>
-  <line x1="175" y1="92" x2="175" y2="116" stroke="#6A737D" stroke-width="1.6" marker-end="url(#ah-grey)"/>
-  <line x1="505" y1="92" x2="505" y2="116" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#ah-red)"/>
+    <!-- Pregunta compartida -->
+    <rect x="156" y="24" width="380" height="40" rx="20" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.5"/>
+    <text x="346" y="49" font-size="14" text-anchor="middle" fill="#3B3535">la MISMA pregunta: «¿última versión de X?»</text>
 
-  <!-- column headers -->
-  <text x="175" y="136" text-anchor="middle" font-size="13" font-weight="bold" letter-spacing="0.8" fill="#6A737D">DE MEMORIA</text>
-  <text x="505" y="136" text-anchor="middle" font-size="13" font-weight="bold" letter-spacing="0.8" fill="#DA1B2E">CON BÚSQUEDA WEB</text>
+    <!-- Bifurcación -->
+    <g stroke="#8A8080" stroke-width="1.5" fill="none">
+      <path d="M346 60 L346 84"/>
+      <path d="M174 84 L518 84"/>
+      <path d="M174 84 L174 124"/>
+    </g>
+    <path d="M518 84 L518 124" stroke="#DA1B2E" stroke-width="1.5" fill="none"/>
+    <path d="M169 124 L179 124 L174 132 Z" fill="#8A8080"/>
+    <path d="M513 124 L523 124 L518 132 Z" fill="#DA1B2E"/>
 
-  <!-- left path: mechanism -->
-  <rect x="50" y="148" width="250" height="72" rx="5" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="1.4"/>
-  <text x="175" y="178" text-anchor="middle" font-size="14" fill="#3B3535">Entrenamiento hasta</text>
-  <text x="175" y="198" text-anchor="middle" font-size="14" fill="#3B3535">la fecha de corte</text>
+    <!-- ============ Panel izquierdo: DE MEMORIA ============ -->
+    <g clip-path="url(#panelIzq)">
+      <rect x="24" y="132" width="300" height="216" fill="#ffffff"/>
+      <rect x="24" y="132" width="300" height="28" fill="#EDEAEA"/>
+      <path d="M24 160 L324 160" stroke="#B9B2B2" stroke-width="1.5" fill="none"/>
+    </g>
+    <text x="174" y="152" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="1.1" fill="#3B3535">DE MEMORIA</text>
 
-  <!-- right path: mechanism -->
-  <rect x="380" y="148" width="250" height="72" rx="5" fill="#ffffff" stroke="#DA1B2E" stroke-width="1.6"/>
-  <text x="505" y="178" text-anchor="middle" font-size="14" fill="#3B3535">Va a buscar AHORA</text>
-  <text x="505" y="198" text-anchor="middle" font-size="14" fill="#3B3535">en la web, en vivo</text>
+    <rect x="40" y="174" width="268" height="66" rx="4" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.2"/>
+    <text x="174" y="202" font-size="14" text-anchor="middle" fill="#3B3535">entrenamiento</text>
+    <text x="174" y="222" font-size="14" text-anchor="middle" fill="#3B3535">hasta la fecha de corte</text>
 
-  <!-- connectors to outcome -->
-  <line x1="175" y1="220" x2="175" y2="250" stroke="#6A737D" stroke-width="1.6" marker-end="url(#ah-grey)"/>
-  <line x1="505" y1="220" x2="505" y2="250" stroke="#DA1B2E" stroke-width="1.6" marker-end="url(#ah-red)"/>
+    <path d="M174 240 L174 256" stroke="#8A8080" stroke-width="1.5" fill="none"/>
+    <path d="M169 256 L179 256 L174 264 Z" fill="#8A8080"/>
 
-  <!-- left outcome -->
-  <rect x="50" y="254" width="250" height="88" rx="5" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="1.4"/>
-  <text x="175" y="280" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#6A737D">RESPUESTA</text>
-  <text x="175" y="304" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">Quizás vieja</text>
-  <text x="175" y="324" text-anchor="middle" font-size="15" font-weight="bold" fill="#3B3535">o inventada</text>
+    <rect x="40" y="264" width="268" height="68" rx="4" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.2"/>
+    <text x="174" y="292" font-size="15" font-weight="bold" text-anchor="middle" fill="#3B3535">respuesta</text>
+    <text x="174" y="314" font-size="13" text-anchor="middle" fill="#8A8080">quizás vieja o inventada</text>
 
-  <!-- right outcome (focal) -->
-  <rect x="380" y="254" width="250" height="88" rx="5" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="1.8"/>
-  <text x="505" y="280" text-anchor="middle" font-size="10.5" letter-spacing="1.2" fill="#DA1B2E">RESPUESTA</text>
-  <text x="505" y="304" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">Info REAL y actual</text>
-  <text x="505" y="324" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F1E1E">+ fuentes citadas</text>
+    <rect x="24" y="132" width="300" height="216" rx="6" fill="none" stroke="#B9B2B2" stroke-width="1.5"/>
+
+    <!-- ============ Panel derecho: CON BÚSQUEDA WEB ============ -->
+    <g clip-path="url(#panelDer)">
+      <rect x="368" y="132" width="300" height="216" fill="#ffffff"/>
+      <rect x="368" y="132" width="300" height="28" fill="#FCEEF0"/>
+      <path d="M368 160 L668 160" stroke="#DA1B2E" stroke-width="1.5" fill="none"/>
+    </g>
+    <text x="518" y="152" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="1.1" fill="#DA1B2E">CON BÚSQUEDA WEB</text>
+
+    <rect x="384" y="174" width="268" height="66" rx="4" fill="#F4F2F2" stroke="#B9B2B2" stroke-width="1.2"/>
+    <text x="518" y="202" font-size="14" text-anchor="middle" fill="#3B3535">busca AHORA</text>
+    <text x="518" y="222" font-size="14" text-anchor="middle" fill="#3B3535">en la web</text>
+
+    <path d="M518 240 L518 256" stroke="#DA1B2E" stroke-width="1.5" fill="none"/>
+    <path d="M513 256 L523 256 L518 264 Z" fill="#DA1B2E"/>
+
+    <rect x="384" y="264" width="268" height="68" rx="4" fill="#FCEEF0" stroke="#DA1B2E" stroke-width="1.5"/>
+    <text x="518" y="292" font-size="15" font-weight="bold" text-anchor="middle" fill="#DA1B2E">info REAL y actual</text>
+    <text x="518" y="314" font-size="13" text-anchor="middle" fill="#3B3535">+ fuentes citadas</text>
+
+    <rect x="368" y="132" width="300" height="216" rx="6" fill="none" stroke="#DA1B2E" stroke-width="1.5"/>
+
+  </g>
 </svg>

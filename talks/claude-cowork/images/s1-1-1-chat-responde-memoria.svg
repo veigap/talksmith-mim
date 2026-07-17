@@ -1,40 +1,45 @@
-<svg viewBox="0 0 680 252" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+<!-- talksmith-ascii-sha256: 005d46777b8d6cdd4282113a2080dafcfd58d46710502dfebbc4f056caed67b5 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 674 256">
   <title>El chat responde de memoria</title>
-  <desc>Ese chat, tal como viene de fábrica, responde desde su memoria de entrenamiento: una foto congelada hasta la fecha de corte, sin acceso al mundo del usuario.</desc>
+  <desc>El chat, tal como viene de fábrica, responde de memoria: recuerda hasta su fecha de corte y no ve tus mails, calendario, archivos ni apps.</desc>
 
-  <rect x="0" y="0" width="680" height="252" fill="#ffffff"/>
+  <rect x="0" y="0" width="674" height="256" fill="#ffffff"/>
 
-  <text x="32" y="30" font-size="16" font-weight="bold" fill="#1F1E1E">El chat «como viene de fábrica»</text>
+  <g font-family="Helvetica, Arial, sans-serif">
 
-  <!-- Caja exterior: CHAT DE IA -->
-  <rect x="32" y="54" width="340" height="170" rx="6" fill="#ffffff" stroke="#D8D4D4" stroke-width="1.5"/>
-  <text x="202" y="80" font-size="13" font-weight="bold" fill="#3B3535" text-anchor="middle">CHAT DE IA</text>
+    <!-- Título -->
+    <text x="24" y="37" font-size="17" font-weight="bold" fill="#1F1E1E" letter-spacing="0.6">EL CHAT «COMO VIENE DE FÁBRICA»</text>
 
-  <!-- Caja interior (focal): memoria de entrenamiento -->
-  <rect x="56" y="96" width="292" height="76" rx="5" fill="#F9D2D6" stroke="#DA1B2E" stroke-width="2"/>
-  <text x="202" y="120" font-size="12.5" font-weight="bold" fill="#1F1E1E" text-anchor="middle">MEMORIA DE ENTRENAMIENTO</text>
-  <text x="202" y="138" font-size="10.5" fill="#3B3535" text-anchor="middle">foto congelada hasta la</text>
-  <text x="202" y="156" font-size="10.5" fill="#3B3535" text-anchor="middle">fecha de corte</text>
+    <!-- Caja exterior: CHAT DE IA -->
+    <rect x="25" y="63" width="378" height="168" rx="6" fill="#ffffff" stroke="#D8D4D4" stroke-width="2"/>
+    <text x="214" y="92" font-size="15" font-weight="bold" fill="#1F1E1E" letter-spacing="0.8" text-anchor="middle">CHAT DE IA</text>
 
-  <text x="202" y="201" font-size="11.5" fill="#3B3535" text-anchor="middle">responde «de memoria»</text>
+    <!-- Caja interior (foco): memoria de entrenamiento -->
+    <rect x="49" y="109" width="330" height="72" rx="5" fill="#ffffff" stroke="#DA1B2E" stroke-width="2"/>
+    <text x="214" y="137" font-size="13.5" font-weight="bold" fill="#DA1B2E" letter-spacing="0.4" text-anchor="middle">MEMORIA DE ENTRENAMIENTO</text>
+    <text x="214" y="161" font-size="12" fill="#3B3535" text-anchor="middle">«foto congelada» hasta la fecha de corte</text>
 
-  <!-- Panel derecho: lo que NO ve (fuera de la caja) -->
-  <rect x="404" y="54" width="244" height="170" rx="6" fill="#F2F2F2"/>
-  <text x="424" y="80" font-size="12.5" font-weight="bold" fill="#1F1E1E">Lo que NO ve</text>
+    <text x="214" y="208" font-size="13" fill="#3B3535" text-anchor="middle">responde «de memoria» — no busca</text>
 
-  <g stroke="#6A737D" stroke-width="1.6" stroke-linecap="round">
-    <line x1="426" y1="100" x2="434" y2="108"/><line x1="434" y1="100" x2="426" y2="108"/>
-    <line x1="426" y1="124" x2="434" y2="132"/><line x1="434" y1="124" x2="426" y2="132"/>
-    <line x1="426" y1="148" x2="434" y2="156"/><line x1="434" y1="148" x2="426" y2="156"/>
-    <line x1="426" y1="172" x2="434" y2="180"/><line x1="434" y1="172" x2="426" y2="180"/>
-    <line x1="426" y1="196" x2="434" y2="204"/><line x1="434" y1="196" x2="426" y2="204"/>
-  </g>
+    <!-- Panel: lo que NO ve (fuera de la caja) -->
+    <rect x="441" y="63" width="208" height="168" rx="6" fill="#F2EEEE" stroke="#D8D4D4" stroke-width="2"/>
+    <text x="456" y="92" font-size="13.5" font-weight="bold" fill="#1F1E1E">lo que NO ve:</text>
 
-  <g font-size="11" fill="#3B3535">
-    <text x="446" y="108">noticias de hoy</text>
-    <text x="446" y="132">tus mails</text>
-    <text x="446" y="156">tu calendario</text>
-    <text x="446" y="180">tus archivos</text>
-    <text x="446" y="204">las apps de tu trabajo</text>
+    <g stroke="#3B3535" stroke-width="1.8" stroke-linecap="round">
+      <path d="M 458 109 L 466 117 M 466 109 L 458 117"/>
+      <path d="M 458 132 L 466 140 M 466 132 L 458 140"/>
+      <path d="M 458 155 L 466 163 M 466 155 L 458 163"/>
+      <path d="M 458 178 L 466 186 M 466 178 L 458 186"/>
+      <path d="M 458 201 L 466 209 M 466 201 L 458 209"/>
+    </g>
+
+    <g font-size="13" fill="#3B3535">
+      <text x="476" y="117">noticias de hoy</text>
+      <text x="476" y="140">tus mails</text>
+      <text x="476" y="163">tu calendario</text>
+      <text x="476" y="186">tus archivos</text>
+      <text x="476" y="209">las apps de tu trabajo</text>
+    </g>
+
   </g>
 </svg>

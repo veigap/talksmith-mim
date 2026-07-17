@@ -1,0 +1,12 @@
+url: "https://www.bain.com/insights/your-ai-budget-is-growing-your-returns-arent-heres-why/"
+fetched_at: "2026-07-16T12:10:02Z"
+title: "Your AI Budget Is Growing. Your Returns Aren't. Here's Why.  | Bain & Company"
+http_status: 200
+byte_size: 233282
+assets:
+  - { src: "/contentassets/0b88e3e10a7b4592809517c28b75847e/logo_red_bain.svg", absolute: "https://www.bain.com/contentassets/0b88e3e10a7b4592809517c28b75847e/logo_red_bain.svg", saved_as: "logo_red_bain.svg", alt: "" }
+  - { src: "/contentassets/0b88e3e10a7b4592809517c28b75847e/logo_white-bain.svg", absolute: "https://www.bain.com/contentassets/0b88e3e10a7b4592809517c28b75847e/logo_white-bain.svg", saved_as: "logo_white-bain.svg", alt: "" }
+  - { src: "/contentassets/6fb1ad9c086f44fe80ca56fd91f3bf1f/45141-hero-3-1.jpg?width=768&height=256&rmode=crop&rsampler=bicubic&compand=true", absolute: "https://www.bain.com/contentassets/6fb1ad9c086f44fe80ca56fd91f3bf1f/45141-hero-3-1.jpg?width=768&height=256&rmode=crop&rsampler=bicubic&compand=true", saved_as: "45141-hero-3-1.jpg", alt: "" }
+  - { src: "https://public.flourish.studio/visualisation/28786844/thumbnail", absolute: "https://public.flourish.studio/visualisation/28786844/thumbnail", saved_as: "thumbnail.bin", alt: "visualization" }
+  - { src: "https://public.flourish.studio/visualisation/28787067/thumbnail", absolute: "https://public.flourish.studio/visualisation/28787067/thumbnail", saved_as: "thumbnail-2.bin", alt: "visualization" }
+  - { src: "https://public.flourish.studio/visualisation/28787957/thumbnail", absolute: "https://public.flourish.studio/visualisation/28787957/thumbnail", saved_as: "thumbnail-3.bin", alt: "visualization" }

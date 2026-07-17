@@ -1,0 +1,56 @@
+<!-- talksmith-ascii-sha256: 35aee9916be46443a704010a6777da50d8cfcd75b357b131f245cb37a5d9989b -->
+<svg viewBox="0 0 680 348" xmlns="http://www.w3.org/2000/svg">
+  <title>Anatomía de un SKILL.md</title>
+  <desc>Un SKILL.md abierto y partido en dos zonas: arriba el header YAML entre guiones, con name y description; abajo el cuerpo en Markdown con los pasos que sigue el agente.</desc>
+
+  <rect x="0" y="0" width="680" height="348" fill="#ffffff"/>
+
+  <!-- ================= tarjeta del archivo ================= -->
+  <!-- zona A: metadata / header (YAML) -->
+  <rect x="24" y="24" width="433" height="136" fill="#F4F2F2"/>
+  <!-- zona B: cuerpo (Markdown) -->
+  <rect x="24" y="160" width="433" height="136" fill="#ffffff"/>
+  <!-- contorno + divisoria -->
+  <rect x="24" y="24" width="433" height="272" fill="none" stroke="#3B3535" stroke-width="1.5"/>
+  <line x1="24" y1="160" x2="457" y2="160" stroke="#3B3535" stroke-width="1.5"/>
+
+  <!-- barra roja: la description es el foco -->
+  <rect x="30" y="78" width="3" height="53" fill="#DA1B2E"/>
+
+  <!-- contenido del archivo (monoespaciado, literal) -->
+  <g font-family="'DejaVu Sans Mono', monospace" font-size="12" fill="#3B3535">
+    <text xml:space="preserve" x="38" y="49">---</text>
+    <text xml:space="preserve" x="38" y="68"><tspan font-weight="bold">name:</tspan> reporte-semanal</text>
+    <text xml:space="preserve" x="38" y="87"><tspan font-weight="bold" fill="#DA1B2E">description:</tspan> Genera el pulso semanal de mercado a partir</text>
+    <text xml:space="preserve" x="38" y="106">  de la carpeta fuentes/ de la semana. Usar cuando pidan</text>
+    <text xml:space="preserve" x="38" y="125">  "reporte semanal" o "pulso de la semana".</text>
+    <text xml:space="preserve" x="38" y="144">---</text>
+
+    <text xml:space="preserve" x="38" y="185" font-weight="bold"># Reporte semanal</text>
+    <text xml:space="preserve" x="38" y="223">1. Leé TODOS los archivos de fuentes/ y consolidá</text>
+    <text xml:space="preserve" x="38" y="242">   por empresa.</text>
+    <text xml:space="preserve" x="38" y="261">2. Generá el reporte con esta estructura exacta...</text>
+    <text xml:space="preserve" x="38" y="280">3. Guardá con sufijo -new (no pises el original).</text>
+  </g>
+
+  <!-- llaves laterales (paths, sin glifos de flecha) -->
+  <g stroke="#3B3535" stroke-width="1.2" fill="none" stroke-linecap="round">
+    <path d="M 464,26 L 470,26 L 470,158 L 464,158"/>
+    <path d="M 470,92 L 476,92"/>
+    <path d="M 464,162 L 470,162 L 470,294 L 464,294"/>
+    <path d="M 470,228 L 476,228"/>
+  </g>
+
+  <!-- etiquetas de zona -->
+  <g font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+    <text x="482" y="88" font-size="12.5" font-weight="bold">METADATA / HEADER (YAML)</text>
+    <text x="482" y="106" font-size="11.5" fill="#6B6060">«qué es» + «cuándo se activa»</text>
+
+    <text x="482" y="224" font-size="12.5" font-weight="bold">CUERPO (Markdown)</text>
+    <text x="482" y="242" font-size="11.5" fill="#6B6060">«qué hace»: las instrucciones</text>
+  </g>
+
+  <!-- pie: el punto a fijar -->
+  <rect x="24" y="315" width="6" height="6" fill="#DA1B2E"/>
+  <text x="38" y="321" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#3B3535">La <tspan font-family="'DejaVu Sans Mono', monospace" fill="#DA1B2E" font-weight="bold">description</tspan> decide cuándo se activa la Skill — por sentido, no por palabra clave.</text>
+</svg>
