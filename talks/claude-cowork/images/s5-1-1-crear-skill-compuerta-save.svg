@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560">
+  <title>Skills: enseñarle a Claude algo una sola vez</title>
+  <desc>Los dos caminos para crear una Skill en Cowork convergen en la compuerta Save / enable: sin pasarla, la Skill no queda activa y parece que no funciona.</desc>
+
+  <!-- canvas -->
+  <rect x="0" y="0" width="680" height="560" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="340" y="38" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B3535">Crear una Skill en Cowork (desde la interfaz)</text>
+
+  <!-- CAMINO 1 -->
+  <text x="175" y="78" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" letter-spacing="1" fill="#8A8383">CAMINO 1</text>
+  <rect x="45" y="90" width="260" height="96" rx="6" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="175" y="118" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">Pedirla en lenguaje natural</text>
+  <text x="175" y="142" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Claude escribe el SKILL.md</text>
+  <text x="175" y="166" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-style="italic" fill="#8A8383">vos solo describís el trabajo</text>
+
+  <!-- CAMINO 2 -->
+  <text x="505" y="78" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" letter-spacing="1" fill="#8A8383">CAMINO 2</text>
+  <rect x="375" y="90" width="260" height="96" rx="6" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="505" y="118" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">Subir un ZIP</text>
+  <text x="505" y="142" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Customize &#8250; Skills &#8250; &#8220;+&#8221;</text>
+  <text x="505" y="166" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" font-style="italic" fill="#8A8383">la carpeta de la Skill, empaquetada</text>
+
+  <!-- converging arrows into the gate -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3B3535"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+  <path d="M 175 186 L 175 210 L 265 244" fill="none" stroke="#3B3535" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 505 186 L 505 210 L 415 244" fill="none" stroke="#3B3535" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- SAVE / ENABLE gate: double-line box, red accent -->
+  <rect x="150" y="252" width="380" height="86" rx="8" fill="#FBE9EB" stroke="#DA1B2E" stroke-width="3"/>
+  <rect x="158" y="260" width="364" height="70" rx="5" fill="none" stroke="#DA1B2E" stroke-width="1.5"/>
+  <text x="340" y="290" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#DA1B2E">SAVE / ENABLE</text>
+  <text x="340" y="315" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">Customize &#8250; Skills</text>
+
+  <!-- "la trampa" callout -->
+  <path d="M 610 275 L 538 288" fill="none" stroke="#DA1B2E" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="614" y="266" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" font-style="italic" fill="#DA1B2E">la trampa</text>
+
+  <!-- arrow down to active skill -->
+  <path d="M 340 338 L 340 384" fill="none" stroke="#3B3535" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- SKILL ACTIVA -->
+  <rect x="235" y="392" width="210" height="58" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="2"/>
+  <text x="340" y="427" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">SKILL ACTIVA</text>
+
+  <!-- bottom legend -->
+  <line x1="120" y1="486" x2="560" y2="486" stroke="#D8D4D4" stroke-width="1"/>
+  <text x="392" y="518" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#3B3535">Frenar en la compuerta = la Skill</text>
+  <text x="398" y="518" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">&#8220;no funciona&#8221;</text>
+</svg>

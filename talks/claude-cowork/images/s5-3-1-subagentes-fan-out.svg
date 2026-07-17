@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 378">
+  <title>Subagentes: delegar sub-tareas en paralelo</title>
+  <desc>El agente principal reparte una tarea entre tres subagentes que corren en paralelo, cada uno con contexto propio, y junta los resultados en un resumen combinado.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3B3535"/>
+    </marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="378" fill="#ffffff"/>
+
+  <!-- Agente principal -->
+  <rect x="250" y="22" width="180" height="46" rx="6" fill="#f2f0f0" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="340" y="50" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#3B3535" text-anchor="middle">Agente principal</text>
+
+  <!-- fan-out arrows -->
+  <line x1="300" y1="68" x2="164" y2="136" stroke="#3B3535" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="340" y1="68" x2="340" y2="136" stroke="#3B3535" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="380" y1="68" x2="516" y2="136" stroke="#3B3535" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="595" y="106" font-family="Helvetica, Arial, sans-serif" font-size="13" font-style="italic" fill="#6d6666" text-anchor="middle">reparte la tarea</text>
+
+  <!-- Subagentes -->
+  <g font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <rect x="86" y="140" width="156" height="82" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="164" y="170" font-size="16" font-weight="bold" fill="#3B3535">Subagente A</text>
+    <text x="164" y="196" font-size="13" fill="#6d6666">contexto propio</text>
+
+    <rect x="262" y="140" width="156" height="82" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="340" y="170" font-size="16" font-weight="bold" fill="#3B3535">Subagente B</text>
+    <text x="340" y="196" font-size="13" fill="#6d6666">contexto propio</text>
+
+    <rect x="438" y="140" width="156" height="82" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="516" y="170" font-size="16" font-weight="bold" fill="#3B3535">Subagente C</text>
+    <text x="516" y="196" font-size="13" fill="#6d6666">contexto propio</text>
+  </g>
+  <text x="595" y="248" font-family="Helvetica, Arial, sans-serif" font-size="13" font-style="italic" fill="#6d6666" text-anchor="middle">corren en paralelo</text>
+
+  <!-- fan-in arrows -->
+  <line x1="164" y1="222" x2="300" y2="292" stroke="#DA1B2E" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <line x1="340" y1="222" x2="340" y2="292" stroke="#DA1B2E" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <line x1="516" y1="222" x2="380" y2="292" stroke="#DA1B2E" stroke-width="1.5" marker-end="url(#arrRed)"/>
+
+  <!-- Resumen combinado (focal) -->
+  <rect x="230" y="296" width="220" height="50" rx="6" fill="#fceced" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="340" y="318" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#DA1B2E" text-anchor="middle">Resumen combinado</text>
+  <text x="340" y="337" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535" text-anchor="middle">no la transcripción</text>
+</svg>

@@ -10,8 +10,8 @@
   +-----------+
         |
         v
-  resumen listo en tu chat, cada semana,
-  sin que lo pidas de nuevo
+  resumen listo en el chat, cada semana,
+  sin pedirlo de nuevo
 
 <!-- ascii-note:
 intent: mostrar el ciclo de una tarea programada: un disparador de calendario (lunes 8:00) ejecuta la tarea, que usa los conectores (mail/web/calendario) para traer información y deja el resultado listo sin intervención del usuario.

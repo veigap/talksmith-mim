@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" role="img" aria-labelledby="t d">
+  <title id="t">¿Dónde corre la tarea? Local vs nube</title>
+  <desc id="d">La slide del consejo práctico que pidió el presentador: tengan en cuenta que la computadora esté prendida.</desc>
+
+  <!-- canvas -->
+  <rect x="0" y="0" width="680" height="340" fill="#ffffff"/>
+
+  <!-- root question (focal accent) -->
+  <rect x="185" y="14" width="310" height="40" rx="8" fill="#ffffff" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="340" y="33" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">La tarea programada:</text>
+  <text x="340" y="49" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">¿DÓNDE corre?</text>
+
+  <!-- branch connectors -->
+  <path d="M 340 54 L 340 72 L 172 72 L 172 92" fill="none" stroke="#3B3535" stroke-width="1.6"/>
+  <path d="M 340 72 L 508 72 L 508 92" fill="none" stroke="#3B3535" stroke-width="1.6"/>
+  <path d="M 172 92 L 167 83 L 177 83 Z" fill="#3B3535"/>
+  <path d="M 508 92 L 503 83 L 513 83 Z" fill="#3B3535"/>
+
+  <!-- LOCAL panel -->
+  <rect x="24" y="94" width="296" height="228" rx="10" fill="#F2F1F0" stroke="#3B3535" stroke-width="1.4"/>
+  <text x="172" y="122" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">LOCAL</text>
+  <text x="172" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">hoy, la mayoría</text>
+  <line x1="44" y1="150" x2="300" y2="150" stroke="#3B3535" stroke-width="0.8"/>
+
+  <text x="44" y="172" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">• Computadora <tspan font-weight="bold">prendida</tspan></text>
+  <text x="44" y="192" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">• App <tspan font-weight="bold">abierta</tspan></text>
+  <text x="44" y="216" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">• Apagada o suspendida a la hora →</text>
+  <text x="56" y="232" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">la tarea <tspan font-weight="bold">se saltea</tspan> y corre al volver</text>
+  <text x="44" y="256" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">• Ojo: las laptops <tspan font-weight="bold">se suspenden solas</tspan></text>
+  <text x="56" y="272" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">(revisar config de energía)</text>
+
+  <!-- NUBE panel -->
+  <rect x="360" y="94" width="296" height="228" rx="10" fill="#F2F1F0" stroke="#3B3535" stroke-width="1.4"/>
+  <text x="508" y="122" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">NUBE</text>
+  <text x="508" y="140" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">beta, desde julio 2026</text>
+  <line x1="380" y1="150" x2="636" y2="150" stroke="#3B3535" stroke-width="0.8"/>
+
+  <text x="380" y="172" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">• Corre <tspan font-weight="bold">sin la computadora</tspan></text>
+  <text x="392" y="188" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#3B3535">prendida</text>
+  <text x="380" y="212" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">• Rollout gradual (plan Max primero)</text>
+
+  <!-- exception callout inside NUBE -->
+  <rect x="376" y="232" width="264" height="72" rx="6" fill="#ffffff" stroke="#DA1B2E" stroke-width="1.4"/>
+  <text x="388" y="252" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#DA1B2E">PERO:</text>
+  <text x="388" y="270" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">archivos o apps locales →</text>
+  <text x="388" y="288" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#3B3535">corre <tspan font-weight="bold">local igual</tspan></text>
+</svg>

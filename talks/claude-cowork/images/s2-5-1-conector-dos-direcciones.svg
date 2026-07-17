@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 262" role="img" aria-labelledby="t d">
+  <title id="t">Los conectores también actúan: del leer al hacer</title>
+  <desc id="d">El giro de la sección: hasta acá el conector era una antena que traía info; ahora es una mano que actúa.</desc>
+  <defs>
+    <marker id="ahGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8A8383"/>
+    </marker>
+    <marker id="ahRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="262" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#3B3535">Conector: dos direcciones</text>
+
+  <!-- Direction band -->
+  <text x="200" y="62" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#8A8383">LEER · traer info</text>
+  <line x1="330" y1="76" x2="75" y2="76" stroke="#8A8383" stroke-width="2.5" marker-end="url(#ahGrey)"/>
+
+  <text x="480" y="62" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#DA1B2E">ACTUAR · hacer</text>
+  <line x1="350" y1="76" x2="605" y2="76" stroke="#DA1B2E" stroke-width="2.5" marker-end="url(#ahRed)"/>
+
+  <!-- CHAT box -->
+  <rect x="30" y="140" width="110" height="60" rx="6" fill="#EFEFEF" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="85" y="176" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">CHAT</text>
+
+  <!-- conector box -->
+  <rect x="272" y="140" width="136" height="60" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="340" y="176" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">conector</text>
+
+  <!-- tu mundo box -->
+  <rect x="515" y="105" width="140" height="135" rx="6" fill="#EFEFEF" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="585" y="128" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">tu mundo</text>
+  <line x1="530" y1="138" x2="640" y2="138" stroke="#8A8383" stroke-width="1"/>
+  <text x="585" y="158" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">mail</text>
+  <text x="585" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">calendario</text>
+  <text x="585" y="202" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">tickets</text>
+  <text x="585" y="224" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">mensajes</text>
+
+  <!-- read arrow: conector -> CHAT -->
+  <line x1="272" y1="170" x2="148" y2="170" stroke="#8A8383" stroke-width="2" marker-end="url(#ahGrey)"/>
+  <text x="206" y="192" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#3B3535">inbox, agenda,</text>
+  <text x="206" y="206" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#3B3535">noticias</text>
+
+  <!-- act arrow: conector -> tu mundo -->
+  <line x1="408" y1="170" x2="507" y2="170" stroke="#DA1B2E" stroke-width="2.5" marker-end="url(#ahRed)"/>
+  <text x="461" y="192" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#DA1B2E">mandar mail,</text>
+  <text x="461" y="206" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11.5" fill="#DA1B2E">agendar, ticket</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 456" role="img" aria-labelledby="t d">
+  <title id="t">El mapa de la charla: bloques que se apilan</title>
+  <desc id="d">El mapa de toda la sesión: bloques que se apilan desde el chat hasta Live Artifacts, con Cowork como posición actual y Plugins como capa transversal que envuelve y distribuye la pila.</desc>
+  <rect x="0" y="0" width="680" height="456" fill="#ffffff"/>
+
+  <!-- PLUGINS: banda transversal que envuelve la pila -->
+  <rect x="16" y="12" width="648" height="410" rx="12" fill="#EFEDED" stroke="#8A8484" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="340" y="35" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#3B3535" letter-spacing="2">PLUGINS</text>
+  <text x="340" y="52" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-style="italic" fill="#6E6868">capa transversal: empaqueta y distribuye estas piezas (sección 5)</text>
+
+  <!-- pila de bloques (cima -> base) -->
+  <!-- fila 1: Live Artifacts -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="44" y="64" width="214" height="32" rx="4" fill="#ffffff" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="85" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">Live Artifacts</text>
+    <text x="272" y="85" font-size="11.5" font-style="italic" fill="#3B3535">&#171;quiero compartir el resultado vivo&#187;</text>
+
+    <!-- fila 2: Skills / Subagentes -->
+    <rect x="44" y="108" width="214" height="32" rx="4" fill="#ffffff" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="129" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">Skills / Subagentes</text>
+    <text x="272" y="124" font-size="11.5" font-style="italic" fill="#3B3535">&#171;no repetir la tarea / delegar en paralelo&#187;</text>
+    <text x="272" y="137" font-size="10" fill="#6E6868">avanzado &#183; secci&#243;n 5</text>
+
+    <!-- fila 3: Archivos .md -->
+    <rect x="44" y="152" width="214" height="32" rx="4" fill="#ffffff" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="173" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">Archivos .md</text>
+    <text x="272" y="173" font-size="11.5" font-style="italic" fill="#3B3535">&#171;quiero que la IA entienda mi material&#187;</text>
+
+    <!-- fila 4: Instrucciones + Projects -->
+    <rect x="44" y="196" width="214" height="32" rx="4" fill="#ffffff" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="217" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">Instrucciones + Projects</text>
+    <text x="272" y="217" font-size="11.5" font-style="italic" fill="#3B3535">&#171;contexto y trabajo agrupados&#187;</text>
+
+    <!-- fila 5: Cowork (focal, estamos aca) -->
+    <rect x="44" y="240" width="214" height="32" rx="4" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.6"/>
+    <text x="151" y="261" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#DA1B2E">Cowork: carpetas y archivos</text>
+    <text x="272" y="261" font-size="11.5" font-style="italic" fill="#3B3535">&#171;quiero que trabaje sobre mis archivos&#187;</text>
+    <text x="648" y="261" text-anchor="end" font-size="11" font-weight="bold" fill="#DA1B2E">ESTAMOS AC&#193;</text>
+    <path d="M 530 256.5 L 539 251.5 L 539 261.5 Z" fill="#DA1B2E"/>
+    <line x1="539" y1="256.5" x2="552" y2="256.5" stroke="#DA1B2E" stroke-width="2"/>
+
+    <!-- fila 6: Tareas programadas (visto) -->
+    <rect x="44" y="284" width="214" height="32" rx="4" fill="#E7E4E4" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="305" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">Tareas programadas</text>
+    <text x="272" y="305" font-size="11.5" font-style="italic" fill="#3B3535">&#171;quiero que corra solo&#187;</text>
+    <text x="648" y="305" text-anchor="end" font-size="11" fill="#6E6868">visto</text>
+    <path d="M 607 300 l 3 3.5 l 6 -7" fill="none" stroke="#6E6868" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- fila 7: Conectores (visto) -->
+    <rect x="44" y="328" width="214" height="32" rx="4" fill="#E7E4E4" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="349" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">Conectores</text>
+    <text x="272" y="349" font-size="11.5" font-style="italic" fill="#3B3535">&#171;quiero info real, y que act&#250;e&#187;</text>
+    <text x="648" y="349" text-anchor="end" font-size="11" fill="#6E6868">visto</text>
+    <path d="M 607 344 l 3 3.5 l 6 -7" fill="none" stroke="#6E6868" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- fila 8: El chat (visto, base) -->
+    <rect x="44" y="372" width="214" height="32" rx="4" fill="#E7E4E4" stroke="#6E6868" stroke-width="1.4"/>
+    <text x="151" y="393" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3B3535">El chat</text>
+    <text x="272" y="393" font-size="11.5" font-style="italic" fill="#3B3535">&#171;respond&#237;a solo de memoria&#187;</text>
+    <text x="648" y="393" text-anchor="end" font-size="11" fill="#6E6868">visto</text>
+    <path d="M 607 388 l 3 3.5 l 6 -7" fill="none" stroke="#6E6868" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- flecha de lectura base -> cima -->
+    <line x1="32" y1="398" x2="32" y2="76" stroke="#8A8484" stroke-width="1.4"/>
+    <path d="M 32 68 L 28.5 77 L 35.5 77 Z" fill="#8A8484"/>
+
+    <!-- caption -->
+    <text x="340" y="444" text-anchor="middle" font-size="11.5" fill="#3B3535">Los bloques se apilan y se combinan: cada tarea usa solo los que necesita. Plugins los distribuye a todos.</text>
+  </g>
+</svg>

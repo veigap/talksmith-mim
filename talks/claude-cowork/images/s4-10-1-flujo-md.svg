@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 225" role="img" aria-labelledby="t d">
+  <title id="t">Trabajar en .md, exportar al final</title>
+  <desc id="d">La slide de práctica de la sección: el .md es la mesa de trabajo de la IA y el entregable (.docx, .xlsx, PDF, slides) se genera una sola vez al final.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3B3535"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="225" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="340" y="26" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">Flujo de trabajo con la IA</text>
+
+  <!-- Column headers -->
+  <text x="105" y="56" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6464">FUENTES · lo que llega</text>
+  <text x="345" y="56" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6464">TRABAJO · idas y vueltas</text>
+  <text x="580" y="56" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#6b6464">ENTREGA · 1 vez, al final</text>
+
+  <!-- Left box: fuentes -->
+  <rect x="25" y="68" width="160" height="104" rx="8" fill="#f2f0f0" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="105" y="112" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">.docx · PDF</text>
+  <text x="105" y="134" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">mails · webs</text>
+
+  <!-- Center box: archivos .md (focal) -->
+  <rect x="255" y="68" width="180" height="104" rx="8" fill="#FBE9EB" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="345" y="98" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#DA1B2E">ARCHIVOS .MD</text>
+  <text x="345" y="120" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3B3535">la IA lee, edita y crea</text>
+  <text x="345" y="135" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#3B3535">mejor acá</text>
+  <text x="345" y="158" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" font-style="italic" fill="#6b6464">iterar acá es barato</text>
+
+  <!-- Right box: entrega -->
+  <rect x="505" y="68" width="150" height="104" rx="8" fill="#f2f0f0" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="580" y="112" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">.docx · .xlsx</text>
+  <text x="580" y="134" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">PDF · slides</text>
+
+  <!-- Arrows -->
+  <line x1="188" y1="120" x2="250" y2="120" stroke="#3B3535" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="438" y1="120" x2="500" y2="120" stroke="#3B3535" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Arrow captions -->
+  <text x="220" y="198" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-style="italic" fill="#3B3535">“convertime esto a .md”</text>
+  <text x="470" y="198" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" font-style="italic" fill="#3B3535">“generame el entregable”</text>
+</svg>

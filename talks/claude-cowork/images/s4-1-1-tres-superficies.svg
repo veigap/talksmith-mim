@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" role="img" aria-labelledby="t d">
+  <title id="t">Las tres superficies de Claude</title>
+  <desc id="d">Web/Chat, Claude Code y Cowork son tres caras del mismo agente: las tres corren sobre los mismos modelos Claude, y Code y Cowork comparten además la misma base técnica.</desc>
+  <style>
+    text { font-family: Helvetica, Arial, sans-serif; fill: #3B3535; }
+    .h { font-size: 16px; font-weight: bold; }
+    .s { font-size: 11px; }
+    .b { font-size: 13px; font-weight: bold; }
+    .base { font-size: 15px; font-weight: bold; }
+    .pill { font-size: 9.5px; font-weight: bold; fill: #ffffff; }
+  </style>
+  <rect x="0" y="0" width="680" height="320" fill="#ffffff"/>
+
+  <!-- connector lines (behind boxes) -->
+  <line x1="116" y1="100" x2="116" y2="236" stroke="#9a9a9a" stroke-width="1.5"/>
+  <line x1="340" y1="100" x2="340" y2="136" stroke="#9a9a9a" stroke-width="1.5"/>
+  <line x1="564" y1="100" x2="564" y2="136" stroke="#9a9a9a" stroke-width="1.5"/>
+  <line x1="452" y1="188" x2="452" y2="236" stroke="#9a9a9a" stroke-width="1.5"/>
+
+  <!-- Web / Chat -->
+  <rect x="18" y="16" width="196" height="84" rx="6" fill="#f2f2f2" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="116" y="42" text-anchor="middle" class="h">Web / Chat</text>
+  <text x="116" y="63" text-anchor="middle" class="s">superficie de chat</text>
+  <text x="116" y="80" text-anchor="middle" class="s">navegador, tareas puntuales</text>
+
+  <!-- Claude Code -->
+  <rect x="242" y="16" width="196" height="84" rx="6" fill="#f2f2f2" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="340" y="42" text-anchor="middle" class="h">Claude Code</text>
+  <text x="340" y="63" text-anchor="middle" class="s">terminal</text>
+  <text x="340" y="80" text-anchor="middle" class="s">para developers</text>
+
+  <!-- Cowork (focal) -->
+  <rect x="466" y="16" width="196" height="84" rx="6" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="564" y="42" text-anchor="middle" class="h" fill="#DA1B2E">Cowork</text>
+  <text x="564" y="63" text-anchor="middle" class="s">GUI de escritorio</text>
+  <text x="564" y="80" text-anchor="middle" class="s">trabajo multipaso sobre archivos</text>
+  <rect x="512" y="92" width="104" height="17" rx="8.5" fill="#DA1B2E"/>
+  <text x="564" y="104" text-anchor="middle" class="pill">foco de la charla</text>
+
+  <!-- shared technical base band (Code + Cowork) -->
+  <rect x="242" y="136" width="420" height="52" rx="6" fill="#e7e7e7" stroke="#9a9a9a" stroke-width="1.5"/>
+  <text x="452" y="157" text-anchor="middle" class="b">Misma base técnica</text>
+  <text x="452" y="176" text-anchor="middle" class="s">archivos · Skills · MCP · loop de plan y aprobación</text>
+
+  <!-- shared models base -->
+  <rect x="96" y="236" width="488" height="60" rx="6" fill="#f2f2f2" stroke="#3B3535" stroke-width="2"/>
+  <text x="340" y="262" text-anchor="middle" class="base">Mismos modelos Claude</text>
+  <text x="340" y="282" text-anchor="middle" class="s">un solo agente, tres caras</text>
+</svg>
