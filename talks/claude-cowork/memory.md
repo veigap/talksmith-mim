@@ -458,3 +458,10 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - s4-3-1: etiquetas "vos:" del ASCII pasadas a registro impersonal en el SVG (watch item de rounds anteriores, resuelto en el arte).
 - Artefactos nuevos: images/ 18 SVG + 18 PNG + 16 sidecars .ascii nuevos (2 unchanged), images/.critique/ logs+PNGs. Los tripletes del Polish de Paulo (slugs viejos) siguen en disco; limpiar al commitear si se quiere.
 - Pendiente: Step 7 (Render) sobre final.md — requiere re-FILL del slide-model (el modelo .draft no aprovecha los PNGs nuevos); estilo a elección del presentador (html acá / pptx en Cowork). Polish sin commitear todavía.
+
+## 2026-07-17 — Step 7 (Render) — html-strict desde final.md
+- Status: complete
+- FILL re-corrido: output/slide-model.json regenerado desde el modelo draft + los 18 PNG del Polish (diagrama-slides pasadas a content+cards+image / content-image / process+image; 5.2 dejó de ser code-example y muestra el PNG de anatomía; 4.6 sigue como code-example a propósito).
+- RENDER: build_html.py → output/html/index.html, 3.6 MB autocontenido, 34 slides (5 section-agenda + 1 divider + 28 contenido), 24 imágenes embebidas como data-URI, 0 refs externas.
+- Commits: 21ab975 (Polish) + 8a1dbcd (Render), pusheados a origin/main.
+- Pendiente: pptx nativo (requiere Cowork); reestructura de la misión Atlas según el orden de la presentación y luego partición en 2 (orden del presentador).
