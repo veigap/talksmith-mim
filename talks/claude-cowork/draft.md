@@ -11,9 +11,9 @@ date: Julio 2026
 
 # Thesis
 
-**Claim:** Partís del chat de IA que ya usás todos los días y lo extendés paso a paso, con conectores para que vea tu mundo real y tareas programadas para que trabaje solo. El destino es Claude Cowork, donde ese mismo agente trabaja sobre tus carpetas y archivos y cambia por completo la forma de trabajar: delegás resultados combinando sus piezas (Instrucciones, Projects, archivos .md, Schedule y Live Artifacts) sin escribir una línea de código.
+**Claim:** La charla parte del chat de IA de uso diario y lo extiende paso a paso, con conectores para que vea el mundo real del usuario y tareas programadas para que trabaje solo. El destino es Claude Cowork, donde ese mismo agente trabaja sobre carpetas y archivos reales y cambia por completo la forma de trabajar: el usuario delega resultados combinando sus piezas (Instrucciones, Projects, archivos .md, Schedule y Live Artifacts) sin escribir una línea de código.
 
-**Why it matters:** El salto de chatear un mensaje a la vez a entregar un resultado y guiarlo es lo que vuelve útil a un agente en el trabajo real. Quien lo domina automatiza horas de trabajo manual con la barrera de entrada en cero, y el camino empieza en la herramienta que ya tenés abierta.
+**Why it matters:** El salto de chatear un mensaje a la vez a entregar un resultado y guiarlo es lo que vuelve útil a un agente en el trabajo real. Quien lo domina automatiza horas de trabajo manual con la barrera de entrada en cero, y el camino empieza en la herramienta de uso diario.
 
 **Presenter feedback:**
 
@@ -21,11 +21,11 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** Arrancamos por la herramienta que ya usás todos los días, el chat de IA, y hacemos explícitos sus límites: responde de memoria de entrenamiento (1). Después lo extendemos con conectores, un concepto que vale para todas las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo volvemos proactivo con tareas programadas (3). Recién ahí llega el salto grande, Claude Cowork, que es más que "Claude instalado en tu computadora": cambia por completo la forma de trabajar, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre tus carpetas y Live Artifacts (4). Cerramos con las piezas avanzadas, Skills, Subagentes y Plugins (5). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza.
+**Narrative arc:** Arrancamos por la herramienta de uso diario, el chat de IA, y hacemos explícitos sus límites: responde de memoria de entrenamiento (1). Después lo extendemos con conectores, un concepto que vale para todas las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo volvemos proactivo con tareas programadas (3). Recién ahí llega el salto grande, Claude Cowork, que es más que "Claude instalado en tu computadora": cambia por completo la forma de trabajar, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). Cerramos con las piezas avanzadas, Skills, Subagentes y Plugins (5). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza.
 
 **Sections (in delivery order):**
 
-- 1. El chat que ya usás y sus límites
+- 1. El chat como viene y sus límites
 - 2. Conectores: extender el chat
 - 3. Tareas programadas: el chat trabaja solo
 - 4. Cowork: cambiar la forma de trabajar
@@ -35,9 +35,9 @@ date: Julio 2026
 
 ---
 
-# 1. El chat que ya usás y sus límites
+# 1. El chat como viene y sus límites
 
-**Goal of this section:** Partir de la herramienta que la audiencia ya usa a diario, el chat de IA, y hacer explícito su límite: responde desde su memoria de entrenamiento, con información desactualizada, riesgo de alucinación y cero acceso a tus datos y apps.
+**Goal of this section:** Partir de la herramienta que la audiencia ya usa a diario, el chat de IA, y hacer explícito su límite: responde desde su memoria de entrenamiento, con información desactualizada, riesgo de alucinación y cero acceso a los datos y apps del usuario.
 
 **Presenter feedback:**
 
@@ -52,16 +52,16 @@ date: Julio 2026
 - Tres límites:
   - **Información vieja**: lo posterior al corte no existe.
   - **Alucinación**: inventa con confianza.
-  - **No ve TU mundo**: mails, calendario, archivos, apps.
+  - **No ve el mundo del usuario**: mails, calendario, archivos, apps.
 
 ```ascii
         EL CHAT "COMO VIENE DE FABRICA"
                                              lo que NO ve:
    +---------------------------------+       x  noticias de hoy
-   |            CHAT DE IA           |       x  tus mails
-   |  +---------------------------+  |       x  tu calendario
-   |  |  MEMORIA DE ENTRENAMIENTO |  |       x  tus archivos
-   |  |  (foto congelada hasta la |  |       x  las apps de tu trabajo
+   |            CHAT DE IA           |       x  los mails
+   |  +---------------------------+  |       x  el calendario
+   |  |  MEMORIA DE ENTRENAMIENTO |  |       x  los archivos
+   |  |  (foto congelada hasta la |  |       x  las apps del trabajo
    |  |   fecha de corte)         |  |
    |  +---------------------------+  |
    |     responde "de memoria"       |
@@ -75,8 +75,8 @@ labels: caja exterior = CHAT DE IA; caja interior = memoria de entrenamiento / f
 
 ### Sources
 
-- Anthropic Support — Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search — el encuadre oficial: sin búsqueda web, Claude responde limitado a su información de entrenamiento; la búsqueda le da acceso a información actual (referencia también para la Sección 2).
-- (concepto general de LLM: fecha de corte / respuestas desde entrenamiento / alucinaciones — material introductorio estándar del curso; sin claim específico de producto.)
+- Anthropic Support, Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search; el encuadre oficial: sin búsqueda web, Claude responde limitado a su información de entrenamiento; la búsqueda le da acceso a información actual (referencia también para la Sección 2).
+- (concepto general de LLM: fecha de corte / respuestas desde entrenamiento / alucinaciones; material introductorio estándar del curso; sin claim específico de producto.)
 
 ### Speaker notes
 
@@ -112,18 +112,18 @@ Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta s
 |  entrenamiento |              |  REALES antes  |----> [ documentos ]
 +----------------+              |  de responder  |
    (aislado)                    +----------------+
-                                  (conectado a tu mundo)
+                                  (conectado al mundo real)
 ```
 <!-- ascii-note:
-intent: contrastar lado a lado el chat aislado (responde de memoria de entrenamiento) contra el chat con conectores (consulta fuentes reales — web, mail, calendario, documentos — antes de responder).
+intent: contrastar lado a lado el chat aislado (responde de memoria de entrenamiento) contra el chat con conectores (consulta fuentes reales; web, mail, calendario, documentos; antes de responder).
 emphasize: el lado derecho con las flechas hacia web/mail/calendario/documentos; la etiqueta "(conectado a tu mundo)" vs "(aislado)".
 labels: izquierda = CHAT SOLO (aislado, memoria de entrenamiento); derecha = CHAT CON CONECTORES (web, mail, calendario, documentos).
 -->
 
 ### Sources
 
-- Anthropic Support — Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search — la búsqueda web como capacidad integrada del chat de Claude.
-- Claude blog — Connectors directory: https://claude.com/blog/connectors-directory — el catálogo oficial de conectores de Claude (referencia ampliada en la slide 2.4; verificado 2026-07-09).
+- Anthropic Support, Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search; la búsqueda web como capacidad integrada del chat de Claude.
+- Claude blog, Connectors directory: https://claude.com/blog/connectors-directory; el catálogo oficial de conectores de Claude (referencia ampliada en la slide 2.4; verificado 2026-07-09).
 
 ### Speaker notes
 
@@ -141,8 +141,8 @@ La slide instala el concepto que ordena la sección: un conector saca al chat de
 - **La distinción de la charla:**
   - **De memoria** → recuerda hasta la fecha de corte. Puede estar viejo o mal.
   - **Con búsqueda** → busca información real, AHORA, y **cita fuentes**.
-- Mirá el "buscando..." y las fuentes citadas; ahí verificás.
-- Regla: si la respuesta pudo cambiar → exigí búsqueda.
+- El "buscando..." y las fuentes citadas marcan el punto de verificación.
+- Regla: si la respuesta pudo cambiar → búsqueda obligada.
 
 ```ascii
    la MISMA pregunta: "¿ultima version de X?"
@@ -167,8 +167,8 @@ labels: izquierda = DE MEMORIA (fecha de corte); derecha = CON BÚSQUEDA WEB (bu
 
 ### Sources
 
-- Anthropic Support — Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search — "Web search expands Claude's knowledge with real-time data"; "Every response includes citations, so you can easily verify sources yourself" (verificado 2026-07-09).
-- OpenAI Help — ChatGPT search: https://help.openai.com/en/articles/9237897-chatgpt-search — búsqueda web integrada en ChatGPT, automática cuando la pregunta lo amerita, con citas inline (evidencia de que el concepto es transversal; verificado 2026-07-09).
+- Anthropic Support, Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search; "Web search expands Claude's knowledge with real-time data"; "Every response includes citations, so you can easily verify sources yourself" (verificado 2026-07-09).
+- OpenAI Help, ChatGPT search: https://help.openai.com/en/articles/9237897-chatgpt-search; búsqueda web integrada en ChatGPT, automática cuando la pregunta lo amerita, con citas inline (evidencia de que el concepto es transversal; verificado 2026-07-09).
 
 ### Speaker notes
 
@@ -201,10 +201,10 @@ labels: Chat/agente -> Connector (1 clic) -> Servicio externo (Gmail / Calendar)
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de Connector (MCP): "The hands"; slide 5.4 (rango de MCP; "any app that exposes an MCP server").
-- "corpus/mision - auto.zip.md" — MT Newswires "ya tiene un connector listo" (Step 2.1); Gmail connector de un clic (M3).
-- Model Context Protocol (sitio oficial del estándar): https://modelcontextprotocol.io — qué es MCP y cómo las plataformas exponen herramientas; base de los conectores personalizados.
-- Anthropic Support — Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp — los conectores personalizados existen y se agregan vía MCP (mención, sin profundizar).
+- corpus/agentic-ai-deck.zip.md, definición de Connector (MCP): "The hands"; slide 5.4 (rango de MCP; "any app that exposes an MCP server").
+- "corpus/mision - auto.zip.md", MT Newswires "ya tiene un connector listo" (Step 2.1); Gmail connector de un clic (M3).
+- Model Context Protocol (sitio oficial del estándar): https://modelcontextprotocol.io; qué es MCP y cómo las plataformas exponen herramientas; base de los conectores personalizados.
+- Anthropic Support, Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp; los conectores personalizados existen y se agregan vía MCP (mención, sin profundizar).
 
 ### Speaker notes
 
@@ -221,23 +221,23 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin progr
 
 ### Content
 
-- No programás: **buscás + Connect + autorizás**. Como conectar Gmail a una app nueva.
+- Sin programar: **buscar + Connect + autorizar**. Como conectar Gmail a una app nueva.
 - De dónde salen: **directorio oficial de Claude** · comunidad (solo lo confiable) · propios (custom).
 
 ![Directorio de Connectors](images/connectors_directory.png)
 
-![Conexión de un Connector — buscar y conectar](images/connector_browser.png)
+![Conexión de un Connector: buscar y conectar](images/connector_browser.png)
 
 - Ejemplos guía: **mail y calendario**. "¿Qué mails me perdí ayer? ¿Qué tengo esta semana?"
 - Atlas: **MT Newswires** listo en el directorio, un clic.
 
 ### Sources
 
-- Claude blog — Discover tools that work with Claude (Connectors directory): https://claude.com/blog/connectors-directory — anuncio oficial del directorio; navegar y conectar de un clic vía claude.ai/directory (verificado 2026-07-09; el directorio en sí requiere login).
-- Anthropic Support — Use connectors to extend Claude's capabilities: https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities — cómo se conectan y usan los conectores desde la configuración.
-- corpus/agentic-ai-deck.zip.md — matriz 5.6 (Connectors configurados por la Settings UI; directorio + un clic).
-- "corpus/mision - auto.zip.md" — MT Newswires "ya tiene un connector listo" (Step 2.1); Gmail connector de un clic (M3); "no estás programando: te conectás a un servicio que ya existe".
-- Anthropic Support — Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp — la vía de los conectores no oficiales / propios.
+- Claude blog, Discover tools that work with Claude (Connectors directory): https://claude.com/blog/connectors-directory; anuncio oficial del directorio; navegar y conectar de un clic vía claude.ai/directory (verificado 2026-07-09; el directorio en sí requiere login).
+- Anthropic Support, Use connectors to extend Claude's capabilities: https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities; cómo se conectan y usan los conectores desde la configuración.
+- corpus/agentic-ai-deck.zip.md, matriz 5.6 (Connectors configurados por la Settings UI; directorio + un clic).
+- "corpus/mision - auto.zip.md", MT Newswires "ya tiene un connector listo" (Step 2.1); Gmail connector de un clic (M3); "no estás programando: te conectás a un servicio que ya existe".
+- Anthropic Support, Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp; la vía de los conectores no oficiales / propios.
 
 ### Speaker notes
 
@@ -253,11 +253,11 @@ Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pant
 
 - Además de traer info, un conector expone **acciones**: la IA **hace**.
 - Ejemplos:
-  - **Mandar / dejar redactado un mail** (borrador en tu Gmail).
-  - **Agendar una reunión** (evento en tu calendario).
+  - **Mandar / dejar redactado un mail** (borrador en Gmail).
+  - **Agendar una reunión** (evento en el calendario).
   - **Abrir un ticket** (Jira, ServiceNow…).
   - **Mandar un mensaje** (Slack o similar).
-- Vos conectás y autorizás cada servicio. Mientras aprendés, **borrador antes que envío directo**.
+- El usuario conecta y autoriza cada servicio. Al empezar, **borrador antes que envío directo**.
 - Un chat que se informa y actúa puede trabajar **solo** (sección 3).
 
 ```ascii
@@ -266,7 +266,7 @@ Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pant
    LEER (traer info)          ACTUAR (hacer)
    <------------------        ------------------>
 +------+           +----------+           +----------+
-| CHAT |  <------- | conector |  ------>  | tu mundo |
+| CHAT |  <------- | conector |  ------>  | el mundo |
 +------+   inbox,  +----------+  mandar   | mail     |
            agenda,              mail,     | calendario|
            noticias             agendar,  | tickets  |
@@ -281,11 +281,11 @@ labels: izquierda = CHAT; centro = conector; derecha = tu mundo (mail, calendari
 
 ### Sources
 
-- Model Context Protocol — https://modelcontextprotocol.io — el estándar define herramientas que ejecutan acciones sobre sistemas externos, no solo lectura: "AI applications ... which can access your data and take actions on your behalf" (verificado 2026-07-09).
-- Anthropic Support — Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp — los conectores permiten a Claude "access and take action in these services" (verificado 2026-07-09).
-- "corpus/mision - auto.zip.md" — el connector de Gmail **deja un borrador de correo** para el equipo (capacidad ejecutiva en acción, M3 y loop final).
+- Model Context Protocol, https://modelcontextprotocol.io; el estándar define herramientas que ejecutan acciones sobre sistemas externos, no solo lectura: "AI applications ... which can access your data and take actions on your behalf" (verificado 2026-07-09).
+- Anthropic Support, Getting started with custom connectors using remote MCP: https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp; los conectores permiten a Claude "access and take action in these services" (verificado 2026-07-09).
+- "corpus/mision - auto.zip.md", el connector de Gmail **deja un borrador de correo** para el equipo (capacidad ejecutiva en acción, M3 y loop final).
 - Verificación de primera mano del presentador (2026-07-09): la acción de **agendar/crear eventos vía el connector de Calendar** está chequeada y funciona.
-- corpus/agentic-ai-deck.zip.md — Connectors como "las manos" del agente (tocar sistemas, no solo leerlos).
+- corpus/agentic-ai-deck.zip.md, Connectors como "las manos" del agente (tocar sistemas, no solo leerlos).
 
 ### Speaker notes
 
@@ -307,9 +307,9 @@ El giro de la sección: hasta acá el conector era una antena que traía info; a
 
 ### Content
 
-- **Tarea programada** = pedido descrito **UNA vez** + cadencia → corre sola y te avisa.
-- Te **suscribís a una respuesta** en vez de preguntar cada vez.
-- La tarea usa tus **conectores** (mail, web, calendario).
+- **Tarea programada** = pedido descrito **UNA vez** + cadencia → corre sola y avisa.
+- Es **suscribirse a una respuesta** en vez de preguntar cada vez.
+- La tarea usa los **conectores** ya configurados (mail, web, calendario).
 - El ejemplo: *"todos los días 8:00, resumí mi inbox, lo urgente arriba."*
 - Existe en **ChatGPT** ("tasks") y en **Claude** (claude.ai, desde el navegador).
 
@@ -326,8 +326,8 @@ El giro de la sección: hasta acá el conector era una antena que traía info; a
   +-----------+
         |
         v
-  resumen listo en tu chat, cada semana,
-  sin que lo pidas de nuevo
+  resumen listo en el chat, cada semana,
+  sin pedirlo de nuevo
 ```
 <!-- ascii-note:
 intent: mostrar el ciclo de una tarea programada: un disparador de calendario (lunes 8:00) ejecuta la tarea, que usa los conectores (mail/web/calendario) para traer información y deja el resultado listo sin intervención del usuario.
@@ -337,12 +337,12 @@ labels: reloj (cadencia) -> la tarea corre sola -> conectores (mail/web/calendar
 
 ### Sources
 
-- OpenAI Help — Tasks in ChatGPT: https://help.openai.com/en/articles/10291617-tasks-in-chatgpt — tareas programadas en el chat de ChatGPT (evidencia transversal del concepto; verificado 2026-07-09).
-- Anthropic Support — Release notes (entrada del 7 de julio de 2026): https://support.claude.com/en/articles/12138966 — "scheduled tasks run with no device online"; sesiones remotas (beta); rollout empezando por Max (verificado 2026-07-09).
+- OpenAI Help, Tasks in ChatGPT: https://help.openai.com/en/articles/10291617-tasks-in-chatgpt; tareas programadas en el chat de ChatGPT (evidencia transversal del concepto; verificado 2026-07-09).
+- Anthropic Support, Release notes (entrada del 7 de julio de 2026): https://support.claude.com/en/articles/12138966; "scheduled tasks run with no device online"; sesiones remotas (beta); rollout empezando por Max (verificado 2026-07-09).
 - Observación de primera mano del presentador (2026-07-09): tareas programadas activas en claude.ai en el navegador.
-- TechCrunch (2026-07-07) — "The coding agent wars are spilling into the rest of the office": https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/ — cobertura de prensa: expansión a web/mobile, corridas en background sin dispositivo activo, rollout Max (encuadre de terceros).
-- Anthropic Support — Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork — la forma Cowork (se desarrolla en la sección 4).
-- "corpus/mision - auto.zip.md" — el flujo programado de Atlas (Step 3.3): la semilla del "resumidor que corre solo".
+- TechCrunch (2026-07-07), "The coding agent wars are spilling into the rest of the office": https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/; cobertura de prensa: expansión a web/mobile, corridas en background sin dispositivo activo, rollout Max (encuadre de terceros).
+- Anthropic Support, Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork; la forma Cowork (se desarrolla en la sección 4).
+- "corpus/mision - auto.zip.md", el flujo programado de Atlas (Step 3.3): la semilla del "resumidor que corre solo".
 
 ### Speaker notes
 
@@ -352,20 +352,20 @@ Slide-concepto de la sección, en dos mitades. Primera: describís el trabajo un
 
 ---
 
-## 2. ¿Dónde corre tu tarea? Local vs nube
+## 2. ¿Dónde corre la tarea? Local vs nube
 
 ### Content
 
-- Antes de confiarle algo a una tarea programada, **sabé dónde corre**.
-- **Nube** (lo nuevo, julio 2026): corre **sin tu compu**. Beta, rollout gradual, Max primero.
-- **Local** (mientras la nube no te llegue): la computadora **prendida** y la app **abierta**.
+- Antes de confiarle algo a una tarea programada: **saber dónde corre**.
+- **Nube** (lo nuevo, julio 2026): corre **sin la compu**. Beta, rollout gradual, Max primero.
+- **Local** (mientras la nube no llega): la computadora **prendida** y la app **abierta**.
 - Cuidados del modo local:
   - Apagada/suspendida a la hora → la tarea **se saltea** y corre al volver.
-  - Las notebooks **se suspenden solas**; revisá la config de energía.
+  - Las notebooks **se suspenden solas** (config de energía).
 - Tareas que usan **archivos o apps locales** → corren local **siempre**.
 
 ```ascii
-   tu tarea programada: ¿DONDE corre?
+   la tarea programada: ¿DONDE corre?
               |
       +-------+----------------------+
       v                              v
@@ -384,10 +384,10 @@ labels: raíz = tu tarea programada ¿dónde corre?; rama izquierda = LOCAL (hoy
 
 ### Sources
 
-- Anthropic Support — Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork — ejecución remota ("run on their cadence even when your computer is asleep or the Claude Desktop app is closed") y la excepción local: "If a scheduled task requires local files or apps, it will only run locally" (verificado 2026-07-09).
-- Anthropic Support — Release notes (7 de julio de 2026): https://support.claude.com/en/articles/12138966 — "scheduled tasks run with no device online"; beta, rollout gradual empezando por Max (verificado 2026-07-09).
-- TechCrunch (2026-07-07): https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/ — corridas en background sin dispositivo activo, disponible primero para suscriptores Max (encuadre de terceros).
-- Comportamiento local "se saltea y corre al volver": documentado en la versión anterior del artículo 13854387 (verificada en junio 2026, cuando la ejecución era solo local); la versión actual ya no lo detalla — mantenido como cuidado práctico del modo local, con esa atribución.
+- Anthropic Support, Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork; ejecución remota ("run on their cadence even when your computer is asleep or the Claude Desktop app is closed") y la excepción local: "If a scheduled task requires local files or apps, it will only run locally" (verificado 2026-07-09).
+- Anthropic Support, Release notes (7 de julio de 2026): https://support.claude.com/en/articles/12138966; "scheduled tasks run with no device online"; beta, rollout gradual empezando por Max (verificado 2026-07-09).
+- TechCrunch (2026-07-07): https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/; corridas en background sin dispositivo activo, disponible primero para suscriptores Max (encuadre de terceros).
+- Comportamiento local "se saltea y corre al volver": documentado en la versión anterior del artículo 13854387 (verificada en junio 2026, cuando la ejecución era solo local); la versión actual ya no lo detalla; mantenido como cuidado práctico del modo local, con esa atribución.
 
 ### Speaker notes
 
@@ -399,7 +399,7 @@ La slide del consejo práctico que pidió el presentador: "tengan en cuenta que 
 
 # 4. Cowork: cambiar la forma de trabajar
 
-**Goal of this section:** El salto grande de la charla. Cowork es más que "Claude instalado en tu computadora": cambia por completo la forma de trabajar. Ubicar las tres superficies de Claude, pasar de chatear a delegar resultados y dominar las piezas del día a día (interfaz, Instrucciones, Projects, archivos .md, Schedule sobre tus carpetas, Live Artifacts).
+**Goal of this section:** El salto grande de la charla. Cowork es más que "Claude instalado en tu computadora": cambia por completo la forma de trabajar. Ubicar las tres superficies de Claude, pasar de chatear a delegar resultados y dominar las piezas del día a día (interfaz, Instrucciones, Projects, archivos .md, Schedule sobre carpetas reales, Live Artifacts).
 
 **Presenter feedback:**
 
@@ -409,7 +409,7 @@ La slide del consejo práctico que pidió el presentador: "tengan en cuenta que 
 
 ### Content
 
-- Ya extendiste el chat. Ahora la IA baja a tu computadora. Primero, el mapa.
+- El chat ya quedó extendido. Ahora la IA baja a la computadora. Primero, el mapa.
 - **Mismos modelos Claude** en las tres caras; **Code y Cowork** comparten además el engine de agente (**Agent SDK**). Web/Chat = superficie de chat.
 - **Web/Chat**: navegador, tareas puntuales. *Donde estuvimos hasta ahora.*
 - **Claude Code**: terminal; developers.
@@ -439,10 +439,10 @@ labels: tres columnas (Web/Chat = chat, Claude Code y Cowork = Agent SDK) sobre 
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "Same engine. Different surface." (key claims; slide 7.1 "Claude Code vs Cowork — the close").
-- "corpus/mision - auto.zip.md" — framing de arquitectura Cowork (local, GUI, sin terminal).
-- Anthropic — Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork — "built on the very same foundations as Claude Code" (confirma que Cowork comparte base con Claude Code).
-- Anthropic Engineering — Building agents with the Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk — el engine de agente común (Agent SDK) sobre el que se construyen Claude Code y Cowork.
+- corpus/agentic-ai-deck.zip.md, "Same engine. Different surface." (key claims; slide 7.1 "Claude Code vs Cowork — the close").
+- "corpus/mision - auto.zip.md", framing de arquitectura Cowork (local, GUI, sin terminal).
+- Anthropic, Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork; "built on the very same foundations as Claude Code" (confirma que Cowork comparte base con Claude Code).
+- Anthropic Engineering, Building agents with the Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk; el engine de agente común (Agent SDK) sobre el que se construyen Claude Code y Cowork.
 
 ### Speaker notes
 
@@ -480,16 +480,16 @@ TRABAJO DE OFICINA: la herramienta de proposito general
 <!-- ascii-note:
 intent: encuadrar el "superpoder" de Cowork como herramienta de propósito general del knowledge worker, usando la analogía Excel (40 años, habilidad base de oficina) -> herramientas agénticas (Claude Code para developers, Cowork para knowledge workers) como la nueva habilidad base.
 emphasize: la flecha temporal de Excel (ayer) a las herramientas agénticas (ahora); el paralelo Claude Code=developers / Cowork=knowledge worker; que la analogía Excel es encuadre de industria, no claim oficial.
-labels: dos cajas — EXCEL (lingua franca, sin programar) a la izquierda; HERRAMIENTAS AGENTICAS (Claude Code = developers, Cowork = knowledge worker) a la derecha; pie "habilidad base de ayer" -> "nueva habilidad base".
+labels: dos cajas; EXCEL (lingua franca, sin programar) a la izquierda; HERRAMIENTAS AGENTICAS (Claude Code = developers, Cowork = knowledge worker) a la derecha; pie "habilidad base de ayer" -> "nueva habilidad base".
 -->
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — posicionamiento Cowork vs Claude Code ("Same engine. Different surface."; Cowork = la cara para knowledge workers sin terminal; slide 7.1 "Claude Code vs Cowork — the close").
-- Anthropic — Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork — encuadre oficial: Cowork como "Claude Code para el resto de tu trabajo"; construido sobre las mismas bases que Claude Code.
-- Claude blog — Cowork research preview ("Claude Code power for knowledge work"): https://claude.com/blog/cowork-research-preview — la ambición de llevar el poder de Claude Code al trabajo del conocimiento; Cowork generaliza un éxito probado primero con developers.
-- CNBC — Anthropic's Claude Cowork targets the office worker: https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html — encuadre de público general / office worker.
-- "Claude Code is the New Excel" (ensayo de analista): https://nextword.substack.com/p/claude-code-is-the-new-excel — origen de la analogía del "nuevo Excel" (atribuir AQUÍ, NO a Anthropic).
+- corpus/agentic-ai-deck.zip.md, posicionamiento Cowork vs Claude Code ("Same engine. Different surface."; Cowork = la cara para knowledge workers sin terminal; slide 7.1 "Claude Code vs Cowork — the close").
+- Anthropic, Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork; encuadre oficial: Cowork como "Claude Code para el resto de tu trabajo"; construido sobre las mismas bases que Claude Code.
+- Claude blog, Cowork research preview ("Claude Code power for knowledge work"): https://claude.com/blog/cowork-research-preview; la ambición de llevar el poder de Claude Code al trabajo del conocimiento; Cowork generaliza un éxito probado primero con developers.
+- CNBC, Anthropic's Claude Cowork targets the office worker: https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html; encuadre de público general / office worker.
+- "Claude Code is the New Excel" (ensayo de analista): https://nextword.substack.com/p/claude-code-is-the-new-excel; origen de la analogía del "nuevo Excel" (atribuir AQUÍ, NO a Anthropic).
 
 ### Speaker notes
 
@@ -511,17 +511,17 @@ Cerrar aterrizándolo en la audiencia: son ingenieros biomédicos, pocos program
 
 ### Content
 
-- Ya extendiste *qué* hace el chat. Ahora cambia tu rol: pasás a **delegar**.
+- El chat ya quedó extendido. Lo que cambia ahora es el rol: **delegar**.
 - La frase de la sesión: **"Dejás de tipear un mensaje a la vez y empezás a entregar un resultado."**
 - Anthropic: *"menos una sesión de chat, más asignarle tareas a un colega."*
 - Chatear vs delegar:
 
 | | Chatear | Delegar a un agente |
 |---|---|---|
-| Cómo trabajás | Un mensaje a la vez | Describís un resultado |
-| Los pasos | Los hacés vos | El agente planifica y ejecuta |
-| La salida | Texto en la ventana | Archivos en tu disco |
-| Tu rol | Tipear el próximo prompt | Leer el plan, guiar a mitad de camino |
+| La forma de trabajo | Un mensaje a la vez | Se describe un resultado |
+| Los pasos | Los hace la persona | El agente planifica y ejecuta |
+| La salida | Texto en la ventana | Archivos en el disco |
+| El rol humano | Tipear el próximo prompt | Leer el plan, guiar a mitad de camino |
 
 ```ascii
 ANTES (chat)                    AHORA (agente / Cowork)
@@ -543,10 +543,10 @@ labels: ANTES (chat) vs AHORA (agente / Cowork).
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "Stop prompting. Start delegating." (slide 2.3 the reframe); tabla "Chatting vs Delegating" (slide 3.16).
-- "corpus/mision - auto.zip.md" — "el verdadero premio no es Atlas: sos vos, dominando Claude Cowork"; "Conversá, no programes."
-- Anthropic — Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork — refuerza el paradigma: trabajar con Cowork "se parece menos a una sesión de chat y más a asignarle tareas a un colega".
-- (técnico, opcional) Anthropic Engineering — Building agents with the Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk — por qué el loop plan→ejecutar→guiar es lo que define a un agente frente a un chat.
+- corpus/agentic-ai-deck.zip.md, "Stop prompting. Start delegating." (slide 2.3 the reframe); tabla "Chatting vs Delegating" (slide 3.16).
+- "corpus/mision - auto.zip.md", "el verdadero premio no es Atlas: sos vos, dominando Claude Cowork"; "Conversá, no programes."
+- Anthropic, Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork; refuerza el paradigma: trabajar con Cowork "se parece menos a una sesión de chat y más a asignarle tareas a un colega".
+- (técnico, opcional) Anthropic Engineering, Building agents with the Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk; por qué el loop plan→ejecutar→guiar es lo que define a un agente frente a un chat.
 
 ### Speaker notes
 
@@ -563,9 +563,9 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
 
 ### Content
 
-- **Bloques que se apilan**: cada uno resuelve un problema. No es una escalera; usás solo los que necesitás.
-- El mapa de la charla. Ya recorrimos los tres primeros; volvé acá para ubicarte.
-- Cada bloque = un problema que ya tuviste:
+- **Bloques que se apilan**: cada uno resuelve un problema. No es una escalera; cada tarea usa solo los bloques que necesita.
+- El mapa de la charla. Ya recorrimos los tres primeros; sirve para ubicarse entre secciones.
+- Cada bloque = un problema conocido:
   - **El chat** *(visto)* → *respondía solo de memoria.*
   - **Conectores** *(visto)* → *quiero info real, y que actúe.*
   - **Tareas programadas** *(visto)* → *quiero que corra solo.*
@@ -616,8 +616,8 @@ labels: banda exterior = PLUGINS (capa transversal, distribución). Bloques apil
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — progresión de building blocks del deck (Instrucciones → Projects → Skills → Connectors/MCP → Schedule → Live Artifacts); la idea de "pila" es la lectura ordenada de esa progresión, re-secuenciada al arco chat-primero de esta charla.
-- "corpus/mision - auto.zip.md" — la misión Atlas arma estas piezas una por una.
+- corpus/agentic-ai-deck.zip.md, progresión de building blocks del deck (Instrucciones → Projects → Skills → Connectors/MCP → Schedule → Live Artifacts); la idea de "pila" es la lectura ordenada de esa progresión, re-secuenciada al arco chat-primero de esta charla.
+- "corpus/mision - auto.zip.md", la misión Atlas arma estas piezas una por una.
 
 ### Speaker notes
 
@@ -633,7 +633,7 @@ Plugins es la banda que envuelve la pila, no un bloque más: empaqueta y distrib
 - [closed] 2026-06-09 — "Es la represnetacion como piramide la correcta ?."
   Resolution: Revisado: la piramide estricta implicaba erroneamente que cada capa depende de todas las de abajo. Cambiado a un diagrama de 'bloques que se apilan' (se combinan, no se exigen), con texto que lo aclara, y Plugins como banda transversal. ascii-note y Speaker notes actualizados para quitar la lectura de piramide-dependencia.
 - [closed] 2026-06-09 — "Tenemos que hacer claro que vamos a ir sobre cada uno de estos conceptos."
-  Resolution: Agregada linea explicita en Content y Speaker notes: 'este es el mapa de la charla; vamos a recorrer cada bloque, uno por uno, en este orden' — y que se puede volver a la slide como 'estamos aca' entre secciones.
+  Resolution: Agregada linea explicita en Content y Speaker notes: 'este es el mapa de la charla; vamos a recorrer cada bloque, uno por uno, en este orden'; y que se puede volver a la slide como 'estamos aca' entre secciones.
 - [closed] 2026-06-09 — "deberiamos aregar tal vez plugins como transversar como una forma de distribuir parte de todo esto.  Agregar un slide si no existe sobre esto."
   Resolution: Plugins representado como CAPA TRANSVERSAL de distribucion en el diagrama (banda que envuelve la pila de bloques, no un peldano mas), con bullet dedicado en Content. La slide de Plugins ya existe (6.2) y ademas se agrego una slide nueva de ciclo de vida de Plugins en Team (6.3); ascii-note actualizado para marcar Plugins como transversal.
 
@@ -661,14 +661,14 @@ labels: banner DEMO TIME; subtítulo "Pasamos a la app real de Cowork".
 
 - **DEMO EN VIVO**: tour de la pestaña Cowork sobre la app real.
 
-![Anatomía de la pestaña Cowork — interfaz anotada](images/screenshot-cowork-tab.png)
+![Anatomía de la pestaña Cowork (interfaz anotada)](images/screenshot-cowork-tab.png)
 
 - Señalar en vivo: modo **"Ask"**, selector de carpeta, pestañas **Scheduled** y **Live artifacts**, panel de **Project**.
 - Control = modo + aprobar/redirigir + carpeta. **Sin slash commands**: Cowork es GUI.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "screenshot-cowork-tab.png" (anatomía Cowork, 14 elementos anotados; el asset más Cowork-funcional de la fuente); slide 3.19 (modelo de aprobación Cowork).
+- corpus/agentic-ai-deck.zip.md, "screenshot-cowork-tab.png" (anatomía Cowork, 14 elementos anotados; el asset más Cowork-funcional de la fuente); slide 3.19 (modelo de aprobación Cowork).
 
 ### Speaker notes
 
@@ -684,7 +684,7 @@ Momento de demo en vivo, de los conceptos a la app real. Abrir Cowork y hacer un
 
 ---
 
-## 6. Instrucciones: ajustar el comportamiento sin repetirte
+## 6. Instrucciones: ajustar el comportamiento sin repetir contexto
 
 ### Content
 
@@ -710,8 +710,8 @@ que se lee en 2 minutos antes de la reunión de los lunes.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "the project context panel (GUI)" como lugar de las Instrucciones en Cowork; matriz de disponibilidad 3.3 (Persistent instructions, Cowork ⚠️).
-- "corpus/mision - auto.zip.md" — texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo".
+- corpus/agentic-ai-deck.zip.md, "the project context panel (GUI)" como lugar de las Instrucciones en Cowork; matriz de disponibilidad 3.3 (Persistent instructions, Cowork ⚠️).
+- "corpus/mision - auto.zip.md", texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo".
 
 ### Speaker notes
 
@@ -732,13 +732,13 @@ Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada v
 - Project = espacio autocontenido: **carpeta propia + memoria + lugar fijo**.
 - Tres capas persistentes: Instrucciones · Knowledge base · Chats.
 - Los chats del Project **no comparten contexto entre sí** (solo la base de conocimiento).
-- Vos concedés las carpetas con el **selector del sistema operativo**.
+- El usuario concede las carpetas con el **selector del sistema operativo**.
 - Buena práctica: carpeta dedicada, nunca una con datos confidenciales.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de "Project (Chat/Cowork)" (tres capas; chats no comparten contexto); "Working directory + permissions" (folder picker del sistema).
-- "corpus/mision - auto.zip.md" — "el Proyecto le da a Atlas una carpeta propia, memoria y un lugar fijo" (Step 1.1).
+- corpus/agentic-ai-deck.zip.md, definición de "Project (Chat/Cowork)" (tres capas; chats no comparten contexto); "Working directory + permissions" (folder picker del sistema).
+- "corpus/mision - auto.zip.md", "el Proyecto le da a Atlas una carpeta propia, memoria y un lugar fijo" (Step 1.1).
 
 ### Speaker notes
 
@@ -746,7 +746,7 @@ El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Borrar no hay `settings.json` que editar."
-  Resolution: Borrada la clausula 'no hay settings.json que editar' de Content; tambien limpiadas las menciones a settings.json en Sources y Speaker notes (referencia incidental a Claude Code) — queda 'lo controla el selector de carpetas del sistema operativo, no un archivo de configuracion'.
+  Resolution: Borrada la clausula 'no hay settings.json que editar' de Content; tambien limpiadas las menciones a settings.json en Sources y Speaker notes (referencia incidental a Claude Code); queda 'lo controla el selector de carpetas del sistema operativo, no un archivo de configuracion'.
 - [closed] 2026-06-09 — "Agregar un slide donde vamos a mostrar screenshoot de el selector de archivos y contecto como screenshoot. Usa project.png que esta en images."
   Resolution: Insertada nueva slide 2.5 'El selector de carpetas y el panel de contexto' tras Projects: como se concede una carpeta de trabajo (folder picker del sistema), donde vive el contexto del Project, y nota de seguridad (nunca conceder carpetas con datos sensibles). Cableadas ambas imagenes: images/project.png y images/context.png (ambas existen en disco).
 
@@ -756,7 +756,7 @@ El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria.
 
 ### Content
 
-- Vos concedés la carpeta con el **folder picker del sistema**. Lo de afuera, Cowork no lo ve.
+- El usuario concede la carpeta con el **folder picker del sistema**. Lo de afuera, Cowork no lo ve.
 
 ![Selector de carpeta de trabajo del Project](images/project.png)
 
@@ -768,8 +768,8 @@ El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "Working directory + permissions" (folder picker del sistema; lo concedido define el alcance); definición del panel de contexto del Project.
-- "corpus/mision - auto.zip.md" — el Project "Inteligencia de Mercado Semanal" apunta a `Documentos/Atlas-Mercado` (Step 1.1).
+- corpus/agentic-ai-deck.zip.md, "Working directory + permissions" (folder picker del sistema; lo concedido define el alcance); definición del panel de contexto del Project.
+- "corpus/mision - auto.zip.md", el Project "Inteligencia de Mercado Semanal" apunta a `Documentos/Atlas-Mercado` (Step 1.1).
 
 ### Speaker notes
 
@@ -790,8 +790,8 @@ Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterio
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "Markdown is the lingua franca"; definición de Skill (SKILL.md con YAML frontmatter: name + description; "Description drives triggering — semantic, not keyword").
-- "corpus/mision - auto.zip.md" — "mismo estándar SKILL.md" entre Cowork y Codex (Cowork vs Codex).
+- corpus/agentic-ai-deck.zip.md, "Markdown is the lingua franca"; definición de Skill (SKILL.md con YAML frontmatter: name + description; "Description drives triggering — semantic, not keyword").
+- "corpus/mision - auto.zip.md", "mismo estándar SKILL.md" entre Cowork y Codex (Cowork vs Codex).
 
 ### Speaker notes
 
@@ -804,15 +804,15 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 
 ---
 
-## 10. Trabajá en .md, exportá al final
+## 10. Trabajar en .md, exportar al final
 
 ### Content
 
-- **Llevá tu información de trabajo a `.md`**; el formato final, al último.
+- **La información de trabajo vive en `.md`**; el formato final, al último.
 - La IA **interpreta, edita y crea mejor sobre `.md`** que sobre .docx/.xlsx.
-- Vale doble: la **memoria** del agente (texto plano) y tus **archivos de trabajo** (en el Project).
+- Vale doble: la **memoria** del agente (texto plano) y los **archivos de trabajo** (en el Project).
 - El entregable (**.docx, .xlsx, PDF, slides**) se genera una vez, al final.
-- Regla de bolsillo: *editá en `.md`, entregá en lo que pida tu jefe.*
+- Regla de bolsillo: *editar en `.md`, entregar en el formato que pida el jefe.*
 
 ```ascii
    FLUJO DE TRABAJO CON LA IA
@@ -835,8 +835,8 @@ labels: izquierda = fuentes (lo que llega); centro = archivos .md (trabajo itera
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — "Markdown is the lingua franca" (la configuración y el material del mundo LLM es texto plano; el modelo lee texto).
-- "corpus/mision - auto.zip.md" — el flujo de Atlas trabaja sobre archivos `.md` en el Project (reporte `.md` consolidado) y el entregable final se genera al último (borrador de mail, tablero).
+- corpus/agentic-ai-deck.zip.md, "Markdown is the lingua franca" (la configuración y el material del mundo LLM es texto plano; el modelo lee texto).
+- "corpus/mision - auto.zip.md", el flujo de Atlas trabaja sobre archivos `.md` en el Project (reporte `.md` consolidado) y el entregable final se genera al último (borrador de mail, tablero).
 
 ### Speaker notes
 
@@ -846,14 +846,14 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ---
 
-## 11. Schedule en Cowork: lo mismo que viste en el chat, ahora con carpetas y archivos
+## 11. Schedule en Cowork: lo mismo del chat, ahora con carpetas y archivos
 
 ### Content
 
-- Ya lo conocés (sección 3): una vez + cadencia → corre sola. En Cowork, además, **sobre tus carpetas y archivos**, con tus Instrucciones, connectors y skills.
+- El concepto es el de la sección 3: una vez + cadencia → corre sola. En Cowork, además, **sobre carpetas y archivos reales**, con las Instrucciones, connectors y skills del Project.
 - Cadencias: por hora / diaria / semanal / **"Run now"**. Vive en la pestaña **Scheduled**.
-- **¿Dónde corre? Igual que en el chat (slide 3.2):** nube en beta (Max primero); si no te llegó → **local: compu prendida + app abierta**.
-- Las tareas de Cowork usan **tus archivos locales** → corren local. Planificá con la compu prendida.
+- **¿Dónde corre? Igual que en el chat (slide 3.2):** nube en beta (Max primero); sin la beta → **local: compu prendida + app abierta**.
+- Las tareas de Cowork usan **archivos locales** → corren local. Conviene planificar con la compu prendida.
 
 ![Pestaña Scheduled en Cowork](images/schedule.png)
 
@@ -861,11 +861,11 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ### Sources
 
-- Anthropic Support — Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork — versión ACTUALIZADA (verificada 2026-07-09): "Scheduled tasks run remotely, so they run on their cadence even when your computer is asleep or the Claude Desktop app is closed"; planes pagos; beta con rollout Max-first. Excepción clave para Cowork: "If a scheduled task requires local files or apps, it will only run locally".
-- Anthropic Support — Release notes (7 de julio de 2026): https://support.claude.com/en/articles/12138966 — Cowork en web/mobile, sesiones remotas (beta), "scheduled tasks run with no device online", rollout empezando por Max (verificado 2026-07-09).
-- TechCrunch (2026-07-07): https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/ — cobertura de prensa de la expansión y las corridas en background (encuadre de terceros).
-- corpus/agentic-ai-deck.zip.md — slide 6.1 (Scheduled tasks, Cowork proactivo). *(La caveat "app abierta" de 6.3 quedó desactualizada por el update del 7 de julio de 2026.)*
-- "corpus/mision - auto.zip.md" — el flujo programado de Atlas (Step 3.3); "Run on demand" como tip de demo. *(Su caveat local también quedó desactualizada.)*
+- Anthropic Support, Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork; versión ACTUALIZADA (verificada 2026-07-09): "Scheduled tasks run remotely, so they run on their cadence even when your computer is asleep or the Claude Desktop app is closed"; planes pagos; beta con rollout Max-first. Excepción clave para Cowork: "If a scheduled task requires local files or apps, it will only run locally".
+- Anthropic Support, Release notes (7 de julio de 2026): https://support.claude.com/en/articles/12138966; Cowork en web/mobile, sesiones remotas (beta), "scheduled tasks run with no device online", rollout empezando por Max (verificado 2026-07-09).
+- TechCrunch (2026-07-07): https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/; cobertura de prensa de la expansión y las corridas en background (encuadre de terceros).
+- corpus/agentic-ai-deck.zip.md, slide 6.1 (Scheduled tasks, Cowork proactivo). *(La caveat "app abierta" de 6.3 quedó desactualizada por el update del 7 de julio de 2026.)*
+- "corpus/mision - auto.zip.md", el flujo programado de Atlas (Step 3.3); "Run on demand" como tip de demo. *(Su caveat local también quedó desactualizada.)*
 
 ### Speaker notes
 
@@ -884,16 +884,16 @@ Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se ense�
 - **Artifact** = salida viva en un panel lateral: HTML, gráficos, tablas, documentos.
 - **Estándar** (todos los planes): estático. **Live** (Cowork, pago): página interactiva y persistente que **se refresca con datos actuales** y guarda **versiones** (pestaña "Live artifacts").
 - Se crea desde una tarea, o desde la pestaña (**New artifact**).
-- Estado hoy: **NO compartibles aún** (roadmap) · **locales** (no te siguen entre dispositivos) · usan tus connectors **sin re-preguntar**.
+- Estado hoy: **NO compartibles aún** (roadmap) · **locales** (no siguen al usuario entre dispositivos) · usan los connectors aprobados **sin re-preguntar**.
 - Atlas: el tablero `pulso-semanal-FECHA`, del boceto del jefe:
 
 ![Boceto del tablero "Pulso semanal de mercado" (wireframe del jefe)](images/mockup-tablero.png)
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de Artifact (dos tiers); slide 5.13 (Standard vs Advanced; Live Artifacts en Cowork); matriz 5.16 (Cowork ✓ full Artifacts + Live Artifacts).
-- "corpus/mision - auto.zip.md" — Skill `publicar-tablero` (un artifact por semana, `pulso-semanal-FECHA`); estructura del mockup del tablero (boceto del jefe).
-- Anthropic Support — Use Live Artifacts in Claude Cowork: https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork — realidad oficial: persisten en la pestaña Live artifacts, se refrescan con datos actuales, guardan versiones; limitaciones: locales (no en la nube), NO compartibles aún (en roadmap), usan los connectors aprobados sin volver a preguntar; dos formas de crearlos (desde una tarea o desde la pestaña).
+- corpus/agentic-ai-deck.zip.md, definición de Artifact (dos tiers); slide 5.13 (Standard vs Advanced; Live Artifacts en Cowork); matriz 5.16 (Cowork ✓ full Artifacts + Live Artifacts).
+- "corpus/mision - auto.zip.md", Skill `publicar-tablero` (un artifact por semana, `pulso-semanal-FECHA`); estructura del mockup del tablero (boceto del jefe).
+- Anthropic Support, Use Live Artifacts in Claude Cowork: https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork; realidad oficial: persisten en la pestaña Live artifacts, se refrescan con datos actuales, guardan versiones; limitaciones: locales (no en la nube), NO compartibles aún (en roadmap), usan los connectors aprobados sin volver a preguntar; dos formas de crearlos (desde una tarea o desde la pestaña).
 
 ### Speaker notes
 
@@ -918,21 +918,21 @@ Cierre de la sección Cowork. El jefe quería el reporte de dos formas: el email
 
 ### Content
 
-- **Skill** = instrucción reutilizable que se carga cuando tu pedido coincide con su descripción. **Un trabajo por Skill.**
+- **Skill** = instrucción reutilizable que se carga cuando el pedido coincide con su descripción. **Un trabajo por Skill.**
 - *"Todo lo que le explicás a Claude dos veces es una Skill que deberías escribir una vez."*
 - Dos caminos (GUI, sin slash commands):
-  1. **Pedila en lenguaje natural** → Claude escribe el `SKILL.md` → habilitala en **Customize → Skills** ("Save to enable").
-  2. **Subí un ZIP** (Customize → Skills → "+").
+  1. **Pedirla en lenguaje natural** → Claude escribe el `SKILL.md` → se habilita en **Customize → Skills** ("Save to enable").
+  2. **Subir un ZIP** (Customize → Skills → "+").
 - Requisito: **Code execution** habilitado.
 - **La trampa del Save:** sin Save/enable, la Skill "no funciona".
 - Atlas: `reporte-semanal` consolida la carpeta `fuentes/` en un reporte con formato fijo.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de Skill (folder + SKILL.md, "one job per skill"); "Anything you explain to Claude twice is a skill you should write once."
-- "corpus/mision - auto.zip.md" — el ejemplo `reporte-semanal` (lee la carpeta `fuentes/`, consolida por empresa, formato fijo, sufijo `-new`).
-- Anthropic Support — Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude — habilitar Skills en Customize → Skills; requiere Code execution.
-- Anthropic Support — How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills — los dos caminos en Cowork (pedírsela en lenguaje natural y habilitarla; o subir un ZIP).
+- corpus/agentic-ai-deck.zip.md, definición de Skill (folder + SKILL.md, "one job per skill"); "Anything you explain to Claude twice is a skill you should write once."
+- "corpus/mision - auto.zip.md", el ejemplo `reporte-semanal` (lee la carpeta `fuentes/`, consolida por empresa, formato fijo, sufijo `-new`).
+- Anthropic Support, Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude; habilitar Skills en Customize → Skills; requiere Code execution.
+- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills; los dos caminos en Cowork (pedírsela en lenguaje natural y habilitarla; o subir un ZIP).
 
 ### Speaker notes
 
@@ -940,7 +940,7 @@ Arranca el bloque avanzado. La Skill materializa el "enseñá una vez, reutiliz�
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Revisar (2) pidiéndole la creación durante el prompt, en lenguaje natural. No estoy seguro que co-work funcione."
-  Resolution: Confirmado el camino (2): en Cowork pedir la Skill en lenguaje natural SI funciona — Claude escribe el SKILL.md, pero NO queda habilitada hasta darle Save/enable en Customize > Skills (la trampa del Save, que se conserva). Removido '/create-skill' / '/skill-creator' como metodo de Cowork (son slash commands de Claude Code, no existen en la GUI de Cowork). Reescrito el bloque 'Como se crea una Skill en Cowork' con los dos caminos reales + requisito Code execution; notes actualizadas.
+  Resolution: Confirmado el camino (2): en Cowork pedir la Skill en lenguaje natural SI funciona; Claude escribe el SKILL.md, pero NO queda habilitada hasta darle Save/enable en Customize > Skills (la trampa del Save, que se conserva). Removido '/create-skill' / '/skill-creator' como metodo de Cowork (son slash commands de Claude Code, no existen en la GUI de Cowork). Reescrito el bloque 'Como se crea una Skill en Cowork' con los dos caminos reales + requisito Code execution; notes actualizadas.
 - [closed] 2026-06-09 — "Busca mas info sobre cowork y skill creation en la documentacion para estar seguros que esto sea correcto."
   Resolution: Verificado contra documentacion oficial de Anthropic (support.claude.com): en Cowork (GUI, sin slash commands) los dos caminos reales son pedir la Skill en lenguaje natural (Claude escribe el SKILL.md y vos la habilitas en Customize > Skills) o subir un ZIP (Customize > Skills > + > Create skill > Upload). Requiere Code execution (Settings > Capabilities). Sumadas dos fuentes de soporte (use-skills + create-custom-skills).
 
@@ -971,8 +971,8 @@ Arranca el bloque avanzado. La Skill materializa el "enseñá una vez, reutiliz�
 +--------------------------------------------------------------+
 ```
 <!-- ascii-note:
-intent: mostrar la anatomía de un SKILL.md — un bloque de metadata (YAML frontmatter: name + description) arriba y el cuerpo de instrucciones en Markdown abajo. Refuerza el beat de archivos .md/metadata de la sección Cowork.
-emphasize: la separación visual en dos zonas — METADATA/HEADER (name, description; "qué es / cuándo se activa") vs CUERPO (las instrucciones; "qué hace"); que la `description` es lo que dispara la Skill.
+intent: mostrar la anatomía de un SKILL.md; un bloque de metadata (YAML frontmatter: name + description) arriba y el cuerpo de instrucciones en Markdown abajo. Refuerza el beat de archivos .md/metadata de la sección Cowork.
+emphasize: la separación visual en dos zonas; METADATA/HEADER (name, description; "qué es / cuándo se activa") vs CUERPO (las instrucciones; "qué hace"); que la `description` es lo que dispara la Skill.
 labels: zona superior = metadata/header (YAML, name + description); zona inferior = cuerpo (instrucciones en Markdown); etiquetas laterales "cuándo se activa" y "qué hace".
 -->
 
@@ -981,8 +981,8 @@ labels: zona superior = metadata/header (YAML, name + description); zona inferio
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de Skill (SKILL.md con YAML frontmatter: name + description; "Description drives triggering — semantic, not keyword").
-- "corpus/mision - auto.zip.md" — la Skill `reporte-semanal` (entrada `fuentes/`, consolida por empresa, estructura fija, sufijo `-new`).
+- corpus/agentic-ai-deck.zip.md, definición de Skill (SKILL.md con YAML frontmatter: name + description; "Description drives triggering — semantic, not keyword").
+- "corpus/mision - auto.zip.md", la Skill `reporte-semanal` (entrada `fuentes/`, consolida por empresa, estructura fija, sufijo `-new`).
 
 ### Speaker notes
 
@@ -999,7 +999,7 @@ Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el be
 - **Subagente** = asistente aislado, contexto propio; devuelve **un resumen** (no la transcripción).
 - Regla de una línea: chico y visible → **Skill**. Grande o ruidoso → **Subagente**.
 - En Cowork corren "por debajo", **varios en paralelo**.
-- Se agrega como una Skill (descripción + instrucciones): pedíselo a Claude, o viene en un **Plugin**.
+- Se agrega como una Skill (descripción + instrucciones): se le pide a Claude, o llega en un **Plugin**.
 
 ```ascii
                 +------------------+
@@ -1026,8 +1026,8 @@ labels: agente principal -> sub A / sub B / sub C (contexto propio) -> resumen c
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de Subagent (aislado, devuelve un resumen); "Skill vs Subagent" (slide 4.9 tabla); matriz 4.10 (Cowork ⚠️, under the hood); demo 4.8 (8 propuestas en paralelo).
-- Claude Docs — Subagents: https://code.claude.com/docs/en/sub-agents — concepto general de subagente (un spec: cuándo usarlo + instrucciones).
+- corpus/agentic-ai-deck.zip.md, definición de Subagent (aislado, devuelve un resumen); "Skill vs Subagent" (slide 4.9 tabla); matriz 4.10 (Cowork ⚠️, under the hood); demo 4.8 (8 propuestas en paralelo).
+- Claude Docs, Subagents: https://code.claude.com/docs/en/sub-agents; concepto general de subagente (un spec: cuándo usarlo + instrucciones).
 
 ### Speaker notes
 
@@ -1049,7 +1049,7 @@ Nivel avanzado, presentarlo como "para cuando crezcas". La distinción mental ú
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — definición de Plugin ("Ship the whole thing"; "the way to get a skill into Cowork"); slide 4.5 (caveat de project-skills en Cowork); matriz 5.11 (Cowork ✓ GUI marketplace); slide 5.10 (marketplaces).
+- corpus/agentic-ai-deck.zip.md, definición de Plugin ("Ship the whole thing"; "the way to get a skill into Cowork"); slide 4.5 (caveat de project-skills en Cowork); matriz 5.11 (Cowork ✓ GUI marketplace); slide 5.10 (marketplaces).
 
 ### Speaker notes
 
@@ -1086,9 +1086,9 @@ Cerrar el avanzado con la idea de empaquetado: cuando un workflow madura (varias
 +---------------------------+     +-----------------------------------------+
 ```
 <!-- ascii-note:
-intent: mostrar el ciclo de vida de un plugin en una cuenta Team/Enterprise — del Owner que crea un marketplace privado a los miembros que lo instalan, con updates que se sincronizan.
+intent: mostrar el ciclo de vida de un plugin en una cuenta Team/Enterprise; del Owner que crea un marketplace privado a los miembros que lo instalan, con updates que se sincronizan.
 emphasize: el rol del OWNER (marketplace privado: subir ZIP o sync GitHub) y la preferencia de instalación por plugin; que se distribuye a chat Y a Cowork; que los miembros instalan desde el directorio y las actualizaciones se sincronizan solas.
-labels: flujo de 5 pasos — Owner crea marketplace privado -> agrega plugins (ZIP / sync GitHub) -> fija preferencia de instalación (opcional/auto-install/provisionar) -> distribución (chat + Cowork) -> miembros instalan/habilitan (updates sincronizan).
+labels: flujo de 5 pasos; Owner crea marketplace privado -> agrega plugins (ZIP / sync GitHub) -> fija preferencia de instalación (opcional/auto-install/provisionar) -> distribución (chat + Cowork) -> miembros instalan/habilitan (updates sincronizan).
 -->
 
 - **Marketplace privado**: se carga por ZIP o sync de repo GitHub (**auto-actualiza**).
@@ -1097,9 +1097,9 @@ labels: flujo de 5 pasos — Owner crea marketplace privado -> agrega plugins (Z
 
 ### Sources
 
-- Anthropic Support — Manage Claude Cowork plugins for your organization: https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization — Owners gestionan plugins en Organization settings; marketplace privado (ZIP o sync GitHub); preferencia de instalación por plugin.
-- Anthropic Support — Use plugins in Claude: https://support.claude.com/en/articles/13837440-use-plugins-in-claude — miembros instalan/habilitan desde el directorio; updates sincronizan; disponibles en chat y Cowork.
-- Claude blog — Cowork plugins across the enterprise: https://claude.com/blog/cowork-plugins-across-enterprise — distribución de plugins a nivel organización (chat + Cowork).
+- Anthropic Support, Manage Claude Cowork plugins for your organization: https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization; Owners gestionan plugins en Organization settings; marketplace privado (ZIP o sync GitHub); preferencia de instalación por plugin.
+- Anthropic Support, Use plugins in Claude: https://support.claude.com/en/articles/13837440-use-plugins-in-claude; miembros instalan/habilitan desde el directorio; updates sincronizan; disponibles en chat y Cowork.
+- Claude blog, Cowork plugins across the enterprise: https://claude.com/blog/cowork-plugins-across-enterprise; distribución de plugins a nivel organización (chat + Cowork).
 
 ### Speaker notes
 
@@ -1146,8 +1146,8 @@ labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publica
 
 ### Sources
 
-- "corpus/mision - auto.zip.md" — "el loop completo (Cowork version)"; gancho de cierre.
-- corpus/agentic-ai-deck.zip.md — "Anything you explain to Claude twice is a skill you should write once" (slide 7.3).
+- "corpus/mision - auto.zip.md", "el loop completo (Cowork version)"; gancho de cierre.
+- corpus/agentic-ai-deck.zip.md, "Anything you explain to Claude twice is a skill you should write once" (slide 7.3).
 
 ### Speaker notes
 
@@ -1162,15 +1162,15 @@ Cierre integrador: mostrar el diagrama del loop completo para que vean cómo cad
 ### Content
 
 - **Cowork no tiene audit trail**: no sirve para datos regulados o sensibles.
-- **Toda salida es un borrador**: verificá cifras, citas y afirmaciones contra la fuente.
-- **No metas datos confidenciales / PII / bajo NDA** en la superficie equivocada.
-- **Reproducibilidad:** mantené juntos prompt + entradas + salidas, para que el trabajo sea auditable.
+- **Toda salida es un borrador**: cifras, citas y afirmaciones se verifican contra la fuente.
+- **Nada de datos confidenciales / PII / bajo NDA** en la superficie equivocada.
+- **Reproducibilidad:** prompt + entradas + salidas se guardan juntos, para que el trabajo sea auditable.
 - **Capas de guardarraíles:** permisos de carpeta → reglas en Instrucciones → solo plugins verificados → revisión humana.
 - *Contexto biomédico:* con datos de pacientes, nada de esto. Cowork no es la herramienta para datos clínicos sensibles.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md — slide 7.2 (Governance & verification, verbatim); "No audit trail in Cowork."
+- corpus/agentic-ai-deck.zip.md, slide 7.2 (Governance & verification, verbatim); "No audit trail in Cowork."
 
 ### Speaker notes
 
@@ -1182,26 +1182,26 @@ Slide de cierre responsable, breve y obligatoria. Para esta audiencia de bioinge
 
 # Open questions
 
-- ~~Fecha de la clase sin confirmar~~ — resuelto 2026-07-14: `date: Julio 2026`.
+- ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
 - Imágenes diferidas (Phase 2 del librarian no corrida): las imágenes citadas desde el corpus (`screenshot-cowork-tab.png` en slide 4.5, `mockup-tablero.png` en slide 4.12) provienen de registros con `<!-- pending: process_images -->`. Las imágenes existen en disco y se referencian; re-verificar depiction/relevance tras correr librarian Phase 2.
-- Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md — re-verify after librarian Phase 2.
-- Slide 4.12 (Live Artifacts) cita pending stub "corpus/mision - auto.zip.md" (mockup-tablero) — re-verify after librarian Phase 2.
-- Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export — confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
+- Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
+- Slide 4.12 (Live Artifacts) cita pending stub "corpus/mision - auto.zip.md" (mockup-tablero); re-verify after librarian Phase 2.
+- Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
-- **Slide 4.5 — interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
+- **Slide 4.5; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
 - Nuevas URLs externas (round 3) a re-verificar en Polish si se quiere snapshot/cita estable: support.claude.com (use-skills, create-custom-skills, schedule-recurring-tasks, use-live-artifacts, manage-org-plugins, use-plugins), claude.com/blog (cowork-plugins-across-enterprise), code.claude.com/docs (sub-agents).
-- ~~URLs nuevas de round 4~~ — **RESUELTO en round 5 (2026-07-09):** las 6 citas se verificaron online. Resultados: web search 10684626 OK; ChatGPT search 9237897 OK (existencia+contenido corroborados vía búsqueda; el fetch directo da 403 por bloqueo anti-bot de help.openai.com); ChatGPT tasks OK con slug canónico corregido a `10291617-tasks-in-chatgpt`; directorio de conectores: claude.ai/directory requiere login → cita reemplazada por el anuncio oficial claude.com/blog/connectors-directory + support 11176164; custom connectors 11175166 OK; modelcontextprotocol.io OK.
-- ~~Tareas programadas en el chat de Claude~~ — **RESUELTO en round 5:** claude.ai SÍ tiene tareas programadas en el navegador (observación de primera mano del presentador 2026-07-09 + release notes del 7 de julio de 2026, support article 12138966: corren en la nube sin dispositivo online, beta, rollout Max-first). Slide 3.1 actualizada con Claude como ejemplo de primera clase.
-- **Capacidad ejecutiva por conector (slide 2.5), estado por acción:** Gmail-borrador verificado (corpus/misión); **Calendar-agendar VERIFICADO por el presentador (2026-07-09)**; tickets (Jira/ServiceNow) y mensajes (Slack) siguen presentados como capacidad del ecosistema (MCP/conectores lo permiten — fuentes oficiales citadas) sin verificación por conector puntual — no prometer demos en vivo de esos dos sin chequear antes.
-- Claim "búsqueda web integrada en casi todos los chats" (slide 2.2): verificado citable para Claude y ChatGPT; Gemini se menciona de pasada sin fuente propia — agregar fuente oficial de Google o suavizar la mención al presentar.
+- ~~URLs nuevas de round 4~~; **RESUELTO en round 5 (2026-07-09):** las 6 citas se verificaron online. Resultados: web search 10684626 OK; ChatGPT search 9237897 OK (existencia+contenido corroborados vía búsqueda; el fetch directo da 403 por bloqueo anti-bot de help.openai.com); ChatGPT tasks OK con slug canónico corregido a `10291617-tasks-in-chatgpt`; directorio de conectores: claude.ai/directory requiere login → cita reemplazada por el anuncio oficial claude.com/blog/connectors-directory + support 11176164; custom connectors 11175166 OK; modelcontextprotocol.io OK.
+- ~~Tareas programadas en el chat de Claude~~; **RESUELTO en round 5:** claude.ai SÍ tiene tareas programadas en el navegador (observación de primera mano del presentador 2026-07-09 + release notes del 7 de julio de 2026, support article 12138966: corren en la nube sin dispositivo online, beta, rollout Max-first). Slide 3.1 actualizada con Claude como ejemplo de primera clase.
+- **Capacidad ejecutiva por conector (slide 2.5), estado por acción:** Gmail-borrador verificado (corpus/misión); **Calendar-agendar VERIFICADO por el presentador (2026-07-09)**; tickets (Jira/ServiceNow) y mensajes (Slack) siguen presentados como capacidad del ecosistema (MCP/conectores lo permiten; fuentes oficiales citadas) sin verificación por conector puntual; no prometer demos en vivo de esos dos sin chequear antes.
+- Claim "búsqueda web integrada en casi todos los chats" (slide 2.2): verificado citable para Claude y ChatGPT; Gemini se menciona de pasada sin fuente propia; agregar fuente oficial de Google o suavizar la mención al presentar.
 - **Live Artifacts y el update del 7 de julio de 2026:** la locality de Live Artifacts ("viven en tu computadora, no compartibles aún") se RE-VERIFICÓ el 2026-07-09 contra support article 14729249 (actualizado recientemente) y sigue vigente pese a que las sesiones de Cowork ahora pueden correr remotas. Vigilar este punto: es el candidato más probable a quedar desactualizado con el rollout web/mobile.
 
 # Cut material
 
-- **Detalles internos de Claude Code** (Plan mode, slash commands completos, project-directory skills, config de `/agents`, dynamic workflows, las dos misiones hands-on basadas en Code, árboles `~/.claude/...`): fuera de foco por diseño de esta charla (companion funcional/alto nivel). Claude Code aparece solo como contraste en la sección de Cowork. — fuente: corpus/agentic-ai-deck.zip.md (Code-related slides preservadas pero marcadas fuera de foco).
-- **Comparación detallada Cowork vs Codex** (las dos tablas y el re-solución completa de Codex): disponible en el corpus para un ángulo "vs la alternativa", pero excluida para no diluir el foco en *usar* Cowork. Podría incorporarse como un slide opcional si el presentador lo pide en Review. — fuente: "corpus/mision - auto.zip.md" (cowork-vs-codex).
-- **`buscar-accion` con Claude in Chrome / web_fetch a Yahoo Finance** como tema técnico propio: mencionado de pasada en el loop completo (Conclusions) pero no desarrollado como slide, para mantener el nivel alto. — fuente: "corpus/mision - auto.zip.md" (M2).
-- **Auto memory** como concepto separado: absorbido dentro de Projects (la memoria es una de las tres capas del Project) en lugar de un slide propio, para no fragmentar el básico. — fuente: corpus/agentic-ai-deck.zip.md (Auto memory 3.7).
-- **Detalle mecánico del Schedule de Cowork** (round 4, al adelgazar la ex-slide 4.3 a la nueva 4.11 por decisión C2): los sub-bullets "Describís la tarea una vez; Claude guarda el prompt como las instrucciones de la tarea" y "Tiene los mismos poderes que una tarea normal: connectors, skills, plugins instalados", y el aparte explícito sobre agentes programados alojados en la nube como funcionalidad separada (conservado solo en Speaker notes). El concepto general de tarea programada ahora se enseña en la sección 3 (desde el chat). — fuente: draft round 3, slide 4.3 "Schedule: que Cowork trabaje solo".
-- **Framing "sideway" de los archivos MD** (round 4): la ex-slide 3.2 "(Sideway) Archivos MD y metadata" dejó de ser un aparte y se expandió a un beat de enseñanza de dos slides dentro de la sección Cowork (4.9 "qué es un .md / cómo se lee" + 4.10 "trabajá en .md, exportá al final"); la nota original "esto es un sideway de alto nivel — es contexto, no el plato principal" se retiró porque el presentador lo promovió a contenido central. — fuente: draft round 3, slide 3.2.
-- **Título/encuadre original del roadmap** (round 4): la ex-slide 2.2 "Los bloques de Cowork: cada problema, una pieza" codificaba el arco viejo (solo bloques de Cowork, empezando en "un prompt/chatear" como bloque de Cowork). Reescrita como 4.4 "El mapa de la charla: bloques que se apilan" con el arco nuevo (chat → conectores → tareas programadas → Cowork → avanzado) y marcadores "(visto)" / "estamos acá". Los pares problema↔bloque originales de Instrucciones/Projects/Skills/Connectors/Schedule/Live Artifacts se conservan (reformulados) en el diagrama nuevo. — fuente: draft round 3, slide 2.2.
+- **Detalles internos de Claude Code** (Plan mode, slash commands completos, project-directory skills, config de `/agents`, dynamic workflows, las dos misiones hands-on basadas en Code, árboles `~/.claude/...`): fuera de foco por diseño de esta charla (companion funcional/alto nivel). Claude Code aparece solo como contraste en la sección de Cowork. Fuente: corpus/agentic-ai-deck.zip.md (Code-related slides preservadas pero marcadas fuera de foco).
+- **Comparación detallada Cowork vs Codex** (las dos tablas y el re-solución completa de Codex): disponible en el corpus para un ángulo "vs la alternativa", pero excluida para no diluir el foco en *usar* Cowork. Podría incorporarse como un slide opcional si el presentador lo pide en Review. Fuente: "corpus/mision - auto.zip.md" (cowork-vs-codex).
+- **`buscar-accion` con Claude in Chrome / web_fetch a Yahoo Finance** como tema técnico propio: mencionado de pasada en el loop completo (Conclusions) pero no desarrollado como slide, para mantener el nivel alto. Fuente: "corpus/mision - auto.zip.md" (M2).
+- **Auto memory** como concepto separado: absorbido dentro de Projects (la memoria es una de las tres capas del Project) en lugar de un slide propio, para no fragmentar el básico. Fuente: corpus/agentic-ai-deck.zip.md (Auto memory 3.7).
+- **Detalle mecánico del Schedule de Cowork** (round 4, al adelgazar la ex-slide 4.3 a la nueva 4.11 por decisión C2): los sub-bullets "Describís la tarea una vez; Claude guarda el prompt como las instrucciones de la tarea" y "Tiene los mismos poderes que una tarea normal: connectors, skills, plugins instalados", y el aparte explícito sobre agentes programados alojados en la nube como funcionalidad separada (conservado solo en Speaker notes). El concepto general de tarea programada ahora se enseña en la sección 3 (desde el chat). Fuente: draft round 3, slide 4.3 "Schedule: que Cowork trabaje solo".
+- **Framing "sideway" de los archivos MD** (round 4): la ex-slide 3.2 "(Sideway) Archivos MD y metadata" dejó de ser un aparte y se expandió a un beat de enseñanza de dos slides dentro de la sección Cowork (4.9 "qué es un .md / cómo se lee" + 4.10 "trabajá en .md, exportá al final"); la nota original "esto es un sideway de alto nivel — es contexto, no el plato principal" se retiró porque el presentador lo promovió a contenido central. Fuente: draft round 3, slide 3.2.
+- **Título/encuadre original del roadmap** (round 4): la ex-slide 2.2 "Los bloques de Cowork: cada problema, una pieza" codificaba el arco viejo (solo bloques de Cowork, empezando en "un prompt/chatear" como bloque de Cowork). Reescrita como 4.4 "El mapa de la charla: bloques que se apilan" con el arco nuevo (chat → conectores → tareas programadas → Cowork → avanzado) y marcadores "(visto)" / "estamos acá". Los pares problema↔bloque originales de Instrucciones/Projects/Skills/Connectors/Schedule/Live Artifacts se conservan (reformulados) en el diagrama nuevo. Fuente: draft round 3, slide 2.2.

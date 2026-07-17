@@ -4,11 +4,7 @@
 
 ## Tagging vocabulary
 
-Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology, style.
-
-## Tagging vocabulary
-
-Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy.
+Reuse existing tags before inventing new ones. In use: restructure, add-slide, add-visual, slide-content, sources, roadmap, positioning, compact, accuracy, too-dense, expand, too-vague, rewrite, bad-order, terminology, style, audience-address.
 
 ## Entries
 
@@ -213,3 +209,17 @@ Reuse existing tags before inventing new ones. In use: restructure, add-slide, a
   feedback: "STYLE PASS deck-wide aplicando el skill desrobotizar del presentador (quitar marcas de escritura de IA en la prosa en espanol)."
   resolution: Aplicadas las reglas nucleo + quick checks + reglas-propias del skill sobre Thesis, Agenda, 5 goals de seccion y los Content/Speaker notes de las 27 slides. ~140 em-dashes reemplazados en prosa (comas, puntos, parentesis); eliminados adverbios en -mente, contrastes binarios "no es X sino Y", meta-comentario ("mencion, sin profundizar", "proxima slide: ..."), formulas de revelacion ("ahi esta la magia"), capsulas ("un toggle y listo"), arcos "de X a Y" ("de preguntar cada vez a suscribirte"), muletillas ("Ojo:", "Y ojo:"), pasiva refleja ("las carpetas se conceden" -> "vos concedes"), hendidas y colones compulsivos. Titulo de seccion 1 restylado ("El chat que ya usas y sus limites"). Sin cambios de sustancia: claims verificados, atribuciones L002, numeros, nombres de producto y mensajes verbatim del presentador intactos; compactacion round 6 preservada (ningun Content crecio). NO tocados: ascii + ascii-notes, ejemplo ```text, image refs (2 em-dashes quedan en alt text), Sources, audit trail [closed], Open questions, Cut material, frontmatter. Self-score prosa del deck: 28/50 antes -> 43/50 despues; ninguna slide <35.
   tags: [style, rewrite, slide-content]
+- talk: claude-cowork
+  date: 2026-07-15
+  location: Whole draft (Thesis, Agenda, goals, titulos, Content, celdas de tabla; notes exentas)
+  origin: presenter-chat
+  feedback: "hablarle asi a la audiencia es muy slop, el que habla con la audiencia soy yo y no la presentacion. nunca hacerlo si no se pide explicitamente. [Ajuste mid-round: esta mal hablar en segunda persona compulsivamente y sin considerar el contexto — registro por defecto impersonal/tercera persona; segunda persona solo como beat deliberado.]"
+  resolution: Cambiado el registro por defecto de toda la prosa de presentacion a impersonal/tercera persona per la regla nueva de reglas-propias.md: Thesis reescrita ("La charla parte del chat de uso diario..."), Agenda, goals de secciones 1 y 4, 4 titulos ("El chat como viene y sus limites"; "sin repetir contexto"; "Trabajar en .md, exportar al final"; "lo mismo del chat"; "¿Donde corre la tarea?"), ~20 bullets de Content ("vos concedes" -> "el usuario concede", "sabe donde corre" -> "saber donde corre", "te avisa" -> "avisa", "tus archivos" -> "archivos/los archivos", imperativos -> infinitivos), celdas de la tabla 4.3 ("Los haces vos" -> "Los hace la persona") y 6 retoques triviales de ascii (misma longitud). SURVIVORS deliberados enumerados y justificados: catchphrase del presentador "Claude instalado en tu compu(tadora)" (cita verbatim, 3 lugares), framing oficial "Claude Code para el resto de tu trabajo" (cita de Anthropic), frase-ancla "Dejas de tipear..." (punchline citada que el orador dice en voz alta), maxima "Todo lo que le explicas a Claude dos veces..." (tagline del corpus, 2 lugares), gancho de cierre "¿Que tarea le delegarias a tu propio Atlas?" (unico beat de interpelacion directa, al cierre), prompts-de-usuario citados ("resumi mi inbox", "¿que mails me perdi ayer?"), voz de usuario en primera persona del roadmap ("quiero info real"). FLAG no tocado: ascii de 4.3 (etiquetas de actor "vos:" requieren redisenio, no trivial). Speaker notes exentas per regla. Cross-refs actualizadas (bullet de Agenda de la seccion 1).
+  tags: [style, audience-address, rewrite]
+- talk: claude-cowork
+  date: 2026-07-15
+  location: Whole draft (prosa fuera de zonas exentas)
+  origin: presenter-chat
+  feedback: "Em-dash purge for real: round 7 reporto 0 pero el grep del orquestador encontro ~27 en prosa."
+  resolution: [Ampliado en round 8b a scope DOCUMENTO COMPLETO por pedido del presentador: las exenciones de Sources y audit trail eran incorrectas para la redaccion propia.] Purga total de draft.md: 164 em-dashes antes -> 27 despues (137 reemplazados, solo puntuacion, sin cambiar palabras: coma para separador editorial-titulo en Sources, punto y coma para glosas, ". Fuente:" en Cut material). Residuo final, cada uno justificado: 20 separadores del formato stampeado "- [closed] FECHA — " (formato MAQUINA del skill feedback-cycle: las regexes OPEN_BULLET/CLOSED_BULLET de feedback_cycle.py exigen ese em-dash literal; cambiarlo rompe find-closed-unmirrored/rescue-open) + 7 dentro de citas verbatim (2 en texto verbatim del presentador en bullets [closed]; 5 en citas textuales del corpus como "Claude Code vs Cowork — the close" y "Description drives triggering — semantic, not keyword"). 0 em-dashes fuera de esas dos clases, verificado con clasificador linea por linea. En round 8 previo: 2 alt-texts corregidos y 0 en prosa de presentacion.
+  tags: [style, rewrite]
