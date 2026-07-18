@@ -1,11 +1,53 @@
 # memory.md — intro-curso-mim
 
-**Current step:** 7 — Render in_progress
+**Current step:** 7 — Render complete
+**Awaiting:** presenter review of `output/html/index.html`.
 **Topic:** Presentación de la materia — ground rules, criterio de aprobación, calendario
 **Folder:** talks/intro-curso-mim/
 **Started:** 2026-07-15
 
 ---
+
+## 2026-07-17 — Draft return + regenerate prompt-driven images
+- Status: complete
+- Ask: "It's king of returning to draft stage and regenerate all images."
+- What was done: treated `draft.md` as the source of truth, regenerated the two prompt-driven aside images using the updated abstract editorial guidance, replaced `images/s1-1-1-aside.png` and `images/s6-2-1-aside.png`, refreshed their `.imgprompt`/`.imgstamp` sidecars, re-derived `final.md` from `draft.md`, refreshed `output/slide-model.json`, and rebuilt `output/html/index.html`.
+- Assets: `images/s1-1-1-aside.png` (welcome/opening) and `images/s6-2-1-aside.png` (Q&A) are now 1024×1536 PNGs in the abstract editorial style. Existing diagram asset `images/s1-2-1-agentes-personas-agencia.png` was reused.
+- Output: `talks/intro-curso-mim/output/html/index.html` refreshed with 22 modeled slides.
+
+## 2026-07-17 — Draft image prompt guidance updated
+- Status: complete
+- Ask: "All the prompts in draft.md must be updated to following your guidace on image."
+- What changed: updated both `generate-image` directives in `draft.md` (welcome/opening 1.1 and Q&A 6.2) to follow the new preferred aesthetic: abstract editorial vector, symbolic systems, white negative space, black anchor masses, coral/red accents, parallel lines and flow ribbons, no literal classroom/horizon scenes, no readable text/logos/letters/numbers.
+- Note: superseded by the following regeneration pass, which updated `final.md`, assets, slide model, and HTML.
+
+## 2026-07-17 — Step 7 Render HTML strict
+- Status: complete
+- Ask: "generate now the html"
+- Style: `html-strict`
+- What was done: refreshed `output/slide-model.json` from the current polished `final.md`, checked the structured model for lone-item enumeration mistakes, and rendered the self-contained HTML deck.
+- Output: `talks/intro-curso-mim/output/html/index.html` (cover + 22 modeled slides; 6 section roadmap slides + 16 content slides).
+- Notes: This render uses the current polished image refs: `images/s1-1-1-aside.png`, `images/s1-2-1-agentes-personas-agencia.png`, and `images/s6-2-1-aside.png`.
+
+## 2026-07-17 — Reapertura a draft.md + revisión visual del Editor
+- Status: awaiting_presenter
+- Origen: presenter-chat — "Return to draft and editor review if we can add images."
+- What was decided: El Talk vuelve a Step 5/Review y `draft.md` es nuevamente el archivo autoritativo. `final.md` y cualquier render previo quedan obsoletos hasta re-correr Step 6 (Polish) desde este draft.
+- Visual pass: no se generó ninguna imagen nueva. `images/` solo contiene los renders de diagramas ya existentes; el diagrama `s3-2-1-chat-delegar-orquestar` quedó huérfano porque su slide fue borrada. Con Talksmith 0.65.0, el Editor corrigió el comportamiento conservador anterior: los pedidos atmosféricos sin asset ya no quedan como bloqueo; se expresan como `generate-image`.
+- Draft edits: se agregaron dos directivas `generate-image: left`: una en 1.1 "Manos a la obra" para absorber el pedido de bienvenida con imagen, y otra en 6.2 "Q&A" para el cierre. Ambas se generarían recién en Step 6/Polish si hay capacidad de generación de imágenes; si no, el texto sigue funcionando.
+- Pending presenter decision: confirmar si la bienvenida queda absorbida en 1.1 o si quiere una lámina "Bienvenidos" separada; confirmar si Q&A debe pasar a formato texto+imagen o volver al hero limpio sin imagen. Para slides de datos, decidir si procesamos/validamos imágenes existentes del corpus (Bain Figura 1, Zapier human-in-the-loop) antes de usarlas.
+
+## 2026-07-17 — Step 6 (Polish) rerun desde draft reabierto
+- Status: complete
+- Asks log:
+  - 2026-07-17 — "¿Querés que haga una pasada anti-slop slide por slide sobre el texto antes de generar/insertar imágenes y limpiar `final.md`?" → "Si"
+- What was decided: `final.md` fue re-derivado desde el `draft.md` actual y queda como deliverable autoritativo para render. Deck final: 6 secciones / 16 slides. `draft.md` no se tocó durante Polish.
+- Anti-slop pass: aplicada sobre `final.md` antes de renderizar assets. Se limpiaron patrones visibles en lámina: contrastes `no X sino Y`, exceso de segunda persona en copy proyectado, remates con guion largo y frases de densidad baja. Speaker notes, Sources, Open questions y Cut material se preservaron salvo correcciones necesarias de estado.
+- Diagram pass: 1 diagrama render-driving en 1.2; se reutilizó el render existente `images/s1-2-1-agentes-personas-agencia.svg/.png`, se validó SVG, aspect audit ok, se estampó el digest actual y `final.md` referencia el PNG Keynote-safe.
+- Image pass: 2 imágenes atmosféricas generadas y consolidadas como asides: `images/s1-1-1-aside.png` (bienvenida/apertura) y `images/s6-2-1-aside.png` (Q&A). Las directivas `generate-image` fueron reemplazadas por `aside` refs con `generate-source`.
+- Final tidy-up: `rescue-open` no encontró feedback abierto; se eliminaron 24 campos/bloques de `Presenter feedback` de `final.md`; no quedan fences `ascii`, directivas `generate-image`, feedback markers, ni refs a `.svg/.webp/.avif/.heic`. Auditoría de refs: 3 imágenes locales, todas existen.
+- Files created/modified: `talks/intro-curso-mim/final.md`, `talks/intro-curso-mim/images/s1-1-1-aside.png`, `talks/intro-curso-mim/images/s1-1-1-aside.imgprompt`, `talks/intro-curso-mim/images/s1-1-1-aside.imgstamp`, `talks/intro-curso-mim/images/s6-2-1-aside.png`, `talks/intro-curso-mim/images/s6-2-1-aside.imgprompt`, `talks/intro-curso-mim/images/s6-2-1-aside.imgstamp`, `talks/intro-curso-mim/memory.md`.
+- Pending open questions: se mantienen las decisiones de contenido registradas en `final.md` (escala de calificación, asistencia mínima, política de IA en entregas, Día 4, Examen Integrador Día 7, decisiones de ubicación/renombre, y validación de imágenes de datos como Bain Figura 1). Próximo paso: Step 7 Render, estilo a elegir por el presentador.
 
 ## Talk briefing
 

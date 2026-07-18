@@ -1,5 +1,5 @@
 ---
-presentation: AI Generativa — Master in Management (MiM), IAE Business School
+presentation: "AI Generativa - Master in Management (MiM), IAE Business School"
 class: "Claude Cowork para el día a día"
 research: research/corpus/
 description: Slides are grouped into Sections. Each Section contains one or more Slides.
@@ -21,7 +21,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** Arrancamos por la herramienta de uso diario, el chat de IA, y hacemos explícitos sus límites: responde de memoria de entrenamiento (1). Después lo extendemos con conectores, un concepto que vale para todas las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo volvemos proactivo con tareas programadas (3). Recién ahí llega el salto grande, Claude Cowork, Claude instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). Cerramos con las piezas avanzadas, Skills, Subagentes y Plugins (5). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 y 5 (Cowork y avanzado); una slide de corte al final de la sección 3 marca la división.
+**Narrative arc:** La clase parte de la herramienta de uso diario, el chat de IA, y explicita sus límites: responde de memoria de entrenamiento (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre cubre las piezas avanzadas, Skills, Subagentes y Plugins (5). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 y 5 (Cowork y avanzado); una slide de corte al final de la sección 3 marca la división.
 
 **Sections (in delivery order):**
 
@@ -47,7 +47,7 @@ date: Julio 2026
 
 ### Content
 
-- Todos ya usan un chat de IA.
+- El chat de IA ya es una herramienta de uso diario.
 - De fábrica responde de su **memoria de entrenamiento**: una foto que llega hasta la **fecha de entrenamiento**. No busca información nueva.
 - Tres límites:
   - **Información vieja**: lo posterior al corte no existe.
@@ -127,7 +127,7 @@ labels: izquierda = CHAT SOLO (aislado, memoria de entrenamiento); derecha = CHA
 
 ### Speaker notes
 
-La slide instala el concepto que ordena la sección: un conector saca al chat de su aislamiento y le da acceso a buscar en la web, leer tu mail, ver tu calendario, consultar tus documentos. Repetir que es transversal: lo que aprendan acá vale para ChatGPT, Gemini y Claude. Los nombres cambian ("connectors", "apps", "extensiones"), la idea es la misma. Usar el diagrama para el contraste: mismo chat, ahora con líneas hacia afuera, y antes de responder puede ir a buscar información real a la fuente (la web, tu inbox, tu agenda). Cerrar bajando la barrera de entrada: esto se activa con un clic o un toggle en la configuración, sin programar. Tiempo objetivo: ~5 min.
+La slide instala el concepto que ordena la sección: un conector saca al chat de su aislamiento y le da acceso a buscar en la web, leer mail, ver calendario, consultar documentos. Repetir que es transversal: vale para ChatGPT, Gemini y Claude. Los nombres cambian ("connectors", "apps", "extensiones"), la idea es la misma. Usar el diagrama para el contraste: mismo chat, ahora con líneas hacia afuera, y antes de responder puede ir a buscar información a la fuente (la web, inbox, agenda). Cerrar bajando la barrera de entrada: esto se activa desde la configuración o desde la biblioteca de conectores; algunos conectores piden autenticación. Tiempo objetivo: ~5 min.
 
 ### Presenter feedback
 
@@ -195,7 +195,7 @@ Acá se fija la distinción memoria vs información viva. Con conexión, hacerlo
 ```
 <!-- ascii-note:
 intent: mostrar el flujo de una llamada a un Connector: el chat/agente pide datos, el Connector traduce vía el protocolo MCP, el servicio externo responde.
-emphasize: la etiqueta "MCP" sobre la flecha del medio; el Connector como puente de un clic.
+emphasize: la etiqueta "MCP" sobre la flecha del medio; el Connector como puente entre el chat y el servicio externo.
 labels: Chat/agente -> Connector (1 clic) -> Servicio externo (Gmail / Calendar); flecha de ida "pide datos", flecha de vuelta "devuelve datos".
 -->
 
@@ -208,7 +208,7 @@ labels: Chat/agente -> Connector (1 clic) -> Servicio externo (Gmail / Calendar)
 
 ### Speaker notes
 
-Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin programar nada. Usar el diagrama para explicar qué pasa por debajo: la IA pide datos y el conector los trae vía MCP (Model Context Protocol), el estándar que vuelve conversacional a cualquier plataforma con API. El patrón: la plataforma abre sus internals como herramientas. Mencionar dos o tres ejemplos del ecosistema (Figma, Vercel, Cal.com, Home Assistant) y seguir. Decir al pasar que un equipo técnico puede desarrollar conectores propios (custom, vía MCP); a nivel usuario alcanza con el directorio, que viene en la próxima slide. Los ejemplos guía de la sección son mail y calendario, porque son los que la audiencia ya tiene. Tiempo objetivo: ~8 min.
+Desarmar el miedo: conectar un servicio externo le da "manos" al chat. Usar el diagrama para explicar qué pasa por debajo: la IA pide datos y el conector los trae vía MCP (Model Context Protocol), el estándar que vuelve conversacional a cualquier plataforma con API. El patrón: la plataforma expone acciones como herramientas. Mencionar dos o tres ejemplos del ecosistema (Figma, Vercel, Cal.com, Home Assistant) y seguir. Decir al pasar que un equipo técnico puede desarrollar conectores propios (custom, vía MCP); a nivel usuario alcanza con el directorio, que viene en la próxima slide. Los ejemplos guía de la sección son mail y calendario, porque son los que la audiencia ya tiene. Tiempo objetivo: ~8 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Esto - **Cómo se llama / registra un Connector.** En Cowork hay un **directorio de Connectors** con conexión de un clic ("Connect"), configurado por la UI de Settings — no hay archivo local que editar. Ejemplo (Atlas): **MT Newswires** ya tiene un connector listo; lo buscás y le das Connect, como cualquier app. Gmail, igual: un clic en el directorio. vamos a moverlo a un nuevo slide."
@@ -221,7 +221,7 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin progr
 
 ### Content
 
-- Sin programar: **buscar + Connect + autorizar**. Como conectar Gmail a una app nueva.
+- Flujo básico: **buscar + Connect + autorizar**. Como conectar Gmail a una app nueva.
 - De dónde salen: **directorio oficial de Claude** · comunidad (solo lo confiable) · propios (custom).
 
 ![Directorio de Connectors](images/connectors_directory.png)
@@ -229,7 +229,7 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin progr
 ![Conexión de un Connector: buscar y conectar](images/connector_browser.png)
 
 - Ejemplos guía: **mail y calendario**. "¿Qué mails me perdí ayer? ¿Qué tengo esta semana?"
-- Atlas: **MT Newswires** ya está en el directorio y se conecta con un clic.
+- Atlas: **MT Newswires** ya está en el directorio y se conecta desde la biblioteca.
 - Un conector no oficial, al autorizarse, **accede a los datos del usuario**. Conectar solo fuentes confiables.
 
 ### Sources
@@ -242,13 +242,13 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat, sin progr
 
 ### Speaker notes
 
-Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pantalla de conexión) para desarmar el "esto es técnico". Conectar un servicio es buscar + Connect + autorizar, igual que cuando conectás Gmail a cualquier app; se configura por la UI, sin archivo local que editar. Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail conectado el chat lee y resume tu inbox, con Calendar ve tu agenda. Son preguntas que el chat aislado no puede responder. Sobre los no oficiales (servicios de terceros que exponen MCP): mismos pasos, más criterio. Autorizar un conector le da acceso a tus datos; conectá solo lo confiable. Ejemplo de la misión: MT Newswires (noticias), con el que Atlas lee noticias reales del día. Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo en el chat. Tiempo objetivo: ~6 min.
+Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pantalla de conexión) para desarmar el "esto es técnico". Conectar un servicio implica buscarlo, tocar Connect y autorizarlo, igual que cuando conectás Gmail a cualquier app; se configura por la UI, sin archivo local que editar. Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail conectado el chat lee y resume tu inbox, con Calendar ve tu agenda. Son preguntas que el chat aislado no puede responder. Sobre los no oficiales (servicios de terceros que exponen MCP): mismos pasos, más criterio. Autorizar un conector le da acceso a tus datos; conectá solo lo confiable. Ejemplo de la misión: MT Newswires (noticias), con el que Atlas lee noticias del día. Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo en el chat. Tiempo objetivo: ~6 min.
 
 ### Presenter feedback
 
 ---
 
-## 5. Los conectores también actúan: del leer al hacer
+## 5. Los conectores también actúan
 
 ### Content
 
@@ -258,7 +258,7 @@ Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pant
   - **Agendar una reunión** (evento en el calendario).
   - **Abrir un ticket** (Jira, ServiceNow…).
   - **Mandar un mensaje** (Slack o similar).
-- Cuidado con las autorizaciones y ser cauteloso con los permisos que le damos. **Un mail enviado automáticamente sin revisar por un ser humano puede generar muchos problemas.**
+- Cuidado con las autorizaciones y los permisos. **Un mail enviado sin revisión humana puede generar muchos problemas.**
 - Un chat que se informa y actúa puede trabajar **solo** (sección 3).
 
 ```ascii
@@ -308,7 +308,7 @@ El giro de la sección: hasta acá el conector era una antena que traía info; a
 
 ### Content
 
-- **Tarea programada** = un prompt que se ejecuta automáticamente en un momento preestablecido, y con frecuencia definida.
+- **Tarea programada** = un prompt que se ejecuta solo, en un momento preestablecido y con frecuencia definida.
 - La tarea usa los **conectores** ya configurados (mail, web, calendario).
 - El ejemplo: *"todos los días 8:00, resumí mi inbox, lo urgente arriba."*
 - Existe en **ChatGPT** ("tasks") y en **Claude** (claude.ai, desde el navegador).
@@ -508,14 +508,14 @@ TRABAJO DE OFICINA: la herramienta de proposito general
 | EXCEL                |            | HERRAMIENTAS AGENTICAS      |
 | lingua franca del    |            | Claude Code  (developers)   |
 | trabajo de oficina   |            | Cowork       (knowledge     |
-| (sin programar)      |            |               worker)       |
+| (sin escribir codigo)|            |               worker)       |
 +----------------------+            +-----------------------------+
  la habilidad base de ayer           la nueva habilidad base
 ```
 <!-- ascii-note:
 intent: encuadrar el "superpoder" de Cowork como herramienta de propósito general del knowledge worker, usando la analogía Excel (40 años, habilidad base de oficina) -> herramientas agénticas (Claude Code para developers, Cowork para knowledge workers) como la nueva habilidad base.
 emphasize: la flecha temporal de Excel (ayer) a las herramientas agénticas (ahora); el paralelo Claude Code=developers / Cowork=knowledge worker; que la analogía Excel es encuadre de industria, no claim oficial.
-labels: dos cajas; EXCEL (lingua franca, sin programar) a la izquierda; HERRAMIENTAS AGENTICAS (Claude Code = developers, Cowork = knowledge worker) a la derecha; pie "habilidad base de ayer" -> "nueva habilidad base".
+labels: dos cajas; EXCEL (lingua franca, sin escribir código) a la izquierda; HERRAMIENTAS AGENTICAS (Claude Code = developers, Cowork = knowledge worker) a la derecha; pie "habilidad base de ayer" -> "nueva habilidad base".
 -->
 
 ### Sources
@@ -528,13 +528,13 @@ labels: dos cajas; EXCEL (lingua franca, sin programar) a la izquierda; HERRAMIE
 
 ### Speaker notes
 
-El beat de "¿y a mí por qué me importa?". Cowork es, literalmente, Claude instalado en la computadora, con acceso a las carpetas y archivos del usuario; y eso habilita una forma de trabajar distinta de la del chat. Hasta acá la audiencia extendió un chat; esta slide anuncia otra categoría de herramienta. Tono motivacional y de alto nivel; la mecánica viene después.
+El beat de "¿y a mí por qué me importa?". Cowork es Claude instalado en la computadora, con acceso a las carpetas y archivos del usuario; eso habilita una forma de trabajar distinta de la del chat. Hasta acá la audiencia extendió un chat; esta slide anuncia otra categoría de herramienta. Tono motivacional y de alto nivel; la mecánica viene después.
 
-El gancho que mejor funciona es la analogía del Excel, dicha con cuidado. Durante unas cuatro décadas, saber Excel fue la habilidad base del trabajo de oficina: sin programar, con Excel resolvías el 80% del trabajo de conocimiento. La tesis de varios analistas de la industria es que las herramientas agénticas (Claude Code para los que programan, Cowork para los que no) van camino a ser esa nueva habilidad base. Atribuirlo a analistas e industria, "hay quien lo llama el nuevo Excel", y NO a Anthropic.
+El gancho que mejor funciona es la analogía del Excel, dicha con cuidado. Durante unas cuatro décadas, saber Excel fue la habilidad base del trabajo de oficina: con Excel se resolvía gran parte del trabajo de conocimiento. La tesis de varios analistas de la industria es que las herramientas agénticas (Claude Code para los que programan, Cowork para los que no) van camino a ocupar ese lugar. Atribuirlo a analistas e industria, "hay quien lo llama el nuevo Excel", y NO a Anthropic.
 
 Lo que sí es de Anthropic, y conviene citarlo como su framing propio, es "Claude Code para el resto de tu trabajo": que cualquier knowledge worker sienta con Cowork lo que los ingenieros ya sienten con Claude Code. Cowork generaliza algo que ya funcionó primero con developers.
 
-Cerrar aterrizándolo en la audiencia: son alumnos de management, la mayoría no programa, y justamente por eso Cowork les sirve. Después de este beat pasamos a la mecánica, cómo se delega (próxima slide). Tiempo objetivo: ~4-5 min.
+Cerrar aterrizándolo en la audiencia: son alumnos de management y la mayoría no programa; por eso Cowork les sirve. Después de este beat pasamos a la mecánica, cómo se delega (próxima slide). Tiempo objetivo: ~4-5 min.
 
 ### Presenter feedback
 
@@ -597,7 +597,7 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
 
 ### Content
 
-- **Bloques que se apilan**: cada uno resuelve un problema. No es una escalera; cada tarea usa solo los bloques que necesita.
+- **Bloques que se apilan**: cada tarea combina solo los bloques que necesita.
 - El mapa de la charla.
 - Cada bloque = un problema conocido:
   - **El chat** *(visto)* → *respondía solo de memoria.*
@@ -657,7 +657,7 @@ labels: banda exterior = PLUGINS (capa transversal, distribución). Bloques apil
 
 El mapa de toda la sesión, con el arco nuevo: arranca en el chat que la audiencia ya usa, no en Cowork. Aprovechar el efecto acumulado: "los tres bloques de abajo ya los recorrimos" (chat, conectores, tareas programadas), y señalar el marcador de "estamos acá": Cowork, donde la IA empieza a trabajar sobre carpetas y archivos reales. Arrancar cada bloque por el problema; cada uno nace de una frustración concreta.
 
-Cuidado con la metáfora: no es una pirámide donde cada capa depende de todas las de abajo. Son bloques que se apilan y se combinan; usás solo los que tu tarea necesita.
+Cuidado con la metáfora: los bloques se apilan y se combinan; cada tarea usa solo los que necesita.
 
 Decir la promesa de roadmap: "lo que queda de la charla recorre los bloques de acá para arriba, en este orden", y que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Atlas.
 
@@ -818,7 +818,7 @@ Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterio
 ### Content
 
 - Un `.md` (Markdown) = **texto plano** + estructura liviana: `#` títulos, `-` listas, `**negrita**`, tablas.
-- Se abre y se lee con cualquier editor de texto. La IA está especialmente entrenada para comprender su estructura.
+- Se abre y se lee con cualquier editor de texto. La IA está entrenada para comprender su estructura.
 - **Metadata (header YAML)**: declara *qué es* el archivo y *cuándo* usarlo. Vuelve con las Skills (sección 5).
 - La **lingua franca** del mundo LLM: el modelo lee texto. Portable y versionable.
 
@@ -829,7 +829,7 @@ Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterio
 
 ### Speaker notes
 
-Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato de tus archivos importa, y gana el más simple. Abrir un `.md` real en pantalla si se puede. Mostrar que es texto plano con marcas mínimas (un `#`, unas listas) y que igual se ve estructurado; se abre con cualquier editor, en cualquier computadora, sin formato propietario. Lo que ves es lo que hay. La idea a transmitir: el modelo lee texto, y cuanto menos formato opaco haya entre tu contenido y el modelo, mejor trabaja. Por eso es portable y versionable; el mismo estándar funciona entre herramientas. Presentar la metadata (header YAML entre `---`) como la etiqueta del frasco: dice qué es el archivo y cuándo usarlo. La `description` de una Skill es eso (activación semántica, no por palabra clave; sección 5). Alcance: qué es y por qué importa, sin detalle fino de formato. La próxima slide lo baja a la práctica: en qué formato conviene trabajar. Tiempo objetivo: ~5 min.
+Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato de los archivos importa, y gana el más simple. Abrir un `.md` real en pantalla si se puede. Mostrar que es texto plano con marcas mínimas (un `#`, unas listas) y que igual se ve estructurado; se abre con cualquier editor, en cualquier computadora, sin formato propietario. La idea a transmitir: el modelo lee texto, y cuanto menos formato opaco haya entre el contenido y el modelo, mejor trabaja. Por eso es portable y versionable; el mismo estándar funciona entre herramientas. Presentar la metadata (header YAML entre `---`) como la etiqueta del frasco: dice qué es el archivo y cuándo usarlo. La `description` de una Skill cumple esa función (activación semántica, no por palabra clave; sección 5). Alcance: qué es y por qué importa, sin detalle fino de formato. La próxima slide lo baja a la práctica: en qué formato conviene trabajar. Tiempo objetivo: ~5 min.
 
 ### Presenter feedback
 
@@ -842,7 +842,7 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 
 ### Content
 
-- **La información de trabajo va en archivos `.md` durante todo el proceso.**
+- **La información de trabajo va en archivos `.md` mientras el trabajo sigue abierto.**
 - La IA **interpreta, edita y crea mejor sobre `.md`** que sobre .docx/.xlsx.
 - Aplica tanto a la **memoria** del agente como a los **archivos de trabajo** del Project.
 - El entregable (**.docx, .xlsx, PDF, slides**) se genera una sola vez cuando el trabajo está listo.
@@ -903,7 +903,7 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ### Speaker notes
 
-Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se enseñaron en la sección 3; acá se muestra la forma Cowork. Abrir con el puente: "es la tarea programada que viste en el chat, pero ahora el que corre es el agente, sobre tus carpetas, con tus Instrucciones y skills". Cada corrida abre su propia sesión fresca y avisa al terminar. Repetir el marco de la slide 3.2 en una línea: desde el update del 7 de julio de 2026 hay ejecución remota en la nube (beta, planes pagos, rollout que empieza por Max), y mientras no te llegue corre local, computadora prendida + app abierta; si estaba apagada, la corrida se saltea y se recupera al volver. El matiz propio de Cowork: como estas tareas trabajan sobre archivos de tu disco, caen en la excepción documentada "requiere archivos/apps locales, corre local". Para las tareas típicas de Cowork, planificá con la computadora prendida aunque tengas la beta de nube. Para la demo, usar "Run on demand" en lugar de esperar la cadencia real. Tiempo objetivo: ~5 min.
+Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se enseñaron en la sección 3; acá se muestra la forma Cowork. Abrir con el puente: "es la tarea programada que viste en el chat, pero ahora corre el agente, sobre tus carpetas, con tus Instrucciones y skills". Cada corrida abre su propia sesión fresca y avisa al terminar. Repetir el marco de la slide 3.2 en una línea: desde el update del 7 de julio de 2026 hay ejecución remota en la nube (beta, planes pagos, rollout que empieza por Max), y mientras no te llegue corre local, computadora prendida + app abierta; si estaba apagada, la corrida se saltea y se recupera al volver. El matiz propio de Cowork: como estas tareas trabajan sobre archivos del disco, caen en la excepción documentada "requiere archivos/apps locales, corre local". Para las tareas típicas de Cowork, planificar con la computadora prendida aunque tengas la beta de nube. Para la demo, usar "Run on demand" en lugar de esperar la cadencia real. Tiempo objetivo: ~5 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Buscar informacion sobre "corrida en la nueve" y links a esto. No lo he visto."
@@ -996,7 +996,7 @@ labels: camino 1 = pedirla en lenguaje natural (Claude escribe el SKILL.md); cam
 
 ### Speaker notes
 
-Arranca el bloque avanzado. La Skill materializa el "enseñá una vez, reutilizá siempre". Mostrar los dos caminos reales en Cowork. Uno: pedírsela en lenguaje natural; Claude escribe el `SKILL.md` y vos la habilitás en Customize → Skills. Dos: subir un ZIP de la carpeta de la Skill por Customize → Skills. No saltear la trampa del Save, un error real y común: pedís la Skill, Claude escribe el archivo, y si no le das Save / enable no queda habilitada y parece que "no funciona". Mencionar que las Skills requieren Code execution (Settings → Capabilities) y que el camino ZIP completo es Customize → Skills → "+" → Create skill → Upload a skill, activando con el toggle. Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio "un trabajo por Skill": si escribís "y además", dividila en dos. Conectar con la sección anterior: el SKILL.md es el archivo `.md` con metadata que ya vieron, y la próxima slide lo abre. Tiempo objetivo: ~8 min.
+Arranca el bloque avanzado. La Skill materializa el "enseñá una vez, reutilizá siempre". Mostrar los dos caminos reales en Cowork. Uno: pedirla en lenguaje natural; Claude escribe el `SKILL.md` y el usuario la habilita en Customize → Skills. Dos: subir un ZIP de la carpeta de la Skill por Customize → Skills. No saltear la trampa del Save, un error real y común: el usuario pide la Skill, Claude escribe el archivo, y si no hay Save / enable no queda habilitada y parece que "no funciona". Mencionar que las Skills requieren Code execution (Settings → Capabilities) y que el camino ZIP completo es Customize → Skills → "+" → Create skill → Upload a skill, activando con el toggle. Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio "un trabajo por Skill": si aparece "y además", conviene dividirla en dos. Conectar con la sección anterior: el SKILL.md es el archivo `.md` con metadata que ya vieron, y la próxima slide lo abre. Tiempo objetivo: ~8 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Revisar (2) pidiéndole la creación durante el prompt, en lenguaje natural. No estoy seguro que co-work funcione."
@@ -1113,7 +1113,7 @@ Nivel avanzado, presentarlo como "para cuando crezcas". La distinción mental ú
 
 ### Speaker notes
 
-Cerrar el avanzado con la idea de empaquetado: cuando un workflow madura (varias skills, connectors, agentes, incluso hooks y MCP), un Plugin lo vuelve instalable de una. El punto para Cowork: la forma robusta de distribuir una skill o un agente a otros es dentro de un plugin. Para usar una Skill en Cowork la habilitás como skill de usuario (Customize → Skills) o la recibís dentro de un plugin, y los plugins distribuidos aparecen en Chat y en Cowork. Mencionar los marketplaces oficiales (`anthropics/claude-plugins-official`, `anthropics/knowledge-work-plugins`) y los de la comunidad. Recordar el mapa: Plugins es la banda que envuelve todos los bloques de la charla. Tiempo objetivo: ~6 min.
+Cerrar el avanzado con la idea de empaquetado: cuando un workflow madura (varias skills, connectors, agentes, incluso hooks y MCP), un Plugin lo vuelve instalable como paquete. El punto para Cowork: la forma robusta de distribuir una skill o un agente a otros es dentro de un plugin. Para usar una Skill en Cowork, el usuario la habilita como skill de usuario (Customize → Skills) o la recibe dentro de un plugin; los plugins distribuidos aparecen en Chat y en Cowork. Mencionar los marketplaces oficiales (`anthropics/claude-plugins-official`, `anthropics/knowledge-work-plugins`) y los de la comunidad. Recordar el mapa: Plugins es la banda que envuelve todos los bloques de la charla. Tiempo objetivo: ~6 min.
 
 ### Presenter feedback
 

@@ -1,7 +1,7 @@
-<!-- talksmith-ascii-sha256: 1c17b21fd794a9198c7fd1c6ea1223830479c42ea2a1e71578d7cd794939879a -->
+<!-- talksmith-ascii-sha256: 015626f7662722f3403b7d8e9828520ae2263e272883f67ec48d2cea1fa8692d -->
 <svg viewBox="0 0 708 316" xmlns="http://www.w3.org/2000/svg">
   <title>Las tres superficies de Claude</title>
-  <desc>Las tres superficies de Claude corren sobre los mismos modelos; Claude Code y Cowork comparten además el Claude Agent SDK, mientras Web/Chat es la superficie de chat de ese mismo modelo.</desc>
+  <desc>Las tres superficies de Claude corren sobre los mismos modelos; Claude Code y Cowork comparten además la misma base tecnica, mientras Web/Chat es la superficie de chat de ese mismo modelo.</desc>
   <rect x="0" y="0" width="708" height="316" fill="#ffffff"/>
   <g transform="translate(24,24)">
 
@@ -32,9 +32,9 @@
     <text x="560" y="68" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10.5" fill="#3B3535">multipaso sobre archivos reales</text>
     <text x="560" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#DA1B2E">El resto de la charla vive acá</text>
 
-    <!-- Agent SDK bond — joins Code + Cowork only -->
+    <!-- shared technical base bond — joins Code + Cowork only -->
     <rect x="285" y="140" width="320" height="42" rx="6" fill="#ffffff" stroke="#3B3535" stroke-width="1.4"/>
-    <text x="445" y="159" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#1F1E1E">Claude Agent SDK</text>
+    <text x="445" y="159" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" fill="#1F1E1E">misma base tecnica</text>
     <text x="445" y="174" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="9.5" fill="#3B3535">archivos · Skills · MCP · loop: plan, aprobar, redirigir</text>
 
     <!-- shared base -->

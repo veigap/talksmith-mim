@@ -33,7 +33,8 @@ date: 2026-08-01
 - 6. Cierre y Portafolios
 
 **Presenter feedback:**
-- [open] 2026-07-16 — "Antes de la agenda, empecemos con un slide con con text biemvenidos. Si podemos conseguir una imagen para poner a la izquierda seria bueno para llenar."
+- [closed] 2026-07-16 — "Antes de la agenda, empecemos con un slide con con text biemvenidos. Si podemos conseguir una imagen para poner a la izquierda seria bueno para llenar."
+  Resolution: Resuelto absorbiendo el pedido en la apertura existente, no creando una segunda primera lámina: "Manos a la obra" sigue abriendo el deck, ahora con un gesto explícito de bienvenida y una directiva `generate-image: left` para crear una imagen editorial abstracta de apertura. La imagen todavía no se genera en draft; se genera en Polish (Step 6) si la sesión tiene generación de imágenes. Si el presentador quiere una lámina "Bienvenidos" separada antes de 1.1, este cierre se revierte y se crea como slide nuevo.
 
 ---
 
@@ -47,9 +48,12 @@ date: 2026-08-01
 
 ## 1. Manos a la obra
 
-<!-- template: statement -->
+<!-- template: single-point -->
+<!-- generate-image: left | imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: bienvenida, comienzo de curso, managers aumentados por IA. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; gran espacio negativo blanco, formas negras sólidas como ancla, fondo coral/rojo suave o acentos coral #DA1B2E, líneas paralelas y cintas de flujo que sugieren información entrando a un sistema, planos translúcidos, composición limpia con sensación de energía contenida. Mantener creatividad abierta, pero conectar visualmente con la idea de apertura y trabajo aumentado. Evitar escena literal de aula, personas realistas, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
+
+**Bienvenidos.**
 
 **El futuro no va a ser de las empresas que simplemente usan IA. Va a ser de los managers que están aumentados por ella.**
 
@@ -570,14 +574,8 @@ Pendiente: la cantidad de misiones quedó deliberadamente abierta y el detalle d
 
 ## 2. Q&A
 
-<!-- template: closing-hero -->
-<!-- TODO(imagen · pedido del presentador 2026-07-16): "Buscar una imagen a la izquiera para utlizar."
-     NO se escribe una ref de imagen todavia: no existe ningun asset candidato en
-     talks/intro-curso-mim/images/ ni en research/corpus/ (una ref rota rompe el render).
-     Cuando el archivo exista: (1) copiarlo a talks/intro-curso-mim/images/; (2) cambiar el pin
-     de closing-hero a content+image (closing-hero es full-bleed y NO admite aside); y
-     (3) agregar la ref de imagen en Content, apuntando a images/<archivo>.
-     Registrado en Open questions. -->
+<!-- template: single-point -->
+<!-- generate-image: left | imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: preguntas, apertura, reflexión y conversación final. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; mucho espacio negativo blanco, masas negras mínimas como ancla, acentos coral #DA1B2E, líneas paralelas, bucles o cintas de flujo que se abren y convergen, planos translúcidos que sugieren distintas capas de pensamiento, composición limpia con tensión tranquila. Mantener creatividad abierta, pero conectar visualmente con Q&A como espacio de exploración compartida. Evitar signos de pregunta literales, personas realistas, objetos reconocibles, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
 
@@ -610,8 +608,8 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **Uso de IA en las entregas** — el curso enseña a delegar trabajo a agentes, pero no hay política de qué está permitido en el Portafolio Grupal (40%) ni en el Examen Integrador (40%). Ninguna slide lo dice hoy.
 
 **Assets faltantes (bloquean dos pedidos del presentador de la revisión 2026-07-16):**
-- **Imagen para el slide Q&A (6.2).** El presentador pidió *"una imagen a la izquierda"*. **No existe ningún candidato**: `talks/intro-curso-mim/images/` solo tiene los renders de diagramas ASCII, y las imágenes del corpus son gráficos de datos en inglés con marca de la consultora (Bain/Zapier/Microsoft) o logos de sitio. **No se inventó ninguna ruta** — la lámina quedó pinneada como `closing-hero` (frase grande, sin imagen) con un `TODO(imagen)` que explica el cambio exacto a hacer cuando el archivo exista (ojo: `closing-hero` es full-bleed y **no** admite `aside`; con imagen hay que pasar a `content+image`). **Pedido al presentador: dejar el archivo en `talks/intro-curso-mim/images/`.**
-- **Imagen para un slide de bienvenida antes de la Agenda.** Feedback del presentador en la Agenda, todavía `[open]`: *"Antes de la agenda, empecemos con un slide con con text biemvenidos. Si podemos conseguir una imagen para poner a la izquierda seria bueno para llenar."* **No aplicado — necesita desambiguación.** El mismo día, el presentador confirmó que **"Manos a la obra" (1.1) abre la presentación**. ¿La lámina de bienvenida va **antes** de 1.1 (y entonces 1.1 no es la primera), **reemplaza** a 1.1, o el pedido queda absorbido por 1.1 y se descarta? Además arrastra el mismo hueco de asset que el Q&A. Sin respuesta no se toca el frente del deck.
+- **Imagen para el slide Q&A (6.2) — generada en el pase 2026-07-17.** El presentador pidió *"una imagen a la izquierda"*. La lámina conserva una directiva **`<!-- generate-image: left | … -->`** con guía editorial abstracta para futuras regeneraciones, y el asset actual quedó en `images/s6-2-1-aside.png`: espacio negativo blanco, masas negras mínimas, acentos coral, líneas paralelas y cintas de flujo que se abren/convergen para sugerir preguntas y reflexión, sin signos de pregunta literales ni escenas de horizonte. Se re-pinneó de `closing-hero` → `single-point`, porque `closing-hero` es full-bleed y **no** admite `aside` (`single-point` sí). **Decisión pendiente para el presentador:** ¿ok con el cambio de aspecto (de frase grande centrada a texto + columna de imagen a la izquierda)? Si preferís el hero limpio sin imagen, se revierte con un edit.
+- **Imagen para bienvenida/apertura — generada en el pase 2026-07-17.** El feedback pedía una lámina de bienvenida con imagen a la izquierda, pero también existía una decisión previa de que **"Manos a la obra" (1.1) abre la presentación**. Para no crear dos aperturas, el Editor absorbió el pedido en la slide 1.1: agregó **"Bienvenidos."**, cambió el pin de `statement` → `single-point` y añadió `<!-- generate-image: left | … -->` con guía editorial abstracta para futuras regeneraciones. El asset actual quedó en `images/s1-1-1-aside.png`: sistema simbólico de información, planos blancos/negros, acentos coral y cintas de flujo que sugieren apertura y trabajo aumentado, sin aula literal. **Decisión pendiente para el presentador:** ¿esta absorción alcanza, o querés una lámina "Bienvenidos" separada antes de 1.1?
 
 **Contenido del curso todavía abierto:**
 - ¿El Examen Integrador (45 min) se toma el Día 7? Preguntado dos veces en la exploración, nunca confirmado. Afecta las slides 5.1 y 3.1.

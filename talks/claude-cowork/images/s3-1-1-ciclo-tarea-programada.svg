@@ -1,4 +1,4 @@
-<!-- talksmith-ascii-sha256: 5a4e1f5f13afdb77ca7b91153f39bc76dc2cb072efcbeeb44b0bddc6eeadae86 -->
+<!-- talksmith-ascii-sha256: 4a2476a5a06186f86cb012b52f843b973eb957c34c14d79d359acaa50b81f468 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 392">
   <title>Tareas programadas desde el chat</title>
   <desc>Ciclo de una tarea programada: un disparador de calendario ejecuta la tarea, que usa los conectores para traer información y deja el resumen listo en el chat sin intervención del usuario.</desc>

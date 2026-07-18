@@ -1,3 +1,4 @@
+<!-- talksmith-ascii-sha256: 74afa30184435794979f23fbce18f3d8fd3578822eff6d7073c32325f717ddf1 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 378">
   <title>Subagentes: delegar sub-tareas en paralelo</title>
   <desc>El agente principal reparte una tarea entre tres subagentes que corren en paralelo, cada uno con contexto propio, y junta los resultados en un resumen combinado.</desc>

@@ -40,9 +40,13 @@ date: 2026-08-01
 
 ## 1. Manos a la obra
 
-<!-- template: statement -->
+<!-- template: single-point -->
+<!-- aside: left ![Sistema abstracto de información para abrir el curso](images/s1-1-1-aside.png) -->
+<!-- generate-source: imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: bienvenida, comienzo de curso, managers aumentados por IA. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; gran espacio negativo blanco, formas negras sólidas como ancla, fondo coral/rojo suave o acentos coral #DA1B2E, líneas paralelas y cintas de flujo que sugieren información entrando a un sistema, planos translúcidos, composición limpia con sensación de energía contenida. Mantener creatividad abierta, pero conectar visualmente con la idea de apertura y trabajo aumentado. Evitar escena literal de aula, personas realistas, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
+
+**Bienvenidos.**
 
 **El futuro no va a ser de las empresas que simplemente usan IA. Va a ser de los managers que están aumentados por ella.**
 
@@ -69,12 +73,12 @@ Contexto de la decisión (revisión 2026-07-16): esta lámina cerraba el deck. E
 
 A medida que los agentes toman más de la ejecución, las personas ganan más agencia: más espacio para dirigir el trabajo, decidir y ser dueñas del resultado.
 
-![Los agentes toman la ejecución y las personas ganan agencia: no es un juego de suma cero, crecen juntas](images/s1-2-1-agentes-personas-agencia.png)
+![Los agentes toman la ejecución; las personas ganan agencia](images/s1-2-1-agentes-personas-agencia.png)
 <!-- ascii-source:
       AGENTES                              PERSONAS
   +-------------------+              +----------------------+
   | toman la          |              | ganan AGENCIA        |
-  | EJECUCION         |   -------&gt;   |                      |
+  | EJECUCION         |   ------->   |                      |
   |                   |              |  - dirigir           |
   |  - buscar datos   |              |  - decidir           |
   |  - resumir        |              |  - responder por     |
@@ -225,8 +229,6 @@ Es el puente hacia los Días 1–2 (Skills en Cowork), pero **no lo conectemos e
 **38%**
 
 de las empresas: el estilo dominante de delegación es *human-in-the-loop*. *(Zapier 2026)*
-
-Se delega la ejecución, pero las compuertas de aprobación y la revisión se quedan del lado humano. La velocidad no tiene que costar control: **pueden crecer juntas**.
 
 ### Sources
 
@@ -506,14 +508,9 @@ Pendiente: la cantidad de misiones quedó deliberadamente abierta y el detalle d
 
 ## 2. Q&A
 
-<!-- template: closing-hero -->
-<!-- TODO(imagen · pedido del presentador 2026-07-16): "Buscar una imagen a la izquiera para utlizar."
-     NO se escribe una ref de imagen todavia: no existe ningun asset candidato en
-     talks/intro-curso-mim/images/ ni en research/corpus/ (una ref rota rompe el render).
-     Cuando el archivo exista: (1) copiarlo a talks/intro-curso-mim/images/; (2) cambiar el pin
-     de closing-hero a content+image (closing-hero es full-bleed y NO admite aside); y
-     (3) agregar la ref de imagen en Content, apuntando a images/<archivo>.
-     Registrado en Open questions. -->
+<!-- template: single-point -->
+<!-- aside: left ![Flujos abstractos de apertura para preguntas y reflexión](images/s6-2-1-aside.png) -->
+<!-- generate-source: imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: preguntas, apertura, reflexión y conversación final. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; mucho espacio negativo blanco, masas negras mínimas como ancla, acentos coral #DA1B2E, líneas paralelas, bucles o cintas de flujo que se abren y convergen, planos translúcidos que sugieren distintas capas de pensamiento, composición limpia con tensión tranquila. Mantener creatividad abierta, pero conectar visualmente con Q&A como espacio de exploración compartida. Evitar signos de pregunta literales, personas realistas, objetos reconocibles, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
 
@@ -544,9 +541,8 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **Uso de IA en las entregas** — el curso enseña a delegar trabajo a agentes, pero no hay política de qué está permitido en el Portafolio Grupal (40%) ni en el Examen Integrador (40%). Ninguna slide lo dice hoy.
 
 **Assets faltantes (bloquean dos pedidos del presentador de la revisión 2026-07-16):**
-- **Imagen para el slide Q&A (6.2).** El presentador pidió *"una imagen a la izquierda"*. **No existe ningún candidato**: `talks/intro-curso-mim/images/` solo tiene los renders de diagramas ASCII, y las imágenes del corpus son gráficos de datos en inglés con marca de la consultora (Bain/Zapier/Microsoft) o logos de sitio. **No se inventó ninguna ruta** — la lámina quedó pinneada como `closing-hero` (frase grande, sin imagen) con un `TODO(imagen)` que explica el cambio exacto a hacer cuando el archivo exista (ojo: `closing-hero` es full-bleed y **no** admite `aside`; con imagen hay que pasar a `content+image`). **Pedido al presentador: dejar el archivo en `talks/intro-curso-mim/images/`.**
-- **Imagen para un slide de bienvenida antes de la Agenda.** Feedback del presentador en la Agenda, todavía `[open]`: *"Antes de la agenda, empecemos con un slide con con text biemvenidos. Si podemos conseguir una imagen para poner a la izquierda seria bueno para llenar."* **No aplicado — necesita desambiguación.** El mismo día, el presentador confirmó que **"Manos a la obra" (1.1) abre la presentación**. ¿La lámina de bienvenida va **antes** de 1.1 (y entonces 1.1 no es la primera), **reemplaza** a 1.1, o el pedido queda absorbido por 1.1 y se descarta? Además arrastra el mismo hueco de asset que el Q&A. Sin respuesta no se toca el frente del deck.
-  - Pedido original, verbatim (bullet `[open]` rescatado de la Agenda en Step 6 — **la única pieza de feedback sin resolver del deck**): *"Antes de la agenda, empecemos con un slide con con text biemvenidos. Si podemos conseguir una imagen para poner a la izquierda seria bueno para llenar."*
+- **Imagen para el slide Q&A (6.2) — generada en el pase 2026-07-17.** El presentador pidió *"una imagen a la izquierda"*. El asset actual quedó en `images/s6-2-1-aside.png`: espacio negativo blanco, masas negras mínimas, acentos coral, líneas paralelas y cintas de flujo que se abren/convergen para sugerir preguntas y reflexión, sin signos de pregunta literales ni escenas de horizonte. Se re-pinneó de `closing-hero` → `single-point`, porque `closing-hero` es full-bleed y **no** admite `aside` (`single-point` sí). **Decisión pendiente para el presentador:** ¿ok con el cambio de aspecto (de frase grande centrada a texto + columna de imagen a la izquierda)? Si preferís el hero limpio sin imagen, se revierte con un edit.
+- **Imagen para bienvenida/apertura — generada en el pase 2026-07-17.** El feedback pedía una lámina de bienvenida con imagen a la izquierda, pero también existía una decisión previa de que **"Manos a la obra" (1.1) abre la presentación**. Para no crear dos aperturas, el Editor absorbió el pedido en la slide 1.1: agregó **"Bienvenidos."**, cambió el pin de `statement` → `single-point` y usó `images/s1-1-1-aside.png`: sistema simbólico de información, planos blancos/negros, acentos coral y cintas de flujo que sugieren apertura y trabajo aumentado, sin aula literal. **Decisión pendiente para el presentador:** ¿esta absorción alcanza, o querés una lámina "Bienvenidos" separada antes de 1.1?
 
 **Contenido del curso todavía abierto:**
 - ¿El Examen Integrador (45 min) se toma el Día 7? Preguntado dos veces en la exploración, nunca confirmado. Afecta las slides 5.1 y 3.1.
@@ -562,7 +558,7 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **Slide 1.4 "El valor no llegó solo" — se conservó el 67% vs. 32% de Microsoft.** El presentador pidió borrar la vieja slide 1.3 ("El manager es la palanca") y reemplazarla por números de impacto; la nueva lámina es de Bain, pero **retiene el 67/32** porque es la bisagra que conecta el "el arreglo es organizacional" de Bain con la tesis del deck (el manager es lo organizacional). Los +17 / +22 / +30 de Microsoft People Science 2025 sí se cortaron (ver *Cut material*). **¿Se queda el 67/32 en esa lámina, o la slide es 100% Bain?**
 - **Slide 1.4 — si hace falta un número de eficiencia en lámina.** El presentador pidió *"impacto en el usuario y eficiencia"*; los números de Bain son de **brecha de valor**, no de eficiencia. El único número de eficiencia **verificado** disponible es el caso **Amazon** (World Wide Watch: 26 min → 2 min por actualización de IVA, −92%, 80% de resúmenes aceptados sin modificar) — hoy está en los speaker notes de 1.4. Es un **anécdota de una sola empresa, no del panel de 951**, y el corpus advierte explícitamente que no se presente como benchmark. **¿Se sube a lámina etiquetado como caso Amazon, o se queda en notas?**
 - **Slide 1.4 — imagen candidata no usada.** El registro de Bain trae la Figura 1 (`bain-ai-budget-returns-2026.web/images/figure-1-flourish-28786844.jpg`), que es exactamente el gráfico objetivo-vs-resultado de esta lámina. **No se usó**: está en inglés, con marca Bain, y su registro sigue en `<!-- pending: process_images -->` (Fase 2 del librarian sin correr) — mismo criterio con el que la slide 1.5 dibujó su propia tabla en vez de usar los gráficos de Zapier. **¿Se evalúa tras correr la Fase 2 del librarian, o se deja la lámina sin imagen?**
-- **Slide 3.1 "Siete sesiones" — vuelve a `timeline` (resuelto).** El rodeo por `process` existía sólo porque `timeline` no tenía campo de lead, y el presentador quería el texto introductorio arriba. **Se corrigió el template**: `timeline` ahora admite un `lead` opcional sobre el rail (plugin ≥ 0.61.0). Con eso la lámina recupera su idioma visual correcto — rail vertical con fecha + detalle y punto por sesión — con el párrafo introductorio arriba, que es lo que se pidió. Pin de vuelta en `<!-- template: timeline -->`; no hay costo pendiente.
+- **Slide 3.1 "Siete sesiones" — el pin cambió de `timeline` a `process`.** El presentador pidió que el texto introductorio *"vaya arriba"*; `timeline` **no tiene campo de lead** (su formato es un rail vertical de fecha + detalle, sin párrafo introductorio), así que el texto caía debajo de los 7 hitos. `process` **sí** admite un lead sobre los pasos, y las 7 sesiones son una secuencia numerada legítima. **Costo del cambio:** se pierde el rail temporal con puntos; se gana una tira de tarjetas numeradas con el texto arriba, que es lo que se pidió. **Confirmar que el idioma visual nuevo está bien**; si no, la alternativa es volver a `timeline` y aceptar el texto abajo (o cortarlo).
 - **Slide 2.2 — "Atlas" se sacó solo de esta lámina.** El pedido (*"No mencionemos atlas sino que vamos a tener varias misiones"*) llegó sobre la slide de Objetivos y se aplicó **solo a la Sección 2**. La slide 3.1 (Cronograma) **sigue nombrando Atlas / Enterprise / Paperclip** por día, porque esa vinculación es una decisión previa deliberada (permite mapear el deck al syllabus) y el presentador no dijo "en todos lados" en este bullet — sí lo dijo, en cambio, en el de "Automatización y Análisis de Datos", que sí se aplicó globalmente. **¿Atlas también sale del cronograma?**
 - **"Lo que se llevan" (4.3) vive dentro de "Cómo trabajamos".** Ubicación mid-deck confirmada por el presentador. Pero el título de la sección (*cómo trabajamos*) no cubre del todo el contenido de la lámina (*qué se llevan*). **¿Se renombra la sección (p. ej. "Cómo trabajamos y qué se llevan"), se deja así, o la lámina se muda a otra sección?**
 - **El slide Q&A (6.2) quedó dentro de "Cierre y Portafolios".** Al eliminarse la sección Conclusions, Q&A necesitaba casa y se colgó de la última sección — cuyo título habla del cierre **del curso**, no del cierre **de la presentación**. Funciona, pero es una colisión de sentido. **¿Se deja, o Q&A merece su propia sección?**

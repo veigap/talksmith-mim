@@ -408,3 +408,10 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Ahora hagamos la division: introduce una slide entre cada parte para cortar (desde la seccion 4 en adelante es la segunda)."
   resolution: Insertada slide 3.3 "Fin de la parte 1": placa ASCII de corte (FIN DE LA PARTE 1 / PARTE 2: Claude Cowork) + bullets con el contenido de cada parte; notas marcan la pausa de la clase y que Atlas parte 1 se resuelve con lo visto. Agenda actualizada con la estructura de dos partes. Deck en 28 slides.
   tags: [add-slide, restructure, split]
+- talk: claude-cowork
+  date: 2026-07-17
+  location: Deck-wide image audit + stop-slop pass
+  origin: presenter-chat
+  feedback: "Ask editor to check if images would be required and also pass the stop slop"
+  resolution: Image audit completo: no se agregan imagenes nuevas; las 6 slides sin visual son beats deliberados de texto/codigo/gobernanza, `mockup-tablero.png` queda fuera porque reintroduce el tablero Atlas eliminado, y la decision abierta de 4.5 (banner ASCII + screenshot) sigue vigente. Stop-slop aplicado sobre prosa viva: fuera falso ease ("con un clic", "sin programar"), em dash de frontmatter, "literalmente/justamente", tuteo por defecto en notas tocadas, titulo "del leer al hacer", y formulaciones vagas. Audit trail, citas, Sources, Open questions y Cut material preservados.
+  tags: [style, slop-pattern, visual, rewrite]
