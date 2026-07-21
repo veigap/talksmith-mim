@@ -415,3 +415,45 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Ask editor to check if images would be required and also pass the stop slop"
   resolution: Image audit completo: no se agregan imagenes nuevas; las 6 slides sin visual son beats deliberados de texto/codigo/gobernanza, `mockup-tablero.png` queda fuera porque reintroduce el tablero Atlas eliminado, y la decision abierta de 4.5 (banner ASCII + screenshot) sigue vigente. Stop-slop aplicado sobre prosa viva: fuera falso ease ("con un clic", "sin programar"), em dash de frontmatter, "literalmente/justamente", tuteo por defecto en notas tocadas, titulo "del leer al hacer", y formulaciones vagas. Audit trail, citas, Sources, Open questions y Cut material preservados.
   tags: [style, slop-pattern, visual, rewrite]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Slides 4.9-4.10 (nuevas) + renumeracion 4.11-4.13
+  origin: whatsapp-paulo
+  feedback: "Agregaria en .md un ejemplo y listaria lo principal como #, -. Sino queda muy abstracto. 1 o 2 slides: 1 mostrando rapido la sintaxis y otro como se ve. Sino queda como un concepto metafisico."
+  resolution: Ex-4.9 partida en dos: 4.9 'La sintaxis en un ejemplo' (archivo real de la mision en fence markdown) y 4.10 'El mismo archivo, renderizado' (ASCII render-driving con la correspondencia marca->resultado). Trabajar-en-md/Schedule/Artifacts renumeradas 4.11-4.13.
+  tags: [add-slide, slide-content, example]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Seccion 5 partida en 5/6/7 + Agenda + 4.4 + C1
+  origin: whatsapp-paulo
+  feedback: "Moveria Plugins a Enterprise: primero te ensenamos a hacerlo para vos. Y parti 'advanced' en skills y sub-agents como topicos distintos, sino queda todo metido ahi."
+  resolution: Seccion 'Advanced' explotada en tres: 5 Skills (3 slides), 6 Subagentes (1), 7 Enterprise: distribuir con Plugins (2, con goal y notas reencuadrados a 'primero para el usuario, despues el equipo'). Agenda, arco, mapa 4.4 y arco de C1 actualizados.
+  tags: [restructure, sections]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Nueva slide 5.2 + 5.1 adelgazada + Open questions
+  origin: whatsapp-paulo
+  feedback: "Se perdio como se crea un skill. En Cowork tenes que usar /create-skill si o si... hay cosas que se crean desde la UI... falta la lista de comandos /." (presentador confirma 2026-07-21: Cowork incluye slash commands reducidos, /skill-creator entre ellos)
+  resolution: Nueva 5.2 'Como se crea una Skill en Cowork': /skill-creator como camino principal (guia y revisa el SKILL.md), ZIP desde la UI como alternativa, tip de tipear / para listar comandos, Code execution y trampa del Save; diagrama de compuerta actualizado. 5.1 queda conceptual. Watch item reescrito: confirmar lista de comandos, existencia de /skill-optimizer y si el camino por comando tambien exige Save.
+  tags: [accuracy, add-slide, product-change, verify]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Slide 5.2 (refinada con captura del producto)
+  origin: presenter-chat
+  feedback: "Captura del panel Configuracion > Habilidades: Agregar ofrece 'Cree con Claude' / 'Escribe las instrucciones' / 'Subir una habilidad'; skill-creator listada como skill de Anthropic. Aclaracion: subir el ZIP no crea la habilidad, importa una existente."
+  resolution: 5.2 reescrita con la evidencia: dos caminos de creacion desde el menu Agregar (Crear con Claude en chat / escribir instrucciones en la UI) + ZIP como importacion de una Skill existente + /skill-creator (skill preinstalada de Anthropic) como camino por chat. Diagrama, ascii-note, Sources (captura 2026-07-21) y notas actualizados; goal de la seccion 5 corregido.
+  tags: [accuracy, product-change, slide-content]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Slides 2.3, 4.3, 4.7, 4.11, 4.13, 6.1, 7.1
+  origin: presenter-chat
+  feedback: "Tenemos un ejemplo practico y simple para cada uno de los conceptos impartidos?"
+  resolution: Auditoria concepto por concepto. Siete ejemplos agregados a la cara de la slide: MCP con el flujo MT Newswires (2.3), delegacion concreta del pulso semanal (4.3), Project 'Inteligencia de Mercado Semanal' (4.7), reporte .md de la mision (4.11), el tablero del jefe como ejemplo de Live Artifact con mockup-tablero.png recableada (4.13), las 8 propuestas en paralelo (6.1) y el plugin 'Atlas' con las tres Skills (7.1). Los demas conceptos ya tenian ejemplo en slide.
+  tags: [example, slide-content, audit]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Slide 6.1 + goal seccion 6
+  origin: presenter-chat
+  feedback: "'Regla de una linea: chico y visible -> Skill. Grande o ruidoso -> Subagente' es AI slop y ademas la regla esta mal: skills y subagentes no son disjuntos (una skill puede usar un subagente y al reves). Directamente no los compares ni aclares que oscurece."
+  resolution: Bullet eliminado de 6.1; goal de la seccion 6 sin la comparacion; notas reescritas (el subagente se ensena por su uso, sin oponerlo a Skills). Regla nueva en desrobotizar/reglas-propias: "Nada de reglas de dedo con flechas ni falsas dicotomias".
+  tags: [accuracy, slop-pattern, slide-content]
