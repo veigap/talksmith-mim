@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 694 458" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+  <title>Cómo se crea una Skill en Cowork</title>
+  <desc>La slide práctica que faltaba: el paso a paso de creación de una Skill en Cowork, con los caminos del menú Agregar y el comando /skill-creator convergiendo en la compuerta de guardar y habilitar.</desc>
+  <defs>
+    <marker id="ah" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#3B3535"/>
+    </marker>
+    <marker id="ahr" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="694" height="458" fill="#ffffff"/>
+
+  <text x="347" y="38" text-anchor="middle" font-size="17" font-weight="bold">Crear una Skill en Cowork</text>
+
+  <text x="224" y="70" text-anchor="middle" font-size="12" font-weight="bold">Configuración &gt; Habilidades &gt; Agregar</text>
+  <text x="570" y="70" text-anchor="middle" font-size="12" font-weight="bold">en el chat</text>
+
+  <rect x="24" y="80" width="195" height="70" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.3"/>
+  <text x="121" y="103" text-anchor="middle" font-size="12" font-weight="bold">Crear con Claude</text>
+  <text x="121" y="120" text-anchor="middle" font-size="11">ida y vuelta de chat;</text>
+  <text x="121" y="135" text-anchor="middle" font-size="11">Claude escribe el SKILL.md</text>
+
+  <rect x="229" y="80" width="195" height="70" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.3"/>
+  <text x="326" y="103" text-anchor="middle" font-size="12" font-weight="bold">Escribir las instrucciones</text>
+  <text x="326" y="120" text-anchor="middle" font-size="11">directamente</text>
+  <text x="326" y="135" text-anchor="middle" font-size="11">en la UI</text>
+
+  <rect x="24" y="160" width="400" height="48" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.3"/>
+  <text x="224" y="180" text-anchor="middle" font-size="12" font-weight="bold">Subir una habilidad (ZIP)</text>
+  <text x="224" y="197" text-anchor="middle" font-size="11">importa una Skill ya existente</text>
+
+  <rect x="470" y="80" width="200" height="128" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.3"/>
+  <text x="570" y="130" text-anchor="middle" font-size="13" font-weight="bold" font-family="'DejaVu Sans Mono', monospace">/skill-creator</text>
+  <text x="570" y="152" text-anchor="middle" font-size="11">guía la creación y</text>
+  <text x="570" y="167" text-anchor="middle" font-size="11">revisa el SKILL.md</text>
+
+  <line x1="224" y1="212" x2="298" y2="264" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="570" y1="212" x2="396" y2="264" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+
+  <rect x="222" y="268" width="250" height="58" fill="#FBE9EB" stroke="#DA1B2E" stroke-width="2"/>
+  <rect x="227" y="273" width="240" height="48" fill="none" stroke="#DA1B2E" stroke-width="1"/>
+  <text x="347" y="293" text-anchor="middle" font-size="13" font-weight="bold" fill="#DA1B2E">GUARDAR / HABILITAR</text>
+  <text x="347" y="311" text-anchor="middle" font-size="11">en la lista de Habilidades</text>
+
+  <line x1="530" y1="297" x2="482" y2="297" stroke="#DA1B2E" stroke-width="1.5" marker-end="url(#ahr)"/>
+  <text x="537" y="301" font-size="12" font-style="italic" font-weight="bold" fill="#DA1B2E">la trampa</text>
+
+  <line x1="347" y1="326" x2="347" y2="354" stroke="#3B3535" stroke-width="1.5" marker-end="url(#ah)"/>
+
+  <rect x="277" y="358" width="140" height="40" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.3"/>
+  <text x="347" y="383" text-anchor="middle" font-size="13" font-weight="bold">SKILL ACTIVA</text>
+
+  <text x="347" y="430" text-anchor="middle" font-size="11" font-style="italic" fill="#6B6363">frenar en la compuerta = la Skill “no funciona”</text>
+</svg>

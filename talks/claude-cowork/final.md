@@ -19,7 +19,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La clase parte de la herramienta de uso diario, el chat de IA, y explicita sus límites: responde de memoria de entrenamiento (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre cubre las piezas avanzadas, Skills, Subagentes y Plugins (5). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 y 5 (Cowork y avanzado); una slide de corte al final de la sección 3 marca la división.
+**Narrative arc:** La clase parte de la herramienta de uso diario, el chat de IA, y explicita sus límites: responde de memoria de entrenamiento (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre separa las piezas avanzadas por tema, con la lógica de primero para el usuario y después para la organización: Skills (5), Subagentes (6) y Plugins en el mundo Enterprise (7). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 a 7 (Cowork y las piezas avanzadas); una slide de corte al final de la sección 3 marca la división.
 
 **Sections (in delivery order):**
 
@@ -27,7 +27,9 @@ date: Julio 2026
 - 2. Conectores: extender el chat
 - 3. Tareas programadas: el chat trabaja solo
 - 4. Cowork: cambiar la forma de trabajar
-- 5. Advanced: Skills, Subagentes y Plugins
+- 5. Skills: enseñar una vez
+- 6. Subagentes: delegar en paralelo
+- 7. Enterprise: distribuir con Plugins
 
 ---
 
@@ -48,7 +50,7 @@ date: Julio 2026
   - **Alucinación**: inventa con confianza.
   - **No ve el mundo del usuario**: mails, calendario, archivos, apps.
 
-![El chat responde de memoria](images/s1-1-1-chat-de-fabrica.png)
+![El chat de fábrica responde desde su memoria de entrenamiento y no ve el mundo del usuario](images/s1-1-1-chat-de-fabrica.png)
 <!-- ascii-source:
         EL CHAT "COMO VIENE DE FABRICA"
                                              lo que NO ve:
@@ -94,7 +96,7 @@ Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta s
 - **Chat solo** → responde de memoria. **Chat con conectores** → consulta fuentes reales antes de responder.
 - Se activa a través de la biblioteca de conectores. Muchos requieren autenticación.
 
-![Chat solo vs chat con conectores](images/s2-1-1-chat-solo-vs-conectores.png)
+![Chat aislado vs chat con conectores que consulta fuentes reales](images/s2-1-1-chat-solo-vs-conectores.png)
 <!-- ascii-source:
    CHAT SOLO                        CHAT CON CONECTORES
 +----------------+              +----------------+
@@ -134,7 +136,7 @@ La slide instala el concepto que ordena la sección: un conector saca al chat de
 - El "buscando..." y las fuentes citadas marcan el punto de verificación.
 - Regla: si la respuesta pudo cambiar → búsqueda obligada.
 
-![Memoria de entrenamiento vs busqueda web](images/s2-2-1-memoria-vs-busqueda.png)
+![La misma pregunta respondida de memoria vs con búsqueda web](images/s2-2-1-memoria-vs-busqueda.png)
 <!-- ascii-source:
    la MISMA pregunta: "¿ultima version de X?"
 
@@ -173,9 +175,10 @@ Acá se fija la distinción memoria vs información viva. Con conexión, hacerlo
 
 - Conectores = **las "manos"**: lo que la IA puede tocar que de otro modo no podría (Drive, Gmail, Calendar, Slack, bases de datos).
 - **MCP**: el nombre técnico que se le da a los conectores. Son una forma de hacer que la IA traduzca las solicitudes del usuario en código que interactúa con el servicio conectado.
+- Ejemplo con la misión: el usuario pide "las noticias de YPF de esta semana" → el conector de **MT Newswires** las busca en el servicio y las devuelve al chat.
 - Un equipo técnico puede armar **conectores propios** (custom, vía MCP).
 
-![Flujo de un conector via MCP](images/s2-3-1-flujo-connector-mcp.png)
+![Flujo de una llamada a un conector vía MCP](images/s2-3-1-flujo-connector-mcp.png)
 <!-- ascii-source:
 +--------+   pide datos    +-----------+   protocolo   +--------------+
 | CHAT / | --------------&gt; | Connector |  -- MCP --&gt;   | Servicio ext |
@@ -244,7 +247,7 @@ Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pant
 - Cuidado con las autorizaciones y los permisos. **Un mail enviado sin revisión humana puede generar muchos problemas.**
 - Un chat que se informa y actúa puede trabajar **solo** (sección 3).
 
-![Conector en dos direcciones: leer y actuar](images/s2-5-1-conector-dos-direcciones.png)
+![Un conector en dos direcciones: leer información y ejecutar acciones](images/s2-5-1-conector-dos-direcciones.png)
 <!-- ascii-source:
         CONECTOR: dos direcciones
 
@@ -293,7 +296,7 @@ El giro de la sección: hasta acá el conector era una antena que traía info; a
 - El ejemplo: *"todos los días 8:00, resumí mi inbox, lo urgente arriba."*
 - Existe en **ChatGPT** ("tasks") y en **Claude** (claude.ai, desde el navegador).
 
-![Ciclo de una tarea programada](images/s3-1-1-ciclo-tarea-programada.png)
+![Ciclo de una tarea programada: el reloj dispara, la tarea usa conectores y deja el resultado](images/s3-1-1-ciclo-tarea-programada.png)
 <!-- ascii-source:
         TAREA PROGRAMADA (se describe UNA vez)
 
@@ -343,7 +346,7 @@ Slide-concepto de la sección, en dos mitades. Primera: describís el trabajo un
   - Las laptops **se suspenden solas** (config de energía).
 - Tareas que usan **archivos o apps locales** → corren local **siempre**.
 
-![Tarea local vs tarea en la nube](images/s3-2-1-donde-corre-local-vs-nube.png)
+![Bifurcación de una tarea programada: ejecución local vs en la nube](images/s3-2-1-donde-corre-local-vs-nube.png)
 <!-- ascii-source:
    la tarea programada: ¿DONDE corre?
               |
@@ -379,7 +382,7 @@ La slide del consejo práctico que pidió el presentador: "tengan en cuenta que 
 
 ### Content
 
-![Fin de la parte 1](images/s3-3-1-placa-fin-parte-1.png)
+![Placa de corte: fin de la parte 1, comienza la parte 2 con Claude Cowork](images/s3-3-1-placa-fin-parte-1.png)
 <!-- ascii-source:
    ______________________________________________
   |                                              |
@@ -426,7 +429,7 @@ Marcar el corte del día: acá termina el primer bloque de la clase y conviene h
 - **Claude Code**: terminal; developers.
 - **Cowork**: Claude Code hecho para ofimática y tareas que no tratan de programar. GUI de escritorio, trabajo multipaso sobre archivos reales. *El foco del resto de la charla.*
 
-![Tres superficies de Claude](images/s4-1-1-tres-superficies-claude.png)
+![Las tres superficies de Claude sobre los mismos modelos](images/s4-1-1-tres-superficies.png)
 <!-- ascii-source:
 +----------------+   +----------------+   +----------------+
 |   Web / Chat   |   |  Claude Code   |   |     Cowork     |
@@ -471,7 +474,7 @@ Abrir la sección conectando con el recorrido: "hasta acá, todo pasó en la sup
 - **"El nuevo Excel"**: la nueva habilidad base de oficina.
 - Anthropic: **"Claude Code para el resto de tu trabajo"**.
 
-![Excel y herramientas agenticas como herramientas de proposito general](images/s4-2-1-excel-a-agentes.png)
+![De Excel a las herramientas agénticas como nueva habilidad base de oficina](images/s4-2-1-excel-a-agentes.png)
 <!-- ascii-source:
 TRABAJO DE OFICINA: la herramienta de proposito general
 
@@ -515,6 +518,7 @@ Cerrar aterrizándolo en la audiencia: son alumnos de management y la mayoría n
 ### Content
 
 - El chat ya quedó extendido. Lo que cambia ahora es el rol: **delegar**.
+- Ejemplo de delegación: *"armá el pulso semanal de YPF, Vista y Tenaris con el formato del reporte de ejemplo y dejalo en la carpeta"*. Un resultado completo, no un mensaje por vez.
 - Anthropic: *"menos una sesión de chat, más asignarle tareas a un colega."*
 - Chatear vs delegar:
 
@@ -525,7 +529,7 @@ Cerrar aterrizándolo en la audiencia: son alumnos de management y la mayoría n
 | La salida | Texto en la ventana | Archivos en el disco |
 | El rol humano | Hacer cada paso intermedio | Revisar el plan y corregir el rumbo |
 
-![De chat a agente](images/s4-3-1-chat-vs-agente.png)
+![Antes: chat mensaje a mensaje; ahora: agente que planifica y entrega un resultado](images/s4-3-1-chat-vs-agente.png)
 <!-- ascii-source:
 ANTES (chat)                    AHORA (agente / Cowork)
 +----------+                    +------------------------+
@@ -572,10 +576,11 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
   - **Projects** → *agrupar todo el trabajo de un tema.*
   - **Archivos .md** → *que la IA entienda mi material.*
   - **Live Artifacts** → *compartir el resultado vivo.*
-  - **Skills / Subagentes** *(avanzado)* → *no repetir la tarea / delegar en paralelo.*
-- **Plugins** = capa transversal de distribución (sección 5).
+  - **Skills** → *no repetir la tarea.*
+  - **Subagentes** → *delegar en paralelo.*
+- **Plugins** = capa transversal de distribución; primero las piezas para el usuario, después el equipo (sección 7).
 
-![Mapa de bloques de la charla](images/s4-4-1-mapa-bloques.png)
+![El mapa de la charla: bloques que se apilan, con Plugins como capa transversal](images/s4-4-1-mapa-bloques.png)
 <!-- ascii-source:
 +============== PLUGINS (capa transversal: empaquetan y distribuyen) ==============+
 ||                                                                                ||
@@ -583,7 +588,7 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
 ||  | LIVE ARTIFACTS       |                                                      ||
 ||  +----------------------+                                                      ||
 ||  +----------------------+  "no quiero repetir la tarea / delegar en paralelo"  ||
-||  | SKILLS / SUBAGENTES  |  (avanzado, seccion 5)                               ||
+||  | SKILLS / SUBAGENTES  |  (secciones 5 y 6)                                   ||
 ||  +----------------------+                                                      ||
 ||  +----------------------+  "quiero que la IA entienda mi material"             ||
 ||  | ARCHIVOS .MD         |                                                      ||
@@ -626,7 +631,7 @@ Cuidado con la metáfora: los bloques se apilan y se combinan; cada tarea usa so
 
 Decir la promesa de roadmap: "lo que queda de la charla recorre los bloques de acá para arriba, en este orden", y que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Atlas.
 
-Plugins es la banda que envuelve la pila, no un bloque más: empaqueta y distribuye varias de estas piezas a la vez (a un equipo, por ejemplo). No desarrollarlo acá; lo vemos en la sección 5. Tiempo objetivo: ~3-4 min.
+Plugins es la banda que envuelve la pila, no un bloque más: empaqueta y distribuye varias de estas piezas a la vez (a un equipo, por ejemplo). No desarrollarlo acá; lo vemos en la sección 7 (Enterprise). Tiempo objetivo: ~3-4 min.
 
 ---
 
@@ -707,6 +712,7 @@ Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada v
 ### Content
 
 - Project = espacio de trabajo autocontenido: **carpeta propia + memoria + instrucciones**.
+- El de la misión: **"Inteligencia de Mercado Semanal"**, apuntado a la carpeta `Documentos/Atlas-Mercado`.
 - Tres capas persistentes: Instrucciones · Knowledge base · Chats.
 - Los chats del Project **no comparten contexto entre sí** (solo la base de conocimiento).
 - El usuario concede las carpetas con el **explorador de archivos del sistema operativo**.
@@ -748,12 +754,69 @@ Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterio
 
 ---
 
-## 9. Archivos .md: el lenguaje en el que la IA piensa mejor
+## 9. Archivos .md: la sintaxis en un ejemplo
 
 ### Content
 
-- Un `.md` (Markdown) = **texto plano** + estructura liviana: `#` títulos, `-` listas, `**negrita**`, tablas.
-- Se abre y se lee con cualquier editor de texto. La IA está entrenada para comprender su estructura.
+- Un `.md` (Markdown) = **texto plano** + marcas de estructura: `#` para títulos, `-` para listas, `**negrita**`, `|` para tablas.
+- Un archivo de la misión, tal como se escribe:
+
+```markdown
+# Pulso semanal de mercado
+Semana 2026-05-18 · YPF · Vista · Tenaris
+
+## Resumen
+- YPF **sube 3,1%** tras el anuncio de perforación.
+- Vista presenta resultados el jueves.
+
+| Empresa | Cierre | Variación |
+|---------|--------|-----------|
+| YPF     | $42,10 | +3,1%     |
+```
+
+- Se escribe y se lee con cualquier editor de texto. La IA está entrenada para comprender su estructura.
+
+### Sources
+
+- corpus/agentic-ai-deck.zip.md, "Markdown is the lingua franca".
+- "corpus/mision - auto.zip.md", el reporte semanal de la misión como archivo `.md` (formato del reporte de ejemplo).
+
+### Speaker notes
+
+Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato de los archivos importa, y gana el más simple. Esta slide muestra la sintaxis con un archivo real de la misión: un `#` marca el título, `##` un subtítulo, `-` una viñeta, los asteriscos la negrita y las barras verticales una tabla. Recorrerla rápido, sin detenerse en detalle fino de formato: la idea es que las marcas son pocas y se aprenden en minutos. Señalar que es texto plano, sin formato propietario: se abre con cualquier editor, en cualquier computadora. La próxima slide muestra el mismo archivo renderizado. Tiempo objetivo: ~3 min.
+
+---
+
+## 10. El mismo archivo, renderizado
+
+### Content
+
+- El mismo texto, abierto en cualquier visor de Markdown:
+
+![El archivo .md de la slide anterior renderizado, con cada marca de sintaxis conectada a su resultado](images/s4-10-1-md-renderizado.png)
+<!-- ascii-source:
++------------------------------------------------+
+|  PULSO SEMANAL DE MERCADO                      |  <- "#" = titulo
+|  Semana 2026-05-18 · YPF · Vista · Tenaris     |
+|                                                |
+|  Resumen                                       |  <- "##" = subtitulo
+|   • YPF sube 3,1% tras el anuncio de           |  <- "-" = viñeta
+|     perforacion.        (** = negrita)         |
+|   • Vista presenta resultados el jueves.       |
+|                                                |
+|  +---------+--------+-----------+              |
+|  | Empresa | Cierre | Variacion |              |  <- "|" = tabla
+|  | YPF     | $42,10 | +3,1%     |              |
+|  +---------+--------+-----------+              |
++------------------------------------------------+
+-->
+<!-- ascii-note:
+intent: mostrar el archivo .md de la slide anterior ya renderizado (título grande, subtítulo, viñetas, negrita, tabla con bordes), con flechas laterales que conectan cada elemento visual con la marca de sintaxis que lo produce.
+emphasize: la correspondencia marca -> resultado (# -> título, - -> viñeta, ** -> negrita, | -> tabla); que es el MISMO archivo de la slide anterior.
+labels: documento renderizado a la izquierda; a la derecha, la marca de sintaxis que genera cada elemento.
+-->
+
+- Las marcas se convierten en formato: títulos, viñetas, negrita, tabla.
 - **Metadata (header YAML)**: declara *qué es* el archivo y *cuándo* usarlo. Vuelve con las Skills (sección 5).
 - La **lingua franca** del mundo LLM: el modelo lee texto. Portable y versionable.
 
@@ -764,11 +827,11 @@ Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterio
 
 ### Speaker notes
 
-Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato de los archivos importa, y gana el más simple. Abrir un `.md` real en pantalla si se puede. Mostrar que es texto plano con marcas mínimas (un `#`, unas listas) y que igual se ve estructurado; se abre con cualquier editor, en cualquier computadora, sin formato propietario. La idea a transmitir: el modelo lee texto, y cuanto menos formato opaco haya entre el contenido y el modelo, mejor trabaja. Por eso es portable y versionable; el mismo estándar funciona entre herramientas. Presentar la metadata (header YAML entre `---`) como la etiqueta del frasco: dice qué es el archivo y cuándo usarlo. La `description` de una Skill cumple esa función (activación semántica, no por palabra clave; sección 5). Alcance: qué es y por qué importa, sin detalle fino de formato. La próxima slide lo baja a la práctica: en qué formato conviene trabajar. Tiempo objetivo: ~5 min.
+El remate del par: el archivo de la slide anterior, ahora formateado. Recorrer la correspondencia con el diagrama: el `#` se volvió título, los `-` viñetas, los asteriscos negrita, las barras una tabla con bordes. Si hay conexión, mejor en vivo: abrir el archivo en un visor de Markdown y alternar entre fuente y render. La idea a transmitir: el modelo lee texto, y cuanto menos formato opaco haya entre el contenido y el modelo, mejor trabaja. Por eso es portable y versionable; el mismo estándar funciona entre herramientas. Presentar la metadata (header YAML entre `---`) como la etiqueta del frasco: dice qué es el archivo y cuándo usarlo. La `description` de una Skill cumple esa función (activación semántica, no por palabra clave; sección 5). La próxima slide baja esto a la práctica: en qué formato conviene trabajar. Tiempo objetivo: ~3 min.
 
 ---
 
-## 10. Trabajar en .md, exportar al final
+## 11. Trabajar en .md, exportar al final
 
 ### Content
 
@@ -777,8 +840,9 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 - Aplica tanto a la **memoria** del agente como a los **archivos de trabajo** del Project.
 - El entregable (**.docx, .xlsx, PDF, slides**) se genera una sola vez cuando el trabajo está listo.
 - Regla de bolsillo: *se edita en `.md` y se entrega en el formato que pida el jefe.*
+- En la misión: el reporte se consolida como `.md` en el Project; el mail y el tablero se generan al final.
 
-![Trabajar en Markdown y exportar al final](images/s4-10-1-flujo-md.png)
+![Flujo de trabajo con la IA: fuentes → archivos .md → entrega final](images/s4-10-1-flujo-md.png)
 <!-- ascii-source:
    FLUJO DE TRABAJO CON LA IA
 
@@ -809,7 +873,7 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ---
 
-## 11. Schedule en Cowork: tareas programadas sobre carpetas y archivos
+## 12. Schedule en Cowork: tareas programadas sobre carpetas y archivos
 
 ### Content
 
@@ -836,18 +900,23 @@ Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se ense�
 
 ---
 
-## 12. Artifacts y Live Artifacts: del resultado a algo compartible
+## 13. Artifacts y Live Artifacts: del resultado a algo compartible
 
 ### Content
 
 - **Artifact** = salida viva en un panel lateral: HTML, gráficos, tablas, documentos.
 - **Estándar** (todos los planes): estático. **Live** (Cowork, pago): página interactiva y persistente que **se refresca con datos actuales** y guarda **versiones** (pestaña "Live artifacts").
 - Se crea desde una tarea, o desde la pestaña (**New artifact**).
+- El de la misión: el **tablero del jefe**, un Live Artifact `pulso-semanal-FECHA` que se refresca con los datos de cada semana. Su boceto es el spec:
+
+![Boceto del tablero "Pulso semanal de mercado" (dibujado por el jefe)](images/mockup-tablero.png)
+
 - Estado hoy: **NO compartibles aún** (roadmap) · **locales** (no siguen al usuario entre dispositivos) · usan los connectors aprobados **sin re-preguntar**.
 
 ### Sources
 
 - corpus/agentic-ai-deck.zip.md, definición de Artifact (dos tiers); slide 5.13 (Standard vs Advanced; Live Artifacts en Cowork); matriz 5.16 (Cowork ✓ full Artifacts + Live Artifacts).
+- "corpus/mision - auto.zip.md", el tablero `pulso-semanal-FECHA` y el boceto del jefe como spec (mockup-tablero).
 - Anthropic Support, Use Live Artifacts in Claude Cowork: https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork; realidad oficial: persisten en la pestaña Live artifacts, se refrescan con datos actuales, guardan versiones; limitaciones: locales (no en la nube), NO compartibles aún (en roadmap), usan los connectors aprobados sin volver a preguntar; dos formas de crearlos (desde una tarea o desde la pestaña).
 
 ### Speaker notes
@@ -856,9 +925,9 @@ El jefe quería el reporte de dos formas: el email, que ya resolvimos con Gmail 
 
 ---
 
-# 5. Advanced: Skills, Subagentes y Plugins
+# 5. Skills: enseñar una vez
 
-**Goal of this section:** Cierre de nivel avanzado. Enseñarle a Claude tareas reutilizables (Skills, con su trampa del Save y la anatomía del SKILL.md), delegar trabajo pesado en Subagentes y distribuir workflows completos con Plugins, incluido el ciclo de vida en cuentas Team.
+**Goal of this section:** Enseñarle a Claude tareas reutilizables: qué es una Skill, cómo se crea en Cowork (el menú Agregar del panel de Habilidades, el comando `/skill-creator` y la trampa del Save; el ZIP importa una existente) y la anatomía del SKILL.md.
 
 ---
 
@@ -868,64 +937,84 @@ El jefe quería el reporte de dos formas: el email, que ya resolvimos con Gmail 
 
 - **Skill** = instrucción reutilizable que se carga cuando el pedido coincide con su descripción. **Un trabajo por Skill.**
 - *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."*
-- Dos caminos, los dos desde la interfaz:
-  1. **Pedirla en lenguaje natural** → Claude escribe el `SKILL.md` → se habilita en **Customize → Skills** ("Save to enable").
-  2. **Subir un ZIP** (Customize → Skills → "+").
-- Requisito: **Code execution** habilitado.
-- **La trampa del Save:** sin Save/enable, la Skill "no funciona".
-
-![Crear una Skill y habilitarla con Save](images/s5-1-1-crear-skill-compuerta-save.png)
-<!-- ascii-source:
-     CREAR UNA SKILL EN COWORK (desde la interfaz)
-
- CAMINO 1                       CAMINO 2
- +---------------------+        +---------------------+
- | pedirla en lenguaje |        | subir un ZIP        |
- | natural: Claude     |        | Customize > Skills  |
- | escribe el SKILL.md |        | > "+"               |
- +---------------------+        +---------------------+
-            \                          /
-             v                        v
-        +==================================+
-        |   SAVE / ENABLE                  |  <== la trampa
-        |   (Customize > Skills)           |
-        +==================================+
-                        |
-                        v
-               +-----------------+
-               |  SKILL ACTIVA   |
-               +-----------------+
-
-   frenar en la compuerta = la Skill "no funciona"
--->
-<!-- ascii-note:
-intent: mostrar los dos caminos reales para crear una Skill en Cowork (pedirla en lenguaje natural, con Claude escribiendo el SKILL.md; o subir un ZIP) y que los dos convergen en la misma compuerta, Save / enable en Customize > Skills. Solo pasada esa compuerta la Skill queda activa.
-emphasize: la compuerta "SAVE / ENABLE" como cuello de botella del dibujo (caja de doble línea, marcada "la trampa") y la leyenda inferior "frenar en la compuerta = la Skill no funciona"; que los dos caminos convergen en ella y ninguno la esquiva.
-labels: camino 1 = pedirla en lenguaje natural (Claude escribe el SKILL.md); camino 2 = subir un ZIP (Customize > Skills > "+"); compuerta = Save / enable (Customize > Skills); salida = Skill activa.
--->
-
 - Atlas: `reporte-semanal` consolida la carpeta `fuentes/` en un reporte con formato fijo.
 
 ### Sources
 
 - corpus/agentic-ai-deck.zip.md, definición de Skill (folder + SKILL.md, "one job per skill"); "Anything you explain to Claude twice is a skill you should write once."
 - "corpus/mision - auto.zip.md", el ejemplo `reporte-semanal` (lee la carpeta `fuentes/`, consolida por empresa, formato fijo, sufijo `-new`).
-- Anthropic Support, Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude; habilitar Skills en Customize → Skills; requiere Code execution ("This feature requires code execution to be enabled"; re-verificado 2026-07-15).
-- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills; la versión ACTUAL del artículo (re-verificada 2026-07-15) documenta solo el camino ZIP + habilitación en Customize → Skills. El camino en lenguaje natural estaba documentado en la versión de junio 2026 y está verificado de primera mano por el presentador (registros [closed] del 2026-06-09 abajo); atribuido a esa verificación, no al artículo actual.
 
 ### Speaker notes
 
-Arranca el bloque avanzado. La Skill materializa el "enseñá una vez, reutilizá siempre". Mostrar los dos caminos reales en Cowork. Uno: pedirla en lenguaje natural; Claude escribe el `SKILL.md` y el usuario la habilita en Customize → Skills. Dos: subir un ZIP de la carpeta de la Skill por Customize → Skills. No saltear la trampa del Save, un error real y común: el usuario pide la Skill, Claude escribe el archivo, y si no hay Save / enable no queda habilitada y parece que "no funciona". Mencionar que las Skills requieren Code execution (Settings → Capabilities) y que el camino ZIP completo es Customize → Skills → "+" → Create skill → Upload a skill, activando con el toggle. Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio "un trabajo por Skill": si aparece "y además", conviene dividirla en dos. Conectar con la sección anterior: el SKILL.md es el archivo `.md` con metadata que ya vieron, y la próxima slide lo abre. Tiempo objetivo: ~8 min.
+Arranca el bloque avanzado, ahora partido por tema: esta sección cubre Skills; Subagentes y Plugins tienen las suyas. La Skill materializa el "enseñá una vez, reutilizá siempre". Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio "un trabajo por Skill": si aparece "y además", conviene dividirla en dos. La creación paso a paso viene en la próxima slide; la anatomía del archivo, en la siguiente. Tiempo objetivo: ~4 min.
 
 ---
 
-## 2. Anatomía de un SKILL.md
+## 2. Cómo se crea una Skill en Cowork
+
+### Content
+
+- Desde **Configuración → Habilidades → Agregar**, dos caminos para crear y uno para importar:
+  1. **Crear con Claude**: un ida y vuelta de chat; Claude escribe el `SKILL.md`.
+  2. **Escribir las instrucciones** de la habilidad directamente en la UI.
+  3. **Subir una habilidad**: importa una Skill ya existente (el ZIP con su carpeta), por ejemplo una que te compartieron.
+- En el chat, el comando **`/skill-creator`** (una skill de Anthropic que viene preinstalada) guía la creación y revisa el resultado.
+- Cowork incluye un set reducido de **slash commands** (menos que Claude Code). Tipear `/` los lista.
+- Requisito: **Code execution** habilitado.
+- **La trampa del Save:** la Skill tiene que quedar guardada y habilitada en la lista de Habilidades, o "no funciona".
+
+![Los caminos para crear una Skill en Cowork convergen en la compuerta de guardar y habilitar](images/s5-2-1-caminos-crear-skill.png)
+<!-- ascii-source:
+     CREAR UNA SKILL EN COWORK
+
+ Configuracion > Habilidades > AGREGAR          en el chat
+ +-------------------+---------------------+   +------------------+
+ | Crear con Claude  | Escribir las        |   | /skill-creator   |
+ | (ida y vuelta de  | instrucciones en    |   | guia y revisa    |
+ |  chat)            | la UI               |   | el SKILL.md      |
+ +-------------------+---------------------+   +------------------+
+ | Subir una habilidad (ZIP):              |            |
+ | importa una Skill ya existente          |            |
+ +-----------------------------------------+            |
+                      \                                /
+                       v                              v
+                  +==================================+
+                  |   GUARDAR / HABILITAR            |  <== la trampa
+                  |   (lista de Habilidades)         |
+                  +==================================+
+                                  |
+                                  v
+                         +-----------------+
+                         |  SKILL ACTIVA   |
+                         +-----------------+
+
+   frenar en la compuerta = la Skill "no funciona"
+-->
+<!-- ascii-note:
+intent: mostrar los caminos del menú Agregar del panel Habilidades (Crear con Claude en un ida y vuelta de chat; escribir las instrucciones directo en la UI; subir un ZIP, que IMPORTA una Skill ya existente en vez de crear una) más el comando /skill-creator en el chat, que guía y revisa el SKILL.md. Todos convergen en la misma compuerta: guardar y habilitar la Skill en la lista.
+emphasize: la compuerta "GUARDAR / HABILITAR" como cuello de botella (caja de doble línea, marcada "la trampa") y la leyenda inferior; el menú Agregar con sus tres opciones como bloque de la UI, separado del camino por comando.
+labels: bloque UI = menú Agregar (Crear con Claude / Escribir instrucciones / Subir ZIP); bloque chat = /skill-creator (guía y revisa); compuerta = guardar/habilitar en la lista de Habilidades; salida = Skill activa.
+-->
+
+### Sources
+
+- Verificación de primera mano de los presentadores (2026-07-21, captura del panel Configuración → Habilidades): el menú **Agregar** ofrece "Cree con Claude", "Escribe las instrucciones de la habilidad" y "Subir una habilidad"; `skill-creator` figura en la lista como skill de Anthropic; Cowork incluye un set reducido de slash commands.
+- Anthropic Support, Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude; habilitar Skills desde el panel de Habilidades; requiere Code execution ("This feature requires code execution to be enabled"; re-verificado 2026-07-15).
+- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills; la versión actual del artículo (re-verificada 2026-07-15) documenta solo el camino ZIP; los otros dos caminos del menú Agregar y el comando `/skill-creator` todavía no aparecen ahí (doc atrasada respecto del producto; atribuido a la captura).
+
+### Speaker notes
+
+La slide práctica que faltaba: el paso a paso de creación. Con conexión, hacerlo en vivo desde el panel: Configuración → Habilidades → Agregar, y mostrar las tres opciones del menú. "Crear con Claude" abre un ida y vuelta de chat donde Claude escribe el SKILL.md; "Escribir las instrucciones" edita la habilidad directo en la UI; "Subir una habilidad" no crea nada nuevo: importa una Skill ya existente desde su ZIP, por ejemplo una compartida por un colega. Después el camino por chat: tipear `/` para mostrar la lista de comandos (un set reducido; los que conocen Claude Code van a notar la diferencia) y crear `reporte-semanal` con `/skill-creator`, que guía la escritura y revisa el resultado. Dos avisos prácticos. Uno: las Skills requieren Code execution. Dos: la trampa del Save; la Skill creada tiene que quedar guardada y habilitada en la lista, y sin eso parece que "no funciona". Aviso de vigencia: la doc oficial va detrás del producto en este punto; re-mirar el panel el día de la clase. Tiempo objetivo: ~6 min (con demo).
+
+---
+
+## 3. Anatomía de un SKILL.md
 
 ### Content
 
 - Un `SKILL.md` por dentro: **metadata** arriba, **instrucciones** abajo. Es el `.md` con metadata de la sección 4.
 
-![Anatomia de un SKILL.md](images/s5-2-1-anatomia-skill-md.png)
+![Anatomía de un SKILL.md: metadata YAML arriba, instrucciones Markdown abajo](images/s5-2-1-anatomia-skill-md.png)
 <!-- ascii-source:
 +--------------------------------------------------------------+
 | ---                                                          |  <-- METADATA / HEADER (YAML)
@@ -963,16 +1052,22 @@ Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el be
 
 ---
 
-## 3. Subagentes: delegar sub-tareas en paralelo
+# 6. Subagentes: delegar en paralelo
+
+**Goal of this section:** La segunda pieza avanzada, con sección propia: qué es un Subagente, para qué tipo de sub-tarea conviene y cómo se agrega.
+
+---
+
+## 1. Subagentes: delegar sub-tareas en paralelo
 
 ### Content
 
 - **Subagente** = asistente aislado, contexto propio; devuelve **un resumen** (no la transcripción).
-- Regla de una línea: chico y visible → **Skill**. Grande o ruidoso → **Subagente**.
+- Ejemplo: **8 propuestas de proveedores**, un subagente por propuesta; los 8 corren en paralelo y el agente principal arma la tabla comparativa final.
 - En Cowork corren "por debajo", **varios en paralelo**.
 - Se agrega como una Skill (descripción + instrucciones): se le pide a Claude, o llega en un **Plugin**.
 
-![Subagentes en paralelo con fan-out y fan-in](images/s5-3-1-subagentes-fan-out.png)
+![Fan-out/fan-in: el agente principal reparte en subagentes paralelos y combina un resumen](images/s5-3-1-subagentes-fan-out.png)
 <!-- ascii-source:
                 +------------------+
                 | agente principal |
@@ -1003,15 +1098,22 @@ labels: agente principal -> sub A / sub B / sub C (contexto propio) -> resumen c
 
 ### Speaker notes
 
-Nivel avanzado, presentarlo como "para cuando crezcas". La distinción mental útil: si la sub-tarea es chica y querés verla, es una Skill; si es grande o ruidosa y querés que corra aparte sin ensuciar tu conversación, es un Subagente. El ejemplo del deck ilustra el fan-out: 8 propuestas de proveedores revisadas en paralelo por tres especialistas, con tabla combinada al final. Cómo se agrega, en paralelo a las Skills: un subagente se define con una descripción (cuándo usarlo) más instrucciones; le pedís a Claude que lo arme (se gestiona en Customize, igual que una Skill) o viene dentro de un Plugin. Mantenerlo alto nivel, sin rutas de archivos ni internals de persistencia. Tiempo objetivo: ~7 min.
+Nivel avanzado, presentarlo como "para cuando crezcas". Un subagente conviene cuando una sub-tarea es pesada o genera mucho texto intermedio que nadie necesita leer: corre aparte y vuelve con el resumen. No plantearlo como opuesto de las Skills (una skill puede usar subagentes y al revés); acá se enseña qué es, sin comparaciones. El ejemplo ilustra el fan-out: 8 propuestas de proveedores, un subagente por propuesta; los 8 corren a la vez y el agente principal combina los resúmenes en la tabla comparativa. Cómo se agrega, en paralelo a las Skills: un subagente se define con una descripción (cuándo usarlo) más instrucciones; le pedís a Claude que lo arme (se gestiona en Customize, igual que una Skill) o viene dentro de un Plugin. Mantenerlo alto nivel, sin rutas de archivos ni internals de persistencia. Tiempo objetivo: ~7 min.
 
 ---
 
-## 4. Plugins: empaquetar y distribuir un workflow completo
+# 7. Enterprise: distribuir con Plugins
+
+**Goal of this section:** El cierre organizacional: hasta acá las piezas se armaron para el usuario; los Plugins las empaquetan y las distribuyen a un equipo, con el ciclo de vida en cuentas Team/Enterprise.
+
+---
+
+## 1. Plugins: empaquetar y distribuir un workflow completo
 
 ### Content
 
 - **Plugin** = la unidad de distribución: empaqueta Skills + agentes + connectors en una instalación. *"Ship the whole thing."*
+- Ejemplo con la misión: un plugin "Atlas" que empaqueta las tres Skills (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) más el conector de noticias; el equipo lo instala y tiene el flujo completo.
 - En Cowork se instalan desde un **marketplace** en la GUI; lo que traen funciona en Chat y en Cowork.
 - Dónde: marketplaces oficiales de Anthropic y de la comunidad.
 
@@ -1021,18 +1123,18 @@ Nivel avanzado, presentarlo como "para cuando crezcas". La distinción mental ú
 
 ### Speaker notes
 
-Cerrar el avanzado con la idea de empaquetado: cuando un workflow madura (varias skills, connectors, agentes, incluso hooks y MCP), un Plugin lo vuelve instalable como paquete. El punto para Cowork: la forma robusta de distribuir una skill o un agente a otros es dentro de un plugin. Para usar una Skill en Cowork, el usuario la habilita como skill de usuario (Customize → Skills) o la recibe dentro de un plugin; los plugins distribuidos aparecen en Chat y en Cowork. Mencionar los marketplaces oficiales (`anthropics/claude-plugins-official`, `anthropics/knowledge-work-plugins`) y los de la comunidad. Recordar el mapa: Plugins es la banda que envuelve todos los bloques de la charla. Tiempo objetivo: ~6 min.
+Abrir la sección con el giro organizacional: hasta acá cada pieza se armó para el usuario; esta sección las lleva al equipo. La idea central es el empaquetado: cuando un workflow madura (varias skills, connectors, agentes, incluso hooks y MCP), un Plugin lo vuelve instalable como paquete. El punto para Cowork: la forma robusta de distribuir una skill o un agente a otros es dentro de un plugin. Para usar una Skill en Cowork, el usuario la habilita como skill de usuario (Customize → Skills) o la recibe dentro de un plugin; los plugins distribuidos aparecen en Chat y en Cowork. Mencionar los marketplaces oficiales (`anthropics/claude-plugins-official`, `anthropics/knowledge-work-plugins`) y los de la comunidad. Recordar el mapa: Plugins es la banda que envuelve todos los bloques de la charla. Tiempo objetivo: ~6 min.
 
 ---
 
-## 5. Plugins en una cuenta Team: ciclo de vida
+## 2. Plugins en una cuenta Team: ciclo de vida
 
 ### Content
 
 - En Team/Enterprise, los **Owners** gestionan los plugins de la org (Organization settings → Plugins).
 - El ciclo completo:
 
-![Ciclo de vida de plugins en una cuenta Team](images/s5-5-1-ciclo-plugins-team.png)
+![Ciclo de vida de un plugin en una cuenta Team](images/s5-5-1-ciclo-plugins-team.png)
 <!-- ascii-source:
 +-----------------+     +------------------------+     +----------------------+
 | OWNER crea un   | --&gt; | agrega plugins:        | --&gt; | fija preferencia de  |
@@ -1079,7 +1181,7 @@ Slide de cierre del bloque avanzado, orientada a quien algún día administre un
 
 - El loop completo de Atlas:
 
-![Loop completo de Atlas](images/sc-1-1-loop-completo-atlas.png)
+![El loop completo de Atlas, disparado por Schedule cada lunes](images/sc-1-1-loop-completo-atlas.png)
 <!-- ascii-source:
 Lunes 8:00
    |
@@ -1103,7 +1205,7 @@ emphasize: la secuencia de izquierda a/arriba-abajo Schedule -> Skills -> Connec
 labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publicar-tablero) y las piezas usadas en cada uno.
 -->
 
-- **El arco de hoy:** chat de memoria → conectores → tareas programadas → Cowork (`.md`) → Skills, Subagentes y Plugins.
+- **El arco de hoy:** chat de memoria → conectores → tareas programadas → Cowork (`.md`) → Skills → Subagentes → Plugins para el equipo.
 - **Las piezas:** Conectores (las manos) · Schedule (corre solo) · Instrucciones (el contrato) · Projects (el espacio de trabajo) · `.md` (el lenguaje) · Skills (enseñar una vez) · Live Artifacts (compartir).
 - **Para llevarse:** *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."* ¿Qué tarea recurrente le delegarías a tu propio Atlas?
 
@@ -1142,9 +1244,9 @@ Slide de cierre responsable, breve y obligatoria. Decirlo sin vueltas: Cowork si
 # Open questions
 
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
-- Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.5) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` ya no se usa: la slide del tablero de Atlas se eliminó en review 2026-07-16.)
+- Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.5) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` volvió a usarse en review 2026-07-21: es el ejemplo de Live Artifact en la slide 4.13; re-verificar su depiction junto con la otra.)
 - Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
-- **Camino "lenguaje natural" de creación de Skills (slide 5.1):** la versión actual de support 12512198 (re-verificada 2026-07-15) ya no lo documenta; solo el camino ZIP. El camino se mantiene en la slide atribuido a la versión de junio 2026 del artículo + verificación de primera mano del presentador (registros [closed] 2026-06-09). Re-chequear en el producto antes de la clase; si Cowork lo quitó, corregir slide y diagrama.
+- **Slash commands en Cowork (slides 5.1–5.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera. Pendiente antes de la clase: confirmar en el producto la lista exacta de comandos disponibles (tipear `/`) y si la Skill creada por comando también exige el Save/enable de la trampa.
 - Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
 - **Slide 4.5; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.

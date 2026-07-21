@@ -1,0 +1,30 @@
+     CREAR UNA SKILL EN COWORK
+
+ Configuracion > Habilidades > AGREGAR          en el chat
+ +-------------------+---------------------+   +------------------+
+ | Crear con Claude  | Escribir las        |   | /skill-creator   |
+ | (ida y vuelta de  | instrucciones en    |   | guia y revisa    |
+ |  chat)            | la UI               |   | el SKILL.md      |
+ +-------------------+---------------------+   +------------------+
+ | Subir una habilidad (ZIP):              |            |
+ | importa una Skill ya existente          |            |
+ +-----------------------------------------+            |
+                      \                                /
+                       v                              v
+                  +==================================+
+                  |   GUARDAR / HABILITAR            |  <== la trampa
+                  |   (lista de Habilidades)         |
+                  +==================================+
+                                  |
+                                  v
+                         +-----------------+
+                         |  SKILL ACTIVA   |
+                         +-----------------+
+
+   frenar en la compuerta = la Skill "no funciona"
+
+<!-- ascii-note:
+intent: mostrar los caminos del menú Agregar del panel Habilidades (Crear con Claude en un ida y vuelta de chat; escribir las instrucciones directo en la UI; subir un ZIP, que IMPORTA una Skill ya existente en vez de crear una) más el comando /skill-creator en el chat, que guía y revisa el SKILL.md. Todos convergen en la misma compuerta: guardar y habilitar la Skill en la lista.
+emphasize: la compuerta "GUARDAR / HABILITAR" como cuello de botella (caja de doble línea, marcada "la trampa") y la leyenda inferior; el menú Agregar con sus tres opciones como bloque de la UI, separado del camino por comando.
+labels: bloque UI = menú Agregar (Crear con Claude / Escribir instrucciones / Subir ZIP); bloque chat = /skill-creator (guía y revisa); compuerta = guardar/habilitar en la lista de Habilidades; salida = Skill activa.
+-->

@@ -1,0 +1,20 @@
++------------------------------------------------+
+|  PULSO SEMANAL DE MERCADO                      |  <- "#" = titulo
+|  Semana 2026-05-18 · YPF · Vista · Tenaris     |
+|                                                |
+|  Resumen                                       |  <- "##" = subtitulo
+|   • YPF sube 3,1% tras el anuncio de           |  <- "-" = viñeta
+|     perforacion.        (** = negrita)         |
+|   • Vista presenta resultados el jueves.       |
+|                                                |
+|  +---------+--------+-----------+              |
+|  | Empresa | Cierre | Variacion |              |  <- "|" = tabla
+|  | YPF     | $42,10 | +3,1%     |              |
+|  +---------+--------+-----------+              |
++------------------------------------------------+
+
+<!-- ascii-note:
+intent: mostrar el archivo .md de la slide anterior ya renderizado (título grande, subtítulo, viñetas, negrita, tabla con bordes), con flechas laterales que conectan cada elemento visual con la marca de sintaxis que lo produce.
+emphasize: la correspondencia marca -> resultado (# -> título, - -> viñeta, ** -> negrita, | -> tabla); que es el MISMO archivo de la slide anterior.
+labels: documento renderizado a la izquierda; a la derecha, la marca de sintaxis que genera cada elemento.
+-->
