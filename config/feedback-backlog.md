@@ -457,3 +457,17 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "'Regla de una linea: chico y visible -> Skill. Grande o ruidoso -> Subagente' es AI slop y ademas la regla esta mal: skills y subagentes no son disjuntos (una skill puede usar un subagente y al reves). Directamente no los compares ni aclares que oscurece."
   resolution: Bullet eliminado de 6.1; goal de la seccion 6 sin la comparacion; notas reescritas (el subagente se ensena por su uso, sin oponerlo a Skills). Regla nueva en desrobotizar/reglas-propias: "Nada de reglas de dedo con flechas ni falsas dicotomias".
   tags: [accuracy, slop-pattern, slide-content]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: Deck completo (rename) + slide 4.6 + missions/CoWork/mission.md
+  origin: presenter-chat
+  feedback: "Decisiones: (1a) el analista de la charla pasa a llamarse Faro y Atlas queda como la empresa; (2) YPF/Vista/Tenaris sin tecnologicas; y la mision se reestructura al orden de la clase y se parte en 2 como la presentacion."
+  resolution: Barrido Atlas->Faro en la charla (23 reemplazos: agenda, 2.4, 2.5, 3.3, 4.3, 4.4, 4.6 con empresas YPF/Vista/Tenaris y carpeta Faro-Mercado, 4.7/4.8, 4.11/4.12, 5.1, 7.1 plugin "Faro", C1); Atlas queda solo como empresa. mission.md reescrita: 2 partes / 6 milestones en el orden de la clase, claims corregidos (sin ShareDuo, donde-corre actualizado, pestania Scheduled, /skill-creator y menu Agregar en M6), Parte 2 independiente.
+  tags: [naming, consistency, restructure, mission]
+- talk: claude-cowork
+  date: 2026-07-21
+  location: missions/CoWork (Mision 0 nueva) + slides 3.3 y 4.5
+  origin: presenter-chat
+  feedback: "Incorporar una variante del flujo de DIAA2026/caso_finanzas_desordenado como introductorio a la utilidad de Cowork, adaptada a nuestro caso ficticio, misma filosofia, sin perder la ejercitacion existente y replicando todo el flujo externo."
+  resolution: Creada la Mision 0 'el escritorio del pasante' en el universo Atlas/Faro: gen_escritorio_pasante.py (regenerable; adaptado de gen_caso_finanzas.py), carpeta escritorio-del-pasante/ (5 archivos, 4 formatos: xlsx cotizaciones, docx pulso FINAL final, pdf guia v3, md notas, txt viejo; 4 errores plantados verificables cruzando documentos) y guia intro-escritorio-pasante.md con los 5 ejercicios del flujo externo mapeados a capacidades. Enganches: demo de 4.5 pasa a usar esta carpeta (ejercicios 1-2 en vivo), nota en 3.3, y aviso en la Parte 2 de mission.md (el pulso-semanal.md resultante es el insumo del M3). La mision Faro quedo intacta.
+  tags: [mission, add-material, demo, cross-course]
