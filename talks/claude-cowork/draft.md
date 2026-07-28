@@ -21,7 +21,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La clase parte de la herramienta de uso diario, el chat de IA, y explicita sus límites: responde de memoria de entrenamiento (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre separa las piezas avanzadas por tema, con la lógica de primero para el usuario y después para la organización: Skills (5), Subagentes (6) y Plugins en el mundo Enterprise (7). El hilo conductor es una misión concreta, "Atlas", el analista de mercado que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 a 7 (Cowork y las piezas avanzadas); una slide de corte al final de la sección 3 marca la división.
+**Narrative arc:** La clase parte de la herramienta de uso diario, el chat de IA, y explicita sus límites: responde de memoria de entrenamiento (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre separa las piezas avanzadas por tema, con la lógica de primero para el usuario y después para la organización: Skills (5), Subagentes (6) y Plugins en el mundo Enterprise (7). El hilo conductor es una misión concreta, "Faro", el analista de mercado virtual de la empresa Atlas, que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 a 7 (Cowork y las piezas avanzadas); una slide de corte al final de la sección 3 marca la división.
 
 **Sections (in delivery order):**
 
@@ -232,7 +232,7 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat. Usar el d
 ![Conexión de un Connector: buscar y conectar](images/connector_browser.png)
 
 - Ejemplos guía: **mail y calendario**. "¿Qué mails me perdí ayer? ¿Qué tengo esta semana?"
-- Atlas: **MT Newswires** ya está en el directorio y se conecta desde la biblioteca.
+- Faro: **MT Newswires** ya está en el directorio y se conecta desde la biblioteca.
 - Un conector no oficial, al autorizarse, **accede a los datos del usuario**. Conectar solo fuentes confiables.
 
 ### Sources
@@ -245,7 +245,7 @@ Desarmar el miedo: conectar un servicio externo le da "manos" al chat. Usar el d
 
 ### Speaker notes
 
-Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pantalla de conexión) para desarmar el "esto es técnico". Conectar un servicio implica buscarlo, tocar Connect y autorizarlo, igual que cuando conectás Gmail a cualquier app; se configura por la UI, sin archivo local que editar. Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail conectado el chat lee y resume tu inbox, con Calendar ve tu agenda. Son preguntas que el chat aislado no puede responder. Sobre los no oficiales (servicios de terceros que exponen MCP): mismos pasos, más criterio. Autorizar un conector le da acceso a tus datos; conectá solo lo confiable. Ejemplo de la misión: MT Newswires (noticias), con el que Atlas lee noticias del día. Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo en el chat. Tiempo objetivo: ~6 min.
+Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pantalla de conexión) para desarmar el "esto es técnico". Conectar un servicio implica buscarlo, tocar Connect y autorizarlo, igual que cuando conectás Gmail a cualquier app; se configura por la UI, sin archivo local que editar. Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail conectado el chat lee y resume tu inbox, con Calendar ve tu agenda. Son preguntas que el chat aislado no puede responder. Sobre los no oficiales (servicios de terceros que exponen MCP): mismos pasos, más criterio. Autorizar un conector le da acceso a tus datos; conectá solo lo confiable. Ejemplo de la misión: MT Newswires (noticias), con el que Faro lee noticias del día. Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo en el chat. Tiempo objetivo: ~6 min.
 
 ### Presenter feedback
 
@@ -293,7 +293,7 @@ labels: izquierda = CHAT; centro = conector; derecha = tu mundo (mail, calendari
 
 ### Speaker notes
 
-El giro de la sección: hasta acá el conector era una antena que traía info; ahora es una mano que actúa. Recorrer los cuatro ejemplos (mail, reunión, ticket, mensaje), comunes a cualquier trabajo. Dos están verificados de primera mano: el borrador de Gmail (misión Atlas) y agendar por Calendar, que el docente chequeó y puede demostrar en vivo. Tickets y mensajes se presentan como capacidad del ecosistema (el estándar MCP y los conectores lo permiten), sin prometer un conector puntual que no probamos. Balancear con el control: nada de esto pasa sin que hayas conectado y autorizado el servicio. La práctica sana mientras aprenden es "borrador, no envío directo"; Atlas hace eso, deja el borrador en Gmail y no lo manda. Cerrar sembrando la sección 3: una IA que se informa y actúa, más una agenda, puede trabajar sola. Tiempo objetivo: ~6 min.
+El giro de la sección: hasta acá el conector era una antena que traía info; ahora es una mano que actúa. Recorrer los cuatro ejemplos (mail, reunión, ticket, mensaje), comunes a cualquier trabajo. Dos están verificados de primera mano: el borrador de Gmail (misión de Faro) y agendar por Calendar, que el docente chequeó y puede demostrar en vivo. Tickets y mensajes se presentan como capacidad del ecosistema (el estándar MCP y los conectores lo permiten), sin prometer un conector puntual que no probamos. Balancear con el control: nada de esto pasa sin que hayas conectado y autorizado el servicio. La práctica sana mientras aprenden es "borrador, no envío directo"; Faro hace eso, deja el borrador en Gmail y no lo manda. Cerrar sembrando la sección 3: una IA que se informa y actúa, más una agenda, puede trabajar sola. Tiempo objetivo: ~6 min.
 
 ### Presenter feedback
 
@@ -430,7 +430,7 @@ labels: arriba = FIN DE LA PARTE 1 (el chat extendido); abajo = PARTE 2 (Claude 
 
 ### Speaker notes
 
-Marcar el corte del día: acá termina el primer bloque de la clase y conviene hacer la pausa. Todo lo visto hasta este punto (conectores, capacidad ejecutiva, tareas programadas) pasa en el chat que la audiencia ya tiene, sin instalar nada; la primera parte de la misión Atlas se resuelve solo con estas piezas. Al volver de la pausa arranca la parte 2 con Claude Cowork. Tiempo objetivo: ~2 min + pausa.
+Marcar el corte del día: acá termina el primer bloque de la clase y conviene hacer la pausa. Todo lo visto hasta este punto (conectores, capacidad ejecutiva, tareas programadas) pasa en el chat que la audiencia ya tiene, sin instalar nada; la primera parte de la misión de Faro se resuelve solo con estas piezas. Al volver de la pausa arranca la parte 2 con Claude Cowork, y el primer contacto con la herramienta es la Misión 0 (el escritorio del pasante), que después se retoma en la demo de la slide de interfaz. Tiempo objetivo: ~2 min + pausa.
 
 ### Presenter feedback
 
@@ -588,7 +588,7 @@ labels: ANTES (chat) vs AHORA (agente / Cowork).
 
 ### Speaker notes
 
-El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y las tareas programadas extendieron qué puede hacer el chat; el agente cambia tu rol. En los dos modos se escriben prompts; lo que cambia es qué pide cada prompt: un paso intermedio, o un resultado completo que el agente planifica y ejecuta sobre archivos reales mientras vos supervisás. Son dos formas de trabajar, no dos productos. Si se llevan una sola idea, que sea esta: el valor está en aprender a delegar un resultado y guiar el proceso. Usar la tabla para hacerlo concreto: la salida son archivos en el disco, no texto en una ventana. Anticipar la misión: vamos a "contratar" a Atlas, un analista de mercado virtual, y entrenarlo una vez para que después trabaje solo. Cerrar citando a Anthropic, "menos una sesión de chat, más asignarle tareas a un colega": el producto está pensado así. Tiempo objetivo: ~5 min.
+El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y las tareas programadas extendieron qué puede hacer el chat; el agente cambia tu rol. En los dos modos se escriben prompts; lo que cambia es qué pide cada prompt: un paso intermedio, o un resultado completo que el agente planifica y ejecuta sobre archivos reales mientras vos supervisás. Son dos formas de trabajar, no dos productos. Si se llevan una sola idea, que sea esta: el valor está en aprender a delegar un resultado y guiar el proceso. Usar la tabla para hacerlo concreto: la salida son archivos en el disco, no texto en una ventana. Anticipar la misión: vamos a "contratar" a Faro, el analista de mercado virtual de la misión, y entrenarlo una vez para que después trabaje solo. Cerrar citando a Anthropic, "menos una sesión de chat, más asignarle tareas a un colega": el producto está pensado así. Tiempo objetivo: ~5 min.
 
 ### Presenter feedback
 
@@ -664,7 +664,7 @@ El mapa de toda la sesión, con el arco nuevo: arranca en el chat que la audienc
 
 Cuidado con la metáfora: los bloques se apilan y se combinan; cada tarea usa solo los que necesita.
 
-Decir la promesa de roadmap: "lo que queda de la charla recorre los bloques de acá para arriba, en este orden", y que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Atlas.
+Decir la promesa de roadmap: "lo que queda de la charla recorre los bloques de acá para arriba, en este orden", y que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Faro.
 
 Plugins es la banda que envuelve la pila, no un bloque más: empaqueta y distribuye varias de estas piezas a la vez (a un equipo, por ejemplo). No desarrollarlo acá; lo vemos en la sección 7 (Enterprise). Tiempo objetivo: ~3-4 min.
 
@@ -711,7 +711,7 @@ labels: banner DEMO TIME; subtítulo "Pasamos a la app de Cowork".
 
 ### Speaker notes
 
-Momento de demo en vivo, de los conceptos a la app. Abrir Cowork y hacer un recorrido de 2-3 minutos señalando dónde está el selector de modo (Ask before acting por defecto), cómo se concede una carpeta de trabajo y dónde viven Scheduled y Live artifacts, que usamos más adelante. Demo sugerida de arranque (la del deck): "Organizá esta carpeta de 8 PDFs por tema y dame un resumen de un párrafo de cada uno." Dejarlos ver a Claude planificar, tocar archivos y entregar, sin explicar la mecánica todavía. La imagen anotada queda de respaldo por si la demo falla. Tiempo objetivo: ~8 min (incluida la demo).
+Momento de demo en vivo, de los conceptos a la app. Abrir Cowork y hacer un recorrido de 2-3 minutos señalando dónde está el selector de modo (Ask before acting por defecto), cómo se concede una carpeta de trabajo y dónde viven Scheduled y Live artifacts, que usamos más adelante. Demo sugerida: la carpeta `missions/CoWork/escritorio-del-pasante/` (la Misión 0): conceder la carpeta, pedir "¿qué hay acá y en qué estado está?" y después un ordenamiento con renombres, aprobando cada acción (ejercicios 1 y 2 de la guía intro-escritorio-pasante.md; los ejercicios 3 a 5 quedan para el workshop). El desorden con nombres tipo "FINAL final" no necesita explicación y la audiencia se reconoce al instante. Dejarlos ver a Claude planificar, tocar archivos y entregar, sin explicar la mecánica todavía. La carpeta es regenerable por script, así que la demo se puede romper sin costo. La imagen anotada queda de respaldo por si la demo falla. Tiempo objetivo: ~8 min (incluida la demo).
 
 ### Presenter feedback
 
@@ -728,14 +728,15 @@ Momento de demo en vivo, de los conceptos a la app. Abrir Cowork y hacer un reco
 ### Content
 
 - Instrucciones = el **"contrato de trabajo"**: reglas en lenguaje natural que aplican a todo el Project.
-- Ejemplo (Atlas):
+- Ejemplo (Faro):
 
 ```text
-Sos Atlas, el analista de mercado de un equipo de trabajo.
+Sos Faro, el analista de mercado de Atlas, una empresa de
+insumos de perforación para Vaca Muerta.
 Preparás un pulso semanal para colegas NO técnicos (incluido el jefe),
 que se lee en 2 minutos antes de la reunión de los lunes.
 
-· Empresas que seguís: Apple, Microsoft, Nvidia.
+· Empresas que seguís: YPF, Vista y Tenaris.
 · Escribís en español, claro y breve, sin jerga financiera.
   Si usás un término técnico, lo explicás en una línea.
 · REGLA DE ORO: tus reportes son informativos y de uso interno.
@@ -754,7 +755,7 @@ que se lee en 2 minutos antes de la reunión de los lunes.
 
 ### Speaker notes
 
-Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada vez, lo escribís una vez en las Instrucciones y queda fijo. Mostrar el texto real de las Instrucciones de Atlas y destacar la regla de oro del disclaimer financiero, el tipo de regla no negociable que conviene pinear acá. Dónde viven: en el panel de contexto del Project (en la GUI). No es un archivo que edités a mano; lo escribís en el panel y queda asociado al Project. Tiempo objetivo: ~7 min.
+Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada vez, lo escribís una vez en las Instrucciones y queda fijo. Mostrar el texto real de las Instrucciones de Faro y destacar la regla de oro del disclaimer financiero, el tipo de regla no negociable que conviene pinear acá. Dónde viven: en el panel de contexto del Project (en la GUI). No es un archivo que edités a mano; lo escribís en el panel y queda asociado al Project. Tiempo objetivo: ~7 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Sacar "En Cowork viven en el panel de contexto del Project (la GUI), no en un archivo `.md` editable. Equivalen al `CLAUDE.md` de Claude Code — mismo concepto, distinto mecanismo." Dejarlo en las notas. Re-revisa que la audiencia no tiene contacto con Claude Code asi que es conveniente no connectar o mencionar en el resto de la presentacion."
@@ -769,7 +770,7 @@ Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada v
 ### Content
 
 - Project = espacio de trabajo autocontenido: **carpeta propia + memoria + instrucciones**.
-- El de la misión: **"Inteligencia de Mercado Semanal"**, apuntado a la carpeta `Documentos/Atlas-Mercado`.
+- El de la misión: **"Inteligencia de Mercado Semanal"**, apuntado a la carpeta `Documentos/Faro-Mercado`.
 - Tres capas persistentes: Instrucciones · Knowledge base · Chats.
 - Los chats del Project **no comparten contexto entre sí** (solo la base de conocimiento).
 - El usuario concede las carpetas con el **explorador de archivos del sistema operativo**.
@@ -782,7 +783,7 @@ Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada v
 
 ### Speaker notes
 
-El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Las ventajas, para desarrollar a viva voz: todo queda organizado y reutilizable. Las Instrucciones valen para todo el Project, la memoria recuerda tus correcciones y preferencias, y los archivos viven en una carpeta concreta de tu disco. En la misión, el Project "Inteligencia de Mercado Semanal" apunta a la carpeta `Documentos/Atlas-Mercado`. Dos puntos prácticos. Uno: los chats no se hablan entre sí dentro del Project; si querés que recuerde algo, va a las Instrucciones o a la base de conocimiento. Dos: el control de qué carpetas toca Claude es el explorador de archivos del sistema operativo, garantía de seguridad (Cowork solo ve lo que le concedés) y límite a la vez. La slide siguiente muestra ese selector y el panel de contexto en pantalla. Tiempo objetivo: ~7 min.
+El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Las ventajas, para desarrollar a viva voz: todo queda organizado y reutilizable. Las Instrucciones valen para todo el Project, la memoria recuerda tus correcciones y preferencias, y los archivos viven en una carpeta concreta de tu disco. En la misión, el Project "Inteligencia de Mercado Semanal" apunta a la carpeta `Documentos/Faro-Mercado`. Dos puntos prácticos. Uno: los chats no se hablan entre sí dentro del Project; si querés que recuerde algo, va a las Instrucciones o a la base de conocimiento. Dos: el control de qué carpetas toca Claude es el explorador de archivos del sistema operativo, garantía de seguridad (Cowork solo ve lo que le concedés) y límite a la vez. La slide siguiente muestra ese selector y el panel de contexto en pantalla. Tiempo objetivo: ~7 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Borrar no hay `settings.json` que editar."
@@ -809,11 +810,11 @@ El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria.
 ### Sources
 
 - corpus/agentic-ai-deck.zip.md, "Working directory + permissions" (folder picker del sistema; lo concedido define el alcance); definición del panel de contexto del Project.
-- "corpus/mision - auto.zip.md", el Project "Inteligencia de Mercado Semanal" apunta a `Documentos/Atlas-Mercado` (Step 1.1).
+- "corpus/mision - auto.zip.md", el Project "Inteligencia de Mercado Semanal" apunta a `Documentos/Faro-Mercado` (Step 1.1).
 
 ### Speaker notes
 
-Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterior contó. Mostrar las dos capturas, el explorador de archivos del sistema cuando concedés una carpeta y el panel de contexto del Project con sus capas. No saltear el mensaje de seguridad: Cowork solo ve lo que le concedés, así que la elección de carpeta ES el control de privacidad. Nunca una carpeta con datos sensibles. Aterrizarlo en la misión: Atlas trabaja sobre `Documentos/Atlas-Mercado`, nada más. Tiempo objetivo: ~3 min.
+Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterior contó. Mostrar las dos capturas, el explorador de archivos del sistema cuando concedés una carpeta y el panel de contexto del Project con sus capas. No saltear el mensaje de seguridad: Cowork solo ve lo que le concedés, así que la elección de carpeta ES el control de privacidad. Nunca una carpeta con datos sensibles. Aterrizarlo en la misión: Faro trabaja sobre `Documentos/Faro-Mercado`, nada más. Tiempo objetivo: ~3 min.
 
 ### Presenter feedback
 
@@ -941,7 +942,7 @@ labels: izquierda = fuentes (lo que llega); centro = archivos .md (trabajo itera
 
 ### Speaker notes
 
-La slide de práctica de la sección, el hábito concreto que se llevan. La analogía útil: el `.md` es tu mesa de trabajo y el `.docx`/PDF es la vitrina. Nadie construye dentro de la vitrina. El porqué, para decir: en texto plano la IA ve la estructura directa; en formatos ricos atraviesa capas que agregan ruido y errores. Recorrer el flujo con el diagrama. Llega material en cualquier formato y el primer pedido al agente es "convertime esto a `.md`". Todas las idas y vueltas (resumir, corregir, reescribir, fusionar) pasan sobre los `.md`, donde la IA es más precisa y barata de iterar. Cuando está listo, un único pedido final: "generame el `.docx`/Excel/PDF". El documento "lindo" es la salida, no el medio de trabajo. Aplica a la memoria también: lo que el agente debe recordar de forma estable vive como texto plano (Instrucciones, memoria del Project), y los archivos que va a leer y editar una y otra vez (notas, borradores, datos de referencia) van en `.md` dentro de la carpeta del Project. Aterrizar con Atlas: su reporte se consolida como `.md` en el Project y las salidas "lindas" (mail, tablero) se generan al final. Tiempo objetivo: ~6 min.
+La slide de práctica de la sección, el hábito concreto que se llevan. La analogía útil: el `.md` es tu mesa de trabajo y el `.docx`/PDF es la vitrina. Nadie construye dentro de la vitrina. El porqué, para decir: en texto plano la IA ve la estructura directa; en formatos ricos atraviesa capas que agregan ruido y errores. Recorrer el flujo con el diagrama. Llega material en cualquier formato y el primer pedido al agente es "convertime esto a `.md`". Todas las idas y vueltas (resumir, corregir, reescribir, fusionar) pasan sobre los `.md`, donde la IA es más precisa y barata de iterar. Cuando está listo, un único pedido final: "generame el `.docx`/Excel/PDF". El documento "lindo" es la salida, no el medio de trabajo. Aplica a la memoria también: lo que el agente debe recordar de forma estable vive como texto plano (Instrucciones, memoria del Project), y los archivos que va a leer y editar una y otra vez (notas, borradores, datos de referencia) van en `.md` dentro de la carpeta del Project. Aterrizar con Faro: su reporte se consolida como `.md` en el Project y las salidas "lindas" (mail, tablero) se generan al final. Tiempo objetivo: ~6 min.
 
 ### Presenter feedback
 
@@ -958,7 +959,7 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ![Pestaña Scheduled en Cowork](images/schedule.png)
 
-- Atlas, lunes 8:00: `buscar-accion` → `reporte-semanal` → borrador en Gmail antes de la reunión de las 9:00.
+- Faro, lunes 8:00: `buscar-accion` → `reporte-semanal` → borrador en Gmail antes de la reunión de las 9:00.
 
 ### Sources
 
@@ -1022,7 +1023,7 @@ El jefe quería el reporte de dos formas: el email, que ya resolvimos con Gmail 
 
 - **Skill** = instrucción reutilizable que se carga cuando el pedido coincide con su descripción. **Un trabajo por Skill.**
 - *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."*
-- Atlas: `reporte-semanal` consolida la carpeta `fuentes/` en un reporte con formato fijo.
+- Faro: `reporte-semanal` consolida la carpeta `fuentes/` en un reporte con formato fijo.
 
 ### Sources
 
@@ -1215,7 +1216,7 @@ Nivel avanzado, presentarlo como "para cuando crezcas". Un subagente conviene cu
 ### Content
 
 - **Plugin** = la unidad de distribución: empaqueta Skills + agentes + connectors en una instalación. *"Ship the whole thing."*
-- Ejemplo con la misión: un plugin "Atlas" que empaqueta las tres Skills (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) más el conector de noticias; el equipo lo instala y tiene el flujo completo.
+- Ejemplo con la misión: un plugin "Faro" que empaqueta las tres Skills (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) más el conector de noticias; el equipo lo instala y tiene el flujo completo.
 - En Cowork se instalan desde un **marketplace** en la GUI; lo que traen funciona en Chat y en Cowork.
 - Dónde: marketplaces oficiales de Anthropic y de la comunidad.
 
@@ -1287,7 +1288,7 @@ Slide de cierre del bloque avanzado, orientada a quien algún día administre un
 
 ### Content
 
-- El loop completo de Atlas:
+- El loop completo de Faro:
 
 ```ascii
 Lunes 8:00
@@ -1307,14 +1308,14 @@ Lunes 8:00
 [Skill publicar-tablero] --> Live Artifact pulso-semanal-FECHA (pestaña Live artifacts)
 ```
 <!-- ascii-note:
-intent: mostrar el loop completo de la mision Atlas, encadenando todas las piezas vistas en la charla, disparado por Schedule cada lunes.
+intent: mostrar el loop completo de la misión de Faro, encadenando todas las piezas vistas en la charla, disparado por Schedule cada lunes.
 emphasize: la secuencia de izquierda a/arriba-abajo Schedule -> Skills -> Connectors -> Live Artifact; que todo arranca de un solo disparador.
 labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publicar-tablero) y las piezas usadas en cada uno.
 -->
 
 - **El arco de hoy:** chat de memoria → conectores → tareas programadas → Cowork (`.md`) → Skills → Subagentes → Plugins para el equipo.
 - **Las piezas:** Conectores (las manos) · Schedule (corre solo) · Instrucciones (el contrato) · Projects (el espacio de trabajo) · `.md` (el lenguaje) · Skills (enseñar una vez) · Live Artifacts (compartir).
-- **Para llevarse:** *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."* ¿Qué tarea recurrente le delegarías a tu propio Atlas?
+- **Para llevarse:** *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."* ¿Qué tarea recurrente le delegarías a tu propio Faro?
 
 ### Sources
 
@@ -1323,7 +1324,7 @@ labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publica
 
 ### Speaker notes
 
-Cierre integrador: mostrar el diagrama del loop completo para que vean cómo cada pieza que aprendimos se engancha con la siguiente. Recordar el arco de la sesión: arrancamos en el chat que ya usaban (y sus límites), lo extendimos con conectores y tareas programadas, y dimos el salto a Cowork y sus piezas. Repasar las piezas en una línea cada una. Cerrar con las dos frases ancla: la de la Skill ("enseñá una vez") y el gancho completo, dicho en voz alta: "Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente podrían delegarle a su propio Atlas?". Tiempo objetivo: ~5 min + Q&A.
+Cierre integrador: mostrar el diagrama del loop completo para que vean cómo cada pieza que aprendimos se engancha con la siguiente. Recordar el arco de la sesión: arrancamos en el chat que ya usaban (y sus límites), lo extendimos con conectores y tareas programadas, y dimos el salto a Cowork y sus piezas. Repasar las piezas en una línea cada una. Cerrar con las dos frases ancla: la de la Skill ("enseñá una vez") y el gancho completo, dicho en voz alta: "Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente podrían delegarle a su propio Faro?". Tiempo objetivo: ~5 min + Q&A.
 
 ### Presenter feedback
 
@@ -1357,7 +1358,7 @@ Slide de cierre responsable, breve y obligatoria. Decirlo sin vueltas: Cowork si
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
 - Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.5) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` volvió a usarse en review 2026-07-21: es el ejemplo de Live Artifact en la slide 4.13; re-verificar su depiction junto con la otra.)
 - Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
-- **Slash commands en Cowork (slides 5.1–5.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera. Pendiente antes de la clase: confirmar en el producto la lista exacta de comandos disponibles (tipear `/`) y si la Skill creada por comando también exige el Save/enable de la trampa.
+- **Slash commands en Cowork (slides 5.1–5.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera, y NO se releva la lista completa de comandos (alcanza con el tip de tipear `/`). Pendiente antes de la clase: probar si la Skill creada por comando también exige el Save/enable de la trampa.
 - Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
 - **Slide 4.5; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
