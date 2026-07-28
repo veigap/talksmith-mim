@@ -174,6 +174,8 @@ Verificá en la biblioteca de conectores que **MT Newswires** y **Gmail** estén
 
 **Verificá:** la carpeta `fuentes/` de la semana en curso se reconstruyó **partiendo de cero**, sin pasante.
 
+> 👀 **Mirá el panel mientras corre:** si Cowork reparte la investigación entre varias líneas de trabajo a la vez, eso son **subagentes**: asistentes con contexto propio que corren en paralelo por debajo. En el Milestone 6 los invocás a propósito (Paso 6.6).
+
 ## Paso 4.3 — Programar el lunes desde la pestaña Scheduled
 
 1. En la barra izquierda, clickeá **"Scheduled"** → **"+ New task"**.
@@ -258,9 +260,19 @@ Corrida de prueba con **"Run now"**.
 
 Abrí el `SKILL.md` de `reporte-semanal` y reconocé la anatomía de la clase: **metadata** arriba (la `description` decide cuándo se activa) e **instrucciones** en Markdown abajo.
 
+## Paso 6.6 — Bonus (para explorar): un subagente por empresa
+
+Las tres investigaciones de `buscar-accion` son independientes entre sí: ninguna necesita esperar a las otras. Ese es el caso de uso de los **subagentes** que enseñó la clase (un subagente por propuesta, todos en paralelo, el principal consolida). Probalo sobre tu propio caso:
+
+> *"Faro, definí un **subagente** llamado `investigador`: su trabajo es investigar UN ticker de la semana (precio, variación y noticias, con la Skill `buscar-accion`) y devolver un resumen corto. Cuando corra la tarea del lunes, lanzá un `investigador` por cada empresa de `[EMPRESAS]`, los tres en paralelo, y consolidá sus resúmenes en el reporte."*
+
+> ⚠️ **Es un bonus, con honestidad:** la creación de subagentes a pedido está menos documentada en Cowork que las Skills (los subagentes "corren por debajo"). Si Faro lo resuelve de otra forma, o no lo resuelve, la misión sigue intacta: la tarea del lunes ya funciona sin esto. El facilitador conviene que lo pruebe antes del workshop.
+
+> ✅ **Criterio (blando):** la corrida muestra la investigación **repartida en paralelo** (varias líneas de trabajo a la vez) y el reporte consolida los tres resúmenes.
+
 > ✅ **🏁 Criterio de éxito (Milestone 6):** la tarea del lunes corre apoyada en las tres Skills, las tres figuran habilitadas en la lista de Habilidades, y cualquier compañero con tu Project puede disparar el flujo sin que le expliques nada.
 
-> 📦 **Y después (fuera de la misión):** si esto lo usara todo el equipo, las tres Skills viajarían dentro de un **Plugin**; si una sub-tarea fuera pesada, un **Subagente** la correría aparte.
+> 📦 **Y después (fuera de la misión):** si esto lo usara todo el equipo, las tres Skills viajarían dentro de un **Plugin**.
 
 ---
 
@@ -286,6 +298,7 @@ Las piezas, en el orden en que la clase las enseñó: **Conectores y Tareas prog
 | P2·M4 Schedule | "Run now" y ver aparecer fuentes + reporte + borrador | "El agente trabaja sobre mis carpetas, solo" |
 | P2·M5 tablero | El Live Artifact abriéndose y refrescándose | "El resultado vivo; compartir por URL está en el roadmap, ser honesto" |
 | P2·M6 Skills | `/skill-creator` en vivo + la compuerta del Save en Habilidades | "Todo lo que explico más de una vez es una Skill" |
+| P2·M6 Subagentes (bonus) | La corrida repartiendo la investigación en tres líneas paralelas | "Las sub-tareas independientes no se esperan entre sí" |
 
 **Errores comunes a anticipar:**
 

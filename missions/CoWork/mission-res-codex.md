@@ -177,6 +177,8 @@ Después, editá la Automation del lunes para que use las tres Skills (mismo pro
 
 > ✅ **🏁 Criterio de éxito (Milestone 6):** la Automation corre sobre las tres Skills y `/skills` las lista; el `SKILL.md` abierto muestra la misma anatomía que enseñó la clase.
 
+> 👀 **Sobre el bonus de subagentes** (Paso 6.6 de `mission-res.md`): Codex también reparte trabajo en paralelo por debajo (threads y worktrees), pero no expone subagentes definibles por el usuario como ejercicio. Acá queda como observación durante la corrida de la Automation, sin paso propio.
+
 ---
 
 ## 🔄 El círculo completo (versión OpenAI)

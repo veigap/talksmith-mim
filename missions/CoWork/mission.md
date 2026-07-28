@@ -154,6 +154,8 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 
 1. Pedirle a Faro que, dado un **ticker y una semana**, busque precios y noticias (web + MT Newswires) y **guarde las fuentes en disco**, un archivo por fuente, dentro de `fuentes/` de la semana.
 2. Verificarlo para las 3 empresas: la carpeta `fuentes/` se reconstruye **partiendo de cero**, sin pasante.
+
+> 👀 **Mirá el panel mientras corre:** si Cowork reparte la investigación, vas a ver varias líneas de trabajo avanzando a la vez. Eso son **subagentes**: asistentes con contexto propio que corren en paralelo por debajo. En el Milestone 6 vas a invocarlos a propósito.
 3. Programar desde la pestaña **Scheduled** la tarea del **lunes 8:00**: conseguir fuentes → armar el reporte `.md` en el Project → dejar el borrador en Gmail dirigido a `superboss@gmail.com`. Usar **"Run now"** para probarla sin esperar al lunes.
 
 **🏁 Lo lográs cuando:** una corrida de la tarea, completa y sin tocar nada, deja las fuentes en disco, el reporte en el Project y el borrador en Gmail.
@@ -192,7 +194,8 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 2. Convertir en Skill la investigación: **`buscar-accion`** (ticker + semana → fuentes en disco).
 3. Convertir en Skill el tablero: **`publicar-tablero`** (actualiza el Live Artifact con el último reporte).
 4. Abrir un `SKILL.md` y reconocer la anatomía que viste en clase: metadata arriba (la `description` decide cuándo se activa), instrucciones en Markdown abajo.
-5. **Para llevarse pensado:** si esto lo usara todo el equipo, las Skills viajarían dentro de un **Plugin**; si una sub-tarea fuera pesada, un **Subagente** la correría aparte. Quedan como siguiente paso fuera de la misión.
+5. **Bonus (para explorar):** pedirle a Faro un **subagente** `investigador` (investiga UN ticker y devuelve un resumen corto) y que la corrida del lunes lance uno por empresa, los tres en paralelo, consolidando al final. La creación de subagentes en Cowork está menos documentada que las Skills: si no sale, no bloquea la misión.
+6. **Para llevarse pensado:** si esto lo usara todo el equipo, las Skills viajarían dentro de un **Plugin**. Queda como siguiente paso fuera de la misión.
 
 **🏁 Lo lográs cuando:** la tarea del lunes corre apoyada en las tres Skills, y cualquier compañero con tu Project puede disparar el mismo flujo sin que le expliques nada.
 

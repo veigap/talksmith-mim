@@ -485,3 +485,10 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "En que formato presentamos la resolucion de las 2 partes? + hace una variante de Codex + capturas del menu + y el panel de Habilidades."
   resolution: Capturas cableadas en 5.2 (skills-panel.png en el deck; skills-menu-chat.png en draft/final; el diagrama de caminos paso a doc-only). Variante OpenAI nueva mission-res-codex.md: Parte 1 en ChatGPT (search + connectors + Tasks, con la diferencia honesta de la entrega por notificacion) y Parte 2 en Codex (AGENTS.md, MCP, Automations, tablero HTML + Sites con URL, $skill-creator sin trampa del Save); banner de la guia Codex vieja apunta a la nueva. Formato de entrega: recomendacion en chat (md canonico + PDF por parte), a decision del presentador.
   tags: [product-evidence, mission, codex, slide-content]
+- talk: claude-cowork
+  date: 2026-07-28
+  location: mission.md M4/M6 + mission-res.md (Paso 6.6) + mission-res-codex.md + Open questions del draft
+  origin: presenter-chat
+  feedback: "Podriamos introducir el concepto de subagentes en algun lugar apropiado tambien."
+  resolution: Dos toques: semilla de observacion en M4 (ver el reparto en paralelo mientras corre la investigacion) y Paso 6.6 Bonus en M6 (subagente `investigador`, uno por ticker, prompt exacto, criterio blando y caveat de verificacion; el fan-out calca la slide 6.1). "Y despues" de M6 queda solo con Plugins. Codex: nota de que no hay equivalente definible por el usuario. Watch item nuevo en el draft: probar la creacion de subagentes en Cowork antes del workshop. PDFs mission y parte 2 regenerados; parte 1 sin cambios.
+  tags: [mission, subagents, add-material, verify]
