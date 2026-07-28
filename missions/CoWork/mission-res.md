@@ -138,11 +138,19 @@ No esperes al lunes: ejecutala **a demanda** desde la lista de tareas para verla
 
 ## Paso 3.3 — El primer reporte, pedido en conversación
 
-Todavía sin automatizar nada (las Skills llegan en el Milestone 6):
-
 > *"Faro, leé TODAS las fuentes de `reportes/semana-2026-05-25/` (la info de una misma empresa puede estar repartida entre varios archivos), consolidá por empresa y generá el reporte de esa semana siguiendo EXACTAMENTE la estructura del reporte de ejemplo (`reporte-semana-2026-05-25.md`): título, resumen ejecutivo, una sección por empresa (precio aproximado, variación, 2-3 noticias con contexto, ánimo, a vigilar), tabla resumen, fuentes principales y la aclaración legal. La empresa más relevante va primera (⭐). No inventes datos: si falta algo, decílo. **Guardalo con sufijo `-new`** para no pisar el original."*
 
-> ✅ **🏁 Criterio de éxito (Milestone 3):** el Project existe con sus Instrucciones, y el `reporte-semana-2026-05-25-new.md` es equivalente al de ejemplo: mismo formato, todas las empresas, la tabla, las fuentes y la aclaración legal. Compará los dos archivos lado a lado.
+## Paso 3.4 — El `CLAUDE.md`: la memoria del proyecto
+
+A esta altura la conversación acumuló contexto valioso: qué es Faro, cómo está organizada la carpeta, qué formato tiene el reporte, qué decisiones tomaste. Todo eso se pierde al cerrar el chat, porque los chats del Project no comparten contexto entre sí. La solución es el hábito que enseñó la clase: la memoria estable va en texto plano.
+
+> *"Faro, escribí un archivo `CLAUDE.md` en la raíz de la carpeta con el contexto que un asistente necesita para seguir trabajando en este proyecto: qué es Faro y para quién escribe, cómo está organizada `reportes/`, el formato del pulso, las decisiones que tomamos en esta conversación y lo que quedó pendiente. Corto y en texto plano: es la memoria del proyecto."*
+
+Revisá lo que escribió y corregí lo que falte: ese archivo lo vas a leer vos y lo va a leer Claude.
+
+> 📌 **Por qué importa:** `CLAUDE.md` es el archivo de contexto que Claude busca al empezar a trabajar en una carpeta. Con él, la próxima conversación no arranca de cero: hereda el proyecto ya explicado. Es la aplicación directa de "la información de trabajo va en `.md`": las Instrucciones del Project definen quién es Faro; el `CLAUDE.md` guarda el estado vivo del trabajo. Mantenelo al día: cuando una sesión tome una decisión importante, pedile a Faro que lo actualice.
+
+> ✅ **🏁 Criterio de éxito (Milestone 3):** el Project existe con sus Instrucciones, el `reporte-semana-2026-05-25-new.md` es equivalente al de ejemplo (mismo formato, todas las empresas, la tabla, las fuentes y la aclaración legal; compará los dos archivos lado a lado), y el `CLAUDE.md` está en la raíz con el contexto del proyecto.
 
 > 🛠️ **Si algo sale mal:**
 >

@@ -132,9 +132,10 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 1. Crear un **Project** llamado *"Inteligencia de Mercado Semanal"*, apuntado a tu carpeta con el explorador de archivos.
 2. Escribir las **Instrucciones del proyecto**: qué es Faro, qué empresas sigue, para qué audiencia escribe (tu equipo en Atlas), con qué tono, y la regla de oro: **nunca da consejos de inversión**.
 3. Poner la información de trabajo en orden y **en `.md`**: pedirle a Faro que convierta las notas en crudo de una semana de `fuentes/` a archivos `.md` prolijos. El trabajo iterativo pasa sobre `.md`; el formato final se genera al último.
-4. Pedirle **en la conversación** el reporte de esa semana con el formato del reporte de ejemplo (todavía sin automatizar nada: primero comprobás que Faro sabe hacerlo).
+4. Pedirle **en la conversación** el reporte de esa semana con el formato del reporte de ejemplo (primero comprobás que Faro sabe hacerlo).
+5. Cerrar la sesión pidiéndole a Faro que escriba un **`CLAUDE.md`** en la raíz de la carpeta: el contexto del proyecto en texto plano (qué es Faro, cómo está organizada la carpeta, decisiones y pendientes), para que la próxima conversación no arranque de cero.
 
-**🏁 Lo lográs cuando:** el Project existe con sus Instrucciones, y Faro produce un `reporte-semana-AAAA-MM-DD.md` **igual al reporte de ejemplo de esa semana**: mismo formato, todas las empresas, la tabla resumen, las fuentes y la aclaración legal.
+**🏁 Lo lográs cuando:** el Project existe con sus Instrucciones, Faro produce un `reporte-semana-AAAA-MM-DD.md` **igual al reporte de ejemplo de esa semana** (mismo formato, todas las empresas, la tabla resumen, las fuentes y la aclaración legal), y el **`CLAUDE.md`** quedó en la raíz con el contexto del proyecto.
 
 > 📎 **¿Cómo debería verse?** En `reportes/` hay una subcarpeta por semana, y dentro la carpeta `fuentes/` lado a lado con el reporte final (`.md`). Mirá un par antes de empezar.
 
