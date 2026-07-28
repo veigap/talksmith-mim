@@ -1,3 +1,5 @@
+> ⚠️ **GUÍA OBSOLETA (2026-07-28).** Resolvía con Codex la versión anterior de la misión (4 milestones). La misión vigente (2 partes: claude.ai + Cowork; ver `mission.md` y `mission-res.md`) no tiene todavía una variante Codex; decidir si se produce una antes de reusar esto. Se conserva solo como referencia histórica.
+
 # 🛰️ Solución paso a paso (versión Codex) — "Faro, la mesa de inteligencia de mercado de Atlas"
 
 > Equivalente en **OpenAI Codex** de la solución descrita en `mission-claud- res.md` (hecha en Claude Cowork). Misma misión, mismos cuatro Milestones, mismo resultado final: un **pulso semanal de mercado** que se arma, se distribuye y se publica **solo**. Lo que cambia es la herramienta: en lugar de la app Cowork, usamos Codex.

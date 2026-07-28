@@ -1,3 +1,5 @@
+> ⚠️ **GUÍA OBSOLETA (2026-07-28).** Responde a la versión anterior de la misión (4 milestones, todo en Cowork, con ShareDuo y `/schedule`, que ya no existen en el producto). La guía vigente, alineada a la misión de 2 partes y 6 milestones, es **`mission-res.md`**. Se conserva solo como referencia histórica.
+
 # 🛰️ Solución paso a paso — "Faro, la mesa de inteligencia de mercado de Atlas"
 
 > Guía de resolución de la misión descrita en `mission.md`. Pensada para que el facilitador la conduzca en vivo y para que cualquier participante **no técnico** la replique. Incluye los **prompts exactos** para copiar y pegar (en *cursiva con comillas*) y lo que hay que **clickear**.

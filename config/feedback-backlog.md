@@ -471,3 +471,10 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Incorporar una variante del flujo de DIAA2026/caso_finanzas_desordenado como introductorio a la utilidad de Cowork, adaptada a nuestro caso ficticio, misma filosofia, sin perder la ejercitacion existente y replicando todo el flujo externo."
   resolution: Creada la Mision 0 'el escritorio del pasante' en el universo Atlas/Faro: gen_escritorio_pasante.py (regenerable; adaptado de gen_caso_finanzas.py), carpeta escritorio-del-pasante/ (5 archivos, 4 formatos: xlsx cotizaciones, docx pulso FINAL final, pdf guia v3, md notas, txt viejo; 4 errores plantados verificables cruzando documentos) y guia intro-escritorio-pasante.md con los 5 ejercicios del flujo externo mapeados a capacidades. Enganches: demo de 4.5 pasa a usar esta carpeta (ejercicios 1-2 en vivo), nota en 3.3, y aviso en la Parte 2 de mission.md (el pulso-semanal.md resultante es el insumo del M3). La mision Faro quedo intacta.
   tags: [mission, add-material, demo, cross-course]
+- talk: claude-cowork
+  date: 2026-07-28
+  location: final.md + output/ + missions/CoWork (guias)
+  origin: presenter-chat
+  feedback: "Vamos con el re-polish liviano + render y a reescribir las guias de resolucion viejas."
+  resolution: Re-Polish liviano (0 diagramas redibujados: los 19 SVG vigentes; solo cambio la nota del loop por el rename) + final.md regenerado (Faro, YPF/Vista/Tenaris, enganches Mision 0) + modelo parcheado con notas re-extraidas y render html (18 menciones Faro, Atlas solo como empresa). Guia de resolucion NUEVA mission-res.md (canonica, 2 partes / 6 milestones, prompts exactos, sin ShareDuo ni /schedule, con /skill-creator + trampa del Save + Mision 0 + tabla de facilitador y timing de 2 bloques); las dos guias viejas quedaron con banner de OBSOLETA (la Codex ademas señala que no hay variante Codex de la mision nueva). Los PDF viejos siguen siendo de la mision anterior.
+  tags: [polish, render, mission, docs]

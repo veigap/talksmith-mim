@@ -15,7 +15,7 @@ Lunes 8:00
 [Skill publicar-tablero] --> Live Artifact pulso-semanal-FECHA (pestaña Live artifacts)
 
 <!-- ascii-note:
-intent: mostrar el loop completo de la mision Atlas, encadenando todas las piezas vistas en la charla, disparado por Schedule cada lunes.
+intent: mostrar el loop completo de la misión de Faro, encadenando todas las piezas vistas en la charla, disparado por Schedule cada lunes.
 emphasize: la secuencia de izquierda a/arriba-abajo Schedule -> Skills -> Connectors -> Live Artifact; que todo arranca de un solo disparador.
 labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publicar-tablero) y las piezas usadas en cada uno.
 -->
