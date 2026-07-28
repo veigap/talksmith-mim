@@ -730,10 +730,14 @@
         }
       ],
       "image": {
-        "src": "images/s5-2-1-caminos-crear-skill.png",
-        "alt": "Los caminos para crear una Skill convergen en la compuerta de guardar y habilitar"
+        "src": "images/skills-panel.png",
+        "alt": "El panel de Habilidades: Examinar y el menú Agregar"
       },
       "highlights": [
+        {
+          "body": "Desde el chat, el menú \"+\" también lista las habilidades, con \"Administrar\" y \"Explorar habilidades\".",
+          "kind": "note"
+        },
         {
           "label": "/skill-creator",
           "body": "En el chat, el comando /skill-creator (una skill de Anthropic preinstalada) guía la creación y revisa el resultado. Cowork incluye un set reducido de slash commands; tipear / los lista.",
@@ -745,7 +749,7 @@
           "kind": "important"
         }
       ],
-      "notes": "La slide práctica que faltaba: el paso a paso de creación. Con conexión, hacerlo en vivo desde el panel: Configuración → Habilidades → Agregar, y mostrar las tres opciones del menú. \"Crear con Claude\" abre un ida y vuelta de chat donde Claude escribe el SKILL.md; \"Escribir las instrucciones\" edita la habilidad directo en la UI; \"Subir una habilidad\" no crea nada nuevo: importa una Skill ya existente desde su ZIP, por ejemplo una compartida por un colega. Después el camino por chat: tipear `/` para mostrar la lista de comandos (un set reducido; los que conocen Claude Code van a notar la diferencia) y crear `reporte-semanal` con `/skill-creator`, que guía la escritura y revisa el resultado. Dos avisos prácticos. Uno: las Skills requieren Code execution. Dos: la trampa del Save; la Skill creada tiene que quedar guardada y habilitada en la lista, y sin eso parece que \"no funciona\". Aviso de vigencia: la doc oficial va detrás del producto en este punto; re-mirar el panel el día de la clase. Tiempo objetivo: ~6 min (con demo).\n\n---"
+      "notes": "La slide práctica que faltaba: el paso a paso de creación. Con conexión, hacerlo en vivo desde el panel: Configuración → Habilidades → Agregar, y mostrar las tres opciones del menú. \"Crear con Claude\" abre un ida y vuelta de chat donde Claude escribe el SKILL.md; \"Escribir las instrucciones\" edita la habilidad directo en la UI; \"Subir una habilidad\" no crea nada nuevo: importa una Skill ya existente desde su ZIP, por ejemplo una compartida por un colega. Después el camino por chat: tipear `/` para mostrar la lista de comandos (un set reducido; los que conocen Claude Code van a notar la diferencia) y crear `reporte-semanal` con `/skill-creator`, que guía la escritura y revisa el resultado. Dos avisos prácticos. Uno: las Skills requieren Code execution. Dos: la trampa del Save; la Skill creada tiene que quedar guardada y habilitada en la lista, y sin eso parece que \"no funciona\". Las dos capturas (el panel de Habilidades y el menú \"+\" del chat) quedan de respaldo por si la demo falla; con las capturas en la slide, el diagrama de caminos pasa a ser ayuda del lector del draft. Aviso de vigencia: la doc oficial va detrás del producto en este punto; re-mirar el panel el día de la clase. Tiempo objetivo: ~6 min (con demo).\n\n---"
     },
     {
       "template": "content-image",
@@ -948,7 +952,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "dddd1c7df7a00f45fe7f143e7ad48d3002bf068e0943de1b845d37bb5081c452",
-    "bytes": 101276
+    "sha256": "7a19e10a6bfc49ea9d74ff7b504cf0712eeb479fe00d9932de1251dc96fbee91",
+    "bytes": 101653
   }
 }

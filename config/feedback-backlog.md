@@ -478,3 +478,10 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Vamos con el re-polish liviano + render y a reescribir las guias de resolucion viejas."
   resolution: Re-Polish liviano (0 diagramas redibujados: los 19 SVG vigentes; solo cambio la nota del loop por el rename) + final.md regenerado (Faro, YPF/Vista/Tenaris, enganches Mision 0) + modelo parcheado con notas re-extraidas y render html (18 menciones Faro, Atlas solo como empresa). Guia de resolucion NUEVA mission-res.md (canonica, 2 partes / 6 milestones, prompts exactos, sin ShareDuo ni /schedule, con /skill-creator + trampa del Save + Mision 0 + tabla de facilitador y timing de 2 bloques); las dos guias viejas quedaron con banner de OBSOLETA (la Codex ademas señala que no hay variante Codex de la mision nueva). Los PDF viejos siguen siendo de la mision anterior.
   tags: [polish, render, mission, docs]
+- talk: claude-cowork
+  date: 2026-07-28
+  location: Slide 5.2 (capturas) + missions/CoWork (variante OpenAI) + formato de entrega
+  origin: presenter-chat
+  feedback: "En que formato presentamos la resolucion de las 2 partes? + hace una variante de Codex + capturas del menu + y el panel de Habilidades."
+  resolution: Capturas cableadas en 5.2 (skills-panel.png en el deck; skills-menu-chat.png en draft/final; el diagrama de caminos paso a doc-only). Variante OpenAI nueva mission-res-codex.md: Parte 1 en ChatGPT (search + connectors + Tasks, con la diferencia honesta de la entrega por notificacion) y Parte 2 en Codex (AGENTS.md, MCP, Automations, tablero HTML + Sites con URL, $skill-creator sin trampa del Save); banner de la guia Codex vieja apunta a la nueva. Formato de entrega: recomendacion en chat (md canonico + PDF por parte), a decision del presentador.
+  tags: [product-evidence, mission, codex, slide-content]

@@ -1,4 +1,4 @@
-> ⚠️ **GUÍA OBSOLETA (2026-07-28).** Resolvía con Codex la versión anterior de la misión (4 milestones). La misión vigente (2 partes: claude.ai + Cowork; ver `mission.md` y `mission-res.md`) no tiene todavía una variante Codex; decidir si se produce una antes de reusar esto. Se conserva solo como referencia histórica.
+> ⚠️ **GUÍA OBSOLETA (2026-07-28).** Resolvía con Codex la versión anterior de la misión (4 milestones). La variante vigente para el ecosistema OpenAI (ChatGPT + Codex, 2 partes / 6 milestones) es **`mission-res-codex.md`**. Se conserva solo como referencia histórica.
 
 # 🛰️ Solución paso a paso (versión Codex) — "Faro, la mesa de inteligencia de mercado de Atlas"
 
