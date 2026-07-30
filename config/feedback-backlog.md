@@ -4,7 +4,7 @@
 
 ## Tagging vocabulary
 
-Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, add-slide, add-visual, audience, audience-address, bad-order, compact, cut, expand, merge-incorporation, positioning, redundancy, restructure, rewrite, roadmap, slide-content, sources, split, style, terminology, too-dense, too-vague, visual.
+Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, add-slide, add-visual, audience, audience-address, bad-order, compact, cut, expand, merge-incorporation, move, positioning, redundancy, rename, restructure, rewrite, roadmap, slide-content, sources, split, style, terminology, too-dense, too-vague, visual.
 
 ## Entries
 
@@ -684,3 +684,9 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Vamos a introducir un slide sobre Advance Chat capabilities mencionado que hay dos concepto que vamos a introducir: Connectores y Search"
   resolution: Insertada nueva slide 1.2 'Advance Chat: dos capacidades que vienen' al final de la Seccion 1 (bridge/teaser corto, sin profundizar): nombra Conectores y Search como las dos capacidades que la Seccion 2 desarrolla en profundidad.
   tags: [add-slide, roadmap]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. ¿Preguntas?"
+  feedback: "El slide de Q & A dice preguntas 3 veces. Revisaste correctamnete la asignacion ?"
+  resolution: Se mantuvo el pin single-point, pero se eliminó la duplicación entre título y punto central: la slide conserva ‘¿Preguntas?’ como título y ahora usa ‘Cronograma, evaluación o logística: conversemos ahora’ como contenido.
+  tags: [deduplication, template-assignment]

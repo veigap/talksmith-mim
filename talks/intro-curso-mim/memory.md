@@ -1,11 +1,57 @@
 # memory.md — intro-curso-mim
 
-**Current step:** 7 — Render in_progress
+**Current step:** 7 — Render complete
 **Topic:** Presentación de la materia — ground rules, criterio de aprobación, calendario
 **Folder:** talks/intro-curso-mim/
 **Started:** 2026-07-15
 
 ---
+
+## 2026-07-30 — Step 7 Render `html-strict` (re-render, sin cambios de contenido)
+- Status: complete
+- Ask: "generate the html-strict"
+- FILL: `output/slide-model.json` ya coincidía byte a byte con `final.md` vigente (sha256 `e66cb33a33b55aaa4d41e32b99f42bd2b3b2beabc2b92f53a64149d2d25c357f`) — no fue necesario rederivar el modelo.
+- CHECK: `degenerate_enum` sobre el modelo — sin enumeraciones de un solo elemento.
+- Render: `build_html.py --talk` regeneró `output/html/index.html` — 19 slides + portada (20 pantallas), sin advertencias.
+- Deliverable: `talks/intro-curso-mim/output/html/index.html`, SHA-256 `97beb1051f5d0f455b323cc8b5224f6c36c655124dcfb824ab639831f8e931b6` (4.769.658 bytes).
+- Next: Step 8 Learnings sigue pendiente (opcional).
+
+## 2026-07-30 — Corrección de redundancia en Q&A
+- Status: complete
+- Ask: "El slide de Q & A dice preguntas 3 veces. Revisaste correctamnete la asignacion ?"
+- Review: la asignación no estaba bien resuelta: `single-point` repetía `¿Preguntas?` como título y como punto central, además del pill de sección. Se mantuvo el template y la imagen izquierda, pero el punto se cambió a `Cronograma, evaluación o logística` / `Conversemos ahora.`
+- Workflow: feedback estampado, cerrado y espejado en `config/feedback-backlog.md`; `final.md` rederivado y Polish reejecutado; modelo reestampado y HTML strict regenerado.
+- Validation: la cara visible del Q&A contiene dos apariciones de "Preguntas" (pill + título), no tres; el punto nuevo aparece una vez. Las auditorías de frescura, enumeraciones, campos e imágenes pasaron; el deck conserva 20 pantallas.
+- Deliverable: `talks/intro-curso-mim/output/html/index.html`, SHA-256 `903378cbd7e85decbb4d663b379c354d6014b31d516ceec26f2310739e709db1`.
+
+## 2026-07-30 — Regeneración solicitada de `final.md` + `html-strict`
+- Status: complete
+- Ask: "regenera el final y el hmtl strict."
+- Polish: `final.md` se rederivó desde el `draft.md` vigente; el diagrama y los dos asides se reutilizaron por idempotencia. Se limpiaron los 21 bloques de feedback y las referencias transitorias. Resultado: 13 slides, 13 pins, 0 feedback residual, 0 fences ASCII y 0 directivas de imagen activas.
+- Render: modelo reestampado desde `final.md`; pasaron las auditorías de frescura, enumeraciones, campos e imágenes. `build_html.py --talk` regeneró `output/html/index.html` sin advertencias.
+- Validation: 20 pantallas HTML; 3 layouts con `aside-left`; Robot-Proof conserva la portada izquierda; Cronograma conserva un `timeline` con 7 hitos. SHA-256 HTML: `ed96d4803f15440b08d9d6b3d8b60da667ddf875bf07f4dbe2106a18cb194f90` (4.769.925 bytes).
+- Files created/modified: `talks/intro-curso-mim/final.md`, `talks/intro-curso-mim/output/slide-model.json`, `talks/intro-curso-mim/output/html/index.html`, `talks/intro-curso-mim/memory.md`.
+
+## 2026-07-30 — Step 6–7 (Polish + `html-strict`) tras auditoría de templates
+- Status: complete
+- Ask: "Listo. applica todos estos cambios hasta el html".
+- Polish: `final.md` se rederivó del `draft.md` aprobado. El diagrama y los dos asides conservaron sus assets vigentes por idempotencia; se limpiaron 21 bloques de feedback y se actualizaron las notas que todavía describían las imágenes como pendientes. Resultado: 6 secciones, 13 slides de contenido, 13 pins explícitos, 0 feedback residual, 0 fences ASCII y 0 directivas de generación activas. SHA-256 de `final.md`: `e831c94aee4130e094902f881541a80e5e967d1ce99c86a62719ac78733b2656` (65.083 bytes).
+- FILL: Robot-Proof quedó como `icon-list` con la portada en `aside.side: left`; Cronograma quedó como `timeline` con siete `milestones`. Se asignaron iconos locales explícitos a las tres listas para eliminar fallbacks del render.
+- Validation: frescura del modelo confirmada; auditorías de enumeraciones, cobertura de campos e imágenes pasaron. El HTML contiene 20 pantallas (portada + 19 modeladas), 3 layouts `aside-left` y 1 timeline de 7 hitos.
+- Deliverable: `talks/intro-curso-mim/output/html/index.html` — 4.769.925 bytes; SHA-256 `ed96d4803f15440b08d9d6b3d8b60da667ddf875bf07f4dbe2106a18cb194f90`.
+- Files created/modified: `talks/intro-curso-mim/final.md`, `talks/intro-curso-mim/output/slide-model.json`, `talks/intro-curso-mim/output/html/index.html`, `talks/intro-curso-mim/memory.md`.
+- Pending open questions: Step 8 Learnings sigue opcional; esta ronda no incluyó publicación externa.
+
+## 2026-07-30 — Step 5 (Review) auditoría de templates
+- Status: complete
+- Asks log:
+  - 2026-07-30 17:46 — "Como editor del draft. volver a revisar que sugerencias se pusieron para cada uno de los slides en template. eg: cronograma esta incorrecto." → Se auditaron las 13 slides contra el catálogo vigente.
+  - 2026-07-30 17:50 — "En el caso de Human capital is not a toxic asset, la imagen tiene que estar a la izquierda. Esto se perdio." → Verificado en `draft.md`: `icon-list` conserva `aside: left`; la pérdida pertenece al modelo/render anterior `content-image`, que descartó el aside.
+  - 2026-07-30 17:48 — "¿Aprobás pasar nuevamente a Polish?" → "Listo. applica todos estos cambios hasta el html"
+- What was decided: las 13 slides ahora llevan un pin explícito. Cronograma cambió de `process` a `timeline`; el catálogo vigente permite el lead arriba del rail. Robot-Proof cambió de `content+image` a `icon-list` conservando `aside: left`, porque el cuerpo son tres conceptos paralelos con explicación; esta combinación mantiene la portada como columna izquierda en HTML. Se explicitaron `stat` en la tabla de delegación, `statement` en "Delegar es no volver a explicar" y `concept-breakdown` en los cuatro objetivos. Los otros ocho pins se confirmaron sin cambios. Se retiró de `# Open questions` la duda ya resuelta sobre `process` vs. `timeline`.
+- Key inputs: `draft.md`; catálogo compartido de templates; render anterior como evidencia del problema visual en Cronograma.
+- Files created/modified: `talks/intro-curso-mim/draft.md`, `talks/intro-curso-mim/memory.md`.
+- Pending open questions: none para esta ronda; el presentador aprobó aplicar los cambios hasta el HTML.
 
 ## 2026-07-30 — Step 6 (Polish) reejecutado sobre el `draft.md` vigente
 - Status: complete
@@ -16,6 +62,16 @@
 - Files created/modified: `talks/intro-curso-mim/final.md`, `talks/intro-curso-mim/memory.md`. `draft.md` permaneció read-only.
 - Validation: 6 secciones y 13 slides de contenido; 0 feedback residual; 0 fences ASCII activas; 0 directivas de generación activas; 0 referencias de imagen con extensión incompatible. SHA-256 de `final.md`: `d9dc7fd3182a40c6def174dcf4e6acdbc4013025435d498034364029e5920395`, idéntico al que alimentó el último render HTML válido.
 - Pending open questions: se conservan las decisiones de contenido registradas en `# Open questions`; próximo paso: Step 7 Render, formato a elegir por el presentador.
+
+## 2026-07-30 — Step 7 (Render) `html-strict` después de reejecutar Polish
+- Status: complete
+- Asks log:
+  - 2026-07-30 17:40 — "¿Qué formato querés generar?" → `html-strict` (opción 3).
+- What was decided: se regeneró el deck HTML autocontenido desde el `final.md` pulido. La estructura semántica no cambió porque la fuente coincide byte por byte con la versión validada anterior; se refrescó su sello y se volvió a comprobar toda la cobertura antes del render.
+- Key inputs: `talks/intro-curso-mim/final.md` (SHA-256 `d9dc7fd3182a40c6def174dcf4e6acdbc4013025435d498034364029e5920395`), estilo `html-strict`, `output/slide-model.json` con 19 pantallas modeladas más portada.
+- Files created/modified: `talks/intro-curso-mim/output/slide-model.json`, `talks/intro-curso-mim/output/html/index.html`, `talks/intro-curso-mim/memory.md`.
+- Validation: 20 pantallas HTML; todos los campos e imágenes cubiertos; título y tres hitos de contenido presentes; archivo de 4.767.729 bytes, SHA-256 `456cad1ae9ee8f8b0e354b88b7513130817f2f200ff56a60ac8d9ff8119decde`.
+- Pending open questions: Step 8 Learnings. Un patrón de autoría de portada recurrió 3 veces en el backlog; no hay candidatos de conformance strict. Falta decidir ese patrón y la promoción del Talk a la shared knowledge library.
 
 ## 2026-07-30 — Step 6 (Polish) desde la ronda de Review de esta sesión
 - Status: complete

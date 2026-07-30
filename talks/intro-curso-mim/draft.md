@@ -98,7 +98,7 @@ Contexto de la decisión (revisión 2026-07-16): esta lámina cerraba el deck. E
 
 ## 2. Human capital is not a toxic asset
 
-<!-- template: content+image -->
+<!-- template: icon-list -->
 <!-- aside: left ![Portada de Robot-Proof, de Vivienne Ming](images/robot-proof-cover.jpg) -->
 
 ### Content
@@ -211,6 +211,8 @@ La frase de la "ecuación de la agencia" es de Microsoft (Work Trend Index 2026)
 
 ## 5. Entonces, ¿qué delegan primero los líderes?
 
+<!-- template: stat -->
+
 ### Content
 
 En las encuestas de adopción empresarial aparece siempre el mismo patrón: los líderes delegan primero trabajo de alto volumen, bien definido y con mucho texto — no decisiones de criterio.
@@ -243,6 +245,8 @@ Salvedad metodológica por si preguntan: la encuesta de Zapier es de C-suite de 
 ---
 
 ## 6. Delegar es no volver a explicar
+
+<!-- template: statement -->
 
 ### Content
 
@@ -310,6 +314,8 @@ Puente hacia la siguiente slide: *"con eso en la cabeza, estos son los cinco obj
 
 ## 2. De chatear a delegar y orquestar
 
+<!-- template: concept-breakdown -->
+
 ### Content
 
 - **Comprender el cambio de paradigma** — de chatear a delegar y orquestar.
@@ -350,7 +356,7 @@ El punto 4 no nombra ninguna misión a propósito (pedido del presentador): son 
 
 ## 1. Siete sesiones, un recorrido
 
-<!-- template: process -->
+<!-- template: timeline -->
 
 ### Content
 
@@ -524,7 +530,7 @@ Pendiente antes de dictar: confirmar si el Examen Integrador de 45 minutos va en
 
 ### Content
 
-**¿Preguntas?**
+**Cronograma, evaluación o logística:** conversemos ahora.
 
 ### Sources
 
@@ -542,6 +548,9 @@ Cuando se apaga el Q&A, transición operativa inmediata al Día 1: formación de
 Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: *el futuro va a ser de los managers aumentados por ella* — y hoy empieza eso.
 
 ### Presenter feedback
+
+- [closed] 2026-07-30 — "El slide de Q & A dice preguntas 3 veces. Revisaste correctamnete la asignacion ?"
+  Resolution: Se mantuvo el pin single-point, pero se eliminó la duplicación entre título y punto central: la slide conserva ‘¿Preguntas?’ como título y ahora usa ‘Cronograma, evaluación o logística: conversemos ahora’ como contenido.
 
 ---
 
@@ -570,7 +579,6 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **Slide 1.6 "La tecnología funcionó. El valor no llegó." — se conservó el 67% vs. 32% de Microsoft.** El presentador pidió borrar la vieja slide 1.3 ("El manager es la palanca") y reemplazarla por números de impacto; la nueva lámina es de Bain, pero **retiene el 67/32** porque es la bisagra que conecta el "el arreglo es organizacional" de Bain con la tesis del deck (el manager es lo organizacional). Los +17 / +22 / +30 de Microsoft People Science 2025 sí se cortaron (ver *Cut material*). **¿Se queda el 67/32 en esa lámina, o la slide es 100% Bain?**
 - **Slide 1.4 — si hace falta un número de eficiencia en lámina.** El presentador pidió *"impacto en el usuario y eficiencia"*; los números de Bain son de **brecha de valor**, no de eficiencia. El único número de eficiencia **verificado** disponible es el caso **Amazon** (World Wide Watch: 26 min → 2 min por actualización de IVA, −92%, 80% de resúmenes aceptados sin modificar) — hoy está en los speaker notes de 1.4. Es un **anécdota de una sola empresa, no del panel de 951**, y el corpus advierte explícitamente que no se presente como benchmark. **¿Se sube a lámina etiquetado como caso Amazon, o se queda en notas?**
 - **Slide 1.4 — imagen candidata no usada.** El registro de Bain trae la Figura 1 (`bain-ai-budget-returns-2026.web/images/figure-1-flourish-28786844.jpg`), que es exactamente el gráfico objetivo-vs-resultado de esta lámina. **No se usó**: está en inglés, con marca Bain, y su registro sigue en `<!-- pending: process_images -->` (Fase 2 del librarian sin correr) — mismo criterio con el que la slide 1.5 dibujó su propia tabla en vez de usar los gráficos de Zapier. **¿Se evalúa tras correr la Fase 2 del librarian, o se deja la lámina sin imagen?**
-- **Slide 3.1 "Siete sesiones, un recorrido" — el pin cambió de `timeline` a `process`.** El presentador pidió que el texto introductorio *"vaya arriba"*; `timeline` **no tiene campo de lead** (su formato es un rail vertical de fecha + detalle, sin párrafo introductorio), así que el texto caía debajo de los 7 hitos. `process` **sí** admite un lead sobre los pasos, y las 7 sesiones son una secuencia numerada legítima. **Costo del cambio:** se pierde el rail temporal con puntos; se gana una tira de tarjetas numeradas con el texto arriba, que es lo que se pidió. **Confirmar que el idioma visual nuevo está bien**; si no, la alternativa es volver a `timeline` y aceptar el texto abajo (o cortarlo).
 - **Slide 2.2 — "Atlas" se sacó solo de esta lámina.** El pedido (*"No mencionemos atlas sino que vamos a tener varias misiones"*) llegó sobre la slide de Objetivos y se aplicó **solo a la Sección 2**. La slide 3.1 (Cronograma) **sigue nombrando Atlas / Enterprise / Paperclip** por día, porque esa vinculación es una decisión previa deliberada (permite mapear el deck al syllabus) y el presentador no dijo "en todos lados" en este bullet — sí lo dijo, en cambio, en el de "Automatización y Análisis de Datos", que sí se aplicó globalmente. **¿Atlas también sale del cronograma?**
 - **Slide 1.3, idea 1.** La redacción original y aprobada en el README es *"La IA expande **quién** puede hacer trabajo de alto valor"* (una afirmación sobre **acceso**). Las cifras que la respaldan (66% dedica más tiempo a trabajo de alto valor / 58% produce cosas nuevas) miden **cuánto** trabajo hacen los usuarios que ya usan IA, no quién accede — y son auto-reportadas. Se suavizó a *"La IA expande **cuánto** trabajo de alto valor podés hacer"* para que el titular no exceda a sus datos. **Decisión del presentador:** ¿se mantiene la versión suavizada, o se vuelve a la redacción original del README asumiendo el claim más amplio? (Si se vuelve, conviene apoyarlo con una cifra de acceso, que hoy el corpus no tiene.)
 
