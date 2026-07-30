@@ -1,0 +1,314 @@
+{
+  "deck": {
+    "title": "Agentes Inteligentes",
+    "lang": "es",
+    "institution": "Master in Management (MiM), IAE Business School, Universidad Austral",
+    "class": "Bienvenidos",
+    "presenter": "Paulo Veiga, IAE Business School\nClaudio Righetti, IAE Business School",
+    "date": "2026-08-01",
+    "logo": null,
+    "sections": [
+      "Qué pensamos y por qué",
+      "Objetivos de Aprendizaje",
+      "Cronograma",
+      "Cómo trabajamos",
+      "Evaluación del Curso",
+      "Preguntas"
+    ]
+  },
+  "slides": [
+    {
+      "template": "section-agenda",
+      "title": "Qué pensamos y por qué"
+    },
+    {
+      "template": "single-point",
+      "section": "Qué pensamos y por qué",
+      "title": "Bienvenidos al trabajo aumentado",
+      "point": {
+        "label": "El futuro no va a ser de las empresas que simplemente usan IA.",
+        "body": "Va a ser de los managers que están aumentados por ella."
+      },
+      "aside": {
+        "image": {
+          "src": "images/s1-1-1-aside.png",
+          "alt": "Ilustración editorial abstracta: flujos de información y capas que evocan apertura y trabajo aumentado"
+        },
+        "side": "left"
+      },
+      "notes": "Es la primera lámina y es una sola frase: decirla, y hacer silencio. No explicarla — que quede colgada un segundo antes de arrancar.\n\nEs la tesis del curso comprimida en una línea, y funciona como promesa: todo lo que viene después —los datos, los objetivos, las misiones, las herramientas— existe para que, al terminar, esa frase los describa a ellos.\n\nContexto de la decisión (revisión 2026-07-16): esta lámina cerraba el deck. El presentador la movió al principio con esta nota: \"no va a ser conclusiones pero cierra perfecto toda la presentación\". Sirve como marco de apertura, y se puede volver a ella de palabra al cerrar el Día 1 — sin lámina, sólo la frase."
+    },
+    {
+      "template": "icon-list",
+      "section": "Qué pensamos y por qué",
+      "title": "Human capital is not a toxic asset",
+      "lead": "Vivienne Ming parte de una advertencia: entrenamos a muchas personas para competir con la IA en el terreno donde la máquina tiene ventaja.",
+      "rows": [
+        {
+          "label": "Problemas bien definidos",
+          "body": "Cuando el objetivo, los datos y el criterio de éxito están claros, la IA puede buscar y evaluar respuestas a una escala que una persona no alcanza.",
+          "icon": "check_circle"
+        },
+        {
+          "label": "Correlación no es causalidad",
+          "body": "Más datos permiten encontrar más patrones, pero no garantizan una explicación de por qué ocurre algo ni qué pasará cuando cambie el contexto.",
+          "icon": "query_stats"
+        },
+        {
+          "label": "Realidades ambiguas",
+          "body": "Cuando no existe una respuesta única, el trabajo decisivo consiste en formular el problema, integrar contexto y elegir entre objetivos en tensión.",
+          "icon": "psychology"
+        }
+      ],
+      "aside": {
+        "image": {
+          "src": "images/robot-proof-cover.jpg",
+          "alt": "Portada de Robot-Proof, de Vivienne Ming"
+        },
+        "side": "left"
+      },
+      "notes": "Presentar el libro y aclarar el encuadre: Ming no propone competir contra la IA acumulando más respuestas. Propone desarrollar capacidades que importan cuando la respuesta no viene dada.\n\nRecorrer los tres bloques de izquierda a derecha. En el primero, usar un ejemplo simple: resumir miles de documentos con una consigna clara. En el segundo, marcar la precisión técnica: escalar el aprendizaje de patrones no garantiza comprensión causal. No decir que una IA jamás podrá razonar causalmente. En el tercero, llevarlo al trabajo del manager: definir qué problema vale la pena resolver, qué restricciones cuentan y quién responde por la decisión.\n\nLa transición a la próxima lámina es una pregunta: si la IA abarata las habilidades rutinarias, ¿qué vuelve valiosa a una persona?"
+    },
+    {
+      "template": "single-point",
+      "section": "Qué pensamos y por qué",
+      "title": "¿Qué hace valioso al capital humano?",
+      "point": {
+        "label": "El capital humano se vuelve “tóxico” cuando solo representa conocimiento y habilidades rutinarias.",
+        "body": "Su valor vuelve a crecer cuando desarrolla metacognición, creatividad, adaptación y juicio."
+      },
+      "notes": "Dejar la frase completa en pantalla y hacer una pausa. La expresión provocadora de Ming se refiere al capital humano que nuestras instituciones producen, no a que las personas sean tóxicas.\n\nEl conocimiento rutinario pierde valor cuando una máquina puede reproducirlo a menor costo. Metacognición significa observar cómo pensamos y corregir el rumbo. Creatividad permite construir hipótesis nuevas. Adaptación permite revisar el modelo cuando cambia la realidad. Juicio permite elegir y responder por las consecuencias.\n\nVolver a la tesis de apertura: una persona aumentada usa la IA para ampliar su capacidad de acción y reserva su atención para los problemas que todavía necesitan contexto, criterio y responsabilidad."
+    },
+    {
+      "template": "content-image",
+      "section": "Qué pensamos y por qué",
+      "title": "La ejecución se delega. La agencia crece.",
+      "image": {
+        "src": "images/s1-4-1-agentes-personas-agencia.png",
+        "alt": "Diagrama: a medida que los agentes toman la ejecución, las personas ganan agencia — crecen juntas, no en suma cero"
+      },
+      "facts": [
+        {
+          "body": "A medida que los agentes toman más de la ejecución, las personas ganan más agencia: más espacio para dirigir el trabajo, decidir y ser dueñas del resultado."
+        }
+      ],
+      "notes": "Esta es la slide de la que cuelga todo el curso. Vale la pena decirla despacio y en primera persona: no creemos en el reemplazo, creemos en la amplificación — esto es lo que pensamos nosotros, y después mostramos los datos que lo sostienen.\n\nEl punto que suele destrabar la resistencia en el aula: no es que la IA hace tu trabajo y vos hacés menos. Es que la IA hace la ejecución y vos hacés más de lo que solo vos podés hacer — dirigir, decidir, responder por el resultado. Preguntar en voz alta: ¿cuánto de lo que hicieron esta semana era ejecución y cuánto era decisión?\n\nLa frase de la \"ecuación de la agencia\" es de Microsoft (Work Trend Index 2026), y la usamos como respaldo, no como autoridad única."
+    },
+    {
+      "template": "stat",
+      "section": "Qué pensamos y por qué",
+      "title": "Entonces, ¿qué delegan primero los líderes?",
+      "lead": "En las encuestas de adopción empresarial aparece siempre el mismo patrón: los líderes delegan primero trabajo de alto volumen, bien definido y con mucho texto — no decisiones de criterio.",
+      "stats": [
+        {
+          "value": "47%",
+          "caption": "Gestión y extracción de datos — Zapier 2026"
+        },
+        {
+          "value": "41%",
+          "caption": "Análisis y resumen de documentos — Zapier 2026"
+        },
+        {
+          "value": "36%",
+          "caption": "Generación de reportes — Zapier 2026"
+        }
+      ],
+      "highlights": [
+        "Estas tareas comparten lo que las hace seguras de delegar: alto volumen, estructura clara, entrada y salida mayormente de texto."
+      ],
+      "notes": "La tabla no es el punto: el punto es lo que las tres tareas tienen en común. Preguntar al aula antes de mostrar la tabla: \"¿qué creen que se delega primero?\" — casi siempre aciertan, y eso ya instala el criterio.\n\nNinguna de las tres es una decisión de criterio. Nadie está delegando \"a quién contrato\" ni \"qué precio pongo\".\n\nSalvedad metodológica por si preguntan: la encuesta de Zapier es de C-suite de EE.UU. en empresas de 1.000+ empleados — no generaliza a PyMEs ni a otros mercados."
+    },
+    {
+      "template": "statement",
+      "section": "Qué pensamos y por qué",
+      "title": "\"Automatizar\" y \"delegar\" son muchas veces el mismo movimiento disfrazado.",
+      "sub": "El objetivo es describirla declarativamente — una Skill, una Instruction — para que se repita sola, sin volver a explicarla cada vez.",
+      "notes": "Este es el patrón más profundo de la sección, y el que menos gente ve solo. Delegar una vez es pedir un favor; delegar de verdad es escribir la tarea una vez y no volver a explicarla.\n\nLa analogía que funciona: la diferencia entre pedirle algo a un pasante cada lunes y escribirle el procedimiento una vez. El segundo caso escala; el primero no.\n\nEs el puente hacia los Días 1–2 (Skills en Cowork), pero no lo conectemos explícitamente con la herramienta acá — se queda a nivel filosofía. Decisión explícita del presentador."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Objetivos de Aprendizaje"
+    },
+    {
+      "template": "statement",
+      "section": "Objetivos de Aprendizaje",
+      "title": "El vehículo, no el destino",
+      "sub": "Vas a construir agentes de verdad, con herramientas reales, para resolver los problemas que ya vimos. Pero el foco no es la herramienta: es la filosofía y el criterio para adaptarte a lo que venga — lo que hoy es Cowork, mañana puede tener otro nombre.",
+      "notes": "Esta slide gestiona una expectativa que conviene desarmar temprano: no venimos a hacer un tutorial de Cowork. Si alguien vino a eso, se va a frustrar; si entiende que Cowork es el vehículo y no el destino, todo el resto cierra.\n\nEl encuadre para decir en voz alta (no está en la slide): la primera parte del curso construyó el marco conceptual — dónde crea valor la IA y cómo pensarla a nivel de negocio. Esta segunda parte es sobre la práctica de trabajar aumentado: cómo los agentes y las herramientas de IA multiplican lo que puede hacer un knowledge worker.\n\nDoble mensaje a sostener en el aire al mismo tiempo: va a ser muy hands-on — vamos a construir agentes de verdad con herramientas reales, para resolver los problemas de la Sección 1 (no ejercicios de juguete) — pero el objetivo de aprendizaje no es la herramienta, son los conceptos y el criterio que van a poder llevarse a cualquier herramienta nueva.\n\nLa frase \"lo que hoy es Cowork, mañana puede tener otro nombre\" suele generar una reacción — vale hacer una pausa ahí. Es honesta y le baja el precio a la ansiedad por elegir \"la herramienta correcta\". Por eso el foco está en el patrón, no en el botón: al terminar, van a saber qué preguntarle a una herramienta nueva y cómo evaluarla, no solo cómo usar la de hoy.\n\nPuente hacia la siguiente slide: \"con eso en la cabeza, estos son los cinco objetivos concretos.\""
+    },
+    {
+      "template": "concept-breakdown",
+      "section": "Objetivos de Aprendizaje",
+      "title": "De chatear a delegar y orquestar",
+      "cards": [
+        {
+          "label": "Comprender el cambio de paradigma",
+          "body": "De chatear a delegar y orquestar."
+        },
+        {
+          "label": "Desarrollar criterio profesional",
+          "body": "La filosofía por sobre la herramienta puntual."
+        },
+        {
+          "label": "Hands-on con las misiones aplicadas",
+          "body": "Varias misiones a lo largo de la cursada."
+        },
+        {
+          "label": "Reflexionar sobre el impacto en la gestión y los negocios",
+          "body": "Y cómo aplicarlo a mi propio trabajo."
+        }
+      ],
+      "notes": "El quinto objetivo es el que más les importa aunque no lo digan: \"¿qué hago yo, a partir de mañana?\".\n\nEl objetivo 1 —de chatear a delegar y orquestar— es literalmente el arco del curso: tres estadios, no dos.\n\nEl deck ya no lleva el diagrama del arco, así que este objetivo es el único lugar donde el arco de tres estadios se nombra.\n\nEl punto 4 no nombra ninguna misión a propósito: son varias y se van a ir presentando a lo largo de la cursada."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Cronograma"
+    },
+    {
+      "template": "timeline",
+      "section": "Cronograma",
+      "title": "Siete sesiones, un recorrido",
+      "lead": "Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene su propio foco; cuatro de ellos sostienen una misión.",
+      "milestones": [
+        {
+          "label": "Sáb 1 Ago · 8:30–12:00 · Presencial (3,5 h)",
+          "body": "Primeros pasos con Claude Cowork · misión Atlas"
+        },
+        {
+          "label": "Sáb 1 Ago · 13:00–16:30 · Presencial (3,5 h)",
+          "body": "Automatizando un reporte semanal en Cowork · misión Atlas"
+        },
+        {
+          "label": "Jue 6 Ago · 19:00–21:00 · Virtual (2 h)",
+          "body": "Agent Fundamentals: adopción, historia y métricas"
+        },
+        {
+          "label": "Mar 11 Ago · 19:00–21:00 · Virtual (2 h)",
+          "body": "A definir"
+        },
+        {
+          "label": "Vie 28 Ago · 9:00–12:30 · Presencial (3,5 h)",
+          "body": "Cowork para la empresa · misión Enterprise"
+        },
+        {
+          "label": "Sáb 29 Ago · 8:30–12:00 · Presencial (3,5 h)",
+          "body": "Orquestando agentes con Paperclip · misión Paperclip"
+        },
+        {
+          "label": "Jue 3 Sep · 19:00–21:00 · Virtual (2 h)",
+          "body": "Evaluación"
+        }
+      ],
+      "notes": "Lo que más preguntan acá: el sábado 1 de agosto es doble jornada (Días 1 y 2, mañana y tarde, con corte al mediodía). Decirlo explícito — es hoy.\n\nLos nombres de misión (Atlas, Enterprise, Paperclip) son los mismos que van a ver en el README.\n\nEl Día 4 está a definir a propósito: lo vamos a cerrar en función de cómo venga el grupo.\n\nEl arco del curso —de chatear a delegar y orquestar— ya no tiene lámina propia. Vale trazarlo en voz alta acá, sobre el calendario: Días 1–2–3–5 son delegar (Cowork); el Día 6 es orquestar (Paperclip)."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Cómo trabajamos"
+    },
+    {
+      "template": "icon-list",
+      "section": "Cómo trabajamos",
+      "title": "Tres reglas para que el tiempo valga",
+      "lead": "Tres reglas, y las tres apuntan a lo mismo: que el tiempo que estamos juntos valga lo que cuesta.",
+      "rows": [
+        {
+          "label": "Pantallas cerradas — salvo cuando trabajamos",
+          "body": "Laptop, teléfono, tablet. Cerradas cuando conversamos; abiertas cuando construimos.",
+          "icon": "lock"
+        },
+        {
+          "label": "Estar presente",
+          "body": "Estar en la sala no es lo mismo que estar. Presencia real: escuchar, preguntar, discutir, aportarle al equipo.",
+          "icon": "person"
+        },
+        {
+          "label": "Puntualidad — empezamos en punto",
+          "body": "Los presenciales son bloques de 3,5 horas y arrancan a horario. Cada minuto tarde es contenido que no se recupera.",
+          "icon": "schedule"
+        }
+      ],
+      "notes": "Estas tres reglas son del presentador — vale decirlas en primera persona y no leerlas como reglamento de la escuela. Son tres a propósito: si fueran diez, no se acuerda ninguna.\n\nPantallas cerradas es la que más fricción genera. Decir la salvedad en la misma respiración que la regla: \"pantallas cerradas — salvo cuando trabajamos\".\n\nEstar presente es la regla blanda, pero es la que sostiene a las otras dos.\n\nPuntualidad — el presentador fue enfático con el \"en punto\".\n\nPuente a la slide siguiente: \"esas son las reglas de cómo trabajamos; ahora, con qué vamos a trabajar.\""
+    },
+    {
+      "template": "icon-list",
+      "section": "Cómo trabajamos",
+      "title": "Qué herramienta para qué trabajo",
+      "lead": "Tres tipos de herramienta, tres para qué. No compiten entre sí: se complementan.",
+      "rows": [
+        {
+          "label": "Automatización",
+          "body": "Claude Cowork: delegar un resultado y lograr que todo eso se repita solo la próxima vez.",
+          "icon": "autorenew"
+        },
+        {
+          "label": "Análisis de Datos",
+          "body": "Claude Cowork: analizar los datos que hacen falta para producir ese resultado.",
+          "icon": "analytics"
+        },
+        {
+          "label": "Agentes",
+          "body": "Paperclip: orquestar una organización de agentes hacia un objetivo, con vos aprobando los pasos sensibles.",
+          "icon": "robot"
+        }
+      ],
+      "highlights": [
+        {
+          "label": "Nota",
+          "body": "Como vamos a trabajar con Claude Cowork durante todo el curso, va a haber una licencia por grupo para poder hacer el trabajo — no una licencia por estudiante.",
+          "kind": "note"
+        }
+      ],
+      "notes": "Esta lámina viene después del cronograma a propósito: Cowork y Paperclip acaban de aparecer nombrados en el recorrido, así que la pregunta \"¿qué son esas cosas?\" ya está viva en la sala.\n\nLas tres filas responden a \"¿para qué sirve cada una?\", no a \"¿cuál es mejor?\". Y las dos primeras (Automatización y Análisis de Datos) son Cowork — delegar; la tercera (Agentes) es Paperclip — orquestar.\n\nVolver a la slide 2.1 en una línea: estas son las herramientas de hoy. El foco sigue siendo el patrón, no el botón.\n\nLa nota de la licencia es la que más ruido genera si no se aclara: una por grupo."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Evaluación del Curso"
+    },
+    {
+      "template": "stat",
+      "section": "Evaluación del Curso",
+      "title": "Cómo se construye la nota",
+      "stats": [
+        {
+          "value": "40%",
+          "caption": "Portafolio Grupal — misiones resueltas y reflexiones del equipo, entregadas a lo largo de la cursada, más una presentación de 5 minutos del portafolio por equipo."
+        },
+        {
+          "value": "40%",
+          "caption": "Examen Integrador — evaluación individual, 30 minutos que se va ser la última clase."
+        },
+        {
+          "value": "20%",
+          "caption": "Participación — actividades prácticas y compromiso durante las sesiones presenciales y virtuales."
+        }
+      ],
+      "notes": "Los dos 40% son el mensaje: el trabajo en equipo pesa exactamente lo mismo que el examen individual. Vale decirlo — desarma la idea de que \"el portafolio es lo blando\".\n\nNo listar las misiones acá por nombre (decisión explícita del presentador): el portafolio se va llenando durante la cursada y no queremos comprometernos al detalle todavía.\n\nPendiente antes de dictar: confirmar si el Examen Integrador de 45 minutos va en el Día 7 y qué escala de calificación se usa (aprobado/desaprobado vs. nota numérica). Si preguntan y no está cerrado, mejor decir \"lo confirmamos la próxima\" que improvisar."
+    },
+    {
+      "template": "section-agenda",
+      "title": "Preguntas"
+    },
+    {
+      "template": "single-point",
+      "section": "Preguntas",
+      "title": "¿Preguntas?",
+      "point": {
+        "label": "Cronograma, evaluación o logística",
+        "body": "Conversemos ahora."
+      },
+      "aside": {
+        "image": {
+          "src": "images/s6-1-1-aside.png",
+          "alt": "Ilustración editorial abstracta: líneas y cintas que se abren y convergen, evocando preguntas y reflexión compartida"
+        },
+        "side": "left"
+      },
+      "notes": "Es el cierre real del deck. Dejar espacio de verdad: si quedaron dudas sobre evaluación o cronograma, es mejor que salgan ahora y no a mitad de la primera misión.\n\nLas tres preguntas que más aparecen y que todavía no tienen respuesta cerrada: escala de calificación, mínimo de asistencia, y qué está permitido usar de IA en las entregas. Si salen, decir \"lo confirmamos la próxima\" en vez de improvisar — improvisar acá se convierte en compromiso.\n\nCuando se apaga el Q&A, transición operativa inmediata al Día 1: formación de equipos (recordar: una licencia de Cowork por grupo) y arranque del framing de IA y agentes.\n\nSe puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: el futuro va a ser de los managers aumentados por ella — y hoy empieza eso."
+    }
+  ],
+  "_source": {
+    "file": "final.md",
+    "sha256": "e66cb33a33b55aaa4d41e32b99f42bd2b3b2beabc2b92f53a64149d2d25c357f",
+    "bytes": 65127
+  }
+}
