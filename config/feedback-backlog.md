@@ -492,3 +492,99 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Podriamos introducir el concepto de subagentes en algun lugar apropiado tambien."
   resolution: Dos toques: semilla de observacion en M4 (ver el reparto en paralelo mientras corre la investigacion) y Paso 6.6 Bonus en M6 (subagente `investigador`, uno por ticker, prompt exacto, criterio blando y caveat de verificacion; el fan-out calca la slide 6.1). "Y despues" de M6 queda solo con Plugins. Codex: nota de que no hay equivalente definible por el usuario. Watch item nuevo en el draft: probar la creacion de subagentes en Cowork antes del workshop. PDFs mission y parte 2 regenerados; parte 1 sin cambios.
   tags: [mission, subagents, add-material, verify]
+- talk: intro-curso-mim
+  date: 2026-07-16
+  location: Agenda
+  feedback: "Antes de la agenda, empecemos con un slide con con text biemvenidos. Si podemos conseguir una imagen para poner a la izquierda seria bueno para llenar."
+  resolution: Resuelto absorbiendo el pedido en la apertura existente, no creando una segunda primera lámina: "Manos a la obra" sigue abriendo el deck, ahora con un gesto explícito de bienvenida y una directiva `generate-image: left` para crear una imagen editorial abstracta de apertura. La imagen todavía no se genera en draft; se genera en Polish (Step 6) si la sesión tiene generación de imágenes. Si el presentador quiere una lámina "Bienvenidos" separada antes de 1.1, este cierre se revierte y se crea como slide nuevo.
+  tags: [add-visual, merge-incorporation, positioning]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Section "1. Qué pensamos y por qué"
+  feedback: "Agregar como slides 4 y 5 un arco basado en Robot-Proof: la primera con la portada a la izquierda y tres ideas sobre problemas bien definidos, correlación/causalidad y realidades ambiguas; la segunda debe cerrar con: El capital humano se vuelve ‘tóxico’ cuando solo representa conocimiento y habilidades rutinarias. Su valor vuelve a crecer cuando desarrolla metacognición, creatividad, adaptación y juicio."
+  resolution: Se agregaron las slides 1.4 y 1.5: la primera usa la portada local de Robot-Proof a la izquierda y desarrolla problemas bien definidos, correlación/causalidad y ambigüedad; la segunda cierra con la tesis acordada sobre capital humano, metacognición, creatividad, adaptación y juicio.
+  tags: [add-material, add-visual, slide-content]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "4. Human capital is not a toxic asset"
+  feedback: "Cambiar el título ‘El valor humano empieza donde la respuesta no está clara’ por ‘Human capital is not toxic asset’."
+  resolution: El título de la slide 1.4 se cambió a ‘Human capital is not a toxic asset’, incorporando el artículo requerido en inglés.
+  tags: [slide-content, wording]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "4. El valor humano empieza donde la respuesta no está clara"
+  feedback: "Revertir el último cambio de título y volver a ‘El valor humano empieza donde la respuesta no está clara’."
+  resolution: Se revirtió el último cambio: la slide 1.4 recuperó el título ‘El valor humano empieza donde la respuesta no está clara’.
+  tags: [slide-content, wording]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "4. Human capital is not a toxic asset"
+  feedback: "Dejar ‘Human capital is not a toxic asset’ como título definitivo de la slide 1.4."
+  resolution: La slide 1.4 queda titulada ‘Human capital is not a toxic asset’; no se modificaron el contenido, la portada ni la slide siguiente.
+  tags: [slide-content, wording]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "5. ¿Qué hace valioso al capital humano?"
+  feedback: "Cambiar el título ‘El criterio es el activo’ por ‘¿Qué hace valioso al capital humano?’."
+  resolution: La slide 1.5 se tituló ‘¿Qué hace valioso al capital humano?’; el remate y las notas permanecen sin cambios.
+  tags: [slide-content, wording]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Agenda
+  feedback: "Aplicar la pasada completa de títulos acordada después de incorporar el gancho de Robot-Proof."
+  resolution: Se aplicó la secuencia completa de títulos acordada en las seis secciones, conservando sin cambios el contenido, las fuentes y las notas de cada slide.
+  tags: [slide-content, wording, narrative]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Section "1. Qué pensamos y por qué"
+  feedback: "Mover las slides 1.6 y 1.7 inmediatamente después de la slide 1.3."
+  resolution: Las anteriores slides 1.6 y 1.7 se movieron inmediatamente después de la 1.3 y ahora son 1.4 y 1.5; el arco de Robot-Proof pasó a 1.6 y 1.7, sin cambios de contenido, fuentes ni notas.
+  tags: [restructure, bad-order, positioning]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Section "1. Qué pensamos y por qué"
+  feedback: "Interpretar la numeración como global: mover las slides globales 6 y 7 inmediatamente después de la slide global 3."
+  resolution: Se corrigió la interpretación a numeración global: las anteriores pantallas 6 y 7, correspondientes al arco de Robot-Proof, quedaron como pantallas 4 y 5; ‘Más ejecución, más agencia’ y ‘La IA expande, el juicio sube de precio’ pasaron a las pantallas 6 y 7.
+  tags: [restructure, bad-order, positioning, numbering]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Section "1. Qué pensamos y por qué"
+  feedback: "Cambiar los títulos globales 6 y 9 por ‘La ejecución se delega. La agencia crece.’ y ‘Entonces, ¿qué delegan primero los líderes?’."
+  resolution: Se cambiaron únicamente los títulos de las pantallas globales 6 y 9 por ‘La ejecución se delega. La agencia crece.’ y ‘Entonces, ¿qué delegan primero los líderes?’; contenido, fuentes y notas permanecen sin cambios.
+  tags: [title, flow, clarity, transition]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Thesis
+  feedback: "Agregar a Claudio Righetti en la línea de autores de la presentación."
+  resolution: La línea de autoría de la presentación quedó como ‘Paulo Veiga y Claudio Righetti, IAE Business School’; el perfil general del repositorio no se modificó.
+  tags: [metadata, authors, cover]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. Bienvenidos al trabajo aumentado"
+  feedback: "El slide tiene dos veces bienvenido."
+  resolution: Se eliminó “Bienvenidos.” del cuerpo; la bienvenida queda expresada una sola vez en el título y el contenido comienza directamente con la tesis del curso.
+  tags: [slide-content, wording, clarity]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Thesis
+  feedback: "Hace que los autores estén uno abajo del otro."
+  resolution: Los autores se separaron en líneas independientes — Paulo Veiga y Claudio Righetti — con IAE Business School en una tercera línea común.
+  tags: [metadata, authors, cover, layout]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Thesis
+  feedback: "Deberia ser Paulo Veiga, IAE Business School y Claudio Righetti, IAE Business School"
+  resolution: La portada muestra dos líneas de autoría: ‘Paulo Veiga, IAE Business School’ y ‘Claudio Righetti, IAE Business School’.
+  tags: [metadata, authors, cover, layout]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. Bienvenidos al trabajo aumentado"
+  feedback: "El text **El futuro no va a ser de las empresas que simplemente usan IA. Va a ser de los managers que están aumentados por ella.** tiene un bullet. no es necesario y genera mucha identacion"
+  resolution: En la versión HTML, la apertura conserva el callout pero oculta su icono y elimina el espacio reservado para él, reduciendo la sangría.
+  tags: [slide-content, layout, html]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "2. Human capital is not a toxic asset"
+  feedback: "Por que el texto ': cuando el objetivo, los datos y el criterio de éxito están claros, la IA puede buscar y evaluar respuestas a una escala que una persona no alcanza.' contine ':' ?"
+  resolution: Se eliminó el separador inicial de los tres cuerpos: cada concepto termina con punto y la explicación comienza directamente con mayúscula.
+  tags: [slide-content, wording, punctuation]

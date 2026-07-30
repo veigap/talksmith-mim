@@ -43,7 +43,7 @@
       ],
       "image": {
         "src": "images/s1-1-1-chat-de-fabrica.png",
-        "alt": "El chat de fábrica responde desde su memoria de entrenamiento y no ve el mundo del usuario"
+        "alt": "Un chat responde desde su memoria de entrenamiento"
       },
       "notes": "Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta semana. Van a levantar la mano casi todos (ChatGPT, Gemini, Claude). La idea a instalar: ese chat, tal como viene, responde de memoria. Cuando le preguntás no busca nada; recuerda lo que leyó hasta su fecha de entrenamiento (knowledge cutoff). Un colega brillante que leyó muchísimo hasta una fecha y desde entonces está incomunicado. Tres consecuencias que ya sufrieron sin saberlo. Una, datos viejos: precios, noticias, versiones de software y papers posteriores al corte no existen para el modelo. Dos, inventos con cara de verdad: cifras, citas y referencias que suenan perfectas y son falsas (insistir en verificar toda salida). Tres, la más limitante para el trabajo real: no ve nada tuyo, ni mails, ni calendario, ni archivos, ni apps. Ese tercer límite abre la charla: ¿y si pudiéramos conectarlo? Tiempo objetivo: ~6 min.\n\n---"
     },
@@ -57,7 +57,7 @@
       "title": "Chat solo vs chat con conectores",
       "image": {
         "src": "images/s2-1-1-chat-solo-vs-conectores.png",
-        "alt": "Chat aislado vs chat con conectores que consulta fuentes reales"
+        "alt": "Chat solo frente a chat con conectores"
       },
       "facts": [
         {
@@ -82,7 +82,7 @@
       "title": "El primer conector: búsqueda web",
       "image": {
         "src": "images/s2-2-1-memoria-vs-busqueda.png",
-        "alt": "La misma pregunta respondida de memoria vs con búsqueda web"
+        "alt": "La misma pregunta: de memoria o con búsqueda web"
       },
       "facts": [
         {
@@ -133,7 +133,7 @@
       ],
       "image": {
         "src": "images/s2-3-1-flujo-connector-mcp.png",
-        "alt": "Flujo de una llamada a un conector vía MCP"
+        "alt": "Flujo de un conector MCP"
       },
       "notes": "Desarmar el miedo: conectar un servicio externo le da \"manos\" al chat. Usar el diagrama para explicar qué pasa por debajo: la IA pide datos y el conector los trae vía MCP (Model Context Protocol), el estándar que vuelve conversacional a cualquier plataforma con API. El patrón: la plataforma expone acciones como herramientas. Mencionar dos o tres ejemplos del ecosistema (Figma, Vercel, Cal.com, Home Assistant) y seguir. Decir al pasar que un equipo técnico puede desarrollar conectores propios (custom, vía MCP); a nivel usuario alcanza con el directorio, que viene en la próxima slide. Los ejemplos guía de la sección son mail y calendario, porque son los que la audiencia ya tiene. Tiempo objetivo: ~8 min.\n\n---"
     },
@@ -197,7 +197,7 @@
       ],
       "image": {
         "src": "images/s2-5-1-conector-dos-direcciones.png",
-        "alt": "Un conector en dos direcciones: leer información y ejecutar acciones"
+        "alt": "Un conector puede leer y actuar"
       },
       "highlights": [
         {
@@ -255,7 +255,7 @@
       ],
       "image": {
         "src": "images/s3-2-1-donde-corre-local-vs-nube.png",
-        "alt": "Bifurcación: ejecución local vs en la nube"
+        "alt": "Una tarea programada corre en la nube"
       },
       "highlights": [
         {
@@ -276,7 +276,7 @@
       "layout": "image-top",
       "image": {
         "src": "images/s3-3-1-placa-fin-parte-1.png",
-        "alt": "Placa de corte: fin de la parte 1, comienza la parte 2 con Claude Cowork"
+        "alt": "Cierre de la primera parte"
       },
       "facts": [
         {
@@ -315,7 +315,7 @@
       ],
       "image": {
         "src": "images/s4-1-1-tres-superficies.png",
-        "alt": "Las tres superficies de Claude sobre los mismos modelos"
+        "alt": "Las tres superficies de Claude"
       },
       "notes": "Abrir la sección conectando con el recorrido: \"hasta acá, todo pasó en la superficie de chat; ahora cambiamos de superficie\". Es el mismo agente con tres caras; cambia la superficie y para quién está pensada. El matiz técnico, para decir y no para la slide: Cowork está construido sobre las mismas bases que Claude Code (el Claude Agent SDK), así que Code y Cowork comparten el mismo engine de agente, con los mismos archivos, las mismas Skills, el mismo MCP y el mismo loop de plan, aprobar y redirigir. Web/Chat es ese mismo modelo en una superficie de chat, sin el loop agéntico completo. Dejar claro que el resto de la charla vive en Cowork, la cara para quien no vive en una terminal. Claude Code aparece solo como contraste; no entramos en sus internals. Tiempo objetivo: ~5 min.\n\n---"
     },
@@ -343,7 +343,7 @@
       ],
       "image": {
         "src": "images/s4-2-1-excel-a-agentes.png",
-        "alt": "De Excel a las herramientas agénticas como nueva habilidad base"
+        "alt": "De una tarea en planilla a un flujo con agentes"
       },
       "notes": "El beat de \"¿y a mí por qué me importa?\". Cowork es Claude instalado en la computadora, con acceso a las carpetas y archivos del usuario; eso habilita una forma de trabajar distinta de la del chat. Hasta acá la audiencia extendió un chat; esta slide anuncia otra categoría de herramienta. Tono motivacional y de alto nivel; la mecánica viene después.\n\nEl gancho que mejor funciona es la analogía del Excel, dicha con cuidado. Durante unas cuatro décadas, saber Excel fue la habilidad base del trabajo de oficina: con Excel se resolvía gran parte del trabajo de conocimiento. La tesis de varios analistas de la industria es que las herramientas agénticas (Claude Code para los que programan, Cowork para los que no) van camino a ocupar ese lugar. Atribuirlo a analistas e industria, \"hay quien lo llama el nuevo Excel\", y NO a Anthropic.\n\nLo que sí es de Anthropic, y conviene citarlo como su framing propio, es \"Claude Code para el resto de tu trabajo\": que cualquier knowledge worker sienta con Cowork lo que los ingenieros ya sienten con Claude Code. Cowork generaliza algo que ya funcionó primero con developers.\n\nCerrar aterrizándolo en la audiencia: son alumnos de management y la mayoría no programa; por eso Cowork les sirve. Después de este beat pasamos a la mecánica, cómo se delega (próxima slide). Tiempo objetivo: ~4-5 min.\n\n---"
     },
@@ -363,7 +363,7 @@
       ],
       "image": {
         "src": "images/s4-3-1-chat-vs-agente.png",
-        "alt": "Antes: chat mensaje a mensaje; ahora: agente que planifica y entrega"
+        "alt": "De responder en el chat a delegar trabajo"
       },
       "highlights": [
         {
@@ -431,7 +431,7 @@
       ],
       "image": {
         "src": "images/s4-4-1-mapa-bloques.png",
-        "alt": "El mapa de la charla: bloques que se apilan, con Plugins como capa transversal"
+        "alt": "Mapa de las piezas de Cowork"
       },
       "highlights": [
         {
@@ -561,7 +561,7 @@
       "title": "El mismo archivo, renderizado",
       "image": {
         "src": "images/s4-10-1-md-renderizado.png",
-        "alt": "El archivo .md renderizado, con cada marca de sintaxis conectada a su resultado"
+        "alt": "Un archivo Markdown renderizado"
       },
       "facts": [
         {
@@ -605,7 +605,7 @@
       ],
       "image": {
         "src": "images/s4-10-1-flujo-md.png",
-        "alt": "Flujo de trabajo con la IA: fuentes → archivos .md → entrega final"
+        "alt": "Trabajar en Markdown y exportar al final"
       },
       "highlights": [
         {
@@ -711,45 +711,41 @@
       "notes": "Arranca el bloque avanzado, ahora partido por tema: esta sección cubre Skills; Subagentes y Plugins tienen las suyas. La Skill materializa el \"enseñá una vez, reutilizá siempre\". Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio \"un trabajo por Skill\": si aparece \"y además\", conviene dividirla en dos. La creación paso a paso viene en la próxima slide; la anatomía del archivo, en la siguiente. Tiempo objetivo: ~4 min.\n\n---"
     },
     {
-      "template": "process",
+      "template": "figures",
       "section": "Skills: enseñar una vez",
       "title": "Cómo se crea una Skill en Cowork",
-      "lead": "Desde Configuración → Habilidades → Agregar, dos caminos para crear y uno para importar:",
-      "steps": [
-        {
-          "label": "Crear con Claude",
-          "body": "Un ida y vuelta de chat; Claude escribe el SKILL.md."
-        },
-        {
-          "label": "Escribir las instrucciones",
-          "body": "De la habilidad, directamente en la UI."
-        },
-        {
-          "label": "Subir una habilidad",
-          "body": "Importa una Skill ya existente (el ZIP con su carpeta), por ejemplo una que te compartieron."
-        }
-      ],
-      "image": {
-        "src": "images/skills-panel.png",
-        "alt": "El panel de Habilidades: Examinar y el menú Agregar"
-      },
+      "lead": "Dos caminos para crear, uno para importar y otro desde el chat.",
       "highlights": [
         {
-          "body": "Desde el chat, el menú \"+\" también lista las habilidades, con \"Administrar\" y \"Explorar habilidades\".",
-          "kind": "note"
-        },
-        {
-          "label": "/skill-creator",
-          "body": "En el chat, el comando /skill-creator (una skill de Anthropic preinstalada) guía la creación y revisa el resultado. Cowork incluye un set reducido de slash commands; tipear / los lista.",
+          "label": "Requisito",
+          "body": "Code execution habilitado.",
           "kind": "note"
         },
         {
           "label": "La trampa del Save",
-          "body": "La Skill tiene que quedar guardada y habilitada en la lista de Habilidades, o \"no funciona\". Requisito: Code execution habilitado.",
+          "body": "La Skill tiene que quedar guardada y habilitada en la lista de Habilidades, o no funciona.",
           "kind": "important"
         }
       ],
-      "notes": "La slide práctica que faltaba: el paso a paso de creación. Con conexión, hacerlo en vivo desde el panel: Configuración → Habilidades → Agregar, y mostrar las tres opciones del menú. \"Crear con Claude\" abre un ida y vuelta de chat donde Claude escribe el SKILL.md; \"Escribir las instrucciones\" edita la habilidad directo en la UI; \"Subir una habilidad\" no crea nada nuevo: importa una Skill ya existente desde su ZIP, por ejemplo una compartida por un colega. Después el camino por chat: tipear `/` para mostrar la lista de comandos (un set reducido; los que conocen Claude Code van a notar la diferencia) y crear `reporte-semanal` con `/skill-creator`, que guía la escritura y revisa el resultado. Dos avisos prácticos. Uno: las Skills requieren Code execution. Dos: la trampa del Save; la Skill creada tiene que quedar guardada y habilitada en la lista, y sin eso parece que \"no funciona\". Las dos capturas (el panel de Habilidades y el menú \"+\" del chat) quedan de respaldo por si la demo falla; con las capturas en la slide, el diagrama de caminos pasa a ser ayuda del lector del draft. Aviso de vigencia: la doc oficial va detrás del producto en este punto; re-mirar el panel el día de la clase. Tiempo objetivo: ~6 min (con demo).\n\n---"
+      "notes": "La slide práctica que faltaba: el paso a paso de creación. Con conexión, hacerlo en vivo desde el panel: Configuración → Habilidades → Agregar, y mostrar las tres opciones del menú. \"Crear con Claude\" abre un ida y vuelta de chat donde Claude escribe el SKILL.md; \"Escribir las instrucciones\" edita la habilidad directo en la UI; \"Subir una habilidad\" no crea nada nuevo: importa una Skill ya existente desde su ZIP, por ejemplo una compartida por un colega. Después el camino por chat: tipear `/` para mostrar la lista de comandos (un set reducido; los que conocen Claude Code van a notar la diferencia) y crear `reporte-semanal` con `/skill-creator`, que guía la escritura y revisa el resultado. Dos avisos prácticos. Uno: las Skills requieren Code execution. Dos: la trampa del Save; la Skill creada tiene que quedar guardada y habilitada en la lista, y sin eso parece que \"no funciona\". Las dos capturas (el panel de Habilidades y el menú \"+\" del chat) quedan de respaldo por si la demo falla; con las capturas en la slide, el diagrama de caminos pasa a ser ayuda del lector del draft. Aviso de vigencia: la doc oficial va detrás del producto en este punto; re-mirar el panel el día de la clase. Tiempo objetivo: ~6 min (con demo).\n\n---",
+      "figures": [
+        {
+          "image": {
+            "src": "images/skills-panel.png",
+            "alt": "El panel de Habilidades: Examinar y el menú Agregar"
+          },
+          "label": "Desde Configuración → Habilidades → Agregar",
+          "body": "Crear con Claude abre un ida y vuelta de chat; Escribir las instrucciones las carga en la UI; Subir una habilidad importa el ZIP de una Skill existente."
+        },
+        {
+          "image": {
+            "src": "images/skills-menu-chat.png",
+            "alt": "El menú + del chat: las habilidades disponibles, administrar y explorar"
+          },
+          "label": "Desde el chat",
+          "body": "El menú + permite administrar y explorar habilidades. /skill-creator guía la creación y revisa el resultado; tipear / muestra los comandos disponibles."
+        }
+      ]
     },
     {
       "template": "content-image",
@@ -757,7 +753,7 @@
       "title": "Anatomía de un SKILL.md",
       "image": {
         "src": "images/s5-2-1-anatomia-skill-md.png",
-        "alt": "Anatomía de un SKILL.md: metadata YAML arriba, instrucciones Markdown abajo"
+        "alt": "Anatomía de un archivo SKILL.md"
       },
       "facts": [
         {
@@ -802,7 +798,7 @@
       ],
       "image": {
         "src": "images/s5-3-1-subagentes-fan-out.png",
-        "alt": "Fan-out/fan-in: el agente principal reparte en subagentes paralelos y combina un resumen"
+        "alt": "Subagentes que trabajan en paralelo"
       },
       "notes": "Nivel avanzado, presentarlo como \"para cuando crezcas\". Un subagente conviene cuando una sub-tarea es pesada o genera mucho texto intermedio que nadie necesita leer: corre aparte y vuelve con el resumen. No plantearlo como opuesto de las Skills (una skill puede usar subagentes y al revés); acá se enseña qué es, sin comparaciones. El ejemplo ilustra el fan-out: 8 propuestas de proveedores, un subagente por propuesta; los 8 corren a la vez y el agente principal combina los resúmenes en la tabla comparativa. Cómo se agrega, en paralelo a las Skills: un subagente se define con una descripción (cuándo usarlo) más instrucciones; le pedís a Claude que lo arme (se gestiona en Customize, igual que una Skill) o viene dentro de un Plugin. Mantenerlo alto nivel, sin rutas de archivos ni internals de persistencia. Tiempo objetivo: ~7 min.\n\n---"
     },
@@ -859,7 +855,7 @@
       ],
       "image": {
         "src": "images/s5-5-1-ciclo-plugins-team.png",
-        "alt": "Ciclo de vida de un plugin en una cuenta Team"
+        "alt": "Ciclo de vida de un plugin en una organización"
       },
       "notes": "Slide de cierre del bloque avanzado, orientada a quien algún día administre una cuenta de equipo. En una cuenta Team, un Owner puede armar un marketplace privado de la organización y repartir workflows a todo el equipo. Recorrer el ciclo con el diagrama: el Owner crea el marketplace y sube plugins (ZIP o, mejor, sincronizando un repo de GitHub que auto-actualiza), fija cómo se instala cada uno (opcional / auto-install / provisionado), el plugin se distribuye y aparece en chat y en Cowork, y los miembros lo habilitan desde su directorio con las actualizaciones sincronizadas. Mantenerlo alto nivel: es el \"para cuando esto escala a un equipo\". Tiempo objetivo: ~4 min.\n\n---"
     },
@@ -896,7 +892,7 @@
       ],
       "image": {
         "src": "images/sc-1-1-loop-completo-atlas.png",
-        "alt": "El loop completo de Faro, disparado por Schedule cada lunes"
+        "alt": "Loop completo de Faro"
       },
       "highlights": [
         {
@@ -952,7 +948,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "7a19e10a6bfc49ea9d74ff7b504cf0712eeb479fe00d9932de1251dc96fbee91",
-    "bytes": 101653
+    "sha256": "057ef896fc8da1d588ad5c0167fa28f3582b22552a8fe967df35b11df9bba926",
+    "bytes": 101369
   }
 }

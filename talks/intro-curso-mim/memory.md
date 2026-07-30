@@ -1,12 +1,198 @@
 # memory.md — intro-curso-mim
 
-**Current step:** 7 — Render complete
-**Awaiting:** presenter review of `output/html/index.html`.
+**Current step:** complete — presentation regenerated and published with Talksmith 0.69.0
 **Topic:** Presentación de la materia — ground rules, criterio de aprobación, calendario
 **Folder:** talks/intro-curso-mim/
 **Started:** 2026-07-15
 
 ---
+
+## 2026-07-30 — Regeneración con iconos offline de Talksmith 0.69.0
+- Status: complete
+- Render: se regeneró el HTML completo con el conjunto local de iconos incorporado en Talksmith 0.69.0.
+- Icon fix: `¿Qué hace valioso al capital humano?` muestra un icono SVG de psicología; el deck no contiene el círculo placeholder que antes se veía como bullet.
+- Preserved decisions: la apertura conserva su icono oculto, los autores siguen en dos líneas, el texto de *Robot-Proof* no tiene `:` inicial y el diagrama de agencia permanece vectorial.
+- Validation: frescura y las tres pruebas del sitio pasaron; una regresión específica falla si reaparece el círculo placeholder.
+- Hosting: la regeneración se publicó y se verificó en la URL estable. La slide de capital humano contiene un icono SVG real y el deck público tiene cero círculos placeholder.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site/presentation
+
+---
+
+## 2026-07-30 — Regeneración con Talksmith 0.68.3
+- Status: complete
+- Plugin review: `0.68.3` corrige el uso de PNG en lugar de SVG dentro de los decks HTML y agrega namespaces a los identificadores internos de cada SVG para evitar colisiones.
+- Render: se regeneraron `output/slide-model.json` y `output/html/index.html`; el diagrama `La ejecución se delega. La agencia crece.` ahora se incorpora como SVG vectorial.
+- Preserved decisions: autores en dos líneas completas, apertura sin icono ni sangría adicional y explicación de `Problemas bien definidos` sin `:` inicial.
+- Validation: frescura, enumeraciones, cobertura de campos, cobertura de imágenes y las tres pruebas del sitio pasaron.
+- Hosting: la regeneración se publicó y se verificó en la URL estable. La respuesta pública contiene el diagrama SVG vectorial, los autores en líneas separadas y el texto de *Robot-Proof* sin `:` inicial.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site/presentation
+
+---
+
+## 2026-07-30 — Ajustes tipográficos finales y publicación
+- Status: complete
+- Cover: la autoría quedó en dos líneas completas: `Paulo Veiga, IAE Business School` y `Claudio Righetti, IAE Business School`.
+- Opening: se ocultó el icono automático del callout de `El futuro no va a ser...` y se eliminó el espacio lateral que generaba su sangría.
+- Robot-Proof: los tres conceptos terminan con punto y sus explicaciones comienzan directamente con mayúscula; ya no aparece `:` al inicio del cuerpo.
+- Validation: pasaron la frescura del modelo, el build del sitio y las tres pruebas de HTML. La URL pública estable fue verificada después del despliegue.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site/presentation
+
+---
+
+## 2026-07-30 — Presentación completada y publicada
+- Status: complete
+- Ask: "Let's consider the presentation completed after the publish".
+- Final correction: se eliminó `Bienvenidos.` del cuerpo de la primera slide; `Bienvenidos al trabajo aumentado` queda como única bienvenida y la tesis comienza directamente con `El futuro no va a ser...`.
+- Render: `draft.md`, `final.md`, `output/slide-model.json` y `output/html/index.html` quedaron sincronizados con Talksmith 0.68.2. El deck conserva 24 slides, autores `Paulo Veiga y Claudio Righetti`, el orden aprobado y las animaciones de enumeración.
+- Hosting: el deck se sirve como HTML directo desde `/presentation`, sin iframe contenedor. La raíz pública redirige a esa ruta y ambas respuestas fueron verificadas después del despliegue.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site
+- Learnings: no se promovió una nueva regla; las iteraciones de títulos y el ajuste de redundancia fueron decisiones específicas de este Talk. La promoción al knowledge library se omitió al cerrar la presentación.
+
+---
+
+## 2026-07-30 — Claudio Righetti agregado a la autoría
+- Status: complete
+- Author line: `Paulo Veiga y Claudio Righetti, IAE Business School` en el frontmatter del Talk y en la portada renderizada. `config/profile.md` no se modificó.
+- Render: `draft.md`, `final.md`, el modelo y el HTML se regeneraron; los recursos visuales existentes se reutilizaron.
+- Hosting: el deck se publicó directamente como `deck-authors.html`, sin iframe contenedor, y se verificó la línea de autores en el archivo público.
+- Cache note: la raíz del dominio conservó temporalmente la redirección anterior; el enlace directo actualizado es https://agentes-inteligentes-mim.pveiga244377.chatgpt.site/deck-authors.html.
+
+---
+
+## 2026-07-30 — Títulos conectados y publicación directa sin iframe
+- Status: complete
+- Titles: la pantalla global 6 pasó de `Más ejecución, más agencia` a `La ejecución se delega. La agencia crece.`; la pantalla global 9 pasó de `¿Qué delegan los líderes?` a `Entonces, ¿qué delegan primero los líderes?`. Contenido, fuentes y notas no cambiaron.
+- Render: `draft.md`, `final.md`, el modelo y el HTML se regeneraron; las comprobaciones de contenido, campos e imágenes pasaron.
+- Hosting: se eliminó el iframe contenedor. La raíz pública redirige directamente al HTML autocontenido `deck-connected-titles.html`, publicado como asset nuevo para evitar caché del CDN.
+- Verification: la URL pública resolvió al deck directo y devolvió el orden y los títulos nuevos.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site
+
+---
+
+## 2026-07-30 — Corrección de numeración global y publicación v5
+- Status: complete
+- Clarification: el presentador contaba las pantallas globales del deck, incluyendo portada y agenda de sección. La pantalla 4 era `Más ejecución, más agencia`; el pedido original movía las pantallas globales 6 y 7, no las slides internas 1.6 y 1.7.
+- Corrected order: pantalla 3 `Bienvenidos`; 4 `Human capital is not a toxic asset`; 5 `¿Qué hace valioso al capital humano?`; 6 `Más ejecución, más agencia`; 7 `La IA expande, el juicio sube de precio`; 8 `La tecnología funcionó. El valor no llegó.`; 9 `¿Qué delegan los líderes?`.
+- Render: `draft.md`, `final.md`, el modelo y el HTML se regeneraron con el orden global correcto. El diagrama de agencia se reutilizó con su nuevo identificador de slide.
+- Publishing: el CDN conservaba `deck.html` aun con query string. Se publicó el deck corregido bajo el asset nuevo `deck-global-order.html` y la página principal apunta a ese archivo. La URL pública se verificó directamente y devuelve el orden corregido.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site
+
+---
+
+## 2026-07-30 — Polish, HTML 0.68.1 y publicación pública v2
+- Status: complete
+- Ask: "Listo, aplica el cambio y publica".
+- Polish: `draft.md` se aprobó y volvió a derivarse en `final.md`. Se reutilizaron el diagrama y las dos imágenes editoriales existentes porque sus huellas no cambiaron; la portada de *Robot-Proof* se conservó. Se eliminó un diagrama generado huérfano y no quedan bloques de feedback, ASCII activo ni directivas de generación activas en el entregable.
+- Render: `html-strict` produjo 24 slides más portada con Talksmith 0.68.1. La sección 1 quedó reordenada como 1.3 → evidencia organizacional y delegación → arco de *Robot-Proof*. Los 28 elementos de las nueve slides enumerativas incluyen ahora al primer elemento en la secuencia de aparición.
+- Validation: pasaron frescura, enumeraciones, cobertura de campos, cobertura de imágenes, build del sitio y dos pruebas sobre la presentación publicada.
+- Publishing: el sitio público existente se actualizó a la versión 2 y mantiene la URL https://agentes-inteligentes-mim.pveiga244377.chatgpt.site.
+- Next: Step 8 Learnings.
+
+---
+
+## 2026-07-30 — Review: reordenamiento de las slides 1.4–1.7
+- Status: awaiting_presenter
+- Ask: "Slide 6 & 7 tiene que ir despues del 3".
+- What changed: las anteriores slides 1.6 `La tecnología funcionó. El valor no llegó.` y 1.7 `¿Qué delegan los líderes?` se movieron después de la 1.3 y ahora son 1.4 y 1.5. El arco de *Robot-Proof* pasó a 1.6 y 1.7. No se modificaron contenido, fuentes ni speaker notes.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`.
+- Render state: `final.md`, `output/slide-model.json`, `output/html/index.html` y la publicación pública siguen correspondiendo al ciclo anterior hasta volver a ejecutar Polish, Render y publicación.
+
+---
+
+## 2026-07-30 — Step 7 Render HTML strict + publicación pública
+- Status: complete
+- Ask: "Podrias publicar el html el un url publica ?"
+- Style: `html-strict`
+- Render: se regeneró `output/slide-model.json` desde el `final.md` vigente. Resultado: 24 slides modeladas más portada, 25 pantallas visibles. Las comprobaciones de frescura, enumeraciones, cobertura de campos y cobertura de imágenes pasaron.
+- Output local: `talks/intro-curso-mim/output/html/index.html`.
+- Publishing: se creó un sitio público reutilizable bajo `output/public-site/`, se validó su build y se publicó la versión 1.
+- Public URL: https://agentes-inteligentes-mim.pveiga244377.chatgpt.site
+- Next: Step 8 Learnings.
+
+## 2026-07-30 — Step 6 Polish desde Review aprobado
+- Status: complete
+- Ask: "listo. movamos todos los estadios hasta llegar a la presentacion"
+- Review closure: no había feedback abierto ni cierres sin espejar. `draft.md` quedó congelado y `final.md` se regeneró desde esa fuente.
+- Diagram pass: se encontró un diagrama. Su ASCII coincide con el render ya validado, por lo que se reutilizaron `images/s1-2-1-agentes-personas-agencia.svg/.png` y se renovó la huella sin redibujarlo.
+- Image pass: las dos directivas atmosféricas coincidían con sus huellas y reutilizaron `images/s1-1-1-aside.png` y `images/s6-2-1-aside.png`. La portada nueva `images/robot-proof-cover.jpg` quedó incorporada como aside izquierdo de la slide 1.4.
+- Final tidy-up: se reemplazó el fence ASCII por su imagen PNG, se resolvieron las dos directivas de generación, se retiraron 26 bloques/campos de feedback y cuatro restos de `Resolution:` que el helper dejó fuera de sus bloques. No quedan fences ASCII activos, directivas activas `generate-image`, campos de feedback ni referencias a formatos incompatibles.
+- Deliverable: `final.md` contiene 6 secciones y 18 slides de contenido, con 4 referencias visuales locales existentes.
+- Next: Step 7 Render requiere una elección explícita de estilo.
+
+## 2026-07-30 — Review: pasada completa de títulos
+- Status: awaiting_presenter
+- Ask: aprobar la revisión de títulos a partir del nuevo gancho de Robot-Proof.
+- What changed: se aplicó la secuencia completa acordada. En la sección 1 se renombraron 1.1, 1.2, 1.6, 1.8 y 1.9; se conservaron 1.3, 1.4, 1.5 y 1.7. También se reemplazaron los títulos genéricos de objetivos, cronograma, reglas, herramientas, evaluación, portafolio y preguntas.
+- Scope: solo cambiaron encabezados visibles y referencias activas dentro del draft. Contenido, fuentes, speaker notes e historial de feedback permanecen intactos.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`.
+
+## 2026-07-30 — Review: título de la slide 1.5
+- Status: awaiting_presenter
+- Ask: opción 1 para reemplazar `El criterio es el activo`.
+- What changed: la slide 1.5 queda titulada `¿Qué hace valioso al capital humano?`; su remate y sus notas permanecen sin cambios.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`.
+
+## 2026-07-30 — Review: título definitivo de la slide 1.4
+- Status: awaiting_presenter
+- Ask: dejar `Human capital is not a toxic asset` en la slide 1.4.
+- What changed: la slide 1.4 recuperó ese título. El contenido, la portada y la slide 1.5 permanecen sin cambios.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`.
+
+## 2026-07-30 — Review: reversión del título de Robot-Proof
+- Status: awaiting_presenter
+- Ask: "reverti"
+- What changed: se revirtió únicamente el último cambio de título. La slide 1.4 vuelve a `El valor humano empieza donde la respuesta no está clara`; las dos slides nuevas, su contenido y la portada permanecen sin cambios.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`.
+
+## 2026-07-30 — Review: título de Robot-Proof confirmado
+- Status: awaiting_presenter
+- Ask: reemplazar el título de la slide 1.4 y luego conservarlo.
+- What changed: la slide 1.4 queda titulada `Human capital is not a toxic asset`. Se incorporó el artículo `a` para que la frase sea gramaticalmente correcta en inglés; el contenido y la portada no cambiaron.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`; no quedan cierres sin registrar.
+
+## 2026-07-30 — Review: dos slides de Robot-Proof
+- Status: awaiting_presenter
+- Ask: agregar dos slides como posiciones 4 y 5; la primera con la portada de *Robot-Proof* a la izquierda y la segunda con el remate sobre capital humano “tóxico”.
+- What changed: se agregaron `1.4 El valor humano empieza donde la respuesta no está clara` y `1.5 El criterio es el activo`. La primera desarrolla problemas bien definidos, correlación frente a causalidad y realidades ambiguas. La segunda conserva como tesis proyectada la formulación acordada sobre conocimiento rutinario, metacognición, creatividad, adaptación y juicio.
+- Asset: se descargó la portada aportada por el presentador a `images/robot-proof-cover.jpg` (1015×1500) y se vinculó como imagen lateral izquierda de la slide 1.4.
+- Sources and precision: se agregó el extracto oficial de Wiley y se distinguió la cita de Ming sobre *human capital* de la síntesis en español. Se evitó la afirmación absoluta de que un modelo nunca puede razonar causalmente; el texto proyectado dice que escalar patrones no garantiza explicación causal ni transferencia cuando cambia el contexto.
+- Review bookkeeping: feedback cerrado y espejado en `config/feedback-backlog.md`; no quedan cierres sin registrar.
+- Render state: `final.md` y el HTML siguen correspondiendo al ciclo anterior. Próximo paso: revisión del presenter sobre `draft.md`.
+
+## 2026-07-30 — Reapertura a Draft / Review
+- Status: awaiting_presenter
+- Ask: "Voldamos a Draft."
+- What was decided: el Talk vuelve a Step 5 / Review y `draft.md` recupera el rol de fuente autoritativa para la próxima ronda de edición.
+- Render state: `final.md`, `output/slide-model.json` y `output/html/index.html` quedan como referencia del ciclo anterior y se consideran obsoletos hasta volver a ejecutar Polish y Render.
+- Awaiting presenter: editar `talks/intro-curso-mim/draft.md` directamente o enviar los cambios por chat.
+
+## 2026-07-30 — Step 7 Render HTML strict
+- Status: awaiting_presenter
+- Ask: "Genera le HTML"
+- Style: `html-strict`
+- What was done: regenerated `output/slide-model.json` from the current polished `final.md`, producing 22 modeled slides plus the cover (23 displayed screens), then rendered the self-contained HTML deck.
+- Model checks: freshness stamp matches `final.md`; degenerate enumeration, field coverage, and image coverage audits all passed.
+- Visual QA: checked cover, opening, the wide amplification diagram, the seven-session timeline, and Q&A in desktop and mobile-landscape viewports. The wide diagram was moved to an image-top layout and visible Markdown emphasis was removed from projected text. All 4 rendered images loaded, no slide overflow was detected, and the browser console reported no warnings or errors.
+- Output: `talks/intro-curso-mim/output/html/index.html`.
+- Awaiting presenter: review the HTML and request any content or visual adjustments before Step 8 Learnings.
+
+## 2026-07-30 — Step 6 (Polish) desde draft reabierto
+- Status: complete
+- Ask: "Listo. Movamos a la siguiente estapa"
+- Review closure: no había feedback nuevo sin estampar. Se registró en `config/feedback-backlog.md` un cierre anterior que faltaba espejar; el control final no encontró cierres sin registrar.
+- What was decided: `final.md` se volvió a derivar de `draft.md`; desde la copia, `draft.md` quedó de solo lectura. El entregable conserva 6 secciones / 16 slides.
+- Diagram pass: el único diagrama activo, `images/s1-2-1-agentes-personas-agencia.svg/.png`, coincidía con el ASCII vigente y se reutilizó; `final.md` referencia la variante PNG.
+- Image pass: se regeneraron los asides de apertura y Q&A en 1024x1536. La primera variante de apertura introdujo una silueta humana, contraria al brief; se corrigió en una segunda y última generación con composición abstracta de flujos, capas y nodos. Assets finales: `images/s1-1-1-aside.png` y `images/s6-2-1-aside.png`, con sidecars y huellas actualizadas.
+- Final tidy-up: no había feedback `[open]` para rescatar; se quitaron 24 campos de `Presenter feedback`. El helper dejó dos líneas `Resolution:` huérfanas, que se retiraron de `final.md`; el historial permanece en `draft.md` y en el backlog. La validación final no encontró fences ASCII, directivas activas `generate-image`, campos de feedback, resoluciones huérfanas ni referencias a formatos no compatibles.
+- Files created/modified: `config/feedback-backlog.md`, `talks/intro-curso-mim/final.md`, los dos PNG de aside y sus `.imgprompt`/`.imgstamp`, y `talks/intro-curso-mim/memory.md`.
+- Pending open questions: se conservan en `final.md` las decisiones de contenido todavía abiertas. Próximo paso: Step 7 Render; `output/slide-model.json` y `output/html/index.html` siguen siendo el render anterior hasta entonces.
+
+## 2026-07-30 — Reapertura a draft stage
+- Status: awaiting_presenter
+- Ask: "retomemos to draft stage."
+- What was decided: el Talk vuelve a Step 5 / Review. `draft.md` vuelve a ser la fuente autoritativa para la siguiente ronda; `final.md`, `output/slide-model.json` y `output/html/index.html` quedan como renders anteriores hasta que se re-corra Polish y Render.
+- Current draft state: `draft.md` conserva campos `Presenter feedback` y directivas `generate-image` para la apertura/bienvenida y Q&A. Los assets existentes en `images/` quedan disponibles para reutilizar o reemplazar.
+- Awaiting presenter: editar `talks/intro-curso-mim/draft.md` directamente o responder en chat con los cambios que quiere aplicar.
 
 ## 2026-07-17 — Draft return + regenerate prompt-driven images
 - Status: complete

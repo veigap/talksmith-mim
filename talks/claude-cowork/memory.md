@@ -1,7 +1,7 @@
 # memory.md — claude-cowork-funcional
 
 **Current step:** 8 — Learnings awaiting_presenter
-**Awaiting:** 2026-07-17 20:48 — "Render html-strict completo; decidir si promover learnings / cerrar."
+**Awaiting:** 2026-07-30 14:55 — "¿Qué patrones recurrentes querés promover como reglas para futuras charlas?"
 **Mode:** C (Presenter Outline)
 **Nota de merge (2026-07-15, 2do fork):** Paulo corrió en paralelo su línea completa sobre SU reestructura (density pass ~70% de las slides, Polish de cero, render html-strict; su estado decía "Step 7 Render COMPLETO", registro conservado abajo junto a su asks-log). Decisión del presentador: NUESTRO draft es el canónico; el contenido nuevo de Paulo se incorporó en round 9. PENDIENTE: su backlog registra "la charla es para la audiencia del MiM, no biomedicina" (frontmatter + 2 slides) — confirmar con el presentador antes de Polish. Los outputs de Paulo (final.md, output/html) están basados en su draft, no en el nuestro.
 <!-- registro del header paralelo de Paulo (2026-07-15): -->
@@ -514,3 +514,34 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - Nota: la guia vieja referenciaba una carpeta skills/ con las 3 Skills pre-armadas que el librarian nunca encontro en el export; la guia nueva la menciona solo como material opcional del facilitador.
 - Addendum 2026-07-28: capturas del panel de Habilidades y del menu "+" del chat (aportadas por el presentador) cableadas en 5.2; re-polish liviano (18 fences; el diagrama de caminos de 5.2 quedo doc-only al entrar las capturas) + render (modelo 5.2 con skills-panel.png + highlight del menu +). Variante OpenAI de la mision: mission-res-codex.md (ChatGPT para la Parte 1, Codex para la Parte 2), guia vieja re-banneada hacia ella. Formato de entrega de la resolucion: pendiente de decision del presentador (propuesta en chat: .md canonico, PDF por parte al cierre de cada bloque).
 - Addendum 2026-07-28 (subagentes en la mision): semilla en M4 (observar el paralelismo) + Paso 6.6 Bonus (subagente `investigador` por ticker, criterio blando, caveat: creacion a pedido NO verificada en Cowork; watch item nuevo en Open questions del draft). mission.md en espejo (M6 pasos 5-6); variante Codex con nota de no-equivalente. PDFs mission/parte2 regenerados. Nota: final.md quedo una linea atras del draft (solo el watch item de Open questions, invisible en el deck; se alinea en el proximo polish).
+
+## 2026-07-30 — Step 5 (Review) — reabierto
+- Status: complete
+- Asks log:
+  - 2026-07-30 14:45 — "¿Qué cambios querés hacer en el borrador?" → "Listo, vamos a consideralo done."
+- What was decided: El presentador pidió volver la charla al estado de borrador. `draft.md` vuelve a ser el documento operativo; `final.md`, HTML y PPTX se conservan como entregables previos y quedarán desactualizados hasta el próximo Polish/Render.
+- Key inputs: Mensaje del presentador: "Volvamos esta presentacion a draft."
+- Files created/modified: memory.md
+- Pending open questions: none.
+
+## 2026-07-30 — Step 6 (Polish)
+- Status: complete
+- Asks log:
+- What was decided: `final.md` fue regenerado desde el borrador aprobado. Se conservaron 18 diagramas vigentes, dos diagramas quedaron como documentación junto a sus capturas y el ejemplo de Instrucciones se mantuvo como bloque de texto. Se retiraron los 39 campos de feedback del documento final.
+- Key inputs: `draft.md` aprobado por el presentador el 2026-07-30.
+- Files created/modified: final.md; images/*.svg (sellos de vigencia); memory.md
+- Pending open questions: ninguna para el pulido. La elección de formato de salida sigue pendiente.
+
+## 2026-07-30 — Step 7 (Render)
+- Status: complete
+- Asks log:
+  - 2026-07-30 14:51 — "¿Querés renderizar la charla como HTML o saltear este paso y cerrar?" → 1 (`html-strict`)
+- What was decided: Render HTML estricto generado desde el `final.md` actual. Se ajustó la slide de creación de Skills para que conserve ambas capturas y se verificó la cobertura de todos los recursos visuales.
+- Key inputs: final.md; 27 recursos visuales locales.
+- Files created/modified: output/slide-model.json; output/html/index.html; memory.md
+- Pending open questions: decisión de Learnings.
+
+## 2026-07-30 — Step 8 (Learnings)
+- Status: awaiting_presenter
+- Asks log:
+  - 2026-07-30 14:55 — "¿Qué patrones recurrentes querés promover como reglas para futuras charlas?" → pending

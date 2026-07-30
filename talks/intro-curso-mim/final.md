@@ -3,7 +3,9 @@ presentation: Agentes Inteligentes — Master in Management (MiM), IAE Business 
 class: Bienvenidos
 research: research/corpus/
 description: Slides are grouped into Sections. Each Section contains one or more Slides.
-presenter: Paulo Veiga, Profesor, IAE Business School
+presenter: |-
+  Paulo Veiga, IAE Business School
+  Claudio Righetti, IAE Business School
 audience: Profesionales del dominio de negocios, no ingenieros — estudiantes del Master in Management (MiM). Sin formación técnica en AI; les interesa el impacto conceptual y práctico de la AI en la gestión y los negocios.
 duration: 2 horas
 date: 2026-08-01
@@ -14,6 +16,7 @@ date: 2026-08-01
 **Claim:** La IA y los agentes no reemplazan al manager: lo amplifican — y lo que este curso enseña no es una herramienta, sino la forma de pensar para delegar y orquestar trabajo con agentes.
 
 **Why it matters:** El panorama de herramientas cambia más rápido de lo que se puede aprender producto por producto; lo que queda es el criterio. Sin ese criterio, la IA se usa como un chat mejor; con él, el manager rediseña su propio trabajo y el de su equipo alrededor de lo que ahora puede delegar.
+
 
 ---
 
@@ -30,23 +33,23 @@ date: 2026-08-01
 - 5. Evaluación del Curso
 - 6. Cierre y Portafolios
 
+
 ---
 
 # 1. Qué pensamos y por qué
 
 **Goal of this section:** Instalar la tesis de amplificación —no reemplazo— y respaldarla con datos, para que todo lo que viene después (objetivos, misiones, herramientas) se lea como consecuencia de esa convicción y no como un temario suelto. Abre la presentación con la frase que la resume en una línea.
 
+
 ---
 
-## 1. Manos a la obra
+## 1. Bienvenidos al trabajo aumentado
 
 <!-- template: single-point -->
-<!-- aside: left ![Sistema abstracto de información para abrir el curso](images/s1-1-1-aside.png) -->
+<!-- aside: left ![Ilustración editorial abstracta sobre trabajo aumentado](images/s1-1-1-aside.png) -->
 <!-- generate-source: imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: bienvenida, comienzo de curso, managers aumentados por IA. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; gran espacio negativo blanco, formas negras sólidas como ancla, fondo coral/rojo suave o acentos coral #DA1B2E, líneas paralelas y cintas de flujo que sugieren información entrando a un sistema, planos translúcidos, composición limpia con sensación de energía contenida. Mantener creatividad abierta, pero conectar visualmente con la idea de apertura y trabajo aumentado. Evitar escena literal de aula, personas realistas, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
-
-**Bienvenidos.**
 
 **El futuro no va a ser de las empresas que simplemente usan IA. Va a ser de los managers que están aumentados por ella.**
 
@@ -65,7 +68,59 @@ Contexto de la decisión (revisión 2026-07-16): esta lámina cerraba el deck. E
 
 ---
 
-## 2. Amplificación, no reemplazo
+## 2. Human capital is not a toxic asset
+
+<!-- template: content+image -->
+<!-- aside: left ![Portada de Robot-Proof, de Vivienne Ming](images/robot-proof-cover.jpg) -->
+
+### Content
+
+Vivienne Ming parte de una advertencia: entrenamos a muchas personas para competir con la IA en el terreno donde la máquina tiene ventaja.
+
+- **Problemas bien definidos.** Cuando el objetivo, los datos y el criterio de éxito están claros, la IA puede buscar y evaluar respuestas a una escala que una persona no alcanza.
+- **Correlación no es causalidad.** Más datos permiten encontrar más patrones, pero no garantizan una explicación de por qué ocurre algo ni qué pasará cuando cambie el contexto.
+- **Realidades ambiguas.** Cuando no existe una respuesta única, el trabajo decisivo consiste en formular el problema, integrar contexto y elegir entre objetivos en tensión.
+
+### Sources
+
+- Vivienne Ming, *Robot-Proof: When Machines Have All the Answers, Build Better People* (Wiley, 2026), capítulo 1, extracto oficial: https://catalogimages.wiley.com/images/db/pdf/9781394397808.excerpt.pdf.
+- Notas aportadas por el presentador en Review, 2026-07-30: problemas bien definidos, límites de un aprendizaje basado en correlaciones y valor humano frente a realidades ambiguas.
+- Imagen: portada compartida por el presentador, preservada localmente como `images/robot-proof-cover.jpg`; original: https://i.ebayimg.com/images/g/de4AAeSw9lFp0AU1/s-l1600.jpg.
+
+### Speaker notes
+
+Presentar el libro y aclarar el encuadre: Ming no propone competir contra la IA acumulando más respuestas. Propone desarrollar capacidades que importan cuando la respuesta no viene dada.
+
+Recorrer los tres bloques de izquierda a derecha. En el primero, usar un ejemplo simple: resumir miles de documentos con una consigna clara. En el segundo, marcar la precisión técnica: escalar el aprendizaje de patrones no garantiza comprensión causal. No decir que una IA jamás podrá razonar causalmente. En el tercero, llevarlo al trabajo del manager: definir qué problema vale la pena resolver, qué restricciones cuentan y quién responde por la decisión.
+
+La transición a la próxima lámina es una pregunta: *si la IA abarata las habilidades rutinarias, ¿qué vuelve valiosa a una persona?*
+
+---
+
+## 3. ¿Qué hace valioso al capital humano?
+
+<!-- template: single-point -->
+
+### Content
+
+**El capital humano se vuelve “tóxico” cuando solo representa conocimiento y habilidades rutinarias. Su valor vuelve a crecer cuando desarrolla metacognición, creatividad, adaptación y juicio.**
+
+### Sources
+
+- Vivienne Ming, *Robot-Proof: When Machines Have All the Answers, Build Better People* (Wiley, 2026), capítulo 1: *“human capital is an increasingly toxic asset”*; la autora propone desarrollar metacognición, mindset, regulación emocional y creatividad, y describe al trabajador del futuro como un explorador creativo y adaptativo de problemas.
+- La formulación proyectada en español es una síntesis del presentador y del Editor, no una cita textual del libro.
+
+### Speaker notes
+
+Dejar la frase completa en pantalla y hacer una pausa. La expresión provocadora de Ming se refiere al capital humano que nuestras instituciones producen, no a que las personas sean tóxicas.
+
+El conocimiento rutinario pierde valor cuando una máquina puede reproducirlo a menor costo. Metacognición significa observar cómo pensamos y corregir el rumbo. Creatividad permite construir hipótesis nuevas. Adaptación permite revisar el modelo cuando cambia la realidad. Juicio permite elegir y responder por las consecuencias.
+
+Volver a la tesis de apertura: una persona aumentada usa la IA para ampliar su capacidad de acción y reserva su atención para los problemas que todavía necesitan contexto, criterio y responsabilidad.
+
+---
+
+## 4. La ejecución se delega. La agencia crece.
 
 <!-- template: content+image -->
 
@@ -73,12 +128,12 @@ Contexto de la decisión (revisión 2026-07-16): esta lámina cerraba el deck. E
 
 A medida que los agentes toman más de la ejecución, las personas ganan más agencia: más espacio para dirigir el trabajo, decidir y ser dueñas del resultado.
 
-![Los agentes toman la ejecución; las personas ganan agencia](images/s1-2-1-agentes-personas-agencia.png)
+![Agentes toman la ejecución mientras las personas ganan agencia](images/s1-4-1-agentes-personas-agencia.svg)
 <!-- ascii-source:
       AGENTES                              PERSONAS
   +-------------------+              +----------------------+
   | toman la          |              | ganan AGENCIA        |
-  | EJECUCION         |   ------->   |                      |
+  | EJECUCION         |   -------&gt;   |                      |
   |                   |              |  - dirigir           |
   |  - buscar datos   |              |  - decidir           |
   |  - resumir        |              |  - responder por     |
@@ -111,7 +166,7 @@ La frase de la "ecuación de la agencia" es de Microsoft (Work Trend Index 2026)
 
 ---
 
-## 3. La IA expande, el juicio sube de precio
+## 5. La IA expande, el juicio sube de precio
 
 ### Content
 
@@ -133,7 +188,7 @@ Contexto que no va en la slide pero conviene tener a mano (idea 4 del README): *
 
 ---
 
-## 4. El valor no llegó solo
+## 6. La tecnología funcionó. El valor no llegó.
 
 <!-- template: icon-list -->
 
@@ -168,7 +223,7 @@ Si alguien pide un número de eficiencia concreto, hay uno real y verificado en 
 
 ---
 
-## 5. ¿Qué delegan los líderes?
+## 7. Entonces, ¿qué delegan primero los líderes?
 
 ### Content
 
@@ -193,13 +248,13 @@ Estas tareas comparten lo que las hace seguras de delegar: **alto volumen, estru
 
 La tabla no es el punto: el punto es lo que las tres tareas tienen **en común**. Preguntar al aula antes de mostrar la tabla: *"¿qué creen que se delega primero?"* — casi siempre aciertan, y eso ya instala el criterio.
 
-Ninguna de las tres es una decisión de criterio. Nadie está delegando "a quién contrato" ni "qué precio pongo". Eso es exactamente la tesis de la slide 1.2 operando en la realidad de las empresas.
+Ninguna de las tres es una decisión de criterio. Nadie está delegando "a quién contrato" ni "qué precio pongo". Eso es exactamente la tesis de la slide 1.4 operando en la realidad de las empresas.
 
 Salvedad metodológica por si preguntan: la encuesta de Zapier es de C-suite de EE.UU. en empresas de 1.000+ empleados — no generaliza a PyMEs ni a otros mercados.
 
 ---
 
-## 6. La delegación sigue a la repetición
+## 8. Delegar es no volver a explicar
 
 ### Content
 
@@ -220,7 +275,7 @@ Es el puente hacia los Días 1–2 (Skills en Cowork), pero **no lo conectemos e
 
 ---
 
-## 7. Humano siempre en el loop
+## 9. Delegar no es abdicar
 
 <!-- template: big-number -->
 
@@ -256,7 +311,7 @@ Corroboración independiente para tener a mano (no va en la lámina): Bain, con 
 
 ---
 
-## 1. Foco de la materia
+## 1. La herramienta cambia. El criterio queda.
 
 <!-- template: statement -->
 
@@ -282,7 +337,7 @@ Puente hacia la siguiente slide: *"con eso en la cabeza, estos son los cinco obj
 
 ---
 
-## 2. Objetivos de Aprendizaje
+## 2. De chatear a delegar y orquestar
 
 ### Content
 
@@ -312,9 +367,10 @@ El punto 4 no nombra ninguna misión a propósito (pedido del presentador): son 
 
 **Goal of this section:** Que se lleven el mapa completo — cuándo, dónde, presencial o virtual — y que entiendan que las siete sesiones son una progresión (de chatear a delegar y orquestar), no siete temas sueltos.
 
+
 ---
 
-## 1. Siete sesiones
+## 1. Siete sesiones, un recorrido
 
 <!-- template: timeline -->
 
@@ -355,7 +411,7 @@ El arco del curso —de chatear a delegar y orquestar— **ya no tiene lámina p
 
 ---
 
-## 1. Tres reglas para trabajar juntos
+## 1. Tres reglas para que el tiempo valga
 
 <!-- template: icon-list -->
 
@@ -386,7 +442,7 @@ Puente a la slide siguiente: *"esas son las reglas de cómo trabajamos; ahora, c
 
 ---
 
-## 2. Herramientas del Curso
+## 2. Qué herramienta para qué trabajo
 
 <!-- template: icon-list -->
 
@@ -451,7 +507,7 @@ Puente a lo que viene: *"eso es lo que se llevan; ahora, cómo se evalúa y qué
 
 ---
 
-## 1. Evaluación del Curso
+## 1. Cómo se construye la nota
 
 <!-- template: stat -->
 
@@ -481,7 +537,7 @@ Pendiente antes de dictar: confirmar si el Examen Integrador de 45 minutos va en
 
 ---
 
-## 1. Cierre y Portafolios
+## 1. El portafolio se construye desde el Día 1
 
 <!-- template: process -->
 
@@ -506,10 +562,10 @@ Pendiente: la cantidad de misiones quedó deliberadamente abierta y el detalle d
 
 ---
 
-## 2. Q&A
+## 2. ¿Preguntas?
 
 <!-- template: single-point -->
-<!-- aside: left ![Flujos abstractos de apertura para preguntas y reflexión](images/s6-2-1-aside.png) -->
+<!-- aside: left ![Ilustración editorial abstracta sobre preguntas y reflexión](images/s6-2-1-aside.png) -->
 <!-- generate-source: imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: preguntas, apertura, reflexión y conversación final. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; mucho espacio negativo blanco, masas negras mínimas como ancla, acentos coral #DA1B2E, líneas paralelas, bucles o cintas de flujo que se abren y convergen, planos translúcidos que sugieren distintas capas de pensamiento, composición limpia con tensión tranquila. Mantener creatividad abierta, pero conectar visualmente con Q&A como espacio de exploración compartida. Evitar signos de pregunta literales, personas realistas, objetos reconocibles, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
@@ -541,8 +597,8 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **Uso de IA en las entregas** — el curso enseña a delegar trabajo a agentes, pero no hay política de qué está permitido en el Portafolio Grupal (40%) ni en el Examen Integrador (40%). Ninguna slide lo dice hoy.
 
 **Assets faltantes (bloquean dos pedidos del presentador de la revisión 2026-07-16):**
-- **Imagen para el slide Q&A (6.2) — generada en el pase 2026-07-17.** El presentador pidió *"una imagen a la izquierda"*. El asset actual quedó en `images/s6-2-1-aside.png`: espacio negativo blanco, masas negras mínimas, acentos coral, líneas paralelas y cintas de flujo que se abren/convergen para sugerir preguntas y reflexión, sin signos de pregunta literales ni escenas de horizonte. Se re-pinneó de `closing-hero` → `single-point`, porque `closing-hero` es full-bleed y **no** admite `aside` (`single-point` sí). **Decisión pendiente para el presentador:** ¿ok con el cambio de aspecto (de frase grande centrada a texto + columna de imagen a la izquierda)? Si preferís el hero limpio sin imagen, se revierte con un edit.
-- **Imagen para bienvenida/apertura — generada en el pase 2026-07-17.** El feedback pedía una lámina de bienvenida con imagen a la izquierda, pero también existía una decisión previa de que **"Manos a la obra" (1.1) abre la presentación**. Para no crear dos aperturas, el Editor absorbió el pedido en la slide 1.1: agregó **"Bienvenidos."**, cambió el pin de `statement` → `single-point` y usó `images/s1-1-1-aside.png`: sistema simbólico de información, planos blancos/negros, acentos coral y cintas de flujo que sugieren apertura y trabajo aumentado, sin aula literal. **Decisión pendiente para el presentador:** ¿esta absorción alcanza, o querés una lámina "Bienvenidos" separada antes de 1.1?
+- **Imagen para el slide Q&A (6.2) — generada en el pase 2026-07-17.** El presentador pidió *"una imagen a la izquierda"*. La lámina conserva una directiva **`<!-- generate-image: left | … -->`** con guía editorial abstracta para futuras regeneraciones, y el asset actual quedó en `images/s6-2-1-aside.png`: espacio negativo blanco, masas negras mínimas, acentos coral, líneas paralelas y cintas de flujo que se abren/convergen para sugerir preguntas y reflexión, sin signos de pregunta literales ni escenas de horizonte. Se re-pinneó de `closing-hero` → `single-point`, porque `closing-hero` es full-bleed y **no** admite `aside` (`single-point` sí). **Decisión pendiente para el presentador:** ¿ok con el cambio de aspecto (de frase grande centrada a texto + columna de imagen a la izquierda)? Si preferís el hero limpio sin imagen, se revierte con un edit.
+- **Imagen para bienvenida/apertura — generada en el pase 2026-07-17.** El feedback pedía una lámina de bienvenida con imagen a la izquierda, pero también existía una decisión previa de que **"Manos a la obra" (1.1) abre la presentación**. Para no crear dos aperturas, el Editor absorbió el pedido en la slide 1.1: agregó **"Bienvenidos."**, cambió el pin de `statement` → `single-point` y añadió `<!-- generate-image: left | … -->` con guía editorial abstracta para futuras regeneraciones. El asset actual quedó en `images/s1-1-1-aside.png`: sistema simbólico de información, planos blancos/negros, acentos coral y cintas de flujo que sugieren apertura y trabajo aumentado, sin aula literal. **Decisión pendiente para el presentador:** ¿esta absorción alcanza, o querés una lámina "Bienvenidos" separada antes de 1.1?
 
 **Contenido del curso todavía abierto:**
 - ¿El Examen Integrador (45 min) se toma el Día 7? Preguntado dos veces en la exploración, nunca confirmado. Afecta las slides 5.1 y 3.1.
@@ -555,13 +611,13 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - **`README.md` de la raíz del working directory no tiene registro en `research/corpus/`.** Las slides 1.1, 1.3, 1.5, 1.6, 3.1 y 6.2 lo citan como fuente, pero al vivir fuera de `research/corpus/` no tiene registro de ingest ni protección contra drift: si el README cambia, ninguna slide se entera. **Correr el librarian sobre `README.md`** para generar su registro de corpus y re-apuntar esas citas. Hasta entonces, las citas apuntan a un archivo vivo y sin versionar dentro del Talk.
 
 **Redacción y decisiones a confirmar con el presentador (revisión 2026-07-16):**
-- **Slide 1.4 "El valor no llegó solo" — se conservó el 67% vs. 32% de Microsoft.** El presentador pidió borrar la vieja slide 1.3 ("El manager es la palanca") y reemplazarla por números de impacto; la nueva lámina es de Bain, pero **retiene el 67/32** porque es la bisagra que conecta el "el arreglo es organizacional" de Bain con la tesis del deck (el manager es lo organizacional). Los +17 / +22 / +30 de Microsoft People Science 2025 sí se cortaron (ver *Cut material*). **¿Se queda el 67/32 en esa lámina, o la slide es 100% Bain?**
+- **Slide 1.6 "La tecnología funcionó. El valor no llegó." — se conservó el 67% vs. 32% de Microsoft.** El presentador pidió borrar la vieja slide 1.3 ("El manager es la palanca") y reemplazarla por números de impacto; la nueva lámina es de Bain, pero **retiene el 67/32** porque es la bisagra que conecta el "el arreglo es organizacional" de Bain con la tesis del deck (el manager es lo organizacional). Los +17 / +22 / +30 de Microsoft People Science 2025 sí se cortaron (ver *Cut material*). **¿Se queda el 67/32 en esa lámina, o la slide es 100% Bain?**
 - **Slide 1.4 — si hace falta un número de eficiencia en lámina.** El presentador pidió *"impacto en el usuario y eficiencia"*; los números de Bain son de **brecha de valor**, no de eficiencia. El único número de eficiencia **verificado** disponible es el caso **Amazon** (World Wide Watch: 26 min → 2 min por actualización de IVA, −92%, 80% de resúmenes aceptados sin modificar) — hoy está en los speaker notes de 1.4. Es un **anécdota de una sola empresa, no del panel de 951**, y el corpus advierte explícitamente que no se presente como benchmark. **¿Se sube a lámina etiquetado como caso Amazon, o se queda en notas?**
 - **Slide 1.4 — imagen candidata no usada.** El registro de Bain trae la Figura 1 (`bain-ai-budget-returns-2026.web/images/figure-1-flourish-28786844.jpg`), que es exactamente el gráfico objetivo-vs-resultado de esta lámina. **No se usó**: está en inglés, con marca Bain, y su registro sigue en `<!-- pending: process_images -->` (Fase 2 del librarian sin correr) — mismo criterio con el que la slide 1.5 dibujó su propia tabla en vez de usar los gráficos de Zapier. **¿Se evalúa tras correr la Fase 2 del librarian, o se deja la lámina sin imagen?**
-- **Slide 3.1 "Siete sesiones" — el pin cambió de `timeline` a `process`.** El presentador pidió que el texto introductorio *"vaya arriba"*; `timeline` **no tiene campo de lead** (su formato es un rail vertical de fecha + detalle, sin párrafo introductorio), así que el texto caía debajo de los 7 hitos. `process` **sí** admite un lead sobre los pasos, y las 7 sesiones son una secuencia numerada legítima. **Costo del cambio:** se pierde el rail temporal con puntos; se gana una tira de tarjetas numeradas con el texto arriba, que es lo que se pidió. **Confirmar que el idioma visual nuevo está bien**; si no, la alternativa es volver a `timeline` y aceptar el texto abajo (o cortarlo).
+- **Slide 3.1 "Siete sesiones, un recorrido" — el pin cambió de `timeline` a `process`.** El presentador pidió que el texto introductorio *"vaya arriba"*; `timeline` **no tiene campo de lead** (su formato es un rail vertical de fecha + detalle, sin párrafo introductorio), así que el texto caía debajo de los 7 hitos. `process` **sí** admite un lead sobre los pasos, y las 7 sesiones son una secuencia numerada legítima. **Costo del cambio:** se pierde el rail temporal con puntos; se gana una tira de tarjetas numeradas con el texto arriba, que es lo que se pidió. **Confirmar que el idioma visual nuevo está bien**; si no, la alternativa es volver a `timeline` y aceptar el texto abajo (o cortarlo).
 - **Slide 2.2 — "Atlas" se sacó solo de esta lámina.** El pedido (*"No mencionemos atlas sino que vamos a tener varias misiones"*) llegó sobre la slide de Objetivos y se aplicó **solo a la Sección 2**. La slide 3.1 (Cronograma) **sigue nombrando Atlas / Enterprise / Paperclip** por día, porque esa vinculación es una decisión previa deliberada (permite mapear el deck al syllabus) y el presentador no dijo "en todos lados" en este bullet — sí lo dijo, en cambio, en el de "Automatización y Análisis de Datos", que sí se aplicó globalmente. **¿Atlas también sale del cronograma?**
 - **"Lo que se llevan" (4.3) vive dentro de "Cómo trabajamos".** Ubicación mid-deck confirmada por el presentador. Pero el título de la sección (*cómo trabajamos*) no cubre del todo el contenido de la lámina (*qué se llevan*). **¿Se renombra la sección (p. ej. "Cómo trabajamos y qué se llevan"), se deja así, o la lámina se muda a otra sección?**
-- **El slide Q&A (6.2) quedó dentro de "Cierre y Portafolios".** Al eliminarse la sección Conclusions, Q&A necesitaba casa y se colgó de la última sección — cuyo título habla del cierre **del curso**, no del cierre **de la presentación**. Funciona, pero es una colisión de sentido. **¿Se deja, o Q&A merece su propia sección?**
+- **La slide "¿Preguntas?" (6.2) quedó dentro de "Cierre y Portafolios".** Al eliminarse la sección Conclusions, la slide necesitaba casa y se colgó de la última sección — cuyo título habla del cierre **del curso**, no del cierre **de la presentación**. Funciona, pero es una colisión de sentido. **¿Se deja, o merece su propia sección?**
 - **Slide 1.3, idea 1.** La redacción original y aprobada en el README es *"La IA expande **quién** puede hacer trabajo de alto valor"* (una afirmación sobre **acceso**). Las cifras que la respaldan (66% dedica más tiempo a trabajo de alto valor / 58% produce cosas nuevas) miden **cuánto** trabajo hacen los usuarios que ya usan IA, no quién accede — y son auto-reportadas. Se suavizó a *"La IA expande **cuánto** trabajo de alto valor podés hacer"* para que el titular no exceda a sus datos. **Decisión del presentador:** ¿se mantiene la versión suavizada, o se vuelve a la redacción original del README asumiendo el claim más amplio? (Si se vuelve, conviene apoyarlo con una cifra de acceso, que hoy el corpus no tiene.)
 
 **Fact-check — cifras deliberadamente NO usadas en ninguna slide.** Marcadas como no sustanciadas o directamente inexistentes. Se dejaron fuera del draft; **no deben aparecer en lámina bajo ninguna circunstancia** hasta verificarse contra un original real:
@@ -586,8 +642,8 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 - La Sección 2 tiene una slide extra no pedida ("Foco de la materia", 2.1) construida con el párrafo aprobado en la exploración. Se mantiene: es la única slide que porta la segunda mitad de la Tesis y prepara el encuadre tool-agnostic del que depende la slide 4.2.
 
 **Deuda de render corregida en el draft (2026-07-16) — para que no vuelva a aparecer:**
-- Slide 1.2 ("Amplificación, no reemplazo") estaba pinneada al template `statement`, pero `statement` **no renderiza imágenes**: su diagrama de tesis (el ASCII que Step 6 convierte en PNG) se caía en silencio. Re-pinneada a `content+image`, que sí es dueña de su imagen.
-- Slide 1.7 ("Humano siempre en el loop") estaba pinneada al template `stat`, que espera 2–4 figuras; la lámina lleva **una sola** (38%). Re-pinneada a `big-number` y el Content reordenado para que la cifra sea el primer elemento (contrato de `big-number`: `body[0]` es el número, el resto es el epígrafe).
+- Slide 1.2 ("Más ejecución, más agencia") estaba pinneada al template `statement`, pero `statement` **no renderiza imágenes**: su diagrama de tesis (el ASCII que Step 6 convierte en PNG) se caía en silencio. Re-pinneada a `content+image`, que sí es dueña de su imagen.
+- Slide 1.9 ("Delegar no es abdicar") estaba pinneada al template `stat`, que espera 2–4 figuras; la lámina lleva **una sola** (38%). Re-pinneada a `big-number` y el Content reordenado para que la cifra sea el primer elemento (contrato de `big-number`: `body[0]` es el número, el resto es el epígrafe).
 - Ambas se habían parcheado en el modelo de render, no en el draft — por eso regresaban en cada re-corrida. Ahora están arregladas en el origen.
 
 # Cut material

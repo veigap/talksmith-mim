@@ -1,1 +1,7 @@
+side: left
+
+# Original description (presenter-editable, idempotency anchor)
 imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: preguntas, apertura, reflexión y conversación final. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; mucho espacio negativo blanco, masas negras mínimas como ancla, acentos coral #DA1B2E, líneas paralelas, bucles o cintas de flujo que se abren y convergen, planos translúcidos que sugieren distintas capas de pensamiento, composición limpia con tensión tranquila. Mantener creatividad abierta, pero conectar visualmente con Q&A como espacio de exploración compartida. Evitar signos de pregunta literales, personas realistas, objetos reconocibles, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números.
+
+# Enriched generation prompt (what image generation consumes)
+Crear una ilustración editorial vectorial simbólica, vertical 2:3, para el cierre y espacio de preguntas de una presentación de business school. Evocar exploración compartida y reflexión mediante líneas, bucles y cintas de flujo que se abren, divergen y convergen, con tensión tranquila. Lenguaje gráfico plano y sofisticado, gran espacio negativo blanco, masas mínimas #3B3535 y un único acento coral #DA1B2E. Sin signos de pregunta literales, personas, objetos reconocibles, escenas, fotografía, 3D, UI, gráficos, texto, letras, números, logos, marcas de agua ni firmas.

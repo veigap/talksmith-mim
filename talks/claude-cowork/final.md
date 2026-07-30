@@ -50,7 +50,7 @@ date: Julio 2026
   - **Alucinación**: inventa con confianza.
   - **No ve el mundo del usuario**: mails, calendario, archivos, apps.
 
-![El chat de fábrica responde desde su memoria de entrenamiento y no ve el mundo del usuario](images/s1-1-1-chat-de-fabrica.png)
+![Un chat responde desde su memoria de entrenamiento](images/s1-1-1-chat-de-fabrica.png)
 <!-- ascii-source:
         EL CHAT "COMO VIENE DE FABRICA"
                                              lo que NO ve:
@@ -96,7 +96,7 @@ Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta s
 - **Chat solo** → responde de memoria. **Chat con conectores** → consulta fuentes reales antes de responder.
 - Se activa a través de la biblioteca de conectores. Muchos requieren autenticación.
 
-![Chat aislado vs chat con conectores que consulta fuentes reales](images/s2-1-1-chat-solo-vs-conectores.png)
+![Chat solo frente a chat con conectores](images/s2-1-1-chat-solo-vs-conectores.png)
 <!-- ascii-source:
    CHAT SOLO                        CHAT CON CONECTORES
 +----------------+              +----------------+
@@ -136,7 +136,7 @@ La slide instala el concepto que ordena la sección: un conector saca al chat de
 - El "buscando..." y las fuentes citadas marcan el punto de verificación.
 - Regla: si la respuesta pudo cambiar → búsqueda obligada.
 
-![La misma pregunta respondida de memoria vs con búsqueda web](images/s2-2-1-memoria-vs-busqueda.png)
+![La misma pregunta: de memoria o con búsqueda web](images/s2-2-1-memoria-vs-busqueda.png)
 <!-- ascii-source:
    la MISMA pregunta: "¿ultima version de X?"
 
@@ -178,7 +178,7 @@ Acá se fija la distinción memoria vs información viva. Con conexión, hacerlo
 - Ejemplo con la misión: el usuario pide "las noticias de YPF de esta semana" → el conector de **MT Newswires** las busca en el servicio y las devuelve al chat.
 - Un equipo técnico puede armar **conectores propios** (custom, vía MCP).
 
-![Flujo de una llamada a un conector vía MCP](images/s2-3-1-flujo-connector-mcp.png)
+![Flujo de un conector MCP](images/s2-3-1-flujo-connector-mcp.png)
 <!-- ascii-source:
 +--------+   pide datos    +-----------+   protocolo   +--------------+
 | CHAT / | --------------&gt; | Connector |  -- MCP --&gt;   | Servicio ext |
@@ -247,7 +247,7 @@ Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pant
 - Cuidado con las autorizaciones y los permisos. **Un mail enviado sin revisión humana puede generar muchos problemas.**
 - Un chat que se informa y actúa puede trabajar **solo** (sección 3).
 
-![Un conector en dos direcciones: leer información y ejecutar acciones](images/s2-5-1-conector-dos-direcciones.png)
+![Un conector puede leer y actuar](images/s2-5-1-conector-dos-direcciones.png)
 <!-- ascii-source:
         CONECTOR: dos direcciones
 
@@ -296,7 +296,7 @@ El giro de la sección: hasta acá el conector era una antena que traía info; a
 - El ejemplo: *"todos los días 8:00, resumí mi inbox, lo urgente arriba."*
 - Existe en **ChatGPT** ("tasks") y en **Claude** (claude.ai, desde el navegador).
 
-![Ciclo de una tarea programada: el reloj dispara, la tarea usa conectores y deja el resultado](images/s3-1-1-ciclo-tarea-programada.png)
+![Ciclo de una tarea programada](images/s3-1-1-ciclo-tarea-programada.png)
 <!-- ascii-source:
         TAREA PROGRAMADA (se describe UNA vez)
 
@@ -346,7 +346,7 @@ Slide-concepto de la sección, en dos mitades. Primera: describís el trabajo un
   - Las laptops **se suspenden solas** (config de energía).
 - Tareas que usan **archivos o apps locales** → corren local **siempre**.
 
-![Bifurcación de una tarea programada: ejecución local vs en la nube](images/s3-2-1-donde-corre-local-vs-nube.png)
+![Una tarea programada corre en la nube](images/s3-2-1-donde-corre-local-vs-nube.png)
 <!-- ascii-source:
    la tarea programada: ¿DONDE corre?
               |
@@ -382,7 +382,7 @@ La slide del consejo práctico que pidió el presentador: "tengan en cuenta que 
 
 ### Content
 
-![Placa de corte: fin de la parte 1, comienza la parte 2 con Claude Cowork](images/s3-3-1-placa-fin-parte-1.png)
+![Cierre de la primera parte](images/s3-3-1-placa-fin-parte-1.png)
 <!-- ascii-source:
    ______________________________________________
   |                                              |
@@ -429,7 +429,7 @@ Marcar el corte del día: acá termina el primer bloque de la clase y conviene h
 - **Claude Code**: terminal; developers.
 - **Cowork**: Claude Code hecho para ofimática y tareas que no tratan de programar. GUI de escritorio, trabajo multipaso sobre archivos reales. *El foco del resto de la charla.*
 
-![Las tres superficies de Claude sobre los mismos modelos](images/s4-1-1-tres-superficies.png)
+![Las tres superficies de Claude](images/s4-1-1-tres-superficies.png)
 <!-- ascii-source:
 +----------------+   +----------------+   +----------------+
 |   Web / Chat   |   |  Claude Code   |   |     Cowork     |
@@ -474,7 +474,7 @@ Abrir la sección conectando con el recorrido: "hasta acá, todo pasó en la sup
 - **"El nuevo Excel"**: la nueva habilidad base de oficina.
 - Anthropic: **"Claude Code para el resto de tu trabajo"**.
 
-![De Excel a las herramientas agénticas como nueva habilidad base de oficina](images/s4-2-1-excel-a-agentes.png)
+![De una tarea en planilla a un flujo con agentes](images/s4-2-1-excel-a-agentes.png)
 <!-- ascii-source:
 TRABAJO DE OFICINA: la herramienta de proposito general
 
@@ -529,7 +529,7 @@ Cerrar aterrizándolo en la audiencia: son alumnos de management y la mayoría n
 | La salida | Texto en la ventana | Archivos en el disco |
 | El rol humano | Hacer cada paso intermedio | Revisar el plan y corregir el rumbo |
 
-![Antes: chat mensaje a mensaje; ahora: agente que planifica y entrega un resultado](images/s4-3-1-chat-vs-agente.png)
+![De responder en el chat a delegar trabajo](images/s4-3-1-chat-vs-agente.png)
 <!-- ascii-source:
 ANTES (chat)                    AHORA (agente / Cowork)
 +----------+                    +------------------------+
@@ -580,7 +580,7 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
   - **Subagentes** → *delegar en paralelo.*
 - **Plugins** = capa transversal de distribución; primero las piezas para el usuario, después el equipo (sección 7).
 
-![El mapa de la charla: bloques que se apilan, con Plugins como capa transversal](images/s4-4-1-mapa-bloques.png)
+![Mapa de las piezas de Cowork](images/s4-4-1-mapa-bloques.png)
 <!-- ascii-source:
 +============== PLUGINS (capa transversal: empaquetan y distribuyen) ==============+
 ||                                                                                ||
@@ -794,7 +794,7 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 
 - El mismo texto, abierto en cualquier visor de Markdown:
 
-![El archivo .md de la slide anterior renderizado, con cada marca de sintaxis conectada a su resultado](images/s4-10-1-md-renderizado.png)
+![Un archivo Markdown renderizado](images/s4-10-1-md-renderizado.png)
 <!-- ascii-source:
 +------------------------------------------------+
 |  PULSO SEMANAL DE MERCADO                      |  <- "#" = titulo
@@ -843,7 +843,7 @@ El remate del par: el archivo de la slide anterior, ahora formateado. Recorrer l
 - Regla de bolsillo: *se edita en `.md` y se entrega en el formato que pida el jefe.*
 - En la misión: el reporte se consolida como `.md` en el Project; el mail y el tablero se generan al final.
 
-![Flujo de trabajo con la IA: fuentes → archivos .md → entrega final](images/s4-10-1-flujo-md.png)
+![Trabajar en Markdown y exportar al final](images/s4-10-1-flujo-md.png)
 <!-- ascii-source:
    FLUJO DE TRABAJO CON LA IA
 
@@ -1020,7 +1020,7 @@ La slide práctica que faltaba: el paso a paso de creación. Con conexión, hace
 
 - Un `SKILL.md` por dentro: **metadata** arriba, **instrucciones** abajo. Es el `.md` con metadata de la sección 4.
 
-![Anatomía de un SKILL.md: metadata YAML arriba, instrucciones Markdown abajo](images/s5-2-1-anatomia-skill-md.png)
+![Anatomía de un archivo SKILL.md](images/s5-2-1-anatomia-skill-md.png)
 <!-- ascii-source:
 +--------------------------------------------------------------+
 | ---                                                          |  <-- METADATA / HEADER (YAML)
@@ -1073,7 +1073,7 @@ Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el be
 - En Cowork corren "por debajo", **varios en paralelo**.
 - Se agrega como una Skill (descripción + instrucciones): se le pide a Claude, o llega en un **Plugin**.
 
-![Fan-out/fan-in: el agente principal reparte en subagentes paralelos y combina un resumen](images/s5-3-1-subagentes-fan-out.png)
+![Subagentes que trabajan en paralelo](images/s5-3-1-subagentes-fan-out.png)
 <!-- ascii-source:
                 +------------------+
                 | agente principal |
@@ -1140,7 +1140,7 @@ Abrir la sección con el giro organizacional: hasta acá cada pieza se armó par
 - En Team/Enterprise, los **Owners** gestionan los plugins de la org (Organization settings → Plugins).
 - El ciclo completo:
 
-![Ciclo de vida de un plugin en una cuenta Team](images/s5-5-1-ciclo-plugins-team.png)
+![Ciclo de vida de un plugin en una organización](images/s5-5-1-ciclo-plugins-team.png)
 <!-- ascii-source:
 +-----------------+     +------------------------+     +----------------------+
 | OWNER crea un   | --&gt; | agrega plugins:        | --&gt; | fija preferencia de  |
@@ -1187,7 +1187,7 @@ Slide de cierre del bloque avanzado, orientada a quien algún día administre un
 
 - El loop completo de Faro:
 
-![El loop completo de Faro, disparado por Schedule cada lunes](images/sc-1-1-loop-completo-atlas.png)
+![Loop completo de Faro](images/sc-1-1-loop-completo-atlas.png)
 <!-- ascii-source:
 Lunes 8:00
    |
@@ -1253,6 +1253,7 @@ Slide de cierre responsable, breve y obligatoria. Decirlo sin vueltas: Cowork si
 - Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.5) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` volvió a usarse en review 2026-07-21: es el ejemplo de Live Artifact en la slide 4.13; re-verificar su depiction junto con la otra.)
 - Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
 - **Slash commands en Cowork (slides 5.1–5.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera, y NO se releva la lista completa de comandos (alcanza con el tip de tipear `/`). Pendiente antes de la clase: probar si la Skill creada por comando también exige el Save/enable de la trampa.
+- **Subagente a pedido (bonus M6 de la misión, 2026-07-28):** la creación de un subagente `investigador` a pedido del usuario en Cowork no está verificada de primera mano (la doc lo cubre para Claude Code; en Cowork "corren por debajo"). Probar en el producto antes del workshop; si no funciona, el bonus se cae sin bloquear la misión y la slide 6.1 no cambia.
 - Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
 - **Slide 4.5; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
