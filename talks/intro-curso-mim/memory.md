@@ -1,9 +1,65 @@
 # memory.md — intro-curso-mim
 
-**Current step:** complete — presentation regenerated and published with Talksmith 0.69.0
+**Current step:** 7 — Render in_progress
 **Topic:** Presentación de la materia — ground rules, criterio de aprobación, calendario
 **Folder:** talks/intro-curso-mim/
 **Started:** 2026-07-15
+
+---
+
+## 2026-07-30 — Step 6 (Polish) reejecutado sobre el `draft.md` vigente
+- Status: complete
+- Asks log:
+  - 2026-07-30 17:31 — "Volve a polish para que se revise el final.md" → Polish reejecutado de punta a punta.
+- What was decided: `final.md` se rederivó desde el `draft.md` vigente y se revisó como entregable. El único diagrama y los dos asides atmosféricos conservaron sus recursos existentes porque sus fuentes no cambiaron. La revisión detectó residuos de continuaciones `Resolution:` que la limpieza estándar no consumía en feedback de nivel Thesis/Agenda/Sección; se corrigió la pasada para este entregable y se verificó que no quedara ningún registro de trabajo visible. Las notas de imágenes pendientes se actualizaron al estado real: ambos asides están resueltos.
+- Key inputs: `talks/intro-curso-mim/draft.md`; diagrama `images/s1-4-1-agentes-personas-agencia.{ascii,svg,png}`; asides `images/s1-1-1-aside.png` y `images/s6-1-1-aside.png` con sus sellos vigentes.
+- Files created/modified: `talks/intro-curso-mim/final.md`, `talks/intro-curso-mim/memory.md`. `draft.md` permaneció read-only.
+- Validation: 6 secciones y 13 slides de contenido; 0 feedback residual; 0 fences ASCII activas; 0 directivas de generación activas; 0 referencias de imagen con extensión incompatible. SHA-256 de `final.md`: `d9dc7fd3182a40c6def174dcf4e6acdbc4013025435d498034364029e5920395`, idéntico al que alimentó el último render HTML válido.
+- Pending open questions: se conservan las decisiones de contenido registradas en `# Open questions`; próximo paso: Step 7 Render, formato a elegir por el presentador.
+
+## 2026-07-30 — Step 6 (Polish) desde la ronda de Review de esta sesión
+- Status: complete
+- Ask: "Listo. Pasa a polish" — seguido de un pedido a futuro: "Y al finalizer, genera el HTML-string del resultado."
+- `draft.md` → `final.md`: copia verbatim hecha al inicio del paso; `draft.md` queda read-only desde entonces.
+- Anti-slop: ofrecida, el presentador respondió "No." — no se aplicó.
+- Diagram pass: 1 diagrama render-driving (`s1-4-1-agentes-personas-agencia`, slide "4. La ejecución se delega. La agencia crece.", Sección 1). El SVG/PNG ya existían en `images/` con el digest ASCII vigente (reutilizados, sin redibujar); se dispatcheó igual una crítica ciega (`talksmith:diagram-critic`) sobre el PNG — veredicto `clean` — y se persistió el critique log en `images/.critique/s1-4-1-agentes-personas-agencia.md` (no existía todavía para este slide_id). `stamp-renders` y `cleanup` corridos; `final.md` referencia el PNG (no el SVG).
+- Image pass: 2 directivas `generate-image` (bienvenida 1.1, Q&A ahora 6.1). Ambos assets ya existían de un pase anterior (`s1-1-1-aside.png`, y `s6-2-1-aside.png` que se **renombró a `s6-1-1-aside.png`** — junto con su `.imgprompt`/`.imgstamp` — porque la Sección 6 "Preguntas" quedó con una sola slide tras la restructuración de esta ronda de Review). Descripciones sin cambios → idempotencia confirmada (`prepare-render-args` reusó ambos, 0 regeneraciones). `stamp-renders` y `cleanup` corridos; ambas directivas reescritas a `aside:` + `generate-source:`.
+- Final tidy-up: `rescue-open` → sin bullets `[open]` para rescatar. Se retiraron los **21 bloques** `Presenter feedback` de `final.md` (12 en forma `### Presenter feedback` de slide + 9 en forma `**Presenter feedback:**` de Thesis/Agenda/Sección) vía script determinístico que preserva el separador `---` siguiente; verificado post-hoc: 0 ocurrencias de la cadena, separadores `---` intactos (23). Auditoría de refs de imagen: 4 refs locales, todas bajo `images/` con extensión `.png`/`.jpg` (0 `.svg`/`.webp`/`.avif`/`.heic`). Se actualizaron dos notas ahora stale en `# Open questions` / Sources del Q&A que decían "imagen pendiente" — ambas imágenes ya estaban resueltas.
+- Deliverable: `final.md` — 6 secciones, 13 slides de contenido (594 líneas). Sin campos de feedback, sin fences ASCII activos, sin directivas `generate-image` activas.
+- Files created/modified: `talks/intro-curso-mim/final.md`, `talks/intro-curso-mim/images/s6-1-1-aside.{png,imgprompt,imgstamp}` (renombrados desde `s6-2-1-*`), `talks/intro-curso-mim/images/.critique/s1-4-1-agentes-personas-agencia.md` (nuevo), `talks/intro-curso-mim/memory.md`.
+- Deuda heredada sin tocar (fuera de alcance, ya flagueada en la ronda de Review de esta sesión): referencias numéricas stale en `# Open questions` / `# Cut material` de rondas anteriores a la restructuración de hoy.
+- Next: pedido explícito del presentador de generar el render `html-strict` de `final.md` — Step 7.
+
+## 2026-07-30 — Step 7 Render HTML strict (sobre el `final.md` de esta ronda)
+- Status: complete
+- Ask: "Y al finalizer, genera el HTML-string del resultado." (pedido a futuro capturado durante Polish).
+- FILL: se derivó `output/slide-model.json` desde el `final.md` recién pulido (19 slides: 6 `section-agenda` + 13 de contenido). Cambios respecto de la vista previa de Step 5.5: la slide "La ejecución se delega. La agencia crece." pasó de `code-example` (placeholder de borrador con el ASCII crudo) a `content-image` con el PNG real; las dos slides con `generate-image` pasaron a llevar su campo `aside` con el PNG ya generado.
+- Render: `build_html.py --talk talks/intro-curso-mim` → `output/html/index.html`, 19 slides.
+- Validation: JSON válido; autores en dos líneas separadas presentes; 4 imágenes de contenido embebidas como data URIs (aside bienvenida, portada Robot-Proof, diagrama de agencia, aside Q&A); 0 referencias a `.svg` en el HTML.
+- Files created/modified: `talks/intro-curso-mim/output/slide-model.json`, `talks/intro-curso-mim/output/html/index.html`, `talks/intro-curso-mim/memory.md`.
+- Next: Step 8 Learnings (promoción opcional a `config/learnings.md` / knowledge-library).
+
+---
+
+## 2026-07-30 — Review: ronda de notas del presentador (7 bullets, 6 cerrados, 2 open)
+- Status: awaiting_presenter
+- Ask: "Revisa las notas que puse" — el presentador había editado `draft.md` directamente con bullets de feedback sin estampar.
+- Contabilidad vía `talksmith:feedback-cycle` (`find-open` → `stamp` → fix → `close` → `mirror-row`); `find-closed-unmirrored` limpio al cierre.
+- **6 bullets cerrados y aplicados:**
+  - Slide "La IA expande, el juicio sube de precio" (Sección 1) — eliminada. Contenido (66/58 y 50/46/86, Microsoft WTI 2026) archivado en Cut material.
+  - Slide "La tecnología funcionó. El valor no llegó." (Sección 1) — eliminada. Contenido (Bain 2026 + 67/32 Microsoft, incluido el caso Amazon de los speaker notes) archivado en Cut material.
+  - Slide "Delegar no es abdicar" (Sección 1) — eliminada. Contenido (38% human-in-the-loop, Zapier 2026 + corroboración de Bain) archivado en Cut material. **Sección 1 pasa de 9 a 6 slides**; slides 7 y 8 renumeradas a 5 y 6 (Entonces qué delegan primero los líderes / Delegar es no volver a explicar).
+  - Slide "Qué herramienta para qué trabajo" (Sección 4) — se quitó el item "Producción de Contenido" (NotebookLM · Gamma · Claude, archivado en Cut material) y "Automatización y Análisis de Datos" se dividió en dos filas separadas. La lámina mantiene 3 filas.
+  - Slide "Lo que se llevan" (Sección 4) — eliminada. Contenido (4 bullets) archivado en Cut material. **Sección 4 pasa de 3 a 2 slides.**
+  - Slide "Cómo se construye la nota" (Sección 5) — texto del ítem Portafolio Grupal corregido (typos: "entregando"→"entregadas", "profilio"→"portafolio", "5 MIM" interpretado como "5 minutos" por consistencia con el pitch grupal de la Sección 6) y compactado a una oración.
+- **Barrida de renumeración** aplicada en Sección 1 (headings, sin más referencias cruzadas activas a las slides eliminadas dentro de esa sección). **Nota de alcance:** las secciones `# Open questions` / `# Cut material` heredan referencias numéricas a slides de rondas anteriores a esta sesión que ya estaban desalineadas con los títulos actuales (numeración de Sección 1 previa a la incorporación del arco Robot-Proof) — esa deuda es anterior a esta ronda y no se tocó; si se quiere, vale una pasada de auditoría de referencias dedicada.
+- **2 bullets quedaron `[open]` inicialmente y se resolvieron después, en la misma sesión:**
+  - Slide "El portafolio se construye desde el Día 1" (Sección "Cierre y Portafolios"): *"Borrar este slide y seccion."* — ambiguo (la sección tenía 2 slides: esta y "¿Preguntas?"). Pregunté al presentador vía opción múltiple; eligió **"Q&A como sección propia"**. Se borró la slide y la sección; "¿Preguntas?" pasó a ser la nueva Sección 6 "Preguntas" de una sola slide, cerrando el deck. Contenido del portafolio (pitch grupal, entregables, evaluación de pares, reflexión de cierre) archivado en Cut material. Cerrado y espejado.
+  - Slide "La herramienta cambia. El criterio queda." (Sección 2): *"Creo es importante marcar que"* — bullet incompleto. El presentador completó la idea por chat: el curso es muy hands-on/práctico, con herramientas para construir agentes que resuelvan los problemas de la Sección 1, pero el foco sigue siendo el criterio y los conceptos, no la herramienta. Se agregó esa idea al Content y a speaker notes; **título cambiado a "El vehículo, no el destino"** (retoma la metáfora ya presente en las notas). Cerrado y espejado.
+- **Deck final de esta ronda: 6 secciones / 13 slides de contenido** (antes: 6 secciones / 16 slides). Sin bullets `[open]` restantes; `find-closed-unmirrored` limpio.
+- Key inputs: `draft.md` (8 bullets del presentador en total: 7 en campos `Presenter feedback`, uno detectado tarde, más la clarificación por chat de dos de ellos); `config/feedback-backlog.md`; decisión del presentador vía pregunta de opción múltiple (Sección 6) y vía chat (Sección 2, slide 1).
+- Files created/modified: `talks/intro-curso-mim/draft.md` (Sección 1: 9→6 slides; Sección 4: 3→2 slides; Sección "Cierre y Portafolios" → "Preguntas" de 2→1 slide; Agenda actualizada; contenido movido a Cut material; Open questions actualizado), `config/feedback-backlog.md` (8 filas espejadas), `talks/intro-curso-mim/memory.md`. **No modificado:** `final.md`, `output/` (siguen correspondiendo al ciclo publicado anterior; desactualizados respecto de este draft).
+- Pending open questions: todas las heredadas de rondas anteriores (escala de calificación, mínimo de asistencia, uso de IA en entregas, Día 4, Examen Integrador Día 7, marco narrativo del curso, rúbrica de evaluación de pares — ahora sin lámina propia —, y las decisiones de redacción/imagen listadas en `# Open questions` de `draft.md`). **Deuda pre-existente detectada, no corregida en esta ronda:** varias referencias numéricas en `# Open questions` / `# Cut material` (p. ej. "slide 1.4", "1.6") datan de una numeración de la Sección 1 anterior a la incorporación del arco Robot-Proof y ya no coinciden con los títulos actuales — anterior a esta sesión; valdría una auditoría de referencias dedicada.
 
 ---
 

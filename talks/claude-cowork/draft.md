@@ -1,12 +1,128 @@
 ---
 presentation: "AI Generativa - Master in Management (MiM), IAE Business School"
-class: "Claude Cowork para el día a día"
+class: "Claude CoWork + Claude Advance Chat"
 research: research/corpus/
 description: Slides are grouped into Sections. Each Section contains one or more Slides.
 presenter: Paulo Veiga, Docente de Universidad Austral
 audience: Estudiantes del Master in Management (MiM), IAE Business School. Perfil de gestión y negocios, mayormente no técnico; poca exposición previa a agentes de IA.
 duration: 120 min (clase doble)
 date: Julio 2026
+---
+
+# Apertura
+
+## 1. De qué trata esta charla
+
+### Content
+
+- Esta charla arranca en el chat de IA que la audiencia ya usa a diario y lo lleva un paso más allá: **Claude Cowork + Advance Chat**.
+- El foco es concreto: usar esas dos superficies para automatizar tareas y analizar datos en el trabajo de todos los días.
+- Todo lo que sigue construye, pieza por pieza, hacia ese objetivo.
+
+### Sources
+
+- (slide organizativa de la clase; sin claims de producto.)
+
+### Speaker notes
+
+Abrir la clase con esta slide antes de bajar al detalle: un minuto para decir de qué se trata todo lo que sigue. El foco de la charla es empezar a usar Claude Cowork y Advance Chat para automatizar tareas y analizar datos en el trabajo real. El resto de la charla arma esa capacidad pieza por pieza. Tiempo objetivo: ~1-2 min.
+
+### Presenter feedback
+
+---
+
+## 2. Claude y Anthropic
+
+### Content
+
+- **Anthropic** es una empresa de IA (Public Benefit Corporation) fundada en enero de 2021 por Dario y Daniela Amodei junto a un equipo de ex investigadores de OpenAI.
+- Misión declarada: desarrollo responsable de IA, con foco fuerte en sistemas confiables, interpretables y dirigibles ("steerable").
+- **Claude** es la familia de modelos de Anthropic, diseñada bajo el criterio "útil, inofensivo y honesto" (helpful, harmless, honest).
+
+### Sources
+
+- Anthropic, company page: https://www.anthropic.com/company; "Anthropic is an AI safety and research company... building reliable, interpretable, and steerable AI systems"; Anthropic es una Public Benefit Corporation (verificado 2026-07-30).
+- Wikipedia, "Anthropic": https://en.wikipedia.org/wiki/Anthropic; fundación en enero de 2021 por siete ex empleados de OpenAI, entre ellos Dario y Daniela Amodei (verificado 2026-07-30; fuente secundaria para el dato de fundación, no cubierto en detalle por la company page oficial).
+
+### Speaker notes
+
+Slide de contexto, corta: quién está detrás de la herramienta que van a usar toda la charla. Anthropic se fundó en 2021, con los hermanos Amodei entre sus fundadores, varios venidos de OpenAI. Es una Public Benefit Corporation: su estatuto la obliga a perseguir el desarrollo responsable de la IA, no solo el retorno financiero. Claude es su familia de modelos, con el criterio de diseño "útil, inofensivo y honesto". No hace falta profundizar en historia corporativa; alcanza con ubicar quién construye lo que van a usar. Tiempo objetivo: ~2 min.
+
+### Presenter feedback
+
+---
+
+## 3. Los sabores de Claude
+
+### Content
+
+- **Claude Code**: CLI agéntico para developers. Coding de punta a punta.
+- **Claude Cowork**: Claude instalado en la computadora, para quien no programa. Gestión de archivos y automatización del trabajo de oficina. *El ángulo de esta charla.*
+- **Claude Chat/Web** (claude.ai): el asistente conversacional de uso diario, para cualquier usuario.
+- **Claude Design**: prototipos, mockups y slides a partir de una idea, para quien no tiene formación de diseño (founders, product managers).
+
+### Sources
+
+- Anthropic, Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork; "built on the very same foundations as Claude Code" (ya citada en la Sección 4).
+- Anthropic, Introducing Claude Design by Anthropic Labs: https://www.anthropic.com/news/claude-design-anthropic-labs; lanzamiento en research preview, abril de 2026; "lets you collaborate with Claude to create polished visual work like designs, prototypes, slides, one-pagers, and more"; pensado para quien no tiene trasfondo de diseño (founders, product managers, marketers) (verificado 2026-07-30).
+- corpus/agentic-ai-deck.zip.md, "Same engine. Different surface." (distinción Code vs Cowork; slide 7.1).
+
+### Speaker notes
+
+El catálogo rápido, antes de entrar en el mapa técnico de la próxima slide. Cuatro sabores, cuatro públicos: Code para quien programa, en la terminal; Cowork para quien no programa, instalado en la computadora, el ángulo de esta charla; Chat/Web el asistente de uso diario en claude.ai, para cualquiera; Design, el más nuevo (research preview de abril de 2026), para armar prototipos, mockups y slides sin formación de diseño. No hace falta demo acá; es el mapa antes de elegir dónde se para la charla. Tiempo objetivo: ~3 min.
+
+### Presenter feedback
+
+---
+
+## 4. Las tres superficies de Claude
+
+### Content
+
+- Ya vimos los sabores de Claude. Acá el mapa de cómo se relacionan sus tres superficies:
+- **Mismos modelos Claude** en las tres caras; **Code y Cowork** comparten además la misma base técnica. Web/Chat = superficie de chat.
+- **Web/Chat**: navegador, tareas puntuales. *El punto de partida de la charla.*
+- **Claude Code**: terminal; developers.
+- **Cowork**: Claude Code hecho para ofimática y tareas que no tratan de programar. GUI de escritorio, trabajo multipaso sobre archivos reales. *El foco del resto de la charla.*
+
+```ascii
++----------------+   +----------------+   +----------------+
+|   Web / Chat   |   |  Claude Code   |   |     Cowork     |
+| superficie de  |   | terminal+Code  |   |  GUI, escritorio|
+|   chat         |   | escribir codigo|   | trabajo multipaso|
++----------------+   +----------------+   +----------------+
+        |              \________  ________/
+        |                  misma base tecnica
+        |                  archivos / Skills / MCP / loop
+        \________________   |   ________________/
+                         \  |  /
+                  +--------------------+
+                  | MISMOS MODELOS     |
+                  |     CLAUDE         |
+                  +--------------------+
+```
+<!-- ascii-note:
+intent: mostrar que las tres superficies corren sobre los mismos modelos Claude, y que Code+Cowork además comparten la misma base técnica, mientras Web/Chat es la superficie de chat de ese modelo.
+emphasize: la caja base "MISMOS MODELOS CLAUDE" como cimiento de las tres; el lazo "misma base técnica" que une Claude Code y Cowork (no Web/Chat); resaltar Cowork como el foco de la charla.
+labels: tres columnas (Web/Chat = chat, Claude Code y Cowork = misma base técnica) sobre una base de modelos Claude compartida.
+-->
+
+### Sources
+
+- corpus/agentic-ai-deck.zip.md, "Same engine. Different surface." (key claims; slide 7.1 "Claude Code vs Cowork — the close").
+- "corpus/mision - auto.zip.md", framing de arquitectura Cowork (local, GUI, sin terminal).
+- Anthropic, Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork; "built on the very same foundations as Claude Code" (confirma que Cowork comparte base con Claude Code).
+- Anthropic Engineering, Building agents with the Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk; el engine de agente común (Agent SDK) sobre el que se construyen Claude Code y Cowork.
+
+### Speaker notes
+
+Abrir conectando con la slide anterior, los sabores de Claude: mismo agente, tres caras; ahora se muestra cómo se relacionan entre sí. Es el mismo agente con tres caras; cambia la superficie y para quién está pensada. El matiz técnico, para decir y no para la slide: Cowork está construido sobre las mismas bases que Claude Code (el Claude Agent SDK), así que Code y Cowork comparten el mismo engine de agente, con los mismos archivos, las mismas Skills, el mismo MCP y el mismo loop de plan, aprobar y redirigir. Web/Chat es ese mismo modelo en una superficie de chat, sin el loop agéntico completo. Dejar claro que el resto de la charla vive en Cowork, la cara para quien no vive en una terminal. Claude Code aparece solo como contraste; no entramos en sus internals. Tiempo objetivo: ~5 min.
+
+### Presenter feedback
+
+- [closed] 2026-06-08 — "No estoy tan seguro si es correcto que es el mismo motor. Hhay distintos motores agenticos que empujan todo. Revisar esto y conformarlo con fuentes."
+  Resolution: Claim verificado y precisado: las tres superficies comparten los mismos modelos Claude; Claude Code y Cowork comparten el engine de agente (Claude Agent SDK, Cowork está construido sobre las bases de Claude Code); Web/Chat es ese modelo en superficie de chat. Reescrito el primer bullet de Content y el ASCII (base = MISMOS MODELOS CLAUDE + lazo Agent SDK Code↔Cowork) y ascii-note; añadidas dos fuentes externas de Anthropic.
+
 ---
 
 # Thesis
@@ -21,11 +137,11 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La clase parte de la herramienta de uso diario, el chat de IA, y explicita sus límites: responde de memoria de entrenamiento (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con la interfaz, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre separa las piezas avanzadas por tema, con la lógica de primero para el usuario y después para la organización: Skills (5), Subagentes (6) y Plugins en el mundo Enterprise (7). El hilo conductor es una misión concreta, "Faro", el analista de mercado virtual de la empresa Atlas, que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 a 7 (Cowork y las piezas avanzadas); una slide de corte al final de la sección 3 marca la división.
+**Narrative arc:** Antes del arranque numerado, una Apertura de cuatro slides encuadra la charla: qué se va a usar (Claude Cowork + Advance Chat, para automatizar y analizar datos en el trabajo diario), quién es Anthropic, los cuatro sabores de Claude (Code, Cowork, Chat/Web, Design) y cómo se relacionan sus tres superficies (mismos modelos; Code y Cowork con la misma base técnica). Recién ahí arranca la Sección 1: parte de la herramienta de uso diario, el chat de IA, explicita sus límites (responde de memoria de entrenamiento) y cierra con un adelanto de Advance Chat, los dos conceptos que la sección siguiente profundiza, Conectores y Search (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con el superpoder de Cowork, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre separa las piezas avanzadas por tema, con la lógica de primero para el usuario y después para la organización: Skills (5), Subagentes (6) y Plugins en el mundo Enterprise (7). El hilo conductor es una misión concreta, "Faro", el analista de mercado virtual de la empresa Atlas, que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 a 7 (Cowork y las piezas avanzadas); una slide de corte al final de la sección 3 marca la división.
 
 **Sections (in delivery order):**
 
-- 1. El chat como viene y sus límites
+- 1. Advance Chat: el chat de uso diario, llevado más lejos
 - 2. Conectores: extender el chat
 - 3. Tareas programadas: el chat trabaja solo
 - 4. Cowork: cambiar la forma de trabajar
@@ -34,14 +150,38 @@ date: Julio 2026
 - 7. Enterprise: distribuir con Plugins
 
 **Presenter feedback:**
+- [closed] 2026-07-30 — "La charla se va a llamar Claude CoWork + Claude Advance Chat"
+  Resolution: Frontmatter class: renombrado de 'Claude Cowork para el dia a dia' a 'Claude CoWork + Claude Advance Chat', verbatim segun el pedido del presentador.
 
 ---
 
-# 1. El chat como viene y sus límites
+# 1. Advance Chat: el chat de uso diario, llevado más lejos
 
-**Goal of this section:** Partir de la herramienta que la audiencia ya usa a diario, el chat de IA, y hacer explícito su límite: responde desde su memoria de entrenamiento, con información desactualizada, riesgo de alucinación y cero acceso a los datos y apps del usuario.
+**Goal of this section:** Partir de la herramienta que la audiencia ya usa a diario, el chat de IA, y hacer explícito su límite: responde desde su memoria de entrenamiento, con información desactualizada, riesgo de alucinación y cero acceso a los datos y apps del usuario. Cierra con un adelanto de Advance Chat: los dos conceptos que la sección 2 desarrolla en profundidad, Conectores y Search.
 
 **Presenter feedback:**
+
+- [closed] 2026-07-30 — "Nos falta un slide que explique y connecte con la introduccion. Este slide debe mecionar que el foco va a ser de la presentacion de introduction en talk va a ser empezar user Claude CoWork + Advance Clade Chat para poder realizar automatizacion y analysis de datos."
+  Resolution: Agregada nueva Seccion 'Apertura' (antes de Thesis, sin numerar, mismo patron que Conclusions/Open questions/Cut material) con 4 slides; la primera, 'De que trata esta charla', encuadra el foco en una linea: empezar a usar Claude Cowork + Advance Chat para automatizar tareas y analizar datos en el trabajo diario.
+- [closed] 2026-07-30 — "Vamos a agregar una slide sobre Claude and Antropic."
+  Resolution: Agregada nueva slide 'Claude y Anthropic' (Apertura, slide 2) con 3 bullets verificados: fundacion en enero de 2021 por Dario y Daniela Amodei y equipo ex-OpenAI, mision de desarrollo responsable de IA como Public Benefit Corporation, y Claude como familia de modelos bajo el criterio util/inofensivo/honesto. Se consolidaron los dos bullets casi duplicados del presentador sobre la fundacion en uno solo. Fuentes: company page oficial de Anthropic + Wikipedia (verificado 2026-07-30).
+  - Anthropic es una empresa de seguridad en IA fundada en 2021 por ex-investigadores de OpenAI. Su misión es construir sistemas de IA seguros, interpretables y confiables.
+  - Fundada en 2021: Ex-investigadores de OpenAI. Foco en seguridad e interpretabilidad de IA.
+  - Claude: El modelo de lenguaje de Anthropic. Diseñado para ser útil, inofensivo y honesto.
+  - Mencionar algo mas para que sea 3 bullets. 
+
+- [closed] 2026-07-30 — "Vamos a agregar tambien un slide sobre Claude tools y los sabores que tiene. cual es el uso de cada uno y audiencia."
+  Resolution: Agregada nueva slide 'Los sabores de Claude' (Apertura, slide 3): Claude Code (developers), Claude Cowork (knowledge workers, angulo de esta charla), Claude Chat/Web (uso diario, cualquier usuario) y Claude Design (research preview abril 2026, para quien no tiene formacion de diseno); corregido el nombre 'Claude Designer' del borrador del presentador a 'Claude Design', el nombre real y verificado del producto (fuente: anuncio oficial de Anthropic, abril 2026).
+  - Claude Code
+  - Claude CoWork
+  - Claude Chat/Web
+  - Claude Designer 
+- [closed] 2026-07-30 — "Mover ## 1. Las tres superficies de Claude despues de slide Claude tools."
+  Resolution: Movida la slide completa 'Las tres superficies de Claude' (Content, ASCII, ascii-note, Sources, Speaker notes y su feedback [closed] verbatim) de la Seccion 4 (era 4.1) a la nueva Seccion 'Apertura', como su 4ta slide, justo despues de 'Los sabores de Claude'. Seccion 4 renumerada 2-13 -> 1-12; referencias vivas a slides 4.5/4.13 en Open questions actualizadas a 4.4/4.12. Dos frases de encuadre temporal (Content: 'donde estuvimos hasta ahora'; Speaker notes: apertura 'hasta aca, todo paso en la superficie de chat') se ajustaron para la nueva posicion, ya que la slide paso de estar despues de 3 secciones de chat a ser la apertura de toda la charla; todo lo demas (ASCII, ascii-note, Sources, feedback [closed] de 2026-06-08) se preservo intacto.
+- [closed] 2026-07-30 — "El chat como viene y sus límites desaparece y es parte de una seccion advance chat."
+  Resolution: Seccion 1 renombrada de 'El chat como viene y sus limites' a '1. Advance Chat: el chat de uso diario, llevado mas lejos'; conserva verbatim la slide 'El chat responde de memoria' y su Goal se amplio para cerrar con el adelanto de Advance Chat (Conectores y Search).
+- [closed] 2026-07-30 — "Vamos a introducir un slide sobre Advance Chat capabilities mencionado que hay dos concepto que vamos a introducir: Connectores y Search"
+  Resolution: Insertada nueva slide 1.2 'Advance Chat: dos capacidades que vienen' al final de la Seccion 1 (bridge/teaser corto, sin profundizar): nombra Conectores y Search como las dos capacidades que la Seccion 2 desarrolla en profundidad.
 
 ---
 
@@ -83,6 +223,28 @@ labels: caja exterior = CHAT DE IA; caja interior = memoria de entrenamiento / f
 ### Speaker notes
 
 Arrancar desde lo conocido: pedir a mano alzada quién usó un chat de IA esta semana. Van a levantar la mano casi todos (ChatGPT, Gemini, Claude). La idea a instalar: ese chat, tal como viene, responde de memoria. Cuando le preguntás no busca nada; recuerda lo que leyó hasta su fecha de entrenamiento (knowledge cutoff). Un colega brillante que leyó muchísimo hasta una fecha y desde entonces está incomunicado. Tres consecuencias que ya sufrieron sin saberlo. Una, datos viejos: precios, noticias, versiones de software y papers posteriores al corte no existen para el modelo. Dos, inventos con cara de verdad: cifras, citas y referencias que suenan perfectas y son falsas (insistir en verificar toda salida). Tres, la más limitante para el trabajo real: no ve nada tuyo, ni mails, ni calendario, ni archivos, ni apps. Ese tercer límite abre la charla: ¿y si pudiéramos conectarlo? Tiempo objetivo: ~6 min.
+
+### Presenter feedback
+
+---
+
+## 2. Advance Chat: dos capacidades que vienen
+
+### Content
+
+- El chat de memoria tiene un techo. **Advance Chat** lo extiende con dos capacidades que recorre el resto de la charla.
+- **Conectores**: el chat deja de estar aislado y accede a fuentes reales (web, mail, calendario, documentos), y hasta actúa.
+- **Search**: el primer conector, el más universal, ya integrado en casi todos los chats. Trae información actual y cita sus fuentes.
+- Los dos conceptos se profundizan en la próxima sección.
+
+### Sources
+
+- Anthropic Support, Enabling and using web search: https://support.claude.com/en/articles/10684626-enabling-and-using-web-search; ya citada en esta sección y desarrollada en la Sección 2.
+- Claude blog, Connectors directory: https://claude.com/blog/connectors-directory; el catálogo oficial de conectores de Claude, desarrollado en la Sección 2.
+
+### Speaker notes
+
+Slide puente, corta a propósito: recién vimos que el chat de memoria tiene un techo; acá se nombra, sin desarrollar, lo que lo levanta. Dos ideas para instalar antes de seguir: Conectores (el chat deja de estar aislado) y Search (el primero y más universal de los conectores). La Sección 2 recién ahí los abre en profundidad, con demo incluida. No adelantar contenido de esa sección; el objetivo de esta slide es solo nombrar el mapa. Tiempo objetivo: ~2 min.
 
 ### Presenter feedback
 
@@ -438,63 +600,13 @@ Marcar el corte del día: acá termina el primer bloque de la clase y conviene h
 
 # 4. Cowork: cambiar la forma de trabajar
 
-**Goal of this section:** El salto grande de la charla. Cowork es Claude instalado en la computadora, trabajando sobre carpetas y archivos reales; eso cambia la forma de trabajar. Ubicar las tres superficies de Claude, pasar de chatear a delegar resultados y dominar las piezas del día a día (interfaz, Instrucciones, Projects, archivos .md, Schedule sobre carpetas reales, Live Artifacts).
+**Goal of this section:** El salto grande de la charla. Cowork es Claude instalado en la computadora, trabajando sobre carpetas y archivos reales; eso cambia la forma de trabajar. Abre con el superpoder de Cowork como herramienta de propósito general, pasa de chatear a delegar resultados y domina las piezas del día a día (interfaz, Instrucciones, Projects, archivos .md, Schedule sobre carpetas reales, Live Artifacts).
 
 **Presenter feedback:**
 
 ---
 
-## 1. Las tres superficies de Claude
-
-### Content
-
-- El chat ya quedó extendido. Ahora la IA baja a la computadora. Primero el mapa:
-- **Mismos modelos Claude** en las tres caras; **Code y Cowork** comparten además la misma base técnica. Web/Chat = superficie de chat.
-- **Web/Chat**: navegador, tareas puntuales. *Donde estuvimos hasta ahora.*
-- **Claude Code**: terminal; developers.
-- **Cowork**: Claude Code hecho para ofimática y tareas que no tratan de programar. GUI de escritorio, trabajo multipaso sobre archivos reales. *El foco del resto de la charla.*
-
-```ascii
-+----------------+   +----------------+   +----------------+
-|   Web / Chat   |   |  Claude Code   |   |     Cowork     |
-| superficie de  |   | terminal+Code  |   |  GUI, escritorio|
-|   chat         |   | escribir codigo|   | trabajo multipaso|
-+----------------+   +----------------+   +----------------+
-        |              \________  ________/
-        |                  misma base tecnica
-        |                  archivos / Skills / MCP / loop
-        \________________   |   ________________/
-                         \  |  /
-                  +--------------------+
-                  | MISMOS MODELOS     |
-                  |     CLAUDE         |
-                  +--------------------+
-```
-<!-- ascii-note:
-intent: mostrar que las tres superficies corren sobre los mismos modelos Claude, y que Code+Cowork además comparten la misma base técnica, mientras Web/Chat es la superficie de chat de ese modelo.
-emphasize: la caja base "MISMOS MODELOS CLAUDE" como cimiento de las tres; el lazo "misma base técnica" que une Claude Code y Cowork (no Web/Chat); resaltar Cowork como el foco de la charla.
-labels: tres columnas (Web/Chat = chat, Claude Code y Cowork = misma base técnica) sobre una base de modelos Claude compartida.
--->
-
-### Sources
-
-- corpus/agentic-ai-deck.zip.md, "Same engine. Different surface." (key claims; slide 7.1 "Claude Code vs Cowork — the close").
-- "corpus/mision - auto.zip.md", framing de arquitectura Cowork (local, GUI, sin terminal).
-- Anthropic, Claude Cowork (product page): https://www.anthropic.com/product/claude-cowork; "built on the very same foundations as Claude Code" (confirma que Cowork comparte base con Claude Code).
-- Anthropic Engineering, Building agents with the Claude Agent SDK: https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk; el engine de agente común (Agent SDK) sobre el que se construyen Claude Code y Cowork.
-
-### Speaker notes
-
-Abrir la sección conectando con el recorrido: "hasta acá, todo pasó en la superficie de chat; ahora cambiamos de superficie". Es el mismo agente con tres caras; cambia la superficie y para quién está pensada. El matiz técnico, para decir y no para la slide: Cowork está construido sobre las mismas bases que Claude Code (el Claude Agent SDK), así que Code y Cowork comparten el mismo engine de agente, con los mismos archivos, las mismas Skills, el mismo MCP y el mismo loop de plan, aprobar y redirigir. Web/Chat es ese mismo modelo en una superficie de chat, sin el loop agéntico completo. Dejar claro que el resto de la charla vive en Cowork, la cara para quien no vive en una terminal. Claude Code aparece solo como contraste; no entramos en sus internals. Tiempo objetivo: ~5 min.
-
-### Presenter feedback
-
-- [closed] 2026-06-08 — "No estoy tan seguro si es correcto que es el mismo motor. Hhay distintos motores agenticos que empujan todo. Revisar esto y conformarlo con fuentes."
-  Resolution: Claim verificado y precisado: las tres superficies comparten los mismos modelos Claude; Claude Code y Cowork comparten el engine de agente (Claude Agent SDK, Cowork está construido sobre las bases de Claude Code); Web/Chat es ese modelo en superficie de chat. Reescrito el primer bullet de Content y el ASCII (base = MISMOS MODELOS CLAUDE + lazo Agent SDK Code↔Cowork) y ascii-note; añadidas dos fuentes externas de Anthropic.
-
----
-
-## 2. El superpoder de Cowork: la herramienta de propósito general del knowledge worker
+## 1. El superpoder de Cowork: la herramienta de propósito general del knowledge worker
 
 ### Content
 
@@ -545,7 +657,7 @@ Cerrar aterrizándolo en la audiencia: son alumnos de management y la mayoría n
   Resolution: Compactado el Content de 1.2 al core (Cowork = herramienta de proposito general del knowledge worker / 'Claude Code para el resto de tu trabajo'; analogia 'nuevo Excel' atribuida a analistas; por que importa para bioingenieria), reduciendo de 5 bullets largos a 4 concisos. El detalle de soporte (publico, paralelo developers, 'nacido generalizando') ya vive en Speaker notes. Visual ASCII conservado.
 ---
 
-## 3. De chat a agente: el cambio de paradigma
+## 2. De chat a agente: el cambio de paradigma
 
 ### Content
 
@@ -597,7 +709,7 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
 
 ---
 
-## 4. El mapa de la charla: bloques que se apilan
+## 3. El mapa de la charla: bloques que se apilan
 
 ### Content
 
@@ -678,7 +790,7 @@ Plugins es la banda que envuelve la pila, no un bloque más: empaqueta y distrib
 
 ---
 
-## 5. (Demo time) Conozcamos la interfaz de Cowork
+## 4. (Demo time) Conozcamos la interfaz de Cowork
 
 ### Content
 
@@ -723,7 +835,7 @@ Momento de demo en vivo, de los conceptos a la app. Abrir Cowork y hacer un reco
 
 ---
 
-## 6. Instrucciones: ajustar el comportamiento sin repetir contexto
+## 5. Instrucciones: ajustar el comportamiento sin repetir contexto
 
 ### Content
 
@@ -765,7 +877,7 @@ Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada v
 
 ---
 
-## 7. Projects: un espacio de trabajo autocontenido
+## 6. Projects: un espacio de trabajo autocontenido
 
 ### Content
 
@@ -793,7 +905,7 @@ El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria.
 
 ---
 
-## 8. El selector de carpetas y el panel de contexto
+## 7. El selector de carpetas y el panel de contexto
 
 ### Content
 
@@ -820,7 +932,7 @@ Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterio
 
 ---
 
-## 9. Archivos .md: la sintaxis en un ejemplo
+## 8. Archivos .md: la sintaxis en un ejemplo
 
 ### Content
 
@@ -860,7 +972,7 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 
 ---
 
-## 10. El mismo archivo, renderizado
+## 9. El mismo archivo, renderizado
 
 ### Content
 
@@ -905,7 +1017,7 @@ El remate del par: el archivo de la slide anterior, ahora formateado. Recorrer l
 
 ---
 
-## 11. Trabajar en .md, exportar al final
+## 10. Trabajar en .md, exportar al final
 
 ### Content
 
@@ -948,7 +1060,7 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ---
 
-## 12. Schedule en Cowork: tareas programadas sobre carpetas y archivos
+## 11. Schedule en Cowork: tareas programadas sobre carpetas y archivos
 
 ### Content
 
@@ -979,7 +1091,7 @@ Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se ense�
 
 ---
 
-## 13. Artifacts y Live Artifacts: del resultado a algo compartible
+## 12. Artifacts y Live Artifacts: del resultado a algo compartible
 
 ### Content
 
@@ -1362,13 +1474,13 @@ Slide de cierre responsable, breve y obligatoria. Decirlo sin vueltas: Cowork si
 # Open questions
 
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
-- Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.5) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` volvió a usarse en review 2026-07-21: es el ejemplo de Live Artifact en la slide 4.13; re-verificar su depiction junto con la otra.)
-- Slide 4.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
+- Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.4) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` volvió a usarse en review 2026-07-21: es el ejemplo de Live Artifact en la slide 4.12; re-verificar su depiction junto con la otra.)
+- Slide 4.4 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
 - **Slash commands en Cowork (slides 5.1–5.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera, y NO se releva la lista completa de comandos (alcanza con el tip de tipear `/`). Pendiente antes de la clase: probar si la Skill creada por comando también exige el Save/enable de la trampa.
 - **Subagente a pedido (bonus M6 de la misión, 2026-07-28):** la creación de un subagente `investigador` a pedido del usuario en Cowork no está verificada de primera mano (la doc lo cubre para Claude Code; en Cowork "corren por debajo"). Probar en el producto antes del workshop; si no funciona, el bonus se cae sin bloquear la misión y la slide 6.1 no cambia.
 - Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
-- **Slide 4.5; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
+- **Slide 4.4; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
 - Nuevas URLs externas (round 3) a re-verificar en Polish si se quiere snapshot/cita estable: support.claude.com (use-skills, create-custom-skills, schedule-recurring-tasks, use-live-artifacts, manage-org-plugins, use-plugins), claude.com/blog (cowork-plugins-across-enterprise), code.claude.com/docs (sub-agents).
 - ~~URLs nuevas de round 4~~; **RESUELTO en round 5 (2026-07-09):** las 6 citas se verificaron online. Resultados: web search 10684626 OK; ChatGPT search 9237897 OK (existencia+contenido corroborados vía búsqueda; el fetch directo da 403 por bloqueo anti-bot de help.openai.com); ChatGPT tasks OK con slug canónico corregido a `10291617-tasks-in-chatgpt`; directorio de conectores: claude.ai/directory requiere login → cita reemplazada por el anuncio oficial claude.com/blog/connectors-directory + support 11176164; custom connectors 11175166 OK; modelcontextprotocol.io OK.
 - ~~Tareas programadas en el chat de Claude~~; **RESUELTO en round 5:** claude.ai SÍ tiene tareas programadas en el navegador (observación de primera mano del presentador 2026-07-09 + release notes del 7 de julio de 2026, support article 12138966: corren en la nube sin dispositivo online, beta, rollout Max-first). Slide 3.1 actualizada con Claude como ejemplo de primera clase.

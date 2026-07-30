@@ -588,3 +588,99 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "Por que el texto ': cuando el objetivo, los datos y el criterio de éxito están claros, la IA puede buscar y evaluar respuestas a una escala que una persona no alcanza.' contine ':' ?"
   resolution: Se eliminó el separador inicial de los tres cuerpos: cada concepto termina con punto y la explicación comienza directamente con mayúscula.
   tags: [slide-content, wording, punctuation]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "5. La IA expande, el juicio sube de precio"
+  feedback: "Borrar este slide"
+  resolution: Slide eliminada a pedido del presentador. Contenido completo (dos bullets con datos de Microsoft WTI 2026: 66/58 y 50/46/86) archivado en Cut material; la Sección 1 pasa de 9 a 6 slides tras esta y las otras dos eliminaciones de la ronda.
+  tags: [slide-content, remove-slide, restructure]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "6. La tecnología funcionó. El valor no llegó."
+  feedback: "Borrar este slide."
+  resolution: Slide eliminada a pedido del presentador. Contenido completo (datos de Bain 2026 y el 67/32 de Microsoft WTI 2026) archivado en Cut material.
+  tags: [slide-content, remove-slide, restructure]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "9. Delegar no es abdicar"
+  feedback: "Borrar"
+  resolution: Slide eliminada a pedido del presentador. Contenido completo (38% human-in-the-loop, Zapier 2026, y la corroboración de Bain en notas) archivado en Cut material; la Sección 1 queda en 6 slides.
+  tags: [slide-content, remove-slide, restructure]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "2. Qué herramienta para qué trabajo"
+  feedback: "borrar Producción de Contenido como item. Y parti automatizacion y analiss de datos como dos iteams."
+  resolution: Se quitó 'Producción de Contenido' como item (movido a Cut material) y 'Automatización y Análisis de Datos' se dividió en dos filas separadas: Automatización y Análisis de Datos, ambas sobre Claude Cowork. La lámina mantiene tres filas.
+  tags: [slide-content, split, cut, restructure]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "3. Lo que se llevan"
+  feedback: "Borrar este slide."
+  resolution: Slide eliminada a pedido del presentador. Contenido completo (4 bullets sobre qué se llevan los alumnos) archivado en Cut material; la Sección 4 queda en 2 slides.
+  tags: [slide-content, remove-slide, restructure]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. Cómo se construye la nota"
+  feedback: "Revisar el texto: Misiones resueltas y reflexiones del equipo que entregando a lo largo de la cursada. Presentacion de 5 MIM del profilio por el equipo.  y hacermo mas compacto."
+  resolution: Se corrigió la redacción del ítem Portafolio Grupal (errores de tipeo: 'entregando' → 'entregadas', 'profilio' → 'portafolio', '5 MIM' interpretado como '5 minutos' por consistencia con el pitch grupal de la slide 6.1) y se compactó a una sola oración.
+  tags: [compact, too-dense, slide-content, wording]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. El portafolio se construye desde el Día 1"
+  feedback: "Borrar este slide y seccion."
+  resolution: Desambiguado por el presentador: se borró la slide y la sección entera 'Cierre y Portafolios'. Contenido de la slide del portafolio archivado en Cut material. '¿Preguntas?' se convirtió en su propia sección nueva de una sola slide, cerrando el deck. El deck pasa de 6 a 6 secciones (Cierre y Portafolios → Preguntas) y de 16 a 12 slides de contenido tras toda la ronda.
+  tags: [slide-content, remove-slide, remove-section, restructure]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. El vehículo, no el destino"
+  feedback: "Creo es importante marcar que"
+  resolution: Bullet inicial incompleto, completado por el presentador en chat: el curso es muy hands-on/práctico con herramientas que ayudan a construir agentes para resolver los problemas de la Sección 1, pero el foco sigue siendo el criterio y los conceptos, no la herramienta. Se agregó esa idea al Content y se reforzó en speaker notes; el título se cambió de "La herramienta cambia. El criterio queda." a "El vehículo, no el destino" (retoma la metáfora ya presente en las notas: "Cowork es el vehículo, no el destino").
+  tags: [slide-content, rewrite, title, add-content]
+- talk: intro-curso-mim
+  date: 2026-07-30
+  location: Slide "1. El vehículo, no el destino"
+  feedback: "El texto 'El foco no es dominar una herramienta...' no es correcto. Esta el foco al reves."
+  resolution: Se invirtió el orden del Content: la frase que abre ahora cuenta qué van a hacer ("vas a construir agentes de verdad, con herramientas reales, para resolver los problemas que ya vimos"), y recién después subraya que el foco no es la herramienta sino la filosofía y el criterio. Orden confirmado explícitamente por el presentador: "Primero es contar que vamos a hacer y luego subrayar que el foco no es la herramienta." El título "El vehículo, no el destino" se mantuvo sin cambios.
+  tags: [slide-content, rewrite, bad-order]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Agenda
+  feedback: "La charla se va a llamar Claude CoWork + Claude Advance Chat"
+  resolution: Frontmatter class: renombrado de 'Claude Cowork para el dia a dia' a 'Claude CoWork + Claude Advance Chat', verbatim segun el pedido del presentador.
+  tags: [rename]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Section "1. Advance Chat: el chat de uso diario, llevado más lejos"
+  feedback: "Nos falta un slide que explique y connecte con la introduccion. Este slide debe mecionar que el foco va a ser de la presentacion de introduction en talk va a ser empezar user Claude CoWork + Advance Clade Chat para poder realizar automatizacion y analysis de datos."
+  resolution: Agregada nueva Seccion 'Apertura' (antes de Thesis, sin numerar, mismo patron que Conclusions/Open questions/Cut material) con 4 slides; la primera, 'De que trata esta charla', encuadra el foco en una linea: empezar a usar Claude Cowork + Advance Chat para automatizar tareas y analizar datos en el trabajo diario.
+  tags: [add-slide, restructure, positioning]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Section "1. Advance Chat: el chat de uso diario, llevado más lejos"
+  feedback: "Vamos a agregar una slide sobre Claude and Antropic."
+  resolution: Agregada nueva slide 'Claude y Anthropic' (Apertura, slide 2) con 3 bullets verificados: fundacion en enero de 2021 por Dario y Daniela Amodei y equipo ex-OpenAI, mision de desarrollo responsable de IA como Public Benefit Corporation, y Claude como familia de modelos bajo el criterio util/inofensivo/honesto. Se consolidaron los dos bullets casi duplicados del presentador sobre la fundacion en uno solo. Fuentes: company page oficial de Anthropic + Wikipedia (verificado 2026-07-30).
+  tags: [add-slide, accuracy, sources, compact]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Section "1. Advance Chat: el chat de uso diario, llevado más lejos"
+  feedback: "Vamos a agregar tambien un slide sobre Claude tools y los sabores que tiene. cual es el uso de cada uno y audiencia."
+  resolution: Agregada nueva slide 'Los sabores de Claude' (Apertura, slide 3): Claude Code (developers), Claude Cowork (knowledge workers, angulo de esta charla), Claude Chat/Web (uso diario, cualquier usuario) y Claude Design (research preview abril 2026, para quien no tiene formacion de diseno); corregido el nombre 'Claude Designer' del borrador del presentador a 'Claude Design', el nombre real y verificado del producto (fuente: anuncio oficial de Anthropic, abril 2026).
+  tags: [add-slide, accuracy, sources]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Section "1. Advance Chat: el chat de uso diario, llevado más lejos"
+  feedback: "Mover ## 1. Las tres superficies de Claude despues de slide Claude tools."
+  resolution: Movida la slide completa 'Las tres superficies de Claude' (Content, ASCII, ascii-note, Sources, Speaker notes y su feedback [closed] verbatim) de la Seccion 4 (era 4.1) a la nueva Seccion 'Apertura', como su 4ta slide, justo despues de 'Los sabores de Claude'. Seccion 4 renumerada 2-13 -> 1-12; referencias vivas a slides 4.5/4.13 en Open questions actualizadas a 4.4/4.12. Dos frases de encuadre temporal (Content: 'donde estuvimos hasta ahora'; Speaker notes: apertura 'hasta aca, todo paso en la superficie de chat') se ajustaron para la nueva posicion, ya que la slide paso de estar despues de 3 secciones de chat a ser la apertura de toda la charla; todo lo demas (ASCII, ascii-note, Sources, feedback [closed] de 2026-06-08) se preservo intacto.
+  tags: [move, restructure, split]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Section "1. Advance Chat: el chat de uso diario, llevado más lejos"
+  feedback: "El chat como viene y sus límites desaparece y es parte de una seccion advance chat."
+  resolution: Seccion 1 renombrada de 'El chat como viene y sus limites' a '1. Advance Chat: el chat de uso diario, llevado mas lejos'; conserva verbatim la slide 'El chat responde de memoria' y su Goal se amplio para cerrar con el adelanto de Advance Chat (Conectores y Search).
+  tags: [rename, restructure]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Section "1. Advance Chat: el chat de uso diario, llevado más lejos"
+  feedback: "Vamos a introducir un slide sobre Advance Chat capabilities mencionado que hay dos concepto que vamos a introducir: Connectores y Search"
+  resolution: Insertada nueva slide 1.2 'Advance Chat: dos capacidades que vienen' al final de la Seccion 1 (bridge/teaser corto, sin profundizar): nombra Conectores y Search como las dos capacidades que la Seccion 2 desarrolla en profundidad.
+  tags: [add-slide, roadmap]

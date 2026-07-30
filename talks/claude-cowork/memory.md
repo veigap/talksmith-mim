@@ -1,7 +1,7 @@
 # memory.md — claude-cowork-funcional
 
-**Current step:** 8 — Learnings awaiting_presenter
-**Awaiting:** 2026-07-30 14:55 — "¿Qué patrones recurrentes querés promover como reglas para futuras charlas?"
+**Current step:** 5 — Review awaiting_presenter
+**Awaiting:** 2026-07-30 16:55 — "¿Qué cambios querés hacer en el borrador?"
 **Mode:** C (Presenter Outline)
 **Nota de merge (2026-07-15, 2do fork):** Paulo corrió en paralelo su línea completa sobre SU reestructura (density pass ~70% de las slides, Polish de cero, render html-strict; su estado decía "Step 7 Render COMPLETO", registro conservado abajo junto a su asks-log). Decisión del presentador: NUESTRO draft es el canónico; el contenido nuevo de Paulo se incorporó en round 9. PENDIENTE: su backlog registra "la charla es para la audiencia del MiM, no biomedicina" (frontmatter + 2 slides) — confirmar con el presentador antes de Polish. Los outputs de Paulo (final.md, output/html) están basados en su draft, no en el nuestro.
 <!-- registro del header paralelo de Paulo (2026-07-15): -->
@@ -542,6 +542,14 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 - Pending open questions: decisión de Learnings.
 
 ## 2026-07-30 — Step 8 (Learnings)
-- Status: awaiting_presenter
+- Status: superseded (ver reapertura debajo — el presentador pidió volver a draft antes de decidir promociones)
 - Asks log:
-  - 2026-07-30 14:55 — "¿Qué patrones recurrentes querés promover como reglas para futuras charlas?" → pending
+  - 2026-07-30 14:55 — "¿Qué patrones recurrentes querés promover como reglas para futuras charlas?" → sin respuesta (superado por la reapertura)
+
+## 2026-07-30 — Reapertura a draft.md (tercera vez)
+- Status: awaiting_presenter
+- Origen: presenter-chat — "Retoma co-work presentation en draft."
+- What was decided: se reabre el flujo en Step 5 / Review sobre `draft.md`, antes de decidir las promociones de Learnings. Los artefactos ya generados (`final.md`, HTML render del 2026-07-30) quedan en disco como entregables previos; el estado operativo vuelve a `draft.md`.
+- Asks log:
+  - 2026-07-30 16:55 — "¿Qué cambios querés hacer en el borrador?" → pending
+- Awaiting: cambios nuevos en `draft.md` o señal de ready para volver a Polish/Render/Learnings.
