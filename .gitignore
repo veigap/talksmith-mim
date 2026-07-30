@@ -1,5 +1,6 @@
 # ── macOS ──────────────────────────────────────────────
 .DS_Store
+**/.DS_Store
 .AppleDouble
 .LSOverride
 ._*
@@ -53,7 +54,8 @@ venv/
 .venv/
 __pycache__/
 *.pyc
-talks/*/output/
+talks/*/output/*
+!talks/*/output/html/
 talks/*/images/.critique/
 .icons/
 .claude/settings.local.json

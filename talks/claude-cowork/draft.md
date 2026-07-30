@@ -9,7 +9,47 @@ duration: 120 min (clase doble)
 date: Julio 2026
 ---
 
-# Apertura
+# Thesis
+
+**Claim:** La charla parte del chat de IA de uso diario y lo extiende paso a paso, con conectores para que vea el mundo real del usuario y tareas programadas para que trabaje solo. El destino es Claude Cowork, donde ese mismo agente trabaja sobre carpetas y archivos reales y cambia por completo la forma de trabajar: el usuario delega resultados combinando sus piezas (archivos .md, Projects, Instrucciones, Skills y Subagentes) sin escribir una línea de código.
+
+**Why it matters:** Un agente se vuelve útil en el trabajo real cuando se le delega un resultado completo y se guía su proceso, en vez de chatearle un mensaje por vez. Quien domina esa forma de delegar automatiza horas de trabajo manual con la barrera de entrada en cero, y el camino empieza en la herramienta de uso diario.
+
+**Presenter feedback:**
+
+---
+
+# Agenda
+
+**Narrative arc:** La Introducción encuadra la clase: qué se propone (usar Claude Cowork y el chat extendido para automatizar tareas y analizar datos en el trabajo diario), quién es Anthropic, los cuatro sabores de Claude (Code, Cowork, Chat/Web, Design) y cómo se relacionan sus tres superficies (1). De ahí baja a la superficie que la audiencia ya usa, el chat, y explicita su límite: responde de memoria de entrenamiento; cierra nombrando las dos capacidades que lo extienden, Conectores y Search (2). Los conectores se abren en profundidad como concepto transversal a todas las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (3). Con el chat extendido, la automatización lo vuelve proactivo: describir un trabajo una vez, fijar cadencia y saber dónde corre (4). Una placa divisoria presenta la misión que hilvana el resto: Faro, el analista de mercado virtual de la empresa Atlas (5). Recién ahí llega el salto grande, Claude Cowork instalado en la computadora, con su superpoder como herramienta de propósito general, el paso de chatear a delegar, el mapa de piezas y el primer contacto con la interfaz (6). Las piezas se recorren una por una en secciones propias: los archivos .md como formato de trabajo y entrega (7), Projects como espacio de trabajo sobre carpetas reales (8), Instrucciones como contrato de comportamiento (9), Skills para enseñar una vez (10) y Subagentes para delegar en paralelo (11). El cierre recorre el loop completo de Faro y las advertencias de gobernanza antes de Q&A.
+
+**Sections (in delivery order):**
+
+- 1. Introducción
+- 2. Claude Desktop: el chat
+- 3. Conectores
+- 4. Automatización
+- 5. La misión
+- 6. Claude Cowork
+- 7. Knowledge & Output
+- 8. Projects
+- 9. Instrucciones
+- 10. Skills
+- 11. Subagentes
+
+**Presenter feedback:**
+- [closed] 2026-07-30 — "La charla se va a llamar Claude CoWork + Claude Advance Chat"
+  Resolution: Frontmatter class: renombrado de 'Claude Cowork para el dia a dia' a 'Claude CoWork + Claude Advance Chat', verbatim segun el pedido del presentador.
+
+---
+
+# 1. Introducción
+
+**Goal of this section:** Ubicar el terreno antes de arrancar: qué se propone la clase, quién construye la herramienta y qué es Claude Desktop, con sus superficies y sus sabores.
+
+**Presenter feedback:**
+
+---
 
 ## 1. De qué trata esta charla
 
@@ -125,39 +165,9 @@ Abrir conectando con la slide anterior, los sabores de Claude: mismo agente, tre
 
 ---
 
-# Thesis
+# 2. Claude Desktop: el chat
 
-**Claim:** La charla parte del chat de IA de uso diario y lo extiende paso a paso, con conectores para que vea el mundo real del usuario y tareas programadas para que trabaje solo. El destino es Claude Cowork, donde ese mismo agente trabaja sobre carpetas y archivos reales y cambia por completo la forma de trabajar: el usuario delega resultados combinando sus piezas (Instrucciones, Projects, archivos .md, Schedule y Live Artifacts) sin escribir una línea de código.
-
-**Why it matters:** Un agente se vuelve útil en el trabajo real cuando se le delega un resultado completo y se guía su proceso, en vez de chatearle un mensaje por vez. Quien domina esa forma de delegar automatiza horas de trabajo manual con la barrera de entrada en cero, y el camino empieza en la herramienta de uso diario.
-
-**Presenter feedback:**
-
----
-
-# Agenda
-
-**Narrative arc:** Antes del arranque numerado, una Apertura de cuatro slides encuadra la charla: qué se va a usar (Claude Cowork + Advance Chat, para automatizar y analizar datos en el trabajo diario), quién es Anthropic, los cuatro sabores de Claude (Code, Cowork, Chat/Web, Design) y cómo se relacionan sus tres superficies (mismos modelos; Code y Cowork con la misma base técnica). Recién ahí arranca la Sección 1: parte de la herramienta de uso diario, el chat de IA, explicita sus límites (responde de memoria de entrenamiento) y cierra con un adelanto de Advance Chat, los dos conceptos que la sección siguiente profundiza, Conectores y Search (1). Después lo extiende con conectores, un concepto transversal a las IAs, de la búsqueda web al mail y el calendario, y de traer información a actuar (2). Con el chat extendido, lo vuelve proactivo con tareas programadas (3). Recién ahí llega el salto grande: Claude Cowork instalado en la computadora y trabajando sobre carpetas y archivos reales, con el superpoder de Cowork, Instrucciones, Projects, el rol central de los archivos .md, Schedule sobre las carpetas y Live Artifacts (4). El cierre separa las piezas avanzadas por tema, con la lógica de primero para el usuario y después para la organización: Skills (5), Subagentes (6) y Plugins en el mundo Enterprise (7). El hilo conductor es una misión concreta, "Faro", el analista de mercado virtual de la empresa Atlas, que se arma pieza por pieza. La clase se dicta en dos partes con un corte entre ambas: la parte 1 cubre las secciones 1 a 3 (el chat extendido) y la parte 2 las secciones 4 a 7 (Cowork y las piezas avanzadas); una slide de corte al final de la sección 3 marca la división.
-
-**Sections (in delivery order):**
-
-- 1. Advance Chat: el chat de uso diario, llevado más lejos
-- 2. Conectores: extender el chat
-- 3. Tareas programadas: el chat trabaja solo
-- 4. Cowork: cambiar la forma de trabajar
-- 5. Skills: enseñar una vez
-- 6. Subagentes: delegar en paralelo
-- 7. Enterprise: distribuir con Plugins
-
-**Presenter feedback:**
-- [closed] 2026-07-30 — "La charla se va a llamar Claude CoWork + Claude Advance Chat"
-  Resolution: Frontmatter class: renombrado de 'Claude Cowork para el dia a dia' a 'Claude CoWork + Claude Advance Chat', verbatim segun el pedido del presentador.
-
----
-
-# 1. Advance Chat: el chat de uso diario, llevado más lejos
-
-**Goal of this section:** Partir de la herramienta que la audiencia ya usa a diario, el chat de IA, y hacer explícito su límite: responde desde su memoria de entrenamiento, con información desactualizada, riesgo de alucinación y cero acceso a los datos y apps del usuario. Cierra con un adelanto de Advance Chat: los dos conceptos que la sección 2 desarrolla en profundidad, Conectores y Search.
+**Goal of this section:** Partir de la superficie que la audiencia ya usa a diario, el chat, y hacer explícito su límite: responde desde su memoria de entrenamiento, con información desactualizada, riesgo de alucinación y cero acceso a los datos y apps del usuario. Cierra nombrando las dos capacidades que lo extienden: Conectores y Search.
 
 **Presenter feedback:**
 
@@ -250,7 +260,7 @@ Slide puente, corta a propósito: recién vimos que el chat de memoria tiene un 
 
 ---
 
-# 2. Conectores: extender el chat
+# 3. Conectores
 
 **Goal of this section:** Instalar el concepto de conector, válido para todas las IAs: con conectores, el chat consulta información real (búsqueda web, mail, calendario) y hasta actúa (mandar mails, agendar reuniones); sin ellos, responde de memoria. La distinción a fijar es memoria de entrenamiento vs información viva.
 
@@ -461,7 +471,7 @@ El giro de la sección: hasta acá el conector era una antena que traía info; a
 
 ---
 
-# 3. Tareas programadas: el chat trabaja solo
+# 4. Automatización
 
 **Goal of this section:** Que la audiencia entienda qué es una tarea programada (describir un trabajo una vez, fijar una cadencia, que corra sola), cómo se potencia con conectores (el resumidor semanal de mails) y la pregunta práctica antes de confiarle algo: ¿dónde corre? Local, con la computadora prendida, o nube. Todavía desde el mundo del chat.
 
@@ -562,45 +572,54 @@ La slide del consejo práctico que pidió el presentador: "tengan en cuenta que 
 
 ---
 
-## 3. Fin de la parte 1
+# 5. La misión
+
+**Goal of this section:** Presentar el hilo conductor del resto de la clase: Faro, el analista de mercado virtual de la empresa Atlas. Una sola placa divisoria, sin contenido nuevo, que fija el objetivo que las secciones siguientes arman pieza por pieza.
+
+**Presenter feedback:**
+
+---
+
+## 1. La misión: Faro
 
 ### Content
 
 ```ascii
    ______________________________________________
   |                                              |
-  |   FIN DE LA PARTE 1                          |
-  |   el chat extendido                          |
+  |   LA MISION                                  |
   |                                              |
-  |   PARTE 2                                    |
-  |   Claude Cowork                              |
+  |   FARO                                       |
+  |   el analista de mercado de Atlas            |
+  |                                              |
+  |   de aca en adelante, pieza por pieza         |
   |______________________________________________|
 ```
 <!-- ascii-note:
-intent: placa/cartel de corte entre las dos partes de la clase: cierra la parte 1 (el chat extendido) y anuncia la parte 2 (Claude Cowork). Señal visual de pausa, no un diagrama de flujo.
-emphasize: el corte en dos mitades de la placa; "FIN DE LA PARTE 1" arriba y "PARTE 2: Claude Cowork" abajo.
-labels: arriba = FIN DE LA PARTE 1 (el chat extendido); abajo = PARTE 2 (Claude Cowork).
+intent: placa divisoria que presenta la misión que hilvana el resto de la clase. Cartel, no diagrama de flujo: nombra a Faro y anuncia que se arma pieza por pieza.
+emphasize: "LA MISION" arriba y el nombre "FARO" en el centro, en el tipo más grande de la placa.
+labels: arriba = LA MISION; centro = FARO (el analista de mercado de Atlas); abajo = de acá en adelante, pieza por pieza.
 -->
 
-- La clase se dicta en dos partes. Acá termina la primera.
-- **Parte 1:** el chat, sus límites, los conectores y las tareas programadas.
-- **Parte 2:** Claude Cowork. La IA baja a la computadora y trabaja sobre carpetas y archivos reales.
+- **Faro** es el analista de mercado virtual de Atlas: sigue la actualidad del sector, arma un reporte semanal y lo deja listo para la reunión del lunes.
+- Nadie lo programa. Se arma combinando las piezas que siguen.
+- Cada sección de acá en adelante suma una pieza de Faro.
 
 ### Sources
 
-- (slide organizativa de la clase; sin claims de producto.)
+- "corpus/mision - auto.zip.md", la misión completa de punta a punta: el analista virtual, el reporte semanal y el borrador de correo antes de la reunión.
 
 ### Speaker notes
 
-Marcar el corte del día: acá termina el primer bloque de la clase y conviene hacer la pausa. Todo lo visto hasta este punto (conectores, capacidad ejecutiva, tareas programadas) pasa en el chat que la audiencia ya tiene, sin instalar nada; la primera parte de la misión de Faro se resuelve solo con estas piezas. Al volver de la pausa arranca la parte 2 con Claude Cowork, y el primer contacto con la herramienta es la Misión 0 (el escritorio del pasante), que después se retoma en la demo de la slide de interfaz. Tiempo objetivo: ~2 min + pausa.
+Placa divisoria, corta. Hasta acá se vieron capacidades sueltas: conectores, capacidad ejecutiva, tareas programadas, todo dentro del chat que la audiencia ya tiene y sin instalar nada. Esta slide le pone un destino concreto a lo que sigue. Presentar a Faro en dos frases: el analista de mercado virtual de Atlas, que sigue la actualidad del sector, consolida un reporte semanal y deja el borrador de correo listo antes de la reunión del lunes. Aclarar que nadie escribe código para armarlo: cada sección que viene aporta una pieza, y al final del día Faro está completo. Si la clase se dicta en dos bloques, este es un buen punto para la pausa. Tiempo objetivo: ~2 min.
 
 ### Presenter feedback
 
 ---
 
-# 4. Cowork: cambiar la forma de trabajar
+# 6. Claude Cowork
 
-**Goal of this section:** El salto grande de la charla. Cowork es Claude instalado en la computadora, trabajando sobre carpetas y archivos reales; eso cambia la forma de trabajar. Abre con el superpoder de Cowork como herramienta de propósito general, pasa de chatear a delegar resultados y domina las piezas del día a día (interfaz, Instrucciones, Projects, archivos .md, Schedule sobre carpetas reales, Live Artifacts).
+**Goal of this section:** El salto grande de la charla. Cowork es Claude instalado en la computadora, trabajando sobre carpetas y archivos reales; eso cambia la forma de trabajar. Ubica el superpoder de Cowork como herramienta de propósito general, el paso de chatear a delegar resultados, el mapa de piezas que se apilan y el primer contacto con la interfaz.
 
 **Presenter feedback:**
 
@@ -835,104 +854,15 @@ Momento de demo en vivo, de los conceptos a la app. Abrir Cowork y hacer un reco
 
 ---
 
-## 5. Instrucciones: ajustar el comportamiento sin repetir contexto
+# 7. Knowledge & Output
 
-### Content
+**Goal of this section:** El rol central de los archivos .md en el trabajo con Cowork: cómo se escriben, cómo se ven una vez formateados y por qué conviene trabajar en ese formato y exportar al final al que pida el destinatario.
 
-- Instrucciones = el **"contrato de trabajo"**: reglas en lenguaje natural que aplican a todo el Project.
-- Ejemplo (Faro):
-
-```text
-Sos Faro, el analista de mercado de Atlas, una empresa de
-insumos de perforación para Vaca Muerta.
-Preparás un pulso semanal para colegas NO técnicos (incluido el jefe),
-que se lee en 2 minutos antes de la reunión de los lunes.
-
-· Empresas que seguís: YPF, Vista y Tenaris.
-· Escribís en español, claro y breve, sin jerga financiera.
-  Si usás un término técnico, lo explicás en una línea.
-· REGLA DE ORO: tus reportes son informativos y de uso interno.
-  NUNCA son recomendaciones de inversión ni asesoramiento financiero.
-  Siempre incluís esa aclaración al final.
-```
-
-  Se escriben una sola vez.
-- Conviene que sean cortas y claras.
-- El lugar de las **reglas no negociables**.
-
-### Sources
-
-- corpus/agentic-ai-deck.zip.md, "the project context panel (GUI)" como lugar de las Instrucciones en Cowork; matriz de disponibilidad 3.3 (Persistent instructions, Cowork ⚠️).
-- "corpus/mision - auto.zip.md", texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo".
-
-### Speaker notes
-
-Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada vez, lo escribís una vez en las Instrucciones y queda fijo. Mostrar el texto real de las Instrucciones de Faro y destacar la regla de oro del disclaimer financiero, el tipo de regla no negociable que conviene pinear acá. Dónde viven: en el panel de contexto del Project (en la GUI). No es un archivo que edités a mano; lo escribís en el panel y queda asociado al Project. Tiempo objetivo: ~7 min.
-
-### Presenter feedback
-- [closed] 2026-06-09 — "Sacar "En Cowork viven en el panel de contexto del Project (la GUI), no en un archivo `.md` editable. Equivalen al `CLAUDE.md` de Claude Code — mismo concepto, distinto mecanismo." Dejarlo en las notas. Re-revisa que la audiencia no tiene contacto con Claude Code asi que es conveniente no connectar o mencionar en el resto de la presentacion."
-  Resolution: Removida de Content la frase 'En Cowork viven en el panel de contexto del Project (la GUI), no en un archivo .md editable. Equivalen al CLAUDE.md de Claude Code...'. Movida a Speaker notes en forma neutral ('viven en el panel de contexto del Project, no es un archivo que edites') SIN la equivalencia con Claude Code/CLAUDE.md, por la directiva de minimizar Claude Code fuera de la Seccion 1. Tambien limpiada la mencion a CLAUDE.md en Sources.
-- [closed] 2026-06-09 — "Agregar un ejemplo en el slide de que podria ser un Instructions."
-  Resolution: Agregado en Content un bloque de ejemplo concreto de Project Instructions (Atlas, de corpus/'mision - auto.zip.md'): quien es Atlas, empresas que sigue (Apple/Microsoft/Nvidia), audiencia no tecnica, tono espanol sin jerga, y la REGLA DE ORO 'nunca recomendaciones de inversion / no asesoramiento financiero'.
+**Presenter feedback:**
 
 ---
 
-## 6. Projects: un espacio de trabajo autocontenido
-
-### Content
-
-- Project = espacio de trabajo autocontenido: **carpeta propia + memoria + instrucciones**.
-- El de la misión: **"Inteligencia de Mercado Semanal"**, apuntado a la carpeta `Documentos/Faro-Mercado`.
-- Tres capas persistentes: Instrucciones · Knowledge base · Chats.
-- Los chats del Project **no comparten contexto entre sí** (solo la base de conocimiento).
-- El usuario concede las carpetas con el **explorador de archivos del sistema operativo**.
-- Buena práctica: usar una carpeta dedicada y asegurarse de que no contenga datos confidenciales.
-
-### Sources
-
-- corpus/agentic-ai-deck.zip.md, definición de "Project (Chat/Cowork)" (tres capas; chats no comparten contexto); "Working directory + permissions" (folder picker del sistema).
-- "corpus/mision - auto.zip.md", "el Proyecto le da a Atlas una carpeta propia, memoria y un lugar fijo" (Step 1.1).
-
-### Speaker notes
-
-El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Las ventajas, para desarrollar a viva voz: todo queda organizado y reutilizable. Las Instrucciones valen para todo el Project, la memoria recuerda tus correcciones y preferencias, y los archivos viven en una carpeta concreta de tu disco. En la misión, el Project "Inteligencia de Mercado Semanal" apunta a la carpeta `Documentos/Faro-Mercado`. Dos puntos prácticos. Uno: los chats no se hablan entre sí dentro del Project; si querés que recuerde algo, va a las Instrucciones o a la base de conocimiento. Dos: el control de qué carpetas toca Claude es el explorador de archivos del sistema operativo, garantía de seguridad (Cowork solo ve lo que le concedés) y límite a la vez. La slide siguiente muestra ese selector y el panel de contexto en pantalla. Tiempo objetivo: ~7 min.
-
-### Presenter feedback
-- [closed] 2026-06-09 — "Borrar no hay `settings.json` que editar."
-  Resolution: Borrada la clausula 'no hay settings.json que editar' de Content; tambien limpiadas las menciones a settings.json en Sources y Speaker notes (referencia incidental a Claude Code); queda 'lo controla el selector de carpetas del sistema operativo, no un archivo de configuracion'.
-- [closed] 2026-06-09 — "Agregar un slide donde vamos a mostrar screenshoot de el selector de archivos y contecto como screenshoot. Usa project.png que esta en images."
-  Resolution: Insertada nueva slide 2.5 'El selector de carpetas y el panel de contexto' tras Projects: como se concede una carpeta de trabajo (folder picker del sistema), donde vive el contexto del Project, y nota de seguridad (nunca conceder carpetas con datos sensibles). Cableadas ambas imagenes: images/project.png y images/context.png (ambas existen en disco).
-
----
-
-## 7. El selector de carpetas y el panel de contexto
-
-### Content
-
-- El usuario concede la carpeta con el **explorador de archivos del sistema**. Cowork no tiene acceso a nada fuera de ella salvo que le permitamos hacerlo.
-
-![Selector de carpeta de trabajo del Project](images/project.png)
-
-- El **panel de contexto**: Instrucciones + base de conocimiento + carpeta concedida.
-
-![Panel de contexto del Project](images/context.png)
-
-- Seguridad: la carpeta ES el control de privacidad. **Nunca datos sensibles, credenciales o NDA.**
-
-### Sources
-
-- corpus/agentic-ai-deck.zip.md, "Working directory + permissions" (folder picker del sistema; lo concedido define el alcance); definición del panel de contexto del Project.
-- "corpus/mision - auto.zip.md", el Project "Inteligencia de Mercado Semanal" apunta a `Documentos/Faro-Mercado` (Step 1.1).
-
-### Speaker notes
-
-Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterior contó. Mostrar las dos capturas, el explorador de archivos del sistema cuando concedés una carpeta y el panel de contexto del Project con sus capas. No saltear el mensaje de seguridad: Cowork solo ve lo que le concedés, así que la elección de carpeta ES el control de privacidad. Nunca una carpeta con datos sensibles. Aterrizarlo en la misión: Faro trabaja sobre `Documentos/Faro-Mercado`, nada más. Tiempo objetivo: ~3 min.
-
-### Presenter feedback
-
----
-
-## 8. Archivos .md: la sintaxis en un ejemplo
+## 1. Archivos .md: la sintaxis en un ejemplo
 
 ### Content
 
@@ -972,7 +902,7 @@ Beat de enseñanza propio, no un paréntesis: en el mundo de agentes el formato 
 
 ---
 
-## 9. El mismo archivo, renderizado
+## 2. El mismo archivo, renderizado
 
 ### Content
 
@@ -1017,7 +947,7 @@ El remate del par: el archivo de la slide anterior, ahora formateado. Recorrer l
 
 ---
 
-## 10. Trabajar en .md, exportar al final
+## 3. Trabajar en .md, exportar al final
 
 ### Content
 
@@ -1060,68 +990,120 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 ---
 
-## 11. Schedule en Cowork: tareas programadas sobre carpetas y archivos
+# 8. Projects
 
-### Content
+**Goal of this section:** El espacio de trabajo de Cowork: qué agrupa un Project, cómo se le concede una carpeta real del disco y dónde vive su contexto.
 
-- El concepto es el de la sección 3: una vez + cadencia → corre sola. En Cowork, además, **sobre carpetas y archivos reales**, con las Instrucciones, connectors y skills del Project.
-- Cadencias: por hora / diaria / semanal / **"Run now"**. Se gestiona desde la pestaña **Scheduled**.
-- **¿Dónde corre? Igual que en el chat (slide 3.2):** nube en beta (Max primero); sin la beta → **local: computadora prendida + app abierta**.
-- Las tareas de Cowork usan **archivos locales** → corren local. Conviene planificar con la computadora prendida.
-
-![Pestaña Scheduled en Cowork](images/schedule.png)
-
-- Faro, lunes 8:00: `buscar-accion` → `reporte-semanal` → borrador en Gmail antes de la reunión de las 9:00.
-
-### Sources
-
-- Anthropic Support, Schedule recurring tasks in Claude Cowork: https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork; versión ACTUALIZADA (verificada 2026-07-09): "Scheduled tasks run remotely, so they run on their cadence even when your computer is asleep or the Claude Desktop app is closed"; planes pagos; beta con rollout Max-first. Excepción clave para Cowork: "If a scheduled task requires local files or apps, it will only run locally".
-- Anthropic Support, Release notes (7 de julio de 2026): https://support.claude.com/en/articles/12138966; Cowork en web/mobile, sesiones remotas (beta), "scheduled tasks run with no device online", rollout empezando por Max (verificado 2026-07-09).
-- TechCrunch (2026-07-07): https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/; cobertura de prensa de la expansión y las corridas en background (encuadre de terceros).
-- corpus/agentic-ai-deck.zip.md, slide 6.1 (Scheduled tasks, Cowork proactivo). *(La caveat "app abierta" de 6.3 quedó desactualizada por el update del 7 de julio de 2026.)*
-- "corpus/mision - auto.zip.md", el flujo programado de Atlas (Step 3.3); "Run on demand" como tip de demo. *(Su caveat local también quedó desactualizada.)*
-
-### Speaker notes
-
-Slide corta a propósito: el concepto y los cuidados de dónde-corre ya se enseñaron en la sección 3; acá se muestra la forma Cowork. Abrir con el puente: "es la tarea programada que viste en el chat, pero ahora corre el agente, sobre tus carpetas, con tus Instrucciones y skills". Cada corrida abre su propia sesión fresca y avisa al terminar. Repetir el marco de la slide 3.2 en una línea: desde el update del 7 de julio de 2026 hay ejecución remota en la nube (beta, planes pagos, rollout que empieza por Max), y mientras no te llegue corre local, computadora prendida + app abierta; si estaba apagada, la corrida se saltea y se recupera al volver. El matiz propio de Cowork: como estas tareas trabajan sobre archivos del disco, caen en la excepción documentada "requiere archivos/apps locales, corre local". Para las tareas típicas de Cowork, planificar con la computadora prendida aunque tengas la beta de nube. Para la demo, usar "Run on demand" en lugar de esperar la cadencia real. Tiempo objetivo: ~5 min.
-
-### Presenter feedback
-- [closed] 2026-06-09 — "Buscar informacion sobre "corrida en la nueve" y links a esto. No lo he visto."
-  Resolution: Corregido: el Schedule de Cowork corre LOCAL (en tu computadora), no en la nube de Anthropic; solo se dispara con la maquina despierta + app abierta; si esta dormida/cerrada se saltea y corre al volver (con aviso). Aparte de una linea: existen agentes programados hosteados en la nube pero son otra cosa, fuera de alcance. Sumada la fuente de soporte (schedule-recurring-tasks). Cableada images/schedule.png. Notes actualizadas.
+**Presenter feedback:**
 
 ---
 
-## 12. Artifacts y Live Artifacts: del resultado a algo compartible
+## 1. Projects: un espacio de trabajo autocontenido
 
 ### Content
 
-- **Artifact** = salida viva en un panel lateral: HTML, gráficos, tablas, documentos.
-- **Estándar** (todos los planes): estático. **Live** (Cowork, pago): página interactiva y persistente que **se refresca con datos actuales** y guarda **versiones** (pestaña "Live artifacts").
-- Se crea desde una tarea, o desde la pestaña (**New artifact**).
-- El de la misión: el **tablero del jefe**, un Live Artifact `pulso-semanal-FECHA` que se refresca con los datos de cada semana. Su boceto es el spec:
-
-![Boceto del tablero "Pulso semanal de mercado" (dibujado por el jefe)](images/mockup-tablero.png)
-
-- Estado hoy: **NO compartibles aún** (roadmap) · **locales** (no siguen al usuario entre dispositivos) · usan los connectors aprobados **sin re-preguntar**.
+- Project = espacio de trabajo autocontenido: **carpeta propia + memoria + instrucciones**.
+- El de la misión: **"Inteligencia de Mercado Semanal"**, apuntado a la carpeta `Documentos/Faro-Mercado`.
+- Tres capas persistentes: Instrucciones · Knowledge base · Chats.
+- Los chats del Project **no comparten contexto entre sí** (solo la base de conocimiento).
+- El usuario concede las carpetas con el **explorador de archivos del sistema operativo**.
+- Buena práctica: usar una carpeta dedicada y asegurarse de que no contenga datos confidenciales.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md, definición de Artifact (dos tiers); slide 5.13 (Standard vs Advanced; Live Artifacts en Cowork); matriz 5.16 (Cowork ✓ full Artifacts + Live Artifacts).
-- "corpus/mision - auto.zip.md", el tablero `pulso-semanal-FECHA` y el boceto del jefe como spec (mockup-tablero).
-- Anthropic Support, Use Live Artifacts in Claude Cowork: https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork; realidad oficial: persisten en la pestaña Live artifacts, se refrescan con datos actuales, guardan versiones; limitaciones: locales (no en la nube), NO compartibles aún (en roadmap), usan los connectors aprobados sin volver a preguntar; dos formas de crearlos (desde una tarea o desde la pestaña).
+- corpus/agentic-ai-deck.zip.md, definición de "Project (Chat/Cowork)" (tres capas; chats no comparten contexto); "Working directory + permissions" (folder picker del sistema).
+- "corpus/mision - auto.zip.md", "el Proyecto le da a Atlas una carpeta propia, memoria y un lugar fijo" (Step 1.1).
 
 ### Speaker notes
 
-El jefe quería el reporte de dos formas: el email, que ya resolvimos con Gmail + Schedule, y una página siempre actualizada. El Live Artifact es esa página. Explicar la distinción: un Artifact estándar es una salida de un solo archivo, estática: se genera una vez y queda así; un Live Artifact persiste en la pestaña Live artifacts, se refresca con datos actuales de tus apps conectadas al abrirlo y guarda historial de versiones. Ser honesto con el estado del compartir, porque acá corregimos una confusión: hoy los Live Artifacts NO son compartibles (es del roadmap), son locales (no te siguen entre dispositivos) y usan los connectors que aprobaste sin volver a preguntar. Nota: versiones previas de este material mencionaban un "ShareDuo" con URL pública; eso NO es una capacidad de Cowork y se quitó. Tiempo objetivo: ~7 min.
+El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Las ventajas, para desarrollar a viva voz: todo queda organizado y reutilizable. Las Instrucciones valen para todo el Project, la memoria recuerda tus correcciones y preferencias, y los archivos viven en una carpeta concreta de tu disco. En la misión, el Project "Inteligencia de Mercado Semanal" apunta a la carpeta `Documentos/Faro-Mercado`. Dos puntos prácticos. Uno: los chats no se hablan entre sí dentro del Project; si querés que recuerde algo, va a las Instrucciones o a la base de conocimiento. Dos: el control de qué carpetas toca Claude es el explorador de archivos del sistema operativo, garantía de seguridad (Cowork solo ve lo que le concedés) y límite a la vez. La slide siguiente muestra ese selector y el panel de contexto en pantalla. Tiempo objetivo: ~7 min.
 
 ### Presenter feedback
-
-- [closed] 2026-06-09 — "Busca informacion sobre ShareDuo en oficial de CoWork, me parece que esto no esta en co-work. Me parece que esto es incorrecto."
-  Resolution: MAJOR FIX: removidas TODAS las referencias a ShareDuo y el mecanismo inventado share='duo' (no es capacidad de Cowork). Reescrita la realidad oficial de Live Artifacts: pagina HTML interactiva persistente en la pestania Live artifacts, se refresca con datos actuales, guarda versiones; limitaciones: local (no nube, no sigue entre dispositivos), NO compartible aun (roadmap), usa connectors aprobados sin re-preguntar; dos formas de crear. Tambien limpiada la referencia a ShareDuo en el ASCII del loop de Conclusions. Reemplazada la fuente por la URL oficial de live-artifacts; notes actualizadas.
+- [closed] 2026-06-09 — "Borrar no hay `settings.json` que editar."
+  Resolution: Borrada la clausula 'no hay settings.json que editar' de Content; tambien limpiadas las menciones a settings.json en Sources y Speaker notes (referencia incidental a Claude Code); queda 'lo controla el selector de carpetas del sistema operativo, no un archivo de configuracion'.
+- [closed] 2026-06-09 — "Agregar un slide donde vamos a mostrar screenshoot de el selector de archivos y contecto como screenshoot. Usa project.png que esta en images."
+  Resolution: Insertada nueva slide 2.5 'El selector de carpetas y el panel de contexto' tras Projects: como se concede una carpeta de trabajo (folder picker del sistema), donde vive el contexto del Project, y nota de seguridad (nunca conceder carpetas con datos sensibles). Cableadas ambas imagenes: images/project.png y images/context.png (ambas existen en disco).
 
 ---
 
-# 5. Skills: enseñar una vez
+## 2. El selector de carpetas y el panel de contexto
+
+### Content
+
+- El usuario concede la carpeta con el **explorador de archivos del sistema**. Cowork no tiene acceso a nada fuera de ella salvo que le permitamos hacerlo.
+
+![Selector de carpeta de trabajo del Project](images/project.png)
+
+- El **panel de contexto**: Instrucciones + base de conocimiento + carpeta concedida.
+
+![Panel de contexto del Project](images/context.png)
+
+- Seguridad: la carpeta ES el control de privacidad. **Nunca datos sensibles, credenciales o NDA.**
+
+### Sources
+
+- corpus/agentic-ai-deck.zip.md, "Working directory + permissions" (folder picker del sistema; lo concedido define el alcance); definición del panel de contexto del Project.
+- "corpus/mision - auto.zip.md", el Project "Inteligencia de Mercado Semanal" apunta a `Documentos/Faro-Mercado` (Step 1.1).
+
+### Speaker notes
+
+Slide de apoyo visual, corta y concreta: baja a pantalla lo que la slide anterior contó. Mostrar las dos capturas, el explorador de archivos del sistema cuando concedés una carpeta y el panel de contexto del Project con sus capas. No saltear el mensaje de seguridad: Cowork solo ve lo que le concedés, así que la elección de carpeta ES el control de privacidad. Nunca una carpeta con datos sensibles. Aterrizarlo en la misión: Faro trabaja sobre `Documentos/Faro-Mercado`, nada más. Tiempo objetivo: ~3 min.
+
+### Presenter feedback
+
+---
+
+# 9. Instrucciones
+
+**Goal of this section:** Cómo se ajusta el comportamiento del agente una sola vez, sin repetir contexto en cada pedido.
+
+**Presenter feedback:**
+
+---
+
+## 1. Instrucciones: ajustar el comportamiento sin repetir contexto
+
+### Content
+
+- Instrucciones = el **"contrato de trabajo"**: reglas en lenguaje natural que aplican a todo el Project.
+- Ejemplo (Faro):
+
+```text
+Sos Faro, el analista de mercado de Atlas, una empresa de
+insumos de perforación para Vaca Muerta.
+Preparás un pulso semanal para colegas NO técnicos (incluido el jefe),
+que se lee en 2 minutos antes de la reunión de los lunes.
+
+· Empresas que seguís: YPF, Vista y Tenaris.
+· Escribís en español, claro y breve, sin jerga financiera.
+  Si usás un término técnico, lo explicás en una línea.
+· REGLA DE ORO: tus reportes son informativos y de uso interno.
+  NUNCA son recomendaciones de inversión ni asesoramiento financiero.
+  Siempre incluís esa aclaración al final.
+```
+
+  Se escriben una sola vez.
+- Conviene que sean cortas y claras.
+- El lugar de las **reglas no negociables**.
+
+### Sources
+
+- corpus/agentic-ai-deck.zip.md, "the project context panel (GUI)" como lugar de las Instrucciones en Cowork; matriz de disponibilidad 3.3 (Persistent instructions, Cowork ⚠️).
+- "corpus/mision - auto.zip.md", texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo".
+
+### Speaker notes
+
+Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada vez, lo escribís una vez en las Instrucciones y queda fijo. Mostrar el texto real de las Instrucciones de Faro y destacar la regla de oro del disclaimer financiero, el tipo de regla no negociable que conviene pinear acá. Dónde viven: en el panel de contexto del Project (en la GUI). No es un archivo que edités a mano; lo escribís en el panel y queda asociado al Project. Tiempo objetivo: ~7 min.
+
+### Presenter feedback
+- [closed] 2026-06-09 — "Sacar "En Cowork viven en el panel de contexto del Project (la GUI), no en un archivo `.md` editable. Equivalen al `CLAUDE.md` de Claude Code — mismo concepto, distinto mecanismo." Dejarlo en las notas. Re-revisa que la audiencia no tiene contacto con Claude Code asi que es conveniente no connectar o mencionar en el resto de la presentacion."
+  Resolution: Removida de Content la frase 'En Cowork viven en el panel de contexto del Project (la GUI), no en un archivo .md editable. Equivalen al CLAUDE.md de Claude Code...'. Movida a Speaker notes en forma neutral ('viven en el panel de contexto del Project, no es un archivo que edites') SIN la equivalencia con Claude Code/CLAUDE.md, por la directiva de minimizar Claude Code fuera de la Seccion 1. Tambien limpiada la mencion a CLAUDE.md en Sources.
+- [closed] 2026-06-09 — "Agregar un ejemplo en el slide de que podria ser un Instructions."
+  Resolution: Agregado en Content un bloque de ejemplo concreto de Project Instructions (Atlas, de corpus/'mision - auto.zip.md'): quien es Atlas, empresas que sigue (Apple/Microsoft/Nvidia), audiencia no tecnica, tono espanol sin jerga, y la REGLA DE ORO 'nunca recomendaciones de inversion / no asesoramiento financiero'.
+
+---
+
+# 10. Skills
 
 **Goal of this section:** Enseñarle a Claude tareas reutilizables: qué es una Skill, cómo se crea en Cowork (el menú Agregar del panel de Habilidades, el comando `/skill-creator` y la trampa del Save; el ZIP importa una existente) y la anatomía del SKILL.md.
 
@@ -1266,9 +1248,9 @@ Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el be
 
 ---
 
-# 6. Subagentes: delegar en paralelo
+# 11. Subagentes
 
-**Goal of this section:** La segunda pieza avanzada, con sección propia: qué es un Subagente, para qué tipo de sub-tarea conviene y cómo se agrega.
+**Goal of this section:** La pieza avanzada del cierre: qué es un Subagente, para qué tipo de sub-tarea conviene y cómo se agrega.
 
 **Presenter feedback:**
 
@@ -1318,85 +1300,6 @@ Nivel avanzado, presentarlo como "para cuando crezcas". Un subagente conviene cu
 ### Presenter feedback
 - [closed] 2026-06-09 — "Agregar como se agrega un agente."
   Resolution: Agregado beat 'Como se agrega un subagente' en Content (alto nivel): se define como una Skill (descripcion de cuando usarlo + instrucciones); le pedis a Claude que lo arme (se gestiona en Customize) o viene dentro de un Plugin; sin rutas de archivo ni internals. Reescrito el bullet 'En Cowork' (quitada la referencia a config /agents de Claude Code). Sumada fuente de docs de Subagents.
-
----
-
-# 7. Enterprise: distribuir con Plugins
-
-**Goal of this section:** El cierre organizacional: hasta acá las piezas se armaron para el usuario; los Plugins las empaquetan y las distribuyen a un equipo, con el ciclo de vida en cuentas Team/Enterprise.
-
-**Presenter feedback:**
-
----
-
-## 1. Plugins: empaquetar y distribuir un workflow completo
-
-### Content
-
-- **Plugin** = la unidad de distribución: empaqueta Skills + agentes + connectors en una instalación. *"Ship the whole thing."*
-- Ejemplo con la misión: un plugin "Faro" que empaqueta las tres Skills (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) más el conector de noticias; el equipo lo instala y tiene el flujo completo.
-- En Cowork se instalan desde un **marketplace** en la GUI; lo que traen funciona en Chat y en Cowork.
-- Dónde: marketplaces oficiales de Anthropic y de la comunidad.
-
-### Sources
-
-- corpus/agentic-ai-deck.zip.md, definición de Plugin ("Ship the whole thing"; "the way to get a skill into Cowork"); slide 4.5 (caveat de project-skills en Cowork); matriz 5.11 (Cowork ✓ GUI marketplace); slide 5.10 (marketplaces).
-
-### Speaker notes
-
-Abrir la sección con el giro organizacional: hasta acá cada pieza se armó para el usuario; esta sección las lleva al equipo. La idea central es el empaquetado: cuando un workflow madura (varias skills, connectors, agentes, incluso hooks y MCP), un Plugin lo vuelve instalable como paquete. El punto para Cowork: la forma robusta de distribuir una skill o un agente a otros es dentro de un plugin. Para usar una Skill en Cowork, el usuario la habilita como skill de usuario (Customize → Skills) o la recibe dentro de un plugin; los plugins distribuidos aparecen en Chat y en Cowork. Mencionar los marketplaces oficiales (`anthropics/claude-plugins-official`, `anthropics/knowledge-work-plugins`) y los de la comunidad. Recordar el mapa: Plugins es la banda que envuelve todos los bloques de la charla. Tiempo objetivo: ~6 min.
-
-### Presenter feedback
-
-- [closed] 2026-06-09 — "Agregar un Slide the life-cycle de pluggin en la cuenta Team y que se peude hacer. Buscar en la documencaion de Claude."
-  Resolution: Insertada nueva slide 6.3 'Plugins en una cuenta Team: ciclo de vida': Owner crea marketplace privado (subir ZIP o sync repo GitHub que auto-actualiza) -> fija preferencia de instalacion por plugin (opcional/auto-install/provisionar) -> distribucion a miembros (aparece en chat y en Cowork) -> miembros instalan/habilitan desde el directorio, updates sincronizan. ASCII render-driving del ciclo + ascii-note. 3 fuentes de soporte/blog de Anthropic.
-
----
-
-## 2. Plugins en una cuenta Team: ciclo de vida
-
-### Content
-
-- En Team/Enterprise, los **Owners** gestionan los plugins de la org (Organization settings → Plugins).
-- El ciclo completo:
-
-```ascii
-+-----------------+     +------------------------+     +----------------------+
-| OWNER crea un   | --> | agrega plugins:        | --> | fija preferencia de  |
-| marketplace     |     | · subir ZIP            |     | instalacion por      |
-| privado (org)   |     | · sync repo GitHub     |     | plugin (opcional /   |
-|                 |     |   (auto-actualiza)     |     | auto-install / prov.)|
-+-----------------+     +------------------------+     +----------------------+
-                                                                  |
-                                                                  v
-+---------------------------+     +-----------------------------------------+
-| MIEMBROS instalan/        | <-- | se DISTRIBUYE a los miembros            |
-| habilitan desde el        |     | (aparece en chat Y en Cowork)          |
-| directorio de la org      |     |                                         |
-| (updates se sincronizan)  |     |                                         |
-+---------------------------+     +-----------------------------------------+
-```
-<!-- ascii-note:
-intent: mostrar el ciclo de vida de un plugin en una cuenta Team/Enterprise; del Owner que crea un marketplace privado a los miembros que lo instalan, con updates que se sincronizan.
-emphasize: el rol del OWNER (marketplace privado: subir ZIP o sync GitHub) y la preferencia de instalación por plugin; que se distribuye a chat Y a Cowork; que los miembros instalan desde el directorio y las actualizaciones se sincronizan solas.
-labels: flujo de 5 pasos; Owner crea marketplace privado -> agrega plugins (ZIP / sync GitHub) -> fija preferencia de instalación (opcional/auto-install/provisionar) -> distribución (chat + Cowork) -> miembros instalan/habilitan (updates sincronizan).
--->
-
-- **Marketplace privado**: se carga por ZIP o sync de repo GitHub (**auto-actualiza**).
-- Por plugin: preferencia de instalación (opcional / **auto-install** / provisionado).
-- Llega a **chat y Cowork**; los miembros habilitan y los **updates se sincronizan** solos.
-
-### Sources
-
-- Anthropic Support, Manage Claude Cowork plugins for your organization: https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization; Owners gestionan plugins en Organization settings; marketplace privado (ZIP o sync GitHub); preferencia de instalación por plugin.
-- Anthropic Support, Use plugins in Claude: https://support.claude.com/en/articles/13837440-use-plugins-in-claude; miembros instalan/habilitan desde el directorio; updates sincronizan; disponibles en chat y Cowork.
-- Claude blog, Cowork plugins across the enterprise: https://claude.com/blog/cowork-plugins-across-enterprise; distribución de plugins a nivel organización (chat + Cowork).
-
-### Speaker notes
-
-Slide de cierre del bloque avanzado, orientada a quien algún día administre una cuenta de equipo. En una cuenta Team, un Owner puede armar un marketplace privado de la organización y repartir workflows a todo el equipo. Recorrer el ciclo con el diagrama: el Owner crea el marketplace y sube plugins (ZIP o, mejor, sincronizando un repo de GitHub que auto-actualiza), fija cómo se instala cada uno (opcional / auto-install / provisionado), el plugin se distribuye y aparece en chat y en Cowork, y los miembros lo habilitan desde su directorio con las actualizaciones sincronizadas. Mantenerlo alto nivel: es el "para cuando esto escala a un equipo". Tiempo objetivo: ~4 min.
-
-### Presenter feedback
 
 ---
 

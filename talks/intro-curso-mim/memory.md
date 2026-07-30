@@ -7,6 +7,15 @@
 
 ---
 
+## 2026-07-30 — Step 7 Render `html-strict` (re-render, sin cambios de contenido, 2ª pasada)
+- Status: complete
+- Ask: "regenera el HTMl"
+- FILL: sin cambios — `output/slide-model.json` seguía coincidiendo con `final.md` (sha256 `e66cb33a33b55aaa4d41e32b99f42bd2b3b2beabc2b92f53a64149d2d25c357f`).
+- CHECK: `degenerate_enum` — ok.
+- Render: `build_html.py --talk` regeneró `output/html/index.html` — 19 slides + portada (20 pantallas).
+- Deliverable: `talks/intro-curso-mim/output/html/index.html`, SHA-256 `903378cbd7e85decbb4d663b379c354d6014b31d516ceec26f2310739e709db1` (4.769.760 bytes).
+- Next: Step 8 Learnings sigue pendiente (opcional).
+
 ## 2026-07-30 — Step 7 Render `html-strict` (re-render, sin cambios de contenido)
 - Status: complete
 - Ask: "generate the html-strict"
