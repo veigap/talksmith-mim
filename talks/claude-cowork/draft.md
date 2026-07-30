@@ -40,6 +40,8 @@ date: Julio 2026
 **Presenter feedback:**
 - [closed] 2026-07-30 — "La charla se va a llamar Claude CoWork + Claude Advance Chat"
   Resolution: Frontmatter class: renombrado de 'Claude Cowork para el dia a dia' a 'Claude CoWork + Claude Advance Chat', verbatim segun el pedido del presentador.
+- [closed] 2026-07-30 — "Veamos como reoganizar en las siguientes secciones: Introduction (Anthropic, Objetivo, Claude Desktop en general) / Claude Desktop - Chat / Connectores / Automatizacion / Mission (nuevo slide que solo divide) / Claude Cowork / Knowleade & Ouput (all content about MD) / Projects / Instructions / Skils / Subagents. Ademas: borrar plugins y Artifacts. No agregar nuevos slides."
+  Resolution: Reestructura completa a 11 secciones en el orden pedido, sin agregar ninguna slide de contenido. La ex-Apertura pasa a ser la Seccion 1 (Introduccion). La Seccion 4 (Cowork) se abrio en cinco: Claude Cowork (6), Knowledge & Output (7, las tres slides de .md), Projects (8, Projects + selector de carpetas), Instrucciones (9) y las avanzadas ya existentes Skills (10) y Subagentes (11). Borradas 4 slides: Schedule en Cowork, Artifacts y Live Artifacts, Plugins, y Plugins en una cuenta Team (con su seccion Enterprise). La placa 'Fin de la parte 1' se reutilizo como divisor de la Seccion 5 'La mision' (decision del presentador: se reemplaza el corte de clase por la mision), sin crear una slide nueva. Limpiados los rastros de las piezas borradas: Thesis, Agenda (arco narrativo + lista de secciones), el mapa de bloques de 6.3 (ASCII, Content, ascii-note, Sources y notes), el loop de Conclusions.1, los guardarrailes de Conclusions.2 y las referencias cruzadas de seccion en 3.5, 7.1, 10.3, 10.1 y Open questions.
 
 ---
 
@@ -434,7 +436,7 @@ Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pant
   - **Abrir un ticket** (Jira, ServiceNow…).
   - **Mandar un mensaje** (Slack o similar).
 - Cuidado con las autorizaciones y los permisos. **Un mail enviado sin revisión humana puede generar muchos problemas.**
-- Un chat que se informa y actúa puede trabajar **solo** (sección 3).
+- Un chat que se informa y actúa puede trabajar **solo** (sección 4).
 
 ```ascii
         CONECTOR: dos direcciones
@@ -739,54 +741,52 @@ El concepto-ancla de la charla. Conectarlo con el recorrido: los conectores y la
   - **Conectores** *(visto)* → *quiero info real, y que actúe.*
   - **Tareas programadas** *(visto)* → *quiero que corra solo.*
   - **Cowork: carpetas y archivos** *(estamos acá)* → *quiero que trabaje sobre mis archivos.*
-  - **Instrucciones** → *no repetir el contexto.*
-  - **Projects** → *agrupar todo el trabajo de un tema.*
   - **Archivos .md** → *que la IA entienda mi material.*
-  - **Live Artifacts** → *compartir el resultado vivo.*
+  - **Projects** → *agrupar todo el trabajo de un tema.*
+  - **Instrucciones** → *no repetir el contexto.*
   - **Skills** → *no repetir la tarea.*
   - **Subagentes** → *delegar en paralelo.*
-- **Plugins** = capa transversal de distribución; primero las piezas para el usuario, después el equipo (sección 7).
 
 ```ascii
-+============== PLUGINS (capa transversal: empaquetan y distribuyen) ==============+
-||                                                                                ||
-||  +----------------------+  "quiero compartir el resultado vivo"                ||
-||  | LIVE ARTIFACTS       |                                                      ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "no quiero repetir la tarea / delegar en paralelo"  ||
-||  | SKILLS / SUBAGENTES  |  (secciones 5 y 6)                                   ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "quiero que la IA entienda mi material"             ||
-||  | ARCHIVOS .MD         |                                                      ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "contexto y trabajo agrupados"                      ||
-||  | INSTRUCCIONES +      |                                                      ||
-||  | PROJECTS             |                                                      ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "quiero que trabaje sobre mis archivos"   <== ACA   ||
-||  | COWORK: carpetas     |                                                      ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "quiero que corra solo"                   (visto)   ||
-||  | TAREAS PROGRAMADAS   |                                                      ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "quiero info real + que actue"            (visto)   ||
-||  | CONECTORES           |                                                      ||
-||  +----------------------+                                                      ||
-||  +----------------------+  "respondia solo de memoria"               (visto)   ||
-||  | EL CHAT              |                                                      ||
-||  +----------------------+                                                      ||
-+==================================================================================+
-   los bloques se apilan (cada uno suma autonomia); PLUGINS los distribuye a todos
+   +----------------------+  "quiero delegar en paralelo"
+   | SUBAGENTES           |
+   +----------------------+
+   +----------------------+  "no quiero repetir la tarea"
+   | SKILLS               |
+   +----------------------+
+   +----------------------+  "no quiero repetir el contexto"
+   | INSTRUCCIONES        |
+   +----------------------+
+   +----------------------+  "agrupar el trabajo de un tema"
+   | PROJECTS             |
+   +----------------------+
+   +----------------------+  "quiero que la IA entienda mi material"
+   | ARCHIVOS .MD         |
+   +----------------------+
+   +----------------------+  "quiero que trabaje sobre mis archivos"   <== ACA
+   | COWORK: carpetas     |
+   +----------------------+
+   +----------------------+  "quiero que corra solo"                   (visto)
+   | TAREAS PROGRAMADAS   |
+   +----------------------+
+   +----------------------+  "quiero info real + que actue"            (visto)
+   | CONECTORES           |
+   +----------------------+
+   +----------------------+  "respondia solo de memoria"               (visto)
+   | EL CHAT              |
+   +----------------------+
+
+   los bloques se apilan: cada tarea combina solo los que necesita
 ```
 <!-- ascii-note:
-intent: presentar el arco completo de la charla como bloques que se apilan (no una pirámide/escalera estricta): el chat (base) -> conectores -> tareas programadas -> Cowork (carpetas/archivos) -> Instrucciones+Projects -> archivos .md -> Skills/Subagentes -> Live Artifacts, con Plugins como BANDA TRANSVERSAL que envuelve/distribuye todo. Los tres bloques de abajo están marcados "(visto)" y el bloque Cowork lleva el marcador "estamos acá".
-emphasize: el marcador "<== ACÁ" en el bloque Cowork; los "(visto)" en chat/conectores/tareas programadas; que Plugins es transversal (banda que rodea la pila, distinto color), NO un nivel más; el par bloque↔problema en cada nivel.
-labels: banda exterior = PLUGINS (capa transversal, distribución). Bloques apilados (base→cima): El chat · Conectores · Tareas programadas · Cowork: carpetas · Instrucciones+Projects · Archivos .md · Skills/Subagentes · Live Artifacts, cada uno con su frase-problema a la derecha.
+intent: presentar el arco completo de la charla como bloques que se apilan (no una pirámide/escalera estricta): el chat (base) -> conectores -> tareas programadas -> Cowork (carpetas/archivos) -> archivos .md -> Projects -> Instrucciones -> Skills -> Subagentes. Los tres bloques de abajo están marcados "(visto)" y el bloque Cowork lleva el marcador "estamos acá".
+emphasize: el marcador "<== ACÁ" en el bloque Cowork; los "(visto)" en chat/conectores/tareas programadas; el par bloque↔problema en cada nivel.
+labels: bloques apilados (base→cima): El chat · Conectores · Tareas programadas · Cowork: carpetas · Archivos .md · Projects · Instrucciones · Skills · Subagentes, cada uno con su frase-problema a la derecha.
 -->
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md, progresión de building blocks del deck (Instrucciones → Projects → Skills → Connectors/MCP → Schedule → Live Artifacts); la idea de "pila" es la lectura ordenada de esa progresión, re-secuenciada al arco chat-primero de esta charla.
+- corpus/agentic-ai-deck.zip.md, progresión de building blocks del deck (Instrucciones → Projects → Skills → Connectors/MCP); la idea de "pila" es la lectura ordenada de esa progresión, re-secuenciada al arco chat-primero de esta charla.
 - "corpus/mision - auto.zip.md", la misión Atlas arma estas piezas una por una.
 
 ### Speaker notes
@@ -795,9 +795,7 @@ El mapa de toda la sesión, con el arco nuevo: arranca en el chat que la audienc
 
 Cuidado con la metáfora: los bloques se apilan y se combinan; cada tarea usa solo los que necesita.
 
-Decir la promesa de roadmap: "lo que queda de la charla recorre los bloques de acá para arriba, en este orden", y que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Faro.
-
-Plugins es la banda que envuelve la pila, no un bloque más: empaqueta y distribuye varias de estas piezas a la vez (a un equipo, por ejemplo). No desarrollarlo acá; lo vemos en la sección 7 (Enterprise). Tiempo objetivo: ~3-4 min.
+Decir la promesa de roadmap: "lo que queda de la charla recorre los bloques de acá para arriba, en este orden", y que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Faro. Tiempo objetivo: ~3-4 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Es la represnetacion como piramide la correcta ?."
@@ -931,7 +929,7 @@ labels: documento renderizado a la izquierda; a la derecha, la marca de sintaxis
 -->
 
 - Las marcas se convierten en formato: títulos, viñetas, negrita, tabla.
-- **Metadata (header YAML)**: declara *qué es* el archivo y *cuándo* usarlo. Vuelve con las Skills (sección 5).
+- **Metadata (header YAML)**: declara *qué es* el archivo y *cuándo* usarlo. Vuelve con las Skills (sección 10).
 - La **lingua franca** del mundo LLM: el modelo lee texto. Portable y versionable.
 
 ### Sources
@@ -1126,7 +1124,7 @@ Conectar con el paradigma: en lugar de re-explicarle a Claude el contexto cada v
 
 ### Speaker notes
 
-Arranca el bloque avanzado, ahora partido por tema: esta sección cubre Skills; Subagentes y Plugins tienen las suyas. La Skill materializa el "enseñá una vez, reutilizá siempre". Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio "un trabajo por Skill": si aparece "y además", conviene dividirla en dos. La creación paso a paso viene en la próxima slide; la anatomía del archivo, en la siguiente. Tiempo objetivo: ~4 min.
+Arranca el bloque avanzado, partido por tema: esta sección cubre Skills y la siguiente, Subagentes. La Skill materializa el "enseñá una vez, reutilizá siempre". Usar `reporte-semanal` como ejemplo concreto: lee TODOS los archivos crudos de `fuentes/` (uno por portal), consolida por empresa, la más relevante primera (⭐), y guarda con sufijo `-new` para no pisar el ejemplo. Convierte varios archivos desordenados en un reporte prolijo. El criterio "un trabajo por Skill": si aparece "y además", conviene dividirla en dos. La creación paso a paso viene en la próxima slide; la anatomía del archivo, en la siguiente. Tiempo objetivo: ~4 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Revisar (2) pidiéndole la creación durante el prompt, en lenguaje natural. No estoy seguro que co-work funcione."
@@ -1207,7 +1205,7 @@ La slide práctica que faltaba: el paso a paso de creación. Con conexión, hace
 
 ### Content
 
-- Un `SKILL.md` por dentro: **metadata** arriba, **instrucciones** abajo. Es el `.md` con metadata de la sección 4.
+- Un `SKILL.md` por dentro: **metadata** arriba, **instrucciones** abajo. Es el `.md` con metadata de la sección 7.
 
 ```ascii
 +--------------------------------------------------------------+
@@ -1263,7 +1261,7 @@ Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el be
 - **Subagente** = asistente aislado, contexto propio; devuelve **un resumen** (no la transcripción).
 - Ejemplo: **8 propuestas de proveedores**, un subagente por propuesta; los 8 corren en paralelo y el agente principal arma la tabla comparativa final.
 - En Cowork corren "por debajo", **varios en paralelo**.
-- Se agrega como una Skill (descripción + instrucciones): se le pide a Claude, o llega en un **Plugin**.
+- Se agrega como una Skill (descripción de cuándo usarlo + instrucciones): se le pide a Claude y se gestiona en Customize.
 
 ```ascii
                 +------------------+
@@ -1295,7 +1293,7 @@ labels: agente principal -> sub A / sub B / sub C (contexto propio) -> resumen c
 
 ### Speaker notes
 
-Nivel avanzado, presentarlo como "para cuando crezcas". Un subagente conviene cuando una sub-tarea es pesada o genera mucho texto intermedio que nadie necesita leer: corre aparte y vuelve con el resumen. No plantearlo como opuesto de las Skills (una skill puede usar subagentes y al revés); acá se enseña qué es, sin comparaciones. El ejemplo ilustra el fan-out: 8 propuestas de proveedores, un subagente por propuesta; los 8 corren a la vez y el agente principal combina los resúmenes en la tabla comparativa. Cómo se agrega, en paralelo a las Skills: un subagente se define con una descripción (cuándo usarlo) más instrucciones; le pedís a Claude que lo arme (se gestiona en Customize, igual que una Skill) o viene dentro de un Plugin. Mantenerlo alto nivel, sin rutas de archivos ni internals de persistencia. Tiempo objetivo: ~7 min.
+Nivel avanzado, presentarlo como "para cuando crezcas". Un subagente conviene cuando una sub-tarea es pesada o genera mucho texto intermedio que nadie necesita leer: corre aparte y vuelve con el resumen. No plantearlo como opuesto de las Skills (una skill puede usar subagentes y al revés); acá se enseña qué es, sin comparaciones. El ejemplo ilustra el fan-out: 8 propuestas de proveedores, un subagente por propuesta; los 8 corren a la vez y el agente principal combina los resúmenes en la tabla comparativa. Cómo se agrega, en paralelo a las Skills: un subagente se define con una descripción (cuándo usarlo) más instrucciones, y se le pide a Claude que lo arme; se gestiona en Customize, igual que una Skill. Mantenerlo alto nivel, sin rutas de archivos ni internals de persistencia. Tiempo objetivo: ~7 min.
 
 ### Presenter feedback
 - [closed] 2026-06-09 — "Agregar como se agrega un agente."
@@ -1315,7 +1313,7 @@ Nivel avanzado, presentarlo como "para cuando crezcas". Un subagente conviene cu
 Lunes 8:00
    |
    v
-[Schedule] dispara
+[Tarea programada] dispara
    |
    v
 [Skill buscar-accion] --(Connector MT Newswires + web_fetch Yahoo)--> guarda fuentes/
@@ -1323,19 +1321,17 @@ Lunes 8:00
    v
 [Skill reporte-semanal] consolida --> reporte .md en el Project
    |
-   +--> [Connector Gmail] deja borrador para el equipo
-   |
    v
-[Skill publicar-tablero] --> Live Artifact pulso-semanal-FECHA (pestaña Live artifacts)
+[Connector Gmail] deja el borrador listo para el equipo
 ```
 <!-- ascii-note:
-intent: mostrar el loop completo de la misión de Faro, encadenando todas las piezas vistas en la charla, disparado por Schedule cada lunes.
-emphasize: la secuencia de izquierda a/arriba-abajo Schedule -> Skills -> Connectors -> Live Artifact; que todo arranca de un solo disparador.
-labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail, publicar-tablero) y las piezas usadas en cada uno.
+intent: mostrar el loop completo de la misión de Faro, encadenando todas las piezas vistas en la charla, disparado por la tarea programada cada lunes.
+emphasize: la secuencia de arriba abajo tarea programada -> Skills -> Connectors -> borrador de correo; que todo arranca de un solo disparador.
+labels: pasos del loop (tarea programada, buscar-accion, reporte-semanal, Gmail) y las piezas usadas en cada uno.
 -->
 
-- **El arco de hoy:** chat de memoria → conectores → tareas programadas → Cowork (`.md`) → Skills → Subagentes → Plugins para el equipo.
-- **Las piezas:** Conectores (las manos) · Schedule (corre solo) · Instrucciones (el contrato) · Projects (el espacio de trabajo) · `.md` (el lenguaje) · Skills (enseñar una vez) · Live Artifacts (compartir).
+- **El arco de hoy:** chat de memoria → conectores → tareas programadas → Cowork (`.md`) → Projects → Instrucciones → Skills → Subagentes.
+- **Las piezas:** Conectores (las manos) · Tareas programadas (corre solo) · `.md` (el lenguaje) · Projects (el espacio de trabajo) · Instrucciones (el contrato) · Skills (enseñar una vez) · Subagentes (delegar en paralelo).
 - **Para llevarse:** *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."* ¿Qué tarea recurrente le delegarías a tu propio Faro?
 
 ### Sources
@@ -1359,7 +1355,7 @@ Cierre integrador: mostrar el diagrama del loop completo para que vean cómo cad
 - **Toda salida es un borrador**: cifras, citas y afirmaciones se verifican contra la fuente.
 - **Nada de datos confidenciales / PII / bajo NDA** en la superficie equivocada.
 - **Reproducibilidad:** prompt + entradas + salidas se guardan juntos, para que el trabajo sea auditable.
-- **Capas de guardarraíles:** permisos de carpeta → reglas en Instrucciones → solo plugins verificados → revisión humana.
+- **Capas de guardarraíles:** permisos de carpeta → reglas en Instrucciones → solo conectores verificados → revisión humana.
 - *En el trabajo real:* con datos confidenciales de la empresa o de clientes, nada de esto sin aprobación del área correspondiente.
 
 ### Sources
@@ -1377,13 +1373,14 @@ Slide de cierre responsable, breve y obligatoria. Decirlo sin vueltas: Cowork si
 # Open questions
 
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
-- Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 4.4) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` volvió a usarse en review 2026-07-21: es el ejemplo de Live Artifact en la slide 4.12; re-verificar su depiction junto con la otra.)
-- Slide 4.4 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
-- **Slash commands en Cowork (slides 5.1–5.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera, y NO se releva la lista completa de comandos (alcanza con el tip de tipear `/`). Pendiente antes de la clase: probar si la Skill creada por comando también exige el Save/enable de la trampa.
-- **Subagente a pedido (bonus M6 de la misión, 2026-07-28):** la creación de un subagente `investigador` a pedido del usuario en Cowork no está verificada de primera mano (la doc lo cubre para Claude Code; en Cowork "corren por debajo"). Probar en el producto antes del workshop; si no funciona, el bonus se cae sin bloquear la misión y la slide 6.1 no cambia.
+- Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 6.4) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` quedó sin uso tras la reestructura del 2026-07-30, que borró la slide de Artifacts.)
+- Slide 6.4 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
+- **Slash commands en Cowork (slides 10.1–10.2):** verificado de primera mano por los presentadores (2026-07-21): Cowork incluye un set reducido de slash commands, `/skill-creator` entre ellos, y la creación de Skills pasa por ese comando (el camino "lenguaje natural" de junio quedó subsumido ahí). La doc oficial (support 12512198) sigue documentando solo el camino ZIP. Decisión del presentador (2026-07-21): en la clase se muestra solo `/skill-creator`; `/skill-optimizer` queda fuera, y NO se releva la lista completa de comandos (alcanza con el tip de tipear `/`). Pendiente antes de la clase: probar si la Skill creada por comando también exige el Save/enable de la trampa.
+- **Subagente a pedido (bonus M6 de la misión, 2026-07-28):** la creación de un subagente `investigador` a pedido del usuario en Cowork no está verificada de primera mano (la doc lo cubre para Claude Code; en Cowork "corren por debajo"). Probar en el producto antes del workshop; si no funciona, el bonus se cae sin bloquear la misión y la slide 11.1 no cambia.
 - Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
 - Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
-- **Slide 4.4; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión a confirmar con el presentador en Polish: (a) mover el banner a su propia slide-interstitial, (b) quitar el screenshot de respaldo, o (c) aceptarlo solo como ASCII en el draft.
+- **Slide 6.4; interacción pipeline del banner DEMO TIME:** la slide tiene un bloque ```ascii (banner "DEMO TIME") Y un image ref (`screenshot-cowork-tab.png`, respaldo). El pipeline de Polish marca como documentation-only TODO bloque ASCII en una slide que tiene image ref → el banner NO se renderizará a SVG en Step 6 tal como está. Decisión ya tomada en Polish (2026-07-17): opción (c), doc-only, la slide conserva el screenshot.
+- **Piezas borradas por decisión del presentador (2026-07-30):** salieron del deck las slides de Schedule en Cowork, Artifacts y Live Artifacts, y las dos de Plugins (incluida la sección Enterprise). Las fuentes y capturas asociadas siguen en disco (`schedule.png`, `mockup-tablero.png`) por si se quieren reponer. Si se reponen, hay que volver a nombrarlas en el mapa de la charla (6.3) y en el loop de Conclusions.
 - Nuevas URLs externas (round 3) a re-verificar en Polish si se quiere snapshot/cita estable: support.claude.com (use-skills, create-custom-skills, schedule-recurring-tasks, use-live-artifacts, manage-org-plugins, use-plugins), claude.com/blog (cowork-plugins-across-enterprise), code.claude.com/docs (sub-agents).
 - ~~URLs nuevas de round 4~~; **RESUELTO en round 5 (2026-07-09):** las 6 citas se verificaron online. Resultados: web search 10684626 OK; ChatGPT search 9237897 OK (existencia+contenido corroborados vía búsqueda; el fetch directo da 403 por bloqueo anti-bot de help.openai.com); ChatGPT tasks OK con slug canónico corregido a `10291617-tasks-in-chatgpt`; directorio de conectores: claude.ai/directory requiere login → cita reemplazada por el anuncio oficial claude.com/blog/connectors-directory + support 11176164; custom connectors 11175166 OK; modelcontextprotocol.io OK.
 - ~~Tareas programadas en el chat de Claude~~; **RESUELTO en round 5:** claude.ai SÍ tiene tareas programadas en el navegador (observación de primera mano del presentador 2026-07-09 + release notes del 7 de julio de 2026, support article 12138966: corren en la nube sin dispositivo online, beta, rollout Max-first). Slide 3.1 actualizada con Claude como ejemplo de primera clase.
