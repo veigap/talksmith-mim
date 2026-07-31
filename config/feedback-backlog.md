@@ -690,3 +690,93 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, a
   feedback: "El slide de Q & A dice preguntas 3 veces. Revisaste correctamnete la asignacion ?"
   resolution: Se mantuvo el pin single-point, pero se eliminó la duplicación entre título y punto central: la slide conserva ‘¿Preguntas?’ como título y ahora usa ‘Cronograma, evaluación o logística: conversemos ahora’ como contenido.
   tags: [deduplication, template-assignment]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Agenda / documento completo
+  feedback: "Veamos como reoganizar en las siguientes secciones: Introduction (Anthropic, Objetivo, Claude Desktop en general) / Claude Desktop - Chat / Connectores / Automatizacion / Mission (nuevo slide que solo divide) / Claude Cowork / Knowleade & Ouput (all content about MD) / Projects / Instructions / Skils / Subagents."
+  resolution: Reestructura a 11 secciones en el orden pedido, sin agregar slides de contenido. La ex-Apertura pasa a Seccion 1 (Introduccion). La ex-Seccion 4 (Cowork, 12 slides) se abrio en cinco secciones tematicas: Claude Cowork (6), Knowledge & Output (7), Projects (8), Instrucciones (9), mas las ya existentes Skills (10) y Subagentes (11). Agenda reescrita (arco narrativo + lista de 11 secciones); goals nuevos para las 4 secciones sin header previo; renumeracion de slides dentro de cada seccion.
+  tags: [restructure, bad-order, split, rename]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Seccion 5 "La mision"
+  feedback: "Mission (nuevo slide que solo divide)" + "No agregar nuevos slides"
+  resolution: Los dos pedidos se reconciliaron reutilizando la placa divisoria que ya existia ('Fin de la parte 1', ex-4.3) en vez de crear una slide nueva. Decision del presentador consultada en chat: se reemplaza el corte de clase por la mision. Retitulada 'La mision: Faro', ASCII y Content reescritos para presentar a Faro (el analista de mercado de Atlas) y anunciar que se arma pieza por pieza; el corte de clase baja a Speaker notes como sugerencia de pausa.
+  tags: [restructure, rename, slide-content, add-visual]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: documento completo
+  feedback: "Borrar plugins y Artifacts"
+  resolution: Borradas 4 slides: 'Artifacts y Live Artifacts', 'Plugins: empaquetar y distribuir un workflow completo' y 'Plugins en una cuenta Team: ciclo de vida' (con toda la seccion Enterprise), mas 'Schedule en Cowork' (el presentador eligio borrarla al no tener lugar en la estructura nueva). Barrido de rastros: Thesis, arco narrativo de Agenda, mapa de bloques de 6.3 (ASCII sin la banda PLUGINS ni Live Artifacts, Content, ascii-note, Sources, notes), loop ASCII y lista de piezas de Conclusions.1, guardarrailes de Conclusions.2 (plugins verificados -> conectores verificados), como se agrega un subagente (11.1), notes de 10.1 y el walkthrough de la demo (6.4). Verificado: 0 menciones vivas de Plugins/Artifacts fuera del audit trail. Las capturas schedule.png y mockup-tablero.png quedan en disco sin referenciar, por si se reponen.
+  tags: [cut, restructure, slide-content]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Seccion 2
+  feedback: "Claude Desktop: el chat deberia ser Claude Chat (Desktop)"
+  resolution: Seccion 2 retitulada 'Claude Chat (Desktop)' en el H1 y en la lista de secciones de la Agenda. El arco narrativo no nombraba la seccion, no requirio cambio; el goal de la Seccion 1 conserva 'Claude Desktop' porque ahi se refiere a la aplicacion de escritorio, no a esta seccion.
+  tags: [rename]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Seccion 4 / documento completo
+  feedback: "Automatización deberia ser Schedule. Usemos schedule en toda la presentation."
+  resolution: Seccion 4 retitulada 'Schedule' (H1 + lista de la Agenda + arco narrativo + goal). Terminologia unificada en 29 puntos de prosa viva: Thesis, titulo de la slide 4.1 ('Schedule desde el chat'), la definicion del concepto, el mapa de bloques de 6.3 (Content, caja ASCII 'SCHEDULE' con geometria preservada, ascii-note y notes), el loop de Conclusions ('[Schedule] dispara', arco y lista de piezas), y las notes de 5.1, 6.2 y C.1. Se dejo 'tareas programadas' en dos glosas de Sources que describen productos de terceros (las "tasks" de ChatGPT y la observacion de primera mano en claude.ai): ahi el termino no nombra la feature de Cowork.
+  tags: [terminology, rename, slide-content]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Secciones 8 y 9 / documento completo
+  feedback: "Borremos Instrucciones como seccion y que sea parte de projects." + "Listo, appliquemos estos cambios" (aprobacion de la tabla de titulos propuesta en chat)
+  resolution: (1) La seccion 'Instrucciones' se elimino como seccion propia; su unica slide paso a ser 8.3, dentro de Projects, despues del selector de carpetas. Secciones 10 y 11 renumeradas a 9 y 10; el deck queda en 10 secciones y 30 slides. Goal de Projects reescrito para incluir las Instrucciones; Agenda (lista + arco narrativo) y las referencias cruzadas actualizadas (Skills seccion 10 -> 9; Open questions slides 10.1-10.2 -> 9.1-9.2 y 11.1 -> 10.1). (2) Aplicada la tabla de titulos completa: 24 slides retituladas para sacar jerga ('sabores'), nombres largos y solapamientos (1.3 vs 1.4 se pisaban; 7.1 y 9.3 sonaban iguales). La 4.2 quedo '¿Donde corre? Local o nube', alineada con el cambio de terminologia a Schedule.
+  tags: [restructure, rename, cut, slide-content]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Secciones 5 y 11 / frontmatter / slide 1.1
+  feedback: "Agregar en 11 - otro La mission. Existen 2" + "La presentacion se deberia llamar Claude Desktop - Chat & Cowork" + "Tambien el autor el Paulo Veiga y Marco Sanchez Sorondo" + "Revisar el titulo tiene que ser la misma que introduction presentation."
+  resolution: (1) La mision se parte en dos placas divisorias, espejando mission.md ("las dos partes"): seccion 5 'La mision, parte 1: Faro en el chat' (se resuelve con conectores y Schedule, lo ya visto) y seccion 11 NUEVA 'La mision, parte 2: Faro en Cowork' (Projects, Instrucciones, .md, Skills y Subagentes; con la nota de mission.md de que la parte 2 no exige la parte 1 resuelta). Placa ASCII gemela de la primera. Deck: 11 secciones, 31 slides. Los nombres de seccion se diferencian con 'parte 1' y 'parte 2' porque el roadmap del template resuelve la seccion activa por nombre y dos entradas identicas lo dejarian ambiguo. (2) frontmatter class: -> 'Claude Desktop - Chat & Cowork'. (3) frontmatter presenter: -> 'Paulo Veiga y Marco Sanchez Sorondo'. (4) Alineado el titulo con la apertura: la slide 1.1 abre con el nombre exacto de la charla, y se retiro 'Advance Chat' de la prosa viva (queda solo en el audit trail), incluida la lead de la slide 2.2.
+  tags: [add-slide, restructure, rename, slide-content, terminology]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.2 "El primer conector: busqueda web"
+  feedback: "cambiemos El primer conector: busqueda web Caso 1: Web Search Connector"
+  resolution: Slide retitulada "Caso 1: Web Search Connector" y movida a 3.3 por la reordenacion de la seccion. Content, ASCII, ascii-note, Sources y notes sin cambios: el titulo ya instala el encuadre de "casos" y no hizo falta linea de enlace.
+  tags: [rename, move]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.2 "El primer conector: busqueda web"
+  feedback: "agregemos tambien un slide que es Caso 2: Claude In Chrome. Explicar el connector desde el lado funcional."
+  resolution: Slide nueva 3.4 "Caso 2: Claude in Chrome", explicada desde lo funcional: extension de Chrome con panel lateral, trabaja dentro de la sesion ya iniciada, navega/hace clic/completa formularios/maneja pestanas, conocimiento incorporado de Slack, Google Calendar, Gmail, Google Docs y GitHub, disponibilidad en planes pagos y solo en Chrome de escritorio, y se habilita desde Connectors en Claude Desktop. ASCII nuevo (pagina abierta + panel lateral, flecha de lectura y flecha de accion). Todo verificado 2026-07-30 contra la doc oficial de Anthropic (support 12012173), citada como fuente del proveedor.
+  tags: [add-slide, slide-content, add-visual, sources]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.2 "El primer conector: busqueda web"
+  feedback: "Agregar un slide con 4 casos  Claude In Chrome es util."
+  resolution: Slide nueva 3.5 "Cuando sirve Claude in Chrome" con cuatro casos elegidos para perfil de gestion (cargar datos en un CRM/ERP web, comparar proveedores entre pestanas, coordinar agenda y correo, relevar un portal que no exporta), mas el cuidado de seguridad que pidio el presentador: prompt injection, con las recomendaciones oficiales (sitios confiables, perfil de navegador separado, revision humana antes de aprobar). Citado support 12902428 "Use Claude in Chrome safely", que documenta el riesgo como abierto ("the chances of an attack are still non-zero"). Los cuatro casos se atribuyen como adaptacion del presentador, no como casos publicados por Anthropic.
+  tags: [add-slide, slide-content, audience, sources, accuracy]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.2 "El primer conector: busqueda web"
+  feedback: "Agregar una slide sobre que existen Out of The Box connectors Y Customs"
+  resolution: Slide nueva 3.6 "Out of the box y externos" con la taxonomia en ASCII de dos ramas. El eje es "out of the box vs externos": el presentador corrigio la palabra "custom" en chat, asi que la familia se nombra "externos" en todo el deck. Se agrega que toda la rama externa se conecta por protocolo MCP y que el criterio de confianza cambia entre las dos familias (el catalogo paso por Anthropic, un conector externo no).
+  tags: [add-slide, add-visual, terminology, slide-content]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.2 "El primer conector: busqueda web"
+  feedback: "Mover ## 4. Donde se buscan y como se conectan y este se sria aout of the box"
+  resolution: La slide "Donde se buscan y como se conectan" se movio a 3.7 y se retitulo "Out of the box: donde se buscan y como se conectan", como cara practica de esa familia. Conserva sus dos capturas (connectors_directory.png, connector_browser.png). El bullet "De donde salen: directorio / comunidad / propios (custom)" se retiro porque la taxonomia ahora vive en 3.6; el criterio de confianza y el ejemplo de MT Newswires (con el pedido de noticias de YPF, recuperado de la ex-3.3) quedan en la slide.
+  tags: [move, rename, slide-content]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.3 "MCP: el nombre tecnico de los conectores"
+  feedback: "MCP: el nombre tecnico de los conectores va a ser external connectors. Agregar que todos los conectores externos se connectar por MCP protocol."
+  resolution: Slide retitulada "External connectors: todo pasa por MCP" y movida al cierre de la seccion (3.8). Content reescrito alrededor de la familia externa: definicion, el hecho nuevo de que todos se conectan por MCP, el ejemplo de flujo reescrito contra un ERP de la empresa (el de MT Newswires paso a 3.7, que es out of the box) y el equipo tecnico que expone un servidor MCP. ASCII conservado con labels actualizados (Connector externo, Servicio CRM/ERP/base) y ascii-note en espejo.
+  tags: [rename, move, slide-content, terminology]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 3.5 "Los conectores no solo traen: tambien hacen"
+  feedback: "Mover ## 1. Que es un conector despues de ue es un connector. El titulo deberia tambien revisando."
+  resolution: La slide se movio a 3.2, inmediatamente despues de "Que es un conector", y se retitulo "Los conectores tambien actuan" (mas corto, sin la formula "no solo X: tambien Y"). Bloque movido intacto (Content, ASCII, ascii-note, Sources). El puntero adelantado "Un chat que se informa y actua puede trabajar solo (seccion 4)" se reubico al cierre de la seccion (3.8), porque desde la posicion 2 disparaba demasiado temprano; las notes se reescribieron en la apertura y el cierre por el mismo motivo.
+  tags: [move, rename, bad-order, slide-content]
+- talk: claude-cowork
+  date: 2026-07-30
+  location: Slide 4.1 "Schedule desde el chat"
+  feedback: "Schedule desde el chat remente deberia ser Schedule"
+  resolution: Slide 4.1 retitulada "Schedule", alineada con el nombre de la seccion. No habia referencias cruzadas al titulo viejo en prosa viva.
+  tags: [rename, terminology]
