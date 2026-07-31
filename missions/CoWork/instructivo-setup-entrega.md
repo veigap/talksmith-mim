@@ -2,7 +2,7 @@
 
 *Paulo Veiga · Marco Sánchez Sorondo · Claudio Righetti · Juan Pablo Cosentino*
 
-Este documento acompaña al enunciado de la misión (`mission.pdf`). Acá está el detalle operativo: cómo usar la cuenta del grupo, qué instalar, cómo verificar que todo funciona, y cómo son la presentación de avances y la entrega final.
+Este documento acompaña al enunciado de la misión (`mission-parte1.pdf` y `mission-parte2.pdf`). Acá está el detalle operativo: cómo usar la cuenta del grupo, qué instalar, cómo verificar que todo funciona, y cómo son la presentación de avances y la entrega final.
 
 ---
 

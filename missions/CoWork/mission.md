@@ -43,35 +43,13 @@ Para cualquiera que tenga que **entregar trabajo recurrente**, aunque nunca haya
 
 ---
 
-## 📁 Materiales incluidos
-
-La misión viene con material de ejemplo en `reportes/`. Hay **una subcarpeta por semana**. Dentro de cada una, la carpeta `fuentes/` (las notas en crudo del pasante, **un archivo por portal**: la *entrada*) **lado a lado** con el **reporte final** ya ordenado (`.md`, la *salida*). Sirve para ver de dónde se parte y a dónde se llega:
-
-```
-reportes/
-├── semana-2026-05-18/
-│   ├── fuentes/                          ← entrada: notas del pasante, un archivo por fuente
-│   │   ├── yahoo-finance.txt    (cotizaciones)
-│   │   ├── bloomberg.txt        (Vista Energy)
-│   │   ├── reuters.txt          (YPF)
-│   │   └── stocktitan.txt       (Tenaris)
-│   └── reporte-semana-2026-05-18.md      ← salida: el reporte que arma Faro
-├── semana-2026-05-25/   (varios archivos en fuentes/  +  reporte-…md)
-└── semana-2026-06-01/   (varios archivos en fuentes/  +  reporte-…md)
-```
-
-> 💡 Las **noticias y los enlaces** de los ejemplos son **reales** (mayo 2026); los **precios y porcentajes** son **aproximados**, con fines ilustrativos.
-
----
-
-## ✅ Antes de despegar (checklist de setup)
+## ✅ Antes de despegar (checklist de la Parte 1)
 
 Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá al facilitador.
 
-- [ ] **Parte 1:** una cuenta de Claude con acceso a **claude.ai** en el navegador y la **búsqueda web** activada. Una cuenta de **Gmail** a mano.
-- [ ] **Parte 2:** la **app de escritorio de Claude** (macOS o Windows) en su **última versión**, con la pestaña **"Cowork"** visible. Cowork también está llegando a web y mobile (beta, despliegue gradual), pero esta misión trabaja sobre carpetas locales, así que usamos la app de escritorio.
-- [ ] **Plan pago de Claude** (Pro, Max, Team o Enterprise). El plan gratis no incluye Cowork.
-- [ ] Saber **dónde corren tus tareas programadas** (lo viste en clase): en la nube si tu cuenta ya tiene la beta (despliegue gradual, primero Max); si no, corren **local**, con la computadora prendida y la app abierta. Las tareas que usan **archivos de tu disco corren local siempre**.
+- [ ] Una cuenta de Claude con **plan pago** y acceso a **claude.ai** en el navegador.
+- [ ] La **búsqueda web** activada (un toggle en la configuración).
+- [ ] Una cuenta de **Gmail** a mano.
 
 ---
 
@@ -116,7 +94,37 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 
 # 🧩 PARTE 2 — Faro en Cowork
 
-*Faro baja a tu computadora: carpetas y archivos reales, reporte con formato fijo, el tablero del jefe, y todo empaquetado para reutilizar. Arranca de la herencia del pasante en `reportes/`; no hace falta haber resuelto la Parte 1.*
+*Faro baja a tu computadora: carpetas y archivos reales, reporte con formato fijo, el tablero del jefe, y todo empaquetado para reutilizar.*
+
+El email del lunes ya llega solo: esa fue la Parte 1. Queda la segunda entrega que pidió el jefe, el **tablero**, y para armarlo Faro necesita algo que el chat no tiene: trabajar sobre las **carpetas y archivos reales** del equipo — la herencia del pasante incluida. Acá entra **Claude Cowork**.
+
+---
+
+## 📁 Materiales incluidos
+
+La misión viene con material de ejemplo en `reportes/`. Hay **una subcarpeta por semana**. Dentro de cada una, la carpeta `fuentes/` (las notas en crudo del pasante, **un archivo por portal**: la *entrada*) **lado a lado** con el **reporte final** ya ordenado (`.md`, la *salida*). Sirve para ver de dónde se parte y a dónde se llega:
+
+```
+reportes/
+├── semana-2026-05-18/
+│   ├── fuentes/                          ← entrada: notas del pasante, un archivo por fuente
+│   │   ├── yahoo-finance.txt    (cotizaciones)
+│   │   ├── bloomberg.txt        (Vista Energy)
+│   │   ├── reuters.txt          (YPF)
+│   │   └── stocktitan.txt       (Tenaris)
+│   └── reporte-semana-2026-05-18.md      ← salida: el reporte que arma Faro
+├── semana-2026-05-25/   (varios archivos en fuentes/  +  reporte-…md)
+└── semana-2026-06-01/   (varios archivos en fuentes/  +  reporte-…md)
+```
+
+> 💡 Las **noticias y los enlaces** de los ejemplos son **reales** (mayo 2026); los **precios y porcentajes** son **aproximados**, con fines ilustrativos.
+
+---
+
+## ✅ Antes de despegar (checklist de la Parte 2)
+
+- [ ] La **app de escritorio de Claude** (macOS o Windows) en su **última versión**, con la pestaña **"Cowork"** visible, con la sesión del plan pago iniciada (el plan gratis no incluye Cowork). Cowork también está llegando a web y mobile (beta, despliegue gradual), pero esta misión trabaja sobre carpetas locales, así que usamos la app de escritorio.
+- [ ] Saber **dónde corren tus tareas programadas** (lo viste en clase): en la nube si tu cuenta ya tiene la beta (despliegue gradual, primero Max); si no, corren **local**, con la computadora prendida y la app abierta. Las tareas que usan **archivos de tu disco corren local siempre**.
 
 ### 🛠️ Milestone 3 — Faro toma forma
 **Desbloqueás: Projects · Instrucciones · archivos .md**
@@ -200,7 +208,7 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 ## 📏 Las reglas del juego
 
 - **Conversá, no programes.** Todo se consigue describiéndole a Claude lo que querés. ¿No salió? Reformulá y volvé a tirar.
-- **Respetá el orden dentro de cada parte.** Los milestones de una parte se apoyan entre sí. Entre partes sos libre: la Parte 2 arranca sola con los materiales incluidos.
+- **Respetá el orden.** Los milestones se apoyan entre sí: verificá uno antes de encarar el siguiente.
 - **Verificá antes de avanzar.** Tocá el criterio de éxito con la mano antes de pasar de milestone.
 - **Cuando te trabes, preguntale a Claude.** También sabe explicarse a sí mismo: usalo como copiloto.
 - **Tomá nota mientras avanzás.** Qué te sorprendió, qué no salió y cómo lo resolviste. Esas notas son el verdadero aprendizaje, y el mejor recurso para repetir la misión con otro encargo.

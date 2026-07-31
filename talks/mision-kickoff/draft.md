@@ -49,7 +49,7 @@ date: Julio 2026
 - Atlas necesita un analista de mercado que trabaje solo: **Faro**. La misión es construirlo con Claude, pieza por pieza.
 - **Parte 1 — en el chat:** conectores para leer noticias y actuar sobre el mail, y una tarea programada que arma el reporte semanal sola.
 - **Parte 2 — en Cowork:** un Project con carpetas y archivos reales, `CLAUDE.md` como memoria del proyecto, el tablero del jefe entregado como PDF, y todo empaquetado en Skills.
-- El enunciado completo, con los seis milestones y sus criterios, está en el PDF de la misión.
+- El enunciado completo, con los seis milestones y sus criterios, está en los PDF del enunciado: uno por parte.
 
 ```ascii
         PARTE 1 - EN EL CHAT              PARTE 2 - EN COWORK
@@ -68,7 +68,7 @@ labels: caja izquierda = Parte 1 en el chat; caja derecha = Parte 2 en Cowork.
 
 ### Sources
 
-- Enunciado de la misión: `missions/CoWork/mission.md` (versión de entrega: `mission.pdf`).
+- Enunciado de la misión: `missions/CoWork/mission.md` (versión de entrega: `mission-parte1.pdf` y `mission-parte2.pdf`).
 
 ---
 
