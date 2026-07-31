@@ -21,7 +21,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La Introducción encuadra la clase abriendo por el problema: las horas que se van en tareas repetitivas y en información dispersa que nadie logra analizar junta, con la barrera de tener que saber programar; recién después llega la respuesta (agentes de IA que ejecutan trabajo, con Claude Desktop y sus dos caras, Chat y Cowork), quién es Anthropic y las cuatro herramientas de Claude (Code, Cowork, Chat/Web, Design) con la base técnica que las relaciona (1). De ahí baja a la superficie que la audiencia ya usa, el chat, y explicita su límite: responde de memoria de entrenamiento; cierra nombrando las dos capacidades que lo extienden, Conectores y Search (2). Los conectores se abren en profundidad como concepto transversal a todas las IAs: qué son, cómo además de traer información actúan sobre el mundo del usuario, dos casos concretos (el conector de búsqueda web y Claude in Chrome, con una lámina propia para el cuidado de prompt injection) y la división entre los conectores que vienen listos y los externos, que se conectan por MCP (3). Con el chat extendido, Schedule lo vuelve proactivo: describir un trabajo una vez, fijar cadencia y saber dónde corre, local o en la nube (4). Cierra una placa divisoria que presenta la misión de la materia, Faro, el analista de mercado virtual de la empresa Atlas, y manda a resolver su parte 1 con lo ya visto, todo dentro del chat y sin instalar nada; la parte 2 y el salto a Claude Cowork quedan para la segunda clase (5). Cierra un repaso corto de las cuatro piezas de la clase y el puente a la segunda.
+**Narrative arc:** La Introducción encuadra la clase abriendo por el problema: las horas que se van en tareas repetitivas y en información dispersa que nadie logra analizar junta, con la barrera de tener que saber programar; recién después llega la respuesta (agentes de IA que ejecutan trabajo, con Claude Desktop y sus dos caras, Chat y Cowork), quién es Anthropic y las cuatro herramientas de Claude (Code, Cowork, Chat/Web, Design) con la base técnica que las relaciona (1). De ahí baja a la superficie que la audiencia ya usa, el chat, y explicita su límite: responde de memoria de entrenamiento; cierra nombrando las dos capacidades que lo extienden, Conectores y Search (2). Los conectores se abren en profundidad como concepto transversal a todas las IAs: qué son, cómo además de traer información actúan sobre el mundo del usuario, dos casos concretos (el conector de búsqueda web y Claude in Chrome, con una lámina propia para el cuidado de prompt injection) y la división entre los conectores que vienen listos y los externos, que se conectan por MCP (3). Con el chat extendido, Schedule lo vuelve proactivo: describir un trabajo una vez, fijar cadencia y saber dónde corre, local o en la nube (4). Cierra una placa divisoria que presenta la misión de la materia, Faro, el analista de mercado virtual de la empresa Atlas, y manda a resolver su parte 1 con lo ya visto, todo dentro del chat y sin instalar nada; la parte 2 y el salto a Claude Cowork quedan para la segunda clase (5). La última lámina cierra la clase en cuatro tiempos: la idea que queda, lo que se puede activar esta semana, la aprobación humana antes de cada acción que importa y el puente a Claude Cowork en la segunda clase.
 
 **Sections (in delivery order):**
 
@@ -751,7 +751,7 @@ labels: arriba = LA MISION, PARTE 1; centro = FARO EN EL CHAT (el analista de me
 
 ### Speaker notes
 
-Primera placa de misión, corta. Hasta acá se vieron capacidades sueltas: conectores, capacidad ejecutiva, Schedule, todo dentro del chat que la audiencia ya tiene y sin instalar nada. Esta slide le pone un destino concreto a lo aprendido. Presentar a Faro en dos frases: el analista de mercado virtual de Atlas, que sigue la actualidad del sector, consolida un reporte semanal y deja el borrador de correo listo antes de la reunión del lunes. Decir con qué se resuelve la parte 1: solo con el chat, los conectores y Schedule, sin instalar nada. Aclarar que la parte 2 se resuelve en la segunda clase, ya en Cowork, y que no depende de esta. Dejar la consigna de la parte 1 y anunciar que la próxima arranca con Cowork instalado. Después de esta placa queda el repaso de cierre, así que no cerrar del todo acá: esta lámina fija el destino, y la siguiente recorre lo que se vio. Tiempo objetivo: ~2 min.
+Primera placa de misión, corta. Hasta acá se vieron capacidades sueltas: conectores, capacidad ejecutiva, Schedule, todo dentro del chat que la audiencia ya tiene y sin instalar nada. Esta slide le pone un destino concreto a lo aprendido. Presentar a Faro en dos frases: el analista de mercado virtual de Atlas, que sigue la actualidad del sector, consolida un reporte semanal y deja el borrador de correo listo antes de la reunión del lunes. Decir con qué se resuelve la parte 1: solo con el chat, los conectores y Schedule, sin instalar nada. Aclarar que la parte 2 se resuelve en la segunda clase, ya en Cowork, y que no depende de esta. Dejar la consigna de la parte 1 y anunciar que la próxima arranca con Cowork instalado. Después de esta placa queda la lámina de cierre, así que no cerrar del todo acá: esta fija el destino, y la siguiente dice qué hacer el lunes con lo visto. Tiempo objetivo: ~2 min.
 
 ### Presenter feedback
 
@@ -759,15 +759,14 @@ Primera placa de misión, corta. Hasta acá se vieron capacidades sueltas: conec
 
 # Conclusions
 
-## 1. Qué nos llevamos de esta clase
+## 1. El lunes: qué hacer con esto
 
 ### Content
 
-- **El chat de fábrica responde de memoria:** información vieja, riesgo de alucinación y cero acceso a los datos y las apps del usuario.
-- **Los conectores lo sacan del aislamiento:** consulta fuentes reales y además ejecuta acciones, siempre con autorización y revisión humana.
-- **Dos casos y una división:** búsqueda web y Claude in Chrome (con el cuidado del prompt injection); los del catálogo se activan de un clic, los externos pasan por MCP.
-- **Schedule** lo vuelve proactivo: se describe una vez y corre solo. Antes de confiarle algo, saber dónde corre.
-- **La parte 1 de la misión** se resuelve con esto, sin salir del chat. La segunda clase retoma ese chat extendido y da el salto a **Claude Cowork**.
+- **El chat consulta información actual y ejecuta acciones sobre el mail y la agenda.** Alcanza con configurar la cuenta que ya está en uso, sin instalar nada ni escribir código.
+- **Para esta semana:** activar la búsqueda, conectar el mail y la agenda, y dejar programado un trabajo recurrente.
+- **Ninguna acción que importe se ejecuta sin aprobación humana.** Anthropic documenta el prompt injection como riesgo abierto y aclara que no es cero.
+- **La segunda clase** retoma este chat extendido y sigue en **Claude Cowork**, donde el agente trabaja sobre carpetas y archivos del usuario.
 
 ### Sources
 
@@ -775,7 +774,15 @@ Primera placa de misión, corta. Hasta acá se vieron capacidades sueltas: conec
 
 ### Speaker notes
 
-Repaso de cierre, hablado y rápido. La audiencia acaba de ver todo esto, así que la lámina se recorre de arriba abajo sin volver a explicar nada: una frase por bullet y seguir. El hilo que conviene decir en voz alta es el del recorrido: arrancamos en el chat que ya usaban todos los días, le pusimos nombre a su límite, lo abrimos al mundo real con conectores, vimos dos casos y el cuidado de seguridad que va con ellos, y terminamos con Schedule, que lo hace trabajar sin que nadie se lo pida. Si hay una sola cosa para llevarse, que sea el prompt injection y la revisión humana antes de aprobar una acción. Cerrar con el puente: la parte 1 de Faro se resuelve con lo de hoy, dentro del chat, y la próxima clase arranca con Claude Cowork instalado para la parte 2. Dejar la consigna clara antes de abrir Q&A. Tiempo objetivo: ~3 min.
+Cierre de la clase. La audiencia acaba de ver todo el material, así que esta lámina no vuelve sobre el temario: contesta qué hacer con lo visto. Bajar el ritmo y darle una frase a cada bullet.
+
+Primero, la idea que se llevan: el chat que ya usan todos los días consulta información actual y ejecuta acciones sobre el mail y la agenda, y eso se resuelve con configuración, sin instalar nada ni escribir código. Es el punto que ordena los otros tres.
+
+Después, lo concreto para esta semana: activar la búsqueda, conectar mail y calendario y dejar una tarea programada corriendo. Se puede tener andando con la cuenta que ya tienen, y si se van con una sola cosa hecha, que sea esta.
+
+La advertencia va acá y es la última palabra sobre el tema, no un bullet enterrado: el humano aprueba antes de que se ejecute algo que importa, y el prompt injection es un riesgo abierto que el propio Anthropic documenta y no da por resuelto. Volver un momento a la lámina 3.6 si alguien pide detalle.
+
+Cerrar con el puente: la parte 1 de Faro se resuelve con esto, dentro del chat, y la próxima clase arranca con Claude Cowork instalado, ya sobre carpetas y archivos. Dejar la consigna clara antes de abrir Q&A. Tiempo objetivo: ~3 min.
 
 ### Presenter feedback
 
