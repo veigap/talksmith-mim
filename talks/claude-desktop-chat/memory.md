@@ -1,7 +1,7 @@
 # memory.md — claude-desktop-chat
 
-**Current step:** 5 — Review (reabierto)
-**Awaiting:** 2026-07-31 — Step 6 (Polish) cerrado sobre `final.md`. Pendiente: decisión del presentador sobre Step 7 (Render html-strict) y sobre la duración real del bloque (el deck suma 50 min contra `duration: 60 min (a confirmar)`). 2026-07-31 — el Talk queda en `draft.md` (Step 5 / Review) recién salido del split. No avanzar a Polish sin señal explícita del presentador. Awaiting: revisión del draft partido (Thesis, Agenda y referencias cruzadas reescritas) y confirmación de la duración real de la clase.
+**Current step:** 7 — Render complete (html-strict)
+**Awaiting:** 2026-07-31 — deck html-strict entregado en `output/html/index.html`. Awaiting: Step 8 (Learnings) y la decisión sobre la duración, que sigue en 65 min contra un bloque de 60.
 **Mode:** C (Presenter Outline) — heredado del Talk combinado del que salió esta mitad.
 **Topic:** Claude Desktop, la superficie de chat: el chat que la audiencia ya usa a diario, su límite de memoria de entrenamiento, los conectores que lo abren al mundo real del usuario, Schedule para que trabaje solo, y la parte 1 de la misión de Faro resuelta enteramente dentro del chat.
 **Folder:** talks/claude-desktop-chat/
@@ -79,3 +79,112 @@ Parte 1 de un par de clases para el Master in Management (MiM) del IAE Business 
   - `final.md` y `output/` quedaron desactualizados a propósito: no incluyen la slide nueva. Re-correr Polish (Step 6) y Render (Step 7).
   - Duración real de la clase sin confirmar: 53 min contra `duration: 60 min (a confirmar)`.
   - Las 2 directivas `generate-image` de las slides 1.1 y 1.2 siguen pendientes.
+
+---
+
+## 2026-07-31 — La slide de cierre pasa de summary a wrap-up (Step 5, refinamiento de la entrada anterior)
+
+- Status: complete
+- What was decided: el presentador refinó el pedido de la entrada anterior: "más que un summary, un wrap-up". La slide que había quedado enumeraba una sección por bullet, en orden, y leía como índice en pasado. Se reescribió para que conteste "¿y ahora qué?" en vez de "¿qué vimos?". La slide sigue siendo una sola, en el mismo lugar; no se agregó ni se movió nada.
+- Título: `## 1. Qué nos llevamos de esta clase` → `## 1. El lunes: qué hacer con esto` (28 caracteres). El título viejo anunciaba un repaso; el nuevo ancla el cierre en la acción y sigue el patrón de dos puntos que ya usan varias slides del deck.
+- Content: de cinco bullets (uno por sección) a **cuatro**, uno por beat de cierre. (1) La idea que se llevan: el chat consulta información actual y ejecuta acciones sobre mail y agenda, con configuración y sin instalar nada ni escribir código. (2) Lo accionable esta semana: activar la búsqueda, conectar mail y agenda, dejar programado un trabajo recurrente. (3) El cuidado, como última palabra del tema y no como bullet enterrado: ninguna acción que importe se ejecuta sin aprobación humana, y Anthropic documenta el prompt injection como riesgo abierto que no es cero. (4) Hacia dónde sigue: la segunda clase retoma este chat extendido y sigue en Claude Cowork, sobre carpetas y archivos. Sin claims nuevos: los cuatro puntos ya están sourceados en 2.1, 3.2, 3.3, 3.6, 3.8, 4.1 y 5.1; `### Sources` no cambió y mantiene el estilo de slide organizativa.
+- Prosa bajo `desrobotizar`, incluido `references/reglas-propias.md`. Tres reglas propias mordieron y cambiaron la redacción respecto del borrador natural: la fórmula de transformación "deja de X y pasa a Y" (que era literalmente cómo venía formulado el beat) se reemplazó por el estado nuevo dicho plano; la etiqueta autorreferente tipo "la idea que ordena todo" se cortó del bullet y quedó solo en las notas del orador; el registro de slide se mantuvo impersonal ("la cuenta que ya está en uso" en vez de "la cuenta que ya tienen"), con la segunda persona reservada a las Speaker notes. Sin em dashes.
+- **Sigue sin diagrama**, por la misma razón de la entrada anterior y con más fuerza: cuatro etiquetas en fila no son una forma. El deck queda en 13 bloques ASCII, sin cambios.
+- Speaker notes reescritas de repaso a cierre: arrancan diciendo explícitamente que la lámina no vuelve sobre el temario, recorren los cuatro beats en orden, marcan la advertencia como última palabra del tema (con puntero a 3.6 si alguien pide detalle) y cierran con el puente a Cowork y la consigna antes del Q&A. `Tiempo objetivo: ~3 min` sin cambio, así que el total del deck sigue en **53 min** sobre 19 slides.
+- Vecindad revisada: el `Narrative arc` de la Agenda cerraba con "un repaso corto de las cuatro piezas de la clase", que ya no describe la lámina; ahora describe el cierre en cuatro tiempos. Las Speaker notes de 5.1 decían "la siguiente recorre lo que se vio"; ahora dicen "la siguiente dice qué hacer el lunes con lo visto". `Sections (in delivery order)` sin tocar.
+- Key inputs: pedido del presentador vía chat; `draft.md` slides 2.1, 3.2, 3.6, 4.1, 5.1 (verificación de que no hubiera claims nuevos); skill `talksmith:desrobotizar` + `references/reglas-propias.md`.
+- Files created/modified: `talks/claude-desktop-chat/draft.md`, `talks/claude-desktop-chat/memory.md`, `config/feedback-backlog.md`.
+- Verificación 8/8 PASS: YAML parsea con `class: "Claude Desktop - Chat"`; 26 líneas de fence = 13 bloques pareados, sin cambio; las 2 referencias de imagen resuelven; Conclusions con exactamente 1 slide y secciones 1-5 intactas; 19 `### Presenter feedback` + 7 `**Presenter feedback:**`, todos vacíos, 0 `[open]` / 0 `[closed]`; título de 28 caracteres; suma de "Tiempo objetivo" = 53 min sobre 19 slides; sin em dashes en la prosa nueva.
+- Pending open questions:
+  - `final.md` y `output/` siguen desactualizados a propósito. Re-correr Polish (Step 6) y Render (Step 7).
+  - Duración real sin confirmar: 53 min contra `duration: 60 min (a confirmar)`.
+  - Las 2 directivas `generate-image` de las slides 1.1 y 1.2 siguen pendientes.
+
+---
+
+## 2026-07-31 — Reestructura en 7 secciones (Step 5, ronda de 14 bullets)
+
+- Status: complete
+- What was decided: el presentador dejó 14 bullets de feedback en `draft.md` más dos pedidos por chat. Tres de ellos se pisaban sobre el esqueleto (renombrar la sección 2 a "Context augmentation", borrarla y mandar su slide a Connectors, y elevar Web search y Claude in Chrome a secciones propias). Se le ofrecieron tres esqueletos y eligió la **opción 1: Context augmentation como paraguas conceptual**, con Web search, Connectors y Claude in Chrome como secciones hermanas después de ella.
+- **Estructura nueva (7 secciones, 22 slides, 59 min):** 1 Introducción (6) · 2 Context augmentation (2) · 3 Web search (2) · 4 Connectors (6) · 5 Claude in Chrome (2) · 6 Schedule (2) · 7 La misión parte 1 (1) · Conclusions (1). Antes: 5 secciones, 19 slides, 53 min.
+- **Slides nuevas (4):** `1.5 Claude Desktop Chat` (mismo producto en dos empaquetados; diferencias periféricas; foco en aspectos avanzados; nota de que el core común hace que todo aplique también a Cowork). `1.6 El chat en Claude Desktop` (lámina de pantalla con `chat-home.png`). `3.2 La búsqueda en pantalla` (lámina de pantalla con `websearch.png`). `4.5 Buscar, conectar y autorizar` (salió de partir la vieja 3.8, que apilaba dos capturas en una sola lámina: el layout que el presentador marcó como malo se resolvió con una imagen por slide).
+- **Slide reescrita:** `1.3 Quién es Anthropic` pasó de dos bullets a las cuatro cajas que dictó el presentador (Qué es / Por qué existe / Cómo se estructura / Qué la distingue), como items etiquetados. Las URLs de Constitutional AI, RSP y AUP se citaron sin fetch verificado en esta ronda y quedaron como open question.
+- **Concepto agregado:** in-context learning entra como cuarto bullet de `2.1` y como el concepto que da nombre a la sección. Es lo que hace que "Context augmentation" sea un paraguas real y no solo un título: si el prompt es la única palanca, las dos secciones siguientes son las dos formas de llenarlo.
+- **Slide cortada:** `Cuidado: prompt injection` (ex 3.6), por pedido del presentador vía chat. No se borró: el contenido completo, su ASCII y su fuente están en `# Cut material`, y el tema sobrevive en dos lugares proyectables o decibles — las Speaker notes de `5.1` (párrafo propio, con las tres prácticas y el "el riesgo no es cero" textual) y el tercer bullet de la lámina de cierre, que ahora cita el artículo de seguridad directamente. Riesgo asumido y registrado en Open questions: si en el ensayo el cuidado queda flojo, la lámina se repone desde Cut material.
+- **Rename global:** "conectores" → "Connectors" en todo el deck (thesis, agenda, títulos, Content, ASCII, Sources, Speaker notes). Verificado: 0 ocurrencias de "conector/conectores" fuera de los bullets de feedback verbatim. En las secciones 2 y 3 el término se evita a propósito: el presentador pidió introducirlo recién en la sección 4, así que 2.2 nombra la segunda vía como "conectar el chat a los sistemas del usuario".
+- Prosa nueva bajo `talksmith:desrobotizar` + `references/reglas-propias.md`. Reglas que mordieron: sin em dashes (los bullets nuevos usan coma o punto), registro impersonal en láminas con la segunda persona reservada a Speaker notes, sin minimizadores de fricción (la 4.5 dice "buscar, conectar y autorizar" y no "con un clic"), sin etiquetas autorreferentes.
+- Key inputs: los 14 bullets de `Presenter feedback` en `draft.md`; dos pedidos por chat (borrar la slide de prompt injection; elegir el esqueleto); `config/profile.md`; `images/` para confirmar que `chat-home.png` y `websearch.png` existían antes de referenciarlas.
+- Files created/modified: `talks/claude-desktop-chat/draft.md`, `talks/claude-desktop-chat/memory.md`, `config/feedback-backlog.md` (14 filas espejadas).
+- Verificación: YAML parsea con `class: "Claude Desktop - Chat"`; 12 bloques ASCII con fences pareados; 7 secciones con slides contiguos y numeración reiniciada por sección; la lista `Sections (in delivery order)` es 1:1 con los H1 numerados; las 4 referencias de imagen resuelven contra `images/`; 14 bullets `[closed]` con sus 14 `Resolution:`, 0 `[open]`, 0 sin espejar en el backlog; suma de "Tiempo objetivo" = 59 min sobre 22 slides.
+- Pending open questions:
+  - Duración: 59 min contra `duration: 60 min (a confirmar)`. Ya no hay margen para Q&A ni pausa; confirmar el bloque real.
+  - `final.md` y `output/` desactualizados a propósito. Re-correr Polish (Step 6) y, si se quiere, Render (Step 7).
+  - Las 2 directivas `generate-image` de las slides 1.1 y 1.2 siguen pendientes.
+  - Fuentes de las cuatro cajas de Anthropic (1.3) sin fetch verificado.
+  - Qué diferencias concretas nombrar entre Claude web y Claude Desktop (1.5).
+  - Prompt injection sin lámina propia: decisión a revisar después del ensayo.
+
+---
+
+## 2026-07-31 — Segunda ronda de review (5 bullets) y reordenamiento del cierre
+
+- Status: complete
+- What was decided: sobre el deck ya reestructurado, el presentador dejó 5 bullets más y editó a mano dos títulos. El deck pasa a **25 slides / 65 min**, que es el problema abierto que deja esta ronda.
+- **Curación (4.3):** los out of the box están curados por Anthropic. Entró como bullet propio en el Content, como línea nueva en el ASCII (`CURADOS por Anthropic` / `SIN curacion`), en las Speaker notes y en la cita de Sources, que lo deriva por contraste del "not been verified by Anthropic" del artículo de custom connectors. Es lo que sostiene el criterio de confianza que la slide ya enunciaba, así que dejó de ser un aparte y pasó a ser la razón.
+- **Dos slides nuevas al final de la sección 4:** `4.7 Agregar un external connector` (captura `custom-connector.png`, más el flujo de alta: URL del servidor MCP y credenciales) y `4.8 Dónde buscar servidores MCP publicados` (la tabla de cinco directorios que dictó el presentador). Se separaron en dos láminas en vez de meter captura y tabla juntas, siguiendo la lección de layout de la ronda anterior. Las cinco fuentes de la tabla son de terceros y quedaron sin verificar.
+- **Slide nueva 6.2 `Dónde vive el Schedule`** con `schedule.png`; la vieja 6.2 pasó a 6.3.
+- **Conclusiones movidas delante de la sección 7.** El orden de cierre ahora es Schedule → Conclusions → placa de la misión. Efectos colaterales corregidos: las Speaker notes de Conclusions ya no dicen "cerrar antes del Q&A" sino que anuncian la placa; las de la placa ya no anuncian una lámina de cierre posterior; el `Narrative arc` se reescribió con el orden nuevo; la cita de Sources de Conclusions pasó de "secciones 2 a 7" a "2 a 6".
+- **Placa de misión vaciada.** Pedido: "acá borrar todo y solo mencionar que vamos a trabajar en la mission, es un slide que da pie a mostrar". Quedó la placa ASCII más una línea. Los tres bullets de Faro no se perdieron: bajaron a Speaker notes, que ahora encuadran la lámina como pie para mostrar la consigna en vivo.
+- **Ediciones a mano del presentador, respetadas tal cual:** sección 7 renombrada `La mission` y slide 5.1 renombrada `Que es Claude in Chrome ?`. La lista `Sections (in delivery order)` se sincronizó al heading verbatim; la ortografía quedó anotada en Open questions para que él decida.
+- Key inputs: 5 bullets de `Presenter feedback`; `images/` para confirmar que `custom-connector.png` y `schedule.png` existían antes de referenciarlas.
+- **Nota operativa (para futuras sesiones remotas):** la copia staged de `draft.md` bajo `/mnt/user-data/uploads/` quedó cacheada con el contenido viejo y `find-open` devolvió los bullets de la ronda anterior. La salida fue copiar el archivo a un nombre nuevo en el disco del presentador y stagear ese. Si los bullets detectados no coinciden con lo que el presentador dice haber escrito, sospechar del caché antes que del archivo. Además, un bullet indentado con un espacio (` - texto`) no lo detecta `find-open`: hay que normalizarlo a columna 0.
+- Files created/modified: `talks/claude-desktop-chat/draft.md`, `talks/claude-desktop-chat/memory.md`, `config/feedback-backlog.md` (5 filas más, 19 en total para este Talk).
+- Verificación: 12 bloques ASCII con fences pareados; 7 secciones con numeración contigua; agenda 1:1 con los headings; las 6 referencias de imagen resuelven; 19 bullets `[closed]` con sus 19 `Resolution:`, 0 `[open]`, 0 sin espejar; Conclusions precede a la sección 7.
+- Pending open questions:
+  - **Duración: 65 min sobre 25 slides contra un bloque de 60.** Candidatas a recorte anotadas en `# Open questions` del draft, por orden: 4.8 (tabla de directorios, es material para repartir), 1.6 y 3.2 (láminas de pantalla reemplazables por demo en vivo).
+  - Los cinco directorios MCP de 4.8, sin verificar online.
+  - Ortografía de "La mission" y "Que es Claude in Chrome ?".
+  - `final.md` y `output/` desactualizados; re-correr Polish.
+  - Las 2 directivas `generate-image` de 1.1 y 1.2 siguen pendientes.
+
+---
+
+## 2026-07-31 — Step 6 (Polish)
+
+- Status: complete
+- What was decided: `final.md` derivado de `draft.md` (25 slides) con los 12 diagramas renderizados. `draft.md` no se tocó, así que Polish sigue siendo re-corrible.
+- **12 bloques ASCII → 12 SVG + 12 PNG companion.** Todos con slug nuevo acorde a la numeración de secciones de esta ronda (`s1-4-1`, `s2-1-1`, `s3-1-1`, `s4-1-1`, `s4-2-1`, `s4-3-1`, `s4-6-1`, `s5-1-1`, `s5-2-1`, `s6-1-1`, `s6-3-1`, `s7-1-1`). Los 39 archivos del Polish anterior, con los slugs viejos, se movieron a `_to_delete/images-polish-anterior/` porque ya no los referencia nada.
+- **Dos diagramas necesitaron segunda pasada.** `s1-4-1`: el rótulo "misma base técnica" estaba sobre un parche blanco que partía el corchete en dos, así que el lazo Code-Cowork no leía como lazo; se redibujó con línea continua. `s2-1-1`: la lista "lo que NO ve" era texto suelto y dejaba una franja muerta a la derecha; pasó a panel.
+- **`s4-3-1`** salió con el contraste de curación como remate: dos banners del mismo tamaño, "CURADOS por Anthropic" en tarjeta con borde y "SIN curación" en rojo sólido. **`s7-1-1`** salió como placa divisoria, sin cajas ni flechas.
+- **Limpieza de `final.md`:** 12 fences reescritos a referencias de imagen con su `ascii-source` preservado; los 12 refs `.svg` reescritos a `.png` (Keynote no embebe SVG); 0 extensiones prohibidas; 0 bullets `[open]` para rescatar; 34 bloques de `Presenter feedback` eliminados (25 H3 + 9 de párrafo).
+- **Los dos asides `generate-image` (slides 1.1 y 1.2) siguen sin imagen**, por segunda vez: esta sesión tampoco tenía capacidad de generación de imágenes. Las directivas quedaron en su lugar, las slides conservan su texto y no rompen el render.
+- **Caveat de proceso:** el crítico visual ciego no se pudo lanzar en esta sesión (el entorno no expuso la herramienta), así que la revisión de los 12 diagramas la hizo el mismo agente que los dibujó. Los dos defectos de arriba se encontraron y corrigieron así, pero fue autorrevisión y no revisión independiente. El rastro por diagrama quedó en `images/.critique/<nombre>.md`. Conviene que el presentador mire las 12 imágenes antes del render.
+- Key inputs: `draft.md` (25 slides); `config/diagram-style.md` del plugin; `cairosvg` + `Pillow` instalados en la sesión para la rasterización.
+- Files created/modified: `talks/claude-desktop-chat/final.md` (nuevo), `talks/claude-desktop-chat/images/` (12 SVG + 12 PNG + 12 sidecars `.ascii`), `talks/claude-desktop-chat/memory.md`.
+- Verificación: 0 campos `Presenter feedback`, 0 stamps, 0 fences ASCII sin renderizar; 18 referencias de imagen, todas `.png` y todas resolviendo contra `images/` en el disco del presentador; 12 `ascii-source` preservados; línea en blanco antes de cada `---`; 7 secciones / 25 slides; frontmatter intacto.
+- Pending open questions:
+  - Duración: 65 min sobre 25 slides contra un bloque de 60. Sin resolver.
+  - Step 7 (Render) sin correr: `output/` sigue vacío.
+  - Los dos asides `generate-image`, pendientes por segunda vez.
+  - Los cinco directorios MCP de la slide 4.8, sin verificar online.
+  - `.gitignore`: conviene agregar `talks/*/images/.critique/`.
+
+---
+
+## 2026-07-31 — Step 7 (Render, html-strict)
+
+- Status: complete
+- What was decided: el presentador eligió el deck HTML compartible. Salió `output/html/index.html`, un Reveal.js autocontenido de 3,3 MB con las 21 imágenes embebidas en base64, las fuentes IBM Plex inlineadas y cero referencias externas. 33 láminas: portada + 7 separadores de sección + 25 slides.
+- **`slide-model.json` (32 slides + portada), clasificación por familia:** `content+cards+image` para las slides con diagrama y cards (11), `concept-breakdown` para los sets etiquetados sin imagen (5), `icon-list` para los dos slides de apertura, `content-image` para las cinco láminas de pantalla, `section-agenda` para los 7 separadores.
+- **Dos correcciones tras mirar las capturas renderizadas.** (1) Tres slides que había clasificado como `content-image` con varios `facts` salieron como viñetas planas, que es exactamente lo que el invariante del catálogo prohíbe (cards, nunca bullets): `Buscar, conectar y autorizar`, `Agregar un external connector` y `¿Dónde corre? Local o nube` pasaron a `content+cards+image` con cards etiquetadas. (2) En la slide de directorios MCP, la etiqueta `github.com/modelcontextprotocol/servers` desbalanceaba la grilla; quedó `modelcontextprotocol/servers` con "En GitHub" en el cuerpo.
+- **Extensiones: se usaron los `.png`, no los `.svg`.** El skill prefiere inlinear SVG como vector, pero Polish ya había reescrito las refs de `final.md` a `.png` por la regla Keynote-safe, y `image_coverage` compara literal. Se filló con `.png` para que el audit pase; los PNG son rasterizaciones a 2x y se ven nítidos proyectados.
+- **Bug encontrado en `strip_feedback.py`:** en los bloques de feedback a nivel párrafo (`**Presenter feedback:**`) elimina la etiqueta y el bullet `[closed]` pero deja huérfana la línea de continuación `  Resolution: …`. Quedaron 3 sueltas en `final.md` (secciones 2, 4 y 5), visibles como texto en el cuerpo. Se removieron a mano antes del render. **Si se re-corre Polish, revisar esto de nuevo.**
+- Key inputs: `final.md`; `config/pptx-styles/slide-templates.md` (catálogo de clasificación); `schemas/slide-model.md` (contrato de campos); `config/logo.png` (portada); Playwright + Chromium para las capturas de verificación.
+- Files created/modified: `talks/claude-desktop-chat/output/html/index.html`, `talks/claude-desktop-chat/output/slide-model.json`, `talks/claude-desktop-chat/final.md` (3 líneas huérfanas removidas), `talks/claude-desktop-chat/memory.md`.
+- Verificación: los tres audits del modelo pasan (`degenerate_enum`, `field_coverage`, `image_coverage`); 33 secciones Reveal; 26 paneles de notas del orador; 0 referencias externas a `images/`; portada con logo IAE, título, clase, autores y fecha; se revisaron 20 láminas renderizadas en captura.
+- Pending open questions:
+  - Duración: 65 min sobre 25 slides contra un bloque de 60. Sigue sin resolver y es lo único que bloquea.
+  - Step 8 (Learnings) sin correr.
+  - Los dos asides `generate-image` de 1.1 y 1.2, pendientes por segunda vez.
+  - Los cinco directorios MCP de 4.8, sin verificar online.
+  - El bug de `strip_feedback.py` con los bloques de feedback a nivel párrafo.

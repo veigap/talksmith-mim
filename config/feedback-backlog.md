@@ -894,3 +894,131 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, s
   feedback: "Agregar una slide de conclusiones que resuma lo que se vio en la clase. Las dos que hay no son un repaso: la primera es el loop de Faro (el payoff de la misión) y la segunda el beat de gobernanza. No ponerla última, el deck cierra a propósito en los cuidados."
   resolution: "Slide nueva insertada PRIMERA en Conclusions (repaso → loop de Faro → cuidados), con renumeración 1→2 y 2→3. Razón de la ubicación: el loop de Faro termina con una pregunta retórica al público ('¿Qué otra tarea recurrente podrían delegarle a su propio Faro?') y un repaso plano después de ese gancho lo desinfla; además el orden material → aplicación → advertencias es el mismo que usa cada sección de la charla. Título 'Repaso: las piezas y cómo se combinan' (37c). Cinco bullets, uno por beat del arco: el chat extendido de la clase anterior como base y Cowork bajando a la computadora; el cambio de rol a delegar un resultado completo; los .md como formato de trabajo con el entregable generado al final; el Project sobre carpeta concedida con las Instrucciones como contrato; Skills y Subagentes, cerrando con la idea organizadora de que las piezas se combinan y cada trabajo usa solo las que necesita. Sin claims nuevos: cada punto ya está enseñado y sourceado en 1.1, 1.3, 2.3, 3.1, 3.3, 4.1 y 5.1, y Sources lo dice explícito además de citar los dos records del corpus. SIN DIAGRAMA a propósito: el mapa de 1.4 ya es esta misma lista dibujada como bloques apilados, así que un segundo diagrama de las mismas piezas sería redundancia de Mayer (el audit del Composer ya venía marcando redundancia acá); las notes mandan a volver un momento a 1.4 si hace falta apoyo visual. Ajustes de vecindad: el Narrative arc de la Agenda ahora describe el cierre en tres tiempos (repaso, loop, gobernanza), y las notes de Conclusions.2 perdieron las dos instrucciones que quedaron duplicadas ('recordar el arco entero' y 'repasar las piezas en una línea cada una'), reemplazadas por la indicación de que el repaso ya pasó y de que el trabajo de esa lámina es el diagrama. Registro impersonal per la regla propia de desrobotizar sobre segunda persona en láminas; sin em dashes en prosa nueva. TIEMPO: la slide va a ~2 min y el total pasa de 64,5 a 66,5 min contra duration 60 min (a confirmar); recomendación registrada y NO aplicada, bajar Conclusions.2 (el loop) de 5 a 3 min, porque el repaso nuevo ya cubre sus bullets de arco y piezas. Presenter feedback presente y vacío (28 campos, todos vacíos, 0 [open] / 0 [closed]). Verificaciones 8/8 PASS. No se tocaron final.md ni output/."
   tags: [add-slide, restructure, bad-order, slide-content, redundancy, time-budget]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Conclusions.1 (retitulada "El lunes: qué hacer con esto") + Agenda (Narrative arc) + slide 5.1 (Speaker notes)
+  origin: presenter-chat
+  feedback: "Más que un summary, un wrap-up."
+  resolution: "Refinamiento del pedido anterior (la slide de cierre agregada el mismo día). La versión que había era un summary: cinco bullets, uno por sección, en orden de dictado (chat de memoria → conectores → dos casos y la división → Schedule → la misión), o sea un índice en pasado para gente que acababa de sentarse a ver todo eso. Reescrita como wrap-up: contesta '¿y ahora qué?' en vez de '¿qué vimos?'. TÍTULO 'Qué nos llevamos de esta clase' (30c) → 'El lunes: qué hacer con esto' (28c), que ancla el cierre en la acción y respeta el patrón de dos puntos del deck. CONTENT de 5 bullets a 4, uno por beat de cierre en vez de uno por sección: (1) la idea única, el chat consulta información actual y ejecuta acciones sobre mail y agenda, y eso se resuelve con configuración, sin instalar nada ni escribir código; (2) lo accionable ya, activar la búsqueda, conectar mail y agenda y dejar programado un trabajo recurrente; (3) el cuidado como última palabra del tema y no como bullet enterrado, ninguna acción que importe se ejecuta sin aprobación humana y Anthropic documenta el prompt injection como riesgo abierto que no es cero; (4) hacia dónde sigue, la segunda clase retoma este chat extendido y sigue en Claude Cowork sobre carpetas y archivos. Sin claims nuevos: los cuatro puntos ya están enseñados y sourceados en 2.1, 3.2, 3.3, 3.6, 3.8, 4.1 y 5.1, y `### Sources` no cambió, sigue en el estilo de slide organizativa. TRES REGLAS PROPIAS DE desrobotizar cambiaron la redacción respecto del borrador natural: la fórmula de transformación 'deja de X y pasa a Y' (que era literalmente como venía formulado el beat de la idea única) se reemplazó por el estado nuevo dicho plano; la etiqueta autorreferente tipo 'la idea que ordena todo' se cortó del bullet y quedó solo en las notas del orador; el registro de slide se mantuvo impersonal ('la cuenta que ya está en uso' en vez de 'la cuenta que ya tienen'), con la segunda persona reservada a las Speaker notes. Sin em dashes. SIGUE SIN DIAGRAMA, misma razón que antes y con más fuerza: cuatro etiquetas en fila no son una forma; el deck queda en 13 bloques ASCII. SPEAKER NOTES reescritas de repaso a cierre: arrancan diciendo que la lámina no vuelve sobre el temario, recorren los cuatro beats, marcan la advertencia como última palabra del tema con puntero a 3.6, y cierran con el puente a Cowork y la consigna antes del Q&A; `Tiempo objetivo: ~3 min` sin cambio, así que el total del deck sigue en 53 min sobre 19 slides. VECINDAD: el `Narrative arc` de la Agenda cerraba con 'un repaso corto de las cuatro piezas de la clase', que ya no describía la lámina, y ahora describe el cierre en cuatro tiempos; las notes de 5.1 decían 'la siguiente recorre lo que se vio' y ahora dicen 'la siguiente dice qué hacer el lunes con lo visto'. `Sections (in delivery order)` sin tocar. Presenter feedback presente y vacío. Verificaciones 8/8 PASS. `final.md` y `output/` no se tocaron y quedan desactualizados a propósito."
+  tags: [slide-content, positioning, roadmap, add-slide, time-budget]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Conclusions.2 (retitulada "Lo que se llevan: cambió el rol", movida de 1 a 2) + Conclusions.1 (loop de Faro, renumerada y notes) + Agenda (Narrative arc) + Open questions
+  origin: presenter-chat
+  feedback: "Más que un summary, un wrap-up."
+  resolution: "Refinamiento del pedido anterior (la slide de cierre agregada el mismo día). Lo que había era un summary: cinco bullets, uno por sección, en orden de dictado (Cowork → delegar → .md → Projects/Instrucciones → Skills/Subagentes), o sea un índice en pasado para gente que acababa de ver todo eso. Reescrita como wrap-up, que contesta '¿y ahora qué?' en vez de '¿qué vimos?'. UBICACIÓN REVISADA Y CAMBIADA: de primera a SEGUNDA en Conclusions, orden nuevo loop de Faro → wrap-up → cuidados (renumeración: loop 2→1, wrap-up →2, cuidados sigue 3). El argumento que la había puesto primera era que un recap plano después del gancho del loop lo desinflaba; con un wrap-up se da vuelta, porque el beat accionable del wrap-up ('elegí una tarea recurrente y armala una vez') es literalmente la respuesta a la pregunta con la que cierra el loop ('¿Qué otra tarea recurrente podrían delegarle a su propio Faro?'): antes se la roba, después la contesta. Segunda razón: un wrap-up es un cierre y el cierre del deck es la lámina de gobernanza, así que el wrap-up tiene que quedar pegado a ella. No se movió a última por instrucción explícita. TÍTULO 'Repaso: las piezas y cómo se combinan' (37c) → 'Lo que se llevan: cambió el rol' (31c), que respeta el patrón de dos puntos del deck. CONTENT de 5 bullets, uno por beat de cierre en vez de uno por sección: (1) el rol cambió, ahora se delega un resultado completo y se guía el proceso; (2) los .md, el Project, las Instrucciones, las Skills y los Subagentes son piezas al servicio de eso y cada trabajo usa solo las que necesita; (3) el chat extendido de la clase anterior sigue en pie y se le suma la computadora, en una sola cláusula; (4) la consigna para el lunes, elegir una tarea propia que se repite todas las semanas y armarla una sola vez; (5) la barrera de entrada en cero, se opera en español y no hace falta escribir código. Sin claims nuevos: todo ya enseñado y sourceado en 1.1, 1.3, 1.4, 2.3, 3.1, 3.3, 4.1 y 5.1, y Sources sigue en el estilo de slide organizativa. El caveat opcional ('lo que se arma una vez hay que revisarlo') quedó FUERA del Content a propósito: con el wrap-up pegado a la lámina de cuidados le pisaba el trabajo; se movió a las Speaker notes como puntero a la lámina siguiente. DOS REGLAS PROPIAS DE desrobotizar cambiaron la redacción: el pedido venía formulado como contraste binario ('el cambio no es de herramienta, es de rol'), que cae a la vez en contraste negativo con coma y en fórmula de transformación, así que el beat se conserva pero afirmado plano ('El rol cambió'); y se evitó la hendida de revelación ('lo que cambió es el rol'). Registro impersonal de lámina, segunda persona solo en notas, sin em dashes. SIGUE SIN DIAGRAMA, misma razón: el mapa de 1.4 ya es esta lista dibujada como bloques apilados y un segundo dibujo de las mismas piezas es redundancia de Mayer; el deck queda en 13 bloques de fence. VECINDAD: el Narrative arc de la Agenda describe el cierre en el orden nuevo; las notes del loop perdieron 'la lámina anterior ya repasó las piezas', que dejó de ser cierta al quedar primera, y ganaron la instrucción de dejar la pregunta retórica en el aire porque la contesta la lámina que sigue. TIEMPO: ~2 min sin cambio, el total no creció; corrección de bookkeeping, la suma real de las 20 líneas Tiempo objetivo da 66,0 min y no los 66,5 anotados antes, contra duration 60 min (a confirmar). RECORTE del loop de Faro 5→3 min: se sigue recomendando y sigue SIN APLICAR, pero con justificación nueva, porque la vieja ('el repaso ya cubre sus bullets de arco y piezas') caducó al dejar el wrap-up de enumerar secciones; lo que queda en pie es que esos dos bullets duplican el mapa de 1.4 y que el peso de la lámina está en el diagrama. Presenter feedback presente y vacío (28 campos, todos vacíos, 0 [open] / 0 [closed]). Verificaciones 8/8 PASS. No se tocaron final.md ni output/ ni el Talk hermano."
+  tags: [slide-content, positioning, restructure, bad-order, redundancy, time-budget]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "3. Quién es Anthropic"
+  feedback: "Pongamos etas 4 cajas:"
+  resolution: Slide 1.3 reescrita con las cuatro cajas del presentador (Que es, Por que existe, Como se estructura, Que la distingue) como items etiquetados, con fuentes por caja.
+  tags: [slide-content, restructure, source-request]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "3. Quién es Anthropic"
+  feedback: "Que es"
+  resolution: Bullet cortado del presentador; se interpreto como el inicio de la caja 1 'Que es', ya cubierta por la reescritura de la slide.
+  tags: [slide-content, unclear-feedback]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "4. Las cuatro herramientas de Claude"
+  feedback: "Agreguemos un slide que sea de titulo "Claude Desktop Chat". Revisa el texto y hacelo mas compacto."
+  resolution: Slide nueva 1.5 'Claude Desktop Chat', en tres bullets compactos (mismo producto, diferencias perifericas, foco en aspectos avanzados) mas la nota de que el core comun hace que todo aplique tambien a Cowork.
+  tags: [new-slide, positioning, density]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "4. Las cuatro herramientas de Claude"
+  feedback: "Agreguemos otro slide "Chat en Clade desktop y muestra la imagen chat-home.png"
+  resolution: Slide nueva 1.6 'El chat en Claude Desktop', con images/chat-home.png como lamina de pantalla.
+  tags: [new-slide, visual, screenshot]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Section "2. Context augmentation"
+  feedback: "Esta seccion deberia ser "Context augmentation""
+  resolution: Titulo de seccion cambiado a 'Context augmentation' y Goal reescrito alrededor del in-context learning como concepto ordenador.
+  tags: [section-title, terminology, restructure]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. El chat responde de memoria"
+  feedback: "Borremos la seccion Claude Chat (Desktop) y el slide "El chat responde de memoria" es parte de connector ahora."
+  resolution: La seccion se renombro 'Context augmentation' y quedo como paraguas conceptual (memoria + ICL + las dos vias); Web search y Connectors salieron como secciones propias despues de ella.
+  tags: [restructure, section-move]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. El chat responde de memoria"
+  feedback: "Agreguemos que esto es importante en parte de In-context learning: In-context learning (ICL) es la capacidad de un modelo de lenguaje de adaptar su comportamiento o "aprender" una tarea nueva solo a partir de lo que ve en el prompt — sin que se le actualicen los pesos ni se reentrene."
+  resolution: El in-context learning se agrego como cuarto bullet de la slide y como el concepto que da nombre a la seccion Context augmentation, con la definicion del presentador citada en Sources.
+  tags: [slide-content, concept-depth]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "2. Dos formas de enriquecer el modelo"
+  feedback: "Lo que viene: conectores y búsqueda. El titulo deberia ser mas "2 formas de enriquecer el modelo""
+  resolution: Slide retitulada 'Dos formas de enriquecer el modelo' y reescrita alrededor de las dos vias: buscar en la web y conectar el chat a los sistemas del usuario.
+  tags: [slide-title, positioning]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. La misma pregunta, dos modos de responder"
+  feedback: "Elevemos esto como una seccion que es "web search". En la terminologia no usemos el termino connector. Lo vamos a introducir luego."
+  resolution: Web search es ahora la seccion 3, previa a Connectors; su prosa no usa el termino Connector, que se introduce recien en la seccion 4.
+  tags: [restructure, new-section, terminology]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. La misma pregunta, dos modos de responder"
+  feedback: "Agregar un slide que muestre webseaerch.png solamente que es un screenshot."
+  resolution: Slide nueva 3.2 'La busqueda en pantalla', solo con images/websearch.png y sin texto que compita con la imagen.
+  tags: [new-slide, visual, screenshot]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. La misma pregunta, dos modos de responder"
+  feedback: ""Regla: si la respuesta pudo cambiar → búsqueda obligada." marcalo como algo imporante."
+  resolution: La regla paso a bullet destacado en negrita y con los ejemplos (precios, noticias, versiones, papers, normativa); las Speaker notes la marcan como lo unico que la audiencia tiene que anotar de la seccion.
+  tags: [emphasis, slide-content]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Section "4. Connectors"
+  feedback: "Usemos Connectors en vez de Conectores en toda la presentacion."
+  resolution: Terminologia unificada a 'Connector/Connectors' en todo el deck: thesis, agenda, titulos de seccion y slide, Content, ASCII, Sources y Speaker notes.
+  tags: [terminology, global-rename]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "4. El directorio de Connectors"
+  feedback: "Mirar el layout de las imagenes. No esta quedando bien."
+  resolution: Las dos capturas se separaron en dos slides (4.4 El directorio de Connectors y 4.5 Buscar, conectar y autorizar), una imagen por lamina, para que cada una se lea proyectada.
+  tags: [visual, layout, restructure]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Section "5. Claude in Chrome"
+  feedback: "Borrá la slide "Cuidado: prompt injection"."
+  resolution: Slide 'Cuidado: prompt injection' eliminada del deck; el contenido completo, su ASCII y su fuente quedaron archivados en Cut material, y el tema sobrevive en las Speaker notes de 5.1 y en el tercer bullet de la lamina de cierre.
+  tags: [cut-slide, density]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "3. Out of the box y externos"
+  feedback: "Agregar que los out of the box estan curados por Anthropic"
+  resolution: La curacion de Anthropic entro como bullet propio en el Content, como linea nueva en el ASCII (CURADOS por Anthropic / SIN curacion), en las Speaker notes y en la cita de Sources por contraste con 'not been verified by Anthropic'.
+  tags: [slide-content, accuracy, trust]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "6. External connectors: todo pasa por MCP"
+  feedback: "Agreguemos un slide como agregar un external connect. Usemos el screenshot custom-connector.png y el texto Y esta tabla:"
+  resolution: Dos slides nuevas al final de la seccion 4: 4.7 'Agregar un external connector' con images/custom-connector.png, y 4.8 'Donde buscar servidores MCP publicados' con la tabla de cinco directorios del presentador.
+  tags: [new-slide, visual, screenshot, reference-table]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. Describir una vez, que corra sola"
+  feedback: "Agregar un slide con el screenshot schedule.png que es que muestra donde esta y como clearlo."
+  resolution: Slide nueva 6.2 'Donde vive el Schedule', con images/schedule.png; la vieja 6.2 paso a 6.3.
+  tags: [new-slide, visual, screenshot]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. El lunes: qué hacer con esto"
+  feedback: "Mover la conclusion antes de la mission"
+  resolution: El bloque Conclusions se movio completo delante de la seccion 7; las Speaker notes de ambas laminas y el Narrative arc se reescribieron para el orden nuevo, y el Q&A queda despues de la placa de mission.
+  tags: [restructure, bad-order]
+- talk: claude-desktop-chat
+  date: 2026-07-31
+  location: Slide "1. La misión, parte 1: Faro en el chat"
+  feedback: "Aca borrar todo y solo mencioar que vamos a trabajar en la mission !. Es un slide que da pie a mostrar."
+  resolution: Slide reducida a la placa ASCII mas una linea ('Ahora vamos a la mission'); los tres bullets de Faro pasaron a las Speaker notes, que ahora encuadran la lamina como pie para mostrar la consigna en vivo.
+  tags: [density, slide-content, divider]

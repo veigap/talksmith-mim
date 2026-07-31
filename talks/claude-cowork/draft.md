@@ -21,7 +21,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La clase arranca donde terminó la anterior, con el chat ya extendido por conectores y Schedule, y da el salto grande de una: Claude Cowork instalado en la computadora, trabajando sobre carpetas y archivos reales. La primera sección ubica ese salto: Cowork como herramienta de propósito general del knowledge worker, la analogía de la nueva habilidad base de oficina, el cambio de rol de chatear a delegar un resultado, el mapa de piezas que se apilan y el primer contacto con la interfaz sobre la app (1). De ahí las piezas se recorren una por una, en el orden en que se apilan. Los archivos `.md` primero, porque son el formato en el que la IA lee, edita y entrega: cómo se escriben, cómo se ven una vez formateados y el hábito de trabajar en `.md` y exportar recién al final (2). Después el espacio de trabajo: qué agrupa un Project, cómo se le concede una carpeta real del disco con el explorador del sistema, dónde vive su contexto y cómo las Instrucciones fijan de una vez el comportamiento del agente adentro de ese espacio (3). Con el espacio armado llegan las Skills, la forma de enseñar una tarea una sola vez: qué es una Skill, sus dos caminos de creación (el panel de Habilidades y el chat con `/skill-creator`, con la trampa del Save) y la anatomía del `SKILL.md` (4). La última pieza, ya de nivel avanzado, son los Subagentes: para qué tipo de sub-tarea conviene delegar en paralelo y cómo aparecen en Cowork, coordinados por debajo y sin panel propio (5). Una placa divisoria manda a resolver la parte 2 de la misión de Faro, el analista de mercado virtual de Atlas, ya en Cowork y sobre la carpeta real del equipo, sin exigir la parte 1 resuelta (6). El cierre abre con un repaso de lo que se vio, las piezas de la clase y la idea de que se combinan según lo que pida cada trabajo; después recorre el loop completo de Faro, que engancha las piezas de las dos clases, y termina en las advertencias de gobernanza antes de Q&A.
+**Narrative arc:** La clase arranca donde terminó la anterior, con el chat ya extendido por conectores y Schedule, y da el salto grande de una: Claude Cowork instalado en la computadora, trabajando sobre carpetas y archivos reales. La primera sección ubica ese salto: Cowork como herramienta de propósito general del knowledge worker, la analogía de la nueva habilidad base de oficina, el cambio de rol de chatear a delegar un resultado, el mapa de piezas que se apilan y el primer contacto con la interfaz sobre la app (1). De ahí las piezas se recorren una por una, en el orden en que se apilan. Los archivos `.md` primero, porque son el formato en el que la IA lee, edita y entrega: cómo se escriben, cómo se ven una vez formateados y el hábito de trabajar en `.md` y exportar recién al final (2). Después el espacio de trabajo: qué agrupa un Project, cómo se le concede una carpeta real del disco con el explorador del sistema, dónde vive su contexto y cómo las Instrucciones fijan de una vez el comportamiento del agente adentro de ese espacio (3). Con el espacio armado llegan las Skills, la forma de enseñar una tarea una sola vez: qué es una Skill, sus dos caminos de creación (el panel de Habilidades y el chat con `/skill-creator`, con la trampa del Save) y la anatomía del `SKILL.md` (4). La última pieza, ya de nivel avanzado, son los Subagentes: para qué tipo de sub-tarea conviene delegar en paralelo y cómo aparecen en Cowork, coordinados por debajo y sin panel propio (5). Una placa divisoria manda a resolver la parte 2 de la misión de Faro, el analista de mercado virtual de Atlas, ya en Cowork y sobre la carpeta real del equipo, sin exigir la parte 1 resuelta (6). El cierre abre con el loop completo de Faro, que engancha las piezas de las dos clases y las muestra corriendo solas; sigue con un wrap-up que nombra el cambio de rol y deja una consigna concreta para la semana, y termina en las advertencias de gobernanza antes de Q&A.
 
 **Sections (in delivery order):**
 
@@ -739,37 +739,7 @@ Placa de misión con el mismo formato que la de la parte 1 de la clase anterior,
 
 # Conclusions
 
-## 1. Repaso: las piezas y cómo se combinan
-
-### Content
-
-- Con el chat extendido de la clase anterior como base, **Cowork** baja a la computadora y trabaja sobre carpetas y archivos.
-- El cambio de rol: **delegar un resultado completo** y guiar el proceso.
-- Los archivos **`.md`** son el formato de trabajo. El entregable con formato se genera una sola vez, al final.
-- Un **Project** sobre una carpeta concedida, con las **Instrucciones** como contrato del espacio.
-- **Skills** para enseñar una tarea una vez y **Subagentes** para delegar en paralelo. Las piezas se combinan: **cada trabajo usa solo las que necesita.**
-
-### Sources
-
-- Sin material nuevo: repaso de las secciones 1 a 6; cada punto conserva la fuente de su slide de origen (1.1, 1.3, 2.3, 3.1, 3.3, 4.1, 5.1).
-- corpus/agentic-ai-deck.zip.md, progresión de building blocks; es la misma pila del mapa de 1.4.
-- "corpus/mision - auto.zip.md", la misión Atlas arma estas piezas una por una.
-
-### Speaker notes
-
-Primera de las tres láminas de cierre y la única que repasa contenido. La audiencia acaba de ver todo esto, así que no hay que re-explicar nada: una frase por bullet y seguir. Ritmo rápido, tono de "esto es lo que se llevan".
-
-Si conviene apoyarse en algo visual, volver un momento al mapa de la slide 1.4, que es exactamente esta lista dibujada como bloques apilados. No hace falta un diagrama nuevo acá.
-
-Lo único que sí conviene decir despacio es el remate: las piezas se combinan y cada trabajo usa solo las que necesita. Nadie tiene que armar las cinco para empezar; con un Project y un par de archivos `.md` ya se trabaja distinto. Mencionar al pasar que la misión parte 2 es donde van a combinarlas por su cuenta.
-
-Handoff: de acá se pasa al loop completo de Faro, que muestra estas mismas piezas enganchadas en un flujo que corre solo. Tiempo objetivo: ~2 min.
-
-### Presenter feedback
-
----
-
-## 2. El loop completo de Faro
+## 1. El loop completo de Faro
 
 ### Content
 
@@ -807,7 +777,39 @@ labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail) y las p
 
 ### Speaker notes
 
-Cierre integrador de las dos clases: mostrar el diagrama del loop completo para que vean cómo cada pieza se engancha con la siguiente. El loop arranca arriba con el Schedule, que es de la clase anterior; decirlo al pasar, sin re-enseñarlo, porque es justamente lo que muestra que las dos mitades son una sola cosa. La lámina anterior ya repasó las piezas una por una, así que acá no hay que volver a listarlas: los dos bullets de arco y piezas quedan de apoyo visual y se leen de corrido, o directamente se saltean. El trabajo de esta lámina es el diagrama, que muestra las piezas enganchadas y corriendo solas. Cerrar con las dos frases ancla: la de la Skill ("enseñá una vez") y el gancho completo, dicho en voz alta: "Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente podrían delegarle a su propio Faro?". Tiempo objetivo: ~5 min + Q&A (candidato a recortar a ~3 min ahora que el repaso vive en la lámina anterior).
+Cierre integrador de las dos clases: mostrar el diagrama del loop completo para que vean cómo cada pieza se engancha con la siguiente. El loop arranca arriba con el Schedule, que es de la clase anterior; decirlo al pasar, sin re-enseñarlo, porque es justamente lo que muestra que las dos mitades son una sola cosa. Los dos bullets de arco y piezas quedan de apoyo visual y se leen de corrido, o directamente se saltean: el mapa de la slide 1.4 ya los ordenó y no hace falta repetirlos uno por uno. El trabajo de esta lámina es el diagrama, que muestra las piezas enganchadas y corriendo solas. Cerrar con las dos frases ancla: la de la Skill ("enseñá una vez") y el gancho completo, dicho en voz alta: "Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente podrían delegarle a su propio Faro?". Dejar esa pregunta en el aire y no contestarla acá: la lámina que sigue la contesta con la consigna concreta. Tiempo objetivo: ~5 min + Q&A (candidato a recortar a ~3 min: los dos bullets de prosa duplican el mapa de 1.4 y el peso de la lámina está en el diagrama).
+
+### Presenter feedback
+
+---
+
+## 2. Lo que se llevan: cambió el rol
+
+### Content
+
+- **El rol cambió.** Ahora se delega un resultado completo y se guía el proceso mientras corre.
+- Los archivos `.md`, el Project, las Instrucciones, las Skills y los Subagentes son piezas al servicio de eso. **Cada trabajo usa solo las que necesita.**
+- El chat extendido de la clase anterior sigue en pie y ahora se le suma la computadora.
+- **Para el lunes:** elegir una tarea propia que se repite todas las semanas y armarla una sola vez, para que después corra sola.
+- La barrera de entrada está en cero: se opera en español y no hace falta escribir código.
+
+### Sources
+
+- Sin material nuevo: cierre de las secciones 1 a 6; cada afirmación conserva la fuente de su slide de origen (1.1, 1.3, 1.4, 2.3, 3.1, 3.3, 4.1, 5.1).
+- corpus/agentic-ai-deck.zip.md, progresión de building blocks; es la misma pila del mapa de 1.4.
+- "corpus/mision - auto.zip.md", la misión Atlas arma estas piezas una por una; la parte 2 es donde la audiencia las combina por su cuenta.
+
+### Speaker notes
+
+Última lámina de contenido antes de los cuidados. El loop de Faro que se acaba de ver mostró las piezas enganchadas y corriendo; acá se sube un escalón y se dice qué significa eso para el trabajo de cada uno. No re-explicar ninguna pieza: la audiencia acaba de verlas todas.
+
+El punto que conviene decir despacio es el primero. Antes se pedían pasos, uno por vez; ahora se delega un resultado y se guía el proceso. Las cinco piezas de la clase existen para sostener eso, y nadie necesita las cinco para empezar: con un Project y un par de archivos `.md` ya se trabaja distinto.
+
+La pregunta que quedó abierta en la lámina anterior ("¿qué otra tarea recurrente podrían delegarle a su propio Faro?") se contesta acá con una consigna concreta: elegir una tarea que se repite todas las semanas y armarla una vez. La misión parte 2 es el lugar para practicarlo, y la barrera de entrada es la que ya conocen desde la primera lámina, el español.
+
+Si alguien pide apoyo visual, volver un momento al mapa de la slide 1.4, que es esta misma idea dibujada como bloques apilados. No hace falta un diagrama nuevo acá.
+
+El caveat de que lo que se arma una vez después hay que revisarlo se deja para la lámina que sigue, la de cuidados, que es la que cierra la clase. Tiempo objetivo: ~2 min.
 
 ### Presenter feedback
 
@@ -838,7 +840,7 @@ Slide de cierre responsable, breve y obligatoria: acá la audiencia tiene que es
 # Open questions
 
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
-- **Split del 2026-07-31:** esta charla es la parte 2 de lo que era una clase de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive ahora en `talks/claude-desktop-chat`. Consecuencias abiertas: (a) `duration` quedó en `60 min (a confirmar)` y la suma de "Tiempo objetivo" da **66,5 min** desde que se agregó el repaso de Conclusions.1 (2026-07-31, +2 min sobre los 64,5 previos), así que hay que confirmar el bloque real o recortar ~6,5 min; el recorte recomendado por el editor es Conclusions.2 (el loop de Faro) de 5 a 3 min, porque el repaso nuevo ya cubre sus dos bullets de arco y piezas; (b) `final.md`, `output/slide-model.json` y `output/html/index.html` describen el deck combinado y están **desactualizados**; (c) los SVG/PNG en `images/` llevan slugs `s6-*`..`s11-*` de la numeración vieja, así que el próximo Polish re-deriva slugs y conviene seguirlo de un `polish_ascii.py gc`.
+- **Split del 2026-07-31:** esta charla es la parte 2 de lo que era una clase de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive ahora en `talks/claude-desktop-chat`. Consecuencias abiertas: (a) `duration` quedó en `60 min (a confirmar)` y la suma de "Tiempo objetivo" da **66 min** desde que se agregó la lámina nueva de cierre (2026-07-31, +2 min sobre los 64 previos; el reencuadre de esa lámina de repaso a wrap-up, mismo día, no movió el total). El 66,5 anotado antes arrastraba medio minuto de un conteo viejo: la suma de las 20 líneas "Tiempo objetivo" da 66,0 exactos. Hay que confirmar el bloque real o recortar ~6 min; el recorte recomendado por el editor sigue siendo el loop de Faro (ahora **Conclusions.1**) de 5 a 3 min, con la justificación actualizada: sus dos bullets de prosa duplican el mapa de 1.4 y el peso de la lámina está en el diagrama; (b) `final.md`, `output/slide-model.json` y `output/html/index.html` describen el deck combinado y están **desactualizados**; (c) los SVG/PNG en `images/` llevan slugs `s6-*`..`s11-*` de la numeración vieja, así que el próximo Polish re-deriva slugs y conviene seguirlo de un `polish_ascii.py gc`.
 - **Sin recap de la parte 1 (decisión del presentador, 2026-07-31):** el deck arranca directo en Cowork y solo remite a "la clase anterior" en prosa. Si al ensayar se siente abrupto, la pieza que falta sería un slide de repaso de una lámina al inicio de la Sección 1; no está y es decisión consciente.
 - Imágenes diferidas (Phase 2 del librarian no corrida): la imagen citada desde el corpus (`screenshot-cowork-tab.png` en slide 1.5) proviene de un registro con `<!-- pending: process_images -->`. La imagen existe en disco y se referencia; re-verificar depiction/relevance tras correr librarian Phase 2. (`mockup-tablero.png` quedó sin uso tras la reestructura del 2026-07-30, que borró la slide de Artifacts.)
 - Slide 1.5 (Demo time) cita pending stub corpus/agentic-ai-deck.zip.md; re-verify after librarian Phase 2.
