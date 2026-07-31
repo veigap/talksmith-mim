@@ -261,7 +261,14 @@
           "body": "Solo comparten la base de conocimiento."
         }
       ],
-      "notes": "El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Todo queda organizado y reutilizable: las Instrucciones valen para todo el Project, la memoria recuerda preferencias, los archivos viven en una carpeta concreta del disco. En el ejemplo, el Project \"Informe mensual del equipo\" apunta a `Documentos/Informe-Mensual`. Un punto práctico que sorprende: los chats no comparten contexto entre sí, solo las Instrucciones y la base de conocimiento. La carpeta se concede con el explorador de archivos del sistema, garantía de seguridad y límite a la vez, y la slide siguiente lo muestra en pantalla, así que acá solo anticiparlo. Tiempo objetivo: ~3 min."
+      "notes": "El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Todo queda organizado y reutilizable: las Instrucciones valen para todo el Project, la memoria recuerda preferencias, los archivos viven en una carpeta concreta del disco. En el ejemplo, el Project \"Informe mensual del equipo\" apunta a `Documentos/Informe-Mensual`. Un punto práctico que sorprende: los chats no comparten contexto entre sí, solo las Instrucciones y la base de conocimiento. La carpeta se concede con el explorador de archivos del sistema, garantía de seguridad y límite a la vez, y la slide siguiente lo muestra en pantalla, así que acá solo anticiparlo.\n\nLa nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla de la carpeta concedida, donde el agente abre, busca y escribe archivos con sus herramientas según lo que pida la tarea, sin volcar la carpeta en la conversación. La 3.3 trata el otro caso, la base de conocimiento del Project, donde la herramienta elige sola entre leer todo y buscar fragmentos. Si alguien pregunta cuánto material aguanta una carpeta grande, mandarlo a esa lámina. Tiempo objetivo: ~3 min.",
+      "highlights": [
+        {
+          "kind": "note",
+          "label": "Nota",
+          "body": "Cowork trabaja la carpeta concedida con herramientas de archivo: abre, busca y escribe los archivos que la tarea necesita, en lugar de traer el contenido entero a la conversación."
+        }
+      ]
     },
     {
       "template": "figures",
@@ -295,17 +302,86 @@
       "notes": "Slide de apoyo visual: mostrar las dos capturas, el explorador de archivos al conceder una carpeta y el panel de contexto del Project. Mensaje de seguridad: Cowork solo ve lo que le concedés, así que la carpeta ES el control de privacidad, nunca datos sensibles. De ahí la buena práctica que conviene decir en voz alta: usar una carpeta dedicada al trabajo del Project y revisar antes que no tenga adentro nada confidencial. El Project del informe mensual trabaja sobre `Documentos/Informe-Mensual`, nada más. Tiempo objetivo: ~2 min."
     },
     {
-      "template": "code-example",
+      "template": "icon-list",
+      "section": "Projects",
+      "title": "¿Los lee todos?",
+      "lead": "Cuando se le dan archivos a la IA, ¿los lee todos? Dos formas de trabajar, y cuál conviene en cada caso.",
+      "rows": [
+        {
+          "label": "Pocos archivos",
+          "icon": "auto_stories",
+          "body": "Claude los lee completos, todos, cada vez que llega una pregunta. Máxima precisión, a costa de ocupar la ventana de contexto entera en cada vuelta."
+        },
+        {
+          "label": "Muchos archivos",
+          "icon": "manage_search",
+          "body": "Claude cambia solo de estrategia. En lugar de leer todo, busca y trae los fragmentos que hacen falta. Multiplica por 10 la capacidad del Project, y la respuesta pasa a apoyarse en esos fragmentos."
+        },
+        {
+          "label": "Trabajar sobre los archivos",
+          "icon": "edit_document",
+          "body": "Consultarlos no alcanza. Claude abre, modifica y guarda dentro de la carpeta concedida, como lo haría una persona."
+        }
+      ],
+      "highlights": [
+        {
+          "kind": "note",
+          "label": "Subir lo que importa",
+          "body": "El relleno “por las dudas” empeora las respuestas."
+        },
+        {
+          "kind": "note",
+          "label": "Nombres de archivo claros",
+          "body": "Un nombre que no dice qué hay adentro tampoco le sirve a la IA."
+        },
+        {
+          "kind": "note",
+          "label": "PDFs escaneados",
+          "body": "Sin capa de texto son imágenes vacías. Conviene convertirlos antes."
+        }
+      ],
+      "notes": "La lámina contesta la pregunta que aparece apenas alguien sube su primera carpeta. La analogía que conviene usar: es la diferencia entre un colega que leyó todo el expediente antes de la reunión y uno que sabe exactamente en qué carpeta buscar. El primero es más preciso pero no escala; el segundo escala pero puede abrir el cajón equivocado. La herramienta elige sola cuál de los dos modos usar según cuánto material haya, sin que nadie configure nada, y ahí está lo accionable: no se elige el modo, se elige qué material entra.\n\nEnganchar con la lámina 2.1, que ya explicó qué hay en una carpeta de trabajo (conocimiento e instrucciones) y por qué conviene el `.md`. Esta lámina agrega el otro lado: qué hace la herramienta con ese material según cuánto haya. Una frase alcanza para hacer el puente.\n\nEl matiz de fuentes, para tenerlo a mano si alguien pregunta. La documentación de Anthropic sostiene que la calidad se mantiene cuando entra el modo de búsqueda (\"Response accuracy remains consistent with in-context processing\"). La intuición práctica de la casa es otra: cuando la respuesta se arma con los fragmentos que trajo una búsqueda, aparece un paso del que antes no se dependía, y ese paso puede traer lo que no era. La lámina no toma partido a propósito. Si sale el tema, decir las dos cosas y quedarse ahí.\n\nSobre los PDFs escaneados: la regla vale sobre todo para el material que se carga como base de conocimiento del Project. En Cowork el agente tiene herramientas y puede abrir un PDF y trabajarlo igual, así que el consejo es una buena práctica de carga, no un límite duro de la herramienta.\n\nCierre sugerido, para decir en voz alta: \"La calidad de lo que sale depende menos del modelo que de cómo ordenaste lo que entra.\" Tiempo objetivo: ~3 min."
+    },
+    {
+      "template": "content-image",
       "section": "Projects",
       "title": "Instrucciones: el contrato de trabajo",
+      "image": {
+        "src": "images/instructions.png",
+        "alt": "Panel de contexto de un Project en la app de escritorio, con Instructions rodeado en violeta y debajo Memory, Context con la carpeta concedida y Scheduled"
+      },
+      "facts": [
+        {
+          "label": "Instrucciones",
+          "body": "El “contrato de trabajo”: reglas en lenguaje natural que aplican a todo el Project."
+        },
+        {
+          "body": "El usuario las escribe una vez y valen para todos los chats."
+        },
+        {
+          "label": "Dónde viven",
+          "body": "El panel de contexto del Project, en la interfaz. No es un archivo que se edite a mano."
+        },
+        {
+          "body": "Conviene que sean cortas y claras."
+        },
+        {
+          "body": "Es el lugar de las reglas no negociables."
+        }
+      ],
+      "notes": "En lugar de re-explicarle el contexto a Claude cada vez, el usuario lo escribe una vez en las Instrucciones y queda fijo. Dónde viven: en el panel de contexto del Project (GUI), no un archivo que se edita a mano. La captura lo muestra, con Instructions rodeado arriba y debajo Memory, Context con la carpeta concedida y Scheduled.\n\nAprovechar la captura para cerrar las dos láminas anteriores. En esa misma pantalla están las tres capas que se enumeraron en 3.1 y la carpeta concedida de 3.2, así que sirve para que la audiencia ubique dónde vive cada cosa antes de entrar al ejemplo.\n\nUn detalle de forma, para decir al pasar: esta captura tiene la app en inglés (\"Instructions\") y la de la Sección 4 en español (\"Habilidades\"). Conviene avisarlo o unificar el idioma de la app antes de sacar capturas nuevas.\n\nLa lámina que sigue muestra unas Instrucciones completas. Tiempo objetivo: ~2 min."
+    },
+    {
+      "template": "code-example",
+      "section": "Projects",
+      "title": "Un ejemplo de Instrucciones",
       "language": "text",
       "code": "Sos el asistente de informes del equipo comercial.\nPreparás el informe mensual para colegas NO técnicos (incluido el jefe),\nque se lee en 5 minutos antes de la reunión de cierre de mes.\n\n· Regiones que cubrís: Norte, Centro y Sur.\n· Escribís en español, claro y breve, sin jerga.\n  Si usás un término técnico, lo explicás en una línea.\n· Trabajás con las notas que están en la carpeta notas/.\n· REGLA DE ORO: toda cifra lleva su fuente y su fecha.\n  NUNCA publicás un número sin decir de dónde salió.\n  Si el dato no está en las notas, lo aclarás en el informe.",
       "explanation": [
-        "Instrucciones = el “contrato de trabajo”: reglas en lenguaje natural que aplican a todo el Project. Se escriben una sola vez.",
-        "Conviene que sean cortas y claras.",
-        "El lugar de las reglas no negociables."
+        "Las Instrucciones del Project “Informe mensual del equipo”, completas.",
+        "La REGLA DE ORO es la restricción dura que se fija acá: toda cifra lleva su fuente y su fecha, y el agente no la saltea aunque el pedido del momento empuje para otro lado."
       ],
-      "notes": "En lugar de re-explicarle el contexto a Claude cada vez, se escribe una vez en las Instrucciones y queda fijo. Recorrer el ejemplo de arriba abajo: quién es el agente, para quién escribe, con qué material trabaja. Detenerse en la regla de oro, que toda cifra lleve su fuente y su fecha: ese es el tipo de restricción dura que conviene fijar acá, la que el agente nunca puede saltear aunque el pedido del momento empuje para otro lado. Cada equipo tiene la suya, y en áreas reguladas suele ser un disclaimer obligatorio al pie. Dónde viven: en el panel de contexto del Project (GUI), no un archivo que se edita a mano. Tiempo objetivo: ~5 min."
+      "notes": "Recorrer el ejemplo de arriba abajo: quién es el agente, para quién escribe, con qué material trabaja. No hace falta leerlo palabra por palabra, alcanza con señalar las cuatro zonas.\n\nDetenerse en la regla de oro, que toda cifra lleve su fuente y su fecha. Ese es el tipo de restricción dura que conviene fijar acá, la que el agente nunca puede saltear aunque el pedido del momento empuje para otro lado. Cada equipo tiene la suya, y en áreas reguladas suele ser un disclaimer obligatorio al pie. Tiempo objetivo: ~3 min."
     },
     {
       "template": "section-agenda",
@@ -576,7 +652,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "baf8e20328dd385639b315c000324d56ec2985ad0714de7f1d3ee9639a7f15b1",
-    "bytes": 85189
+    "sha256": "3fd49ecb59d4cc43adbd3952c19ba750ec4d6947bf96c1741445dfb75692b3c0",
+    "bytes": 96922
   }
 }

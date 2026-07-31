@@ -1,7 +1,8 @@
 # memory.md — claude-cowork
 
 **Current step:** 4 — Draft (reabierto 2026-07-31) awaiting_presenter
-**Awaiting:** 2026-07-31 — aplicados los 6 bullets de la tercera tanda (LLM wiki como nota, ejemplos genericos en vez de Faro, /skill-creator fuera, 4.3 adelgazada, 4.4 borrada, Conclusions antes de la mision). Sin feedback pendiente en draft.md. Awaiting: que catalogo usa la lamina nueva de la Seccion 4 (directorio dentro de la app / skills.sh / repo oficial de Anthropic / Vercel) y que 5 skills nombra. Sigue abierto el layout ASCII-izquierda (sin template en el plugin).
+**Awaiting:** 2026-07-31 — aplicada la 5ª ronda de feedback (nota de acceso a archivos en 3.1; Instrucciones partida en 3.4 concepto + 3.5 ejemplo, con la captura instructions.png). Polish y Render re-corridos. Awaiting: los recortes de tiempo (64,0 contra un bloque de 60), la lamina de catalogo de skills, y si pasamos a Learnings.
+
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork/
 **Started:** 2026-06-05
@@ -20,7 +21,7 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 
 - **Parte 2** del split del 2026-07-31, que partió en dos la clase combinada de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive en `talks/claude-desktop-chat`. Esta carpeta conservó nombre e historia.
 - Frontmatter: `class: "Claude Cowork"` · `duration: 60 min (a confirmar)` · `date: Julio 2026` · presenters Paulo Veiga y Marco Sánchez Sorondo.
-- **6 secciones + Conclusions, 20 slides:** 1 Claude Cowork (4) · 2 Knowledge & Output (4) · 3 Projects (3) · 4 Skills (4) · 5 Subagentes (1) · Conclusions (3: loop de Faro · wrap-up · cuidados) · 6 La misión · parte 2 (1).
+- **6 secciones + Conclusions, 22 slides:** 1 Claude Cowork (4) · 2 Knowledge & Output (4) · 3 Projects (3) · 4 Skills (4) · 5 Subagentes (1) · Conclusions (3: loop de Faro · wrap-up · cuidados) · 6 La misión · parte 2 (1).
 - **Orden nuevo (2026-07-31):** Conclusions va **antes** de la Sección 6. El deck cierra en la placa de la misión, no en la lámina de gobernanza. La Sección 6 conserva su número aunque vaya última.
 - **Tiempo objetivo total: 61,0 min** sobre 20 slides, contra `duration: 60 min (a confirmar)`. **1 min pasado**, y la lámina de catálogo sigue pendiente (+2-3 min más). Recorte de reserva: Conclusions.1 de 5 a 3 min devuelve a 59,0.
 - **Modo de Draft: C** (Presenter Outline).
@@ -168,3 +169,40 @@ El registro paso a paso completo (Steps 1-8, todas las rondas de Review, Polish,
   - **4.3** quedó visualmente vacía a la izquierda.
   - El roadmap de las divisorias numera por posición, así que Conclusions sale `06` y la Sección 6 sale `07`. Es cromo del renderer, no del contenido.
   - En la superficie de código la sangría se preservó codificando espacios duros, porque la caja no fija `white-space: pre`. Si el plugin lo agrega, se puede revertir (afecta 2.2, 3.3, 4.2).
+
+---
+
+## 2026-07-31 — Step 4 (lámina 3.3) + Polish + Render, 3ª vuelta
+
+- Status: complete
+- What was decided:
+  - Lámina nueva **3.3 «¿Los lee todos?»** en la Sección 3, entre "Conceder una carpeta" y las Instrucciones, que pasó a **3.4**. La sección queda en 4 láminas. Contenido del presentador: los tres casos (pocos archivos → lectura completa · muchos archivos → búsqueda de fragmentos, 10x capacidad · trabajar sobre los archivos → abrir, modificar y guardar) más tres reglas prácticas (subir lo que importa, nombres claros, PDFs escaneados sin capa de texto).
+  - **Choque de fuentes, resuelto a propósito.** El presentador escribió que con búsqueda "ahora depende de que la búsqueda encuentre lo correcto"; la doc oficial (support 11473015, verificado 2026-07-31) afirma lo contrario: *"Response accuracy remains consistent with in-context processing"*. La **lámina quedó neutral** (describe el mecanismo, no la fiabilidad) y las **Speaker notes llevan las dos posiciones con nombre**. El 10x sí está respaldado por esa misma fuente, igual que el carácter automático del cambio; **no hay umbral numérico documentado** y el deck no inventa uno.
+  - "Consume mucho de tu límite de uso" se bajó a "ocupar la ventana de contexto entera en cada vuelta", que es lo defendible.
+  - Polish y Render re-corridos. Polish: 10 bloques, **0 renderizados** (ninguno nuevo, la lámina no lleva diagrama), 8 reusados por digest, 2 documentation-only (`s3-4-1` Instrucciones, `s4-2-1`). 13 refs, todas `.png`. Render html-strict: **29 láminas** (portada + 7 divisorias + 21 de contenido), 2,03 MB.
+- Key inputs: el comentario del presentador en el `Presenter feedback` de 3.2; support.claude.com/en/articles/11473015 (RAG for projects, verificado 2026-07-31).
+- Files created/modified: `draft.md`, `final.md`, `config/feedback-backlog.md` (1 fila), `output/html/index.html`, `output/slide-model.json`, `memory.md`.
+- Pending open questions:
+  - **Duración: 64,0 min contra un bloque de 60 — 4 min pasado.** El recorte de reserva (Conclusions.1 de 5 a 3) ya no alcanza solo: devuelve a 62,0. Candidatos adicionales anotados: 3.4 Instrucciones de 5 a 4 (la lámina más larga) y 2.4 de 4 a 3. Y la lámina de catálogo de skills todavía no entró.
+  - **3.3 quedó la lámina más densa del deck** (auto-ajuste a ~0,64 contra 0,78-0,97 de sus pares). Entra completa y se lee, pero la salida natural si molesta es partirla en dos: los tres modos por un lado, las tres reglas por otro.
+  - En el render, los tres emoji de las reglas (📁 🏷️ 📄) se colapsan a un único glifo de nota, porque el ícono de un bloque destacado lo fija su tipo y no se elige por ítem. El encabezado "Tres reglas prácticas" no se imprime: el grupo se lee por la banda acentuada.
+  - Sigue abierto lo de 4.2 (pierde la captura) y 3.2 (dos capturas apretadas en grilla de 3 columnas).
+
+---
+
+## 2026-07-31 — Step 4/5 (5ª ronda) + Polish + Render, 4ª vuelta
+
+- Status: complete
+- What was decided:
+  - **3.1 «Qué es un Project»** ganó una nota al pie: Cowork trabaja la carpeta concedida **con herramientas de archivo** — abre, busca y escribe lo que la tarea necesita, en vez de traer el contenido entero a la conversación. Fuente: Claude docs, *Desktop and filesystem access* (https://claude.com/docs/cowork/3p/local-access, verificado 2026-07-31): *"the agent can then read, create, and modify files anywhere inside those folders"* y *"read, write, and **search** files … with its **file tools**"*. **La doc no dice nada sobre "memoria" ni sobre consumo de contexto**, así que la lámina no lo afirma. Las notes separan explícitamente este caso (carpeta de Cowork, herramientas) del de 3.3 (base de conocimiento, leer todo vs fragmentos).
+  - **La lámina de Instrucciones se partió en dos.** `3.4 Instrucciones: el contrato de trabajo` es la de **concepto**, con la captura nueva **`images/instructions.png`** (panel de contexto de un Project, con Instructions rodeado en violeta y debajo Memory, Context y Scheduled). `3.5 Un ejemplo de Instrucciones` se lleva el fence ```text completo, byte por byte, con su hint `ascii-render: documentation-only` **intacto** — sin ese hint el pipeline lo tomaría por diagrama, porque la lámina no lleva imagen. Los 5 min originales se repartieron en ~2 + ~3.
+  - **La Sección 3 quedó en 5 láminas:** Qué es un Project · Conceder una carpeta · ¿Los lee todos? · Instrucciones (concepto) · Un ejemplo.
+  - Polish: 10 bloques, **0 renderizados** (ninguno nuevo), 8 reusados por digest, 2 documentation-only (`s3-5-1`, `s4-2-1`). 14 refs, todas `.png`. Render html-strict: **30 láminas** (portada + 7 divisorias + 22 de contenido), 2,55 MB.
+  - En el render: 3.4 quedó `content-image` (texto izquierda, captura derecha, sin recorte); 3.5 quedó superficie de código, 11 líneas contra un tope de 18, con la sangría preservada; la nota de 3.1 renderizó como banda destacada bajo las tarjetas, no como una tarjeta más.
+- Key inputs: los 3 bullets del presentador; claude.com/docs/cowork/3p/local-access; `images/instructions.png` (aportada por el presentador, verificada por el orquestador).
+- Files created/modified: `draft.md`, `final.md`, `images/instructions.png`, `config/feedback-backlog.md` (3 filas), `output/html/index.html`, `output/slide-model.json`, `memory.md`.
+- Pending open questions:
+  - **Duración: 64,0 min contra 60 — 4 min pasado**, sin cambio respecto de la ronda anterior (la partición repartió los minutos, no los sumó). Plan de recorte que cierra en 60: Conclusions.1 de 5 a 3, 3.5 de 3 a 2, y 2.4 de 4 a 3. Y la lámina de catálogo de skills sigue sin entrar.
+  - **Idioma mezclado en las capturas:** `instructions.png` muestra la app **en inglés** ("Instructions"), mientras `skills-panel.png` y `skills-menu-chat.png` están en español. O se menciona al pasar, o se resacan (implica rehacer los círculos violeta).
+  - **Posible solape** entre `instructions.png` (3.4) y `context.png` (3.2): las dos muestran el panel de contexto. Decidir si una sobra; sacar `context.png` bajaría 3.2 de 2 a 1,5 min.
+  - Sigue abierto: 4.2 pierde su captura; 3.2 con dos capturas apretadas; 3.3 es la lámina más densa del deck.

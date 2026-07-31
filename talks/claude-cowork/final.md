@@ -19,7 +19,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La clase arranca donde terminó la anterior, con el chat ya extendido por conectores y Schedule, y da el salto grande de una: Claude Cowork instalado en la computadora, trabajando sobre carpetas y archivos reales. La primera sección ubica ese salto: Cowork como herramienta de propósito general del knowledge worker, con la analogía del Excel como habilidad base de la oficina; el cambio de rol de chatear a delegar un resultado, el mapa de piezas que se apilan y el primer contacto con la interfaz sobre una captura anotada de la app (1). De ahí las piezas se recorren una por una, en el orden en que se apilan. Los archivos `.md` primero, porque son el formato en el que la IA lee, edita y entrega. La sección abre con el porqué, que lo que hay en una carpeta de trabajo es conocimiento e instrucciones y le hace falta un formato que la máquina lea bien, y sigue con cómo se escriben, cómo se ven una vez formateados y el hábito de trabajar en `.md` y exportar recién al final (2). Después el espacio de trabajo: qué agrupa un Project, cómo se le concede una carpeta real del disco con el explorador del sistema, dónde vive su contexto y cómo las Instrucciones fijan de una vez el comportamiento del agente adentro de ese espacio (3). Con el espacio armado llegan las Skills, la forma de enseñar una tarea una sola vez: qué es una Skill, el panel de Habilidades y el acceso desde el chat, y la grabación de pantalla, el camino con la barrera más baja, donde alguien hace la tarea narrándola en voz alta y Claude arma la Skill con eso; la trampa del Save es la compuerta común de los tres (4). La última pieza, ya de nivel avanzado, son los Subagentes: para qué tipo de sub-tarea conviene delegar en paralelo y cómo aparecen en Cowork, coordinados por debajo y sin panel propio (5). Después de las cinco piezas viene el cierre, que abre con el loop completo de Faro, engancha las piezas de las dos clases y las muestra corriendo solas; sigue con un wrap-up que nombra el cambio de rol y deja una consigna concreta para la semana, y termina en las advertencias de gobernanza. Con la charla ya cerrada, la última lámina es la placa divisoria que manda a resolver la parte 2 de la misión de Faro, el analista de mercado virtual de Atlas, ya en Cowork y sobre la carpeta real del equipo, sin exigir la parte 1 resuelta (6). La clase termina ahí, en la consigna de la misión, con Q&A abierto sobre esa placa.
+**Narrative arc:** La clase arranca donde terminó la anterior, con el chat ya extendido por conectores y Schedule, y da el salto grande de una: Claude Cowork instalado en la computadora, trabajando sobre carpetas y archivos reales. La primera sección ubica ese salto: Cowork como herramienta de propósito general del knowledge worker, con la analogía del Excel como habilidad base de la oficina; el cambio de rol de chatear a delegar un resultado, el mapa de piezas que se apilan y el primer contacto con la interfaz sobre una captura anotada de la app (1). De ahí las piezas se recorren una por una, en el orden en que se apilan. Los archivos `.md` primero, porque son el formato en el que la IA lee, edita y entrega. La sección abre con el porqué, que lo que hay en una carpeta de trabajo es conocimiento e instrucciones y le hace falta un formato que la máquina lea bien, y sigue con cómo se escriben, cómo se ven una vez formateados y el hábito de trabajar en `.md` y exportar recién al final (2). Después el espacio de trabajo: qué agrupa un Project, cómo se le concede una carpeta real del disco con el explorador del sistema, dónde vive su contexto, qué hace la herramienta con el material que hay adentro según cuánto sea, que con poco material lee todo y con mucho busca y trae los fragmentos que necesita, qué son las Instrucciones y dónde viven, en el panel de contexto de la interfaz, y un ejemplo completo que muestra cómo fijan de una vez el comportamiento del agente adentro de ese espacio (3). Con el espacio armado llegan las Skills, la forma de enseñar una tarea una sola vez: qué es una Skill, el panel de Habilidades y el acceso desde el chat, y la grabación de pantalla, el camino con la barrera más baja, donde alguien hace la tarea narrándola en voz alta y Claude arma la Skill con eso; la trampa del Save es la compuerta común de los tres (4). La última pieza, ya de nivel avanzado, son los Subagentes: para qué tipo de sub-tarea conviene delegar en paralelo y cómo aparecen en Cowork, coordinados por debajo y sin panel propio (5). Después de las cinco piezas viene el cierre, que abre con el loop completo de Faro, engancha las piezas de las dos clases y las muestra corriendo solas; sigue con un wrap-up que nombra el cambio de rol y deja una consigna concreta para la semana, y termina en las advertencias de gobernanza. Con la charla ya cerrada, la última lámina es la placa divisoria que manda a resolver la parte 2 de la misión de Faro, el analista de mercado virtual de Atlas, ya en Cowork y sobre la carpeta real del equipo, sin exigir la parte 1 resuelta (6). La clase termina ahí, en la consigna de la misión, con Q&A abierto sobre esa placa.
 
 **Sections (in delivery order):**
 
@@ -357,7 +357,7 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 
 # 3. Projects
 
-**Goal of this section:** El espacio de trabajo de Cowork: qué agrupa un Project, cómo se le concede una carpeta real del disco, dónde vive su contexto y cómo las Instrucciones fijan de una vez el comportamiento del agente en ese espacio.
+**Goal of this section:** El espacio de trabajo de Cowork: qué agrupa un Project, cómo se le concede una carpeta real del disco, dónde vive su contexto, qué hace la herramienta con el material que hay adentro según cuánto sea (lee todo cuando es poco, busca y trae fragmentos cuando es mucho), qué son las Instrucciones y dónde viven en la interfaz, y un ejemplo completo que muestra cómo fijan de una vez el comportamiento del agente en ese espacio. Cinco láminas.
 
 ---
 
@@ -370,14 +370,19 @@ La slide de práctica de la sección, el hábito concreto que se llevan. La anal
 - Tres capas persistentes: Instrucciones · Knowledge base · Chats.
 - Los chats del Project **no comparten contexto entre sí** (solo la base de conocimiento).
 
+**Nota:** Cowork trabaja la carpeta concedida con herramientas de archivo: abre, busca y escribe los archivos que la tarea necesita, en lugar de traer el contenido entero a la conversación.
+
 ### Sources
 
 - corpus/agentic-ai-deck.zip.md, definición de "Project (Chat/Cowork)" (tres capas; chats no comparten contexto); "Working directory + permissions" (folder picker del sistema).
+- Claude docs, "Desktop and filesystem access": https://claude.com/docs/cowork/3p/local-access (verificado 2026-07-31). Sostiene la nota al pie: "the agent can then read, create, and modify files anywhere inside those folders" y "The agent can read, write, and search files … with its file tools". La doc **no** habla de memoria ni de consumo de contexto, así que la nota describe el modelo de acceso por herramientas y no afirma ningún mecanismo interno.
 - "corpus/mision - auto.zip.md", "el Proyecto le da a Atlas una carpeta propia, memoria y un lugar fijo" (Step 1.1); ahí se verificó la definición de las tres capas. El ejemplo de la lámina es genérico y el caso de la misión se trata en la Sección 6.
 
 ### Speaker notes
 
-El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Todo queda organizado y reutilizable: las Instrucciones valen para todo el Project, la memoria recuerda preferencias, los archivos viven en una carpeta concreta del disco. En el ejemplo, el Project "Informe mensual del equipo" apunta a `Documentos/Informe-Mensual`. Un punto práctico que sorprende: los chats no comparten contexto entre sí, solo las Instrucciones y la base de conocimiento. La carpeta se concede con el explorador de archivos del sistema, garantía de seguridad y límite a la vez, y la slide siguiente lo muestra en pantalla, así que acá solo anticiparlo. Tiempo objetivo: ~3 min.
+El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Todo queda organizado y reutilizable: las Instrucciones valen para todo el Project, la memoria recuerda preferencias, los archivos viven en una carpeta concreta del disco. En el ejemplo, el Project "Informe mensual del equipo" apunta a `Documentos/Informe-Mensual`. Un punto práctico que sorprende: los chats no comparten contexto entre sí, solo las Instrucciones y la base de conocimiento. La carpeta se concede con el explorador de archivos del sistema, garantía de seguridad y límite a la vez, y la slide siguiente lo muestra en pantalla, así que acá solo anticiparlo.
+
+La nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla de la carpeta concedida, donde el agente abre, busca y escribe archivos con sus herramientas según lo que pida la tarea, sin volcar la carpeta en la conversación. La 3.3 trata el otro caso, la base de conocimiento del Project, donde la herramienta elige sola entre leer todo y buscar fragmentos. Si alguien pregunta cuánto material aguanta una carpeta grande, mandarlo a esa lámina. Tiempo objetivo: ~3 min.
 
 ---
 
@@ -406,12 +411,77 @@ Slide de apoyo visual: mostrar las dos capturas, el explorador de archivos al co
 
 ---
 
-## 3. Instrucciones: el contrato de trabajo
+## 3. ¿Los lee todos?
+
+### Content
+
+**Cuando se le dan archivos a la IA, ¿los lee todos?** Dos formas de trabajar, y cuál conviene en cada caso.
+
+- **Pocos archivos** Claude los lee completos, todos, cada vez que llega una pregunta. Máxima precisión, a costa de ocupar la ventana de contexto entera en cada vuelta.
+- **Muchos archivos** Claude cambia solo de estrategia. En lugar de leer todo, busca y trae los fragmentos que hacen falta. Multiplica por 10 la capacidad del Project, y la respuesta pasa a apoyarse en esos fragmentos.
+- **Trabajar sobre los archivos** Consultarlos no alcanza. Claude abre, modifica y guarda dentro de la carpeta concedida, como lo haría una persona.
+
+**Tres reglas prácticas**
+
+- 📁 **Subir lo que importa** El relleno "por las dudas" empeora las respuestas.
+- 🏷️ **Nombres de archivo claros** Un nombre que no dice qué hay adentro tampoco le sirve a la IA.
+- 📄 **PDFs escaneados** Sin capa de texto son imágenes vacías. Conviene convertirlos antes.
+
+### Sources
+
+- Anthropic Support, "Retrieval augmented generation (RAG) for projects": https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects (verificado 2026-07-31). Sostiene los tres datos de los dos primeros bloques: el cambio de modo es automático y ocurre cuando el conocimiento del Project se acerca al límite de la ventana de contexto ("When your project knowledge approaches the context window limit, Claude will automatically enable RAG mode"), sin umbral numérico documentado; la capacidad se multiplica por 10 ("expand your project's capacity by up to 10x"); y el usuario no configura nada ("Automatic activation when needed, no setup required"). La misma fuente afirma que la calidad de las respuestas se mantiene ("Response accuracy remains consistent with in-context processing"), así que la lámina describe el cambio de mecanismo y no afirma pérdida de fiabilidad; el matiz está en las Speaker notes y anotado en Open questions.
+- corpus/agentic-ai-deck.zip.md, definición de "Project (Chat/Cowork)" (la base de conocimiento como una de las tres capas) y "Working directory + permissions" (el agente abre, edita y guarda dentro de la carpeta concedida): sostiene el tercer bloque, el de trabajar sobre los archivos y no solo consultarlos.
+- Las tres reglas prácticas son experiencia de los presentadores, no recomendación documentada por Anthropic. La regla de los PDFs escaneados se apoya en el mismo criterio de formato de la lámina 2.1 (el modelo lee texto; lo que no tiene capa de texto no se lee).
+
+### Speaker notes
+
+La lámina contesta la pregunta que aparece apenas alguien sube su primera carpeta. La analogía que conviene usar: es la diferencia entre un colega que leyó todo el expediente antes de la reunión y uno que sabe exactamente en qué carpeta buscar. El primero es más preciso pero no escala; el segundo escala pero puede abrir el cajón equivocado. La herramienta elige sola cuál de los dos modos usar según cuánto material haya, sin que nadie configure nada, y ahí está lo accionable: no se elige el modo, se elige qué material entra.
+
+Enganchar con la lámina 2.1, que ya explicó qué hay en una carpeta de trabajo (conocimiento e instrucciones) y por qué conviene el `.md`. Esta lámina agrega el otro lado: qué hace la herramienta con ese material según cuánto haya. Una frase alcanza para hacer el puente.
+
+El matiz de fuentes, para tenerlo a mano si alguien pregunta. La documentación de Anthropic sostiene que la calidad se mantiene cuando entra el modo de búsqueda ("Response accuracy remains consistent with in-context processing"). La intuición práctica de la casa es otra: cuando la respuesta se arma con los fragmentos que trajo una búsqueda, aparece un paso del que antes no se dependía, y ese paso puede traer lo que no era. La lámina no toma partido a propósito. Si sale el tema, decir las dos cosas y quedarse ahí.
+
+Sobre los PDFs escaneados: la regla vale sobre todo para el material que se carga como base de conocimiento del Project. En Cowork el agente tiene herramientas y puede abrir un PDF y trabajarlo igual, así que el consejo es una buena práctica de carga, no un límite duro de la herramienta.
+
+Cierre sugerido, para decir en voz alta: "La calidad de lo que sale depende menos del modelo que de cómo ordenaste lo que entra." Tiempo objetivo: ~3 min.
+
+---
+
+## 4. Instrucciones: el contrato de trabajo
 
 ### Content
 
 - Instrucciones = el **"contrato de trabajo"**: reglas en lenguaje natural que aplican a todo el Project.
-- Ejemplo:
+- El usuario las escribe **una vez** y valen para todos los chats.
+- **Dónde viven:** el panel de contexto del Project, en la interfaz. No es un archivo que se edite a mano.
+
+![Panel de contexto de un Project en la app de escritorio, con Instructions rodeado en violeta y debajo Memory, Context con la carpeta concedida y Scheduled](images/instructions.png)
+
+- Conviene que sean **cortas y claras**.
+- Es el lugar de las **reglas no negociables**.
+
+### Sources
+
+- corpus/agentic-ai-deck.zip.md, "the project context panel (GUI)" como lugar de las Instrucciones en Cowork; matriz de disponibilidad 3.3 (Persistent instructions, Cowork ⚠️).
+- Captura propia `images/instructions.png` (app de escritorio, 2026-07-31): el panel derecho de un Project, con **Instructions** rodeado en violeta y debajo **Memory**, **Context** (con la carpeta concedida) y **Scheduled**. Sostiene el bullet de dónde viven las Instrucciones y muestra en una sola pantalla las tres capas que enumera 3.1 y la carpeta que trata 3.2.
+
+### Speaker notes
+
+En lugar de re-explicarle el contexto a Claude cada vez, el usuario lo escribe una vez en las Instrucciones y queda fijo. Dónde viven: en el panel de contexto del Project (GUI), no un archivo que se edita a mano. La captura lo muestra, con Instructions rodeado arriba y debajo Memory, Context con la carpeta concedida y Scheduled.
+
+Aprovechar la captura para cerrar las dos láminas anteriores. En esa misma pantalla están las tres capas que se enumeraron en 3.1 y la carpeta concedida de 3.2, así que sirve para que la audiencia ubique dónde vive cada cosa antes de entrar al ejemplo.
+
+Un detalle de forma, para decir al pasar: esta captura tiene la app en inglés ("Instructions") y la de la Sección 4 en español ("Habilidades"). Conviene avisarlo o unificar el idioma de la app antes de sacar capturas nuevas.
+
+La lámina que sigue muestra unas Instrucciones completas. Tiempo objetivo: ~2 min.
+
+---
+
+## 5. Un ejemplo de Instrucciones
+
+### Content
+
+Las Instrucciones del Project "Informe mensual del equipo", completas.
 
 <!-- ascii-render: documentation-only -->
 ```text
@@ -428,18 +498,17 @@ que se lee en 5 minutos antes de la reunión de cierre de mes.
   Si el dato no está en las notas, lo aclarás en el informe.
 ```
 
-  Se escriben una sola vez.
-- Conviene que sean cortas y claras.
-- El lugar de las **reglas no negociables**.
+- La **REGLA DE ORO** es la restricción dura que se fija acá: toda cifra lleva su fuente y su fecha, y el agente no la saltea aunque el pedido del momento empuje para otro lado.
 
 ### Sources
 
-- corpus/agentic-ai-deck.zip.md, "the project context panel (GUI)" como lugar de las Instrucciones en Cowork; matriz de disponibilidad 3.3 (Persistent instructions, Cowork ⚠️).
 - "corpus/mision - auto.zip.md", texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo". De ahí sale la forma del ejemplo (rol, destinatario, reglas con viñeta y una regla de oro). El ejemplo de la lámina es genérico y el caso de la misión se trata en la Sección 6.
 
 ### Speaker notes
 
-En lugar de re-explicarle el contexto a Claude cada vez, se escribe una vez en las Instrucciones y queda fijo. Recorrer el ejemplo de arriba abajo: quién es el agente, para quién escribe, con qué material trabaja. Detenerse en la regla de oro, que toda cifra lleve su fuente y su fecha: ese es el tipo de restricción dura que conviene fijar acá, la que el agente nunca puede saltear aunque el pedido del momento empuje para otro lado. Cada equipo tiene la suya, y en áreas reguladas suele ser un disclaimer obligatorio al pie. Dónde viven: en el panel de contexto del Project (GUI), no un archivo que se edita a mano. Tiempo objetivo: ~5 min.
+Recorrer el ejemplo de arriba abajo: quién es el agente, para quién escribe, con qué material trabaja. No hace falta leerlo palabra por palabra, alcanza con señalar las cuatro zonas.
+
+Detenerse en la regla de oro, que toda cifra lleve su fuente y su fecha. Ese es el tipo de restricción dura que conviene fijar acá, la que el agente nunca puede saltear aunque el pedido del momento empuje para otro lado. Cada equipo tiene la suya, y en áreas reguladas suele ser un disclaimer obligatorio al pie. Tiempo objetivo: ~3 min.
 
 ---
 
@@ -718,7 +787,7 @@ Cierre integrador de las dos clases: mostrar el diagrama del loop completo para 
 
 ### Sources
 
-- Sin material nuevo: cierre de las secciones 1 a 5; cada afirmación conserva la fuente de su slide de origen (1.1, 1.2, 1.3, 2.4, 3.1, 3.3, 4.1, 5.1).
+- Sin material nuevo: cierre de las secciones 1 a 5; cada afirmación conserva la fuente de su slide de origen (1.1, 1.2, 1.3, 2.4, 3.1, 3.4, 4.1, 5.1).
 - corpus/agentic-ai-deck.zip.md, progresión de building blocks; es la misma pila del mapa de 1.3.
 - "corpus/mision - auto.zip.md", la misión Atlas arma estas piezas una por una; la parte 2 es donde la audiencia las combina por su cuenta.
 
@@ -803,9 +872,12 @@ Placa de misión con el mismo formato que la de la parte 1 de la clase anterior,
 # Open questions
 
 - ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
-- **Split del 2026-07-31:** esta charla es la parte 2 de lo que era una clase de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive ahora en `talks/claude-desktop-chat`. Consecuencias abiertas: (a) `duration` quedó en `60 min (a confirmar)` y la suma de las 20 líneas "Tiempo objetivo" da hoy **61,0 min**. Historia del número: 66,0 → 62,0 el 2026-07-31 (se plegó la vieja 1.2 en 1.1, −3 +1; la lámina de demo en vivo pasó a ser una captura, −4; entró la lámina nueva 2.1, +2) → 58,0 en la ronda de feedback del 2026-07-31 (salió 4.4 "Un SKILL.md por dentro", −3,5, y 4.3 bajó de ~3 a ~2 min, −1; el medio minuto de diferencia sale de que el tally de 62,0 contaba la vieja 4.4 como 3 min y su línea decía "~3-4") → **61,0** en la misma fecha, al entrar la lámina nueva **4.4 "Grabar una Skill"** (+3). Con 61,0 sobre un bloque de 60 el deck quedó **1 min pasado**, y la lámina de catálogo de skills que el presentador todavía está eligiendo agregaría entre 2 y 3 min más. El recorte de reserva sigue siendo el loop de Faro (**Conclusions.1**) de 5 a 3 min, porque sus dos bullets de prosa duplican el mapa de 1.3 y el peso de la lámina está en el diagrama; ese recorte solo devuelve el deck a 59,0, así que si entra la lámina de catálogo hay que buscar un segundo recorte o confirmar que el bloque pasa de 60 min; (b) `final.md`, `output/slide-model.json` y `output/html/index.html` describen el deck combinado y están **desactualizados**; (c) los SVG/PNG en `images/` llevan slugs `s6-*`..`s11-*` de la numeración vieja, así que el próximo Polish re-deriva slugs y conviene seguirlo de un `polish_ascii.py gc`.
+- **Split del 2026-07-31:** esta charla es la parte 2 de lo que era una clase de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive ahora en `talks/claude-desktop-chat`. Consecuencias abiertas: (a) `duration` quedó en `60 min (a confirmar)` y la suma de las 22 líneas "Tiempo objetivo" da hoy **64,0 min**. Historia del número: 66,0 → 62,0 el 2026-07-31 (se plegó la vieja 1.2 en 1.1, −3 +1; la lámina de demo en vivo pasó a ser una captura, −4; entró la lámina nueva 2.1, +2) → 58,0 en la ronda de feedback del 2026-07-31 (salió 4.4 "Un SKILL.md por dentro", −3,5, y 4.3 bajó de ~3 a ~2 min, −1; el medio minuto de diferencia sale de que el tally de 62,0 contaba la vieja 4.4 como 3 min y su línea decía "~3-4") → 61,0 en la misma fecha, al entrar la lámina nueva **4.4 "Grabar una Skill"** (+3) → **64,0**, también el 2026-07-31, al entrar la lámina nueva **3.3 "¿Los lee todos?"** (+3), que renumeró Instrucciones a 3.4. En la ronda de feedback del mismo 2026-07-31 la 3.4 se partió en dos, **3.4 "Instrucciones: el contrato de trabajo"** (el concepto, con la captura `instructions.png`) y **3.5 "Un ejemplo de Instrucciones"** (el bloque `text` completo), y los 5 min originales se repartieron ~2 + ~3, así que el total **se mantiene en 64,0** y las líneas "Tiempo objetivo" pasan de 21 a 22. Con 64,0 sobre un bloque de 60 el deck sigue **4 min pasado**, y la lámina de catálogo de skills que el presentador todavía está eligiendo agregaría entre 2 y 3 min más. El recorte de reserva sigue siendo el loop de Faro (**Conclusions.1**) de 5 a 3 min, porque sus dos bullets de prosa duplican el mapa de 1.3 y el peso de la lámina está en el diagrama; ese recorte solo devuelve el deck a 62,0, así que ya hace falta un segundo recorte aunque la lámina de catálogo no entre, o confirmar que el bloque pasa de 60 min. Candidatos de segundo recorte, para decidir con el presentador: **3.5 "Un ejemplo de Instrucciones"** de 3 a 2 min (el bloque se recorre señalando sus cuatro zonas, sin leerlo palabra por palabra) y **2.4** de 4 a 3 min. El candidato viejo, "3.4 Instrucciones de 5 a 4 min", ya no aplica: al partirse dejó de ser la lámina más larga del deck; (b) `final.md`, `output/slide-model.json` y `output/html/index.html` describen el deck combinado y están **desactualizados**; (c) los SVG/PNG en `images/` llevan slugs `s6-*`..`s11-*` de la numeración vieja, así que el próximo Polish re-deriva slugs y conviene seguirlo de un `polish_ascii.py gc`.
+- **Choque de fuentes en la lámina nueva 3.3 "¿Los lee todos?" (decisión consciente, 2026-07-31):** el presentador escribió que cuando Claude pasa a buscar fragmentos "ahora depende de que la búsqueda encuentre lo correcto", o sea que se pierde algo de fiabilidad. La doc oficial afirma lo contrario: Anthropic Support, "Retrieval augmented generation (RAG) for projects" (https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects, verificado 2026-07-31) dice "Response accuracy remains consistent with in-context processing" y "RAG maintains consistent response quality as in-context processing". **Resolución tomada:** la lámina queda neutral y no afirma ninguna de las dos cosas; describe solo el cambio de mecanismo ("la respuesta pasa a apoyarse en esos fragmentos"), que es verdadero en cualquiera de los dos casos. El matiz vive en las Speaker notes, con las dos posiciones nombradas: lo que sostiene la doc y la intuición práctica del presentador. Esto es una decisión, no un olvido. Si Anthropic publica una medición de degradación, o si el presentador prefiere asumir el claim con su nombre en voz alta, la lámina se puede endurecer. Lo mismo aplica al umbral: la doc dice que el cambio ocurre cuando el conocimiento del Project "approaches the context window limit" y **no documenta un número**, así que el deck no lo inventa. El 10x sí está respaldado textualmente.
 - **Sin recap de la parte 1 (decisión del presentador, 2026-07-31):** el deck arranca directo en Cowork y solo remite a "la clase anterior" en prosa. Si al ensayar se siente abrupto, la pieza que falta sería un slide de repaso de una lámina al inicio de la Sección 1; no está y es decisión consciente.
 - **`screenshot-cowork-tab.png` quedó sin referencia (2026-07-31):** la slide 1.4 pasó a usar `images/cowork.png`, la captura propia de la interfaz actual. La vieja muestra una versión anterior de la app (pestaña `Cowork` separada arriba, `New task`, `Work in a project`, selector de modo `Ask`, `Sonnet 4.6`, `Live artifacts`) y está desactualizada. El archivo se conserva en `images/` por si el presentador lo quiere para un contraste "antes/después"; si no, es candidato al gc del próximo Polish. Lo mismo con `mockup-tablero.png`, sin uso desde la reestructura del 2026-07-30.
+- **Idioma mezclado entre capturas (2026-07-31):** `instructions.png`, la captura nueva de la lámina 3.4, tiene la app en inglés (se lee "Instructions", "Memory", "Context", "Scheduled"), mientras que las de la Sección 4 (`skills-panel.png`, `skills-menu-chat.png`) la tienen en español ("Habilidades"). La audiencia va a ver las dos en la misma charla. Dos salidas, a decidir con el presentador: nombrarlo al pasar cuando aparece la captura de 3.4 (queda anotado en sus Speaker notes como recurso por defecto) o unificar el idioma de la app y volver a sacar las capturas. Si se resacan, hay que rehacer los círculos violeta de cada una. Conviene revisar también `context.png` y `project.png` con el mismo criterio.
+- **`instructions.png` (3.4) se solapa con `context.png` (3.2); decidir si una sobra (2026-07-31):** la captura nueva no muestra solo las Instrucciones, muestra el panel derecho entero del Project (Instructions rodeado, Memory, Context con la carpeta concedida, Scheduled), que es el mismo panel de contexto que ya ilustra `context.png` dos láminas antes. Hoy las dos láminas proyectan la misma pantalla con distinto foco, y las Speaker notes de 3.4 lo aprovechan a propósito para cerrar 3.1 y 3.2. Opciones: dejar las dos y decir el enganche en voz alta (lo que hace el draft hoy), sacar `context.png` de 3.2 y que 3.4 cubra el panel entero, o recortar `instructions.png` al bloque de Instructions para que no repita. Si sale `context.png`, la 3.2 queda con una sola captura (`project.png`, el explorador de archivos) y su tiempo puede bajar de 2 a 1,5 min, lo que ayudaría al tally.
 - **Nombres de los modos de Cowork y cuál viene por defecto (slide 1.4):** la lámina y las notes dicen que hay un selector de modo y que el usuario elige entre aprobar cada acción y dejar correr al agente, **sin afirmar cuál es el default**. La captura vieja mostraba `Ask` y la nueva muestra `Auto`. Confirmar contra la app el día de la clase cómo se llaman hoy los modos y cuál viene seleccionado, antes de decir algo más preciso en voz alta.
 - Slide 1.4 sigue citando `corpus/agentic-ai-deck.zip.md` (slide 3.19, modelo de aprobación) y ese registro tiene `<!-- pending: process_images -->`; la cita ahora sostiene solo el beat de control, no la captura. Re-verificar tras correr librarian Phase 2.
 - **Slash commands en Cowork (slides 4.2–4.3) — RESUELTO 2026-07-31:** el presentador verificó que `/skill-creator` **no existe** en Cowork y pidió sacarlo de todas las referencias del deck. Quedó fuera del Narrative arc, del Goal de la Sección 4, del diagrama ASCII de 4.2 (que ahora muestra solo los tres caminos del menú Agregar convergiendo en la compuerta), de las Sources y las Speaker notes de 4.2 y 4.3. La creación de Skills se enseña por el panel de Habilidades; 4.3 queda como la lámina del acceso desde el chat, con el menú "+" y la trampa del Save. Lo que se conserva del hallazgo original: Cowork incluye un set reducido de slash commands y el tip de tipear `/` para ver los disponibles, sin relevar la lista completa. La doc oficial (support 12512198) sigue documentando solo el camino ZIP.
