@@ -1,0 +1,53 @@
+<!-- talksmith-ascii-sha256: 40174c466e0a953d447a3fb102e3bf48ba62ea453d07520ca9dbc5e2c47443dd -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 688 396" font-family="Helvetica, Arial, sans-serif" fill="#3B3535" font-size="15">
+  <title>¿Dónde corre? Local o nube</title>
+  <desc>Un Schedule se bifurca en dos modos de ejecución: local, con la computadora prendida, o en la nube.</desc>
+  <defs>
+    <marker id="ah" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8A8080"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="688" height="396" fill="#ffffff"/>
+
+  <rect x="194" y="24" width="300" height="48" rx="24" ry="24" fill="#ffffff" stroke="#DA1B2E" stroke-width="2"/>
+  <text x="344" y="54" text-anchor="middle" font-size="18" font-weight="bold" fill="#DA1B2E">el Schedule: ¿dónde corre?</text>
+
+  <path d="M344,72 L344,102" stroke="#8A8080" stroke-width="1.6" fill="none"/>
+  <path d="M174,102 L514,102" stroke="#8A8080" stroke-width="1.6" fill="none"/>
+  <path d="M174,102 L174,136" stroke="#8A8080" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+  <path d="M514,102 L514,136" stroke="#8A8080" stroke-width="1.6" fill="none" marker-end="url(#ah)"/>
+
+  <rect x="24" y="136" width="300" height="236" rx="6" ry="6" fill="#ffffff" stroke="#C9C2C2" stroke-width="1.4"/>
+  <path d="M24,142 a6,6 0 0 1 6,-6 L318,136 a6,6 0 0 1 6,6 L324,180 L24,180 Z" fill="#EFECEC"/>
+  <path d="M24,180 L324,180" stroke="#C9C2C2" stroke-width="1.4" fill="none"/>
+  <text x="174" y="164" text-anchor="middle" font-size="17" font-weight="bold">LOCAL — hoy, la mayoría</text>
+
+  <circle cx="48" cy="203" r="3" fill="#8A8080"/>
+  <text x="60" y="208">computadora prendida</text>
+  <circle cx="48" cy="235" r="3" fill="#8A8080"/>
+  <text x="60" y="240">app abierta</text>
+  <circle cx="48" cy="267" r="3" fill="#8A8080"/>
+  <text x="60" y="272">si está apagada: se saltea</text>
+  <text x="60" y="293">y corre al volver</text>
+  <circle cx="48" cy="320" r="3" fill="#8A8080"/>
+  <text x="60" y="325">ojo: las laptops se suspenden</text>
+  <text x="60" y="346">solas (config de energía)</text>
+
+  <rect x="364" y="136" width="300" height="236" rx="6" ry="6" fill="#ffffff" stroke="#C9C2C2" stroke-width="1.4"/>
+  <path d="M364,142 a6,6 0 0 1 6,-6 L658,136 a6,6 0 0 1 6,6 L664,180 L364,180 Z" fill="#EFECEC"/>
+  <path d="M364,180 L664,180" stroke="#C9C2C2" stroke-width="1.4" fill="none"/>
+  <text x="514" y="164" text-anchor="middle" font-size="17" font-weight="bold">NUBE — beta, julio 2026</text>
+
+  <circle cx="388" cy="203" r="3" fill="#8A8080"/>
+  <text x="400" y="208">sin la computadora prendida</text>
+  <circle cx="388" cy="235" r="3" fill="#8A8080"/>
+  <text x="400" y="240">rollout gradual (Max primero)</text>
+  <circle cx="388" cy="267" r="3" fill="#8A8080"/>
+  <text x="400" y="272">llega de a poco a las cuentas</text>
+
+  <rect x="376" y="294" width="276" height="64" rx="4" ry="4" fill="#F5F2F2"/>
+  <rect x="376" y="294" width="4" height="64" fill="#B9B2B2"/>
+  <text x="392" y="320">pero: archivos o apps locales</text>
+  <text x="392" y="342">corren local igual</text>
+</svg>

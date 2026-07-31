@@ -1,0 +1,48 @@
+<!-- talksmith-ascii-sha256: ba856a7833f083acb50a164514a2f8f38f79bce5cf767afeef17e8f0d95c817a -->
+<svg viewBox="0 0 780 482" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" fill="#3B3535" font-size="14">
+  <title>Out of the box y externos</title>
+  <desc>No todos los conectores salen del mismo lugar: unos vienen con el producto y otros los monta un equipo.</desc>
+
+  <rect x="0" y="0" width="780" height="482" fill="#ffffff"/>
+
+  <text x="390" y="45" font-size="20" font-weight="bold" text-anchor="middle">Dos familias, según quién los prepara</text>
+
+  <rect x="285" y="70" width="210" height="48" rx="6" fill="#F2F0F0" stroke="#3B3535" stroke-width="2"/>
+  <text x="390" y="100" font-size="18" font-weight="bold" text-anchor="middle">CONECTORES</text>
+
+  <path d="M 390 118 L 390 142" stroke="#9A9090" stroke-width="2" fill="none"/>
+  <path d="M 195 142 L 585 142" stroke="#9A9090" stroke-width="2" fill="none"/>
+  <path d="M 195 142 L 195 166" stroke="#9A9090" stroke-width="2" fill="none"/>
+  <path d="M 585 142 L 585 166" stroke="#9A9090" stroke-width="2" fill="none"/>
+  <path d="M 195 176 L 188.5 164 L 201.5 164 Z" fill="#9A9090"/>
+  <path d="M 585 176 L 578.5 164 L 591.5 164 Z" fill="#9A9090"/>
+
+  <rect x="30" y="176" width="330" height="182" rx="8" fill="#FAF9F9" stroke="#B8B0B0" stroke-width="1.5"/>
+  <text x="195" y="208" font-size="19" font-weight="bold" text-anchor="middle">OUT OF THE BOX</text>
+  <text x="195" y="231" font-size="13" fill="#7A7070" text-anchor="middle">vienen listos con el producto</text>
+  <path d="M 54 246 L 336 246" stroke="#D8D2D2" stroke-width="1.5" fill="none"/>
+  <text x="56" y="276">· búsqueda web</text>
+  <text x="56" y="304">· Claude in Chrome</text>
+  <text x="56" y="332">· Gmail / Calendar / Drive</text>
+
+  <rect x="420" y="176" width="330" height="182" rx="8" fill="#FAF9F9" stroke="#B8B0B0" stroke-width="1.5"/>
+  <text x="585" y="208" font-size="19" font-weight="bold" text-anchor="middle">EXTERNOS</text>
+  <text x="585" y="231" font-size="13" fill="#7A7070" text-anchor="middle">los conecta el equipo</text>
+  <path d="M 444 246 L 726 246" stroke="#D8D2D2" stroke-width="1.5" fill="none"/>
+  <text x="446" y="276">· CRM / ERP</text>
+  <text x="446" y="304">· base interna</text>
+  <text x="446" y="332">· servicio de un tercero</text>
+
+  <path d="M 195 358 L 195 384" stroke="#9A9090" stroke-width="2" fill="none"/>
+  <path d="M 585 358 L 585 384" stroke="#9A9090" stroke-width="2" fill="none"/>
+  <path d="M 195 394 L 188.5 382 L 201.5 382 Z" fill="#9A9090"/>
+  <path d="M 585 394 L 578.5 382 L 591.5 382 Z" fill="#9A9090"/>
+
+  <rect x="45" y="394" width="300" height="58" rx="8" fill="#F2F0F0" stroke="#B8B0B0" stroke-width="1.5"/>
+  <text x="195" y="419" font-size="13" fill="#7A7070" text-anchor="middle">se activan desde la</text>
+  <text x="195" y="441" font-size="15" font-weight="bold" text-anchor="middle">biblioteca de conectores</text>
+
+  <rect x="435" y="394" width="300" height="58" rx="8" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="585" y="419" font-size="13" fill="#7A7070" text-anchor="middle">todos pasan por el</text>
+  <text x="585" y="441" font-size="15" font-weight="bold" fill="#DA1B2E" text-anchor="middle">protocolo MCP</text>
+</svg>

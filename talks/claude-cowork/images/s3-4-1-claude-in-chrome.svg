@@ -1,0 +1,53 @@
+<!-- talksmith-ascii-sha256: ce0e23b51f3c68570b79c43bce0dbba28e070b76fd110c4f713ab1d4f7b1bcc4 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 868 358" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#3B3535">
+  <title>Caso 2: Claude in Chrome</title>
+  <desc>Claude in Chrome abre un panel al costado de la página: lee lo que hay en pantalla y actúa sobre el mismo sitio, dentro de la sesión ya iniciada.</desc>
+  <defs>
+    <marker id="ahGrey" viewBox="0 0 10 8" refX="10" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#3B3535"/>
+    </marker>
+    <marker id="ahRed" viewBox="0 0 10 8" refX="10" refY="4" markerWidth="10" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#DA1B2E"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="868" height="358" fill="#ffffff"/>
+
+  <rect x="24" y="24" width="820" height="284" rx="8" fill="#ffffff" stroke="#C9C4C4" stroke-width="1.4"/>
+  <path d="M24 58 H844" stroke="#C9C4C4" stroke-width="1.4"/>
+  <rect x="24" y="24" width="820" height="34" rx="8" fill="#F2F0F0"/>
+  <rect x="24" y="46" width="820" height="12" fill="#F2F0F0"/>
+  <circle cx="46" cy="41" r="5.5" fill="#D8D4D4"/>
+  <circle cx="64" cy="41" r="5.5" fill="#D8D4D4"/>
+  <circle cx="82" cy="41" r="5.5" fill="#D8D4D4"/>
+  <rect x="104" y="32" width="300" height="18" rx="9" fill="#ffffff" stroke="#DCD8D8"/>
+  <text x="116" y="45" font-family="'DejaVu Sans Mono', monospace" font-size="11" fill="#6B6363">crm.empresa.com</text>
+
+  <rect x="40" y="74" width="484" height="218" rx="6" fill="#ffffff" stroke="#C9C4C4" stroke-width="1.2"/>
+  <text x="56" y="104" font-size="17" font-weight="bold">Página web abierta</text>
+  <text x="56" y="123" font-size="13" fill="#6B6363">(sesión ya iniciada)</text>
+  <path d="M56 138 H508" stroke="#E4E0E0" stroke-width="1.2"/>
+  <rect x="56" y="156" width="452" height="30" rx="4" fill="#F4F2F2" stroke="#E4E0E0"/>
+  <text x="70" y="176">formulario del CRM</text>
+  <rect x="56" y="200" width="452" height="30" rx="4" fill="#F4F2F2" stroke="#E4E0E0"/>
+  <text x="70" y="220">hilo de mail</text>
+  <rect x="56" y="244" width="452" height="30" rx="4" fill="#F4F2F2" stroke="#E4E0E0"/>
+  <text x="70" y="264">tablero del proveedor</text>
+
+  <rect x="580" y="74" width="248" height="218" rx="6" fill="#FAF9F9" stroke="#C9C4C4" stroke-width="1.2"/>
+  <text x="596" y="104" font-size="17" font-weight="bold">Claude in Chrome</text>
+  <text x="596" y="123" font-size="13" fill="#6B6363">(panel lateral)</text>
+  <path d="M596 138 H812" stroke="#E4E0E0" stroke-width="1.2"/>
+  <text x="596" y="175">lee lo que hay</text>
+  <text x="596" y="194">en la pantalla</text>
+  <text x="596" y="236">navega, hace clic,</text>
+  <text x="596" y="255">completa campos,</text>
+  <text x="596" y="274">maneja pestañas</text>
+
+  <path d="M524 180 H580" stroke="#3B3535" stroke-width="2.2" fill="none" marker-end="url(#ahGrey)"/>
+  <text x="552" y="170" font-size="12" fill="#6B6363" text-anchor="middle">lee</text>
+  <path d="M580 250 H524" stroke="#DA1B2E" stroke-width="2.6" fill="none" marker-end="url(#ahRed)"/>
+  <text x="552" y="240" font-size="12" fill="#DA1B2E" font-weight="bold" text-anchor="middle">actúa</text>
+
+  <text x="434" y="332" font-size="13" fill="#6B6363" text-anchor="middle">El panel convive con la página, en la misma ventana y con la sesión ya iniciada.</text>
+</svg>

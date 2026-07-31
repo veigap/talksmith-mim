@@ -1,0 +1,40 @@
+<!-- talksmith-ascii-sha256: a94dc9617b1d996fc67e36e1d19598dedd797786d1aaa241b4d9a4b4729dd0ac -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="t d">
+  <title id="t">El chat responde de memoria</title>
+  <desc id="d">El chat de IA como viene de fábrica responde solo desde su memoria de entrenamiento, una foto congelada hasta la fecha de entrenamiento, sin ver el mundo del usuario.</desc>
+
+  <rect x="0" y="0" width="680" height="300" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="340" y="34" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#3B3535">El chat &#8220;como viene de f&#225;brica&#8221;</text>
+
+  <!-- Outer box: CHAT DE IA -->
+  <rect x="36" y="62" width="330" height="192" rx="8" fill="#F2F2F2" stroke="#3B3535" stroke-width="1.5"/>
+  <text x="201" y="90" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#3B3535">CHAT DE IA</text>
+
+  <!-- Inner box: memoria de entrenamiento (focal, red accent) -->
+  <rect x="60" y="106" width="282" height="86" rx="6" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="201" y="134" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="14.5" font-weight="bold" fill="#DA1B2E">MEMORIA DE ENTRENAMIENTO</text>
+  <text x="201" y="156" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">foto congelada hasta la</text>
+  <text x="201" y="173" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12.5" fill="#3B3535">fecha de entrenamiento</text>
+
+  <text x="201" y="228" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13.5" font-style="italic" fill="#3B3535">responde &#8220;de memoria&#8221;</text>
+
+  <!-- Divider concept: right column, lo que NO ve -->
+  <text x="416" y="90" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#3B3535">Lo que NO ve:</text>
+
+  <g stroke="#DA1B2E" stroke-width="2.2" stroke-linecap="round">
+    <path d="M416 113 l9 9 M425 113 l-9 9"/>
+    <path d="M416 141 l9 9 M425 141 l-9 9"/>
+    <path d="M416 169 l9 9 M425 169 l-9 9"/>
+    <path d="M416 197 l9 9 M425 197 l-9 9"/>
+    <path d="M416 225 l9 9 M425 225 l-9 9"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="13.5" fill="#3B3535">
+    <text x="436" y="122">las noticias de hoy</text>
+    <text x="436" y="150">los mails</text>
+    <text x="436" y="178">el calendario</text>
+    <text x="436" y="206">los archivos</text>
+    <text x="436" y="234">las apps del trabajo</text>
+  </g>
+</svg>

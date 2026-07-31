@@ -1,0 +1,51 @@
+<!-- talksmith-ascii-sha256: 7b28ea16484190f04abecbbc0b9bd67f976031a0141348a9d63c57969a2ce6d4 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 829 716" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+<title>El loop completo de Faro</title>
+<desc>Cierre integrador: el loop completo encadena cada pieza vista en la charla, desde el disparador del lunes hasta el borrador de correo.</desc>
+<defs>
+<marker id="ah" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto">
+<path d="M0 0 L12 5.5 L0 11 Z" fill="#7A7070"/>
+</marker>
+</defs>
+<rect x="-40" y="-40" width="1200" height="1000" fill="#ffffff"/>
+
+<rect x="133" y="28" width="190" height="42" rx="21" fill="#ffffff" stroke="#C9C2C2" stroke-width="1.4"/>
+<text x="228" y="55" text-anchor="middle" font-size="16.5">Lunes 08:00</text>
+<path d="M228 70 V102" stroke="#7A7070" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+<rect x="28" y="102" width="400" height="104" rx="10" fill="#ffffff" stroke="#DA1B2E" stroke-width="2.4"/>
+<text x="228" y="130" text-anchor="middle" font-size="12.5" letter-spacing="1.6" fill="#DA1B2E">DISPARADOR</text>
+<text x="228" y="161" text-anchor="middle" font-size="22" font-weight="bold" fill="#DA1B2E">Schedule</text>
+<text x="228" y="187" text-anchor="middle" font-size="14.5" fill="#6A6060">dispara la misión completa</text>
+<path d="M228 206 V262" stroke="#7A7070" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+<rect x="28" y="262" width="400" height="104" rx="10" fill="#F7F5F5" stroke="#C9C2C2" stroke-width="1.4"/>
+<text x="228" y="290" text-anchor="middle" font-size="12.5" letter-spacing="1.6" fill="#9A9090">SKILL</text>
+<text x="228" y="321" text-anchor="middle" font-size="22" font-weight="bold" font-family="'DejaVu Sans Mono', monospace">buscar-accion</text>
+<text x="228" y="347" text-anchor="middle" font-size="14.5" fill="#6A6060">junta precios y noticias de la semana</text>
+<path d="M228 366 V422" stroke="#7A7070" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+<rect x="28" y="422" width="400" height="104" rx="10" fill="#F7F5F5" stroke="#C9C2C2" stroke-width="1.4"/>
+<text x="228" y="450" text-anchor="middle" font-size="12.5" letter-spacing="1.6" fill="#9A9090">SKILL</text>
+<text x="228" y="481" text-anchor="middle" font-size="22" font-weight="bold" font-family="'DejaVu Sans Mono', monospace">reporte-semanal</text>
+<text x="228" y="507" text-anchor="middle" font-size="14.5" fill="#6A6060">consolida las fuentes en un informe</text>
+<path d="M228 526 V582" stroke="#7A7070" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+
+<rect x="28" y="582" width="400" height="104" rx="10" fill="#F7F5F5" stroke="#C9C2C2" stroke-width="1.4"/>
+<text x="228" y="610" text-anchor="middle" font-size="12.5" letter-spacing="1.6" fill="#9A9090">CONNECTOR</text>
+<text x="228" y="641" text-anchor="middle" font-size="22" font-weight="bold">Gmail</text>
+<text x="228" y="667" text-anchor="middle" font-size="14.5" fill="#6A6060">arma el correo para el equipo</text>
+
+<path d="M428 154 H470" stroke="#C9C2C2" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="482" y="159" font-size="14.5" fill="#6A6060">un solo disparador para todo el loop</text>
+
+<path d="M428 314 H470" stroke="#C9C2C2" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="482" y="308" font-size="14.5" fill="#6A6060">Connector MT Newswires + <tspan font-family="'DejaVu Sans Mono', monospace" font-size="13.5" fill="#3B3535">web_fetch</tspan> en Yahoo</text>
+<text x="482" y="331" font-size="14.5" fill="#6A6060">guarda los datos crudos en <tspan font-family="'DejaVu Sans Mono', monospace" font-size="13.5" fill="#3B3535">fuentes/</tspan></text>
+
+<path d="M428 474 H470" stroke="#C9C2C2" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="482" y="479" font-size="14.5" fill="#6A6060">escribe el reporte <tspan font-family="'DejaVu Sans Mono', monospace" font-size="13.5" fill="#3B3535">.md</tspan> dentro del Project</text>
+
+<path d="M428 634 H470" stroke="#C9C2C2" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="482" y="639" font-size="14.5" fill="#6A6060">el borrador queda escrito, sin enviar</text>
+</svg>

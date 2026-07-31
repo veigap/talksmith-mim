@@ -1,0 +1,19 @@
+Lunes 8:00
+   |
+   v
+[Schedule] dispara
+   |
+   v
+[Skill buscar-accion] --(Connector MT Newswires + web_fetch Yahoo)--> guarda fuentes/
+   |
+   v
+[Skill reporte-semanal] consolida --> reporte .md en el Project
+   |
+   v
+[Connector Gmail] deja el borrador listo para el equipo
+
+<!-- ascii-note:
+intent: mostrar el loop completo de la misión de Faro, encadenando todas las piezas vistas en la charla, disparado por el Schedule cada lunes.
+emphasize: la secuencia de arriba abajo Schedule -> Skills -> Connectors -> borrador de correo; que todo arranca de un solo disparador.
+labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail) y las piezas usadas en cada uno.
+-->
