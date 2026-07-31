@@ -1,0 +1,31 @@
+<!-- talksmith-ascii-sha256: 23b8ddc179f52d169478cee5cc267e6207bb2e091022cacb8e3f13c24685a5d6 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 452" font-family="Helvetica, Arial, sans-serif" fill="#3B3535" font-size="13">
+  <title>Cuidado: prompt injection</title>
+  <desc>Una página, un mail o un documento pueden traer instrucciones ocultas que Claude tome como pedidos del usuario.</desc>
+  <defs>
+    <marker id="ah" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6E6663"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="460" height="452" fill="#ffffff"/>
+
+  <text x="230" y="44" text-anchor="middle" font-size="18" font-weight="bold">Prompt injection: cómo funciona el ataque</text>
+
+  <rect x="30" y="78" width="400" height="118" rx="6" fill="#F5F3F2" stroke="#C9C2C0" stroke-width="1.5"/>
+  <text x="230" y="102" text-anchor="middle" font-weight="bold">Página, mail o documento</text>
+  <text x="230" y="126" text-anchor="middle" font-size="12" fill="#8A8280" font-family="'DejaVu Sans Mono', monospace">...texto visible...</text>
+  <rect x="60" y="138" width="340" height="38" rx="5" fill="#FDECEE" stroke="#DA1B2E" stroke-width="1.5"/>
+  <text x="230" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#DA1B2E">INSTRUCCIÓN OCULTA</text>
+
+  <line x1="230" y1="196" x2="230" y2="216" stroke="#6E6663" stroke-width="2"/>
+  <text x="230" y="234" text-anchor="middle" font-size="12" fill="#6E6663">Claude lee todo lo que hay en la pantalla</text>
+  <line x1="230" y1="246" x2="230" y2="272" stroke="#6E6663" stroke-width="2" marker-end="url(#ah)"/>
+
+  <rect x="30" y="272" width="400" height="80" rx="6" fill="#F5F3F2" stroke="#C9C2C0" stroke-width="1.5"/>
+  <text x="230" y="304" text-anchor="middle">Claude puede tomar esa instrucción</text>
+  <text x="230" y="326" text-anchor="middle">como si fuera un pedido del usuario</text>
+
+  <line x1="230" y1="352" x2="230" y2="392" stroke="#6E6663" stroke-width="2" marker-end="url(#ah)"/>
+
+  <text x="230" y="418" text-anchor="middle" font-size="16" font-weight="bold" fill="#DA1B2E">una acción que nadie pidió</text>
+</svg>

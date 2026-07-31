@@ -1,0 +1,25 @@
+   PROMPT INJECTION: como funciona el ataque
+
+   +-------------------------------+
+   |  pagina / mail / documento    |
+   |                               |
+   |   ...texto visible...         |
+   |   [ INSTRUCCION OCULTA ]      |
+   +-------------------------------+
+                  |
+                  |  Claude lee TODO lo que hay en la pantalla
+                  v
+   +-------------------------------+
+   |  Claude puede tomar esa       |
+   |  instruccion como si fuera    |
+   |  un pedido del usuario        |
+   +-------------------------------+
+                  |
+                  v
+        una accion que nadie pidio
+
+<!-- ascii-note:
+intent: explicar el mecanismo del prompt injection en tres pasos: una página o un mail traen una instrucción oculta entre el texto visible, Claude lee toda la pantalla y puede confundir esa instrucción con un pedido del usuario, y el resultado es una acción que nadie pidió.
+emphasize: la caja "[ INSTRUCCION OCULTA ]" dentro del documento, en contraste con el texto visible; el remate "una accion que nadie pidio" al pie.
+labels: arriba = página / mail / documento con instrucción oculta; medio = Claude la toma como pedido del usuario; abajo = una acción que nadie pidió.
+-->

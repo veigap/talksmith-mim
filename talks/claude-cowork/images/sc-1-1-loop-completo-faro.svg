@@ -1,7 +1,7 @@
-<!-- talksmith-ascii-sha256: 7b28ea16484190f04abecbbc0b9bd67f976031a0141348a9d63c57969a2ce6d4 -->
+<!-- talksmith-ascii-sha256: 3589e0f04421bba9ec1d8bf0eb7f271b99a4dae77f1eb9fb8e9f9366da1ebfbc -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 829 716" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
 <title>El loop completo de Faro</title>
-<desc>Cierre integrador: el loop completo encadena cada pieza vista en la charla, desde el disparador del lunes hasta el borrador de correo.</desc>
+<desc>Cierre integrador de las dos clases: el loop completo encadena cada pieza, desde el disparador del lunes hasta el borrador de correo.</desc>
 <defs>
 <marker id="ah" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="11" refX="12" refY="5.5" orient="auto">
 <path d="M0 0 L12 5.5 L0 11 Z" fill="#7A7070"/>

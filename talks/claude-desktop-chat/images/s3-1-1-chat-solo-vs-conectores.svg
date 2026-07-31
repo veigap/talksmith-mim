@@ -1,0 +1,42 @@
+<!-- talksmith-ascii-sha256: 979cf795479c88ce26969bf8b60d76725e99f5d4b8f58376df5f054f3259d27c -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 302" font-family="Helvetica, Arial, sans-serif" fill="#3B3535" font-size="14">
+<title>Qué es un conector</title>
+<desc>Contraste entre un chat aislado, que responde de memoria de entrenamiento, y un chat con conectores, que consulta fuentes reales antes de responder.</desc>
+<defs>
+<marker id="ah" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="9" refX="10" refY="4.5" orient="auto">
+<path d="M0,0 L10,4.5 L0,9 Z" fill="#DA1B2E"/>
+</marker>
+</defs>
+<rect x="0" y="0" width="940" height="302" fill="#ffffff"/>
+
+<text x="155" y="52" text-anchor="middle" font-size="17" font-weight="bold" fill="#3B3535">CHAT SOLO</text>
+<rect x="40" y="80" width="230" height="150" rx="8" fill="#F2F0EF" stroke="#9A9391" stroke-width="1.5"/>
+<text x="155" y="132" text-anchor="middle" font-size="20" font-weight="bold" fill="#3B3535">CHAT</text>
+<text x="155" y="166" text-anchor="middle">responde de memoria</text>
+<text x="155" y="188" text-anchor="middle">de entrenamiento</text>
+<text x="155" y="258" text-anchor="middle" font-size="13" fill="#7A7370">(aislado)</text>
+
+<line x1="315" y1="45" x2="315" y2="265" stroke="#D6D1CF" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+<text x="475" y="52" text-anchor="middle" font-size="17" font-weight="bold" fill="#DA1B2E">CHAT CON CONECTORES</text>
+<rect x="360" y="80" width="230" height="150" rx="8" fill="#FDF2F3" stroke="#DA1B2E" stroke-width="2"/>
+<text x="475" y="112" text-anchor="middle" font-size="20" font-weight="bold" fill="#3B3535">CHAT</text>
+<text x="475" y="142" text-anchor="middle">consulta fuentes</text>
+<text x="475" y="168" text-anchor="middle" font-size="17" font-weight="bold" fill="#DA1B2E">REALES</text>
+<text x="475" y="194" text-anchor="middle">antes de responder</text>
+<text x="475" y="258" text-anchor="middle" font-size="13" fill="#DA1B2E">(conectado al mundo real)</text>
+
+<line x1="590" y1="89" x2="679" y2="89" stroke="#DA1B2E" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="590" y1="133" x2="679" y2="133" stroke="#DA1B2E" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="590" y1="177" x2="679" y2="177" stroke="#DA1B2E" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="590" y1="221" x2="679" y2="221" stroke="#DA1B2E" stroke-width="2" marker-end="url(#ah)"/>
+
+<rect x="680" y="72" width="220" height="34" rx="17" fill="#ffffff" stroke="#9A9391" stroke-width="1.5"/>
+<text x="790" y="94" text-anchor="middle">web</text>
+<rect x="680" y="116" width="220" height="34" rx="17" fill="#ffffff" stroke="#9A9391" stroke-width="1.5"/>
+<text x="790" y="138" text-anchor="middle">mail</text>
+<rect x="680" y="160" width="220" height="34" rx="17" fill="#ffffff" stroke="#9A9391" stroke-width="1.5"/>
+<text x="790" y="182" text-anchor="middle">calendario</text>
+<rect x="680" y="204" width="220" height="34" rx="17" fill="#ffffff" stroke="#9A9391" stroke-width="1.5"/>
+<text x="790" y="226" text-anchor="middle">documentos</text>
+</svg>
