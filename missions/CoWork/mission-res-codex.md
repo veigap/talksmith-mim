@@ -49,8 +49,6 @@ web_search = "live"
 ```
 
 > 📁 Material de ejemplo: el mismo `reportes/` de la misión (subcarpeta por semana; `fuentes/` + reporte final como "respuesta correcta").
->
-> 🧹 **Misión 0:** la carpeta `escritorio-del-pasante/` sirve igual con Codex: concedésela a un Project y recorré los mismos 5 ejercicios de `intro-escritorio-pasante.md` (el ciclo de aprobaciones existe igual; el modo de sandbox de Codex cumple el rol del modo Ask).
 
 ---
 
@@ -71,7 +69,7 @@ Verificá las **citas inline**: ese es el control de que no respondió de memori
 1. Configuración de ChatGPT → **Connectors** → buscá **Gmail** → conectá y autorizá con Google.
 2. Probá una lectura: *"¿Qué mails de esta semana quedaron sin responder en mi bandeja?"*
 
-> ⚠️ **Diferencia honesta:** claude.ai tiene a MT Newswires listo en su biblioteca; en ChatGPT el catálogo de conectores es otro. Si tu proveedor de noticias no está, el pulso se arma con búsqueda web sola (alcanza para el ejercicio) o con un conector de datos financieros del catálogo.
+> ⚠️ **Diferencia honesta:** claude.ai tiene a Massive listo en su biblioteca; en ChatGPT el catálogo de conectores es otro. Si tu proveedor de noticias no está, el pulso se arma con búsqueda web sola (alcanza para el ejercicio) o con un conector de datos financieros del catálogo.
 
 > ✅ **🏁 Criterio de éxito (Milestone 1):** el pulso sale con fuentes citadas y el chat puede leer tu Gmail.
 
@@ -122,9 +120,9 @@ El mismo prompt del Paso 3.3 de `mission-res.md`: leer TODAS las fuentes, consol
 - Si tu proveedor de noticias expone MCP, agregalo (`codex mcp`, o en `config.toml`):
 
 ```toml
-[mcp_servers.mt_newswires]
+[mcp_servers.massive]
 url = "https://<endpoint-del-proveedor>/mcp"
-bearer_token_env_var = "MT_NEWSWIRES_TOKEN"
+bearer_token_env_var = "MASSIVE_TOKEN"
 ```
 
 - Para el email: un **MCP server de Gmail** (oficial del proveedor o de la comunidad), autorizado una vez. Verificá todo con `/mcp`.
@@ -132,7 +130,7 @@ bearer_token_env_var = "MT_NEWSWIRES_TOKEN"
 
 ## Paso 4.2 — Que Faro investigue solo
 
-El mismo prompt del Paso 4.2 de `mission-res.md` (ticker + semana → `fuentes/` con `yahoo-finance.txt` y `mt-newswires.txt` acumulativos, 'n/d' si falta, links reales). Verificá que `fuentes/` se reconstruye desde cero.
+El mismo prompt del Paso 4.2 de `mission-res.md` (ticker + semana → `fuentes/` con `yahoo-finance.txt` y `massive.txt` acumulativos, 'n/d' si falta, links reales). Verificá que `fuentes/` se reconstruye desde cero.
 
 ## Paso 4.3 — La Automation del lunes
 

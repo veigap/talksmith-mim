@@ -1,10 +1,12 @@
 # 🛰️ Solución paso a paso — "Faro, la mesa de inteligencia de mercado de Atlas"
 
+*Paulo Veiga · Marco Sánchez Sorondo · Claudio Righetti · Juan Pablo Cosentino*
+
 > Guía de resolución de la misión descrita en `mission.md` (versión de 2 partes y 6 milestones). Pensada para que el facilitador la conduzca en vivo y para que cualquier participante **no técnico** la replique. Incluye los **prompts exactos** para copiar y pegar (en *cursiva con comillas*) y lo que hay que **clickear**.
 >
 > 💡 Convención: donde veas `[EMPRESAS]`, va la lista de **las 3 acciones que el jefe pidió seguir**: `YPF, VIST, TS`. Donde veas `[TICKER]`, va una sola (ej. `YPF`). Podés cambiarlas si adaptás la misión a tu propio contexto laboral.
 >
-> 🎭 El encuadre: trabajás en **Atlas**, una empresa de insumos de perforación para Vaca Muerta. Tu jefe quiere un **pulso semanal de mercado** sobre YPF, Vista y Tenaris, en dos entregas: un **email cada lunes** y un **tablero** siempre al día. En el workshop el email te lo enviás a vos mismo (`superboss@gmail.com` como destinatario simbólico del jefe).
+> 🎭 El encuadre: trabajás en **Atlas**, una empresa de insumos de perforación para Vaca Muerta. Tu jefe quiere un **pulso semanal de mercado** sobre YPF, Vista y Tenaris, en dos entregas: un **email cada lunes** y un **tablero** siempre al día. En el workshop el email va dirigido a `admin@intuitiv-ai.com`, la casilla que hace de jefe.
 
 ---
 
@@ -25,8 +27,6 @@
 
 > 📁 **Material de ejemplo:** en `reportes/` hay una subcarpeta por semana; adentro, `fuentes/` (las notas del pasante, un archivo por portal) lado a lado con el reporte final (`.md`), que funciona de "respuesta correcta".
 >
-> 🧹 **Misión 0:** si es tu primer contacto con Cowork, antes del Milestone 3 hacé la **Misión 0** (`intro-escritorio-pasante.md`): 20-30 minutos guiados sobre la carpeta `escritorio-del-pasante/`, regenerable con `python3 gen_escritorio_pasante.py`.
->
 > 🧩 **Para el facilitador:** si tenés las tres Skills de referencia armadas (`reporte-semanal`, `buscar-accion`, `publicar-tablero`), dejalas a mano para el Milestone 6 por si alguien se traba. El ideal del workshop es que cada participante las construya.
 
 ---
@@ -44,17 +44,17 @@ En claude.ai, con la búsqueda activada, escribí:
 
 Mirá dos cosas: el indicador de **"buscando..."** mientras trabaja, y las **fuentes citadas** en la respuesta. Ese es tu punto de control de que no respondió de memoria.
 
-## Paso 1.2 — Conectar MT Newswires
+## Paso 1.2 — Conectar Massive
 
-La web abierta no alcanza: queremos una fuente confiable de noticias de mercado. Usamos **MT Newswires**, el proveedor al que tenemos suscripción (`https://www.mtnewswires.com`).
+La web abierta no alcanza: queremos una fuente confiable de noticias de mercado. Usamos **Massive**, el proveedor al que tenemos suscripción.
 
 1. Andá a la **biblioteca de conectores** (Configuración → Conectores, o el "+" del campo de chat).
-2. **Buscá "MT Newswires"** y clickeá **"Connect"**.
+2. **Buscá "Massive"** y clickeá **"Connect"**.
 3. Completá la autorización con la suscripción y verificá que figure **conectado**.
 
 **Probalo:**
 
-> *"Conectándote a MT Newswires, traeme las últimas noticias de `YPF`. Mostrame qué devuelve."*
+> *"Conectándote a Massive, traeme las últimas noticias de `YPF`. Mostrame qué devuelve."*
 
 ## Paso 1.3 — Conectar Gmail y probar una lectura
 
@@ -65,7 +65,7 @@ La web abierta no alcanza: queremos una fuente confiable de noticias de mercado.
 
 ## Paso 1.4 — El pulso, ahora con todo conectado
 
-Repetí el pedido del Paso 1.1. Compará la respuesta: ahora combina búsqueda web + MT Newswires, con citas.
+Repetí el pedido del Paso 1.1. Compará la respuesta: ahora combina búsqueda web + Massive, con citas.
 
 > ✅ **🏁 Criterio de éxito (Milestone 1):** el chat arma el pulso de la semana con precios y noticias **citadas de fuentes reales**, sin que pegues una sola noticia a mano.
 
@@ -81,7 +81,7 @@ Repetí el pedido del Paso 1.1. Compará la respuesta: ahora combina búsqueda w
 
 ## Paso 2.1 — Prueba de fuego: el borrador en Gmail
 
-> *"Tomá el pulso de esta semana y dejalo como **borrador en Gmail** dirigido a `superboss@gmail.com`, con el asunto «Pulso semanal de mercado — [fecha]». Poné el resumen y los datos clave en el cuerpo, en un formato prolijo. No lo envíes: dejalo como borrador."*
+> *"Tomá el pulso de esta semana y dejalo como **borrador en Gmail** dirigido a `admin@intuitiv-ai.com`, con el asunto «Pulso semanal de mercado — [fecha]». Poné el resumen y los datos clave en el cuerpo, en un formato prolijo. No lo envíes: dejalo como borrador."*
 
 La primera vez puede pedirte permiso para usar Gmail: clickeá **"Allow"**.
 
@@ -93,7 +93,7 @@ La primera vez puede pedirte permiso para usar Gmail: clickeá **"Allow"**.
 
 En claude.ai, pedí:
 
-> *"Programá una tarea que corra **cada lunes a las 8:00**: armar el pulso de mercado de `[EMPRESAS]` con búsqueda web y MT Newswires, y dejarlo como borrador en Gmail dirigido a `superboss@gmail.com` con el asunto «Pulso semanal de mercado — [fecha]». Listo antes de la reunión de las 9:00."*
+> *"Programá una tarea que corra **cada lunes a las 8:00**: armar el pulso de mercado de `[EMPRESAS]` con búsqueda web y Massive, y dejarlo como borrador en Gmail dirigido a `admin@intuitiv-ai.com` con el asunto «Pulso semanal de mercado — [fecha]». Listo antes de la reunión de las 9:00."*
 
 Confirmá frecuencia (**semanal**), día (**lunes**) y horario (**8:00**) si te los pregunta, y verificá que la tarea aparezca en tu **lista de tareas programadas**.
 
@@ -109,7 +109,7 @@ No esperes al lunes: ejecutala **a demanda** desde la lista de tareas para verla
 
 # 🧩 PARTE 2 — Faro en Cowork
 
-*Arranca de la herencia del pasante en `reportes/`; no hace falta haber resuelto la Parte 1. Si venís de ella, MT Newswires y Gmail ya están autorizados.*
+*Arranca de la herencia del pasante en `reportes/`; no hace falta haber resuelto la Parte 1. Si venís de ella, Massive y Gmail ya están autorizados.*
 
 # 🛠️ Milestone 3 — Faro toma forma
 ### *(Projects · Instrucciones · archivos .md)*
@@ -164,13 +164,13 @@ Revisá lo que escribió y corregí lo que falte: ese archivo lo vas a leer vos 
 
 ## Paso 4.1 — Los conectores, ahora en Cowork
 
-Verificá en la biblioteca de conectores que **MT Newswires** y **Gmail** estén conectados y habilitados para Cowork (si venís de la Parte 1 ya están; si no, es buscar + Connect + autorizar). Búsqueda web activa.
+Verificá en la biblioteca de conectores que **Massive** y **Gmail** estén conectados y habilitados para Cowork (si venís de la Parte 1 ya están; si no, es buscar + Connect + autorizar). Búsqueda web activa.
 
 > 🌐 **Claude in Chrome (opcional):** para páginas que renderizan con JavaScript (como Yahoo Finance), Cowork puede usar el navegador real. Chrome + extensión habilitada: [instrucciones oficiales](https://support.anthropic.com/en/articles/12012173-getting-started-with-claude-for-chrome).
 
 ## Paso 4.2 — Que Faro investigue solo
 
-> *"Faro, para la semana actual y para cada ticker de `[EMPRESAS]`: buscá el precio de cierre aproximado y la variación semanal en `https://finance.yahoo.com/quote/<TICKER>/`, y las noticias en MT Newswires vía el conector. Guardá todo en disco dentro de `reportes/semana-AAAA-MM-DD/fuentes/`, en dos archivos acumulativos: `yahoo-finance.txt` (un bloque por ticker) y `mt-newswires.txt` (una sección por ticker). Si el archivo ya existe, agregá al final sin pisar. No inventes: si algo no está, escribí 'n/d'. Conservá los links reales."*
+> *"Faro, para la semana actual y para cada ticker de `[EMPRESAS]`: buscá el precio de cierre aproximado y la variación semanal en `https://finance.yahoo.com/quote/<TICKER>/`, y las noticias en Massive vía el conector. Guardá todo en disco dentro de `reportes/semana-AAAA-MM-DD/fuentes/`, en dos archivos acumulativos: `yahoo-finance.txt` (un bloque por ticker) y `massive.txt` (una sección por ticker). Si el archivo ya existe, agregá al final sin pisar. No inventes: si algo no está, escribí 'n/d'. Conservá los links reales."*
 
 **Verificá:** la carpeta `fuentes/` de la semana en curso se reconstruyó **partiendo de cero**, sin pasante.
 
@@ -182,7 +182,7 @@ Verificá en la biblioteca de conectores que **MT Newswires** y **Gmail** estén
 2. Completá nombre (`Pulso semanal`), frecuencia **Weekly**, día **lunes**, hora **8:00**, y la carpeta del proyecto.
 3. En el prompt de la tarea, pegá:
 
-> *"Cada lunes a las 8:00: buscá la info de la semana de `[EMPRESAS]` (Yahoo Finance + MT Newswires) y guardá las fuentes en `fuentes/`; después consolidá el reporte de la semana en Markdown siguiendo el formato del reporte de ejemplo y guardalo en el Project; y por último dejá el reporte como **borrador en Gmail** dirigido a `superboss@gmail.com` con el asunto «Pulso semanal de mercado — [fecha]»."*
+> *"Cada lunes a las 8:00: buscá la info de la semana de `[EMPRESAS]` (Yahoo Finance + Massive) y guardá las fuentes en `fuentes/`; después consolidá el reporte de la semana en Markdown siguiendo el formato del reporte de ejemplo y guardalo en el Project; y por último dejá el reporte como **borrador en Gmail** dirigido a `admin@intuitiv-ai.com` con el asunto «Pulso semanal de mercado — [fecha]»."*
 
 4. **"Save"**, y probala con **"Run now"** para no esperar al lunes.
 
@@ -193,31 +193,29 @@ Verificá en la biblioteca de conectores que **MT Newswires** y **Gmail** estén
 ---
 
 # 📊 Milestone 5 — El tablero del jefe
-### *(Artifacts y Live Artifacts)*
+### *(el formato final: del .md de trabajo al PDF de entrega)*
 
-> ⚠️ **Estado real de la herramienta:** hoy los Live Artifacts son **locales** (viven en tu computadora) y **todavía no son compartibles** por URL (está en el roadmap). El tablero se muestra desde tu máquina o se exporta su HTML para mandarlo. Nada de esto lo cambia una Skill ni una configuración: es el estado del producto.
+## Paso 5.1 — Generar el tablero
 
-## Paso 5.1 — Crear el tablero
+> *"Faro, generá un **PDF** llamado `pulso-semanal-[FECHA].pdf` en la carpeta del Project con el tablero de la semana, usando el último reporte como fuente. Diseño según el boceto del jefe (`mockup-tablero.png`): encabezado con la fecha y el resumen, una tarjeta por empresa (ticker, precio, variación en verde/rojo, ánimo, 2-3 noticias con link, a vigilar) y la tabla resumen. Footer obligatorio: «Reporte interno e informativo; no constituye asesoramiento financiero». No inventes: solo lo que está en el reporte."*
 
-> *"Faro, creá un **Live Artifact** llamado `pulso-semanal-[FECHA]` con el tablero de la semana, usando el último reporte como fuente. Diseño según el boceto del jefe (`mockup-tablero.png`): encabezado con la fecha y el resumen, una tarjeta por empresa (ticker, precio, variación en verde/rojo, ánimo, 2-3 noticias con link, a vigilar) y la tabla resumen. Footer obligatorio: «Reporte interno e informativo; no constituye asesoramiento financiero». No inventes: solo lo que está en el reporte."*
+## Paso 5.2 — Verificar el resultado y el historial
 
-## Paso 5.2 — Verificar el comportamiento "live"
-
-1. Abrí la pestaña **"Live artifacts"** y entrá al tablero: al abrirse se **refresca** con los datos actuales de tus apps conectadas.
-2. Fijate que el artifact quedó con la fecha en el nombre: un artifact nuevo por semana deja **historial** navegable.
+1. Abrí el PDF desde la carpeta del Project: respeta el boceto y solo contiene lo que dice el reporte.
+2. Fijate que quedó con la fecha en el nombre: un PDF por semana deja **historial** en la carpeta, y regenerarlo es barato porque la fuente sigue siendo el `.md`.
 
 ## Paso 5.3 — Engancharlo a la tarea del lunes
 
 Entrá a la tarea en **"Scheduled"** y editá el prompt para que **termine así**:
 
-> *"…y por último, actualizá el tablero de la semana: creá el Live Artifact `pulso-semanal-[FECHA]` con el último reporte, con el diseño del boceto del jefe."*
+> *"…y por último, generá el tablero de la semana: el PDF `pulso-semanal-[FECHA].pdf` con el último reporte, con el diseño del boceto del jefe, y adjuntalo al borrador de email."*
 
-> ✅ **🏁 Criterio de éxito (Milestone 5):** el tablero respeta el boceto, la corrida del lunes lo regenera, y podés mostrárselo al jefe desde tu máquina (o exportar el HTML) sin armarlo a mano.
+> ✅ **🏁 Criterio de éxito (Milestone 5):** el tablero respeta el boceto, la corrida del lunes lo regenera, y le llega al jefe adjunto al borrador de Gmail sin que lo armes a mano.
 
 > 🛠️ **Si algo sale mal:**
 >
 > - *El tablero está vacío* → confirmá que exista al menos un `reporte-semana-*.md` en la carpeta.
-> - *Alguien pide "la URL pública"* → no existe todavía; es la limitación documentada de Live Artifacts. Exportá el HTML si hace falta compartir.
+> - *El PDF no respeta el boceto* → pedile las correcciones y que lo regenere: el `.md` es la fuente, el PDF se tira y se rehace.
 
 ---
 
@@ -242,17 +240,17 @@ Entrá a la tarea en **"Scheduled"** y editá el prompt para que **termine así*
 
 Repetí con `/skill-creator`:
 
-> *"Quiero crear una Skill llamada `buscar-accion`. Recibe un ticker y una semana (fecha del lunes). Busca en DOS fuentes: Yahoo Finance (precio de cierre aproximado y variación, con `web_fetch` directo a `https://finance.yahoo.com/quote/<TICKER>/`) y MT Newswires (noticias, vía el conector). Guarda en `reportes/semana-AAAA-MM-DD/fuentes/` dos archivos acumulativos: `yahoo-finance.txt` (un bloque por ticker) y `mt-newswires.txt` (una sección por ticker); si existen, agrega al final sin pisar. Solo artículos donde el ticker es el foco. No inventa: 'n/d' si falta. Conserva links reales."*
+> *"Quiero crear una Skill llamada `buscar-accion`. Recibe un ticker y una semana (fecha del lunes). Busca en DOS fuentes: Yahoo Finance (precio de cierre aproximado y variación, con `web_fetch` directo a `https://finance.yahoo.com/quote/<TICKER>/`) y Massive (noticias, vía el conector). Guarda en `reportes/semana-AAAA-MM-DD/fuentes/` dos archivos acumulativos: `yahoo-finance.txt` (un bloque por ticker) y `massive.txt` (una sección por ticker); si existen, agrega al final sin pisar. Solo artículos donde el ticker es el foco. No inventa: 'n/d' si falta. Conserva links reales."*
 
 ## Paso 6.3 — Skill `publicar-tablero`
 
-> *"Quiero crear una Skill llamada `publicar-tablero`. Lee los `reporte-semana-*.md` de la carpeta y toma el MÁS RECIENTE; extrae la fecha del nombre. Genera el tablero según el boceto del jefe (encabezado, tarjeta por empresa, tabla resumen, footer legal) y crea o actualiza el Live Artifact `pulso-semanal-FECHA`. Un artifact por semana, para conservar el historial. No inventa nada: solo lo que está en el reporte."*
+> *"Quiero crear una Skill llamada `publicar-tablero`. Lee los `reporte-semana-*.md` de la carpeta y toma el MÁS RECIENTE; extrae la fecha del nombre. Genera el tablero según el boceto del jefe (encabezado, tarjeta por empresa, tabla resumen, footer legal) como PDF `pulso-semanal-FECHA.pdf` en la carpeta del Project. Un PDF por semana, para conservar el historial. No inventa nada: solo lo que está en el reporte."*
 
 ## Paso 6.4 — La tarea del lunes, ahora sobre Skills
 
 Editá el prompt de la tarea programada para que use las tres:
 
-> *"Cada lunes a las 8:00: con la Skill `buscar-accion` buscá la info de la semana de `[EMPRESAS]` y guardá las fuentes; con la Skill `reporte-semanal` consolidá el reporte y guardalo en el Project; dejá el reporte como borrador en Gmail dirigido a `superboss@gmail.com`; y con la Skill `publicar-tablero` actualizá el tablero de la semana."*
+> *"Cada lunes a las 8:00: con la Skill `buscar-accion` buscá la info de la semana de `[EMPRESAS]` y guardá las fuentes; con la Skill `reporte-semanal` consolidá el reporte y guardalo en el Project; dejá el reporte como borrador en Gmail dirigido a `admin@intuitiv-ai.com`; y con la Skill `publicar-tablero` generá el tablero de la semana y adjuntalo al borrador."*
 
 Corrida de prueba con **"Run now"**.
 
@@ -278,9 +276,9 @@ Las tres investigaciones de `buscar-accion` son independientes entre sí: ningun
 
 ## 🔄 El círculo completo
 
-`Lunes 8:00` → **Schedule** dispara la tarea → la Skill **`buscar-accion`** consulta Yahoo Finance y MT Newswires y guarda `fuentes/` → la Skill **`reporte-semanal`** consolida el **reporte `.md`** en el **Project** → **Gmail** recibe el **borrador** para el equipo → la Skill **`publicar-tablero`** actualiza el **Live Artifact** `pulso-semanal-FECHA`.
+`Lunes 8:00` → **Schedule** dispara la tarea → la Skill **`buscar-accion`** consulta Yahoo Finance y Massive y guarda `fuentes/` → la Skill **`reporte-semanal`** consolida el **reporte `.md`** en el **Project** → **Gmail** recibe el **borrador** para el equipo → la Skill **`publicar-tablero`** genera el **PDF** `pulso-semanal-FECHA.pdf` y lo adjunta al borrador.
 
-Las piezas, en el orden en que la clase las enseñó: **Conectores y Tareas programadas** en el chat; **Projects, Instrucciones, archivos .md, Schedule, Live Artifacts y Skills** en Cowork. Y vos, con la mañana del lunes libre.
+Las piezas, en el orden en que la clase las enseñó: **Conectores y Tareas programadas** en el chat; **Projects, Instrucciones, archivos .md, Schedule y Skills** en Cowork. Y vos, con la mañana del lunes libre.
 
 ---
 
@@ -289,29 +287,29 @@ Las piezas, en el orden en que la clase las enseñó: **Conectores y Tareas prog
 | Momento | Qué mostrar en vivo | Concepto que "cae" |
 |---------|---------------------|--------------------|
 | P1·M1 búsqueda web | La misma pregunta con búsqueda apagada y prendida; señalar las citas | "El chat puede responder de memoria o con información real" |
-| P1·M1 conectores | Conectar MT Newswires desde la biblioteca y pedir noticias | "Me conecto a servicios sin programar" |
+| P1·M1 conectores | Conectar Massive desde la biblioteca y pedir noticias | "Me conecto a servicios sin programar" |
 | P1·M2 borrador | El borrador apareciendo en Gmail | "Los conectores también actúan; el humano revisa antes de enviar" |
 | P1·M2 schedule | Correr la tarea a demanda | "Me suscribo al resultado en vez de pedirlo cada lunes" |
-| Corte | La placa de fin de parte 1 + la Misión 0 al volver | "Hasta acá, todo en el chat de siempre" |
+| Corte | La placa de fin de parte 1 | "Hasta acá, todo en el chat de siempre" |
 | P2·M3 Project | Crear el Project y leer las Instrucciones | "El contexto se escribe una vez" |
 | P2·M3 .md | La herencia convertida y el reporte `-new` vs el de ejemplo | "Se trabaja en .md; el formato final, al último" |
 | P2·M4 Schedule | "Run now" y ver aparecer fuentes + reporte + borrador | "El agente trabaja sobre mis carpetas, solo" |
-| P2·M5 tablero | El Live Artifact abriéndose y refrescándose | "El resultado vivo; compartir por URL está en el roadmap, ser honesto" |
+| P2·M5 tablero | El PDF apareciendo en la carpeta y abriéndose con el diseño del boceto | "El .md es el trabajo; el PDF, la entrega" |
 | P2·M6 Skills | `/skill-creator` en vivo + la compuerta del Save en Habilidades | "Todo lo que explico más de una vez es una Skill" |
 | P2·M6 Subagentes (bonus) | La corrida repartiendo la investigación en tres líneas paralelas | "Las sub-tareas independientes no se esperan entre sí" |
 
 **Errores comunes a anticipar:**
 
 - Búsqueda web apagada → el Milestone 1 responde de memoria y sin citas.
-- MT Newswires sin conectar → sigue solo con Yahoo; lo avisa.
+- Massive sin conectar → sigue solo con Yahoo; lo avisa.
 - Esperar que la tarea local corra con la app cerrada → no corre; se recupera al volver.
 - `buscar-accion` genera **`.txt`** en `fuentes/`; el reporte consolidado es el `.md`.
 - Olvidar el sufijo **`-new`** → el reporte de ejemplo se pisa y se pierde la "respuesta correcta".
 - Crear la Skill y no pasar por **Guardar/Habilitar** en la lista de Habilidades → "no funciona".
-- Pedir "la URL pública del tablero" → no existe todavía; exportar el HTML si hace falta compartir.
 - Hacer el Milestone 5 sin ningún reporte generado → el tablero no tiene datos.
+- Retocar el PDF a mano en vez de corregir el pedido y regenerarlo → el `.md` es la fuente.
 
-**Timing sugerido (clase de 2 bloques):** Parte 1: setup 5' · M1 20' · M2 15'. Corte. Parte 2: Misión 0 25' · M3 25' · M4 20' · M5 15' · M6 25' · Cierre 10'.
+**Timing sugerido (clase de 2 bloques):** Parte 1: setup 5' · M1 20' · M2 15'. Corte. Parte 2: M3 25' · M4 20' · M5 15' · M6 25' · Cierre 10'.
 
 **Gancho de cierre:** *"Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente de su trabajo podrían delegarle a su propio Faro?"*
 
@@ -325,4 +323,3 @@ Las piezas, en el orden en que la clase las enseñó: **Conectores y Tareas prog
 - [Release notes 7-jul-2026: tareas programadas en la nube (beta)](https://support.claude.com/en/articles/12138966)
 - [How to create custom skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)
 - [Use connectors to extend Claude's capabilities](https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities)
-- [Use live artifacts in Claude Cowork](https://support.claude.com/en/articles/14729249-use-live-artifacts-in-claude-cowork)

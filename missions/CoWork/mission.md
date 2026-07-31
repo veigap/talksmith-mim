@@ -1,5 +1,7 @@
 # 🛰️ Misión: "Faro, la mesa de inteligencia de mercado de Atlas"
 
+*Paulo Veiga · Marco Sánchez Sorondo · Claudio Righetti · Juan Pablo Cosentino*
+
 > **Tu desafío laboral:** trabajás en **Atlas**, una empresa que vende insumos de perforación para Vaca Muerta. Tu jefe quiere, todas las semanas, un reporte claro sobre las empresas que marcan el pulso de nuestro mercado. Ese trabajo cae en vos, y no sos analista ni técnico. En vez de armarlo a mano cada lunes, vas a construir **Faro**, un analista de mercado virtual que lo hace por vos. La misión tiene **dos partes**, igual que la clase: en la primera resolvés el encargo con el **chat de Claude** que ya usás; en la segunda lo llevás a **Claude Cowork**, donde Faro trabaja sobre carpetas y archivos reales. Sin escribir una sola línea de código. **Empezamos.**
 
 ---
@@ -31,15 +33,13 @@ El premio no es Faro: es que al terminar vas a dominar el chat extendido y Claud
 | Parte | Dónde pasa | Lo que construís | Piezas que desbloqueás |
 |---|---|---|---|
 | **Parte 1 · Faro en el chat** | claude.ai (el chat que ya usás) | El **email semanal** llega solo al inbox del jefe | **Conectores** (búsqueda web, noticias, Gmail) · **Tareas programadas** |
-| **Parte 2 · Faro en Cowork** | Claude Cowork | Faro trabaja sobre la **carpeta real** del equipo, arma el reporte, mantiene el **tablero** y queda empaquetado para reutilizar | **Projects** · **Instrucciones** · **archivos .md** · **Schedule** · **Live Artifacts** · **Skills** |
-
-**La Parte 2 no exige la Parte 1 resuelta**: arranca de los materiales incluidos (la herencia del pasante en `reportes/`), así que podés encararla directo. Ahora bien, si venís de la Parte 1, los conectores ya autorizados se reutilizan y el arranque es más corto.
+| **Parte 2 · Faro en Cowork** | Claude Cowork | Faro trabaja sobre la **carpeta real** del equipo, arma el reporte, mantiene el **tablero en PDF** y queda empaquetado para reutilizar | **Projects** · **Instrucciones** · **archivos .md** · **Schedule** · **Skills** |
 
 ---
 
 ## 👥 Para quién es esta misión
 
-Para cualquiera que tenga que **entregar trabajo recurrente**, aunque nunca haya programado. Acá no se programa: se **guía a Claude con lenguaje natural** y se **combinan las piezas** que viste en clase (Conectores, Tareas programadas, Projects, Instrucciones, archivos .md, Schedule, Live Artifacts, Skills). Si sabés mandar un email y mover una carpeta, ya tenés lo que hace falta.
+Para cualquiera que tenga que **entregar trabajo recurrente**, aunque nunca haya programado. Acá no se programa: se **guía a Claude con lenguaje natural** y se **combinan las piezas** que viste en clase (Conectores, Tareas programadas, Projects, Instrucciones, archivos .md, Schedule, Skills). Si sabés mandar un email y mover una carpeta, ya tenés lo que hace falta.
 
 ---
 
@@ -84,12 +84,12 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 
 **El objetivo:** que el chat responda con información **real y de esta semana** sobre YPF, Vista y Tenaris, en vez de responder de memoria de entrenamiento.
 
-> ✅ **Necesitás para este milestone:** la **búsqueda web activada** (un toggle en la configuración). La conexión a **MT Newswires** es el paso 2: ya tiene un connector en el directorio, no instalás nada de antemano.
+> ✅ **Necesitás para este milestone:** la **búsqueda web activada** (un toggle en la configuración). La conexión a **Massive** es el paso 2: ya tiene un connector en el directorio, no instalás nada de antemano.
 
 **Tu misión:**
 
 1. Con **búsqueda web** activada, pedirle al chat el pulso de la semana de las 3 empresas y verificar que **cite fuentes** (el "buscando…" y las citas son tu punto de control).
-2. Conectar **MT Newswires** (el proveedor de noticias al que tenemos suscripción) desde la **biblioteca de conectores**: buscarlo, darle Connect y autorizar. → [MT Newswires](https://www.mtnewswires.com)
+2. Conectar **Massive** (el proveedor de noticias al que tenemos suscripción) desde la **biblioteca de conectores**: buscarlo, darle Connect y autorizar.
 3. Conectar **Gmail** de la misma forma y probar una lectura: "¿qué mails del equipo quedaron sin responder esta semana?".
 4. Pedir el pulso de nuevo, ahora con las dos fuentes conectadas, y comparar la diferencia de calidad.
 
@@ -106,8 +106,8 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 
 **Tu misión:**
 
-1. Pedirle al chat que **deje el pulso de esta semana como borrador en Gmail**, dirigido a `superboss@gmail.com` (la prueba de fuego de la capacidad ejecutiva; el borrador **no se envía solo**, y eso es a propósito).
-2. Crear una **tarea programada** en claude.ai: cada **lunes a las 8:00**, armar el pulso de las 3 empresas con los conectores y dejarlo como borrador en Gmail dirigido a `superboss@gmail.com`, listo antes de la reunión de las 9:00.
+1. Pedirle al chat que **deje el pulso de esta semana como borrador en Gmail**, dirigido a `admin@intuitiv-ai.com` (la prueba de fuego de la capacidad ejecutiva; el borrador **no se envía solo**, y eso es a propósito).
+2. Crear una **tarea programada** en claude.ai: cada **lunes a las 8:00**, armar el pulso de las 3 empresas con los conectores y dejarlo como borrador en Gmail dirigido a `admin@intuitiv-ai.com`, listo antes de la reunión de las 9:00.
 3. Ejecutarla a demanda una vez para verificarla sin esperar al lunes.
 
 **🏁 Lo lográs cuando:** el borrador aparece en tu Gmail **y** la tarea queda visible en tu lista de tareas programadas, lista para disparar cada lunes. **El jefe ya tiene la primera de sus dos entregas: el email semanal.**
@@ -117,8 +117,6 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 # 🧩 PARTE 2 — Faro en Cowork
 
 *Faro baja a tu computadora: carpetas y archivos reales, reporte con formato fijo, el tablero del jefe, y todo empaquetado para reutilizar. Arranca de la herencia del pasante en `reportes/`; no hace falta haber resuelto la Parte 1.*
-
-> 🧹 **¿Primera vez con Cowork?** Antes del Milestone 3 está la **Misión 0: el escritorio del pasante** (`intro-escritorio-pasante.md`), un entorno guiado de 20-30 minutos donde ordenás la última semana que el pasante dejó a medias, aprobando cada acción del agente y auditando su salida. Terminás con el `pulso-semanal.md` de la semana en curso, que es el punto de partida del Milestone 3.
 
 ### 🛠️ Milestone 3 — Faro toma forma
 **Desbloqueás: Projects · Instrucciones · archivos .md**
@@ -146,36 +144,34 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 
 **El objetivo:** la tarea programada que viste en el chat, ahora sobre tu carpeta: cada lunes Faro consigue la información, arma el reporte en el Project y deja el borrador en Gmail.
 
-> ✅ **Necesitás para este milestone:** búsqueda web activada en Cowork, y los conectores de **MT Newswires** y **Gmail** conectados (si venís de la Parte 1 ya están autorizados; si no, es buscar + Connect + autorizar en la biblioteca). Y el recordatorio clave de clase: estas tareas usan **archivos de tu disco**, así que corren **local**: computadora prendida y app abierta, o la corrida se saltea y se recupera al volver.
+> ✅ **Necesitás para este milestone:** búsqueda web activada en Cowork, y los conectores de **Massive** y **Gmail** conectados (si venís de la Parte 1 ya están autorizados; si no, es buscar + Connect + autorizar en la biblioteca). Y el recordatorio clave de clase: estas tareas usan **archivos de tu disco**, así que corren **local**: computadora prendida y app abierta, o la corrida se saltea y se recupera al volver.
 >
 > 🌐 **Claude in Chrome (opcional):** algunas páginas (como Yahoo Finance) renderizan el contenido con JavaScript y la búsqueda web sola no llega. Para esos casos Cowork puede usar **Claude in Chrome** como navegador real: Chrome instalado + la extensión habilitada. Pasos oficiales: [Cómo instalar Claude in Chrome](https://support.anthropic.com/en/articles/12012173-getting-started-with-claude-for-chrome).
 
 **Tu misión:**
 
-1. Pedirle a Faro que, dado un **ticker y una semana**, busque precios y noticias (web + MT Newswires) y **guarde las fuentes en disco**, un archivo por fuente, dentro de `fuentes/` de la semana.
+1. Pedirle a Faro que, dado un **ticker y una semana**, busque precios y noticias (web + Massive) y **guarde las fuentes en disco**, un archivo por fuente, dentro de `fuentes/` de la semana.
 2. Verificarlo para las 3 empresas: la carpeta `fuentes/` se reconstruye **partiendo de cero**, sin pasante.
 
 > 👀 **Mirá el panel mientras corre:** si Cowork reparte la investigación, vas a ver varias líneas de trabajo avanzando a la vez. Eso son **subagentes**: asistentes con contexto propio que corren en paralelo por debajo. En el Milestone 6 vas a invocarlos a propósito.
-3. Programar desde la pestaña **Scheduled** la tarea del **lunes 8:00**: conseguir fuentes → armar el reporte `.md` en el Project → dejar el borrador en Gmail dirigido a `superboss@gmail.com`. Usar **"Run now"** para probarla sin esperar al lunes.
+3. Programar desde la pestaña **Scheduled** la tarea del **lunes 8:00**: conseguir fuentes → armar el reporte `.md` en el Project → dejar el borrador en Gmail dirigido a `admin@intuitiv-ai.com`. Usar **"Run now"** para probarla sin esperar al lunes.
 
 **🏁 Lo lográs cuando:** una corrida de la tarea, completa y sin tocar nada, deja las fuentes en disco, el reporte en el Project y el borrador en Gmail.
 
 ---
 
 ### 📊 Milestone 5 — El tablero del jefe
-**Desbloqueás: Artifacts y Live Artifacts**
+**Desbloqueás: el formato final (del .md de trabajo al PDF de entrega)**
 
-**El objetivo:** la segunda entrega que pidió el jefe: el tablero con el diseño de su boceto, mantenido por Faro con los datos de cada semana.
-
-> ⚠️ **Estado real de la herramienta (visto en clase):** hoy los Live Artifacts son **locales** (viven en tu computadora, no te siguen entre dispositivos) y **todavía no son compartibles** por URL (está en el roadmap). El tablero se muestra desde tu máquina, o se exporta su HTML para mandarlo. Diseñá la expectativa del "equipo" con eso en mente.
+**El objetivo:** la segunda entrega que pidió el jefe: el tablero con el diseño de su boceto, generado por Faro como **PDF** con los datos de cada semana. Es el principio de la clase en acción: se trabaja en `.md`; el formato final se genera una vez, al final.
 
 **Tu misión:**
 
-1. Crear un **Live Artifact** `pulso-semanal-FECHA` con el diseño del boceto del jefe (tarjetas por empresa, tabla resumen), alimentado por el reporte de la semana.
-2. Verificar que al abrirlo se **refresca con los datos actuales** de tus apps conectadas y que guarda **historial de versiones** (un artifact nuevo por semana deja registro).
-3. **Engancharlo a la tarea del lunes** (Milestone 4): después del reporte y el email, Faro actualiza el tablero.
+1. Pedirle a Faro que genere **`pulso-semanal-FECHA.pdf`** en la carpeta del Project, con el diseño del boceto del jefe (tarjetas por empresa, tabla resumen), alimentado por el reporte de la semana.
+2. Verificar el **historial**: un PDF por semana queda en la carpeta, con la fecha en el nombre.
+3. **Engancharlo a la tarea del lunes** (Milestone 4): después del reporte, Faro genera el PDF y lo **adjunta al borrador** de email para el jefe.
 
-**🏁 Lo lográs cuando:** el tablero respeta el boceto, se actualiza con la corrida de cada lunes, y podés mostrárselo al jefe (desde tu máquina o exportado) sin armarlo a mano.
+**🏁 Lo lográs cuando:** el tablero respeta el boceto, se genera con la corrida de cada lunes, y le llega al jefe adjunto al mail sin que lo armes a mano.
 
 > 🎨 **Qué esperar:** el mismo diseño que el boceto de la primera página. Ese es el formato a respetar.
 
@@ -192,7 +188,7 @@ Revisá estas condiciones de base **antes** del workshop. Si algo falta, avisá 
 
 1. Convertir en Skill el armado del reporte: **`reporte-semanal`** (toma la semana, lee `fuentes/`, consolida con el formato fijo). Un trabajo por Skill.
 2. Convertir en Skill la investigación: **`buscar-accion`** (ticker + semana → fuentes en disco).
-3. Convertir en Skill el tablero: **`publicar-tablero`** (actualiza el Live Artifact con el último reporte).
+3. Convertir en Skill el tablero: **`publicar-tablero`** (genera el `pulso-semanal-FECHA.pdf` con el último reporte).
 4. Abrir un `SKILL.md` y reconocer la anatomía que viste en clase: metadata arriba (la `description` decide cuándo se activa), instrucciones en Markdown abajo.
 5. **Bonus (para explorar):** pedirle a Faro un **subagente** `investigador` (investiga UN ticker y devuelve un resumen corto) y que la corrida del lunes lance uno por empresa, los tres en paralelo, consolidando al final. La creación de subagentes en Cowork está menos documentada que las Skills: si no sale, no bloquea la misión.
 6. **Para llevarse pensado:** si esto lo usara todo el equipo, las Skills viajarían dentro de un **Plugin**. Queda como siguiente paso fuera de la misión.
@@ -217,4 +213,4 @@ Faro es un ejercicio **educativo** para dominar el chat extendido y Claude Cowor
 
 ---
 
-> 🚀 **Cuando completes los seis milestones**, habrás recorrido las piezas de la clase en el mismo orden en que las aprendiste: **Conectores y Tareas programadas** en el chat, y **Projects, Instrucciones, archivos .md, Schedule, Live Artifacts y Skills** en Cowork, resolviendo un encargo real de trabajo. La guía de resolución, paso a paso, te espera en `mission-res.md`. **Que empiece la misión.**
+> 🚀 **Cuando completes los seis milestones**, habrás recorrido las piezas de la clase en el mismo orden en que las aprendiste: **Conectores y Tareas programadas** en el chat, y **Projects, Instrucciones, archivos .md, Schedule y Skills** en Cowork, resolviendo un encargo real de trabajo. La guía de resolución, paso a paso, te espera en `mission-res.md`. **Que empiece la misión.**

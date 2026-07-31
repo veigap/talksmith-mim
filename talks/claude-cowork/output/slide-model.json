@@ -4,7 +4,7 @@
     "lang": "es",
     "institution": "Master in Management (MiM), IAE Business School",
     "class": "Claude Cowork para el día a día",
-    "presenter": "Paulo Veiga, Docente de Universidad Austral",
+    "presenter": "Paulo Veiga · Marco Sánchez Sorondo · Claudio Righetti · Juan Pablo Cosentino",
     "date": "Julio 2026",
     "logo": null,
     "sections": [
@@ -124,7 +124,7 @@
         },
         {
           "label": "Ejemplo con la misión",
-          "body": "El usuario pide \"las noticias de YPF de esta semana\" → el conector de MT Newswires las busca en el servicio y las devuelve al chat."
+          "body": "El usuario pide \"las noticias de YPF de esta semana\" → el conector de Massive las busca en el servicio y las devuelve al chat."
         },
         {
           "label": "Conectores propios",
@@ -162,7 +162,7 @@
       ],
       "highlights": [
         {
-          "body": "Faro: MT Newswires ya está en el directorio y se conecta con un clic.",
+          "body": "Faro: Massive ya está en el directorio y se conecta con un clic.",
           "kind": "example"
         },
         {
@@ -170,7 +170,7 @@
           "kind": "important"
         }
       ],
-      "notes": "Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pantalla de conexión) para desarmar el \"esto es técnico\". Conectar un servicio implica buscarlo, tocar Connect y autorizarlo, igual que cuando conectás Gmail a cualquier app; se configura por la UI, sin archivo local que editar. Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail conectado el chat lee y resume tu inbox, con Calendar ve tu agenda. Son preguntas que el chat aislado no puede responder. Sobre los no oficiales (servicios de terceros que exponen MCP): mismos pasos, más criterio. Autorizar un conector le da acceso a tus datos; conectá solo lo confiable. Ejemplo de la misión: MT Newswires (noticias), con el que Faro lee noticias del día. Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo en el chat. Tiempo objetivo: ~6 min.\n\n---"
+      "notes": "Slide práctica. Mostrar las dos capturas (el directorio de conectores y la pantalla de conexión) para desarmar el \"esto es técnico\". Conectar un servicio implica buscarlo, tocar Connect y autorizarlo, igual que cuando conectás Gmail a cualquier app; se configura por la UI, sin archivo local que editar. Insistir en mail y calendario, los ejemplos guía de la sección: con Gmail conectado el chat lee y resume tu inbox, con Calendar ve tu agenda. Son preguntas que el chat aislado no puede responder. Sobre los no oficiales (servicios de terceros que exponen MCP): mismos pasos, más criterio. Autorizar un conector le da acceso a tus datos; conectá solo lo confiable. Ejemplo de la misión: Massive (noticias), con el que Faro lee noticias del día. Nota: las capturas son de la app de Claude (Cowork); el flujo buscar+Connect es el mismo en el chat. Tiempo objetivo: ~6 min.\n\n---"
     },
     {
       "template": "content+cards+image",
@@ -875,7 +875,7 @@
         },
         {
           "label": "Skill buscar-accion",
-          "body": "Con el connector MT Newswires y la web guarda las fuentes de la semana en fuentes/."
+          "body": "Con el connector Massive y la web guarda las fuentes de la semana en fuentes/."
         },
         {
           "label": "Skill reporte-semanal",
@@ -948,7 +948,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "057ef896fc8da1d588ad5c0167fa28f3582b22552a8fe967df35b11df9bba926",
-    "bytes": 101369
+    "sha256": "33aa6a4581a94d3896834d7be91f94be7880e7593dc0fc9232b317520309454b",
+    "bytes": 101377
   }
 }

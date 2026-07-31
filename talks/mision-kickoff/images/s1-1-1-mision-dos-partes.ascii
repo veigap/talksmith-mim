@@ -1,0 +1,13 @@
+        PARTE 1 - EN EL CHAT              PARTE 2 - EN COWORK
+   +--------------------------+      +---------------------------+
+   |  conectores              |      |  Project + carpetas       |
+   |  (noticias, mail)        |      |  CLAUDE.md                |
+   |  tarea programada        | ---> |  tablero en PDF           |
+   |  (reporte semanal solo)  |      |  Skills                   |
+   +--------------------------+      +---------------------------+
+
+<!-- ascii-note:
+intent: mostrar la misión como dos partes encadenadas: primero extender el chat, después construir a Faro en Cowork.
+emphasize: la flecha entre las dos cajas; el orden es el mismo que el de la clase.
+labels: caja izquierda = Parte 1 en el chat; caja derecha = Parte 2 en Cowork.
+-->

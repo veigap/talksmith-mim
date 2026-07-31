@@ -59,3 +59,7 @@ talks/*/output/*
 talks/*/images/.critique/
 .icons/
 .claude/settings.local.json
+
+# Artefactos locales no versionados
+.playwright-mcp/
+claude-cowork-materiales.zip
