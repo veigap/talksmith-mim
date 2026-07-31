@@ -49,6 +49,12 @@ __pycache__/
 .venv/
 venv/
 
+# ── Embedded app repos (must never be tracked as submodules) ──
+# These dirs have their own .git and broke GitHub Pages builds
+# ("No url found for submodule path ... in .gitmodules").
+talks/claude-cowork/site/
+talks/intro-curso-mim/output/public-site/
+
 # --- Talksmith --- (regenerable build artifacts & caches — keep out of Git)
 .DS_Store
 .venv/
