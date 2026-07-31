@@ -18,8 +18,14 @@
     header{max-width:1000px;margin:0 auto 40px}
     h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px;letter-spacing:-.02em}
     .sub{color:var(--muted);font-size:clamp(15px,2vw,18px);margin:0}
+    .section{max-width:1000px;margin:0 auto 40px}
+    .section-title{
+      font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.01em;
+      margin:0 0 4px;
+    }
+    .section-sub{color:var(--muted);font-size:14px;margin:0 0 20px}
     .grid{
-      max-width:1000px;margin:0 auto;display:grid;gap:20px;
+      display:grid;gap:20px;
       grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
     }
     a.card{
@@ -42,34 +48,53 @@
     <p class="sub">Master in Management (MiM) · IAE Business School, Universidad Austral</p>
   </header>
 
-  <main class="grid">
-    <a class="card" href="talks/intro-curso-mim/output/html/index.html">
-      <span class="tag">Introducción</span>
-      <span class="title">Agentes Inteligentes</span>
-      <span class="desc">Bienvenidos al curso — panorama de la inteligencia artificial.</span>
-      <span class="go">Abrir presentación →</span>
-    </a>
+  <main>
+    <section class="section">
+      <h2 class="section-title">Agentes Inteligentes</h2>
+      <p class="section-sub">Del panorama del curso al trabajo real con agentes.</p>
+      <div class="grid">
+        <a class="card" href="talks/intro-curso-mim/output/html/index.html">
+          <span class="tag">Introducción</span>
+          <span class="title">Agentes Inteligentes</span>
+          <span class="desc">Bienvenidos al curso — panorama de la inteligencia artificial.</span>
+          <span class="go">Abrir presentación →</span>
+        </a>
 
-    <a class="card" href="talks/hiperparametros-ai/output/html/index.html">
-      <span class="tag">Fundamentos</span>
-      <span class="title">Inteligencia Artificial: de lo conceptual a lo práctico</span>
-      <span class="desc">Parámetros críticos en AI: las perillas que cambian la respuesta.</span>
-      <span class="go">Abrir presentación →</span>
-    </a>
+        <a class="card" href="talks/claude-desktop-chat/output/html/index.html">
+          <span class="tag">Práctica</span>
+          <span class="title">Claude Desktop · Chat</span>
+          <span class="desc">El chat de uso diario extendido con Conectores y Schedule: consulta fuentes reales y trabaja solo.</span>
+          <span class="go">Abrir presentación →</span>
+        </a>
 
-    <a class="card" href="talks/claude-cowork/output/html/index.html">
-      <span class="tag">Práctica</span>
-      <span class="title">AI Generativa</span>
-      <span class="desc">Claude Cowork para el día a día.</span>
-      <span class="go">Abrir presentación →</span>
-    </a>
+        <a class="card" href="talks/claude-cowork/output/html/index.html">
+          <span class="tag">Práctica</span>
+          <span class="title">AI Generativa</span>
+          <span class="desc">Claude Desktop, de Chat a Cowork: delegar resultados sobre archivos reales.</span>
+          <span class="go">Abrir presentación →</span>
+        </a>
+      </div>
+    </section>
 
-    <a class="card" href="talks/seguridad-governance-ai/output/html/index.html">
-      <span class="tag">Governance</span>
-      <span class="title">Seguridad e IA para Managers</span>
-      <span class="desc">Inteligencia Artificial: seguridad y gobernanza en la práctica.</span>
-      <span class="go">Abrir presentación →</span>
-    </a>
+    <section class="section">
+      <h2 class="section-title">Talking with Machine</h2>
+      <p class="section-sub">Cómo funcionan por dentro y cómo gobernarlas.</p>
+      <div class="grid">
+        <a class="card" href="talks/hiperparametros-ai/output/html/index.html">
+          <span class="tag">Fundamentos</span>
+          <span class="title">Inteligencia Artificial: de lo conceptual a lo práctico</span>
+          <span class="desc">Parámetros críticos en AI: las perillas que cambian la respuesta.</span>
+          <span class="go">Abrir presentación →</span>
+        </a>
+
+        <a class="card" href="talks/seguridad-governance-ai/output/html/index.html">
+          <span class="tag">Governance</span>
+          <span class="title">Seguridad e IA para Managers</span>
+          <span class="desc">Inteligencia Artificial: seguridad y gobernanza en la práctica.</span>
+          <span class="go">Abrir presentación →</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
