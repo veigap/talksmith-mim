@@ -1,0 +1,50 @@
+<!-- talksmith-ascii-sha256: 6d393aa7d9b0ba4c144bca4c163322297560ba283c95947a2e00f91869830856 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 318" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+  <title id="t">Un SKILL.md por dentro</title>
+  <desc id="d">Slide-ejemplo que aterriza dos cosas a la vez: la anatomía de una Skill y el beat de archivos .md con metadata.</desc>
+
+  <rect x="0" y="0" width="680" height="318" fill="#ffffff"/>
+
+  <g>
+    <text x="30" y="26" font-family="'DejaVu Sans Mono', monospace" font-size="13" font-weight="bold">SKILL.md</text>
+
+    <rect x="24" y="36" width="440" height="118" fill="#F2F0F0" stroke="#3B3535" stroke-width="1.5"/>
+    <rect x="24" y="154" width="440" height="140" fill="#ffffff" stroke="#3B3535" stroke-width="1.5"/>
+
+    <g font-family="'DejaVu Sans Mono', monospace" font-size="11.5" xml:space="preserve">
+      <text x="40" y="56">---</text>
+      <text x="40" y="74">name: reporte-semanal</text>
+      <g fill="#DA1B2E">
+        <text x="40" y="92">description: Genera el pulso semanal de mercado</text>
+        <text x="54" y="108">a partir de la carpeta fuentes/ de la semana.</text>
+        <text x="54" y="124">Usar cuando pidan "reporte semanal".</text>
+      </g>
+      <text x="40" y="142">---</text>
+    </g>
+
+    <g font-family="'DejaVu Sans Mono', monospace" font-size="11.5" xml:space="preserve">
+      <text x="40" y="174"># Reporte semanal</text>
+      <text x="40" y="198">1. Leé TODOS los archivos de fuentes/</text>
+      <text x="57" y="214">y consolidá por empresa.</text>
+      <text x="40" y="232">2. Generá el reporte con esta estructura</text>
+      <text x="57" y="248">exacta...</text>
+      <text x="40" y="266">3. Guardá con sufijo -new (no pises</text>
+      <text x="57" y="282">el original).</text>
+    </g>
+  </g>
+
+  <g>
+    <line x1="464" y1="95" x2="500" y2="95" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="508" y="78" font-size="14" font-weight="bold">Metadata (YAML)</text>
+    <text x="508" y="96" font-size="12">qué es · cuándo se activa</text>
+    <text x="508" y="114" font-size="12" fill="#DA1B2E">la description dispara</text>
+    <text x="508" y="130" font-size="12" fill="#DA1B2E">la Skill (semántico)</text>
+  </g>
+
+  <g>
+    <line x1="464" y1="224" x2="500" y2="224" stroke="#3B3535" stroke-width="1.5"/>
+    <text x="508" y="216" font-size="14" font-weight="bold">Cuerpo (Markdown)</text>
+    <text x="508" y="234" font-size="12">qué hace: los pasos</text>
+    <text x="508" y="250" font-size="12">que sigue el agente</text>
+  </g>
+</svg>

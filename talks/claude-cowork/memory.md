@@ -1,7 +1,7 @@
 # memory.md — claude-cowork
 
 **Current step:** 4 — Draft (reabierto 2026-07-31) awaiting_presenter
-**Awaiting:** 2026-07-31 — aplicada la 5ª ronda de feedback (nota de acceso a archivos en 3.1; Instrucciones partida en 3.4 concepto + 3.5 ejemplo, con la captura instructions.png). Polish y Render re-corridos. Awaiting: los recortes de tiempo (64,0 contra un bloque de 60), la lamina de catalogo de skills, y si pasamos a Learnings.
+**Awaiting:** 2026-07-31 — procesadas las rondas 6 a 10 de feedback y corridos **Polish + Render (html-strict)**. El deck está en **23 láminas / 61,0 min** contra un bloque de 60. Awaiting: el minuto de más, la lámina de catálogo de skills, y si pasamos a Learnings. Detalle de las rondas 8-10 y del Polish más abajo. Antes, la 7ª ronda (1 ítem: la 2.3 reenfocada a **"Iterar en .md"**, con diagrama rediseñado a bucle) y la 6ª ronda de feedback (5 ítems: resaltado del lead en 1.3; 1.4 solo imagen; fusión de las dos láminas del `.md` en 2.2; lámina nueva 4.2 «Cómo se usa una Skill»; Conclusions.1 borrada). **La duración cerró en 58,0 min contra el bloque de 60** — el problema de tiempo quedó resuelto y hay ~2 min de aire. Polish y Render **pendientes** (no se corrieron esta ronda). Awaiting: la lámina de catálogo de skills, si re-corremos Polish + Render, y si pasamos a Learnings.
 
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork/
@@ -21,16 +21,16 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 
 - **Parte 2** del split del 2026-07-31, que partió en dos la clase combinada de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive en `talks/claude-desktop-chat`. Esta carpeta conservó nombre e historia.
 - Frontmatter: `class: "Claude Cowork"` · `duration: 60 min (a confirmar)` · `date: Julio 2026` · presenters Paulo Veiga y Marco Sánchez Sorondo.
-- **6 secciones + Conclusions, 22 slides:** 1 Claude Cowork (4) · 2 Knowledge & Output (4) · 3 Projects (3) · 4 Skills (4) · 5 Subagentes (1) · Conclusions (3: loop de Faro · wrap-up · cuidados) · 6 La misión · parte 2 (1).
+- **6 secciones + Conclusions, 23 slides:** 1 Claude Cowork (4) · 2 Knowledge & Output (3) · 3 Projects (5) · 4 Skills (5) · 5 Subagentes (3) · Conclusions (2: wrap-up · cuidados) · 6 La misión · parte 2 (1).
 - **Orden nuevo (2026-07-31):** Conclusions va **antes** de la Sección 6. El deck cierra en la placa de la misión, no en la lámina de gobernanza. La Sección 6 conserva su número aunque vaya última.
-- **Tiempo objetivo total: 61,0 min** sobre 20 slides, contra `duration: 60 min (a confirmar)`. **1 min pasado**, y la lámina de catálogo sigue pendiente (+2-3 min más). Recorte de reserva: Conclusions.1 de 5 a 3 min devuelve a 59,0.
+- **Tiempo objetivo total: 61,0 min** sobre 23 slides, contra `duration: 60 min (a confirmar)`. **1 min pasado.** Fue a 58,0 al borrar Conclusions.1 y volvió a 61,0 con la lámina nueva 5.2 (+3). Recortes de reserva anotados y **no aplicados**: 5.3 «Un subagente, por dentro» (~1 min, la más salteable del deck) y 3.5 «Un ejemplo de Instrucciones» de 3 a 2. Y la lámina de catálogo de skills sigue sin entrar.
 - **Modo de Draft: C** (Presenter Outline).
 
 ### Artefactos
 
-- `draft.md` — **canónico y al día**. 13 bloques de fence (11 `ascii` + 1 `markdown` + 1 `text`): 11 atados a una slide y 2 archivados en `Cut material` (el diagrama del Excel y el banner DEMO TIME), que el scan de polish-ascii saltea por estar bajo un heading sin slides. 5 image refs que resuelven (`screenshot-cowork-tab.png` quedó fuera y `cowork.png` entró en su lugar). 28 campos `Presenter feedback`, **todos vacíos**.
-- `final.md`, `output/slide-model.json`, `output/html/index.html` — **desactualizados**: se derivaron antes del reorden de Conclusions. Se re-derivan en el próximo Polish + Render.
-- `images/` — 36 archivos tras el gc del último Polish (9 tripletes vivos + 5 screenshots referenciados + 4 imágenes del presentador sin referencia). El próximo Polish vuelve a re-derivar slugs; conviene seguirlo de `polish_ascii.py gc`.
+- `draft.md` — **canónico y al día**. Bloques de fence: **8 render-driving** (todos `ascii`), **2 documentation-only** (`s3-5-1` el ejemplo de Instrucciones y `s4-3-1` el menú Agregar, que la lámina cubre con captura) y **1 fence `markdown` en 5.3** con hint `documentation-only` (el ejemplo de subagente; el scan no lo detecta de todos modos). Más 5 archivados en `Cut material`. **14 image refs** que resuelven. 31 campos `Presenter feedback`, **todos vacíos**.
+- `final.md`, `output/slide-model.json`, `output/html/index.html` — **al día**, derivados del `draft.md` actual el 2026-07-31 (Polish 5ª corrida + Render html-strict 5ª vuelta). `final.md` referencia solo `.png`.
+- `images/` — **36 archivos** tras el `gc` del 2026-07-31, que borró 30 (10 tripletes huérfanos de numeraciones viejas). Quedan **8 tripletes vivos** (`.ascii`/`.svg`/`.png`) + 6 screenshots referenciados + 4 imágenes del presentador sin referencia (`connector_browser`, `connectors_directory`, `mockup-tablero`, `schedule`) + `create-skill.png` y `screenshot-cowork-tab.png`, sin referencia. Los borrados quedaron en `_to_delete/images-viejas/` del repo, para revisar y borrar a mano.
 - La directiva `<!-- generate-image -->` de la slide 1.1 **sigue sin generar** (el pase del image-illustrator nunca corrió sobre este deck).
 - `draft.feedback-archive-2026-07-30.md` y `memory.archive-2026-07-31.md` — históricos, no se leen en el flujo.
 
@@ -48,14 +48,17 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 ### Pendientes abiertos
 
 - **Lámina de catálogo de skills (Sección 4), sin crear.** Reemplaza a la borrada 4.4. Falta que el presentador elija el catálogo y los 5 skills. Candidatos relevados el 2026-07-31: el **directorio dentro de la app** (Personalizar → Habilidades → "+" → Explorar, instalación de un clic, support 14328846) · **skills.sh** (+91.000, se instala con `npx skills add`) · **github.com/anthropics/skills** (~20, oficial) · **vercel.com/docs/agent-resources/skills** (el link que pasó el presentador, perfil developer).
-- **Duración.** 58 min contra un bloque de 60, ~2 min de aire que probablemente se coma la lámina de catálogo. Recorte de reserva y **no aplicado**: Conclusions.1 (loop de Faro) de 5 a 3 min, porque sus dos bullets de prosa duplican el mapa de 1.3 y el peso de la lámina está en el diagrama. Segundo candidato, más discutible: 3.3 Instrucciones (5 min).
-- **Nombres de skills desalineados.** La Sección 4 enseña `informe-mensual` y el diagrama de Conclusions.1 muestra `buscar-accion` y `reporte-semanal` (las reales de la misión). Es correcto pero se ve raro; decidir si se aclara en voz alta.
+- **Duración: 61,0 min contra 60 — 1 min pasado.** Recortes de reserva anotados y no aplicados: 5.3 (~1 min, la lámina más salteable) y 3.5 de 3 a 2. La lámina de catálogo sumaría 2-3 más.
+- ~~**Nombres de skills desalineados**~~ — **cerrado el 2026-07-31**: el diagrama que mostraba `buscar-accion` y `reporte-semanal` vivía en Conclusions.1, que se borró. El deck entero enseña ahora un solo hilo, `informe-mensual`, y los nombres reales de la misión solo aparecen en la Sección 6.
+- **Activación automática de Skills, sin fuente oficial.** La lámina nueva 4.2 afirma que Claude carga una Skill sola cuando el pedido coincide con su `description` (semántico, no por palabra clave). Hoy eso lo sostiene **solo el deck interno** (`corpus/agentic-ai-deck.zip.md`), no documentación de producto. Está marcado como pendiente de verificación en las Sources y en las Speaker notes de la lámina; **re-verificar contra la doc oficial antes de la clase**.
 - **Layout ASCII-izquierda / bullets-derecha** (slide 1.2): pedido del presentador **no aplicado**, no existe el template. La intención quedó como hint en la slide (`<!-- layout: image-left -->` debajo del heading, hoy ignorado por el render). Espera un cambio en el plugin.
 - **Modos de Cowork** (slide 1.4): la lámina no afirma cuál es el default. La captura vieja decía `Ask`, la nueva dice `Auto`. Confirmar contra la app antes de la clase.
-- **`screenshot-cowork-tab.png` sin referencia** desde que 1.4 pasó a `cowork.png`. Se conserva en `images/`; candidato al gc del próximo Polish si el presentador no lo quiere para un antes/después.
+- **`screenshot-cowork-tab.png` y `create-skill.png` sin referencia.** El `gc` **no los toca** por diseño (no están estampados ni tienen sidecar, así que cuentan como imágenes del presentador). Si no se usan, borrarlos a mano.
+- **Nivel de la 5.2 / 5.3.** Son las dos láminas más técnicas del deck para una audiencia de management (encabezado YAML, `plugin.json`, `agents/`). Quedaron marcadas como opcionales en el Goal de la Sección 5 y en las notes. Decidir si se dan, se saltean o se recortan.
 - **4 majors y 7 minors** del audit del Composer (scope=full, 2026-07-31) sin aplicar, a releer contra el deck partido.
+- **Resaltado por template.** El pedido de 1.3 se resolvió con un rótulo en negrita (`**Idea clave:**`) al frente de la línea de lead. No es límite del template: la lámina no tiene slot de callout porque su Content es lead + diagrama, y el blockquote la bajaría a nota al pie. Si el presentador quiere más peso visual, el cambio es de template, no de texto.
 - La **placa ASCII de 6.1** es gemela de la de `talks/claude-desktop-chat` (slide 5.1); desde el split la verificación de gemeleo es cross-talk y manual.
-- Anglicismo **"Connector MT Newswires" / "Connector Gmail"** en el ASCII del loop de Conclusions.1 — señalado tres veces, se deja porque el presentador no pidió el cambio.
+- ~~Anglicismo **"Connector MT Newswires" / "Connector Gmail"**~~ — **cerrado el 2026-07-31**: vivía en el ASCII del loop de Conclusions.1, borrado. Sobrevive solo dentro de `Cut material`.
 - **Bonus M6** de la misión (subagente a pedido) sin verificar de primera mano; una demo en vivo sí lo necesitaría.
 - **Watch item:** el registro por OpenTelemetry pide Desktop 1.1.4173+ y la doc dice "not captured … at this time" — re-verificar antes de la clase.
 - Stubs de Phase 2 del librarian y la carpeta `skills/` de la misión, sin resolver.
@@ -206,3 +209,76 @@ El registro paso a paso completo (Steps 1-8, todas las rondas de Review, Polish,
   - **Idioma mezclado en las capturas:** `instructions.png` muestra la app **en inglés** ("Instructions"), mientras `skills-panel.png` y `skills-menu-chat.png` están en español. O se menciona al pasar, o se resacan (implica rehacer los círculos violeta).
   - **Posible solape** entre `instructions.png` (3.4) y `context.png` (3.2): las dos muestran el panel de contexto. Decidir si una sobra; sacar `context.png` bajaría 3.2 de 2 a 1,5 min.
   - Sigue abierto: 4.2 pierde su captura; 3.2 con dos capturas apretadas; 3.3 es la lámina más densa del deck.
+
+---
+
+## 2026-07-31 — Step 4/5 (6ª ronda de feedback)
+
+- Status: complete
+- What was decided:
+  - **1.3 El mapa** — la línea de lead pasó a llevar el rótulo **`**Idea clave:**`** al frente. Respuesta a la pregunta del presentador: **no es límite del template**; la lámina no tiene slot de callout porque su Content es lead + diagrama, y el blockquote la degradaría a nota al pie. Más peso visual = cambio de template.
+  - **1.4 Dónde se empieza en Cowork — solo la imagen.** El Content quedó con `images/cowork.png` sola; los cuatro bullets (`+ New`, toggle Chat/Cowork, `Project or folder`, selector de modo) bajaron a Speaker notes sin perder nada, incluido el cuidado sobre el modo por defecto. ~2 min, sin cambio.
+  - **Las dos láminas del `.md` se fusionaron en una** (opción elegida por el presentador entre tres). La ex 2.2 (fence `markdown`, el archivo crudo) y la ex 2.3 (fence `ascii`, el render) son ahora **2.2 «Qué es un .md: el texto y lo que se ve»**, con **un** bloque ASCII de dos paneles lado a lado unidos por `==>`: `LO QUE SE ESCRIBE` / `LO QUE SE VE`, con las etiquetas que atan cada marca a su elemento. Ese bloque es el que Polish renderiza a imagen, así que la "imagen" pedida sale del pipeline de ASCII y no de generación de imagen. Sources y notes fusionadas. La Sección 2 bajó a **3 láminas** y el deck recuperó ~2 min. La ex 2.3 quedó archivada íntegra en `Cut material`.
+  - **Lámina nueva 4.2 «Cómo se usa una Skill»**, ubicada después de 4.1 y antes de los caminos de creación (decisión del presentador: primero usar, después fabricar). Los dos modos: **explícito** (`/informe-mensual`) y **automático** (Claude compara el pedido contra la `description`). De ahí el consejo: la descripción es el disparador, no decoración. Diagrama ASCII nuevo con los dos caminos convergiendo en `SKILL EN EJECUCIÓN`. **Certeza declarada:** el camino explícito está verificado de primera mano; el mecanismo semántico lo sostiene solo el deck interno → marcado pendiente de verificación en Sources y notes. ~2 min. Sección 4 a **5 láminas**.
+  - **Conclusions.1 «El loop completo de Faro» borrada** y archivada íntegra en `Cut material`. Conclusions queda en 2 láminas; **−5 min**. Se limpió el arrastre: las notes de «Lo que se llevan» abrían citando el loop y retomaban su pregunta abierta — reescritas para llegar desde Subagentes y replantear la pregunta dentro de la propia lámina. También se reescribió la transición de salida de 5.1.
+  - Renumeración completa de las Secciones 2 y 4 y de Conclusions, con barrido de referencias cruzadas en agenda, Narrative arc, Goals de sección, Sources, notes y ascii-notes.
+- Key inputs: los 5 campos `Presenter feedback` con contenido; dos decisiones del presentador vía pregunta (fusionar vs. agregar lámina; ubicación de la lámina de uso de Skills). Sin acceso web esta corrida — no se citó ninguna fuente nueva.
+- Files created/modified: `draft.md`, `config/feedback-backlog.md` (5 filas), `memory.md`.
+- Pending open questions:
+  - **Polish y Render no se corrieron.** `final.md` y `output/` quedaron atrás de `draft.md`. El próximo Polish tiene que renderizar **2 bloques nuevos** (el de dos paneles de 2.2 y el de 4.2) y correr `gc` sobre `images/`, donde el diagrama del loop de Faro queda huérfano.
+  - **Activación semántica de Skills sin fuente oficial** (ver *Pendientes abiertos*).
+  - **Duración resuelta en 58,0 min**; el aire de ~2 min es exactamente el presupuesto de la lámina de catálogo de skills, que sigue sin crearse.
+
+---
+
+## 2026-07-31 — Step 4/5 (7ª ronda: la lámina 2.3)
+
+- Status: complete
+- What was decided:
+  - **2.3 reenfocada de "trabajar en `.md`" a "iterar en `.md`".** El presentador retituló la lámina en el draft (a "Interar", typo) y pidió alinear el contenido: *"El foco no es sobre trabajar sino como usar el .md para iterar."* Título corregido a **«3. Iterar en .md, exportar al final»**.
+  - Content reescrito entero. Abre con lead destacado (**con la IA nada sale bien a la primera; el trabajo son muchas vueltas sobre el mismo archivo**) y sigue con: qué es una vuelta (pedidos chicos sobre el archivo que ya existe, con tres ejemplos), por qué la vuelta sale barata en `.md` (reescribe el archivo entero sin romper nada vs. las capas de formato de `.docx`/`.xlsx`), la regla de bolsillo reformulada de *"se edita"* a **"se itera"**, y la entrega como paso único al final. Salieron los dos bullets viejos de trabajo en general; lo de la memoria del agente sobrevive en las notes.
+  - **Diagrama rediseñado:** dejó de ser un flujo lineal de tres cajas; la caja central lleva ahora un **bucle explícito** con los tres pedidos de ejemplo adentro, retitulado `DONDE VIVE LA ITERACION`. `ascii-note` reescrito entero.
+  - Speaker notes reescritas en cinco párrafos, abriendo con el permiso explícito de que nada sale bien a la primera (el que espera el resultado perfecto en el primer prompt se frustra y abandona).
+  - Sources **sin cambio**: ninguna afirmación nueva. Tiempo objetivo sin cambio (~4 min); el deck sigue en **58,0**.
+  - Actualizados el Goal de la Sección 2, el Narrative arc y las dos menciones del título viejo en `Open questions` y `Cut material`.
+- Key inputs: el único campo `Presenter feedback` con contenido y el retítulo que el presentador dejó en el propio draft.
+- Files created/modified: `draft.md`, `config/feedback-backlog.md` (1 fila), `memory.md`.
+- Pending open questions:
+  - **El bloque ASCII de 2.3 cambió**, así que ahora el próximo Polish tiene **3 bloques para renderizar** (los dos paneles de 2.2, el de 4.2 y el bucle de 2.3) — este último ya no reusa por digest.
+  - Un archivo temporal, `draft.current.md`, se movió a `_to_delete/` del repo (`device_bash` no puede borrar). Se puede borrar a mano.
+
+
+---
+
+## 2026-07-31 — Rondas 8-10 de feedback
+
+- Status: complete
+- What was decided:
+  - **Ronda 8 — 3.3 «¿Los lee todos?»:** fuera los tres emoji (📁 🏷️ 📄) del grupo "Tres reglas prácticas". Los bullets quedaron con el mismo patrón que el grupo de arriba de la misma lámina. Cierra de paso la anotación vieja de que el render colapsaba los tres emoji a un único glifo: sin emoji, el problema desaparece.
+  - **Ronda 8 — 4.1 «Qué es una Skill», rehecha en tarjetas.** Diagnóstico de la confusión que señaló el presentador: el primer bullet metía tres cosas en una línea (qué es, cuándo se activa, un trabajo por Skill) y el "cuándo se activa" ya no le pertenece desde que existe la 4.2. Ahora abre con la frase ancla como lead y baja a **4 tarjetas**: es un instructivo escrito · se enseña una vez · un trabajo por Skill · queda disponible. Cierra con `informe-mensual` presentado como el hilo de toda la sección.
+  - **Ronda 9 — 4.3 «Crear una Skill desde el panel»:** al diagrama del menú Agregar le faltaba la cuarta entrada, **"Grabá tu pantalla"**. Entró como caja propia y se aprovechó para marcar cada entrada con **CREAR** o **IMPORTAR** (tres crean, una importa). Fuente nueva: support.claude.com/12512198, la misma de 4.5. **Cuidado anotado:** `skills-panel.png` es del 21 de julio y puede no mostrar esa entrada todavía — re-mirar el panel y resacar antes de la clase.
+  - **Ronda 10 — lámina nueva 5.2 «Armar un subagente propio»** (+ 5.3, ver abajo). El pedido chocaba de frente con una decisión verificada del deck ("los subagentes no se crean ni se configuran a mano en Cowork"), así que **se preguntó antes de escribir**; el presentador respondió con un briefing completo que **resuelve** la tensión en vez de contradecirla: no hay panel (sigue siendo cierto) **y** un subagente es un archivo, así que se puede armar uno propio. La lámina lo dice explícitamente en una cita al pie, para que las dos afirmaciones no se lean como contradicción.
+  - **Todo el briefing se re-verificó contra fuente oficial antes de escribir** — no se tomó como fuente en sí mismo. `code.claude.com/docs/en/sub-agents` sostiene "Subagents are Markdown files with YAML frontmatter", que `name` y `description` son los **dos únicos campos obligatorios** (el briefing no lo distinguía) y que cada subagente corre en su propia ventana de contexto; `code.claude.com/docs/en/plugins` sostiene el manifiesto `.claude-plugin/plugin.json` y la carpeta `agents/` **en la raíz** del plugin; `claude.com/docs/cowork/guide/plugins` es la que ata todo a Cowork. Las rutas `.claude/agents/` y `~/.claude/agents/` son de **Claude Code** y quedaron fuera de la lámina, solo en notes.
+  - **5.3 «Un subagente, por dentro», partida de 5.2 durante el Render.** El FILL del modelo detectó que **ningún template del catálogo combina tarjetas y superficie de código**, así que el bloque de ejemplo se caía silenciosamente de la lámina. Se partió siguiendo el precedente ya aprobado de la Sección 3 (3.4 concepto + 3.5 ejemplo): 5.2 se queda con las 4 tarjetas (~2 min) y 5.3 con el archivo completo (~1 min). **La partición repartió los minutos, no los sumó.**
+- Key inputs: los campos `Presenter feedback` de cada ronda; una pregunta al presentador sobre el choque de los subagentes; verificación web del 2026-07-31 (tres fuentes oficiales).
+- Files created/modified: `draft.md`, `config/feedback-backlog.md` (5 filas), `memory.md`.
+
+---
+
+## 2026-07-31 — Step 6 (Polish, 5ª corrida) + Step 7 (Render html-strict, 5ª vuelta)
+
+- Status: complete
+- What was decided:
+  - **Polish.** 10 bloques escaneados: **8 render-driving**, 2 documentation-only (`s3-5-1`, `s4-3-1`). **4 renderizados** (`s2-2-1` los dos paneles del `.md`, `s2-3-1` el bucle de iteración, `s4-2-1` las dos formas de usar una Skill, `s4-5-1` el flujo de grabar) y **4 reusados por digest**. El de grabar era un **renombre puro** (s4-4-1 → s4-5-1 por la renumeración): el PNG resultante es byte-idéntico al anterior, el deck no cambió un píxel ahí. Los cuatro PNG se revisaron a ojo y quedaron aprobados; las tres validaciones (`validate_svg`, `rasterize`, `audit_aspect`) pasaron en verde en los cuatro.
+  - **`gc` corrido y aplicado:** 10 tripletes huérfanos, **30 archivos borrados**, todos de numeraciones viejas. `images/` bajó a 36.
+  - `final.md` limpio: 14 refs, **todas `.png`** (los `.svg` quedan en disco como fuente); 31 campos `Presenter feedback` strippeados; `rescue-open` sin nada que rescatar.
+  - **Render `html-strict`: 30 láminas** (portada + 7 divisorias + 23 de contenido), **2,6 MB** autocontenido en `output/html/index.html`. Las tres auditorías del modelo (`degenerate_enum`, `field_coverage`, `image_coverage`) dieron **ok**. Las 23 láminas llevan sus Speaker notes verbatim (tecla `s`).
+  - El hint `<!-- layout: image-left -->` de 1.2 **sí está soportado** por este render y se aplicó.
+- Files created/modified: `final.md`, `output/slide-model.json`, `output/html/index.html`, `images/` (4 tripletes nuevos, 30 archivos borrados), `memory.md`.
+- Pending open questions:
+  - **Un ícono no resolvió** en el render (`person_4`): salió `info` en su lugar. Cosmético, en una sola tarjeta.
+  - **La numeración de las divisorias sigue por posición**, así que Conclusions sale `06` y la Sección 6 sale `07`. Es cromo del renderer, no del contenido.
+  - Láminas **densas para mirar en sala**: 4.5 (6 tarjetas + imagen), 5.1 (5 tarjetas + imagen) y 3.3 (6 tarjetas mezclando dos grupos, candidata natural a partirse en dos).
+  - **1.2 «De chatear a delegar»** quedó en `content-image` para honrar el hint de layout y no perder el diagrama; la tabla chatear/delegar sobrevive como cuatro hechos etiquetados. Si se prefiere la grilla comparativa, hay que sacrificar la imagen.
+  - Sigue abierto: **3.2 con dos capturas apretadas**; posible solape entre `instructions.png` (3.4) y `context.png` (3.2); idioma mezclado en las capturas (`instructions.png` en inglés, las de la Sección 4 en español).
+  - **La crítica visual ciega automática no se lanzó** esta corrida; los cuatro diagramas los revisó el orquestador a mano sobre el PNG.
