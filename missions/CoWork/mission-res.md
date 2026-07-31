@@ -6,7 +6,7 @@
 >
 > 💡 Convención: donde veas `[EMPRESAS]`, va la lista de **las 3 acciones que el jefe pidió seguir**: `YPF, VIST, TS`. Donde veas `[TICKER]`, va una sola (ej. `YPF`). Podés cambiarlas si adaptás la misión a tu propio contexto laboral.
 >
-> 🎭 El encuadre: trabajás en **Atlas**, una empresa de insumos de perforación para Vaca Muerta. Tu jefe quiere un **pulso semanal de mercado** sobre YPF, Vista y Tenaris, en dos entregas: un **email cada lunes** y un **tablero** siempre al día. En el workshop el email va dirigido a `admin@intuitiv-ai.com`, la casilla que hace de jefe.
+> 🎭 El encuadre: trabajás en **Atlas**, una empresa de insumos de perforación para Vaca Muerta. Tu jefe quiere un **pulso semanal de mercado** sobre YPF, Vista y Tenaris que llegue como **email cada lunes**. En el workshop el email va dirigido a `admin@intuitiv-ai.com`, la casilla que hace de jefe. (En la Parte 2 el encargo crece: el mismo pulso, además, en PDF.)
 
 ---
 
@@ -17,17 +17,6 @@
 1. Entrá a **claude.ai** en el navegador con tu cuenta (plan pago).
 2. Verificá la **búsqueda web**: Configuración → Capacidades. Tiene que estar activa.
 3. Tené a mano una cuenta de **Gmail**.
-
-**Para la Parte 2 (Cowork):**
-
-1. Abrí la **app de escritorio de Claude** y verificá que esté en la última versión (si aparece "Setting up Claude's workspace", es normal: se está actualizando).
-2. Clickeá la pestaña **"Cowork"** (junto a "Chat" y "Code").
-3. Confirmá **Code execution** activo (Configuración → Capacidades): lo piden las Skills del Milestone 6.
-4. Creá (si no existe) una carpeta, por ejemplo `Documentos/Faro-Mercado`, y copiá adentro la carpeta `reportes/` de los materiales.
-
-> 📁 **Material de ejemplo:** en `reportes/` hay una subcarpeta por semana; adentro, `fuentes/` (las notas del pasante, un archivo por portal) lado a lado con el reporte final (`.md`), que funciona de "respuesta correcta".
->
-> 🧩 **Para el facilitador:** si tenés las tres Skills de referencia armadas (`reporte-semanal`, `buscar-accion`, `publicar-tablero`), dejalas a mano para el Milestone 6 por si alguien se traba. El ideal del workshop es que cada participante las construya.
 
 ---
 
@@ -61,7 +50,7 @@ La web abierta no alcanza: queremos una fuente confiable de noticias de mercado.
 1. En la misma biblioteca, buscá **Gmail** → **"Connect"** → autorizá con tu cuenta de Google.
 2. Probá una lectura:
 
-> *"¿Qué mails de esta semana quedaron sin responder en mi bandeja?"*
+> *"Haceme un resumen de los mails que recibí ayer."*
 
 ## Paso 1.4 — El pulso, ahora con todo conectado
 
@@ -101,15 +90,26 @@ Confirmá frecuencia (**semanal**), día (**lunes**) y horario (**8:00**) si te 
 
 No esperes al lunes: ejecutala **a demanda** desde la lista de tareas para verla funcionar en vivo.
 
-> ⚠️ **¿Dónde corre?** Si tu cuenta ya tiene la beta de ejecución en la nube (despliegue gradual, primero Max), la tarea corre sin tu computadora. Si no, corre **local**: computadora prendida y sesión activa, o la corrida se saltea y se recupera al volver.
-
-> ✅ **🏁 Criterio de éxito (Milestone 2):** el borrador apareció en Gmail **y** la tarea figura programada para los lunes. **El jefe ya tiene la primera de sus dos entregas: el email semanal.** Fin de la Parte 1.
+> ✅ **🏁 Criterio de éxito (Milestone 2):** el borrador apareció en Gmail **y** la tarea figura programada para los lunes. **El jefe ya tiene su email semanal.** Fin de la Parte 1.
 
 ---
 
 # 🧩 PARTE 2 — Faro en Cowork
 
-*Arranca de la herencia del pasante en `reportes/`; no hace falta haber resuelto la Parte 1. Si venís de ella, Massive y Gmail ya están autorizados.*
+*Faro baja a tu computadora, sobre la herencia del pasante en `reportes/`. Massive y Gmail ya quedaron autorizados en la Parte 1.*
+
+**Para la Parte 2 (Cowork):**
+
+1. Abrí la **app de escritorio de Claude** y verificá que esté en la última versión (si aparece "Setting up Claude's workspace", es normal: se está actualizando).
+2. Clickeá la pestaña **"Cowork"** (junto a "Chat" y "Code").
+3. Confirmá **Code execution** activo (Configuración → Capacidades): lo piden las Skills del Milestone 6.
+4. Creá (si no existe) una carpeta, por ejemplo `Documentos/Faro-Mercado`, y copiá adentro la carpeta `reportes/` de los materiales.
+
+> 📁 **Material de ejemplo:** en `reportes/` hay una subcarpeta por semana; adentro, `fuentes/` (las notas del pasante, un archivo por portal) lado a lado con el reporte final (`.md`), que funciona de "respuesta correcta".
+>
+> 🧩 **Para el facilitador:** si tenés las tres Skills de referencia armadas (`reporte-semanal`, `buscar-accion`, `publicar-tablero`), dejalas a mano para el Milestone 6 por si alguien se traba. El ideal del workshop es que cada participante las construya.
+
+---
 
 # 🛠️ Milestone 3 — Faro toma forma
 ### *(Projects · Instrucciones · archivos .md)*
@@ -166,15 +166,12 @@ Revisá lo que escribió y corregí lo que falte: ese archivo lo vas a leer vos 
 
 Verificá en la biblioteca de conectores que **Massive** y **Gmail** estén conectados y habilitados para Cowork (si venís de la Parte 1 ya están; si no, es buscar + Connect + autorizar). Búsqueda web activa.
 
-> 🌐 **Claude in Chrome (opcional):** para páginas que renderizan con JavaScript (como Yahoo Finance), Cowork puede usar el navegador real. Chrome + extensión habilitada: [instrucciones oficiales](https://support.anthropic.com/en/articles/12012173-getting-started-with-claude-for-chrome).
 
 ## Paso 4.2 — Que Faro investigue solo
 
 > *"Faro, para la semana actual y para cada ticker de `[EMPRESAS]`: buscá el precio de cierre aproximado y la variación semanal en `https://finance.yahoo.com/quote/<TICKER>/`, y las noticias en Massive vía el conector. Guardá todo en disco dentro de `reportes/semana-AAAA-MM-DD/fuentes/`, en dos archivos acumulativos: `yahoo-finance.txt` (un bloque por ticker) y `massive.txt` (una sección por ticker). Si el archivo ya existe, agregá al final sin pisar. No inventes: si algo no está, escribí 'n/d'. Conservá los links reales."*
 
 **Verificá:** la carpeta `fuentes/` de la semana en curso se reconstruyó **partiendo de cero**, sin pasante.
-
-> 👀 **Mirá el panel mientras corre:** si Cowork reparte la investigación entre varias líneas de trabajo a la vez, eso son **subagentes**: asistentes con contexto propio que corren en paralelo por debajo. En el Milestone 6 los invocás a propósito (Paso 6.6).
 
 ## Paso 4.3 — Programar el lunes desde la pestaña Scheduled
 
@@ -220,7 +217,7 @@ Entrá a la tarea en **"Scheduled"** y editá el prompt para que **termine así*
 ---
 
 # 🧰 Milestone 6 — Faro se vuelve reutilizable
-### *(Skills · una mirada a Subagentes y Plugins)*
+### *(Skills)*
 
 **La idea:** todo lo que le pediste más de una vez en los milestones 3 a 5, ahora lo escribís una vez. Requisito: **Code execution** activo.
 
@@ -258,19 +255,8 @@ Corrida de prueba con **"Run now"**.
 
 Abrí el `SKILL.md` de `reporte-semanal` y reconocé la anatomía de la clase: **metadata** arriba (la `description` decide cuándo se activa) e **instrucciones** en Markdown abajo.
 
-## Paso 6.6 — Bonus (para explorar): un subagente por empresa
-
-Las tres investigaciones de `buscar-accion` son independientes entre sí: ninguna necesita esperar a las otras. Ese es el caso de uso de los **subagentes** que enseñó la clase (un subagente por propuesta, todos en paralelo, el principal consolida). Probalo sobre tu propio caso:
-
-> *"Faro, definí un **subagente** llamado `investigador`: su trabajo es investigar UN ticker de la semana (precio, variación y noticias, con la Skill `buscar-accion`) y devolver un resumen corto. Cuando corra la tarea del lunes, lanzá un `investigador` por cada empresa de `[EMPRESAS]`, los tres en paralelo, y consolidá sus resúmenes en el reporte."*
-
-> ⚠️ **Es un bonus, con honestidad:** la creación de subagentes a pedido está menos documentada en Cowork que las Skills (los subagentes "corren por debajo"). Si Faro lo resuelve de otra forma, o no lo resuelve, la misión sigue intacta: la tarea del lunes ya funciona sin esto. El facilitador conviene que lo pruebe antes del workshop.
-
-> ✅ **Criterio (blando):** la corrida muestra la investigación **repartida en paralelo** (varias líneas de trabajo a la vez) y el reporte consolida los tres resúmenes.
-
 > ✅ **🏁 Criterio de éxito (Milestone 6):** la tarea del lunes corre apoyada en las tres Skills, las tres figuran habilitadas en la lista de Habilidades, y cualquier compañero con tu Project puede disparar el flujo sin que le expliques nada.
 
-> 📦 **Y después (fuera de la misión):** si esto lo usara todo el equipo, las tres Skills viajarían dentro de un **Plugin**.
 
 ---
 
@@ -296,7 +282,6 @@ Las piezas, en el orden en que la clase las enseñó: **Conectores y Tareas prog
 | P2·M4 Schedule | "Run now" y ver aparecer fuentes + reporte + borrador | "El agente trabaja sobre mis carpetas, solo" |
 | P2·M5 tablero | El PDF apareciendo en la carpeta y abriéndose con el diseño del boceto | "El .md es el trabajo; el PDF, la entrega" |
 | P2·M6 Skills | `/skill-creator` en vivo + la compuerta del Save en Habilidades | "Todo lo que explico más de una vez es una Skill" |
-| P2·M6 Subagentes (bonus) | La corrida repartiendo la investigación en tres líneas paralelas | "Las sub-tareas independientes no se esperan entre sí" |
 
 **Errores comunes a anticipar:**
 
