@@ -1022,3 +1022,57 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, s
   feedback: "Aca borrar todo y solo mencioar que vamos a trabajar en la mission !. Es un slide que da pie a mostrar."
   resolution: Slide reducida a la placa ASCII mas una linea ('Ahora vamos a la mission'); los tres bullets de Faro pasaron a las Speaker notes, que ahora encuadran la lamina como pie para mostrar la consigna en vivo.
   tags: [density, slide-content, divider]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "2. La nueva habilidad base"
+  feedback: "borremos este slides. Lo que me gustaria es tomar "El nuevo Excel" y cambuar en "Cowork, de proposito general" que hay una analogia con lo que fue "excel" como herrienta para knowleage workers."
+  resolution: Slide 1.2 eliminada; la analogia entro como cuarto bullet de 1.1 ("Hay analistas que la llaman el nuevo Excel...", con la atribucion a la industria y no a Anthropic) y la fuente nextword.substack.com paso a las Sources de 1.1. Las Speaker notes de 1.2 (cuatro decadas de Excel, cuidado de atribucion, cierre sobre alumnos de management) se fundieron en las de 1.1, que subio de 2 a 3 min. El ASCII Excel -> herramientas agenticas quedo archivado completo en Cut material, con su ascii-note; no paso a 1.1 porque esa lamina ya lleva una directiva generate-image. Seccion 1 renumerada de 5 a 4 slides.
+  tags: [cut-slide, merge-incorporation, compact, sources]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "1. Cowork, de proposito general"
+  feedback: "Borrar" Eso cambia la forma de trabajar."
+  resolution: La frase salio del primer bullet de Content de 1.1, que queda con la primera oracion sola. Se conserva a proposito en el Claim de la Thesis y en el Goal of this section de la Seccion 1, que son prosa de trabajo y no se proyectan.
+  tags: [cut, slide-content]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "3. De chatear a delegar"
+  feedback: "El chat quedo extendido en la clase anterior. Lo que cambia ahora es el rol: delegar. ->  "Lo que cambia ahora es el rol: delegar. Que delegamos ?""
+  resolution: Primer bullet reescrito como "Lo que cambia ahora es el rol: delegar. Que delegamos?" con ortografia de espanol (signos de apertura y tilde). La referencia a la clase anterior sale de la lamina y sobrevive en las Speaker notes, que ademas ahora contestan la pregunta en vivo con la tabla y el ejemplo del reporte semanal.
+  tags: [rewrite, slide-content, compact]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "3. De chatear a delegar"
+  feedback: "poner el ascci a la izquiera y los bullets los items del list a derecha. IMPORTANTE: si no existe template para esto, avisame y voy a introducir cambios en el plugin."
+  resolution: NO APLICADO, falta template en el plugin. El catalogo no tiene variante imagen-izquierda: content+image renderiza texto-izquierda / imagen-derecha y su unico layout alternativo es image-top; el aside admite side left pero recorta a full-bleed y esta prohibido para diagramas que se leen. Registrado en Open questions de draft.md, a la espera de que el presentador modifique el plugin. AMPLIADO 2026-07-31: la intencion quedo ademas registrada como metadata en la propia slide, debajo del heading, con la forma de los hints de autor del schema: <!-- layout: image-left --> mas una linea de comentario que explica el pedido y el bloqueo. La clave layout: no esta reconocida todavia, asi que hoy el render la ignora; verificado con polish_ascii.py scan que el conteo de bloques y los warnings no cambian.
+  tags: [layout, visual]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "3. El mapa: piezas que se apilan"
+  feedback: "Pongamos solo la imagen y una nota arriba con sun summary chico."
+  resolution: Los tres bullets de Content se reemplazaron por una sola linea de lead ("Cada bloque resuelve un problema conocido y se apila sobre el anterior; cada tarea usa solo los que necesita"), que funde el bullet 1 y el 3. El bloque ASCII y su ascii-note quedaron intactos byte a byte. El bullet 2 (abajo la clase anterior, arriba lo que queda) se absorbio en las Speaker notes, que ya leian el diagrama de abajo hacia arriba y ahora nombran ese corte de entrada; nada fue a Cut material. Tiempo sin cambios, ~3 min.
+  tags: [density, visual, compact]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "4. Demo: la interfaz de Cowork"
+  feedback: "Esot no va a ser demo en vivo sino un screenshot es cowork.png. Mira como hacemos lo mismo en la presentacion con otros screenshots"
+  resolution: La lamina dejo de ser un corte a demo en vivo. Retitulada "Donde se empieza en Cowork"; el image ref paso de screenshot-cowork-tab.png (interfaz vieja) a images/cowork.png (captura propia de la interfaz actual, con + New, el toggle Chat/Cowork y Project or folder circulados). Content reescrito con el patron de las otras laminas de screenshot del deck (3.2, 4.2, 4.3): un bullet antes de la captura y tres despues, nombrando lo que esta circulado. El banner ASCII DEMO TIME y su ascii-note quedaron archivados en Cut material. Sources ahora citan la captura propia; el corpus queda solo para el beat de control. Las notes reencuadran la Mision 0 como demo opcional. Tiempo de ~6 min a ~2 min. Precaucion de exactitud: la lamina no afirma cual es el modo por defecto (la captura vieja decia Ask, la nueva dice Auto); queda anotado en Open questions para confirmar contra la app.
+  tags: [visual, screenshot, restructure, rename, accuracy, time-budget]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "1. Como se escribe un .md"
+  feedback: "Falta realmente un slide antes que introdusca connectando con la necesidad de delegar que el output y que como parte de lo que tenemos en los folders es usualemnte conocimiento/intrucciones, necesitamos un formato que sea efficiente."
+  resolution: Lamina nueva 2.1 "Que lee el agente en la carpeta", primera de la seccion, con el resto renumerado (2.1 -> 2.2, 2.2 -> 2.3, 2.3 -> 2.4). Cuatro bullets sin diagrama nuevo: delegar significa que el agente trabaja sobre lo que hay en la carpeta; lo que hay ahi es conocimiento e instrucciones; ese material necesita un formato que lea la maquina; y la idea del LLM wiki. Es la bisagra entre 1.2 (cambio de rol) y la mecanica del .md. Goal de la seccion y Narrative arc actualizados; ~2 min.
+  tags: [add-slide, positioning, slide-content]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Slide "1. Como se escribe un .md"
+  feedback: "Agregar https://www.mindstudio.ai/blog/andrej-karpathy-llm-wiki-knowledge-base-claude-code como link para mas detalles."
+  resolution: El link entro como primera fuente de la lamina nueva 2.1, con la atribucion desagregada: el post es del equipo de MindStudio (6 de abril de 2026) y RECOGE la propuesta del LLM wiki de Andrej Karpathy, no es un texto de el. En lamina la idea se nombra ("La idea del LLM wiki que propone Andrej Karpathy") sin comillas de cita textual. Verificado 2026-07-31.
+  tags: [sources, accuracy]
+- talk: claude-cowork
+  date: 2026-07-31
+  location: Seccion "4. Skills" (lamina nueva 4.4 "Grabar una Skill")
+  feedback: "Let's add in the skill section at the end the 'Record a Skill' slide. It should cover the usage and purpose."
+  resolution: Lamina nueva 4.4 "Grabar una Skill", ultima de la Seccion 4, que pasa de 3 a 4 laminas. Seis bullets etiquetados (tercer camino de creacion; donde esta, en el mismo menu "+" del chat de 4.3 y en Configuracion > Habilidades > Agregar; para que sirve, la tarea que uno hace de memoria y le costaria escribir en pasos; que captura, pantalla, clicks, tipeo y voz hasta ~10 min; el cuidado de no tipear contrasenas ni informacion sensible; disponibilidad Pro/Max/Team y solo Mac) mas un ASCII de cuatro tiempos (grabar y narrar > Claude mira > propone la Skill > revisar, editar y guardar) que desemboca en la misma compuerta del Save que marca el diagrama de 4.2. Sources: la doc oficial support 12512198 sostiene todos los datos y el anuncio del 21 de julio de 2026 en la cuenta oficial de Claude en X queda citado como cobertura, para el encuadre de "para que sirve"; se deja explicito que ninguna fuente documenta retencion ni uso para entrenamiento de las grabaciones, asi que el deck no lo afirma y va como pregunta abierta en las Speaker notes. Actualizados el Goal de la Seccion 4 y el Narrative arc (los dos caminos de creacion pasan a tres). Tiempo ~3 min: el tally del deck sube de 58,0 a 61,0 sobre un bloque de 60, anotado en Open questions junto con el watch item de disponibilidad (despliegue gradual, solo Mac, confirmar contra la app antes de la clase) y la actualizacion de la entrada de la Seccion 4, que ahora tiene 4 laminas con la de catalogo todavia pendiente.
+  tags: [add-slide, slide-content, add-visual, sources, time-budget]
