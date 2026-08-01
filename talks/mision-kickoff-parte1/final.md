@@ -108,7 +108,9 @@ date: Julio 2026
 
 - ¿Preguntas?
 
-<!-- template: divider -->
+![Find out vs fuck around: el profesor y el gráfico](images/fafo.jpg)
+
+<!-- template: content-image -->
 
 ### Sources
 
