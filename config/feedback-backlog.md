@@ -1160,3 +1160,38 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, s
   feedback: "Agregar un slide con cards de como se crea un subagente en cowork" (mas un briefing largo del presentador: no hay boton de crear subagente, son archivos Markdown con frontmatter YAML, y en Cowork el camino para que persistan es empaquetarlos en un plugin)
   resolution: Lamina nueva 5.2 "Armar un subagente propio". El pedido chocaba de entrada con una decision verificada del deck ("en Cowork los subagentes no se crean ni se configuran a mano, los coordina Claude por debajo, sin panel"), asi que se pregunto antes de escribir; el presentador respondio con el briefing completo, que RESUELVE la tension en vez de contradecir la decision: no hay panel (sigue siendo cierto) Y ademas un subagente es un archivo, asi que se puede armar uno propio. Las dos afirmaciones conviven y la lamina lo dice explicitamente. TODO VERIFICADO CONTRA FUENTE OFICIAL antes de escribir, no se tomo el briefing como fuente: code.claude.com/docs/en/sub-agents (2026-07-31) sostiene "Subagents are Markdown files with YAML frontmatter", que name y description son los DOS UNICOS campos obligatorios (el briefing no lo distinguia), que la description define "when Claude should delegate to this subagent", y "Each subagent runs in its own context window with a custom system prompt, specific tool access, and independent permissions"; code.claude.com/docs/en/plugins sostiene el manifiesto .claude-plugin/plugin.json y la carpeta agents/ EN LA RAIZ del plugin (la doc advierte explicitamente que agents/ no va adentro de .claude-plugin/); claude.com/docs/cowork/guide/plugins es la que ata todo a Cowork - "A plugin is a package that extends what Claude can do in Cowork. Installing one can add skills, MCP connectors, subagents, slash commands, or hooks in a single step". Estructura: lead ("En Cowork no hay un boton de crear subagente"), cuatro tarjetas (es un archivo .md; la description es el disparador; corre aparte con contexto propio; para que persista, un plugin), un bloque de ejemplo markdown con hint ascii-render documentation-only para que Polish no lo tome por diagrama, y una cita al pie que separa los dos casos que se confunden (los subagentes que Claude lanza solo para paralelizar NO requieren configuracion; esto es querer uno propio). El ejemplo se cambio del code-improver de la doc a "revisor-de-informes", que es el hilo generico del deck y no un caso de programacion. Las rutas .claude/agents/ y ~/.claude/agents/ NO entraron a la lamina porque son de Claude Code y no de Cowork: viven solo en las Speaker notes, por si preguntan. Notes de 5.1 ajustadas (ya no cierra la seccion, y la frase "si alguien pregunta por configurarlos, la respuesta honesta es que no se configuran a mano" se reemplazo por un reenvio a la lamina nueva); la transicion de cierre de la seccion se mudo a las notes de 5.2. Goal de la Seccion 5 y Narrative arc reescritos. PENDIENTE PARA EL PRESENTADOR: es la lamina mas tecnica del deck para una audiencia de management, marcada como opcional en el recorrido en Goal y notes; y suma 3 min, con lo que el deck pasa de 58,0 a 61,0 sobre un bloque de 60.
   tags: [add-slide, slide-content, cards, verified-web, time-budget, scope]
+
+- date: 2026-08-01
+  talk: claude-cowork
+  location: slide 4.3
+  feedback: "4.3 se tiene que remplazar por -> debe introducir que existe 3 formas de crear un skill. idealmente solo con cards con una summary de cada una"
+  tags: [structure, slide-replace, visual-form]
+  resolution: Lamina nueva "Tres formas de crear una Skill": lead de una linea + 3 tarjetas (desde el panel / desde el prompt / grabando la pantalla) + cierre en negrita sobre la compuerta de guardar-habilitar. Sin ASCII, sin imagen, sin tabla, por pedido explicito de "solo cards". La lamina anterior ("Antes de escribir una: el directorio") se archivo integra y verbatim en Cut material. En el FILL se clasifico card-row en vez del icon-list que dictaba el discriminador, justamente para honrar el pedido de tarjetas.
+
+- date: 2026-08-01
+  talk: claude-cowork
+  location: slide 4.5
+  feedback: "Metodo 2: Crear una Skill desde el prompt tiene que ser re-scrita explicando como desde el prompt se puede crear una."
+  tags: [content-rewrite, accuracy, sources]
+  resolution: Reescrita entera. La lamina mostraba el menu "+" del chat y la trampa del Save, o sea no ensenaba lo que decia su titulo. Ahora son 5 tarjetas numeradas con el flujo conversacional documentado - describir lo que se quiere, Claude pregunta por el proceso, subir materiales, Claude escribe el SKILL.md y empaqueta, probar y ver "Usando [nombre]" - mas el cierre en la compuerta. Fuente nueva verificada: claude.com/resources/tutorials/how-to-create-a-skill-with-claude-through-conversation. Se deja asentado que support 12512198 no documenta este camino. El material viejo, incluida la captura skills-menu-chat.png, se archivo en Cut material.
+
+- date: 2026-08-01
+  talk: claude-cowork
+  location: slide 4.4
+  feedback: "Rename Metodo 1: Crear una Skill desde el panel -> Metodo 1: Crear desde el panel"
+  tags: [titles]
+  resolution: Aplicado.
+
+- date: 2026-08-01
+  talk: claude-cowork
+  location: slide 4.5
+  feedback: "Metodo 2: Crear una Skill desde el prompt -> Rename Metodo 2: Crear desde el prompt"
+  tags: [titles]
+  resolution: Aplicado.
+
+- date: 2026-08-01
+  talk: claude-cowork
+  location: slide 4.6
+  feedback: "Metodo 3: Grabar una Skill -> Metodo 3: Crear grabando una skill una Skill."
+  tags: [titles]
+  resolution: Aplicado como "Metodo 3: Crear grabando una Skill", normalizando la repeticion de tipeo del pedido original. PENDIENTE DE CONFIRMAR con el presentador.

@@ -445,7 +445,15 @@ La nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla d
 
 ### Content
 
+- El usuario concede la carpeta con el **explorador de archivos del sistema**. Cowork no tiene acceso a nada fuera de ella salvo que le permitamos hacerlo.
+
+![Selector de carpeta de trabajo del Project](images/project.png)
+
+- El **panel de contexto**: Instrucciones + base de conocimiento + carpeta concedida.
+
 ![Panel de contexto del Project](images/context.png)
+
+- Seguridad: la carpeta ES el control de privacidad. **Nunca datos sensibles, credenciales o NDA.**
 
 ### Sources
 
@@ -454,9 +462,10 @@ La nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla d
 
 ### Speaker notes
 
-Slide de apoyo visual, con una sola captura: el panel de contexto del Project. El explorador de archivos ya no se proyecta, así que ese paso va hablado — contar que la carpeta se concede con el explorador del sistema y que Cowork no ve nada fuera de ella. Después señalar en la captura las tres cosas que conviven: Instrucciones, base de conocimiento y la carpeta concedida. Mensaje de seguridad: Cowork solo ve lo que le concedés, así que la carpeta ES el control de privacidad, nunca datos sensibles. De ahí la buena práctica que conviene decir en voz alta: usar una carpeta dedicada al trabajo del Project y revisar antes que no tenga adentro nada confidencial. El Project del informe mensual trabaja sobre `Documentos/Informe-Mensual`, nada más. Tiempo objetivo: ~1,5 min.
+Slide de apoyo visual: mostrar las dos capturas, el explorador de archivos al conceder una carpeta y el panel de contexto del Project. Mensaje de seguridad: Cowork solo ve lo que le concedés, así que la carpeta ES el control de privacidad, nunca datos sensibles. De ahí la buena práctica que conviene decir en voz alta: usar una carpeta dedicada al trabajo del Project y revisar antes que no tenga adentro nada confidencial. El Project del informe mensual trabaja sobre `Documentos/Informe-Mensual`, nada más. Tiempo objetivo: ~2 min.
 
 ### Presenter feedback
+- De solo la images/context.png 
 
 ---
 
@@ -534,6 +543,8 @@ La lámina que sigue muestra unas Instrucciones completas. Tiempo objetivo: ~2 m
 
 ### Content
 
+Las Instrucciones del Project "Informe mensual del equipo", completas.
+
 <!-- ascii-render: documentation-only -->
 ```text
 Sos el asistente de informes del equipo comercial.
@@ -549,6 +560,8 @@ que se lee en 5 minutos antes de la reunión de cierre de mes.
   Si el dato no está en las notas, lo aclarás en el informe.
 ```
 
+- La **REGLA DE ORO** es la restricción dura que se fija acá: toda cifra lleva su fuente y su fecha, y el agente no la saltea aunque el pedido del momento empuje para otro lado.
+
 ### Sources
 
 - "corpus/mision - auto.zip.md", texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo". De ahí sale la forma del ejemplo (rol, destinatario, reglas con viñeta y una regla de oro). El ejemplo de la lámina es genérico y el caso de la misión se trata en la Sección 6.
@@ -560,6 +573,8 @@ Recorrer el ejemplo de arriba abajo: quién es el agente, para quién escribe, c
 Detenerse en la regla de oro, que toda cifra lleve su fuente y su fecha. Ese es el tipo de restricción dura que conviene fijar acá, la que el agente nunca puede saltear aunque el pedido del momento empuje para otro lado. Cada equipo tiene la suya, y en áreas reguladas suele ser un disclaimer obligatorio al pie. Tiempo objetivo: ~3 min.
 
 ### Presenter feedback
+- Borrar Las Instrucciones del Project "Informe mensual del equipo", completas y La **REGLA DE ORO** es la restricción dura que se fija acá: toda cifra lleva su fuente y su fecha, y el agente no la saltea aunque el pedido del momento empuje para otro lado. Dejar solo el texto de ejemplo.
+
 
 ---
 

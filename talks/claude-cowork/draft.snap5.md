@@ -21,7 +21,7 @@ date: Julio 2026
 
 # Agenda
 
-**Narrative arc:** La clase arranca donde terminó la anterior, con el chat ya extendido por conectores y Schedule, y da el salto grande de una: Claude Cowork instalado en la computadora, trabajando sobre carpetas y archivos reales. La primera sección ubica ese salto: Cowork como herramienta de propósito general del knowledge worker, con la analogía del Excel como habilidad base de la oficina; el cambio de rol de chatear a delegar un resultado, el mapa de piezas que se apilan y el primer contacto con la interfaz sobre una captura anotada de la app (1). De ahí las piezas se recorren una por una, en el orden en que se apilan. Los archivos `.md` primero, porque son el formato en el que la IA lee, edita y entrega. La sección abre con el porqué, que lo que hay en una carpeta de trabajo es conocimiento e instrucciones y le hace falta un formato que la máquina lea bien, sigue con qué es un `.md`, mostrando el mismo archivo lado a lado como texto plano y ya formateado, y cierra con el hábito de iterar sobre `.md` —el trabajo con la IA son muchas vueltas y ahí es donde salen baratas— y exportar recién al final (2). Después el espacio de trabajo: qué agrupa un Project, cómo se le concede una carpeta real del disco con el explorador del sistema, dónde vive su contexto, qué hace la herramienta con el material que hay adentro según cuánto sea, que con poco material lee todo y con mucho busca y trae los fragmentos que necesita, qué son las Instrucciones y dónde viven, en el panel de contexto de la interfaz, y un ejemplo completo que muestra cómo fijan de una vez el comportamiento del agente adentro de ese espacio (3). Con el espacio armado llegan las Skills, la forma de enseñar una tarea una sola vez: qué es una Skill, cómo se usa una vez creada (tipeando `/` como comando, o dejando que Claude la reconozca por su descripción) y las tres formas de crearla, presentadas juntas en una lámina índice y después recorridas una por una, el panel de Habilidades, el prompt de un chat donde se describe la tarea y Claude arma la Skill, y la grabación de pantalla, el camino con la barrera más baja, donde alguien hace la tarea narrándola en voz alta; la trampa del Save es la compuerta común de los tres caminos de creación (4). La última pieza, ya de nivel avanzado, son los Subagentes, en dos láminas: para qué tipo de sub-tarea conviene delegar en paralelo y cómo aparecen en Cowork, coordinados por debajo y sin panel propio; y para quien quiera uno propio, de qué está hecho —un archivo `.md` con un encabezado corto, donde la descripción vuelve a ser el disparador— y por qué en Cowork lo que lo hace durar es empaquetarlo en un plugin (5). Después de las cinco piezas viene el cierre, en dos láminas: un wrap-up que nombra el cambio de rol, engancha las piezas de las dos clases y deja una consigna concreta para la semana, y las advertencias de gobernanza. Con la charla ya cerrada, la última lámina es la placa divisoria que manda a resolver la parte 2 de la misión de Faro, el analista de mercado virtual de Atlas, ya en Cowork y sobre la carpeta real del equipo, sin exigir la parte 1 resuelta (6). La clase termina ahí, en la consigna de la misión, con Q&A abierto sobre esa placa.
+**Narrative arc:** La clase arranca donde terminó la anterior, con el chat ya extendido por conectores y Schedule, y da el salto grande de una: Claude Cowork instalado en la computadora, trabajando sobre carpetas y archivos reales. La primera sección ubica ese salto: Cowork como herramienta de propósito general del knowledge worker, con la analogía del Excel como habilidad base de la oficina; el cambio de rol de chatear a delegar un resultado, el mapa de piezas que se apilan y el primer contacto con la interfaz sobre una captura anotada de la app (1). De ahí las piezas se recorren una por una, en el orden en que se apilan. Los archivos `.md` primero, porque son el formato en el que la IA lee, edita y entrega. La sección abre con el porqué, que lo que hay en una carpeta de trabajo es conocimiento e instrucciones y le hace falta un formato que la máquina lea bien, sigue con qué es un `.md`, mostrando el mismo archivo lado a lado como texto plano y ya formateado, y cierra con el hábito de iterar sobre `.md` —el trabajo con la IA son muchas vueltas y ahí es donde salen baratas— y exportar recién al final (2). Después el espacio de trabajo: qué agrupa un Project, cómo se le concede una carpeta real del disco con el explorador del sistema, dónde vive su contexto, qué hace la herramienta con el material que hay adentro según cuánto sea, que con poco material lee todo y con mucho busca y trae los fragmentos que necesita, qué son las Instrucciones y dónde viven, en el panel de contexto de la interfaz, y un ejemplo completo que muestra cómo fijan de una vez el comportamiento del agente adentro de ese espacio (3). Con el espacio armado llegan las Skills, la forma de enseñar una tarea una sola vez: qué es una Skill, cómo se usa una vez creada (tipeando `/` como comando, o dejando que Claude la reconozca por su descripción), el panel de Habilidades y el acceso desde el chat, y la grabación de pantalla, el camino con la barrera más baja, donde alguien hace la tarea narrándola en voz alta y Claude arma la Skill con eso; la trampa del Save es la compuerta común de los tres caminos de creación (4). La última pieza, ya de nivel avanzado, son los Subagentes, en dos láminas: para qué tipo de sub-tarea conviene delegar en paralelo y cómo aparecen en Cowork, coordinados por debajo y sin panel propio; y para quien quiera uno propio, de qué está hecho —un archivo `.md` con un encabezado corto, donde la descripción vuelve a ser el disparador— y por qué en Cowork lo que lo hace durar es empaquetarlo en un plugin (5). Después de las cinco piezas viene el cierre, en dos láminas: un wrap-up que nombra el cambio de rol, engancha las piezas de las dos clases y deja una consigna concreta para la semana, y las advertencias de gobernanza. Con la charla ya cerrada, la última lámina es la placa divisoria que manda a resolver la parte 2 de la misión de Faro, el analista de mercado virtual de Atlas, ya en Cowork y sobre la carpeta real del equipo, sin exigir la parte 1 resuelta (6). La clase termina ahí, en la consigna de la misión, con Q&A abierto sobre esa placa.
 
 **Sections (in delivery order):**
 
@@ -445,7 +445,15 @@ La nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla d
 
 ### Content
 
+- El usuario concede la carpeta con el **explorador de archivos del sistema**. Cowork no tiene acceso a nada fuera de ella salvo que le permitamos hacerlo.
+
+![Selector de carpeta de trabajo del Project](images/project.png)
+
+- El **panel de contexto**: Instrucciones + base de conocimiento + carpeta concedida.
+
 ![Panel de contexto del Project](images/context.png)
+
+- Seguridad: la carpeta ES el control de privacidad. **Nunca datos sensibles, credenciales o NDA.**
 
 ### Sources
 
@@ -454,7 +462,7 @@ La nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla d
 
 ### Speaker notes
 
-Slide de apoyo visual, con una sola captura: el panel de contexto del Project. El explorador de archivos ya no se proyecta, así que ese paso va hablado — contar que la carpeta se concede con el explorador del sistema y que Cowork no ve nada fuera de ella. Después señalar en la captura las tres cosas que conviven: Instrucciones, base de conocimiento y la carpeta concedida. Mensaje de seguridad: Cowork solo ve lo que le concedés, así que la carpeta ES el control de privacidad, nunca datos sensibles. De ahí la buena práctica que conviene decir en voz alta: usar una carpeta dedicada al trabajo del Project y revisar antes que no tenga adentro nada confidencial. El Project del informe mensual trabaja sobre `Documentos/Informe-Mensual`, nada más. Tiempo objetivo: ~1,5 min.
+Slide de apoyo visual: mostrar las dos capturas, el explorador de archivos al conceder una carpeta y el panel de contexto del Project. Mensaje de seguridad: Cowork solo ve lo que le concedés, así que la carpeta ES el control de privacidad, nunca datos sensibles. De ahí la buena práctica que conviene decir en voz alta: usar una carpeta dedicada al trabajo del Project y revisar antes que no tenga adentro nada confidencial. El Project del informe mensual trabaja sobre `Documentos/Informe-Mensual`, nada más. Tiempo objetivo: ~2 min.
 
 ### Presenter feedback
 
@@ -534,6 +542,8 @@ La lámina que sigue muestra unas Instrucciones completas. Tiempo objetivo: ~2 m
 
 ### Content
 
+Las Instrucciones del Project "Informe mensual del equipo", completas.
+
 <!-- ascii-render: documentation-only -->
 ```text
 Sos el asistente de informes del equipo comercial.
@@ -549,6 +559,8 @@ que se lee en 5 minutos antes de la reunión de cierre de mes.
   Si el dato no está en las notas, lo aclarás en el informe.
 ```
 
+- La **REGLA DE ORO** es la restricción dura que se fija acá: toda cifra lleva su fuente y su fecha, y el agente no la saltea aunque el pedido del momento empuje para otro lado.
+
 ### Sources
 
 - "corpus/mision - auto.zip.md", texto exacto de las Project Instructions de Atlas (Step 1.1); "las Instrucciones son su contrato de trabajo". De ahí sale la forma del ejemplo (rol, destinatario, reglas con viñeta y una regla de oro). El ejemplo de la lámina es genérico y el caso de la misión se trata en la Sección 6.
@@ -560,12 +572,14 @@ Recorrer el ejemplo de arriba abajo: quién es el agente, para quién escribe, c
 Detenerse en la regla de oro, que toda cifra lleve su fuente y su fecha. Ese es el tipo de restricción dura que conviene fijar acá, la que el agente nunca puede saltear aunque el pedido del momento empuje para otro lado. Cada equipo tiene la suya, y en áreas reguladas suele ser un disclaimer obligatorio al pie. Tiempo objetivo: ~3 min.
 
 ### Presenter feedback
+- Borrar Las Instrucciones del Project "Informe mensual del equipo", completas y La **REGLA DE ORO** es la restricción dura que se fija acá: toda cifra lleva su fuente y su fecha, y el agente no la saltea aunque el pedido del momento empuje para otro lado. Dejar solo el texto de ejemplo.
+
 
 ---
 
 # 4. Skills
 
-**Goal of this section:** Enseñarle a Claude tareas reutilizables. Qué es una Skill, cómo se usa una vez creada (explícita con `/`, o automática cuando el pedido coincide con su descripción) y las tres formas de crearla. La lámina 3 las presenta juntas y las tres que siguen las recorren una por una, el menú Agregar del panel de Habilidades (donde el ZIP importa una existente), la creación desde el prompt de un chat (se describe la tarea, Claude pregunta por el proceso y arma la Skill) y la grabación de pantalla (se hace la tarea narrándola y Claude arma la Skill). Los tres caminos terminan en la misma compuerta, la trampa del Save, guardar y habilitar la Skill en la lista. Seis láminas.
+**Goal of this section:** Enseñarle a Claude tareas reutilizables: qué es una Skill, cómo se usa una vez creada (explícita con `/`, o automática cuando el pedido coincide con su descripción) y cómo se crea, con el menú Agregar del panel de Habilidades (donde el ZIP importa una existente), el acceso a las habilidades desde el chat, la grabación de pantalla como tercer camino de creación (se hace la tarea narrándola y Claude arma la Skill) y la trampa del Save, la compuerta de guardar y habilitar donde se traban todos los caminos. Cinco láminas.
 
 **Presenter feedback:**
 
@@ -597,7 +611,7 @@ Las cuatro tarjetas se recorren de a una, sin apurarse, porque son la definició
 
 El ejemplo es el hilo del resto de la sección, así que conviene presentarlo bien acá y no volver a explicarlo después: `informe-mensual` lee todos los archivos crudos de `notas/` (uno por región), consolida por región y devuelve el informe con el formato de siempre. Convierte varios archivos desordenados en un documento prolijo, sin que nadie tenga que repetir las indicaciones.
 
-Lo que esta lámina **no** contesta, a propósito, es cómo se dispara una Skill; eso es la lámina que sigue. Después vienen los tres caminos de creación: el panel de Habilidades, el prompt de un chat y la grabación de pantalla. Tiempo objetivo: ~4 min.
+Lo que esta lámina **no** contesta, a propósito, es cómo se dispara una Skill; eso es la lámina que sigue. Después vienen los tres caminos de creación: el panel de Habilidades, el menú del chat y la grabación de pantalla. Tiempo objetivo: ~4 min.
 
 ### Presenter feedback
 
@@ -667,40 +681,7 @@ Las láminas que siguen recorren los caminos de creación; esta explica qué pas
 
 ---
 
-## 3. Tres formas de crear una Skill
-
-### Content
-
-Cuando la Skill que hace falta no existe todavía, hay tres caminos para crearla.
-
-- **Desde el panel** Configuración → Habilidades → Agregar. Dos entradas crean una Skill nueva. "Crear con Claude" la arma en un ida y vuelta de chat y "Escribir las instrucciones" se edita directo en la interfaz. Es el camino explícito, donde se ve cada paso.
-- **Desde el prompt** Se abre un chat y se describe lo que se quiere. Claude pregunta por el proceso, arma la Skill y la empaqueta. Es el camino con menos fricción para quien ya está trabajando.
-- **Grabando la pantalla** Se hace la tarea narrándola en voz alta, Claude mira la grabación y propone la Skill. Es la barrera más baja de las tres, porque no hay nada que escribir.
-
-**Los tres terminan en la misma compuerta:** guardar y habilitar la Skill en la lista de Habilidades, o parece que "no funciona".
-
-### Sources
-
-- Verificación de primera mano de los presentadores (2026-07-21, captura del panel Configuración → Habilidades): el menú **Agregar** ofrece "Cree con Claude", "Escribe las instrucciones de la habilidad" y "Subir una habilidad". Sostiene las dos entradas de creación del camino del panel.
-- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills (verificada 2026-08-01). Sostiene la cuarta entrada del menú Agregar, "Grabá tu pantalla", y el camino de la grabación que desarrolla la lámina 4.6. **No documenta** el camino conversacional desde el prompt.
-- Anthropic, How to create a skill with Claude through conversation: https://claude.com/resources/tutorials/how-to-create-a-skill-with-claude-through-conversation (verificada 2026-08-01; la URL de support `support.claude.com/en/articles/12599426` redirige acá). Es la única fuente del camino desde el prompt, que desarrolla la lámina 4.5.
-- La compuerta de guardar y habilitar es la misma que marca el diagrama de la lámina 4.4; acá se anuncia y ahí se desarrolla.
-
-### Speaker notes
-
-La lámina índice de la sección. Acá se nombran los tres caminos y no se desarrollan, porque cada uno tiene su propia lámina y llega enseguida.
-
-Recorrer las tarjetas en el orden en que van a aparecer. El panel es el camino explícito, el que muestra el menú entero y sirve para ubicar dónde vive la lista de Habilidades. El prompt es el que menos interrumpe a alguien que ya está trabajando, porque la Skill se pide en el mismo chat donde estaba la tarea. La grabación es la que más baja la barrera para esta audiencia: la tarea que cada uno repite todas las semanas la tiene en los dedos y no escrita en pasos.
-
-El cierre conviene fijarlo antes de pasar de lámina. Los tres caminos desembocan en el mismo lugar, la Skill guardada y habilitada en la lista, que es la compuerta que el diagrama de la lámina siguiente desarrolla y la razón número uno de que a alguien "no le funcione".
-
-Tiempo objetivo: ~1,5 min.
-
-### Presenter feedback
-
----
-
-## 4. Metodo 1: Crear desde el panel
+## 3. Metodo 1: Crear una Skill desde el panel
 
 ### Content
 
@@ -742,65 +723,54 @@ labels: bloque UI = menú Agregar, con las cuatro entradas y su marca al costado
 ### Sources
 
 - Verificación de primera mano de los presentadores (2026-07-21, captura del panel Configuración → Habilidades): el menú **Agregar** ofrece "Cree con Claude", "Escribe las instrucciones de la habilidad" y "Subir una habilidad".
-- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills (re-verificada 2026-07-31); sostiene la **cuarta entrada del menú**, "Grabá tu pantalla" (Configuración → Habilidades → Agregar), que la captura del 2026-07-21 todavía no mostraba y que la lámina 4.6 desarrolla. La misma fuente documenta el camino ZIP; los dos caminos de creación asistida (Crear con Claude / Escribir las instrucciones) siguen sin aparecer ahí, así que esos dos se atribuyen a la captura (doc atrasada respecto del producto).
+- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills (re-verificada 2026-07-31); sostiene la **cuarta entrada del menú**, "Grabá tu pantalla" (Configuración → Habilidades → Agregar), que la captura del 2026-07-21 todavía no mostraba y que la lámina 4.5 desarrolla. La misma fuente documenta el camino ZIP; los dos caminos de creación asistida (Crear con Claude / Escribir las instrucciones) siguen sin aparecer ahí, así que esos dos se atribuyen a la captura (doc atrasada respecto del producto).
 - La captura `images/skills-panel.png` es del 2026-07-21 y **puede no mostrar la entrada de grabación**, que se desplegó después; el diagrama sí la incluye. Re-mirar el panel antes de la clase y resacar si hace falta.
 
 ### Speaker notes
 
-El primero de los tres caminos que anunció la lámina índice: la creación por el panel. Con conexión, hacerlo en vivo, Configuración → Habilidades → Agregar, y nombrar las entradas del menú mientras se ven en la captura.
+La primera de las slides prácticas de creación: el camino por el panel. Con conexión, hacerlo en vivo: Configuración → Habilidades → Agregar, y nombrar las entradas del menú mientras se ven en la captura.
 
 El corte que conviene marcar es **crear contra importar**, que es lo que el diagrama separa al costado. Tres de las cuatro entradas crean una Skill nueva: "Crear con Claude" abre un ida y vuelta de chat donde Claude escribe el `SKILL.md`; "Escribir las instrucciones" edita la habilidad directo en la UI; y "Grabá tu pantalla" es el camino de la grabación, que se nombra acá al pasar porque tiene lámina propia dos slides más adelante — decir solo que existe y que se entra por el mismo menú. La cuarta, "Subir una habilidad", **no crea nada**: importa una Skill ya hecha desde su ZIP, por ejemplo una que compartió un colega.
 
-El diagrama desarrolla la compuerta de guardar y habilitar que la lámina índice anunció, y donde desembocan las cuatro entradas. Es el diagrama que las dos láminas siguientes retoman al cerrar, así que acá conviene contarlo entero.
+El diagrama adelanta la compuerta de guardar y habilitar, donde desembocan las cuatro y que la lámina siguiente desarrolla; anticiparla en una frase y dejarla ahí.
 
 Un cuidado con la captura: es del 21 de julio y puede no mostrar todavía la entrada de grabación, que se desplegó después. Si el panel proyectado y el diagrama no coinciden, decirlo al pasar en vez de dejar que lo noten. La doc oficial va detrás del producto en este punto; re-mirar el panel el día de la clase, y resacar la captura si ya cambió. Tiempo objetivo: ~3 min (con demo).
 
 ### Presenter feedback
+- Falta un slide que explique que hay 3 formas de crear un skill y listarlas:
 
 ---
 
-## 5. Metodo 2: Crear desde el prompt
+## 4. Metodo 2: Crear una Skill desde el prompt
 
 ### Content
 
-- **Se describe lo que se quiere** Se abre un chat nuevo y se pide la Skill en una línea, por ejemplo *"quiero armar una Skill para el informe mensual del equipo"*.
-- **Claude pregunta por el proceso** Hay que contarlo con el detalle que necesitaría alguien capaz que nunca hizo esa tarea. También pregunta por los casos de uso concretos y por cómo se reconoce un buen resultado.
-- **Se le suben los materiales** En la misma conversación entran las plantillas, los ejemplos de trabajos anteriores, las guías de estilo y los archivos de datos.
-- **Claude arma la Skill** Escribe el `SKILL.md`, el archivo de instrucciones que toda Skill necesita, ordena los materiales que recibió y genera el código de las operaciones descritas. No hay ningún comando que tipear.
-- **Se prueba** Se le pide una tarea que la Skill debería resolver. Si se activó, aparece **"Usando [nombre de la Skill]"** en el razonamiento de Claude. Si algo no cierra, se le pide el ajuste a Claude y se prueba de nuevo.
+- Las habilidades también están a mano **desde el chat**: el menú **"+"** las lista, con "Administrar" y "Explorar habilidades".
 
-**Antes de probar, la compuerta de siempre:** guardar y habilitar en Configuración → Capacidades → Habilidades, o parece que "no funciona".
+![El menú + del chat: las habilidades disponibles, administrar y explorar](images/skills-menu-chat.png)
+
+- **La trampa del Save:** la Skill tiene que quedar guardada y habilitada en la lista de Habilidades, o "no funciona".
 
 ### Sources
 
-- Anthropic, How to create a skill with Claude through conversation: https://claude.com/resources/tutorials/how-to-create-a-skill-with-claude-through-conversation (verificada 2026-08-01; la URL de support `support.claude.com/en/articles/12599426` redirige acá). Sostiene el flujo completo de la lámina y las dos citas textuales que se traducen acá: el pedido inicial ("I want to create a skill for quarterly business reviews") y el criterio de detalle ("Claude will ask about your process. Provide enough detail that someone capable but unfamiliar could follow your approach"). También la subida de materiales durante la conversación (plantillas, trabajos anteriores, guías de estilo, archivos de datos), las preguntas por casos de uso y estándar de calidad, la escritura del `SKILL.md` con organización de materiales y generación de código, el guardado y habilitado en Configuración → Capacidades → Habilidades, la prueba con una tarea real y la señal "Usando [nombre de la Skill]" en el razonamiento.
-- Anthropic Support, How to create custom skills: https://support.claude.com/en/articles/12512198-how-to-create-custom-skills (verificada 2026-08-01). Sostiene el camino del panel (4.4) y el de la grabación (4.6). **Procedencia a tener presente:** este artículo **no documenta** el camino conversacional, que sale del tutorial citado arriba.
-- Por debajo, la creación conversacional se apoya en una herramienta interna de creación de skills. **No es un comando que el usuario tipee:** en Cowork no existe un `/skill-creator` (verificado por el presentador, 2026-07-31), y el deck no lo afirma en ninguna lámina.
+- Verificación de primera mano de los presentadores (2026-07-21, captura del panel Configuración → Habilidades y del menú "+" del chat): las habilidades quedan a mano desde el chat, con "Administrar" y "Explorar habilidades"; Cowork incluye un set reducido de slash commands.
+- Anthropic Support, Use Skills in Claude: https://support.claude.com/en/articles/12512180-use-skills-in-claude; habilitar Skills desde el panel de Habilidades; requiere Code execution ("This feature requires code execution to be enabled"; re-verificado 2026-07-15).
 
 ### Speaker notes
 
-El camino que menos se conoce y el que más le sirve a alguien que ya está trabajando, porque no pide salir del chat. Si hay conexión, conviene hacerlo en vivo con el ejemplo del deck.
-
-El pedido inicial es corto y no hace falta que sea preciso, alcanza con nombrar la tarea. Lo que decide la calidad de la Skill es lo que viene después, cuando Claude pregunta por el proceso. La doc trae un criterio que conviene repetir tal cual desde el escenario: contalo con el detalle que necesitaría alguien capaz que nunca hizo esa tarea. El error típico es contestar en dos líneas y después quejarse de que la Skill quedó genérica.
-
-Los materiales son la otra mitad del trabajo. Una plantilla vieja, dos informes anteriores y la guía de estilo del equipo enseñan más que cualquier descripción escrita en el momento. Claude además pregunta por los casos de uso concretos y por cómo se reconoce un buen resultado, así que conviene llegar con esa respuesta pensada.
-
-Lo que hace Claude por debajo se cuenta en una frase y sin abrir el capó. Escribe el `SKILL.md`, que es el archivo de instrucciones que toda Skill necesita, ordena los materiales que recibió y arma el código de las operaciones que se le describieron. Decir en voz alta que no hay ningún comando que tipear, porque alguien que vio Claude Code va a preguntar por `/skill-creator` y en Cowork esa opción no existe.
-
-Cerrar en la compuerta de siempre, guardar y habilitar en Configuración → Capacidades → Habilidades, y en la prueba. La señal de que la Skill se activó es la línea "Usando [nombre de la Skill]" en el razonamiento, y vale la pena mostrarla porque es la respuesta visual a la pregunta de cómo saber que la está usando. Si el resultado no cierra, se le pide el ajuste a Claude en el mismo chat y se prueba otra vez; son varias vueltas y salen baratas.
-
-**Procedencia, por si alguien pregunta.** El camino conversacional lo documenta el tutorial de Anthropic; el artículo de support que sostiene el panel y la grabación no lo menciona. Tiempo objetivo: ~3 min.
+La otra mitad del paso a paso: las mismas Skills, ahora desde el chat. Mostrar el menú "+" con las habilidades disponibles, "Administrar" y "Explorar habilidades". El `/` ya se explicó en 4.2, así que acá alcanza con volver a tipearlo al pasar: Cowork incluye un set reducido de slash commands, bastante menos que Claude Code, y no hace falta recorrerlos. Requisito a mencionar antes de la demo: las Skills piden **Code execution** habilitado, si no, el panel no las corre. Y el aviso que más problemas ahorra, la trampa del Save: la Skill recién creada tiene que quedar guardada y habilitada en la lista de Habilidades, o parece que "no funciona"; es la compuerta que el diagrama de la lámina anterior marca. La captura queda de respaldo por si la demo falla. Tiempo objetivo: ~2 min (con demo).
 
 ### Presenter feedback
 
+
 ---
 
-## 6. Metodo 3: Crear grabando una Skill
+## 5. Metodo 3: Grabar una Skill
 
 ### Content
 
-- **Tercer camino de creación:** grabar la pantalla mientras se hace la tarea y narrarla en voz alta. Claude mira la grabación y propone la Skill.
-- **Dónde:** el botón **"+"** del compositor del chat, en **"Record a skill"**; también en Configuración → Habilidades → Agregar → "Grabá tu pantalla", la cuarta entrada del menú de la lámina 4.4.
+- Tercer camino de creación:** grabar la pantalla mientras se hace la tarea y narrarla en voz alta. Claude mira la grabación y propone la Skill.
+- **Dónde:** el mismo menú **"+"** del chat de la lámina anterior, en **"Record a skill"**; también en Configuración → Habilidades → Agregar → "Grabá tu pantalla".
 - **Para qué sirve:** la tarea que uno ya hace de memoria y le costaría escribir en pasos. Es el camino con la barrera más baja de los tres.
 - **Qué captura:** pantalla, clicks, tipeo y voz, hasta unos 10 minutos.
 - **Cuidado:** no tipear contraseñas ni información sensible mientras corre la grabación.
@@ -841,7 +811,7 @@ Cerrar en la compuerta de siempre, guardar y habilitar en Configuración → Cap
       +------------------+
 ```
 <!-- ascii-note:
-intent: mostrar el flujo de cuatro tiempos de una Skill grabada, desde la grabación narrada hasta la Skill activa, y que la última etapa es la misma compuerta de guardar y habilitar que marca el diagrama de 4.4.
+intent: mostrar el flujo de cuatro tiempos de una Skill grabada, desde la grabación narrada hasta la Skill activa, y que la última etapa es la misma compuerta de guardar y habilitar que marca el diagrama de 4.3.
 emphasize: la caja de doble línea "REVISAR, EDITAR Y GUARDAR" marcada como la trampa del Save; la bajada vertical de los cuatro pasos numerados, uno debajo del otro.
 labels: 1 grabar y narrar (pantalla, clicks, tipeo, voz, ~10 min); 2 Claude mira (abre una tarea de Cowork); 3 propone la Skill (nueva o actualización de una existente); 4 revisar, editar y guardar; salida = Skill activa.
 -->
@@ -854,7 +824,7 @@ labels: 1 grabar y narrar (pantalla, clicks, tipeo, voz, ~10 min); 2 Claude mira
 
 ### Speaker notes
 
-El tercero de los tres caminos. Tiene dos puertas de entrada y conviene mostrar las dos, el botón "+" del compositor del chat, en "Record a skill", y la cuarta entrada del menú Agregar que se vio en 4.4. El pitch en una frase: se hace la tarea una vez con la grabación andando y Claude escribe la Skill a partir de eso. Para esta audiencia es el camino más accesible de los tres, porque la tarea que cada uno repite todas las semanas la tiene en los dedos y no en un instructivo.
+La tercera lámina de creación, y la que engancha directo con la anterior: "Record a skill" está en el mismo menú "+" que se acaba de mostrar, así que conviene volver a abrirlo y señalar la opción ahí mismo. El pitch en una frase: se hace la tarea una vez con la grabación andando y Claude escribe la Skill a partir de eso. Para esta audiencia es el camino más accesible de los tres, porque la tarea que cada uno repite todas las semanas la tiene en los dedos y no en un instructivo.
 
 Recorrer el diagrama en cuatro tiempos, rápido. Uno, se graba mientras se trabaja y se narra en voz alta qué se hace y por qué; esa narración es la mitad del valor, porque una grabación muda deja a Claude adivinando el porqué de cada click. Dos, Claude abre una tarea de Cowork y revisa la grabación. Tres, propone una Skill, que puede ser nueva o una actualización de una que ya existe. Y cuatro, vuelve la trampa del Save de la lámina anterior: la Skill propuesta hay que revisarla, editarla y guardarla habilitada. Una vez guardada es una Skill como cualquier otra, editable desde el panel de Habilidades y también desde el chat con "Editar con Claude".
 
@@ -1104,3 +1074,188 @@ Placa de misión con el mismo formato que la de la parte 1 de la clase anterior,
 ---
 
 # Open questions
+
+- ~~Fecha de la clase sin confirmar~~; resuelto 2026-07-14: `date: Julio 2026`.
+- **Split del 2026-07-31:** esta charla es la parte 2 de lo que era una clase de 120 min. La parte 1 (chat, conectores, Schedule, misión parte 1) vive ahora en `talks/claude-desktop-chat`. Consecuencias abiertas: (a) `duration` quedó en `60 min (a confirmar)` y la suma de las **21 líneas "Tiempo objetivo" da hoy 58,0 min**, o sea **2 min de aire** contra el bloque de 60. Historia del número: 66,0 → 62,0 → 58,0 → 61,0 → **64,0** (todas del 2026-07-31; el detalle de cada movimiento está en `memory.md`) → **58,0** en la ronda de feedback del 2026-07-31 que fusionó 2.2 con 2.3 (−3), agregó la lámina nueva **4.2 "Cómo se usa una Skill"** (+2) y borró **Conclusions.1 "El loop completo de Faro"** (−5). Con 58,0 el deck entra por primera vez desde el split, y esos 2 min de aire son justo lo que costaría la **lámina de catálogo de skills** si el presentador la elige (estimada en 2-3 min): si entra, el deck vuelve a quedar al límite o apenas pasado. Recortes de reserva, ya no urgentes pero anotados: **3.5 "Un ejemplo de Instrucciones"** de 3 a 2 min (el bloque se recorre señalando sus cuatro zonas, sin leerlo palabra por palabra) y **2.3 "Iterar en .md, exportar al final"** de 4 a 3 min; (b) `final.md`, `output/slide-model.json` y `output/html/index.html` describen un deck anterior y están **desactualizados**; (c) los SVG/PNG en `images/` llevan slugs de numeraciones viejas, así que el próximo Polish re-deriva slugs y conviene seguirlo de un `polish_ascii.py gc`.
+- **Choque de fuentes en la lámina nueva 3.3 "¿Los lee todos?" (decisión consciente, 2026-07-31):** el presentador escribió que cuando Claude pasa a buscar fragmentos "ahora depende de que la búsqueda encuentre lo correcto", o sea que se pierde algo de fiabilidad. La doc oficial afirma lo contrario: Anthropic Support, "Retrieval augmented generation (RAG) for projects" (https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects, verificado 2026-07-31) dice "Response accuracy remains consistent with in-context processing" y "RAG maintains consistent response quality as in-context processing". **Resolución tomada:** la lámina queda neutral y no afirma ninguna de las dos cosas; describe solo el cambio de mecanismo ("la respuesta pasa a apoyarse en esos fragmentos"), que es verdadero en cualquiera de los dos casos. El matiz vive en las Speaker notes, con las dos posiciones nombradas: lo que sostiene la doc y la intuición práctica del presentador. Esto es una decisión, no un olvido. Si Anthropic publica una medición de degradación, o si el presentador prefiere asumir el claim con su nombre en voz alta, la lámina se puede endurecer. Lo mismo aplica al umbral: la doc dice que el cambio ocurre cuando el conocimiento del Project "approaches the context window limit" y **no documenta un número**, así que el deck no lo inventa. El 10x sí está respaldado textualmente.
+- **Sin recap de la parte 1 (decisión del presentador, 2026-07-31):** el deck arranca directo en Cowork y solo remite a "la clase anterior" en prosa. Si al ensayar se siente abrupto, la pieza que falta sería un slide de repaso de una lámina al inicio de la Sección 1; no está y es decisión consciente.
+- **`screenshot-cowork-tab.png` quedó sin referencia (2026-07-31):** la slide 1.4 pasó a usar `images/cowork.png`, la captura propia de la interfaz actual. La vieja muestra una versión anterior de la app (pestaña `Cowork` separada arriba, `New task`, `Work in a project`, selector de modo `Ask`, `Sonnet 4.6`, `Live artifacts`) y está desactualizada. El archivo se conserva en `images/` por si el presentador lo quiere para un contraste "antes/después"; si no, es candidato al gc del próximo Polish. Lo mismo con `mockup-tablero.png`, sin uso desde la reestructura del 2026-07-30.
+- **Idioma mezclado entre capturas (2026-07-31):** `instructions.png`, la captura nueva de la lámina 3.4, tiene la app en inglés (se lee "Instructions", "Memory", "Context", "Scheduled"), mientras que las de la Sección 4 (`skills-panel.png`, `skills-menu-chat.png`) la tienen en español ("Habilidades"). La audiencia va a ver las dos en la misma charla. Dos salidas, a decidir con el presentador: nombrarlo al pasar cuando aparece la captura de 3.4 (queda anotado en sus Speaker notes como recurso por defecto) o unificar el idioma de la app y volver a sacar las capturas. Si se resacan, hay que rehacer los círculos violeta de cada una. Conviene revisar también `context.png` y `project.png` con el mismo criterio.
+- **`instructions.png` (3.4) se solapa con `context.png` (3.2); decidir si una sobra (2026-07-31):** la captura nueva no muestra solo las Instrucciones, muestra el panel derecho entero del Project (Instructions rodeado, Memory, Context con la carpeta concedida, Scheduled), que es el mismo panel de contexto que ya ilustra `context.png` dos láminas antes. Hoy las dos láminas proyectan la misma pantalla con distinto foco, y las Speaker notes de 3.4 lo aprovechan a propósito para cerrar 3.1 y 3.2. Opciones: dejar las dos y decir el enganche en voz alta (lo que hace el draft hoy), sacar `context.png` de 3.2 y que 3.4 cubra el panel entero, o recortar `instructions.png` al bloque de Instructions para que no repita. Si sale `context.png`, la 3.2 queda con una sola captura (`project.png`, el explorador de archivos) y su tiempo puede bajar de 2 a 1,5 min, lo que ayudaría al tally.
+- **Nombres de los modos de Cowork y cuál viene por defecto (slide 1.4):** la lámina y las notes dicen que hay un selector de modo y que el usuario elige entre aprobar cada acción y dejar correr al agente, **sin afirmar cuál es el default**. La captura vieja mostraba `Ask` y la nueva muestra `Auto`. Confirmar contra la app el día de la clase cómo se llaman hoy los modos y cuál viene seleccionado, antes de decir algo más preciso en voz alta.
+- Slide 1.4 sigue citando `corpus/agentic-ai-deck.zip.md` (slide 3.19, modelo de aprobación) y ese registro tiene `<!-- pending: process_images -->`; la cita ahora sostiene solo el beat de control, no la captura. Re-verificar tras correr librarian Phase 2.
+- **Slash commands en Cowork (slides 4.2–4.3) — RESUELTO 2026-07-31:** el presentador verificó que `/skill-creator` **no existe** en Cowork y pidió sacarlo de todas las referencias del deck. Quedó fuera del Narrative arc, del Goal de la Sección 4, del diagrama ASCII de 4.2 (que ahora muestra solo los tres caminos del menú Agregar convergiendo en la compuerta), de las Sources y las Speaker notes de 4.2 y 4.3. La creación de Skills se enseña por el panel de Habilidades; 4.3 queda como la lámina del acceso desde el chat, con el menú "+" y la trampa del Save. Lo que se conserva del hallazgo original: Cowork incluye un set reducido de slash commands y el tip de tipear `/` para ver los disponibles, sin relevar la lista completa. La doc oficial (support 12512198) sigue documentando solo el camino ZIP.
+- **Conclusions va antes de la Sección 6 (decisión del presentador, 2026-07-31):** el orden del cuerpo pasó a ser secciones 1→5, `# Conclusions`, `# 6. La misión · parte 2`. Las conclusiones cierran la charla y la placa de la misión queda última, porque después de la misión termina la clase. Esto **invierte** el arco anterior, donde la placa de la misión hacía de divisoria y el deck cerraba en la lámina de gobernanza (Conclusions.3); el cambio es explícito y buscado. La Sección 6 **no se renumeró**, sigue siendo la 6 y las referencias cruzadas a "6.1" siguen valiendo. Ya se reescribieron el Narrative arc, la lista de Sections, el Goal de la Sección 6 y las tres transiciones de Speaker notes que dependían del orden viejo (Conclusions.2, Conclusions.3 y 6.1).
+- **Los nombres de skills del loop de Faro — RESUELTO 2026-07-31 por borrado:** el desalineamiento entre `informe-mensual` (lo que enseña la Sección 4) y `buscar-accion` / `reporte-semanal` (las skills reales de la misión) vivía en el diagrama de **Conclusions.1**, que el presentador pidió borrar en esta misma fecha. Con esa lámina fuera, el deck solo nombra `informe-mensual` en las secciones de enseñanza y la misión se trata en la Sección 6, sin diagrama de skills. Ya no hay nada que aclarar en voz alta.
+- **La Sección 4 quedó en 5 láminas (actualizado 2026-07-31):** 4.1 Qué es una Skill · **4.2 Cómo se usa una Skill** (nueva, +2 min: invocación explícita con `/` y automática por descripción) · 4.3 Crear desde el panel · 4.4 Crear desde el chat · 4.5 Grabar una Skill. **La lámina de catálogo de skills sigue pendiente:** el presentador la pidió con el catálogo de referencia https://vercel.com/docs/agent-resources/skills y cinco skills útiles para la audiencia, y todavía está eligiendo cuáles. No se creó a propósito, falta esa decisión, y cuando entre habrá que actualizar de nuevo el Goal de la Sección 4, el Narrative arc y el presupuesto de tiempo (los 2 min de aire que tiene el deck hoy no le alcanzan con holgura).
+- **Certeza del mecanismo de activación automática de Skills (lámina 4.2, 2026-07-31):** la lámina afirma que Claude carga una Skill sola cuando el pedido coincide con su **descripción**. La única evidencia disponible en el corpus es `corpus/agentic-ai-deck.zip.md` ("Description drives triggering — semantic, not keyword"), que es un deck interno del equipo, **no documentación de producto**. Las dos fuentes oficiales que la sección ya cita (support 12512180 "Use Skills in Claude" y la verificación de primera mano del 2026-07-21 sobre el set reducido de slash commands en Cowork) sostienen el camino **explícito** y el hecho de que una Skill habilitada queda disponible, pero **no describen el mecanismo de matching por descripción**. Esta corrida no tuvo acceso web, así que no se buscó una fuente nueva y no se inventó ninguna URL. Las Speaker notes de 4.2 lo dicen con el nivel de certeza que corresponde ("así funciona en la práctica", no una especificación publicada). **Pendiente:** verificar contra la doc oficial de Anthropic antes de la clase, o bajar el claim a observación de los presentadores.
+- **Disponibilidad de "Record a skill" (watch item, 2026-07-31):** la doc oficial (support 12512198) la da en Pro, Max y Team, y solo en Cowork en Claude para Mac. Es despliegue gradual, así que la opción puede no estar todavía en la cuenta o la versión de app de los presentadores. Confirmar contra la app antes de la clase, sobre todo si la lámina 4.4 se va a mostrar en vivo desde el menú "+" del chat; si no aparece, la lámina se cuenta igual sin demo. Lo que la doc no dice, y por eso el deck no lo afirma: qué pasa con la grabación después (retención, uso para entrenamiento).
+- **Subagente a pedido (bonus M6 de la misión):** **RESUELTO del lado del deck (2026-07-31):** la slide 5.1 dejó de afirmar que el usuario agrega o gestiona subagentes en Cowork. Ahora dice lo que sostiene el corpus: los coordina Claude por debajo, sin configuración manual (corpus/agentic-ai-deck.zip.md, "no manual `/agents` config exposed in the GUI"; matriz 4.10, Cowork ⚠️). Búsqueda en fuentes oficiales (2026-07-31, support.claude.com / claude.com / anthropic.com): no aparece ninguna que documente creación o configuración de subagentes en Cowork; todo lo hallado es de Claude Code, el SDK o la plataforma. Queda como watch item, no como reclamo del deck: si el presentador quiere demostrar en vivo la creación de un subagente `investigador` a pedido, hace falta verificar de primera mano en el producto (a) que el pedido en lenguaje natural cree algo persistente y no una delegación de una sola vez, y (b) que quede visible o reutilizable en alguna parte de la interfaz. Sin esas dos cosas verificadas, no se demuestra ni se menciona como capacidad; el bonus M6 de la misión se cae sin bloquear la misión.
+- **Audit trail de Cowork (Conclusions.3, ex Conclusions.2) — RESUELTO 2026-07-31:** el deck afirmaba "Cowork no tiene audit trail" apoyado solo en `corpus/agentic-ai-deck.zip.md` (deck interno, junio 2026). La verificación contra fuentes oficiales encontró que el claim es falso como hecho plano: existe registro de actividad de Cowork vía OpenTelemetry (support 14477985) con prompts, tool calls, acceso a archivos, skills y decisiones de aprobación, pero solo en planes Team/Enterprise, solo si un administrador configura un endpoint OTLP y sin exportar nada por defecto; y la actividad de Cowork no entra en la Compliance API (support 13364135 y 14477985, ambos verificados 2026-07-31). La lámina y las notes se reescribieron con ese matiz y citan las dos fuentes oficiales. Watch item: el registro por OpenTelemetry pide Claude Desktop 1.1.4173 o posterior, y la frase "not captured in the Compliance API **at this time**" sugiere que puede cambiar; re-verificar antes de la clase.
+- Falta la carpeta `skills/` con los tres skills pre-armados (`reporte-semanal`, `buscar-accion`, `publicar-tablero`) en el export; confirmado por el librarian en Step 3. No se inventa su contenido. Si la clase incluye una demo en vivo de las skills ya armadas, confirmar con el presentador si las tiene aparte.
+- Vigencia de features vs docs oficiales: fechas/versiones (Live Artifacts abril 2026, planes pagos, etc.) son point-in-time; re-verificar contra docs oficiales antes de presentar.
+- ~~**Slide 1.4; interacción pipeline del banner DEMO TIME**~~, RESUELTO 2026-07-31: el banner salió de la lámina (que dejó de ser demo en vivo) y quedó archivado en `Cut material`. La slide conserva solo la captura, así que ya no hay un bloque ASCII compitiendo con el image ref.
+- **Piezas borradas por decisión del presentador (2026-07-30):** salieron del deck las slides de Schedule en Cowork, Artifacts y Live Artifacts, y las dos de Plugins (incluida la sección Enterprise). Las fuentes y capturas asociadas siguen en disco (`schedule.png`, `mockup-tablero.png`) por si se quieren reponer. Si se reponen, hay que volver a nombrarlas en el mapa de la charla (1.3) y en el loop de Conclusions.
+- Nuevas URLs externas (round 3) a re-verificar en Polish si se quiere snapshot/cita estable, ya filtradas a las que esta parte cita o podría reponer: support.claude.com (use-skills, create-custom-skills, use-live-artifacts, manage-org-plugins, use-plugins), claude.com/blog (cowork-plugins-across-enterprise), code.claude.com/docs (sub-agents). (Las de chat, búsqueda web, conectores y tareas programadas se fueron con la parte 1 al split del 2026-07-31.)
+- **Live Artifacts y el update del 7 de julio de 2026:** la locality de Live Artifacts ("viven en tu computadora, no compartibles aún") se RE-VERIFICÓ el 2026-07-09 contra support article 14729249 (actualizado recientemente) y sigue vigente pese a que las sesiones de Cowork ahora pueden correr remotas. Vigilar este punto: es el candidato más probable a quedar desactualizado con el rollout web/mobile.
+
+- **Layout ASCII-izquierda / bullets-derecha (slide 1.2 "De chatear a delegar"), PEDIDO NO APLICADO, 2026-07-31:** el presentador pidió poner el ASCII a la izquierda y los bullets a la derecha. El catálogo de templates no tiene una variante imagen-izquierda: `content+image` renderiza texto a la izquierda e imagen a la derecha y su único `layout` alternativo es `image-top`; el `aside` admite `side: left` pero recorta a full-bleed y está prohibido para diagramas que la audiencia tiene que leer.
+  - **RESUELTO en el plugin 0.72.0 (2026-07-31).** `layout` dejó de ser exclusivo de `content-image` y ahora vale en todo template que lleve su propia imagen, `content+cards+image` incluido. La slide quedó pineada a `content+cards+image` + `layout: image-left`, así que conserva las tarjetas con ícono **y** el diagrama a la izquierda. La disyuntiva íconos-vs-imagen-izquierda que bloqueaba este pedido ya no existe.
+
+# Cut material
+
+- **Lámina "El loop completo de Faro"** (ex Conclusions.1; 2026-07-31): borrada a pedido explícito del presentador ("borrar este slide"). Conclusions queda en dos láminas ("Lo que se llevan: cambió el rol" y "Antes de cerrar: cuidados") y el deck recupera ~5 min. Las notes de "Lo que se llevan" abrían apoyándose en este loop y retomaban la pregunta que quedaba abierta acá; esa apertura y la transición que llega desde 5.1 se reescribieron para cerrar sin esta lámina. El bloque ASCII del loop, su `ascii-note`, las Sources y las Speaker notes quedan archivados enteros acá para reponerla tal cual. Fuente: draft del 2026-07-31, slide Conclusions.1.
+
+
+  **Content original:**
+
+- El loop completo de Faro, que engancha las piezas de las dos clases. Arranca en el Schedule, que quedó armado en la clase anterior:
+
+```ascii
+Lunes 8:00
+   |
+   v
+[Schedule] dispara
+   |
+   v
+[Skill buscar-accion] --(Connector MT Newswires + web_fetch Yahoo)--> guarda fuentes/
+   |
+   v
+[Skill reporte-semanal] consolida --> reporte .md en el Project
+   |
+   v
+[Connector Gmail] deja el borrador listo para el equipo
+```
+<!-- ascii-note:
+intent: mostrar el loop completo de la misión de Faro, encadenando las piezas de las dos clases (Schedule y conectores de la anterior; Skills y Project de esta), disparado por el Schedule cada lunes.
+emphasize: la secuencia de arriba abajo Schedule -> Skills -> Connectors -> borrador de correo; que todo arranca de un solo disparador, el Schedule, que es pieza de la clase anterior.
+labels: pasos del loop (Schedule, buscar-accion, reporte-semanal, Gmail) y las piezas usadas en cada uno.
+-->
+
+- **El arco completo:** *clase anterior*, chat de memoria → conectores → Schedule; *hoy*, Cowork (`.md`) → Projects → Instrucciones → Skills → Subagentes.
+- **Las piezas de hoy:** `.md` (el lenguaje) · Projects (el espacio de trabajo) · Instrucciones (el contrato) · Skills (enseñar una vez) · Subagentes (delegar en paralelo). Y las dos que ya traían: Conectores (las manos) y Schedule (corre solo).
+- **Para llevarse:** *"Todo lo que le explicás a Claude más de una vez es una Skill que deberías escribir una vez."* ¿Qué tarea recurrente le delegarías a tu propio Faro?
+
+  **Sources originales:**
+
+- "corpus/mision - auto.zip.md", "el loop completo (Cowork version)"; gancho de cierre.
+- corpus/agentic-ai-deck.zip.md, "Anything you explain to Claude twice is a skill you should write once" (slide 7.3).
+
+  **Speaker notes originales:**
+
+Cierre integrador de las dos clases: mostrar el diagrama del loop completo para que vean cómo cada pieza se engancha con la siguiente. El loop arranca arriba con el Schedule, que es de la clase anterior; decirlo al pasar, sin re-enseñarlo, porque es justamente lo que muestra que las dos mitades son una sola cosa. Los dos bullets de arco y piezas quedan de apoyo visual y se leen de corrido, o directamente se saltean: el mapa de la slide 1.3 ya los ordenó y no hace falta repetirlos uno por uno. El trabajo de esta lámina es el diagrama, que muestra las piezas enganchadas y corriendo solas. Cerrar con las dos frases ancla: la de la Skill ("enseñá una vez") y el gancho completo, dicho en voz alta: "Acaban de automatizar un reporte que les iba a comer la mañana de cada lunes. ¿Qué otra tarea recurrente podrían delegarle a su propio Faro?". Dejar esa pregunta en el aire y no contestarla acá: la lámina que sigue la contesta con la consigna concreta. Tiempo objetivo: ~5 min + Q&A (candidato a recortar a ~3 min: los dos bullets de prosa duplican el mapa de 1.3 y el peso de la lámina está en el diagrama).
+
+- **Lámina "El mismo archivo, ya formateado"** (ex 2.3; 2026-07-31): el presentador pidió una lámina que introdujera qué es un `.md` y que mostrara, en una sola imagen, el texto plano y su representación visual. La decisión fue **fusionar** esta lámina con la 2.2 ("Cómo se escribe un .md") en una sola, **2.2 "Qué es un .md: el texto y lo que se ve"**, con un único bloque ASCII de dos paneles lado a lado. La Sección 2 bajó de 4 a 3 láminas y de 6 a 3 min en este par. Su bloque ASCII, su `ascii-note`, sus Sources y sus Speaker notes quedan archivados enteros acá para reponerla tal cual si el par vuelve a partirse. Fuente: draft del 2026-07-31, slide 2.3.
+
+
+  **Content original:**
+
+- El mismo texto, abierto en cualquier visor de Markdown:
+
+```ascii
++------------------------------------------------+
+|  INFORME MENSUAL DEL EQUIPO                    |  <- "#" = titulo
+|  Mayo 2026 · Norte · Centro · Sur              |
+|                                                |
+|  Resumen                                       |  <- "##" = subtitulo
+|   • La region Norte sube 3,1% contra           |  <- "-" = viñeta
+|     abril.              (** = negrita)         |
+|   • Centro presenta su cierre el jueves.       |
+|                                                |
+|  +--------+---------+-----------+              |
+|  | Region | Ventas  | Variacion |              |  <- "|" = tabla
+|  | Norte  | $4,21 M | +3,1%     |              |
+|  +--------+---------+-----------+              |
++------------------------------------------------+
+```
+<!-- ascii-note:
+intent: mostrar el archivo .md de la slide anterior ya renderizado (título grande, subtítulo, viñetas, negrita, tabla con bordes), con flechas laterales que conectan cada elemento visual con la marca de sintaxis que lo produce.
+emphasize: la correspondencia marca -> resultado (# -> título, - -> viñeta, ** -> negrita, | -> tabla); que es el MISMO archivo de la slide anterior.
+labels: documento renderizado a la izquierda; a la derecha, la marca de sintaxis que genera cada elemento.
+-->
+
+- Las marcas se convierten en formato: títulos, viñetas, negrita, tabla.
+- **Metadata (header YAML)**: declara *qué es* el archivo y *cuándo* usarlo. Vuelve con las Skills (sección 4).
+- La **lingua franca** del mundo LLM: el modelo lee texto. Portable y versionable.
+
+  **Sources originales:**
+
+- corpus/agentic-ai-deck.zip.md, "Markdown is the lingua franca"; definición de Skill (SKILL.md con YAML frontmatter: name + description; "Description drives triggering — semantic, not keyword").
+- "corpus/mision - auto.zip.md", "mismo estándar SKILL.md" entre Cowork y Codex (Cowork vs Codex).
+
+  **Speaker notes originales:**
+
+El remate del par: el archivo de la slide anterior, ahora formateado. Recorrer la correspondencia con el diagrama: el `#` se volvió título, los `-` viñetas, los asteriscos negrita, las barras una tabla con bordes. Si hay conexión, mejor en vivo: abrir el archivo en un visor de Markdown y alternar entre fuente y render. La idea a transmitir: el modelo lee texto, y cuanto menos formato opaco haya entre el contenido y el modelo, mejor trabaja. Por eso es portable y versionable; el mismo estándar funciona entre herramientas. Presentar la metadata (header YAML entre `---`) como la etiqueta del frasco: dice qué es el archivo y cuándo usarlo. La `description` de una Skill cumple esa función (activación semántica, no por palabra clave; sección 4). La próxima slide baja esto a la práctica: en qué formato conviene trabajar. Tiempo objetivo: ~3 min.
+
+
+- **Lámina "Un SKILL.md por dentro"** (ex 4.4; 2026-07-31): el presentador pidió borrarla y la Sección 4 queda en tres láminas (4.1 Qué es una Skill, 4.2 desde el panel, 4.3 desde el chat), a la espera de una lámina nueva de catálogo de skills que todavía está eligiendo. El bloque ASCII de la anatomía del `SKILL.md` y su `ascii-note` quedan archivados enteros acá para reponerla tal cual si cambia de idea. Fuente: draft del 2026-07-31, slide 4.4.
+
+  Content original: "Un `SKILL.md` por dentro: **metadata** arriba, **instrucciones** abajo. Es el `.md` con metadata de la sección 2." · "**Metadata:** `name` identifica; `description` **decide cuándo se activa** (semántico, no por palabra clave)." · "**Cuerpo:** Markdown común, los pasos que sigue el agente." Sources originales: corpus/agentic-ai-deck.zip.md, definición de Skill (SKILL.md con YAML frontmatter: name + description; "Description drives triggering — semantic, not keyword"); "corpus/mision - auto.zip.md", la Skill `reporte-semanal` (entrada `fuentes/`, consolida por empresa, estructura fija, sufijo `-new`). Speaker notes originales: slide-ejemplo que aterrizaba la anatomía de una Skill y el beat de archivos `.md` + metadata de la sección 2; el punto a fijar era que el sistema lee la `description` para decidir si la Skill aplica al pedido (activación semántica). Tiempo objetivo original: ~3-4 min.
+
+```ascii
++--------------------------------------------------------------+
+| ---                                                          |  <-- METADATA / HEADER (YAML)
+| name: reporte-semanal                                        |      "que es" + "cuando se activa"
+| description: Genera el pulso semanal de mercado a partir     |
+|   de la carpeta fuentes/ de la semana. Usar cuando pidan     |
+|   "reporte semanal" o "pulso de la semana".                  |
+| ---                                                          |
++--------------------------------------------------------------+
+| # Reporte semanal                                            |  <-- CUERPO (Markdown)
+|                                                              |      "que hace": las instrucciones
+| 1. Leé TODOS los archivos de fuentes/ y consolidá           |
+|    por empresa.                                              |
+| 2. Generá el reporte con esta estructura exacta...          |
+| 3. Guardá con sufijo -new (no pises el original).           |
++--------------------------------------------------------------+
+```
+<!-- ascii-note:
+intent: mostrar la anatomía de un SKILL.md; un bloque de metadata (YAML frontmatter: name + description) arriba y el cuerpo de instrucciones en Markdown abajo. Refuerza el beat de archivos .md/metadata de la sección 2 (Knowledge & Output).
+emphasize: la separación visual en dos zonas; METADATA/HEADER (name, description; "qué es / cuándo se activa") vs CUERPO (las instrucciones; "qué hace"); que la `description` dispara la Skill.
+labels: zona superior = metadata/header (YAML, name + description); zona inferior = cuerpo (instrucciones en Markdown); etiquetas laterales "cuándo se activa" y "qué hace".
+-->
+
+- **Banner ASCII "DEMO TIME"** (ex 1.5, después 1.4; 2026-07-31): la lámina dejó de ser un corte a demo en vivo y pasó a ser una lámina de captura (`cowork.png`), así que el banner perdió su función. Queda archivado entero con su `ascii-note` por si vuelve una placa de corte a demo en alguna otra parte del deck. Fuente: draft del 2026-07-31, slide 1.4.
+
+```ascii
+   __________________________________________
+  /                                          /|
+ /            >   D E M O   T I M E          / |
+/__________________________________________/  |
+|                                          |   |
+|     [ Pasamos a la app de Cowork ]       |  /
+|__________________________________________| /
+|__________________________________________|/
+```
+<!-- ascii-note:
+intent: tarjeta/banner de "DEMO TIME" como señal visual fuerte al tope de la slide, para marcar el corte de conceptos a demo en vivo sobre la app.
+emphasize: el texto grande "> DEMO TIME"; sensación de cartel/placa (no un diagrama de flujo); que abajo se lee "pasamos a la app de Cowork".
+labels: banner DEMO TIME; subtítulo "Pasamos a la app de Cowork".
+-->
+
+- **Lámina "La nueva habilidad base"** (ex 1.2, 2026-07-31): el presentador pidió borrarla y plegar la analogía del Excel en **1.1 "Cowork, de propósito general"**, donde hoy vive como bullet con la misma atribución (encuadre de analistas y de la industria, NO de Anthropic) y con su fuente, el ensayo "Claude Code is the New Excel". Las Speaker notes originales (las cuatro décadas de Excel, el cuidado de atribución, el cierre sobre los alumnos de management) se fundieron en las de 1.1. El diagrama no pasó a 1.1 porque esa lámina ya lleva una directiva `<!-- generate-image -->` y no puede cargar las dos cosas; queda archivado acá completo y se repone en lámina si el presentador lo pide. Fuente: draft del 2026-07-31, slide 1.2.
+
+```ascii
+TRABAJO DE OFICINA: la herramienta de proposito general
+
+ ~40 anios                              ahora
++----------------------+    ===>    +-----------------------------+
+| EXCEL                |            | HERRAMIENTAS AGENTICAS      |
+| lingua franca del    |            | Claude Code  (developers)   |
+| trabajo de oficina   |            | Cowork       (knowledge     |
+| (sin escribir codigo)|            |               worker)       |
++----------------------+            +-----------------------------+
+ la habilidad base de ayer           la nueva habilidad base
+```
+<!-- ascii-note:
+intent: encuadrar el "superpoder" de Cowork como herramienta de propósito general del knowledge worker, usando la analogía Excel (40 años, habilidad base de oficina) -> herramientas agénticas (Claude Code para developers, Cowork para knowledge workers) como la nueva habilidad base.
+emphasize: la flecha temporal de Excel (ayer) a las herramientas agénticas (ahora); el paralelo Claude Code=developers / Cowork=knowledge worker; que la analogía Excel es encuadre de industria, no claim oficial.
+labels: dos cajas; EXCEL (lingua franca, sin escribir código) a la izquierda; HERRAMIENTAS AGENTICAS (Claude Code = developers, Cowork = knowledge worker) a la derecha; pie "habilidad base de ayer" -> "nueva habilidad base".
+-->
+
+- **Detalles internos de Claude Code** (Plan mode, slash commands completos, project-directory skills, config de `/agents`, dynamic workflows, las dos misiones hands-on basadas en Code, árboles `~/.claude/...`): fuera de foco por diseño de esta charla (companion funcional/alto nivel). Claude Code aparece solo como contraste en la Sección 1 (Claude Cowork). Fuente: corpus/agentic-ai-deck.zip.md (Code-related slides preservadas pero marcadas fuera de foco).
+- **Comparación detallada Cowork vs Codex** (las dos tablas y el re-solución completa de Codex): disponible en el corpus para un ángulo "vs la alternativa", pero excluida para no diluir el foco en *usar* Cowork. Podría incorporarse como un slide opcional si el presentador lo pide en Review. Fuente: "corpus/mision - auto.zip.md" (cowork-vs-codex).
+- **`buscar-accion` con Claude in Chrome / web_fetch a Yahoo Finance** como tema técnico propio: mencionado de pasada en el loop completo (Conclusions) pero no desarrollado como slide, para mantener el nivel alto. Fuente: "corpus/mision - auto.zip.md" (M2).
+- **Auto memory** como concepto separado: absorbido dentro de Projects (la memoria es una de las tres capas del Project) en lugar de un slide propio, para no fragmentar el básico. Fuente: corpus/agentic-ai-deck.zip.md (Auto memory 3.7).
+- **Framing "sideway" de los archivos MD** (round 4): la ex-slide "(Sideway) Archivos MD y metadata" dejó de ser un aparte y se expandió a un beat de enseñanza propio, hoy la **Sección 2 (Knowledge & Output)**: cómo se escribe un `.md`, el mismo archivo formateado y el hábito de iterar en `.md` y exportar al final; la nota original "esto es un sideway de alto nivel — es contexto, no el plato principal" se retiró porque el presentador lo promovió a contenido central. Fuente: draft round 3, slide 3.2.
+- **Título/encuadre original del roadmap** (round 4): la ex-slide 2.2 "Los bloques de Cowork: cada problema, una pieza" codificaba el arco viejo (solo bloques de Cowork, empezando en "un prompt/chatear" como bloque de Cowork). Reescrita como la actual **1.3 "El mapa: piezas que se apilan"** con el arco completo (chat → conectores → tareas programadas → Cowork → avanzado) y marcadores "(visto)" / "estamos acá"; tras el split del 2026-07-31, los tres bloques "(visto)" de abajo son los de la clase anterior. Los pares problema↔bloque originales de Instrucciones/Projects/Skills/Connectors/Schedule/Live Artifacts se conservan (reformulados) en el diagrama nuevo. Fuente: draft round 3, slide 2.2.

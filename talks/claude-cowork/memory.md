@@ -1,7 +1,7 @@
 # memory.md — claude-cowork
 
-**Current step:** 4 — Draft (reabierto 2026-07-31) awaiting_presenter
-**Awaiting:** 2026-07-31 — procesadas las rondas 6 a 10 de feedback y corridos **Polish + Render (html-strict)**. El deck está en **23 láminas / 61,0 min** contra un bloque de 60. Awaiting: el minuto de más, la lámina de catálogo de skills, y si pasamos a Learnings. Detalle de las rondas 8-10 y del Polish más abajo. Antes, la 7ª ronda (1 ítem: la 2.3 reenfocada a **"Iterar en .md"**, con diagrama rediseñado a bucle) y la 6ª ronda de feedback (5 ítems: resaltado del lead en 1.3; 1.4 solo imagen; fusión de las dos láminas del `.md` en 2.2; lámina nueva 4.2 «Cómo se usa una Skill»; Conclusions.1 borrada). **La duración cerró en 58,0 min contra el bloque de 60** — el problema de tiempo quedó resuelto y hay ~2 min de aire. Polish y Render **pendientes** (no se corrieron esta ronda). Awaiting: la lámina de catálogo de skills, si re-corremos Polish + Render, y si pasamos a Learnings.
+**Current step:** 7 — Render (completo, 2026-08-01, 4a corrida del dia) awaiting_presenter
+**Awaiting:** 2026-08-01 — ronda de feedback de la Seccion 3 aplicada (3.2 imagen sola, 3.5 solo el bloque de ejemplo) y **Polish + Render sin regenerar ningun diagrama**. Deck en 24 laminas / 31 en el render / 1,6 MB. Awaiting: (a) confirmar el titulo «Metodo 3: Crear grabando una Skill»; (b) si pasamos a Learnings (paso 8).
 
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork/
@@ -36,6 +36,7 @@ Charla nueva sobre Claude Cowork. En espíritu, similar a la charla existente de
 
 ### Decisiones permanentes
 
+- **El tiempo dejó de ser restricción (2026-08-01, instrucción explícita del presentador).** Los 61,0 min contra el bloque de 60 se dan por buenos; los recortes de reserva (5.3, y 3.5 de 3 a 2) quedan anulados y no se aplican. Sumar láminas ya no está bloqueado por presupuesto de tiempo.
 - Los campos `Presenter feedback` se dejan **vacíos**; el registro de feedback va solo a `config/feedback-backlog.md`.
 - ~~El deck cierra en la lámina de gobernanza (Conclusions.3)~~ — **revertido el 2026-07-31 por instrucción explícita del presentador**: las conclusiones cierran la charla y la placa de la misión va última, porque después de la misión termina la clase. Orden interno de Conclusions sin cambios: loop de Faro → wrap-up → cuidados.
 - **Faro solo en la misión.** Desde el 2026-07-31 las láminas de enseñanza (secciones 1-5) usan un hilo genérico, **el informe mensual del equipo** (Project "Informe mensual del equipo" · carpeta `Documentos/Informe-Mensual` · Skill `informe-mensual` sobre `notas/`). Faro sobrevive solo en Conclusions.1 (el loop) y en la Sección 6 (la placa), donde es la misión y no un ejemplo.
@@ -282,3 +283,101 @@ El registro paso a paso completo (Steps 1-8, todas las rondas de Review, Polish,
   - **1.2 «De chatear a delegar»** quedó en `content-image` para honrar el hint de layout y no perder el diagrama; la tabla chatear/delegar sobrevive como cuatro hechos etiquetados. Si se prefiere la grilla comparativa, hay que sacrificar la imagen.
   - Sigue abierto: **3.2 con dos capturas apretadas**; posible solape entre `instructions.png` (3.4) y `context.png` (3.2); idioma mezclado en las capturas (`instructions.png` en inglés, las de la Sección 4 en español).
   - **La crítica visual ciega automática no se lanzó** esta corrida; los cuatro diagramas los revisó el orquestador a mano sobre el PNG.
+
+
+---
+
+## 2026-08-01 — Plugin 0.72.0 + regeneración end-to-end
+
+- Status: complete
+- **Los tres requerimientos que salieron de este Talk entraron al plugin** (`0.72.0`, commit `1cf93c2`). Los pedidos quedaron escritos en la raíz del repo: `req-layout-cci.md`, `req-highlights-arriba.md`, `req-citext-vacio.md`.
+  - `layout` dejó de ser exclusivo de `content-image`: vale en `content+cards+image`, `process` y `quiz`. `image-top` sigue siendo solo de `content-image`.
+  - `highlights[].position` (`bottom` default / `top`), **por entrada**, no por lámina. El de arriba está en pantalla desde que abre la lámina; el de abajo sigue llegando en el último clic.
+  - La lámina de **imagen sola** es de primera clase: `content-image` sin `lead` ni `facts` no emite la columna y la imagen va a ancho completo. El mismo guard se aplicó a `code-example`, `callout`, `single-point`, `quiz`, `content-text` y `pros-cons`.
+  - **Bonus, no pedido:** se arregló el *discriminator walk* del catálogo, que nombraba solo ~14 de 25 templates. Señales nuevas (`date_labels`, `is_voiced`, `is_question`, `polarity`, `one_metric`, `is_cta`, `image_only`) y dos bugs de orden — entre ellos el que mandaba *cualquier* set etiquetado con imagen a `content-image`, que es lo que disolvía las tarjetas en `facts`.
+- **Hints anotados en `draft.md`** (se copian a `final.md` en cada Polish):
+  - **1.2** — `template: content+cards+image` + `layout: image-left` pineados, más la recomendación de tratar la cita de Anthropic como `highlights` con `position: top`. El `template` está pineado **a propósito**: la lámina lleva una tabla y el discriminador manda las tablas a `comparison`, que no tiene ranura de imagen y perdería el diagrama.
+  - **1.3** — nota de que la línea "Idea clave" es el `lead`, no un highlight de cierre.
+  - **1.4** — nota de que es lámina de imagen sola y que **no** hay que forzarla a `image-grid` (el parche del 2026-07-31 ya no hace falta).
+  - **2.2** — la recomendación del presentador de usar el estilo `code-example`, revisada contra 0.72.0 y **todavía sin salida limpia**: ese template sigue sin ranura de imagen. Las tres opciones siguen abiertas.
+- **Cambios de clasificación** al rehacer el FILL de cero (5 láminas): 1.2 y 3.4 y 6.1 `content-image` → `content+cards+image` (recuperan el ícono por concepto); 1.4 `image-grid` → `content-image` (revertido el parche); 5.2 `concept-breakdown` → `icon-list` (su primera línea es `lead`, y `concept-breakdown` no tiene esa ranura). `layout` en 3 láminas (1.2 y 6.1 `image-left`, 1.3 `image-top`) y `position: top` en 3 (1.2, 4.1, 3.3).
+- Polish: **0 renders nuevos**, los 8 bloques reusados por digest; `gc` limpio. Render: 30 láminas, 2,6 MB.
+- Pending open questions:
+  - **Falso positivo del propio plugin:** `audits/field_coverage.py` avisa `ignored: layout` en `content+cards+image` porque su tabla `_CONSUMES` no se actualizó en 0.72.0. El renderer **sí** lo consume (`content-cards-image.j2` → `m.imgpos(s)`; `theme.css` `.cci.imgleft`). Es advisory, no bloquea. Mismo caso en `process` y `quiz`.
+  - **`layout: image-left` en 6.1** es juicio del FILL, no pedido del presentador. Fácil de revertir.
+  - **1.1** pasó de 4 tarjetas a 3 + una cita (`is_voiced`): la línea de Anthropic es fuente, no concepto paralelo. Si el presentador la quiere de vuelta como tarjeta, son dos líneas.
+  - **4.5** quedó con 6 tarjetas al lado de la imagen; el recorte natural es bajar "no tipear contraseñas" a `highlights` `kind: important`.
+  - **3.3** dispara `is_question` y podría ser `quiz`, pero ese template no tiene dónde poner los seis bloques etiquetados. Quedó `concept-breakdown` con la pregunta arriba. Si se quiere quiz de verdad, hay que partirla.
+
+---
+
+## 2026-08-01 (2a sesion) — Lamina nueva del directorio + Polish + Render html-strict
+
+- Status: complete
+- **Decision permanente nueva: el tiempo dejo de ser restriccion.** Instruccion explicita del presentador. Los recortes de reserva anotados (5.3, y 3.5 de 3 a 2) quedan **anulados** y no se aplican.
+- **Lamina nueva `## 3. Antes de escribir una: el directorio`** en la Seccion 4, entre «Como se usa una Skill» y las tres de metodo. Cierra la «lamina de catalogo de skills» que estaba abierta desde el 2026-07-30.
+  - Se elegio el **directorio interno de la app** (Personalizar > Habilidades > "+" > Explorar habilidades > Instalar) mas las **cuatro habilidades incorporadas** (Excel, Word, PowerPoint, PDF), en vez de skills.sh / anthropics-skills / Vercel: es lo que mas le sirve a una audiencia de negocios y no exige linea de comandos.
+  - 5 tarjetas + lead + cierre. Sin ASCII y sin `generate-image` **a proposito**: no hay captura del directorio en `images/`. Queda como watch item sacar la captura o mostrarlo en vivo.
+  - Fuentes: support.claude.com/14328846 (ruta, boton Install, view-only, skills compartidas de la organizacion en Team/Enterprise) y support.claude.com/12512180 (las 4 incorporadas, requisito de Code execution, disparo automatico con el ejemplo del Q3). Ambas verificadas el 2026-08-01.
+  - **Riesgo anotado:** los rotulos de UI en espanol son traduccion de la doc en ingles, sin leer la app en espanol. Confirmar antes de la clase.
+- **La Seccion 4 pasa de 5 a 6 laminas** y las tres de metodo se renumeran a `## 4.` / `## 5.` / `## 6.`. Se arreglaron dos referencias cruzadas internas que la renumeracion rompia (Sources de la del panel: "4.5" -> "4.6"; ascii-note de Grabar: "4.3" -> "4.4").
+- **Drift detectado entre `draft.md` y el `final.md` anterior.** La lamina del panel (hoy 4.4) habia perdido en `draft.md` su bullet de lead y su captura `skills-panel.png` — el `final.md` del 2026-08-01 00:10 todavia las tenia. Al re-derivar, la lamina quedo **solo con el diagrama**: el bloque ASCII dejo de ser documentation-only y se renderizo por primera vez como `s4-4-1-crear-skill-desde-el-panel.svg`. `skills-panel.png` quedo **sin referenciar**. Si la captura tiene que volver, es un bullet de feedback.
+- **Polish (6a corrida).** 10 bloques escaneados: 9 render-driving + 1 documentation-only (`s3-5-1`). **1 render nuevo** (`s4-4-1`, las 4 entradas del menu Agregar; las tres validaciones en verde, revisado a ojo sobre el PNG), **1 renombre** (`s4-5-1` -> `s4-6-1`, se conservo el SVG aprobado y solo se re-estampo, asi que el dibujo no cambio un pixel), **7 reusados por digest**. `gc` aplicado: el triplete `s4-5-1` viejo se movio a `_to_delete/images-viejas-2026-08-01/`. `rescue-open` sin nada que rescatar; 32 campos `Presenter feedback` strippeados.
+- **`final.md` ahora referencia `.svg`, no `.png`.** Confirmado sobre el archivo generado: los 9 diagramas salen como `images/<stem>.svg` y las 5 capturas siguen en `.png`. Los `.png` de los diagramas quedan en disco solo como companion para el camino `.pptx` (Keynote no embebe SVG). Es el comportamiento nuevo de 0.72.0.
+- **Render html-strict (6a vuelta): 31 laminas, 1,8 MB** (bajo de 2,6 MB porque los diagramas ahora van como vector inline y no como PNG en base64). **Verificado en el HTML: los 9 SVG generados estan inlineados como vector** (9 stamps `talksmith-ascii-sha256` presentes) y **cero diagramas rasterizados**; los 8 `data:image/png` que quedan son las capturas y el logo.
+- **FILL rehecho sobre el baseline aprobado**, no de cero. Una sola reclasificacion: la del panel, `content+cards+image` -> `content-image` imagen-sola (se quedo sin tarjetas ni lead). La lamina nueva del directorio salio **`icon-list`** (5 items etiquetados con cuerpos largos + lead), con el cierre "Regla practica" como `highlights` `kind: takeaway`. Las otras 29 entradas se copiaron tal cual. Las tres auditorias (`degenerate_enum`, `field_coverage`, `image_coverage`) en **ok**.
+- Files created/modified: `draft.md` (+ backup `draft.bak-catalogo.md`), `final.md`, `output/slide-model.json`, `output/html/index.html`, `images/` (2 tripletes nuevos, 1 viejo movido a `_to_delete/`), `memory.md`.
+- Pending open questions:
+  - **Dos bullets de `Presenter feedback` sin procesar en `draft.md`**, anteriores a esta sesion: en 3.5, borrar las Instrucciones completas y dejar solo el texto de ejemplo; en 4.4, falta una lamina indice que liste las 3 formas de crear una Skill. Ninguno se aplico.
+  - **`skills-panel.png` quedo huerfana** tras el drift descrito arriba. No se borro.
+  - **La captura del directorio no existe.** Sacarla o mostrar el directorio en vivo.
+  - **Nomenclatura en espanol de la lamina nueva sin verificar** contra la app.
+  - Siguen abiertas las de la corrida anterior: el icono `person_4` que no resuelve, la numeracion de divisorias por posicion (Conclusions sale 06), las laminas densas 4.5 / 5.1 / 3.3, y el idioma mezclado entre capturas.
+  - **La critica visual ciega automatica no se lanzo**; el diagrama nuevo lo reviso el orquestador a mano sobre el PNG.
+
+---
+
+## 2026-08-01 (3a sesion) — Reescritura de la Seccion 4 + Polish + Render
+
+- Status: complete
+- Ronda de 5 items del presentador, toda sobre la Seccion 4:
+  1. **La 4.3 se reemplazo entera.** Salio «Antes de escribir una: el directorio» (escrita horas antes en esta misma jornada) y entro **`## 3. Tres formas de crear una Skill`**, una lamina indice con **solo tarjetas**: lead de una linea, 3 tarjetas (desde el panel / desde el prompt / grabando la pantalla) y cierre en la compuerta de guardar-habilitar. Cierra el bullet de feedback que estaba abierto desde el 2026-08-01 00:25 («Falta un slide que explique que hay 3 formas de crear un skill y listarlas»).
+  2. **La 4.5 «Metodo 2» se reescribio entera.** El presentador senalo que la lamina no ensenaba lo que decia su titulo: mostraba el menu "+" del chat y la trampa del Save, no la creacion conversacional. Ahora son 5 tarjetas con el flujo real: se describe lo que se quiere > Claude pregunta por el proceso > se le suben materiales > Claude escribe el `SKILL.md` y empaqueta > se prueba y aparece «Usando [nombre]». **Fuente nueva y verificada el 2026-08-01:** claude.com/resources/tutorials/how-to-create-a-skill-with-claude-through-conversation (la URL de support 12599426 redirige ahi). Anotado que support 12512198 **no** documenta el camino conversacional, asi que la procedencia de cada afirmacion queda separada.
+  3-5. **Renombres:** «Metodo 1: Crear desde el panel», «Metodo 2: Crear desde el prompt», «Metodo 3: Crear grabando una Skill».
+- **El titulo del Metodo 3 se normalizo.** El presentador escribio «Metodo 3: Crear grabando una skill una Skill», con una repeticion evidente de tipeo. Se aplico «Crear grabando una Skill», que hace juego con los otros dos. **Queda por confirmar.**
+- **Nada se borro en silencio.** Van a `Cut material`, verbatim y con nota de fecha y motivo: (a) la lamina entera del directorio — con el aviso de que, fuera del deck, el directorio de la app y las cuatro habilidades incorporadas ya no aparecen en ninguna parte de la charla; (b) el material de la ex 4.5 (bullet del menu "+", la captura `skills-menu-chat.png` y el bullet de la trampa del Save).
+- **`skills-menu-chat.png` quedo sin referencia.** No se borro. Candidata natural a reponerse en la 4.2, que hoy explica la invocacion sin mostrar interfaz. Igual que `skills-panel.png`, huerfana desde la corrida anterior.
+- Referencias cruzadas arregladas en 9 lugares (Narrative arc, Goal de la Seccion 4, notes de 4.1 / 4.4 / 4.6, el bullet «Donde» de 4.6, y dos entradas de Open questions que quedaron marcadas [SUPERADA]).
+- **Polish (7a corrida): 0 renders nuevos**, los 9 bloques reusados por digest; `gc` limpio. `final.md` sigue referenciando **9 diagramas en `.svg`** y 4 capturas en `.png`.
+- **Render html-strict (7a vuelta): 31 laminas, 1,7 MB.** Los 9 SVG inlineados como vector, cero diagramas rasterizados (7 `data:image/png` = capturas + logo). Las tres auditorias del modelo en **ok**.
+- **FILL — dos clasificaciones nuevas.** La lamina indice salio **`card-row`** y no `icon-list`: el discriminador puro apuntaba a `icon-list` por el largo de los cuerpos, pero `icon-list` renderiza filas y no tarjetas, y el pedido del presentador fue explicito («idealmente solo con cards»). **Recomendacion pendiente: pinear `<!-- template: card-row -->` bajo el `## 3.`** para que el proximo FILL no re-derive `icon-list`. La 4.5 salio **`process`** (5 tarjetas numeradas): perdio la imagen, asi que `content-image` ya no aplicaba, y los pasos forman una secuencia real.
+- Files created/modified: `draft.md` (+ backup `draft.bak-seccion4.md` en el contenedor), `final.md`, `output/slide-model.json`, `output/html/index.html`, `memory.md`, `config/feedback-backlog.md`.
+- Pending open questions:
+  - **Confirmar el titulo del Metodo 3.**
+  - **Pinear `template: card-row` en la 4.3** o aceptar que el proximo FILL la pase a `icon-list`.
+  - **Bullet de `Presenter feedback` sin procesar en la 3.5** (Seccion 3): borrar las Instrucciones completas y dejar solo el texto de ejemplo. Sigue abierto, no se toco.
+  - **Dos capturas huerfanas:** `skills-panel.png` y `skills-menu-chat.png`.
+  - **`images/create-skill.png`, sin usar, parece mejor que `skills-panel.png`**: muestra el panel con el menu Add desplegado y sus **cuatro** entradas, incluida «Record your screen», que es justo lo que la captura del 2026-07-21 no alcanza a mostrar. Dos peros: la 4.4 hoy no lleva ninguna imagen en su Content, y `create-skill.png` esta en ingles, asi que entra en el problema abierto de idioma mezclado entre capturas.
+  - Siguen abiertas las anteriores: icono `person_4` sin resolver, numeracion de divisorias por posicion, laminas densas 4.5-vieja / 5.1 / 3.3, idioma mezclado entre capturas.
+
+---
+
+## 2026-08-01 (4a sesion) — Feedback Seccion 3 + incidente de sincronizacion + Polish/Render
+
+- Status: complete
+- **Feedback aplicado (2 items, Seccion 3):**
+  - **3.2 «Conceder una carpeta y ver el contexto» quedo IMAGEN SOLA.** El bullet decia «De solo la images/context.png». Se interpreto primero como "de las dos capturas, quedate con context.png" y se dejaron los dos bullets de texto; **el presentador corrigio editando el archivo a mano**: saco todo el texto y dejo unicamente `images/context.png`. Version final: `content-image` sin `lead` ni `facts` — la forma imagen-sola de primera clase de 0.72.0, a ancho completo. El recorrido (explorador de archivos, alcance de la carpeta, mensaje de seguridad) vive entero en las Speaker notes. **Leccion: cuando el presentador nombra una sola imagen, el default es imagen sola.**
+  - **3.5 «Un ejemplo de Instrucciones» quedo solo con el bloque de ejemplo.** Se borraron la linea de entrada y el bullet de la REGLA DE ORO. Template `code-example` **sin `explanation`**, que con el guard de 0.72.0 colapsa a ancho completo en vez de dejar medio panel vacio. La regla de oro no se perdio: sigue en las Speaker notes.
+- **DECISION PERMANENTE NUEVA: el presentador borro `# Cut material` del `draft.md` y pidio expresamente NO recuperarlo** («esta bien perderlas, no las rescates»). Tambien se vacio el cuerpo de `# Open questions`. **A partir de ahora el material que sale de una lamina se borra, no se archiva** — la convencion de "nunca borrar en silencio, mover a Cut material" queda anulada para este Talk por instruccion explicita.
+- **Incidente de sincronizacion (importante para futuras sesiones en Cowork remoto).** `device_stage_files` **devolvio una copia vieja** de `draft.md`: reporto los bytes correctos del archivo del dispositivo pero el destino en `/mnt/user-data/uploads/` quedo read-only con el contenido de la primera bajada, varias horas anterior. Consecuencia: una ronda de feedback se aplico sobre una base sin la reescritura de la Seccion 4 y hubo que descartarla. **Workaround que funciona: copiar el archivo a un nombre nuevo en el dispositivo (`.transfer-<hhmm>.md`), stagear ESE, y verificar `md5sum` de los dos lados antes de usarlo.** Se uso en las dos ultimas corridas y quedo verificado.
+- **Polish (9a corrida): 0 renders**, por pedido explicito del presentador («pasamos a polish pero no regeneramos las imagenes»). Los 9 bloques reusados por digest; `gc` sin huerfanos.
+- **`final.md`: 12 refs de imagen — 9 diagramas en `.svg` + 3 capturas en `.png`** (`cowork.png`, `context.png`, `instructions.png`). Salieron del deck `project.png` (3.2) y `skills-menu-chat.png` (ex 4.5); las dos siguen en `images/`, sin referencia.
+- **Render html-strict: 31 laminas, 1,6 MB.** 9 SVG inlineados como vector, 6 `data:image/png` (capturas + logo). Auditorias `degenerate_enum` / `field_coverage` / `image_coverage` en **ok**.
+- **Tres laminas quedaron en forma imagen-sola:** 1.4 «Donde se empieza en Cowork» (`cowork.png`), **3.2** (`context.png`) y 4.4 «Metodo 1: Crear desde el panel» (el diagrama SVG).
+- Files created/modified: `draft.md` (editado por el presentador + los dos items de feedback), `final.md`, `output/slide-model.json`, `output/html/index.html`, `memory.md`. Backup de rescate: `draft.rescue-backup-0206.md`.
+- Pending open questions:
+  - **Confirmar el titulo «Metodo 3: Crear grabando una Skill»** (el pedido original traia una repeticion de tipeo).
+  - **`4.3` esta pineada a `card-row` a mano en el FILL, no en el archivo.** El discriminador la manda a `icon-list` por el largo de los cuerpos. Si no se escribe `<!-- template: card-row -->` bajo el `## 3.`, un FILL futuro la va a cambiar.
+  - **Dos capturas sin referencia:** `project.png` y `skills-menu-chat.png`.
+  - `images/create-skill.png`, sin usar, muestra el panel con las cuatro entradas del menu Add — mejor que `skills-panel.png` para la 4.4, pero esta en ingles.
+  - Siguen abiertas: icono `person_4` sin resolver, numeracion de divisorias por posicion, idioma mezclado entre capturas.
