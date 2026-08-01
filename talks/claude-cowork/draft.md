@@ -80,15 +80,16 @@ Aterrizarlo en la audiencia: son alumnos de management y la mayoría no programa
 
 ## 2. De chatear a delegar
 
-<!-- template: content+cards+image -->
+<!-- template: value-columns -->
 <!-- layout: image-left -->
-<!-- Estilo pedido por el presentador. Desde el plugin 0.72.0 las dos cosas conviven:
-     `layout` ya no es exclusivo de content-image, así que la tabla chatear/delegar se queda
-     como CARD SET (una tarjeta por fila, cada una con su ícono) y el diagrama va a la
-     izquierda. Antes había que elegir: content-image daba imagen-izquierda pero degradaba
-     las tarjetas a `facts` sin ícono.
-     El `template:` está pineado a propósito: esta lámina lleva una tabla, y el discriminador
-     manda las tablas a `comparison` — que no tiene ranura de imagen y perdería el diagrama.
+<!-- Desde el plugin 0.75.0 esta lámina ya no tiene que elegir. `value-columns` (el ex
+     `comparison`, renombrado sin alias) acepta `image`, `layout` y `lead`, así que la tabla
+     chatear/delegar se renderiza como GRILLA de dos columnas alineadas —que es lo que la
+     lámina enseña— y el diagrama va a la izquierda.
+     Historia, para que nadie lo revierta: hasta 0.74.1 `comparison` no tenía ranura de
+     imagen, así que acá estaba pineado `content+cards+image` y cada fila de la tabla
+     colapsaba a una tarjeta con las dos columnas concatenadas dentro del mismo `body`.
+     La grilla al lado de una imagen quiere <=3 columnas x <=5 filas: esta es 3 x 4, entra.
      RECOMENDACIÓN para el FILL: la línea de Anthropic es una cita que ENCUADRA la lámina,
      no un cierre → `highlights[].position: "top"` (kind: quote). La bajada "Lo que cambia
      ahora es el rol" es el `lead`. -->

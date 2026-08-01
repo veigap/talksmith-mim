@@ -1,7 +1,7 @@
 # memory.md — claude-cowork
 
-**Current step:** complete — Talk cerrado el 2026-08-01 por instruccion del presentador
-**Awaiting:** nada. El Talk quedo **completo** el 2026-08-01: 24 laminas de contenido, `final.md` y el deck `html-strict` (31 laminas, 1,6 MB) al dia contra el `draft.md` actual, con el plugin en 0.74.1. El paso 8 (Learnings) **no se corrio** — se cerro directo por pedido del presentador. Lo que quedo sin decidir vive en las Pending open questions de la ultima entrada del log; nada de eso bloquea dictar la clase.
+**Current step:** complete — Talk cerrado el 2026-08-01; regenerado con plugin 0.75.0 el 2026-08-01
+**Awaiting:** nada. El Talk sigue **completo** al 2026-08-01: 24 laminas de contenido, `final.md` y el deck `html-strict` (31 laminas) al dia contra el `draft.md` actual, ahora con el plugin en **0.75.0**. El paso 8 (Learnings) **no se corrio** — se cerro directo por pedido del presentador. Lo que quedo sin decidir vive en las Pending open questions de la ultima entrada del log; nada de eso bloquea dictar la clase.
 
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork/
@@ -408,3 +408,19 @@ El registro paso a paso completo (Steps 1-8, todas las rondas de Review, Polish,
   - `skills-panel.png` es del 21 de julio y puede no mostrar la entrada «Graba tu pantalla».
   - Idioma mezclado entre capturas: `instructions.png` en ingles, las de la Seccion 4 en espanol.
   - Tres capturas quedaron en `images/` sin referencia: `project.png`, `skills-menu-chat.png`, `skills-panel.png`.
+
+---
+
+## 2026-08-01 (6a sesion) — Plugin 0.75.0: la lamina 1.2 con tabla + diagrama
+
+- Status: complete
+- **Plugin verificado en 0.75.0** antes de tocar nada (era la precondicion del pedido: con 0.74.1 no tenia sentido seguir).
+- **La 1.2 «De chatear a delegar» pasa de `content+cards+image` a `value-columns`.** El pin ya venia hecho de la sesion anterior en `draft.md` (`<!-- template: value-columns -->` + `<!-- layout: image-left -->`); esta sesion solo lo llevo al render. En 0.75.0 `comparison` se renombro a **`value-columns`** (breaking, sin alias) y gano `image`, `layout` y `lead`, asi que la tabla `factor | Chatear | Delegar` ya no colapsa a tarjetas con las dos columnas concatenadas en el mismo `body`.
+- **Ninguna otra lamina usaba `comparison`**, asi que el rename no obligo a migrar nada mas del modelo.
+- **Step 6 (Polish) — 0 diagramas re-renderizados.** Los 9 bloques ASCII se reusaron por digest (`prepare-render-args` no emitio ningun args file); 1 bloque documentation-only omitido; sidecars sin cambios; `Presenter feedback` limpiado (24 campos H3 + 8 etiquetas de parrafo). El unico delta de `final.md` contra la corrida anterior es la lamina 1.2.
+- **La directiva `generate-image` de la 1.1 quedo sin cumplir otra vez** — la sesion no tiene capacidad de generacion de imagenes. Degrada sin romper, igual que en 0.74.1.
+- **Step 7 (Render html-strict) — 31 laminas, sin warnings en el build.** Auditorias aplicables al modo html en **ok**: `degenerate_enum`, `field_coverage`, `image_coverage`. **Sin aviso de densidad**: la grilla es 3 columnas x 4 filas, dentro del techo de 3x5 que impone `value-columns` al lado de una imagen.
+- **Verificado sobre el HTML generado** (markup + captura del render): la 1.2 sale con `data-kind="value-columns"`, `<div class="compare" style="--cc:3">` con encabezado de 3 columnas y 4 filas alineadas (no tarjetas), `<div class="cmpgrid imgleft">` con `s1-2-1-chat-vs-agente.svg` inline a la izquierda (digest `7714d91a…`), y `<p class="lead">Lo que cambia ahora es el rol: delegar. ¿Que delegamos?</p>`. La cita de Anthropic quedo como highlight `position: top`, segun el hint del FILL.
+- **Nota de entorno:** la sesion corrio en la nube, con el repo traido por el puente de dispositivo. Se devolvieron a disco `final.md`, `output/slide-model.json`, `output/html/index.html` y `memory.md`.
+- **`req-comparison-imagen.md` no existe en la raiz del repo** (estan `req-citext-vacio.md`, `req-highlights-arriba.md` y `req-layout-cci.md`). No bloqueo nada: el requerimiento esta documentado en la memoria del proyecto (`catalogo-tabla-mas-imagen.md`) y en el propio comentario pineado de la lamina.
+- Files created/modified: `final.md`, `output/slide-model.json`, `output/html/index.html`, `memory.md`. `draft.md` sin cambios (read-only desde Step 6).

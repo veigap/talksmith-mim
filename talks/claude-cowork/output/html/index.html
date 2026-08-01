@@ -202,6 +202,9 @@ html.deck-ui .reveal .controls .navigate-left,html.deck-ui .reveal .controls .na
 .procsteps{display:flex;flex-direction:column;gap:1.6cqw}
 .procsteps .steprow p{font-size:2.25cqw}.procsteps .steprow p b{font-weight:800;color:var(--ink)}
 .procmedia .imgph{width:100%}.procmedia .imgph img,.procmedia .imgph svg{width:auto;height:auto;max-width:100%;max-height:38cqw}
+/* the strip is the slide's whole body by default, so it hangs from the bottom edge — but see
+   `.cmpgrid > .compare` below: beside an image it is a *column*, where that `auto` fights the
+   grid's own centring. The rule is conditioned there, not dropped. */
 .compare{margin-top:auto;display:flex;flex-direction:column;gap:1.2cqw}
 .chead,.crow{display:grid;grid-template-columns:repeat(var(--cc,3),1fr);gap:1.6cqw;align-items:center}
 .chead{font-weight:800;color:var(--ink);font-size:2.5cqw;padding-bottom:.6cqw;border-bottom:.4cqw solid var(--card)}
@@ -281,25 +284,27 @@ html.deck-ui .reveal .controls .navigate-left,html.deck-ui .reveal .controls .na
 .highlight.example{color:#0E8A6E}.highlight.note{color:#6E6663}.highlight.quote{color:#8A7E76}
 .highlight.quote p{font-style:italic}
 /* ── body + image compositions ────────────────────────────────────────────────────────────────
-   Four templates pair a body with one supporting image — `content-image` (.ci), its cards
-   sibling (.cci), `process` with a diagram (.procgrid) and an illustrated `quiz` (.quiz-split).
+   Five templates pair a body with one supporting image — `content-image` (.ci), its cards
+   sibling (.cci), `process` with a diagram (.procgrid), an illustrated `quiz` (.quiz-split) and
+   a `value-columns` grid beside a supporting diagram (.cmpgrid).
    Where the image sits is a *composition* choice (the model's `layout`), not a property of the
-   template, so all four share one idiom instead of each inventing its own.
+   template, so all five share one idiom instead of each inventing its own.
 
    `image-left` mirrors the two columns **visually only** — the markup keeps body-then-image, so
    the reading order (and PDF/screen-reader order) is unchanged, and the enumeration itself never
-   flips: facts keep their left-edge dots, cards their icons, steps their numbering, all still
-   left-aligned. Only the column positions swap.
+   flips: facts keep their left-edge dots, cards their icons, steps their numbering, comparison
+   cells their columns, all still left-aligned. Only the column positions swap.
 
    Track sizes flip with them. Grid auto-placement runs in *order-modified* document order, so
-   `order` alone would hand the leading track to the image — and three of these four grids are
+   `order` alone would hand the leading track to the image — and four of these five grids are
    deliberately asymmetric (the wider track belongs to a specific side's content, not to a
    position). Mirroring the template-columns keeps each side the width it had. */
-.imgleft>.citext,.imgleft>.ccicards,.imgleft>.procmain,.imgleft>.quiz-body{order:2}
+.imgleft>.citext,.imgleft>.ccicards,.imgleft>.procmain,.imgleft>.quiz-body,.imgleft>.compare{order:2}
 .imgleft>.imgph,.imgleft>.procmedia,.imgleft>.quiz-media{order:1}
 .cci.imgleft{grid-template-columns:1fr 1.1fr}
 .procgrid.imgleft{grid-template-columns:1.08fr 1fr}
 .quiz.quiz-split.imgleft{grid-template-columns:1fr 1.45fr}
+.cmpgrid.imgleft{grid-template-columns:1fr 1.3fr}
 /* The body column is optional: a slide that is *only* an image (a screenshot the presenter talks
    over, its detail in the speaker notes) drops the column entirely rather than projecting an empty
    one — so the grid must collapse to a single track and let the image use the full width. Same
@@ -320,6 +325,16 @@ html.deck-ui .reveal .controls .navigate-left,html.deck-ui .reveal .controls .na
 .ci.ci-top .lead{max-width:none;margin:0}
 .cci{display:grid;grid-template-columns:1.1fr 1fr;gap:3cqw;align-items:center}
 .ccicards{display:flex;flex-direction:column;gap:1.8cqw}
+/* a value-columns grid beside a supporting diagram. The strip keeps the wider track — it holds a
+   header row plus N aligned cells and is what the slide is *about*; the diagram supports it. The
+   strip stays a grid at half width (columns must still read as columns — collapsing it to one row
+   per cell would undo the whole point), so it only gives up type size and cell padding. */
+.cmpgrid{display:grid;grid-template-columns:1.3fr 1fr;gap:3cqw;align-items:center}
+/* the bottom anchor is for the full-width form only; in a centred grid column it hangs the strip */
+.cmpgrid>.compare{margin-top:0}
+.cmpgrid .chead{font-size:2.2cqw}
+.cmpgrid .crow{font-size:2.05cqw}.cmpgrid .crow>span{padding:1.1cqw 1.3cqw}
+.cmpgrid .imgph img,.cmpgrid .imgph svg{max-height:44cqw}
 .split{display:grid;grid-template-columns:1fr 1.05fr;gap:3cqw;margin-top:auto;align-items:center}
 .explain p{margin:0 0 1.4cqw;font-size:2.5cqw;color:var(--body);line-height:1.35}
 .codebox{background:var(--code-bg);border-radius:2cqw;padding:2.6cqw;font-family:var(--mono);font-size:2.05cqw;line-height:1.55;color:var(--ink);overflow:hidden}
@@ -507,9 +522,11 @@ El gancho de la analogía del Excel va acá, dicho con cuidado. Durante unas cua
 
 Lo que sí es de Anthropic, y conviene citarlo como su framing propio, es "Claude Code para el resto de tu trabajo": que cualquier knowledge worker sienta con Cowork lo que los ingenieros ya sienten con Claude Code. Cowork generaliza algo que ya funcionó primero con developers.
 
-Aterrizarlo en la audiencia: son alumnos de management y la mayoría no programa; por eso Cowork les sirve. Después de este beat viene la mecánica, cómo se delega. Tiempo objetivo: ~3 min.</aside></section><section class="slide" data-kind="content+cards+image"><div class="stage">
-<div class="shead"><span class="pill">Claude Cowork</span><h2 class="stitle">De chatear a delegar</h2></div><div class="cbody"><div class="cfit"><div class="highlights hl-top"><div class="highlight quote"><span class="ic"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m248-240 94-162q-5 1-11 1.5t-11 .5q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 21-5.5 41T458-480L320-240h-72Zm360 0 94-162q-5 1-11 1.5t-11 .5q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 21-5.5 41T818-480L680-240h-72ZM376.5-503.5Q400-527 400-560t-23.5-56.5Q353-640 320-640t-56.5 23.5Q240-593 240-560t23.5 56.5Q287-480 320-480t56.5-23.5Zm360 0Q760-527 760-560t-23.5-56.5Q713-640 680-640t-56.5 23.5Q600-593 600-560t23.5 56.5Q647-480 680-480t56.5-23.5ZM680-560Zm-360 0Z"/></svg></span><p><b>Anthropic</b>: Menos una sesión de chat, más asignarle tareas a un colega.</p></div></div><p class="lead">Lo que cambia ahora es el rol: delegar. ¿Qué delegamos? Chatear contra delegar a un agente.</p><div class="cci imgleft"><div class="ccicards">
-<div class="ccard sm fragment fade-up"><span class="ic"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-160v-640l760 320-760 320Zm60-93 544-227-544-230v168l242 62-242 60v167Zm0 0v-457 457Z"/></svg></span><h3>La forma de trabajo</h3><p>Chatear: un mensaje a la vez. Delegar: se describe un resultado.</p></div><div class="ccard sm fragment fade-up"><span class="ic"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M367-487q-47-47-47-113v-140q0-25 17.5-42.5T380-800q15 0 28.5 7t21.5 20q8-13 21.5-20t28.5-7q15 0 28.5 7t21.5 20q8-13 21.5-20t28.5-7q25 0 42.5 17.5T640-740v140q0 66-47 113t-113 47q-66 0-113-47Zm184-42q29-29 29-71v-120H380v120q0 42 29 71t71 29q42 0 71-29ZM160-120v-94q0-38 19-65t49-41q67-30 128.5-45T480-380q62 0 123 15.5t127.92 44.69q31.3 14.13 50.19 40.97Q800-252 800-214v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-266q-64-31-117-42.5T480-320q-57 0-111 11.5T252-266q-14 7-23 21.5t-9 30.5v34Zm260 0Zm0-540Z"/></svg></span><h3>Los pasos</h3><p>Chatear: los hace la persona. Delegar: el agente planifica y ejecuta.</p></div><div class="ccard sm fragment fade-up"><span class="ic"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M177-160v-60h84v-204L40-760h502L321-424v204h84v60H177Zm23-454h182l55-86H145l55 86Zm352.5 421.5Q520-225 520-275t32.5-82.5Q585-390 635-390q15 0 28.5 3t26.5 8v-381h190v99H750v386q0 50-32.5 82.5T635-160q-50 0-82.5-32.5Z"/></svg></span><h3>La salida</h3><p>Chatear: texto en la ventana. Delegar: archivos en el disco.</p></div><div class="ccard sm fragment fade-up"><span class="ic"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m627-287 45-45-159-160v-201h-60v225l174 181ZM480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-82 31.5-155t86-127.5Q252-817 325-848.5T480-880q82 0 155 31.5t127.5 86Q817-708 848.5-635T880-480q0 82-31.5 155t-86 127.5Q708-143 635-111.5T480-80Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480-820q-140 0-240 100T140-480q0 140 100 240t240 100Z"/></svg></span><h3>El rol humano</h3><p>Chatear: hacer cada paso intermedio. Delegar: revisar el plan y corregir el rumbo.</p></div></div><div class="imgph svg"><!-- talksmith-ascii-sha256: 7714d91a232df5df81779b42e0148e69098d979e1acba0f217923b4734746e9e -->
+Aterrizarlo en la audiencia: son alumnos de management y la mayoría no programa; por eso Cowork les sirve. Después de este beat viene la mecánica, cómo se delega. Tiempo objetivo: ~3 min.</aside></section><section class="slide" data-kind="value-columns"><div class="stage">
+<div class="shead"><span class="pill">Claude Cowork</span><h2 class="stitle">De chatear a delegar</h2></div><div class="cbody"><div class="cfit"><div class="highlights hl-top"><div class="highlight quote"><span class="ic"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m248-240 94-162q-5 1-11 1.5t-11 .5q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 21-5.5 41T458-480L320-240h-72Zm360 0 94-162q-5 1-11 1.5t-11 .5q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 21-5.5 41T818-480L680-240h-72ZM376.5-503.5Q400-527 400-560t-23.5-56.5Q353-640 320-640t-56.5 23.5Q240-593 240-560t23.5 56.5Q287-480 320-480t56.5-23.5Zm360 0Q760-527 760-560t-23.5-56.5Q713-640 680-640t-56.5 23.5Q600-593 600-560t23.5 56.5Q647-480 680-480t56.5-23.5ZM680-560Zm-360 0Z"/></svg></span><p><b>Anthropic</b>: Menos una sesión de chat, más asignarle tareas a un colega.</p></div></div><p class="lead">Lo que cambia ahora es el rol: delegar. ¿Qué delegamos?</p><div class="cmpgrid imgleft"><div class="compare" style="--cc:3">
+<div class="chead"><span></span><span>Chatear</span><span>Delegar a un agente</span></div>
+<div class="crow"><span>La forma de trabajo</span><span>Un mensaje a la vez</span><span>Se describe un resultado</span></div><div class="crow"><span>Los pasos</span><span>Los hace la persona</span><span>El agente planifica y ejecuta</span></div><div class="crow"><span>La salida</span><span>Texto en la ventana</span><span>Archivos en el disco</span></div><div class="crow"><span>El rol humano</span><span>Hacer cada paso intermedio</span><span>Revisar el plan y corregir el rumbo</span></div></div>
+<div class="imgph svg"><!-- talksmith-ascii-sha256: 7714d91a232df5df81779b42e0148e69098d979e1acba0f217923b4734746e9e -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320">
   <title>De chat a agente: el cambio de paradigma</title>
   <desc>El concepto-ancla de la charla: los conectores y las tareas programadas extendieron qué puede hacer el chat; el agente cambia el rol de la persona, que pasa de hacer cada paso a delegar un resultado.</desc>
@@ -578,7 +595,6 @@ Aterrizarlo en la audiencia: son alumnos de management y la mayoría no programa
   <!-- Right caption -->
   <text x="522" y="264" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#3B3535">se entrega un resultado</text>
 </svg></div></div>
-
 </div></div></div>
 <aside class="notes">El concepto-ancla de la charla. En la clase anterior, los conectores y Schedule extendieron qué puede hacer el chat; el agente cambia tu rol: en vez de pedir un paso intermedio, se describe un resultado completo que el agente planifica y ejecuta sobre archivos reales mientras vos supervisás. La lámina deja abierta la pregunta "¿qué delegamos?"; contestarla con la tabla y con un ejemplo concreto de ellos, el informe mensual del equipo entero. Pedir un dato suelto sigue siendo chat. Si se llevan una sola idea, que sea esta: el valor está en aprender a delegar un resultado y guiar el proceso. Usar la tabla para hacerlo concreto: la salida son archivos en el disco, no texto en una ventana. Anticipar la misión: vamos a "contratar" a Faro y entrenarlo una vez para que después trabaje solo. Cerrar citando a Anthropic: "menos una sesión de chat, más asignarle tareas a un colega". Tiempo objetivo: ~4 min.</aside></section><section class="slide" data-kind="content-image"><div class="stage">
 <div class="shead"><span class="pill">Claude Cowork</span><h2 class="stitle">El mapa: piezas que se apilan</h2></div><div class="cbody"><div class="cfit"><div class="ci ci-top"><div class="imgph svg"><!-- talksmith-ascii-sha256: 061e8adad0235c566bf4bf18a7a4ea67f59d04de7950f9ac627350097c354b5e -->

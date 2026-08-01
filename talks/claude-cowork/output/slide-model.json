@@ -51,26 +51,37 @@
       "notes": "El beat de \"¿y a mí por qué me importa?\". Cowork es Claude instalado en la computadora, con acceso a las carpetas y archivos del usuario; eso habilita una forma de trabajar distinta de la del chat. En la clase anterior la audiencia extendió un chat; esta slide anuncia otra categoría de herramienta. Tono motivacional y de alto nivel; la mecánica viene después.\n\nEl gancho de la analogía del Excel va acá, dicho con cuidado. Durante unas cuatro décadas Excel fue la habilidad base del trabajo de oficina, la herramienta de propósito general que se usaba sin escribir código. Varios analistas sostienen que las herramientas agénticas van camino a ese mismo lugar, Claude Code para quien programa y Cowork para quien no. Atribuirlo cada vez que se dice: \"hay quien lo llama el nuevo Excel\" es encuadre de analistas y de la industria, NO de Anthropic.\n\nLo que sí es de Anthropic, y conviene citarlo como su framing propio, es \"Claude Code para el resto de tu trabajo\": que cualquier knowledge worker sienta con Cowork lo que los ingenieros ya sienten con Claude Code. Cowork generaliza algo que ya funcionó primero con developers.\n\nAterrizarlo en la audiencia: son alumnos de management y la mayoría no programa; por eso Cowork les sirve. Después de este beat viene la mecánica, cómo se delega. Tiempo objetivo: ~3 min."
     },
     {
-      "template": "content+cards+image",
+      "template": "value-columns",
       "section": "Claude Cowork",
       "title": "De chatear a delegar",
-      "lead": "Lo que cambia ahora es el rol: delegar. ¿Qué delegamos? Chatear contra delegar a un agente.",
-      "cards": [
+      "lead": "Lo que cambia ahora es el rol: delegar. ¿Qué delegamos?",
+      "columns": [
         {
-          "label": "La forma de trabajo",
-          "body": "Chatear: un mensaje a la vez. Delegar: se describe un resultado."
+          "header": "",
+          "cells": [
+            "La forma de trabajo",
+            "Los pasos",
+            "La salida",
+            "El rol humano"
+          ]
         },
         {
-          "label": "Los pasos",
-          "body": "Chatear: los hace la persona. Delegar: el agente planifica y ejecuta."
+          "header": "Chatear",
+          "cells": [
+            "Un mensaje a la vez",
+            "Los hace la persona",
+            "Texto en la ventana",
+            "Hacer cada paso intermedio"
+          ]
         },
         {
-          "label": "La salida",
-          "body": "Chatear: texto en la ventana. Delegar: archivos en el disco."
-        },
-        {
-          "label": "El rol humano",
-          "body": "Chatear: hacer cada paso intermedio. Delegar: revisar el plan y corregir el rumbo."
+          "header": "Delegar a un agente",
+          "cells": [
+            "Se describe un resultado",
+            "El agente planifica y ejecuta",
+            "Archivos en el disco",
+            "Revisar el plan y corregir el rumbo"
+          ]
         }
       ],
       "image": {
@@ -665,7 +676,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "f254ad0923f9e36abfa44f35912ffdcebafe60889423455fe8067ba90af88a5c",
-    "bytes": 96723
+    "sha256": "87cfd654f88718c2a88ccc6feef005cbaccd10f0fd3ed3d388caae151512dcf1",
+    "bytes": 96734
   }
 }
