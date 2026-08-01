@@ -112,7 +112,7 @@ Aparte de un minuto y medio, no más: quién está detrás de la herramienta que
 - **Claude Cowork**: Claude instalado en la computadora, para quien no programa. Trabajo multipaso sobre carpetas y archivos reales. *El foco de la segunda clase.*
 - **Claude Design**: prototipos, mockups y slides a partir de una idea, para quien no tiene formación de diseño (founders, product managers).
 
-![Las cuatro herramientas de Claude sobre una base de modelos compartida](images/s1-4-1-cuatro-herramientas.png)
+![Las cuatro herramientas de Claude sobre una base de modelos compartida](images/s1-4-1-cuatro-herramientas.svg)
 <!-- ascii-source:
    LAS CUATRO HERRAMIENTAS DE CLAUDE
 
@@ -216,7 +216,7 @@ Lámina de pantalla, casi sin texto. Mostrar dónde está cada cosa: el campo de
 - **Alucinación**: inventa con confianza.
 - **In-context learning**: el modelo adapta su comportamiento con lo que ve en el prompt, sin que se actualicen sus pesos ni se lo reentrene. Enriquecer ese contexto es la única palanca disponible.
 
-![El chat sin extensiones responde solo desde su memoria de entrenamiento](images/s2-1-1-chat-de-memoria.png)
+![El chat sin extensiones responde solo desde su memoria de entrenamiento](images/s2-1-1-chat-de-memoria.svg)
 <!-- ascii-source:
         EL CHAT "COMO VIENE DE FABRICA"
                                              lo que NO ve:
@@ -290,7 +290,7 @@ Slide puente, corta a propósito: la lámina anterior dejó la pregunta de cómo
 - El "buscando..." y las fuentes citadas marcan el punto de verificación.
 - **Regla: si la respuesta pudo cambiar desde el entrenamiento, la búsqueda es obligatoria.** Precios, noticias, versiones, papers, normativa.
 
-![La misma pregunta respondida de memoria o con búsqueda web](images/s3-1-1-dos-modos-respuesta.png)
+![La misma pregunta respondida de memoria o con búsqueda web](images/s3-1-1-dos-modos-respuesta.svg)
 <!-- ascii-source:
    la MISMA pregunta: "¿ultima version de X?"
 
@@ -357,7 +357,7 @@ Lámina de pantalla, sin texto que competir con la imagen. Señalar dos cosas y 
 - Vale igual en ChatGPT, Gemini y Claude.
 - Se activa a través de la biblioteca de Connectors. Muchos requieren autenticación.
 
-![Chat aislado frente a chat con Connectors](images/s4-1-1-chat-aislado-vs-connector.png)
+![Chat aislado frente a chat con Connectors](images/s4-1-1-chat-aislado-vs-connector.svg)
 <!-- ascii-source:
    CHAT SOLO                        CHAT CON CONNECTORS
 +----------------+              +----------------+
@@ -399,7 +399,7 @@ Cerrar bajando la barrera de entrada: esto se activa desde la configuración o d
 - Abrir un ticket (Jira, ServiceNow) o mandar un mensaje (Slack): **capacidad del ecosistema**, sin Connector puntual probado en clase.
 - Cuidado con las autorizaciones y los permisos. **Un mail enviado sin revisión humana puede generar muchos problemas.**
 
-![Un Connector funciona en dos direcciones: leer y actuar](images/s4-2-1-connector-leer-y-actuar.png)
+![Un Connector funciona en dos direcciones: leer y actuar](images/s4-2-1-connector-leer-y-actuar.svg)
 <!-- ascii-source:
         CONNECTOR: dos direcciones
 
@@ -444,7 +444,7 @@ Balancear con el control: nada de esto pasa sin que el usuario haya conectado y 
 - Toda la familia externa se conecta por el **protocolo MCP**, y ahí la curación no existe: Anthropic no verifica esos servicios.
 - De ahí el criterio de confianza. Autorizar un Connector externo le da acceso a los datos del usuario, así que conviene reservarlo para servicios confiables.
 
-![Connectors out of the box, curados por Anthropic, frente a externos sin curación](images/s4-3-1-connectors-dos-familias.png)
+![Connectors out of the box, curados por Anthropic, frente a externos sin curación](images/s4-3-1-connectors-dos-familias.svg)
 <!-- ascii-source:
                   CONNECTORS
                        |
@@ -541,7 +541,7 @@ Nota: las capturas son de la app de Claude; el flujo de buscar, conectar y autor
 - Ejemplo: el usuario pide "los pedidos abiertos del cliente X" y el Connector consulta el ERP de la empresa y devuelve la respuesta al chat.
 - Un chat que se informa y actúa puede trabajar **solo** (sección 6).
 
-![Flujo de una llamada a un Connector externo a través del protocolo MCP](images/s4-6-1-flujo-mcp-externos.png)
+![Flujo de una llamada a un Connector externo a través del protocolo MCP](images/s4-6-1-flujo-mcp-externos.svg)
 <!-- ascii-source:
 +--------+   pide datos    +-----------+   protocolo   +----------------+
 | CHAT / | --------------&gt; | Connector |  -- MCP --&gt;   | Servicio       |
@@ -640,7 +640,7 @@ Cerrar con la advertencia que ya se dio dos veces y vale la tercera: ninguno de 
 - Trae conocimiento incorporado de **Slack, Google Calendar, Gmail y Google Docs**, así que responde a un pedido en lenguaje corriente ("agendá una reunión").
 - Se habilita desde la biblioteca de **Connectors** en Claude Desktop, como cualquier otro.
 
-![Claude in Chrome trabaja en un panel al costado de la página abierta](images/s5-1-1-panel-claude-in-chrome.png)
+![Claude in Chrome trabaja en un panel al costado de la página abierta](images/s5-1-1-panel-claude-in-chrome.svg)
 <!-- ascii-source:
    PAGINA WEB ABIERTA          CLAUDE IN CHROME
    (sesion ya iniciada)        (panel lateral)
@@ -684,7 +684,7 @@ El cuidado, en voz y sin lámina propia (la slide de prompt injection salió del
 - **Coordinar agenda y correo**: leer el hilo, agendar la reunión en Google Calendar y dejar la respuesta escrita.
 - **Relevar un portal que no exporta**: listados de precios, licitaciones o estados de pedido, volcados a una tabla.
 
-![El denominador común de los casos de uso de Claude in Chrome](images/s5-2-1-cuando-sirve-chrome.png)
+![El denominador común de los casos de uso de Claude in Chrome](images/s5-2-1-cuando-sirve-chrome.svg)
 <!-- ascii-source:
    EL PATRON COMUN DE LOS CUATRO CASOS
 
@@ -741,7 +741,7 @@ Cerrar la sección repitiendo el cuidado en una frase: el humano aprueba antes d
 - El ejemplo: *"todos los días 8:00, resumí mi inbox, lo urgente arriba."*
 - Existe en **ChatGPT** ("tasks") y en **Claude** (claude.ai, desde el navegador).
 
-![Ciclo de un Schedule: disparador, tarea, Connectors y entrega](images/s6-1-1-ciclo-schedule.png)
+![Ciclo de un Schedule: disparador, tarea, Connectors y entrega](images/s6-1-1-ciclo-schedule.svg)
 <!-- ascii-source:
         SCHEDULE (se describe UNA vez)
 
@@ -811,7 +811,7 @@ Si hay conexión, hacerlo en vivo desde la cuenta del docente en lugar de mostra
 - Antes de confiarle algo a un Schedule: **saber dónde corre**.
 - Los Schedule que usan **archivos o apps locales** corren local **siempre**, incluso con la ejecución en la nube disponible.
 
-![Dónde corre un Schedule: local o en la nube](images/s6-3-1-schedule-local-o-nube.png)
+![Dónde corre un Schedule: local o en la nube](images/s6-3-1-schedule-local-o-nube.svg)
 <!-- ascii-source:
    el Schedule: ¿DONDE corre?
               |
@@ -887,7 +887,7 @@ Cerrar con el puente a la segunda clase, que arranca con Claude Cowork instalado
 
 ### Content
 
-![Placa divisoria: La misión, parte 1 — Faro en el chat](images/s7-1-1-placa-mision-parte-1.png)
+![Placa divisoria: La misión, parte 1 — Faro en el chat](images/s7-1-1-placa-mision-parte-1.svg)
 <!-- ascii-source:
    ______________________________________________
   |                                              |

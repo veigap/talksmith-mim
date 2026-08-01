@@ -95,8 +95,7 @@ Aterrizarlo en la audiencia: son alumnos de management y la mayoría no programa
 
 ### Content
 
-- Anthropic: *"menos una sesión de chat, más asignarle tareas a un colega."*. Lo que cambia ahora es el rol: **delegar**. ¿Qué delegamos?
-- Chatear vs delegar:
+-  Lo que cambia ahora es el rol: **delegar**. ¿Qué delegamos?. Chatear vs delegar:
 
 | | Chatear | Delegar a un agente |
 |---|---|---|

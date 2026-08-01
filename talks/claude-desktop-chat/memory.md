@@ -1,7 +1,7 @@
 # memory.md — claude-desktop-chat
 
-**Current step:** 7 — Render complete (html-strict)
-**Awaiting:** 2026-07-31 — deck html-strict entregado en `output/html/index.html`. Awaiting: Step 8 (Learnings) y la decisión sobre la duración, que sigue en 65 min contra un bloque de 60.
+**Current step:** 7 — Render complete (html-strict, re-corrido con el plugin 0.74.1) awaiting_presenter
+**Awaiting:** 2026-08-01 — deck repulido y re-rendido con el plugin **0.74.1**, sin tocar contenido. `output/html/index.html`: 33 laminas, **2,66 MB** (bajo de 3,3 MB porque los 12 diagramas ahora van como SVG vector inline). Awaiting: la duracion, que sigue en **65 min contra un bloque de 60** (en la parte 2 el presentador decidio que el tiempo no era restriccion; aca no lo dijo), y el paso 8 (Learnings).
 **Mode:** C (Presenter Outline) — heredado del Talk combinado del que salió esta mitad.
 **Topic:** Claude Desktop, la superficie de chat: el chat que la audiencia ya usa a diario, su límite de memoria de entrenamiento, los conectores que lo abren al mundo real del usuario, Schedule para que trabaje solo, y la parte 1 de la misión de Faro resuelta enteramente dentro del chat.
 **Folder:** talks/claude-desktop-chat/
@@ -188,3 +188,42 @@ Parte 1 de un par de clases para el Master in Management (MiM) del IAE Business 
   - Los dos asides `generate-image` de 1.1 y 1.2, pendientes por segunda vez.
   - Los cinco directorios MCP de 4.8, sin verificar online.
   - El bug de `strip_feedback.py` con los bloques de feedback a nivel párrafo.
+
+---
+
+## 2026-08-01 — Re-Polish + Re-Render con el plugin 0.74.1 (sin tocar contenido)
+
+- Status: complete
+- Encargo del presentador: repulir y re-rendir con el plugin nuevo **sin tocar el contenido**, y **verificar que todos los bugs conocidos quedaran procesados**.
+- **Polish: 0 diagramas re-renderizados.** Los 12 bloques ASCII se reusaron por digest — el ASCII no cambio desde que se dibujaron. Los 12 sidecars `.ascii` se habian perdido de `images/` y quedaron **regenerados y guardados**, asi que el proximo Polish vuelve a tener la fuente en disco.
+- **`final.md`: 18 refs — 12 diagramas en `.svg` + 6 capturas en `.png`.** Antes las 18 eran `.png`. Es el cambio de mayor impacto visual: los diagramas ahora entran al HTML como **vector inline** y no como raster, asi que se leen nitidos proyectados a cualquier tamano.
+- **`image-full` (0.73.0) aplicado a 3 laminas**, que antes eran `content-image` con media lamina vacia o con prosa de relleno: **1.6 «El chat en Claude Desktop»**, **3.2 «La busqueda en pantalla»** (el modelo viejo le habia fabricado un `fact` que solo repetia el alt-text) y **7.1 «La mision, parte 1»**. Las otras dos `content-image` (4.4 «El directorio de Connectors» y 6.2 «Donde vive el Schedule») **se quedan** porque tienen prosa propia.
+- **`layout: image-left` en 2 laminas** donde el diagrama carga informacion que el texto ya no repite: 3.1 «La misma pregunta, dos modos de responder» y 6.3 «Donde corre? Local o nube». **`position: top` en 1**: la definicion de Schedule en 6.1, que es de la que dependen los dos items que siguen.
+- **0.74.0:** 1.1 y 1.2 pasaron de `icon-list` a `concept-breakdown` + `format: list` — markup byte-identico, solo se moderniza la clasificacion.
+- **Render: 33 laminas, 2,66 MB**, con `<!doctype html>`, `<html lang="es">`, `<head>` y `<body>` explicitos (arreglo de 0.74.1: antes era un fragmento suelto que el navegador levantaba en quirks mode y que cualquier preview que lo embebiera podia romper).
+- **Los tres audits del modelo (`degenerate_enum`, `field_coverage`, `image_coverage`) en ok.**
+
+### Verificacion de los bugs conocidos, uno por uno
+
+| Bug | Estado |
+|---|---|
+| `strip_feedback.py` deja huerfanas las lineas `  Resolution: …` de los bloques a nivel parrafo | **REPRODUCIDO** (3 lineas, en las secciones 2, 4 y 5) y **limpiado**. **No esta arreglado en 0.74.1** — ver la causa exacta abajo. |
+| Refs a `.png` en vez de `.svg` | **Resuelto.** 12 `.svg` + 6 `.png`, todas resuelven contra `images/`. |
+| Laminas de captura con media lamina vacia | **Resuelto** con `image-full` en 3 laminas. |
+| HTML sin doctype / `<head>` / `<body>` | **Resuelto** por 0.74.1. |
+| Fences ASCII sin renderizar | **0.** |
+| Campos `Presenter feedback` en `final.md` | **0** (25 H3 + 9 de parrafo strippeados). |
+| Linea en blanco antes de cada `---` | **ok** (el unico match es el cierre del frontmatter, falso positivo). |
+| Refs de imagen rotas | **0** sobre 18. |
+
+### Bug del plugin, sin arreglar — causa exacta
+
+`skills/feedback-cycle/strip_feedback.py`, la rama `_PARA_FEEDBACK` (aprox. lineas 89-110): el barrido avanza mientras la linea sea bullet o blanco y **corta en la primera linea que no es ninguna de las dos**. Una resolucion que envuelve en una **linea de continuacion indentada** (`  Resolution: …`, indentada pero sin `-` adelante) no matchea `_BULLET`, asi que el bucle corta ahi y la continuacion sobrevive. La rama H3 no tiene el problema porque corta por heading. **Arreglo sugerido:** seguir consumiendo mientras `_indent(lines[j]) > 0` y la linea no sea heading ni `---`, no solo mientras sea bullet.
+
+- Files created/modified: `final.md`, `output/slide-model.json`, `output/html/index.html`, `images/` (12 sidecars `.ascii` nuevos), `memory.md`. **`draft.md` no se toco.**
+- Pending open questions:
+  - **Duracion: 65 min contra 60.** Sin resolver.
+  - **Las 3 directivas `generate-image`** siguen sin cumplir, por tercera vez: la sesion no expone generacion de imagenes. Las laminas conservan su texto y el render no se rompe.
+  - Los cinco directorios MCP de la lamina 4.8, sin verificar online.
+  - El bug de `strip_feedback.py` de arriba, para llevar al plugin.
+  - Step 8 (Learnings) sin correr.
