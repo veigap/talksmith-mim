@@ -90,9 +90,11 @@ Aterrizarlo en la audiencia: son alumnos de management y la mayoría no programa
      imagen, así que acá estaba pineado `content+cards+image` y cada fila de la tabla
      colapsaba a una tarjeta con las dos columnas concatenadas dentro del mismo `body`.
      La grilla al lado de una imagen quiere <=3 columnas x <=5 filas: esta es 3 x 4, entra.
-     RECOMENDACIÓN para el FILL: la línea de Anthropic es una cita que ENCUADRA la lámina,
-     no un cierre → `highlights[].position: "top"` (kind: quote). La bajada "Lo que cambia
-     ahora es el rol" es el `lead`. -->
+     RECOMENDACIÓN para el FILL: la bajada "Lo que cambia ahora es el rol" es el `lead`.
+     La lámina NO lleva `highlights`: el presentador sacó de la cara la cita de Anthropic
+     ("menos una sesión de chat, más asignarle tareas a un colega") el 2026-08-01. Sigue
+     viva en Sources y en las speaker notes, para decirla al cerrar — no la devuelvas
+     a la lámina. -->
 
 ### Content
 

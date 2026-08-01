@@ -89,14 +89,6 @@
         "alt": "Chat contra agente: pedir pasos de a uno contra delegar un resultado completo"
       },
       "layout": "image-left",
-      "highlights": [
-        {
-          "kind": "quote",
-          "position": "top",
-          "label": "Anthropic",
-          "body": "Menos una sesión de chat, más asignarle tareas a un colega."
-        }
-      ],
       "notes": "El concepto-ancla de la charla. En la clase anterior, los conectores y Schedule extendieron qué puede hacer el chat; el agente cambia tu rol: en vez de pedir un paso intermedio, se describe un resultado completo que el agente planifica y ejecuta sobre archivos reales mientras vos supervisás. La lámina deja abierta la pregunta \"¿qué delegamos?\"; contestarla con la tabla y con un ejemplo concreto de ellos, el informe mensual del equipo entero. Pedir un dato suelto sigue siendo chat. Si se llevan una sola idea, que sea esta: el valor está en aprender a delegar un resultado y guiar el proceso. Usar la tabla para hacerlo concreto: la salida son archivos en el disco, no texto en una ventana. Anticipar la misión: vamos a \"contratar\" a Faro y entrenarlo una vez para que después trabaje solo. Cerrar citando a Anthropic: \"menos una sesión de chat, más asignarle tareas a un colega\". Tiempo objetivo: ~4 min."
     },
     {
@@ -676,7 +668,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "87cfd654f88718c2a88ccc6feef005cbaccd10f0fd3ed3d388caae151512dcf1",
-    "bytes": 96734
+    "sha256": "fb81561a77bc357e3efbbad8ffb9404b1887b766d7b696c4831fb8182cf9d5a1",
+    "bytes": 96891
   }
 }

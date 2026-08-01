@@ -424,3 +424,15 @@ El registro paso a paso completo (Steps 1-8, todas las rondas de Review, Polish,
 - **Nota de entorno:** la sesion corrio en la nube, con el repo traido por el puente de dispositivo. Se devolvieron a disco `final.md`, `output/slide-model.json`, `output/html/index.html` y `memory.md`.
 - **`req-comparison-imagen.md` no existe en la raiz del repo** (estan `req-citext-vacio.md`, `req-highlights-arriba.md` y `req-layout-cci.md`). No bloqueo nada: el requerimiento esta documentado en la memoria del proyecto (`catalogo-tabla-mas-imagen.md`) y en el propio comentario pineado de la lamina.
 - Files created/modified: `final.md`, `output/slide-model.json`, `output/html/index.html`, `memory.md`. `draft.md` sin cambios (read-only desde Step 6).
+
+---
+
+## 2026-08-01 (6a sesion, ronda 2) — Fuera la cita de Anthropic de la 1.2
+
+- Status: complete
+- **Feedback del presentador:** sacar «Anthropic: Menos una sesion de chat, mas asignarle tareas a un colega.» de la lamina 1.2.
+- **Se edito `draft.md`, no solo el modelo.** La cita no vivia en `### Content` sino en la RECOMENDACION para el FILL del comentario pineado (`highlights[].position: "top"`, kind quote). Borrar el `highlights` del `slide-model.json` sin tocar el hint la habria devuelto en la proxima corrida. El hint ahora dice explicitamente que la lamina **no lleva `highlights`** y que la cita no se devuelve a la cara.
+- **Sigue viva donde corresponde:** en `### Sources` (atribucion de la pagina de producto de Anthropic) y en las speaker notes («Cerrar citando a Anthropic…»), asi que se puede decir al cerrar la lamina sin que ocupe lugar en pantalla. Si tambien hay que sacarla de ahi, es otro pedido.
+- **Polish + Render re-corridos:** 0 diagramas re-renderizados (los 9 reusados por digest), 31 laminas, build sin warnings, `degenerate_enum` / `field_coverage` / `image_coverage` en ok, sin aviso de densidad.
+- **Verificado sobre el HTML:** la 1.2 ya no tiene `class="highlights"`; conserva `data-kind="value-columns"`, la grilla `--cc:3` de 3 columnas x 4 filas, `cmpgrid imgleft` con el SVG inline y el `<p class="lead">`. La cadena de la cita solo aparece ya dentro del `<aside class="notes">`.
+- Files created/modified: `draft.md`, `final.md`, `output/slide-model.json`, `output/html/index.html`, `memory.md`.
