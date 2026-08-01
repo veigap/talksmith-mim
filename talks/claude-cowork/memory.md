@@ -1,7 +1,7 @@
 # memory.md — claude-cowork
 
-**Current step:** 7 — Render (completo, 2026-08-01, 4a corrida del dia) awaiting_presenter
-**Awaiting:** 2026-08-01 — ronda de feedback de la Seccion 3 aplicada (3.2 imagen sola, 3.5 solo el bloque de ejemplo) y **Polish + Render sin regenerar ningun diagrama**. Deck en 24 laminas / 31 en el render / 1,6 MB. Awaiting: (a) confirmar el titulo «Metodo 3: Crear grabando una Skill»; (b) si pasamos a Learnings (paso 8).
+**Current step:** complete — Talk cerrado el 2026-08-01 por instruccion del presentador
+**Awaiting:** nada. El Talk quedo **completo** el 2026-08-01: 24 laminas de contenido, `final.md` y el deck `html-strict` (31 laminas, 1,6 MB) al dia contra el `draft.md` actual, con el plugin en 0.74.1. El paso 8 (Learnings) **no se corrio** — se cerro directo por pedido del presentador. Lo que quedo sin decidir vive en las Pending open questions de la ultima entrada del log; nada de eso bloquea dictar la clase.
 
 **Topic:** Claude Cowork — capacidades funcionales y de uso para el trabajo diario (enfoque de alto nivel).
 **Folder:** talks/claude-cowork/
@@ -381,3 +381,30 @@ El registro paso a paso completo (Steps 1-8, todas las rondas de Review, Polish,
   - **Dos capturas sin referencia:** `project.png` y `skills-menu-chat.png`.
   - `images/create-skill.png`, sin usar, muestra el panel con las cuatro entradas del menu Add — mejor que `skills-panel.png` para la 4.4, pero esta en ingles.
   - Siguen abiertas: icono `person_4` sin resolver, numeracion de divisorias por posicion, idioma mezclado entre capturas.
+
+---
+
+## 2026-08-01 (5a sesion) — Plugin a 0.74.1 + regeneracion del HTML
+
+- Status: complete
+- **La sesion arranco con el plugin en 0.72.0**, pero en GitHub ya estaban **0.73.0, 0.74.0 y 0.74.1**. Se actualizo la copia de la sesion a **0.74.1** clonando el repo publico. **Ojo: eso NO actualiza el plugin de la cuenta** — una sesion nueva de Cowork sincroniza lo que este publicado en la cuenta del usuario, no lo de GitHub.
+- **`image-full` (0.73.0) es la categoria que el presentador estaba pidiendo.** Es el tipo propio para la lamina que ES una imagen: encabezado normal (pill de seccion + titulo, con `lead` opcional de una linea) y la imagen ocupa todo lo de abajo, sangrando a izquierda, derecha y borde inferior, sin padding, sin marco y sin epigrafe. **Contenida, nunca recortada**: una imagen mas angosta que el espacio se centra en vez de rellenar. `content-image` volvio a exigir su prosa.
+- **Tres laminas pasaron de `content-image` sin texto a `image-full`:** 1.4 «Donde se empieza en Cowork», 3.2 «Conceder una carpeta y ver el contexto» y 4.4 «Metodo 1: Crear desde el panel».
+- **0.74.0 — el conjunto etiquetado volvio a ser UN template.** `concept-breakdown`, `card-row` e `icon-list` eran tres reglas de Match para una misma forma, y era la familia que el FILL erraba mas seguido. Ahora la forma es la clasificacion (`concept-breakdown`) y la disposicion es un campo **`format`**: `grid` (default), `row`, `list` — el mismo patron que sigue `layout` para las imagenes. `card-row` e `icon-list` **siguen siendo valores validos** y emiten markup byte a byte identico, asi que no hay que migrar nada. **Consecuencia para el pin de la 4.3:** en vez de pinear `card-row`, lo limpio es `concept-breakdown` + `format: row`.
+- **0.74.1 — el HTML ahora es un documento bien formado:** `<!doctype html>`, `<html lang="es">`, `<head>` y `<body>` explicitos. Antes era un fragmento suelto y el navegador lo levantaba en quirks mode; cualquier cosa que lo *embeba* (un panel de preview, un iframe, un sanitizador) podia descartar el `<meta>` y el `<style>` por estar fuera de un `<head>`. Render pixel-identico, es correccion sin cambio visual.
+- **Render regenerado con 0.74.1: 31 laminas, 1,6 MB.** 0 diagramas re-renderizados. Auditorias aplicables al modo html (`degenerate_enum`, `field_coverage`, `image_coverage`) en **ok**; el resto del suite es solo para `.pptx`.
+- Files created/modified: `output/slide-model.json`, `output/html/index.html`, `memory.md`. `draft.md` y `final.md` sin cambios.
+
+---
+
+## 2026-08-01 — Cierre del Talk
+
+- Status: **complete**
+- El presentador dio el Talk por terminado. **No se corrio el paso 8 (Learnings)**, asi que no se promovio ningun patron a `config/learnings.md` ni se curo nada a `knowledge-library/`. Si en algun momento se quiere cerrar formalmente, el material esta: `config/feedback-backlog.md` tiene el historial completo de las rondas, incluidas las cinco filas del 2026-08-01.
+- **Estado entregable al cerrar:** `talks/claude-cowork/final.md` + `output/html/index.html` (deck Reveal.js autocontenido, 31 laminas, 1,6 MB, se abre con doble clic). Los 9 diagramas van como SVG vector inline. `output/final.pptx` **no existe** — este Talk nunca se rindio a PowerPoint.
+- **Cosas para mirar antes de dictar la clase**, ninguna bloqueante:
+  - Confirmar los rotulos de UI en espanol de la Seccion 4 contra la app en espanol.
+  - El titulo «Metodo 3: Crear grabando una Skill» quedo normalizado por el orquestador, sin confirmar.
+  - `skills-panel.png` es del 21 de julio y puede no mostrar la entrada «Graba tu pantalla».
+  - Idioma mezclado entre capturas: `instructions.png` en ingles, las de la Seccion 4 en espanol.
+  - Tres capturas quedaron en `images/` sin referencia: `project.png`, `skills-menu-chat.png`, `skills-panel.png`.

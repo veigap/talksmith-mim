@@ -101,7 +101,7 @@
       "notes": "El mapa del arco completo, que empieza antes de esta clase: la base es el chat que la audiencia ya usa. La lámina es el diagrama y una línea de lead destacada, así que todo lo demás va hablado. Esa línea es la moraleja del mapa y conviene leerla en voz alta apenas aparece la lámina, antes de recorrer los bloques. La lectura en voz alta es bloque por bloque, cada uno con su frase-problema al lado. La mitad de abajo es la clase anterior y la de arriba lo que queda por recorrer, y ese corte conviene nombrarlo de entrada. De abajo hacia arriba, los tres que trajimos de la clase anterior: el chat respondía solo de memoria, los conectores traen información real y actúan, Schedule hace que corra solo. Un repaso de una línea por bloque alcanza; no volver a enseñarlos. Señalar \"estamos acá\": Cowork, donde la IA empieza a trabajar sobre carpetas y archivos reales. Los cinco de arriba son el roadmap de esta clase y cada uno tiene su sección: archivos `.md` para que la IA entienda el material (sección 2), Projects para agrupar el trabajo de un tema e Instrucciones para no repetir el contexto (sección 3), Skills para no repetir la tarea (sección 4) y Subagentes para delegar en paralelo (sección 5). Cuidado con la metáfora: los bloques se apilan y se combinan, cada tarea usa solo los que necesita. Decir que pueden volver a esta slide entre secciones para ubicarse. Al final, la pila entera es Faro. Tiempo objetivo: ~3 min."
     },
     {
-      "template": "content-image",
+      "template": "image-full",
       "section": "Claude Cowork",
       "title": "Dónde se empieza en Cowork",
       "image": {
@@ -228,7 +228,7 @@
       "notes": "El Project es el contenedor de todo lo demás: Instrucciones, archivos, memoria. Todo queda organizado y reutilizable: las Instrucciones valen para todo el Project, la memoria recuerda preferencias, los archivos viven en una carpeta concreta del disco. En el ejemplo, el Project \"Informe mensual del equipo\" apunta a `Documentos/Informe-Mensual`. Un punto práctico que sorprende: los chats no comparten contexto entre sí, solo las Instrucciones y la base de conocimiento. La carpeta se concede con el explorador de archivos del sistema, garantía de seguridad y límite a la vez, y la slide siguiente lo muestra en pantalla, así que acá solo anticiparlo.\n\nLa nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla de la carpeta concedida, donde el agente abre, busca y escribe archivos con sus herramientas según lo que pida la tarea, sin volcar la carpeta en la conversación. La 3.3 trata el otro caso, la base de conocimiento del Project, donde la herramienta elige sola entre leer todo y buscar fragmentos. Si alguien pregunta cuánto material aguanta una carpeta grande, mandarlo a esa lámina. Tiempo objetivo: ~3 min."
     },
     {
-      "template": "content-image",
+      "template": "image-full",
       "section": "Projects",
       "title": "Conceder una carpeta y ver el contexto",
       "image": {
@@ -411,7 +411,7 @@
       "notes": "La lámina índice de la sección. Acá se nombran los tres caminos y no se desarrollan, porque cada uno tiene su propia lámina y llega enseguida.\n\nRecorrer las tarjetas en el orden en que van a aparecer. El panel es el camino explícito, el que muestra el menú entero y sirve para ubicar dónde vive la lista de Habilidades. El prompt es el que menos interrumpe a alguien que ya está trabajando, porque la Skill se pide en el mismo chat donde estaba la tarea. La grabación es la que más baja la barrera para esta audiencia: la tarea que cada uno repite todas las semanas la tiene en los dedos y no escrita en pasos.\n\nEl cierre conviene fijarlo antes de pasar de lámina. Los tres caminos desembocan en el mismo lugar, la Skill guardada y habilitada en la lista, que es la compuerta que el diagrama de la lámina siguiente desarrolla y la razón número uno de que a alguien \"no le funcione\".\n\nTiempo objetivo: ~1,5 min."
     },
     {
-      "template": "content-image",
+      "template": "image-full",
       "section": "Skills",
       "title": "Metodo 1: Crear desde el panel",
       "image": {
