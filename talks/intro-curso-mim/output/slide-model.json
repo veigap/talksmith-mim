@@ -42,7 +42,7 @@
       "template": "icon-list",
       "section": "Qué pensamos y por qué",
       "title": "Human capital is not a toxic asset",
-      "lead": "Vivienne Ming parte de una advertencia: entrenamos a muchas personas para competir con la IA en el terreno donde la máquina tiene ventaja.",
+      "lead": "Vivienne Ming parte de una advertencia: entrenamos a muchas personas para competir con la IA en el terreno donde la máquina tiene ventaja. Donde queda corto AI:",
       "rows": [
         {
           "label": "Problemas bien definidos",
@@ -72,7 +72,7 @@
     {
       "template": "single-point",
       "section": "Qué pensamos y por qué",
-      "title": "¿Qué hace valioso al capital humano?",
+      "title": "¿Cuando se vuelve toxico entonces?",
       "point": {
         "label": "El capital humano se vuelve “tóxico” cuando solo representa conocimiento y habilidades rutinarias.",
         "body": "Su valor vuelve a crecer cuando desarrolla metacognición, creatividad, adaptación y juicio."
@@ -246,19 +246,12 @@
           "icon": "analytics"
         },
         {
-          "label": "Agentes",
+          "label": "Orquestrar Agentes",
           "body": "Paperclip: orquestar una organización de agentes hacia un objetivo, con vos aprobando los pasos sensibles.",
           "icon": "robot"
         }
       ],
-      "highlights": [
-        {
-          "label": "Nota",
-          "body": "Como vamos a trabajar con Claude Cowork durante todo el curso, va a haber una licencia por grupo para poder hacer el trabajo — no una licencia por estudiante.",
-          "kind": "note"
-        }
-      ],
-      "notes": "Esta lámina viene después del cronograma a propósito: Cowork y Paperclip acaban de aparecer nombrados en el recorrido, así que la pregunta \"¿qué son esas cosas?\" ya está viva en la sala.\n\nLas tres filas responden a \"¿para qué sirve cada una?\", no a \"¿cuál es mejor?\". Y las dos primeras (Automatización y Análisis de Datos) son Cowork — delegar; la tercera (Agentes) es Paperclip — orquestar.\n\nVolver a la slide 2.1 en una línea: estas son las herramientas de hoy. El foco sigue siendo el patrón, no el botón.\n\nLa nota de la licencia es la que más ruido genera si no se aclara: una por grupo."
+      "notes": "Esta lámina viene después del cronograma a propósito: Cowork y Paperclip acaban de aparecer nombrados en el recorrido, así que la pregunta \"¿qué son esas cosas?\" ya está viva en la sala.\n\nLas tres filas responden a \"¿para qué sirve cada una?\", no a \"¿cuál es mejor?\". Y las dos primeras (Automatización y Análisis de Datos) son Cowork — delegar; la tercera (Agentes) es Paperclip — orquestar.\n\nVolver a la slide 2.1 en una línea: estas son las herramientas de hoy. El foco sigue siendo el patrón, no el botón."
     },
     {
       "template": "section-agenda",
@@ -275,7 +268,7 @@
         },
         {
           "value": "40%",
-          "caption": "Examen Integrador — evaluación individual, 30 minutos que se va ser la última clase."
+          "caption": "Examen Integrador — evaluación individual, 30 minutos la ultima clase."
         },
         {
           "value": "20%",
@@ -308,7 +301,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "ef83e4e274a48f7888db40c5d34a7ea062b35ecb5e035dbf2cf24233e7ac61b3",
-    "bytes": 33061
+    "sha256": "22d6151f368f36b77fd525dc6cd123d71e583be7e7a5f09b07d0c2b34ba78e1b",
+    "bytes": 32896
   }
 }

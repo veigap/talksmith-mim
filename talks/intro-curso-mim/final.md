@@ -72,7 +72,7 @@ Contexto de la decisión (revisión 2026-07-16): esta lámina cerraba el deck. E
 
 ### Content
 
-Vivienne Ming parte de una advertencia: entrenamos a muchas personas para competir con la IA en el terreno donde la máquina tiene ventaja.
+Vivienne Ming parte de una advertencia: entrenamos a muchas personas para competir con la IA en el terreno donde la máquina tiene ventaja. Donde queda corto AI:
 
 - **Problemas bien definidos.** Cuando el objetivo, los datos y el criterio de éxito están claros, la IA puede buscar y evaluar respuestas a una escala que una persona no alcanza.
 - **Correlación no es causalidad.** Más datos permiten encontrar más patrones, pero no garantizan una explicación de por qué ocurre algo ni qué pasará cuando cambie el contexto.
@@ -94,7 +94,7 @@ La transición a la próxima lámina es una pregunta: *si la IA abarata las habi
 
 ---
 
-## 3. ¿Qué hace valioso al capital humano?
+## 3. ¿Cuando se vuelve toxico entonces?
 
 <!-- template: single-point -->
 
@@ -370,9 +370,7 @@ Tres tipos de herramienta, tres para qué. No compiten entre sí: se complementa
 
 - **Automatización** — **Claude Cowork**: delegar un resultado y lograr que todo eso se repita solo la próxima vez.
 - **Análisis de Datos** — **Claude Cowork**: analizar los datos que hacen falta para producir ese resultado.
-- **Agentes** — **Paperclip**: orquestar una organización de agentes hacia un objetivo, con vos aprobando los pasos sensibles.
-
-💡 **Nota:** como vamos a trabajar con Claude Cowork durante todo el curso, va a haber **una licencia por grupo** para poder hacer el trabajo — no una licencia por estudiante.
+- **Orquestrar Agentes** — **Paperclip**: orquestar una organización de agentes hacia un objetivo, con vos aprobando los pasos sensibles.
 
 ### Sources
 
@@ -407,7 +405,7 @@ Nota de encuadre para el presentador: la slide original de la primera parte del 
 ### Content
 
 - **40% · Portafolio Grupal** — Misiones resueltas y reflexiones del equipo, entregadas a lo largo de la cursada, más una presentación de 5 minutos del portafolio por equipo.
-- **40% · Examen Integrador** — Evaluación individual, 30 minutos que se va ser la ultima clase.
+- **40% · Examen Integrador** — Evaluación individual, 30 minutos la ultima clase.
 - **20% · Participación** — Actividades prácticas y compromiso durante las sesiones presenciales y virtuales.
 
 ### Sources
