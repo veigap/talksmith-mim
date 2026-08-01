@@ -168,15 +168,15 @@
       "template": "timeline",
       "section": "Cronograma",
       "title": "Siete sesiones, un recorrido",
-      "lead": "Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene su propio foco; cuatro de ellos sostienen una misión.",
+      "lead": "Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene su propio foco, y el recorrido va de chatear a delegar y orquestar.",
       "milestones": [
         {
           "label": "Sáb 1 Ago · 8:30–12:00 · Presencial (3,5 h)",
-          "body": "Primeros pasos con Claude Cowork · misión Atlas"
+          "body": "Intro/Claude Desktop - Chat"
         },
         {
           "label": "Sáb 1 Ago · 13:00–16:30 · Presencial (3,5 h)",
-          "body": "Automatizando un reporte semanal en Cowork · misión Atlas"
+          "body": "Claude CoWork"
         },
         {
           "label": "Jue 6 Ago · 19:00–21:00 · Virtual (2 h)",
@@ -188,18 +188,18 @@
         },
         {
           "label": "Vie 28 Ago · 9:00–12:30 · Presencial (3,5 h)",
-          "body": "Cowork para la empresa · misión Enterprise"
+          "body": "Claude Cowork para la Empresa"
         },
         {
           "label": "Sáb 29 Ago · 8:30–12:00 · Presencial (3,5 h)",
-          "body": "Orquestando agentes con Paperclip · misión Paperclip"
+          "body": "Orquestando agentes con Paperclip"
         },
         {
           "label": "Jue 3 Sep · 19:00–21:00 · Virtual (2 h)",
           "body": "Evaluación"
         }
       ],
-      "notes": "Lo que más preguntan acá: el sábado 1 de agosto es doble jornada (Días 1 y 2, mañana y tarde, con corte al mediodía). Decirlo explícito — es hoy.\n\nLos nombres de misión (Atlas, Enterprise, Paperclip) son los mismos que van a ver en el README.\n\nEl Día 4 está a definir a propósito: lo vamos a cerrar en función de cómo venga el grupo.\n\nEl arco del curso —de chatear a delegar y orquestar— ya no tiene lámina propia. Vale trazarlo en voz alta acá, sobre el calendario: Días 1–2–3–5 son delegar (Cowork); el Día 6 es orquestar (Paperclip)."
+      "notes": "Lo que más preguntan acá: el sábado 1 de agosto es doble jornada (Días 1 y 2, mañana y tarde, con corte al mediodía). Decirlo explícito — es hoy.\n\nLas misiones ya no se nombran en lámina en ninguna parte del deck — ni acá ni en los objetivos (2.2). Es deliberado: son varias y se van presentando a lo largo de la cursada. Si preguntan cuáles, los nombres (Atlas / Enterprise / Paperclip) están en el README y se pueden decir de palabra.\n\nEl Día 4 está a definir a propósito: lo vamos a cerrar en función de cómo venga el grupo.\n\nEl arco del curso —de chatear a delegar y orquestar— ya no tiene lámina propia. Vale trazarlo en voz alta acá, sobre el calendario: el Día 1 es chatear (Claude Desktop), el punto de partida; los Días 2–3–5 son delegar (Cowork); el Día 6 es orquestar (Paperclip)."
     },
     {
       "template": "section-agenda",
@@ -308,7 +308,7 @@
   ],
   "_source": {
     "file": "final.md",
-    "sha256": "e66cb33a33b55aaa4d41e32b99f42bd2b3b2beabc2b92f53a64149d2d25c357f",
-    "bytes": 65127
+    "sha256": "ef83e4e274a48f7888db40c5d34a7ea062b35ecb5e035dbf2cf24233e7ac61b3",
+    "bytes": 33061
   }
 }

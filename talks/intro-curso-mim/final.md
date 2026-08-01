@@ -43,7 +43,7 @@ date: 2026-08-01
 ## 1. Bienvenidos al trabajo aumentado
 
 <!-- template: single-point -->
-<!-- aside: left ![Ilustración editorial abstracta: flujos de información y capas que evocan apertura y trabajo aumentado](images/s1-1-1-aside.png) -->
+<!-- aside: left ![Apertura — trabajo aumentado](images/s1-1-1-aside.png) -->
 <!-- generate-source: imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: bienvenida, comienzo de curso, managers aumentados por IA. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; gran espacio negativo blanco, formas negras sólidas como ancla, fondo coral/rojo suave o acentos coral #DA1B2E, líneas paralelas y cintas de flujo que sugieren información entrando a un sistema, planos translúcidos, composición limpia con sensación de energía contenida. Mantener creatividad abierta, pero conectar visualmente con la idea de apertura y trabajo aumentado. Evitar escena literal de aula, personas realistas, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
@@ -125,7 +125,7 @@ Volver a la tesis de apertura: una persona aumentada usa la IA para ampliar su c
 
 A medida que los agentes toman más de la ejecución, las personas ganan más agencia: más espacio para dirigir el trabajo, decidir y ser dueñas del resultado.
 
-![Diagrama: a medida que los agentes toman la ejecución, las personas ganan agencia — crecen juntas, no en suma cero](images/s1-4-1-agentes-personas-agencia.png)
+![Agentes, personas y agencia](images/s1-4-1-agentes-personas-agencia.png)
 <!-- ascii-source:
       AGENTES                              PERSONAS
   +-------------------+              +----------------------+
@@ -294,14 +294,14 @@ El punto 4 no nombra ninguna misión a propósito (pedido del presentador): son 
 
 ### Content
 
-Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene su propio foco; cuatro de ellos sostienen una misión.
+Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene su propio foco, y el recorrido va de chatear a delegar y orquestar.
 
-- **1 · Sáb 1 Ago · 8:30–12:00 · Presencial (3,5 h)** — Primeros pasos con Claude Cowork · misión **Atlas**
-- **2 · Sáb 1 Ago · 13:00–16:30 · Presencial (3,5 h)** — Automatizando un reporte semanal en Cowork · misión **Atlas**
+- **1 · Sáb 1 Ago · 8:30–12:00 · Presencial (3,5 h)** — Intro/Claude Desktop - Chat
+- **2 · Sáb 1 Ago · 13:00–16:30 · Presencial (3,5 h)** — Claude CoWork
 - **3 · Jue 6 Ago · 19:00–21:00 · Virtual (2 h)** — Agent Fundamentals: adopción, historia y métricas
 - **4 · Mar 11 Ago · 19:00–21:00 · Virtual (2 h)** — *A definir*
-- **5 · Vie 28 Ago · 9:00–12:30 · Presencial (3,5 h)** — Cowork para la empresa · misión **Enterprise**
-- **6 · Sáb 29 Ago · 8:30–12:00 · Presencial (3,5 h)** — Orquestando agentes con Paperclip · misión **Paperclip**
+- **5 · Vie 28 Ago · 9:00–12:30 · Presencial (3,5 h)** — Claude Cowork para la Empresa
+- **6 · Sáb 29 Ago · 8:30–12:00 · Presencial (3,5 h)** — Orquestando agentes con Paperclip
 - **7 · Jue 3 Sep · 19:00–21:00 · Virtual (2 h)** — Evaluación
 
 ### Sources
@@ -313,13 +313,13 @@ Siete sesiones · mezcla de presencial (3,5 h) y virtual (2 h). Cada día tiene 
 
 Lo que más preguntan acá: **el sábado 1 de agosto es doble jornada** (Días 1 y 2, mañana y tarde, con corte al mediodía). Decirlo explícito — es hoy.
 
-Los nombres de misión en negrita (**Atlas**, **Enterprise**, **Paperclip**) son los mismos que van a ver en el README. Se nombran una vez acá para que puedan mapear el deck al syllabus sin traducir de memoria. Ojo: los **objetivos (2.2) ya no nombran ninguna misión** — es deliberado, y acá es donde aparecen.
+Las misiones **ya no se nombran en lámina en ninguna parte del deck** — ni acá ni en los objetivos (2.2). Es deliberado: son varias y se van presentando a lo largo de la cursada. Si preguntan cuáles, los nombres (Atlas / Enterprise / Paperclip) están en el README y se pueden decir de palabra.
 
 El Día 4 está a definir a propósito: lo vamos a cerrar en función de cómo venga el grupo. Si preguntan, ser directo con eso en lugar de improvisar un tema.
 
-Marcar el ritmo: los presenciales son los de misión pesada (Días 1, 2, 5, 6); los virtuales son más cortos y más conceptuales.
+Marcar el ritmo: los presenciales son los de trabajo pesado (Días 1, 2, 5, 6); los virtuales son más cortos y más conceptuales.
 
-El arco del curso —de chatear a delegar y orquestar— **ya no tiene lámina propia** (se borró en la revisión del 2026-07-16). Vale trazarlo en voz alta acá, sobre el calendario: Días 1–2–3–5 son **delegar** (Cowork); el Día 6 es **orquestar** (Paperclip); el punto de partida, chatear, es de donde vienen todos. Sin diagrama, esta lámina es el único lugar donde la progresión se puede ver.
+El arco del curso —de chatear a delegar y orquestar— **ya no tiene lámina propia** (se borró en la revisión del 2026-07-16). Vale trazarlo en voz alta acá, sobre el calendario: el Día 1 es **chatear** (Claude Desktop), el punto de partida; los Días 2–3–5 son **delegar** (Cowork); el Día 6 es **orquestar** (Paperclip). Sin diagrama, esta lámina es el único lugar donde la progresión se puede ver.
 
 ---
 
@@ -433,7 +433,7 @@ Pendiente antes de dictar: confirmar si el Examen Integrador de 45 minutos va en
 ## 1. ¿Preguntas?
 
 <!-- template: single-point -->
-<!-- aside: left ![Ilustración editorial abstracta: líneas y cintas que se abren y convergen, evocando preguntas y reflexión compartida](images/s6-1-1-aside.png) -->
+<!-- aside: left ![Preguntas y reflexión](images/s6-1-1-aside.png) -->
 <!-- generate-source: imagen vertical 2:3 para columna lateral de una presentación de business school. Tema: preguntas, apertura, reflexión y conversación final. Estética: ilustración editorial vectorial plana, abstracta y sofisticada; mucho espacio negativo blanco, masas negras mínimas como ancla, acentos coral #DA1B2E, líneas paralelas, bucles o cintas de flujo que se abren y convergen, planos translúcidos que sugieren distintas capas de pensamiento, composición limpia con tensión tranquila. Mantener creatividad abierta, pero conectar visualmente con Q&A como espacio de exploración compartida. Evitar signos de pregunta literales, personas realistas, objetos reconocibles, muebles, paisaje, horizonte, fotografía, logos, marcas, UI legible, texto legible, letras o números. -->
 
 ### Content
@@ -442,7 +442,7 @@ Pendiente antes de dictar: confirmar si el Examen Integrador de 45 minutos va en
 
 ### Sources
 
-- **Decisión del presentador, revisión del 2026-07-16** — pedido explícito: *"Agregar un slide Q&A. Buscar una imagen a la izquiera para utlizar."* La lámina existe y la imagen ya está generada (ver `aside:` arriba).
+- **Decisión del presentador, revisión del 2026-07-16** — pedido explícito: *"Agregar un slide Q&A. Buscar una imagen a la izquiera para utlizar."* La lámina existe; **la imagen está pendiente** (ver *Open questions*).
 - `README.md` (raíz del working directory) — "SESSION FLOW" del Día 1: formación de equipos y arranque de la primera misión. Sostiene la transición operativa de los speaker notes. (Referencia heredada de la vieja lámina de cierre "Manos a la obra", hoy en 1.1.)
 
 ### Speaker notes
@@ -458,142 +458,3 @@ Se puede volver de palabra a la frase de apertura (1.1) sin cambiar de lámina: 
 ---
 
 # Open questions
-
-**Ground rules — resueltas en su parte de conducta (2026-07-15); tres huecos siguen abiertos.** El presentador definió las tres reglas y ahora viven en la **Sección 4 "Cómo trabajamos"** (slide 4.1): pantallas cerradas salvo cuando trabajamos · estar presente · puntualidad, empezamos en punto. Con eso se cierra la parte del briefing original que pedía ground rules, y el bloqueo sobre la Evaluación queda levantado. Lo definido cubre **conducta en el aula y puntualidad, nada más** — sigue sin definir (el presentador no lo abordó; no se inventa):
-- **Escala de calificación** — ¿aprobado/desaprobado, nota numérica, u otra? El desglose 40/40/20 (slide 5.1) está cerrado; la escala no.
-- **Mínimo de asistencia** — ¿hay un mínimo de clases obligatorias? ¿distinto para presencial (3,5 h) vs. virtual (2 h)? Las reglas definidas hablan de estar presente y llegar a horario, no de cuántas clases hay que tener.
-- **Uso de IA en las entregas** — el curso enseña a delegar trabajo a agentes, pero no hay política de qué está permitido en el Portafolio Grupal (40%) ni en el Examen Integrador (40%). Ninguna slide lo dice hoy.
-
-**Assets — resueltos en Polish (2026-07-30).** Ambos asides atmosféricos ya están inlineados en las láminas correspondientes (ver `aside:` en 1.1 y 6.1); no quedan pedidos de imagen pendientes.
-- Imagen del slide Q&A (6.1): `images/s6-1-1-aside.png` (renombrada desde `s6-2-1` tras la restructuración de la Sección 6 a una sola lámina).
-- Imagen de bienvenida/apertura (1.1): `images/s1-1-1-aside.png`.
-
-**Contenido del curso todavía abierto:**
-- ¿El Examen Integrador (45 min) se toma el Día 7? Preguntado dos veces en la exploración, nunca confirmado. Afecta las slides 5.1 y 3.1.
-- El Día 4 (Mar 11 Ago) sigue sin definir. Aparece como "*A definir*" en la slide 3.1.
-- La cantidad de misiones del portafolio quedó deliberadamente abierta ("se van a ir entregando durante la cursada"). La slide 2.2 refleja esa apertura a propósito; la lámina del portafolio que también la reflejaba se borró en esta ronda (ver *Cut material*).
-- La rúbrica de la evaluación de pares, antes punto 03 de la lámina del portafolio (borrada en esta ronda), no está definida y ya no tiene lámina propia — ver *Cut material*.
-- El curso no tiene marco narrativo: el de Industry 4.0 se borró y el reemplazo propuesto ("La Escalera del Trabajador Aumentado") fue rechazado por el presentador. Con la eliminación del diagrama del arco (vieja 3.2), **el arco Chat → Delegar → Orquestar sobrevive solo como texto**: el objetivo 1 de la slide 2.2, la Tesis, y los speaker notes de 2.2 / 3.1. **¿Se adopta como marco explícito del curso, se le devuelve una lámina, o se deja como está?**
-
-**Fuentes fuera del corpus (trabajo de librarian, no del editor):**
-- **`README.md` de la raíz del working directory no tiene registro en `research/corpus/`.** Las slides 1.1, 1.3, 1.5, 1.6, 3.1 y 6.1 lo citan como fuente, pero al vivir fuera de `research/corpus/` no tiene registro de ingest ni protección contra drift: si el README cambia, ninguna slide se entera. **Correr el librarian sobre `README.md`** para generar su registro de corpus y re-apuntar esas citas. Hasta entonces, las citas apuntan a un archivo vivo y sin versionar dentro del Talk.
-
-**Redacción y decisiones a confirmar con el presentador (revisión 2026-07-16):**
-- **Slide 1.6 "La tecnología funcionó. El valor no llegó." — se conservó el 67% vs. 32% de Microsoft.** El presentador pidió borrar la vieja slide 1.3 ("El manager es la palanca") y reemplazarla por números de impacto; la nueva lámina es de Bain, pero **retiene el 67/32** porque es la bisagra que conecta el "el arreglo es organizacional" de Bain con la tesis del deck (el manager es lo organizacional). Los +17 / +22 / +30 de Microsoft People Science 2025 sí se cortaron (ver *Cut material*). **¿Se queda el 67/32 en esa lámina, o la slide es 100% Bain?**
-- **Slide 1.4 — si hace falta un número de eficiencia en lámina.** El presentador pidió *"impacto en el usuario y eficiencia"*; los números de Bain son de **brecha de valor**, no de eficiencia. El único número de eficiencia **verificado** disponible es el caso **Amazon** (World Wide Watch: 26 min → 2 min por actualización de IVA, −92%, 80% de resúmenes aceptados sin modificar) — hoy está en los speaker notes de 1.4. Es un **anécdota de una sola empresa, no del panel de 951**, y el corpus advierte explícitamente que no se presente como benchmark. **¿Se sube a lámina etiquetado como caso Amazon, o se queda en notas?**
-- **Slide 1.4 — imagen candidata no usada.** El registro de Bain trae la Figura 1 (`bain-ai-budget-returns-2026.web/images/figure-1-flourish-28786844.jpg`), que es exactamente el gráfico objetivo-vs-resultado de esta lámina. **No se usó**: está en inglés, con marca Bain, y su registro sigue en `<!-- pending: process_images -->` (Fase 2 del librarian sin correr) — mismo criterio con el que la slide 1.5 dibujó su propia tabla en vez de usar los gráficos de Zapier. **¿Se evalúa tras correr la Fase 2 del librarian, o se deja la lámina sin imagen?**
-- **Slide 2.2 — "Atlas" se sacó solo de esta lámina.** El pedido (*"No mencionemos atlas sino que vamos a tener varias misiones"*) llegó sobre la slide de Objetivos y se aplicó **solo a la Sección 2**. La slide 3.1 (Cronograma) **sigue nombrando Atlas / Enterprise / Paperclip** por día, porque esa vinculación es una decisión previa deliberada (permite mapear el deck al syllabus) y el presentador no dijo "en todos lados" en este bullet — sí lo dijo, en cambio, en el de "Automatización y Análisis de Datos", que sí se aplicó globalmente. **¿Atlas también sale del cronograma?**
-- **Slide 1.3, idea 1.** La redacción original y aprobada en el README es *"La IA expande **quién** puede hacer trabajo de alto valor"* (una afirmación sobre **acceso**). Las cifras que la respaldan (66% dedica más tiempo a trabajo de alto valor / 58% produce cosas nuevas) miden **cuánto** trabajo hacen los usuarios que ya usan IA, no quién accede — y son auto-reportadas. Se suavizó a *"La IA expande **cuánto** trabajo de alto valor podés hacer"* para que el titular no exceda a sus datos. **Decisión del presentador:** ¿se mantiene la versión suavizada, o se vuelve a la redacción original del README asumiendo el claim más amplio? (Si se vuelve, conviene apoyarlo con una cifra de acceso, que hoy el corpus no tiene.)
-
-**Fact-check — cifras deliberadamente NO usadas en ninguna slide.** Marcadas como no sustanciadas o directamente inexistentes. Se dejaron fuera del draft; **no deben aparecer en lámina bajo ninguna circunstancia** hasta verificarse contra un original real:
-- "6,4 horas ahorradas por semana" — ninguna fuente del corpus la respalda.
-- "reducción de costo de 9x–66x" para trabajo estandarizado — ninguna fuente del corpus la respalda.
-- "agent bosses" como término literal de Microsoft — no aparece en el `page.md` capturado; posible paráfrasis introducida por la búsqueda web en vivo.
-- **"McKinsey Global AI Survey 2026" y "Bain Agentic AI Benchmark 2026" no existen** — verificado contra mckinsey.com y bain.com (2026-07-16). Ni los estudios ni las cifras que se les atribuyen en blogs agregadores ("6,4 h/semana", "9x–66x", "payback 4,1 / 6,7 / 9,3 meses") son reales. El único estudio de Bain real y citable es **Automation and AI Pathfinder Survey 2026 (n=951)**, que es el que usa la slide 1.4. Ver el aviso de citación en `corpus/bain-ai-budget-returns-2026.web.md`.
-- Deloitte Insights ("Agentic AI strategy") fue citado en la exploración pero nunca se capturó en `research/web/` — no tiene registro en el corpus y sus claims son inverificables desde acá.
-
-**Pending stubs del corpus (re-verificar tras librarian Fase 2):**
-- Slides 1.3 y 1.4 citan el pending stub `corpus/microsoft-work-trend-index-2026.web.md` — re-verificar tras librarian Phase 2.
-- Slides 1.5 y 1.7 citan el pending stub `corpus/zapier-agentic-ai-adoption-survey-2026.web.md` — re-verificar tras librarian Phase 2.
-- Slides 1.4 y 1.7 citan el pending stub `corpus/bain-ai-budget-returns-2026.web.md` — re-verificar tras librarian Phase 2.
-- Nota: en los tres casos los `<!-- pending: process_images -->` están solo en la sección *Images / diagrams*; las cifras de texto usadas en las slides **sí** están transcriptas y verificadas verbatim. Los gráficos de datos de Zapier (`human-in-the-loop-is-the-most-popular-approach.png`, `which-departments-have-deployed-aiagents.png`) y la Figura 1 de Bain son candidatos posibles para 1.4 / 1.5 / 1.7, pero están sin transcribir, en inglés y con marca de la consultora. Correr librarian Fase 2 si se quieren evaluar.
-
-**Decisiones de juicio a confirmar con el presentador:**
-- ~~Sección 1: 3 → 6 slides.~~ **Resuelto (2026-07-15).** El presentador pidió 3 slides en su outline ("Seguro aca podemos expandir a 3 slides con datos etc."); la revisión del Composer las llevó a 6 por presupuesto de densidad. Consultado dos veces sobre la desviación, **delegó el criterio de densidad al editor y aceptó las 6**. Ya no es una desviación abierta. Con la revisión del 2026-07-16 la Sección 1 pasó a **7 slides** (entró "Manos a la obra" como apertura; la vieja 1.3 se reemplazó, no se sumó).
-- `duration: 2 horas` (default de `config/profile.md`), pero el Día 1 es presencial de 3,5 h y el README asigna **25 min** al bloque de framing. ¿Qué duración corresponde a esta presentación de bienvenida? El deck está hoy en **6 secciones / 16 slides**, igual que antes de la revisión del 2026-07-16 (se borró 1 slide y se agregó 1). Sigue abierto: es lo único de este bloque que el presentador todavía no cerró.
-- Los títulos de las sesiones se **tradujeron al español** en la slide 3.1 (el README los tiene en inglés). Se resolvió parcialmente pareando cada misión con su nombre en inglés (**Atlas** / **Enterprise** / **Paperclip**) junto al título en español, para que el deck se pueda mapear al syllabus. Confirmar si alcanza o si se quieren los títulos completos en inglés.
-- El título de la Sección 1 se normalizó ortográficamente y luego se acortó a presupuesto de título (≤25 caracteres): "Que pensamos y por que vemos importamte" → "Qué pensamos y por qué lo vemos importante" → **"Qué pensamos y por qué"**.
-- El orden de las secciones del outline original del presentador (…Evaluación → Cierre → Herramientas) se **reordenó** para que Herramientas venga antes de Evaluación y Cierre: el Cronograma (3.1) nombra Cowork y Paperclip, y no tenía sentido pedirle a la audiencia que siguiera el arco `delegar (Cowork) → orquestar (Paperclip)` con esos dos nombres todavía sin presentar. La revisión del 2026-07-16 preservó esa adyacencia: Herramientas ahora es la slide 4.2, inmediatamente después del Cronograma (Sección 3). Confirmar el reorden.
-- La Sección 2 tiene una slide extra no pedida ("Foco de la materia", 2.1) construida con el párrafo aprobado en la exploración. Se mantiene: es la única slide que porta la segunda mitad de la Tesis y prepara el encuadre tool-agnostic del que depende la slide 4.2.
-
-**Deuda de render corregida en el draft (2026-07-16) — para que no vuelva a aparecer:**
-- Slide 1.2 ("Más ejecución, más agencia") estaba pinneada al template `statement`, pero `statement` **no renderiza imágenes**: su diagrama de tesis (el ASCII que Step 6 convierte en PNG) se caía en silencio. Re-pinneada a `content+image`, que sí es dueña de su imagen.
-- Slide 1.9 ("Delegar no es abdicar") estaba pinneada al template `stat`, que espera 2–4 figuras; la lámina lleva **una sola** (38%). Re-pinneada a `big-number` y el Content reordenado para que la cifra sea el primer elemento (contrato de `big-number`: `body[0]` es el número, el resto es el epígrafe).
-- Ambas se habían parcheado en el modelo de render, no en el draft — por eso regresaban en cada re-corrida. Ahora están arregladas en el origen.
-
-# Cut material
-
-- **Objetivo de aprendizaje 3 — "Conocer las principales herramientas de agentes" (Claude Cowork, Paperclip y otras).** Cortado de la lámina 2.2 por pedido del presentador (revisión 2026-07-16). Era una de las cinco cajas de Objetivos; quedan cuatro. Coherente con la tesis y con el objetivo 2 ("la filosofía por sobre la herramienta puntual"): el curso usa las herramientas como vehículo, no como destino. Las herramientas siguen presentes en el deck (lámina 4.2, dentro de "Cómo trabajamos"), solo dejan de ser un objetivo declarado.
-
-- **Slide "De un chat a una organización de agentes"** (vieja 3.2) — **borrada a pedido explícito del presentador** (revisión 2026-07-16: *"Borremos este slide."*). Era la única lámina que enunciaba el arco CHAT → DELEGAR → ORQUESTAR y que listaba las tres misiones con su descripción. Se registra completa acá porque es recuperable y porque su desaparición tiene consecuencias vivas (ver *Open questions* → marco narrativo). Contenido:
-  - Lead: *"El curso es una progresión. Cada día suma una pieza sobre la anterior."*
-  - Diagrama ASCII (con su `ascii-note`: *intent: mostrar el arco del curso como progresion de tres estadios, no como temario suelto · emphasize: las dos flechas de progresion; el estadio ORQUESTAR como destino; el pie de human-in-the-loop · labels: CHAT (donde arrancamos) · DELEGAR (Dias 1-2-3-5) · ORQUESTAR (Dia 6)*):
-    ```
-          CHAT                 DELEGAR                    ORQUESTAR
-      +--------------+     +------------------+     +----------------------+
-      | un mensaje   | --> | un resultado     | --> | una organizacion     |
-      | por vez      |     | (Claude Cowork)  |     | de agentes           |
-      |              |     |                  |     | (Paperclip)          |
-      +--------------+     +------------------+     +----------------------+
-           donde              Dias 1-2-3-5              Dia 6
-         arrancamos                                       |
-                                                          v
-                                           humano siempre en el loop:
-                                        compuertas de aprobacion y budgets
-    ```
-  - Las tres misiones con su descripción: **Atlas · Días 1–2** (construir un analista de mercado virtual en Cowork: de las notas sueltas de un pasante a un reporte que se investiga, se redacta, se envía por mail y publica un dashboard, solo) · **Enterprise · Día 5** (empaquetar lo construido en un Plugin que otra persona instala y corre en su propia máquina) · **Paperclip · Día 6** (sumar un agente especializado a una organización de agentes que ya existe, con vos aprobando los pasos sensibles). Las misiones se siguen nombrando por día en la slide 3.1, pero **sin descripción**: ese detalle solo vivía acá.
-  - **Asset huérfano:** el diagrama ya estaba renderizado en `talks/intro-curso-mim/images/s3-2-1-chat-delegar-orquestar.png` (+ `.svg` + `.ascii`). **El archivo NO se borra** — queda en disco, sin referencias. Si la lámina vuelve, el render ya existe (ojo: el basename codifica la ubicación vieja `s3-2`; una re-corrida de Step 6 lo regeneraría con otro nombre).
-- **Slide "El manager es la palanca"** (vieja 1.3) — **reemplazada a pedido del presentador** (revisión 2026-07-16: *"Borrar este slide. Podriamos remplazar esto con un slide de mas el impacto en el usu.y eficiencia. Algo que sean numeros."*) por la slide 1.4 "El valor no llegó solo", con datos de Bain. El **67% vs. 32% sobrevivió** y vive ahora en 1.4. Lo que sí se cortó:
-  - **Bloque Microsoft People Science 2025 (n=1.800): +17 puntos** en valor percibido de la IA · **+22 puntos** en pensamiento crítico · **+30 puntos** en confianza, sostenido por el encuadre *"cuando un manager usa IA a la vista de su equipo, el equipo gana"*. Es material verificado y citable (registro `corpus/microsoft-work-trend-index-2026.web.md`, que referencia el estudio de People Science de jul 2025). Se cortó por presupuesto de densidad: la lámina 1.4 ya lleva cinco cifras de dos estudios, y sumar tres más de un tercer estudio la volvía ilegible para una audiencia no técnica. **Recuperable tal cual** si el presentador quiere una lámina propia sobre el efecto de modelado del manager.
-- **"Atlas" como nombre de misión en el objetivo 4** (slide 2.2) — el punto decía *"Hands-on con la primera misión aplicada — Atlas"*; el presentador pidió no nombrar la misión y hablar de *"varias misiones"* (revisión 2026-07-16). El nombre no se perdió del deck: la slide 3.1 sigue pareando cada día con su misión (Atlas / Enterprise / Paperclip).
-- **Sección "Herramientas del Curso" como sección propia** — el presentador pidió disolverla (*"Borrar Herramientas del Curso como secccion y dejar herramientas del curso como parte de como trabajamos"*, revisión 2026-07-16). La **lámina sobrevive intacta** como slide 4.2 dentro de "Cómo trabajamos"; lo único que se eliminó es el encabezado de sección y su *goal*, que decía: *"Que sepan con qué van a trabajar y para qué sirve cada cosa — y resolver la pregunta logística de las licencias antes de que aparezca sola."* Ese propósito se plegó al goal de la Sección 4.
-- **Sección "Conclusions"** — eliminada a pedido del presentador (*"Mover este slide despues de Herramientas del Curso y borrar conclusiones"*, revisión 2026-07-16). Sus dos láminas sobrevivieron, reubicadas: *"Lo que se llevan"* → slide 4.3; *"Manos a la obra"* → slide 1.1 (abre el deck). No se perdió contenido, solo el encabezado.
-- **Ground rules propuestas y declinadas explícitamente por el presentador (2026-07-15)** — se le ofrecieron como candidatas junto a las tres que sí adoptó (Sección 4), y las descartó. **No van en ninguna slide.** Se registran acá porque son recuperables si el curso las necesita más adelante:
-  - *"La salida de la IA es un borrador, no una respuesta final"* — habría duplicado material que ya está en la Sección 1 como convicción respaldada por datos (86% trata la salida como punto de partida, slide 1.3; postura human-in-the-loop, slide 1.7). Como regla era redundante.
-  - *"Transparencia sobre el uso de IA"* — declarar qué se hizo con IA en cada entrega.
-  - *"Nada de datos sensibles en las herramientas"* — sin datos de clientes ni de la empresa en Cowork/Paperclip.
-  - *"Trabajo en equipo real"* — que el Portafolio Grupal no lo escriba una sola persona.
-  Nota: las dos últimas rozan huecos que siguen abiertos en *Open questions* (política de uso de IA en las entregas; qué sostiene el 40% de Portafolio Grupal). Si el presentador vuelve sobre ellos, este es el material de partida.
-- **Filas "Síntesis de research" y "Resumen de reuniones"** de la tabla de delegación (slide 1.5) — están en el README pero sin porcentaje ("—"). El corpus confirma que no se encontraron cifras duras para esas dos tareas. Se omitieron de la tabla para no mostrar filas vacías; recuperables si aparece la fuente.
-- **"Triage y respuesta de atención al cliente — 41%"** (Zapier) — es una de las tareas más delegadas, pero no está en la tabla del README y es menos relevante para una audiencia de management general. Disponible si se quiere ampliar la slide 1.5.
-- **Idea 4 — "Los usuarios más avanzados marcan el patrón a seguir"** (Frontier Professionals) — era el cuarto bullet de la vieja slide "Cuatro ideas que atraviesan el curso". Movida a los **speaker notes de 1.3** al dividir esa slide: 8 cifras en una sola lámina superaban el presupuesto de densidad para una audiencia no técnica. La idea sobrevive como material hablado y como puente hacia las misiones; no se perdió.
-- **Lead-in "Esta mirada se apoya en varios estudios recientes sobre IA y trabajo, entre ellos el 2026 Work Trend Index de Microsoft"** (vieja slide de las cuatro ideas) — quedó redundante al atribuir cada cifra en la lámina (*Microsoft WTI 2026* / *Microsoft People Science 2025*), y además difuminaba que son **dos estudios distintos**. El encuadre de fuente se movió a los speaker notes de 1.3.
-- **Párrafos de encuadre de la slide 2.1** — "La primera parte del curso construyó el marco conceptual… Esta segunda parte es sobre la práctica de trabajar aumentado" y "Al terminar, van a saber qué preguntarle a una herramienta nueva y cómo evaluarla". Ambos movidos a los **speaker notes de 2.1**: eran prosa que el presentador iba a recitar textual desde la lámina (principio de redundancia). El contenido no se perdió — se habla en vez de leerse.
-- **Datos de adopción de Zapier no usados**: 72% de empresas usando o testeando agentes; 86% en producción/piloto/planificación; 84% planea aumentar la inversión en los próximos 12 meses; despliegue por departamento (Soporte 49%, Operaciones 47%, Ingeniería 35%, Marketing 31%, Ventas 26%, Finanzas 24%). Buen material para una slide de "dónde está el mercado" si la Sección 1 necesita ampliarse.
-- **Datos de Bain no usados** (registro `corpus/bain-ai-budget-returns-2026.web.md`, todos verbatim-verificables y atribuibles a **Bain Automation and AI Pathfinder Survey 2026, n=951**): 44% financia la próxima ola de IA con los ahorros de programas de automatización anteriores (*"una apuesta circular con una fuga estructural"*); 41% cita el acceso e integración de datos como la barrera número uno; los que **cumplieron** sus targets citan datos como barrera **más** que los que fallaron (44% vs. 40%) porque despliegan a escala; solo 38% de los que fallaron tienen agentes con autonomía de guardrails o superior, vs. 50% de los que cumplieron; la gobernanza no tiene dueño claro (repartida entre IT, negocio y equipos centrales); el concepto de **workflow debt** (*"los handoffs innecesarios, las aprobaciones redundantes y los workarounds embebidos"* — *"la IA no arregla el workflow debt: lo fija, lo acelera y lo vuelve muchísimo más caro de desarmar"*); el **modelo operativo agent-led** (*"los empleados ya no mueven el trabajo a lo largo de un proceso; lo orquestan, lo supervisan y toman las decisiones de criterio que los agentes no pueden"* — nota: es casi literalmente la tesis de este deck, dicha por Bain); y las cinco implicancias para líderes. Material fuerte para el bloque de framing del Día 1 o para una clase sobre adopción organizacional.
-- **Caso Amazon (World Wide Watch)** — 26 min → 2 min por actualización regulatoria de IVA (−92%), con 80% de los resúmenes de IA aceptados sin modificación. Está en los **speaker notes de 1.4**, no en lámina. Es el único número de eficiencia verificado del corpus, pero es de **una sola empresa** y no del panel de 951 de Bain; el registro del corpus advierte explícitamente que no se presente como benchmark ni se generalice. Ver *Open questions* si el presentador lo quiere en lámina.
-- **Conceptos de Microsoft WTI no usados**: la caracterización cuantitativa de los Frontier Professionals (16% de los usuarios de IA; 80% reporta el beneficio de trabajo de alto valor vs. 66% general), la Transformation Paradox (5 zonas: Frontier 19% / Blocked Agency 10% / Unclaimed Capacity 5% / Stalled 16% / Emergent 50%), Owned Intelligence, las "cuatro formas de trabajar con IA" (delegación, colaboración, preguntar, explorar), crecimiento 15x YoY de agentes activos, y que solo el 26% dice que su liderazgo está alineado sobre IA. Demasiado para una bienvenida; muy útil para el bloque de framing del Día 1.
-- **Cifras no sustanciadas / inexistentes**: "6,4 horas ahorradas por semana", "reducción de costo 9x–66x", "agent bosses", "payback 4,1 / 6,7 / 9,3 meses", y los estudios **"McKinsey Global AI Survey 2026"** y **"Bain Agentic AI Benchmark 2026"** — estos dos últimos **no existen** (verificado contra mckinsey.com y bain.com, 2026-07-16). Ver *Open questions* — no se usan, punto.
-- **Detalle de los 4 milestones de la misión Atlas** (🥚 Atlas nace → 🔎 Atlas aprende a investigar → 🐣 Atlas trabaja solo → 📣 Atlas entrega el dashboard). Está en el apéndice del README. La slide 3.1 solo nombra la misión: el detalle corresponde al Día 1, no a la bienvenida.
-- **"La Escalera del Trabajador Aumentado"** (Delegar / Automatizar / [TBD] / Escalar / Orquestar / Evaluar) — marco narrativo propuesto durante la exploración y **rechazado explícitamente** por el presentador ("Borremos por ahora ese marco"). No se usa. Registrado acá porque el curso quedó sin marco narrativo y el tema puede volver.
-- **Conexión explícita entre "la delegación sigue a la repetición" y las herramientas del curso** (Skills de Cowork del Día 2 / Paperclip del Día 6) — el presentador prohibió explícitamente hacer esa conexión en el README, manteniendo la idea a nivel filosófico. La slide 1.6 respeta esa decisión; la conexión vive solo en los speaker notes.
-- **Salvedad metodológica de la encuesta de Zapier** (C-suite de EE.UU., empresas de 1.000+ empleados, no generalizable a PyMEs ni a otros mercados) — no va en la slide para no romper el ritmo; está en los speaker notes de 1.5 por si preguntan.
-
-- **Slide "El portafolio se construye desde el Día 1"** (Sección "Cierre y Portafolios", revisión 2026-07-30: *"Borrar este slide y seccion."*) — eliminada íntegra junto con la sección que la contenía, a pedido del presentador (desambiguado: "¿Preguntas?" pasó a ser su propia sección nueva, ver Sección 6 actual). Contenido:
-  - **01 · Pitch grupal** — 5 minutos por equipo.
-  - **02 · Portafolio completo** — misiones entregadas + guía de prompts + reflexiones.
-  - **03 · Evaluación de pares** — con rúbrica.
-  - **04 · Reflexión de cierre** — próximos pasos profesionales.
-  - Fuente: `corpus/explore-ground-rules-criterio-aprobacion-2026-07-15.md.md` — estructura final de "Cierre y Portafolios" (4 pasos), adaptada de una slide de la primera parte del curso.
-  - Nota: esta era la única lámina que mencionaba el mensaje "el portafolio se construye durante la cursada, no al final", la reflexión de cierre que aterrizaba el objetivo 5 (2.2), y la rúbrica de evaluación de pares. Con su eliminación, ninguna slide cubre hoy esos tres puntos — quedan solo en Open questions. Recuperable tal cual si el presentador la quiere de vuelta, en esta sección o en otra.
-
-- **Slide "La IA expande, el juicio sube de precio"** (Sección 1, revisión 2026-07-30: *"Borrar este slide"*) — eliminada íntegra a pedido del presentador. Contenido:
-  - **La IA expande cuánto trabajo de alto valor podés hacer** — 66% de los usuarios de IA dedican hoy más tiempo a trabajo de alto valor, y 58% producen cosas que hace un año no podían. *(Microsoft WTI 2026)*
-  - **El juicio humano vale más, no menos** — control de calidad sobre la salida de la IA (50%) y pensamiento crítico (46%); 86% trata la salida de la IA como punto de partida, no como respuesta final. *(Microsoft WTI 2026)*
-  - Fuentes: `corpus/microsoft-work-trend-index-2026.web.md`; `README.md` — sección "How we see the future of knowledge workers".
-  - Nota: el argumento ("la IA expande el trabajo que podés hacer, pero eso sube el precio del juicio humano") no tenía otra lámina que lo sostuviera; queda huérfano tras esta eliminación. Recuperable tal cual si el presentador la quiere de vuelta.
-
-- **Slide "La tecnología funcionó. El valor no llegó."** (Sección 1, revisión 2026-07-30: *"Borrar este slide."*) — eliminada íntegra a pedido del presentador. Contenido:
-  - **37% apuntaba a recortar costos 11%–20%** — pero casi el **40% *de los que midieron resultados*** terminó en el 0%–10%. *(Bain 2026)*
-  - **90% aumenta igual su presupuesto de IA.** *(Bain 2026)*
-  - **67% vs. 32%** — lo organizacional pesa más del doble que la actitud individual a la hora de que la IA prenda en un equipo. *(Microsoft WTI 2026)*
-  - Tesis de la lámina: *"La tecnología funcionó. El valor no llegó."* — el arreglo es organizacional, no tecnológico.
-  - Fuentes: `corpus/bain-ai-budget-returns-2026.web.md` — **Bain Automation and AI Pathfinder Survey 2026 (n=951)**; `corpus/microsoft-work-trend-index-2026.web.md` (67/32).
-  - Caso de eficiencia que vivía en los speaker notes de esta lámina (no en cuerpo): **Amazon** (World Wide Watch) — 26 min → 2 min por actualización regulatoria de IVA (−92%), 80% de resúmenes de IA aceptados sin modificar. Único número de eficiencia verificado del corpus; es de una sola empresa, no del panel de 951 de Bain — no generalizar. Duplica lo que ya está registrado más arriba en *Cut material* → "Caso Amazon".
-  - Esta era la lámina que sostenía el 67/32 de Microsoft y los datos de Bain en el deck; con su eliminación, esos números ya no aparecen en ninguna slide (siguen disponibles acá y en *Datos de Bain no usados*).
-
-- **Slide "Delegar no es abdicar"** (Sección 1, revisión 2026-07-30: *"Borrar"*) — eliminada íntegra a pedido del presentador. Contenido:
-  - **38%** de las empresas: el estilo dominante de delegación es *human-in-the-loop*. *(Zapier 2026)*
-  - Fuentes: `corpus/zapier-agentic-ai-adoption-survey-2026.web.md`; `corpus/explore-ground-rules-criterio-aprobacion-2026-07-15.md.md` (postura de gobernanza del curso).
-  - Corroboración independiente que vivía en speaker notes: Bain encuentra que solo **7%** de las empresas corre agentes plenamente autónomos en producción; 38% "human approval required"; 32% guardrails y excepciones. *(Bain Automation and AI Pathfinder Survey 2026, n=951)*.
-  - Nota: esta lámina era la carga estructural hacia el Día 6 (compuertas de aprobación en Paperclip) y hacia la postura de gobernanza human-in-the-loop del curso (Día 2, Cowork sin audit trail). Con su eliminación, esa conexión queda sin lámina propia — sobrevive solo si se menciona de palabra.
-
-- **Item "Producción de Contenido"** (slide "Qué herramienta para qué trabajo", Sección 4 "Cómo trabajamos", revisión 2026-07-30) — quitado de la lámina a pedido del presentador. Era: *"**Producción de Contenido** — **NotebookLM · Gamma · Claude**: del conocimiento al entregable — del material en bruto a algo que se presenta."* La lámina pasó de tres categorías (Automatización y Análisis de Datos / Agentes / Producción de Contenido) a tres nuevas (Automatización / Análisis de Datos / Agentes) tras dividir la primera categoría en dos. NotebookLM, Gamma y Claude (como herramienta de producción de contenido) ya no aparecen en ningún lugar del deck.
-
-- **Slide "Lo que se llevan"** (Sección 4 "Cómo trabajamos", revisión 2026-07-30: *"Borrar este slide."*) — eliminada íntegra a pedido del presentador. Contenido:
-  - **La forma de pensar para delegar** trabajo a agentes — no solo ejecutar tareas asistidos por IA.
-  - **Experiencia hands-on con herramientas reales** (Claude Cowork, Paperclip y otras) como vehículo de aprendizaje, no como destino.
-  - **Un criterio propio** para evaluar y adoptar herramientas nuevas a medida que el panorama itera.
-  - **Confianza para operar como "manager aumentado"** — guiar y supervisar agentes en vez de hacer todo a mano.
-  - Fuente: `corpus/explore-ground-rules-criterio-aprobacion-2026-07-15.md.md`.
-  - Nota: esta lámina cerraba el círculo con la apertura del deck (*"los managers aumentados por ella"*, 1.1) y era el espejo, en el idioma del alumno, de los objetivos de aprendizaje (2.2). Con su eliminación, ese cierre de círculo ya no está en ninguna lámina — queda disponible acá si se lo quiere reincorporar en otro punto del deck.
