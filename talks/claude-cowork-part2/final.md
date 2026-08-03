@@ -58,21 +58,24 @@ Style decisions (persisted in draft):
 
 ---
 
-## 1. Cómo responder el quiz
+## 1. Votación en vivo
 
 ### Content
 
-1. Elegir una opción por pregunta, sin discutirla.
-2. Anotar el motivo de la elección.
-3. Comparar respuestas en parejas antes de la puesta en común.
+**Abrí `app.sli.do/event/taHrp3rLrjicjt9PVdr6Nh` y votá qué bloque querés aplicar primero en tu trabajo.**
+
+- Conocimiento Persistente
+- Artifacts
+- Plugins
+- Claude Code
 
 ### Sources
 
-- corpus/chat-export-2026-08-03.zip.md
+- https://app.sli.do/event/taHrp3rLrjicjt9PVdr6Nh
 
 ### Speaker notes
 
-Dar un minuto por pregunta. El bloque completo toma unos quince minutos: cinco preguntas más la puesta en común. Pedir una elección individual antes de conversar en parejas. El objetivo consiste en recuperar las distinciones que sostienen el resto de la clase. No puntuar el resultado. Escuchar las razones detrás de cada opción, porque una respuesta correcta por intuición puede esconder una confusión conceptual. Revelar la respuesta desde las notas luego de escuchar dos argumentos del grupo.
+Mostrar el enlace de Slido y pedir que cada persona vote un único bloque: Conocimiento Persistente, Artifacts, Plugins o Claude Code. El Slido hoy tiene Q&A abierto; antes de la clase, configurar esta encuesta de opción múltiple en el evento.
 
 ### Presenter feedback
 
@@ -1227,28 +1230,7 @@ Cerrar con una consigna concreta. Cada alumno elige una tarea de su trabajo y re
 
 ---
 
-## 3. Votación en vivo
-
-### Content
-
-**Abrí `app.sli.do/event/taHrp3rLrjicjt9PVdr6Nh` y votá qué bloque querés aplicar primero en tu trabajo.**
-
-- Conocimiento Persistente
-- Artifacts
-- Plugins
-- Claude Code
-
-### Sources
-
-- https://app.sli.do/event/taHrp3rLrjicjt9PVdr6Nh
-
-### Speaker notes
-
-Mostrar el enlace de Slido y pedir que cada persona vote un único bloque: Conocimiento Persistente, Artifacts, Plugins o Claude Code. El Slido hoy tiene Q&A abierto; antes de la clase, configurar esta encuesta de opción múltiple en el evento.
-
----
-
-## 4. Q&A
+## 3. Q&A
 
 ### Content
 
