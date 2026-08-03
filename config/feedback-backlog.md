@@ -9,6 +9,24 @@ Reuse existing tags before inventing new ones. In use: slop-pattern, accuracy, s
 ## Entries
 
 <!-- Editor appends entries below this line. -->
+- talk: claude-cowork-part2
+  date: 2026-08-03
+  location: Agenda
+  feedback: "En cada una de las secciones agrega un slide demo."
+  resolution: Se agregaron demos al cierre de Quiz, Conocimiento Persistente, Artifacts y Plugins; Claude Code ya incluía la demo del tracker mínimo.
+  tags: [add-slide, slide-content, audience]
+- talk: claude-cowork-part2
+  date: 2026-08-03
+  location: Slide "7. Cómo se administra Memory" (Sección 2)
+  feedback: "Cómo se administra Memory mas descripcion si es algo que le digo en el prompt, lo si lo hace automatico, etc."
+  resolution: Lámina reescrita como proceso de cuatro pasos: aprendizaje dentro del Project, corrección por prompt, revisión y limpieza, y promoción de reglas estables a Instructions o archivos. Se añadieron dos fuentes oficiales.
+  tags: [rewrite, slide-content, sources, clarity]
+- talk: claude-cowork-part2
+  date: 2026-08-03
+  location: Slide "4. Dos tipos de Artifact" (Sección 3)
+  feedback: "No veo nigun slide sbore"
+  resolution: Nueva lámina «El ciclo de vida de un Artifact» con creación, iteración/versionado, publicación o compartición, apertura y retiro de acceso. Las láminas siguientes separan las restricciones de distribución, los permisos de refresco y las credenciales del visitante.
+  tags: [add-slide, slide-content, sources, visual]
 - talk: seguridad-governance-ai
   date: 2026-07-06
   location: Slide "2. PII vs. Personal Data"

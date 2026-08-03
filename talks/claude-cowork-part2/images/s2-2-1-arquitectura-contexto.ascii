@@ -1,0 +1,14 @@
+                          PROJECT
+                 ¿dónde vale este contexto?
+                             |
+       +---------------------+---------------------+
+       |                     |                     |
+    ARCHIVOS            INSTRUCTIONS             MEMORY
+ ¿qué sabemos y        ¿cómo tiene que       ¿qué continuidad
+ cómo se comprueba?    trabajar Claude?     conviene conservar?
+
+<!-- ascii-note:
+intent: mostrar al Project como límite de tres componentes, cada uno con su pregunta práctica
+emphasize: la pregunta bajo cada rama; las tres ramas al mismo nivel, bajo el Project
+labels: Project, archivos, Instructions, Memory, una pregunta por rama
+-->

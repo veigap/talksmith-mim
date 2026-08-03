@@ -1,0 +1,12 @@
+APLICACION
+   |
+   +-- pantallas
+   +-- reglas
+   +-- datos
+   +-- pruebas
+
+<!-- ascii-note:
+intent: mostrar que un software es una aplicación compuesta por archivos con funciones distintas
+emphasize: una aplicación como conjunto de archivos con funciones distintas
+labels: pantallas, reglas, datos, pruebas
+-->

@@ -442,7 +442,7 @@ La nota al pie marca la diferencia con la lámina de acá a dos. Acá se habla d
 ### Presenter feedback
 
 ---
-
+≠≠
 ## 2. Conceder una carpeta y ver el contexto
 
 ### Content

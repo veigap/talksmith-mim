@@ -1,0 +1,18 @@
+              ¿DATO O PROCEDIMIENTO?
+                        |
+         +--------------+---------------+
+         |                              |
+       DATOS                     PROCEDIMIENTO
+   archivos (.md)                       |
+   se citan y auditan       +-----------+-----------+
+                            |                       |
+                      INSTRUCTIONS                SKILL
+                     regla de cada           proceso invocable,
+                     tarea del Project       reutilizable entre
+                                             análisis y Skills
+
+<!-- ascii-note:
+intent: dar el criterio de clasificación del conocimiento: primero dato vs procedimiento, después dónde vive cada uno
+emphasize: la bifurcación inicial y la reutilización de la Skill entre análisis y otras Skills
+labels: datos, procedimiento, archivos, Instructions, Skill
+-->

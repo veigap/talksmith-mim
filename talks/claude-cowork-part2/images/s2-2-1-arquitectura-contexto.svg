@@ -1,0 +1,28 @@
+<!-- talksmith-ascii-sha256: e36a838407a76451224178bb4fdda2d250439c0b94d9307abfd24997678663fb -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 370" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+  <title>La arquitectura del contexto</title>
+  <desc>Un Project delimita el contexto y reúne archivos, instrucciones y memoria con funciones distintas.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#6F6868"/></marker>
+  </defs>
+  <rect width="760" height="370" fill="#ffffff"/>
+  <rect x="190" y="30" width="380" height="90" rx="16" fill="#F9E6E8" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="380" y="66" text-anchor="middle" font-size="22" font-weight="700" fill="#DA1B2E">PROJECT</text>
+  <text x="380" y="94" text-anchor="middle" font-size="16">¿Dónde vale este contexto?</text>
+  <path d="M380 120 V174 M140 174 H620 M140 174 V225 M380 174 V225 M620 174 V225" fill="none" stroke="#6F6868" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="30" y="225" width="220" height="110" rx="14" fill="#F6F4F4" stroke="#807878" stroke-width="1.5"/>
+  <text x="140" y="257" text-anchor="middle" font-size="18" font-weight="700">ARCHIVOS</text>
+  <text x="140" y="285" text-anchor="middle" font-size="15">¿Qué sabemos y cómo</text>
+  <text x="140" y="306" text-anchor="middle" font-size="15">se comprueba?</text>
+  <text x="140" y="325" text-anchor="middle" font-size="13" fill="#6F6868">datos auditables</text>
+  <rect x="270" y="225" width="220" height="110" rx="14" fill="#F6F4F4" stroke="#807878" stroke-width="1.5"/>
+  <text x="380" y="257" text-anchor="middle" font-size="18" font-weight="700">INSTRUCTIONS</text>
+  <text x="380" y="285" text-anchor="middle" font-size="15">¿Cómo tiene que</text>
+  <text x="380" y="306" text-anchor="middle" font-size="15">trabajar Claude?</text>
+  <text x="380" y="325" text-anchor="middle" font-size="13" fill="#6F6868">reglas permanentes</text>
+  <rect x="510" y="225" width="220" height="110" rx="14" fill="#F6F4F4" stroke="#807878" stroke-width="1.5"/>
+  <text x="620" y="257" text-anchor="middle" font-size="18" font-weight="700">MEMORY</text>
+  <text x="620" y="285" text-anchor="middle" font-size="15">¿Qué continuidad</text>
+  <text x="620" y="306" text-anchor="middle" font-size="15">conviene conservar?</text>
+  <text x="620" y="325" text-anchor="middle" font-size="13" fill="#6F6868">preferencias aprendidas</text>
+</svg>

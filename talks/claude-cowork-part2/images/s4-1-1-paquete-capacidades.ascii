@@ -1,0 +1,13 @@
+                          PLUGIN
+                             |
+      +-------------+-------------+-------------+
+      |             |             |             |
+    SKILLS      CONNECTORS      AGENTS        HOOKS
+ instrucciones   servicios     trabajo     automatismos
+  de un flujo      (MCP)      delegado     de la sesión
+
+<!-- ascii-note:
+intent: mostrar que un plugin agrupa cuatro tipos de componente en un solo paquete
+emphasize: plugin como paquete; las cuatro ramas al mismo nivel
+labels: Skills, Connectors (MCP), Agents, Hooks
+-->

@@ -1,0 +1,21 @@
+                 ¿QUÉ TIPO DE CONTEXTO ES?
+                              |
+          +-------------------+-------------------+
+          |                   |                   |
+        DATOS            PROCEDIMIENTO       CONTINUIDAD
+          |                   |                   |
+      ARCHIVO       INSTRUCTION / SKILL          MEMORY
+      evidencia      regla estable o          preferencias y
+      verificable    proceso invocable        contexto aprendido
+                                              dentro del Project
+                                                      |
+                                           úsala para retomar
+                                           una tarea; no para
+                                           evidencia ni reglas
+                                           obligatorias
+
+<!-- ascii-note:
+intent: completar el criterio para ubicar conocimiento, distinguiendo dato, procedimiento y continuidad entre tareas
+emphasize: Memory como continuidad dentro del mismo Project; no reemplaza archivos ni Instructions
+labels: datos, procedimiento, continuidad, archivo, Instruction, Skill, Memory
+-->

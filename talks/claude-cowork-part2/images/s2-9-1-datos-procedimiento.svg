@@ -1,0 +1,42 @@
+<!-- talksmith-ascii-sha256: db08c324378a870bf1d126c8a742d56d285a40966f22df6d71922286127f5a84 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 465" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+  <title>Datos, procedimiento o continuidad</title>
+  <desc>El contexto se ubica según sea evidencia verificable, procedimiento o continuidad dentro del Project.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#6F6868"/></marker>
+  </defs>
+  <rect width="900" height="465" fill="#ffffff"/>
+  <rect x="270" y="24" width="360" height="72" rx="16" fill="#F9E6E8" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="450" y="55" text-anchor="middle" font-size="20" font-weight="700" fill="#DA1B2E">¿QUÉ TIPO DE CONTEXTO ES?</text>
+  <text x="450" y="78" text-anchor="middle" font-size="14">La función define dónde vive</text>
+  <path d="M450 96 V130 H150 V166" fill="none" stroke="#6F6868" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M450 96 V166" fill="none" stroke="#6F6868" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M450 96 V130 H750 V166" fill="none" stroke="#6F6868" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="30" y="166" width="240" height="194" rx="14" fill="#F6F4F4" stroke="#807878" stroke-width="1.5"/>
+  <text x="150" y="204" text-anchor="middle" font-size="18" font-weight="700">DATOS</text>
+  <path d="M56 224 H244" stroke="#C9C2C2" stroke-width="1"/>
+  <text x="150" y="254" text-anchor="middle" font-size="16" font-weight="700">ARCHIVO</text>
+  <text x="150" y="282" text-anchor="middle" font-size="14">Evidencia verificable</text>
+  <text x="150" y="308" text-anchor="middle" font-size="13" fill="#6F6868">cifras, fuentes, decisiones</text>
+  <text x="150" y="333" text-anchor="middle" font-size="13" fill="#6F6868">se cita y audita</text>
+  <rect x="330" y="166" width="240" height="194" rx="14" fill="#F6F4F4" stroke="#807878" stroke-width="1.5"/>
+  <text x="450" y="204" text-anchor="middle" font-size="18" font-weight="700">PROCEDIMIENTO</text>
+  <path d="M356 224 H544" stroke="#C9C2C2" stroke-width="1"/>
+  <rect x="350" y="241" width="94" height="66" rx="9" fill="#ffffff" stroke="#807878" stroke-width="1"/>
+  <text x="397" y="265" text-anchor="middle" font-size="10" font-weight="700">INSTRUCTION</text>
+  <text x="397" y="287" text-anchor="middle" font-size="10">regla estable</text>
+  <rect x="456" y="241" width="94" height="66" rx="9" fill="#ffffff" stroke="#807878" stroke-width="1"/>
+  <text x="503" y="265" text-anchor="middle" font-size="12" font-weight="700">SKILL</text>
+  <text x="503" y="287" text-anchor="middle" font-size="10">a demanda</text>
+  <text x="450" y="333" text-anchor="middle" font-size="13" fill="#6F6868">proceso reutilizable</text>
+  <rect x="630" y="166" width="240" height="254" rx="14" fill="#F9E6E8" stroke="#DA1B2E" stroke-width="2.5"/>
+  <text x="750" y="204" text-anchor="middle" font-size="18" font-weight="700" fill="#DA1B2E">CONTINUIDAD</text>
+  <path d="M656 224 H844" stroke="#E7B6BD" stroke-width="1"/>
+  <text x="750" y="254" text-anchor="middle" font-size="16" font-weight="700" fill="#DA1B2E">MEMORY</text>
+  <text x="750" y="281" text-anchor="middle" font-size="14">Preferencias y contexto</text>
+  <text x="750" y="304" text-anchor="middle" font-size="14">aprendido en el Project</text>
+  <path d="M656 326 H844" stroke="#E7B6BD" stroke-width="1"/>
+  <text x="750" y="351" text-anchor="middle" font-size="13" font-weight="700">Úsala para retomar tareas</text>
+  <text x="750" y="375" text-anchor="middle" font-size="12" fill="#6F6868">No es evidencia ni una regla</text>
+  <text x="750" y="396" text-anchor="middle" font-size="12" fill="#6F6868">obligatoria</text>
+</svg>

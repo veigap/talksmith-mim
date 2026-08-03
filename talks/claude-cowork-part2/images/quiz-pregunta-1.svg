@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Pregunta 1</title>
+  <desc id="desc">Placa vertical con el número uno.</desc>
+  <rect x="45" y="45" width="710" height="910" rx="72" fill="#F9D2D6"/>
+  <circle cx="400" cy="430" r="245" fill="#DA1B2E"/>
+  <text x="400" y="530" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="360" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="400" y="825" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="74" font-weight="700" letter-spacing="10" fill="#3B3535">PREGUNTA</text>
+</svg>

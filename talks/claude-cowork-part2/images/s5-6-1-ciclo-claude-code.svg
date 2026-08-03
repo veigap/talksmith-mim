@@ -1,0 +1,42 @@
+<!-- talksmith-ascii-sha256: 331acc1f2bdaaa3ac42a528d49d521f4b6e7a8b3192d21ebe5213daf2d011d8a -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+  <title>Qué hace Claude Code</title>
+  <desc>Claude Code lee, entiende, planifica, edita y prueba el trabajo con los permisos de la sesión.</desc>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L9 5L0 10Z" fill="#756D6D"/></marker>
+  </defs>
+  <rect width="900" height="270" fill="#fff"/>
+  <text x="450" y="43" text-anchor="middle" font-size="17" font-weight="700" fill="#756D6D">DE UN PEDIDO A UN CAMBIO REVISABLE</text>
+  <path d="M176 135H212M338 135H374M500 135H536M662 135H698" fill="none" stroke="#756D6D" stroke-width="3" marker-end="url(#a)"/>
+  <g>
+    <rect x="32" y="90" width="144" height="90" rx="11" fill="#F4F1F1" stroke="#B8B0B0" stroke-width="2"/>
+    <text x="104" y="127" text-anchor="middle" font-size="20" font-weight="700">Leer</text>
+    <text x="104" y="151" text-anchor="middle" font-size="13">abre y busca</text>
+    <text x="104" y="169" text-anchor="middle" font-size="13">los archivos</text>
+  </g>
+  <g>
+    <rect x="194" y="90" width="144" height="90" rx="11" fill="#F4F1F1" stroke="#B8B0B0" stroke-width="2"/>
+    <text x="266" y="127" text-anchor="middle" font-size="20" font-weight="700">Entender</text>
+    <text x="266" y="151" text-anchor="middle" font-size="13">relaciona pedido</text>
+    <text x="266" y="169" text-anchor="middle" font-size="13">y contexto</text>
+  </g>
+  <g>
+    <rect x="356" y="82" width="144" height="106" rx="11" fill="#F9E5E7" stroke="#DA1B2E" stroke-width="3"/>
+    <text x="428" y="124" text-anchor="middle" font-size="20" font-weight="700" fill="#A41425">Planear</text>
+    <text x="428" y="149" text-anchor="middle" font-size="13">propone el camino</text>
+    <text x="428" y="168" text-anchor="middle" font-size="13">antes de editar</text>
+  </g>
+  <g>
+    <rect x="518" y="90" width="144" height="90" rx="11" fill="#F4F1F1" stroke="#B8B0B0" stroke-width="2"/>
+    <text x="590" y="127" text-anchor="middle" font-size="20" font-weight="700">Editar</text>
+    <text x="590" y="151" text-anchor="middle" font-size="13">modifica los</text>
+    <text x="590" y="169" text-anchor="middle" font-size="13">archivos necesarios</text>
+  </g>
+  <g>
+    <rect x="680" y="90" width="144" height="90" rx="11" fill="#F4F1F1" stroke="#B8B0B0" stroke-width="2"/>
+    <text x="752" y="127" text-anchor="middle" font-size="20" font-weight="700">Probar</text>
+    <text x="752" y="151" text-anchor="middle" font-size="13">ejecuta y verifica</text>
+    <text x="752" y="169" text-anchor="middle" font-size="13">el resultado</text>
+  </g>
+  <text x="450" y="228" text-anchor="middle" font-size="14" fill="#6B6262">El plan es el punto de control: se revisa antes de aplicar los cambios.</text>
+</svg>

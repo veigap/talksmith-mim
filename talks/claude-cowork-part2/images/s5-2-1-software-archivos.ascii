@@ -1,0 +1,12 @@
+APLICACION
+   |
+   +-- pantallas
+   +-- reglas
+   +-- datos
+   +-- pruebas
+
+<!-- ascii-note:
+intent: explicar una codebase a una audiencia de negocios
+emphasize: una aplicación como conjunto de archivos con funciones distintas
+labels: pantallas, reglas, datos, pruebas
+-->

@@ -10,7 +10,7 @@ Agentes Inteligentes — Master in Management (MiM), IAE Business School, Univer
 
 ## Presenter
 
-Paulo Veiga, Profesor, IAE Business School
+Paulo Veiga, Marco Sorondo y Claudio Riguetti
 
 ## How my presentations are consumed
 
@@ -18,7 +18,7 @@ Clases presenciales en vivo como modo principal; algunas clases se dictan en rem
 
 ## Audience defaults
 
-Profesionales del dominio de negocios, no ingenieros — estudiantes del Master in Management (MiM). Sin formación técnica en AI; les interesa el impacto conceptual y práctico de la AI en la gestión y los negocios.
+Profesionales y estudiantes de negocios con fundamentos de programación — Master in Management (MiM). Buscan aplicar AI a problemas de gestión y comprender cómo se construyen, revisan y gobiernan herramientas de software.
 
 ## Default duration
 
