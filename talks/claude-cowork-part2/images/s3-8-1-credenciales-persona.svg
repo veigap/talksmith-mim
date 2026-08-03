@@ -1,13 +1,13 @@
-<!-- talksmith-ascii-sha256: d2b87fd8a5b951edb6b60fe159f748679c0d452b2d166245457bfdcf8d30a0d8 -->
+<!-- talksmith-ascii-sha256: 97d8d9cd4df5db52caec8d11435c533d831b7b83609c5c637bb8e5fe90edcbc9 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
   <title>Con qué credenciales se conecta</title>
-  <desc>El Live Artifact consulta los servicios con las credenciales de la persona que lo abre.</desc>
+  <desc>El Cowork Artifact consulta los servicios con las credenciales de la persona que lo abre.</desc>
   <rect width="1200" height="600" fill="#ffffff"/>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#8B8585"/></marker>
   </defs>
   <text x="70" y="70" font-size="27" font-weight="700">La autenticación pertenece a cada persona</text>
-  <text x="70" y="105" font-size="18" fill="#6C6666">El Live Artifact no lleva contraseñas ni tokens de quien lo creó.</text>
+  <text x="70" y="105" font-size="18" fill="#6C6666">El Cowork Artifact no lleva contraseñas ni tokens de quien lo creó.</text>
   <g>
     <rect x="70" y="180" width="300" height="188" rx="16" fill="#F4F1F0" stroke="#B8B1AF" stroke-width="2"/>
     <rect x="830" y="180" width="300" height="188" rx="16" fill="#F4F1F0" stroke="#B8B1AF" stroke-width="2"/>
@@ -16,7 +16,7 @@
   <g text-anchor="middle">
     <text x="220" y="226" font-size="22" font-weight="700">Creador</text>
     <text x="220" y="263" font-size="17">autentica sus</text><text x="220" y="289" font-size="17">Connectors</text>
-    <text x="600" y="237" font-size="25" font-weight="700" fill="#9E1322">Live Artifact</text>
+    <text x="600" y="237" font-size="25" font-weight="700" fill="#9E1322">Cowork Artifact</text>
     <text x="600" y="274" font-size="17">usa los Connectors</text><text x="600" y="300" font-size="17">ya autenticados</text>
     <text x="980" y="226" font-size="22" font-weight="700">Visitante</text>
     <text x="980" y="263" font-size="17">autentica sus</text><text x="980" y="289" font-size="17">Connectors</text>

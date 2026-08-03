@@ -11,10 +11,11 @@ date: 2026-08-04
 
 <!--
 Style decisions (persisted in draft):
-- Las láminas que definen una pieza de Cowork pueden usar una imagen en aside a la derecha + ítems, para que la visual acompañe sin competir con el contenido.
+- Las láminas que definen una pieza de Cowork pueden usar una imagen en aside a la izquierda o derecha + ítems, para que la visual acompañe sin competir con el contenido.
 - Las comparaciones usan una tabla con una primera columna de rótulos, para alinear criterios y conceptos.
 - Los diagramas se entregan como SVG y se usan como SVG en HTML.
-- Las láminas de Demo son solamente "Demo", excepto el Demo de Memoria, que usa la demostración completa `memory-demo.gif`.
+- Las láminas de Demo son solamente "Demo", excepto “Memoria en la interfaz”, que usa la demostración completa `memory-demo.gif`.
+- Los videos en láminas `image-full` se muestran contenidos, con márgenes blanco laterales e inferior; nunca recortan ni desbordan el marco.
 -->
 
 # Thesis
@@ -284,7 +285,7 @@ Esta es la lámina ancla de la sección. El Project delimita un espacio de traba
 - **Decisiones aprobadas** - criterios que otra persona debe poder auditar.
 - **Plantillas** - estructuras que el equipo edita y versiona.
 
-![Archivo Markdown estructurado como fuente de verdad](images/archivo-md-fuente-verdad.png)
+<!-- aside: right ![Archivo Markdown estructurado como fuente de verdad](images/archivo-md-fuente-verdad.png) -->
 
 ### Sources
 
@@ -400,7 +401,7 @@ Memory no depende sólo de que alguien escriba "recordá". En un Project de Cowo
 
 ---
 
-## 8. Demo
+## 8. Memoria en la interfaz
 
 ### Content
 
@@ -483,14 +484,14 @@ Usar esta tabla como regla rápida de decisión. Archivos son la fuente de verda
 
 # 3. Artifacts
 
-**Goal of this section:** Distinguir un Artifact de chat de un Live Artifact de Cowork y evaluar datos, persistencia, compartición y permisos antes de crear uno.
+**Goal of this section:** Distinguir un Chat Artifact de un Cowork Artifact y evaluar datos, persistencia, compartición y permisos antes de crear uno.
 
 **Presenter feedback:**
 
 - [closed] 2026-08-03 — "borrar este slide."
   Resolution: Lámina 'Tracker de competidores' (tabla Atlas/Boreal/Cima) movida a Cut material.
 - [closed] 2026-08-03 — "Borrar, voy a mostrar ralmente un ejemplo."
-  Resolution: Lámina 'Demo de Live Artifact' movida a Cut material; el cierre de 3.1 anuncia el ejemplo real en vivo y Open questions registra su preparación (reemplaza la duda 'en vivo o preparado').
+  Resolution: Lámina 'Demo de Cowork Artifact' movida a Cut material; el cierre de 3.1 anuncia el ejemplo real en vivo y Open questions registra su preparación (reemplaza la duda 'en vivo o preparado').
 
 ---
 
@@ -498,12 +499,12 @@ Usar esta tabla como regla rápida de decisión. Archivos son la fuente de verda
 
 ### Content
 
-**Un Artifact es un contenido, herramienta o vista independiente del chat que Claude crea para consultar, modificar o reutilizar.**
+**Un Artifact es una pieza de trabajo que Claude crea y que se abre fuera de la respuesta del chat para volver a usarla, modificarla o compartirla.**
 
-- **En el chat** - una respuesta puntual queda dentro de la conversación.
-- **Como Artifact** - el resultado se abre por separado y puede volver a consultarse o modificarse.
+- **Chat Artifact** - nace de una conversación y sirve para trabajar sobre un contenido o herramienta creada en el chat.
+- **Cowork Artifact** - vive en Cowork y puede volver a consultar los datos autorizados cuando se abre.
 
-![Vista de trabajo independiente que permanece mientras cambia la información](images/s3-1-1-aside.png)
+<!-- aside: left ![Vista de trabajo independiente que permanece mientras cambia la información](images/s3-1-1-aside.png) -->
 
 ### Sources
 
@@ -511,13 +512,13 @@ Usar esta tabla como regla rápida de decisión. Archivos son la fuente de verda
 
 ### Speaker notes
 
-Empezar por la definición, no por el caso. Un Artifact es una pieza independiente del chat: puede ser contenido, una herramienta o una vista que el equipo vuelve a abrir. Luego plantear el caso de cinco competidores: una respuesta dentro del chat sirve para una consulta puntual, pero el equipo necesita volver al mismo tracker, comparar cambios y abrir fuentes. Anticipar la distinción que ordena la sección: un Artifact de chat frente a un Live Artifact de Cowork que vuelve a consultar datos al abrirse. Esta sección cierra con un ejemplo real en vivo.
+Empezar por la definición: un Artifact no es una respuesta más, sino una pieza de trabajo separada que se vuelve a abrir. Puede ser contenido, una herramienta o una vista. Luego nombrar los dos tipos que ordenan el resto de la sección, sin desarrollar todavía sus reglas: el Chat Artifact nace en una conversación; el Cowork Artifact vive en Cowork y puede volver a consultar las fuentes autorizadas al abrirse. Las dos láminas siguientes explican cada tipo. Recién después volver al caso de cinco competidores: una respuesta puntual sirve para una consulta, pero un tracker que el equipo vuelve a abrir necesita un Artifact.
 
 ### Presenter feedback
 
 ---
 
-## 2. Artifact de chat
+## 2. Chat Artifact
 
 ### Content
 
@@ -531,13 +532,13 @@ Empezar por la definición, no por el caso. Un Artifact es una pieza independien
 
 ### Speaker notes
 
-Claude muestra un Artifact de chat fuera del hilo principal para trabajar mejor con el resultado. Los casos típicos incluyen una calculadora, un canvas, un documento o una mini aplicación. El contexto proviene de la conversación y de las funciones usadas allí. Según el plan y la organización, el usuario puede reutilizarlo, compartirlo o publicarlo bajo las reglas disponibles.
+Claude muestra un Chat Artifact fuera del hilo principal para trabajar mejor con el resultado. Los casos típicos incluyen una calculadora, un canvas, un documento o una mini aplicación. El contexto proviene de la conversación y de las funciones usadas allí. Según el plan y la organización, el usuario puede reutilizarlo, compartirlo o publicarlo bajo las reglas disponibles.
 
 ### Presenter feedback
 
 ---
 
-## 3. Live Artifact de Cowork
+## 3. Cowork Artifact
 
 ### Content
 
@@ -553,7 +554,7 @@ Claude muestra un Artifact de chat fuera del hilo principal para trabajar mejor 
 
 ### Speaker notes
 
-Cowork guarda un Live Artifact en su vista de Artifacts con una etiqueta propia. Al abrirlo, vuelve a consultar las aplicaciones conectadas y los archivos locales autorizados, y muestra una vista actualizada; un caché corto acelera la carga. Los ejemplos oficiales incluyen dashboards, trackers, comparadores y briefings. Existe sólo en Claude Desktop, en planes pagos; no aparece en la vista de Artifacts de web ni del teléfono, y queda en esa computadora: cambiar de dispositivo no lo lleva consigo.
+Cowork guarda un Cowork Artifact en su vista de Artifacts con una etiqueta propia. Al abrirlo, vuelve a consultar las aplicaciones conectadas y los archivos locales autorizados, y muestra una vista actualizada; un caché corto acelera la carga. Los ejemplos oficiales incluyen dashboards, trackers, comparadores y briefings. Existe sólo en Claude Desktop, en planes pagos; no aparece en la vista de Artifacts de web ni del teléfono, y queda en esa computadora: cambiar de dispositivo no lo lleva consigo.
 
 ### Presenter feedback
 
@@ -563,7 +564,7 @@ Cowork guarda un Live Artifact en su vista de Artifacts con una etiqueta propia.
 
 ### Content
 
-| | Artifact de chat | Live Artifact |
+| | Chat Artifact | Cowork Artifact |
 |---|---|---|
 | Uso | Crear o editar una pieza | Consultar una vista persistente |
 | Datos | Contexto de la conversación | Connectors y archivos locales |
@@ -579,25 +580,37 @@ Cowork guarda un Live Artifact en su vista de Artifacts con una etiqueta propia.
 
 ### Speaker notes
 
-Esta es la comparación que permite elegir el tipo de Artifact. Un canvas, una calculadora o un documento interactivo encajan como Artifact de chat. Un tablero que consulta el estado actual de proyectos o competidores encaja como Live Artifact. La diferencia aparece en la fuente de los datos y en el comportamiento al volver a abrirlo. La lámina siguiente muestra qué pasa después de crearlo.
+Esta es la comparación que permite elegir el tipo de Artifact. Un canvas, una calculadora o un documento interactivo encajan como Chat Artifact. Un tablero que consulta el estado actual de proyectos o competidores encaja como Cowork Artifact. La diferencia aparece en la fuente de los datos y en el comportamiento al volver a abrirlo. La lámina siguiente muestra qué pasa después de crearlo.
 
 ### Presenter feedback
 
 - [closed] 2026-08-03 — "No veo nigun slide sbore"
-  Resolution: Nueva lámina 3.5 «El ciclo de vida de un Artifact»: creación, iteración/versionado, publicación o compartición, apertura y retiro de acceso. Las láminas 3.6–3.8 desarrollan las restricciones, los permisos de refresco y las credenciales de un Live Artifact.
+  Resolution: Nueva lámina 3.5 «El ciclo de vida de un Artifact»: creación, iteración/versionado, publicación o compartición, apertura y retiro de acceso. Las láminas 3.6–3.8 desarrollan las restricciones, los permisos de refresco y las credenciales de un Cowork Artifact.
 
 ---
 
-## 5. El ciclo de vida de un Artifact
+## 5. Create an Artifact
+
+### Content
+
+<video class="artifact-create-video" src="images/artifact-create.webm" controls muted playsinline></video>
+
+### Speaker notes
+
+Mostrar el flujo de creación de un Artifact en la interfaz. Pausar si hace falta para señalar cuándo el resultado pasa a vivir fuera de la respuesta del chat.
+
+---
+
+## 6. El ciclo de vida de un Artifact
 
 ### Content
 
 ```ascii
  [CREAR] ──> [ITERAR] ──> [PONER A DISPOSICIÓN] ──> [ABRIR] ──> [RETIRAR ACCESO]
      |             |                  |                    |                 |
- Chat o Live   Chat: editar       Chat: publicar        Chat: enlace      Chat: despublicar
-               Live: guardar      o compartir            u organización    o dejar de compartir
-               versiones           Live: compartir        Live: Desktop
+ Chat o Cowork Chat: editar       Chat: publicar        Chat: enlace      Chat: despublicar
+               Cowork: guardar    o compartir            u organización    o dejar de compartir
+               versiones           Cowork: compartir      Cowork: Desktop
                                    en Team/Enterprise     con accesos propios
 ```
 <!-- ascii-note:
@@ -613,17 +626,17 @@ labels: crear, iterar, poner a disposición, abrir, retirar acceso
 
 ### Speaker notes
 
-Recorrer el flujo de izquierda a derecha. Un Artifact de chat se edita dentro de la conversación. Un Live Artifact guarda una versión cada vez que se itera con Claude y permite restaurar una anterior. Antes de publicar o compartir, conviene verificar la versión elegida. Los Artifacts de chat se publican con enlace en Free, Pro y Max, o se comparten dentro de Team y Enterprise. Los Live Artifacts se comparten sólo dentro de Team y Enterprise; se abren en Claude Desktop y consultan los Connectors de quien los abre. Al retirar un Artifact de chat publicado, ese mismo Artifact no puede publicarse de nuevo; hace falta crear otro. Las tres láminas siguientes separan distribución, permisos y credenciales para que cada decisión quede visible.
+Recorrer el flujo de izquierda a derecha. Un Chat Artifact se edita dentro de la conversación. Un Cowork Artifact guarda una versión cada vez que se itera con Claude y permite restaurar una anterior. Antes de publicar o compartir, conviene verificar la versión elegida. Los Chat Artifacts se publican con enlace en Free, Pro y Max, o se comparten dentro de Team y Enterprise. Los Cowork Artifacts se comparten sólo dentro de Team y Enterprise; se abren en Claude Desktop y consultan los Connectors de quien los abre. Al retirar un Chat Artifact publicado, ese mismo Artifact no puede publicarse de nuevo; hace falta crear otro. Las tres láminas siguientes separan distribución, permisos y credenciales para que cada decisión quede visible.
 
 ### Presenter feedback
 
 ---
 
-## 6. Compartir: quién y hasta dónde
+## 7. Compartir: quién y hasta dónde
 
 ### Content
 
-| Acción | Artifact de chat | Live Artifact |
+| Acción | Chat Artifact | Cowork Artifact |
 |---|---|---|
 | Publicar con enlace público | Free, Pro y Max | Ningún plan |
 | Compartir dentro de la organización | Team y Enterprise | Team y Enterprise |
@@ -637,16 +650,16 @@ Recorrer el flujo de izquierda a derecha. Un Artifact de chat se edita dentro de
 
 ### Speaker notes
 
-Las restricciones cambian por tipo de Artifact y por plan (doc oficial de Claude, 2026). Un Artifact de chat se publica con enlace público en los planes individuales; cualquiera con el enlace lo ve, y sólo necesita cuenta para las funciones con IA. En Team y Enterprise no existe la publicación pública: el Artifact se comparte dentro de la organización, con sesión iniciada, y si nació en un Project el visitante también necesita acceso a ese Project. El Live Artifact tiene la regla más estricta: sin enlace público en ningún plan, compartible sólo en Team y Enterprise dentro de la organización; en Pro y Max no se comparte. Dos detalles operativos para cerrar: despublicar es de ida (ese mismo Artifact no se puede volver a publicar) y el Live Artifact reside en la computadora donde se creó.
+Las restricciones cambian por tipo de Artifact y por plan (doc oficial de Claude, 2026). Un Chat Artifact se publica con enlace público en los planes individuales; cualquiera con el enlace lo ve, y sólo necesita cuenta para las funciones con IA. En Team y Enterprise no existe la publicación pública: el Artifact se comparte dentro de la organización, con sesión iniciada, y si nació en un Project el visitante también necesita acceso a ese Project. El Cowork Artifact tiene la regla más estricta: sin enlace público en ningún plan, compartible sólo en Team y Enterprise dentro de la organización; en Pro y Max no se comparte. Dos detalles operativos para cerrar: despublicar es de ida (ese mismo Artifact no se puede volver a publicar) y el Cowork Artifact reside en la computadora donde se creó.
 
 ### Presenter feedback
 
 - [closed] 2026-08-03 — "Falta todo un slide y research sobre compartir Artifacts, limitaciones, en este caso entre Artifacts y Live has muchas restricciones."
-  Resolution: Nueva lámina 3.6 'Compartir: quién y hasta dónde' con la matriz plan por acción para Artifact de chat vs Live Artifact, más despublicación de ida y residencia local en notas (fuentes: publish-share-artifacts.web.md, live-artifacts-cowork.web.md).
+  Resolution: Nueva lámina 3.6 'Compartir: quién y hasta dónde' con la matriz plan por acción para Chat Artifact vs Cowork Artifact, más despublicación de ida y residencia local en notas (fuentes: publish-share-artifacts.web.md, live-artifacts-cowork.web.md).
 
 ---
 
-## 7. Permisos al refrescar
+## 8. Permisos al refrescar
 
 ### Content
 
@@ -662,13 +675,13 @@ Las restricciones cambian por tipo de Artifact y por plan (doc oficial de Claude
 
 ### Speaker notes
 
-La documentación oficial lo dice sin vueltas: los Live Artifacts usan los Connectors sin preguntar, aunque el modo de la sesión normalmente pediría aprobación. Sólo pueden usar los Connectors aprobados durante la creación o una actualización, y por eso conviene construir el primero con fuentes de lectura y privilegios mínimos. Quien crea el Artifact debe revisar qué Connectors usa y qué permisos tienen antes de dejarlo en el sidebar.
+La documentación oficial lo dice sin vueltas: los Cowork Artifacts usan los Connectors sin preguntar, aunque el modo de la sesión normalmente pediría aprobación. Sólo pueden usar los Connectors aprobados durante la creación o una actualización, y por eso conviene construir el primero con fuentes de lectura y privilegios mínimos. Quien crea el Artifact debe revisar qué Connectors usa y qué permisos tienen antes de dejarlo en el sidebar.
 
 ### Presenter feedback
 
 ---
 
-## 8. Con qué credenciales se conecta
+## 9. Con qué credenciales se conecta
 
 ### Content
 
@@ -681,7 +694,7 @@ La documentación oficial lo dice sin vueltas: los Live Artifacts usan los Conne
       |                                   |
  autentica SUS Connectors        autentica LOS SUYOS
       |                                   |
-      +---------> LIVE ARTIFACT <---------+
+      +---------> COWORK ARTIFACT <-------+
                        |
              consulta con las credenciales
                   de QUIEN LO ABRE
@@ -689,7 +702,7 @@ La documentación oficial lo dice sin vueltas: los Live Artifacts usan los Conne
 <!-- ascii-note:
 intent: mostrar que la autenticación pertenece a la persona y no viaja dentro del Artifact
 emphasize: "quien lo abre" como origen de las credenciales en cada consulta
-labels: creador, visitante, Live Artifact
+labels: creador, visitante, Cowork Artifact
 -->
 
 ### Sources
@@ -699,7 +712,7 @@ labels: creador, visitante, Live Artifact
 
 ### Speaker notes
 
-Explicar la cadena de autenticación sin jerga. Un Connector es un servidor MCP, el protocolo con el que Claude se conecta a servicios externos; al activarlo, el usuario inicia sesión en ese servicio una vez, con su cuenta. El Live Artifact no guarda contraseñas ni tokens propios: hereda los Connectors ya autenticados de quien lo usa. La consecuencia aparece al compartir en Team o Enterprise: el Artifact consulta con las credenciales del que lo abre. Cada persona ve lo que sus propios accesos permiten, y los datos del creador no viajan con el Artifact. Para la clase, la pregunta de control es simple: ¿con la cuenta de quién se está consultando esta fuente en este momento?
+Explicar la cadena de autenticación sin jerga. Un Connector es un servidor MCP, el protocolo con el que Claude se conecta a servicios externos; al activarlo, el usuario inicia sesión en ese servicio una vez, con su cuenta. El Cowork Artifact no guarda contraseñas ni tokens propios: hereda los Connectors ya autenticados de quien lo usa. La consecuencia aparece al compartir en Team o Enterprise: el Artifact consulta con las credenciales del que lo abre. Cada persona ve lo que sus propios accesos permiten, y los datos del creador no viajan con el Artifact. Para la clase, la pregunta de control es simple: ¿con la cuenta de quién se está consultando esta fuente en este momento?
 
 ### Presenter feedback
 
@@ -708,7 +721,7 @@ Explicar la cadena de autenticación sin jerga. Un Connector es un servidor MCP,
 
 ---
 
-## 9. Demo
+## 10. Demo
 
 ---
 
@@ -799,7 +812,19 @@ Empezar por una tarea concreta, por ejemplo preparar una reunión comercial con 
 
 ---
 
-## 4. Revisar antes de instalar
+## 4. Plugins en acción
+
+### Content
+
+<video class="plugins-video" src="images/plugins.webm" controls muted playsinline></video>
+
+### Speaker notes
+
+Mostrar el flujo de uso de un plugin en la interfaz. Conectar lo que se ve con la tarea, las fuentes y la entrega definida de la lámina anterior antes de pasar a la evaluación de origen y permisos.
+
+---
+
+## 5. Revisar antes de instalar
 
 ### Content
 
@@ -829,7 +854,7 @@ Revisar el origen y los permisos antes de instalar. Un Connector puede requerir 
 
 ---
 
-## 5. Los plugins de Anthropic para Cowork
+## 6. Los plugins de Anthropic para Cowork
 
 ### Content
 
@@ -860,11 +885,11 @@ Anthropic publica once plugins open source para Cowork, uno por rol de trabajo (
 ### Presenter feedback
 
 - [closed] 2026-08-03 — "Mencionar en un slide los plugins existentes de Antropics."
-  Resolution: Nueva lámina 4.5 'Los plugins de Anthropic para Cowork' con los 11 plugins open source oficiales y su instalación (fuente: cowork-plugins-blog.web.md).
+  Resolution: Nueva lámina 4.6 'Los plugins de Anthropic para Cowork' con los 11 plugins open source oficiales y su instalación (fuente: cowork-plugins-blog.web.md).
 
 ---
 
-## 6. Por dónde empezar
+## 7. Por dónde empezar
 
 ### Content
 
@@ -888,11 +913,7 @@ Para este perfil de management, los cinco plugins con retorno más directo son l
 ### Presenter feedback
 
 - [closed] 2026-08-03 — "Si existe una lista, algunos de los plugins mas utiles."
-  Resolution: Nueva lámina 4.6 'Por dónde empezar' con los cinco plugins de mayor retorno para el perfil MiM, el directorio claude.com/plugins y el criterio Anthropic Verified (fuentes: cowork-plugins-blog.web.md, plugins-directory.web.md).
-
----
-
-## 7. Demo
+  Resolution: Nueva lámina 4.7 'Por dónde empezar' con los cinco plugins de mayor retorno para el perfil MiM, el directorio claude.com/plugins y el criterio Anthropic Verified (fuentes: cowork-plugins-blog.web.md, plugins-directory.web.md).
 
 ---
 
@@ -1166,7 +1187,7 @@ Cada cambio deja una diferencia visible. La vista de diferencias de Claude Deskt
 
 ### Speaker notes
 
-Recorrer las cuatro decisiones de la clase en el orden en que se vieron. Primero, clasificar cada pieza de contexto: dato o procedimiento, y su lugar. Segundo, elegir el tipo de Artifact según qué datos consulta, quién puede verlo y con qué credenciales. Tercero, instalar un plugin cuando resuelve un trabajo concreto y sus permisos resultan aceptables. Cuarto, encargar una construcción a Claude Code con brief, plan aprobado y cambios revisados. Conectar Skills con Artifacts al pasar: una Skill puede producir el informe y un Live Artifact permite consumirlo sin volver al chat.
+Recorrer las cuatro decisiones de la clase en el orden en que se vieron. Primero, clasificar cada pieza de contexto: dato o procedimiento, y su lugar. Segundo, elegir el tipo de Artifact según qué datos consulta, quién puede verlo y con qué credenciales. Tercero, instalar un plugin cuando resuelve un trabajo concreto y sus permisos resultan aceptables. Cuarto, encargar una construcción a Claude Code con brief, plan aprobado y cambios revisados. Conectar Skills con Artifacts al pasar: una Skill puede producir el informe y un Cowork Artifact permite consumirlo sin volver al chat.
 
 ### Presenter feedback
 
@@ -1219,17 +1240,17 @@ Abrir la conversación final. Pedir preguntas sobre los cinco bloques y, si no a
 
 - Elegir el plugin que se usará en el ejercicio de auditoría de la sección 4 (lámina 4.4).
 - Definir el proyecto mínimo disponible para la demo de Claude Code (sección 5).
-- Preparar el ejemplo real de Live Artifact que el presenter mostrará en vivo en la sección 3 (reemplaza a la lámina de demo borrada).
+- Preparar el ejemplo real de Cowork Artifact que el presenter mostrará en vivo en la sección 3 (reemplaza a la lámina de demo borrada).
 - Verificar contra documentación oficial el alcance exacto de la memoria por Project (láminas 2.5 a 2.7): único claim de producto que sigue sin respaldo web propio en el corpus.
 
 # Cut material
 
 - Módulo "Delegar y verificar" (brief en cuatro campos, revisión del plan, verificación en cuatro capas): el presentador lo descartó como bloque independiente; su criterio central reaparece en las notas de las demos y en la conclusión 2.
 - Dispatch y Schedule: fuera del recorrido aprobado de cinco secciones. Si vuelven en una clase futura, usar la definición corregida del corpus (Dispatch envía una tarea o sesión de código a la computadora host) y verificar la restricción de Schedule sobre carpetas locales.
-- Frase espejada de cierre de Artifacts propuesta en el corpus ("Una Skill repite un proceso; un Live Artifact hace visible su resultado"): la idea quedó dicha en prosa llana en las notas de la conclusión 1.
+- Frase espejada de cierre de Artifacts propuesta en el corpus ("Una Skill repite un proceso; un Cowork Artifact hace visible su resultado"): la idea quedó dicha en prosa llana en las notas de la conclusión 1.
 - Temas propuestos en el corpus y no incluidos: computer use y seguridad, y la supervisión como módulo propio.
 - Lámina "El Project delimita" (tabla de dos Projects): borrada a pedido del presenter (Review 2026-08-03); la idea del alcance quedó en la lámina de arquitectura (2.2) y en "Cómo se administra Memory" (2.7).
 - Caso Faro (lámina propia en Conocimiento Persistente + menciones en notas y en el brief de Claude Code): eliminado por pedido del presenter; los ejemplos quedaron en genérico.
 - Lámina "Caso: informe comercial" (Plugins, con ASCII CRM+Slack → plugin → brief): borrada a pedido del presenter ("no dice mucho").
 - Lámina "Tracker de competidores" (tabla Atlas/Boreal/Cima): borrada a pedido del presenter.
-- Lámina "Demo de Live Artifact" (guion de 5 pasos): borrada; el presenter muestra un ejemplo real en vivo. La decisión previa de Open questions sobre "construir en vivo o llevar preparado" queda resuelta en el mismo sentido.
+- Lámina "Demo de Cowork Artifact" (guion de 5 pasos): borrada; el presenter muestra un ejemplo real en vivo. La decisión previa de Open questions sobre "construir en vivo o llevar preparado" queda resuelta en el mismo sentido.

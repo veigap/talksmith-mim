@@ -2,7 +2,7 @@
       |                                   |
  autentica SUS Connectors        autentica LOS SUYOS
       |                                   |
-      +---------> LIVE ARTIFACT <---------+
+      +---------> COWORK ARTIFACT <-------+
                        |
              consulta con las credenciales
                   de QUIEN LO ABRE
@@ -10,5 +10,5 @@
 <!-- ascii-note:
 intent: mostrar que la autenticación pertenece a la persona y no viaja dentro del Artifact
 emphasize: "quien lo abre" como origen de las credenciales en cada consulta
-labels: creador, visitante, Live Artifact
+labels: creador, visitante, Cowork Artifact
 -->

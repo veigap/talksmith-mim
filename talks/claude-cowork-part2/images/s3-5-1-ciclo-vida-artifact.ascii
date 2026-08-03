@@ -1,8 +1,8 @@
  [CREAR] ──> [ITERAR] ──> [PONER A DISPOSICIÓN] ──> [ABRIR] ──> [RETIRAR ACCESO]
      |             |                  |                    |                 |
- Chat o Live   Chat: editar       Chat: publicar        Chat: enlace      Chat: despublicar
-               Live: guardar      o compartir            u organización    o dejar de compartir
-               versiones           Live: compartir        Live: Desktop
+ Chat o Cowork Chat: editar       Chat: publicar        Chat: enlace      Chat: despublicar
+               Cowork: guardar    o compartir            u organización    o dejar de compartir
+               versiones           Cowork: compartir      Cowork: Desktop
                                    en Team/Enterprise     con accesos propios
 
 <!-- ascii-note:

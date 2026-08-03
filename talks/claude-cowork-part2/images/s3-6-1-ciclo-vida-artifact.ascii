@@ -1,0 +1,12 @@
+ [CREAR] ──> [ITERAR] ──> [PONER A DISPOSICIÓN] ──> [ABRIR] ──> [RETIRAR ACCESO]
+     |             |                  |                    |                 |
+ Chat o Cowork Chat: editar       Chat: publicar        Chat: enlace      Chat: despublicar
+               Cowork: guardar    o compartir            u organización    o dejar de compartir
+               versiones           Cowork: compartir      Cowork: Desktop
+                                   en Team/Enterprise     con accesos propios
+
+<!-- ascii-note:
+intent: mostrar las decisiones que atraviesa un Artifact después de crearlo
+emphasize: publicación y compartición cambian según el tipo de Artifact y el plan
+labels: crear, iterar, poner a disposición, abrir, retirar acceso
+-->

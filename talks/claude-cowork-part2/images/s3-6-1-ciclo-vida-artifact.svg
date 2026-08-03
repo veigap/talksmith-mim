@@ -1,0 +1,38 @@
+<!-- talksmith-ascii-sha256: 632fa04c37958b834c9b061c9a95ecaa66af339e06f1b8c935b8a5b0a9ef0ef9 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" font-family="Helvetica, Arial, sans-serif" fill="#3B3535">
+  <title>El ciclo de vida de un Artifact</title>
+  <desc>Un Artifact pasa de crearse e iterarse a ponerse a disposición, abrirse y retirar su acceso.</desc>
+  <rect width="1400" height="600" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 6 L0 12 Z" fill="#8B8585"/></marker>
+  </defs>
+  <text x="70" y="70" font-size="27" font-weight="700">Del resultado a quien puede usarlo</text>
+  <text x="70" y="105" font-size="18" fill="#6C6666">El recorrido cambia según sea un Chat Artifact o un Cowork Artifact.</text>
+  <g fill="none" stroke="#8B8585" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M292 226 H338"/><path d="M554 226 H600"/><path d="M816 226 H862"/><path d="M1078 226 H1124"/>
+  </g>
+  <g>
+    <rect x="70" y="158" width="222" height="136" rx="14" fill="#F4F1F0" stroke="#B8B1AF" stroke-width="2"/>
+    <rect x="338" y="158" width="216" height="136" rx="14" fill="#F4F1F0" stroke="#B8B1AF" stroke-width="2"/>
+    <rect x="600" y="158" width="216" height="136" rx="14" fill="#FCE7E9" stroke="#DA1B2E" stroke-width="3"/>
+    <rect x="862" y="158" width="216" height="136" rx="14" fill="#F4F1F0" stroke="#B8B1AF" stroke-width="2"/>
+    <rect x="1124" y="158" width="206" height="136" rx="14" fill="#F4F1F0" stroke="#B8B1AF" stroke-width="2"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="181" y="210" font-size="22" font-weight="700">Crear</text><text x="181" y="242" font-size="17">Chat o Cowork</text>
+    <text x="446" y="210" font-size="22" font-weight="700">Iterar</text><text x="446" y="242" font-size="17">mejorar el resultado</text>
+    <text x="708" y="203" font-size="21" font-weight="700">Poner a disposición</text><text x="708" y="238" font-size="17">publicar o compartir</text>
+    <text x="970" y="210" font-size="22" font-weight="700">Abrir</text><text x="970" y="242" font-size="17">usar el Artifact</text>
+    <text x="1227" y="210" font-size="22" font-weight="700">Retirar acceso</text><text x="1227" y="242" font-size="17">dejar de compartir</text>
+  </g>
+  <line x1="70" y1="345" x2="1330" y2="345" stroke="#D8D1CF" stroke-width="2"/>
+  <text x="70" y="390" font-size="19" font-weight="700">Chat Artifact</text>
+  <path d="M284 384 H322" stroke="#DA1B2E" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+  <text x="340" y="390" font-size="18">Se edita en la conversación. Puede publicarse con enlace o compartirse en Team y Enterprise.</text>
+  <text x="70" y="458" font-size="19" font-weight="700">Cowork Artifact</text>
+  <path d="M284 452 H322" stroke="#DA1B2E" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+  <text x="340" y="458" font-size="18">Guarda versiones restaurables. Se comparte dentro de Team y Enterprise y se abre en Claude Desktop.</text>
+  <rect x="70" y="505" width="1260" height="48" rx="10" fill="#FCE7E9"/>
+  <text x="94" y="536" font-size="17" font-weight="700" fill="#9E1322">Antes de publicar o compartir:</text>
+  <text x="365" y="536" font-size="17">revisá la versión elegida y quién podrá acceder a ella.</text>
+</svg>
