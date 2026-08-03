@@ -1227,7 +1227,28 @@ Cerrar con una consigna concreta. Cada alumno elige una tarea de su trabajo y re
 
 ---
 
-## 3. Q&A
+## 3. Votación en vivo
+
+### Content
+
+**Abrí `app.sli.do/event/taHrp3rLrjicjt9PVdr6Nh` y votá qué bloque querés aplicar primero en tu trabajo.**
+
+- Conocimiento Persistente
+- Artifacts
+- Plugins
+- Claude Code
+
+### Sources
+
+- https://app.sli.do/event/taHrp3rLrjicjt9PVdr6Nh
+
+### Speaker notes
+
+Mostrar el enlace de Slido y pedir que cada persona vote un único bloque: Conocimiento Persistente, Artifacts, Plugins o Claude Code. El Slido hoy tiene Q&A abierto; antes de la clase, configurar esta encuesta de opción múltiple en el evento.
+
+---
+
+## 4. Q&A
 
 ### Content
 
