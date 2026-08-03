@@ -9,6 +9,14 @@ duration: "2 horas"
 date: 2026-08-04
 ---
 
+<!--
+Style decisions (persisted in draft):
+- Las láminas que definen una pieza de Cowork pueden usar una imagen en aside a la derecha + ítems, para que la visual acompañe sin competir con el contenido.
+- Las comparaciones usan una tabla con una primera columna de rótulos, para alinear criterios y conceptos.
+- Los diagramas se entregan como SVG y se usan como SVG en HTML.
+- Las láminas de Demo son solamente "Demo", excepto el Demo de Memoria, que usa la demostración completa `memory-demo.gif`.
+-->
+
 # Thesis
 
 **Claim:** Cowork funciona como un entorno de trabajo cuando el equipo ubica cada pieza de contexto en su lugar, conserva en Artifacts los resultados que va a consultar de nuevo, evalúa las extensiones que instala y delega la construcción de software con plan y revisión.
@@ -265,6 +273,8 @@ Conectar con el caso de apertura: la regla de "fuentes y fecha en cada informe" 
 - **Criterio** - qué condición debe poder verificarse: "toda cifra lleva fuente y fecha".
 - **Límites** - qué no está permitido: "no usar datos de clientes ni información bajo NDA".
 
+<!-- aside: right ![Instruction de Project estructurada como contrato de trabajo](images/instructions-contrato.png) -->
+
 ### Sources
 
 - corpus/chat-export-2026-08-03.zip.md
@@ -275,7 +285,7 @@ Las Instructions definen cómo trabaja Claude dentro del Project; los tres bloqu
 
 ---
 
-## 5. Qué es Memory
+## 5. Memoria: continuidad entre tareas
 
 ### Content
 
@@ -285,10 +295,7 @@ Las Instructions definen cómo trabaja Claude dentro del Project; los tres bloqu
 - **De dónde sale** - de lo conversado y corregido en trabajos anteriores.
 - **Qué no es** - ni el historial completo del chat ni un archivo auditable.
 
-| | Historial del chat | Memory |
-|---|---|---|
-| Conserva | La conversación completa | El contexto útil, condensado |
-| Sirve para | Volver a leer | Continuar el trabajo |
+<!-- aside: right ![Memoria como continuidad entre tareas dentro de un Project](images/memoria-continuidad.png) -->
 
 ### Sources
 
@@ -343,6 +350,10 @@ Memory no depende sólo de que alguien escriba "recordá". En un Project de Cowo
 
 ## 8. Demo
 
+### Content
+
+![Demo de cómo se administra Memory](images/memory-demo.gif)
+
 ---
 
 ## 9. Datos, procedimiento o continuidad
@@ -385,6 +396,28 @@ La primera pregunta ante una pieza de contexto es qué función cumple. Un dato 
 
 ---
 
+## 10. Comparar: archivos, Instructions, Skills y Memory
+
+### Content
+
+| | **Archivos** | **Instructions** | **Skills** | **Memory** |
+|---|---|---|---|---|
+| **Para qué sirve** | Guardar evidencia y datos | Fijar una regla estable | Ejecutar un proceso reutilizable | Dar continuidad al trabajo |
+| **Úsalo cuando** | Hay que citar, revisar o auditar | Debe aplicarse en cada tarea | El equipo invoca pasos repetibles | Una tarea futura necesita contexto aprendido |
+| **No lo uses para** | Definir cómo debe trabajar Claude | Guardar datos o fuentes | Una regla simple siempre activa | Evidencia, reglas obligatorias o datos sensibles |
+
+### Sources
+
+- corpus/chat-export-2026-08-03.zip.md
+- corpus/memory-projects-cowork.web.md
+- corpus/claude-chat-memory.web.md
+
+### Speaker notes
+
+Usar esta tabla como regla rápida de decisión. Archivos son la fuente de verdad: sirven para evidencia, datos y material que alguien debe poder citar o auditar. Instructions fijan reglas estables que Claude debe recibir en cada tarea. Skills encapsulan procedimientos con pasos reutilizables que el equipo invoca cuando los necesita. Memory aporta continuidad: preferencias y contexto aprendido que ayudan a empezar la próxima tarea del mismo Project. La distinción importante es que Memory no sustituye a ninguno de los otros tres; si una pieza debe ser verificable o obligatoria, debe vivir explícitamente en un archivo o una Instruction.
+
+---
+
 ---
 
 # 3. Artifacts
@@ -402,8 +435,7 @@ La primera pregunta ante una pieza de contexto es qué función cumple. Un dato 
 - **En el chat** - una respuesta puntual queda dentro de la conversación.
 - **Como Artifact** - el resultado se abre por separado y puede volver a consultarse o modificarse.
 
-<!-- aside: left ![Vista de trabajo estable entre cambios](images/s3-1-1-aside.png) -->
-<!-- generate-source: una vista de trabajo que permanece mientras la información cambia alrededor -->
+![Vista de trabajo independiente que permanece mientras cambia la información](images/s3-1-1-aside.png)
 
 ### Sources
 
@@ -751,7 +783,7 @@ Para este perfil de management, los cinco plugins con retorno más directo son l
 
 ---
 
-# 5. Claude Code
+# 5. Bonus: Claude Code
 
 **Goal of this section:** Dar una introducción a Claude Code como el mismo patrón de delegación aplicado a software: brief, plan, cambios revisables.
 
@@ -787,8 +819,7 @@ Abrir el bloque ubicando cada superficie. Chat sirve para pensar y redactar dent
 - **Convierte un brief en cambios revisables** - puede planear, editar, ejecutar comandos y probar el resultado.
 - **La persona conserva el control** - revisa el plan, los cambios y el comportamiento final antes de usarlo.
 
-<!-- aside: right ![Una idea que se transforma en herramienta](images/s5-2-1-aside.png) -->
-<!-- generate-source: una herramienta que toma forma a partir de una idea encargada -->
+![Una herramienta que toma forma a partir de una idea encargada](images/s5-2-1-aside.png)
 
 ### Sources
 
